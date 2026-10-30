@@ -1,9 +1,12 @@
-# None
+# Kirby Super Star Ultra
 
 ## Latest
-- <a href="https://github.com/GhostCappy/Archipelago/releases/download/kssu-v0.2.2/kssu.apworld">Latest Version (0.2.2)</a>
+- <a href="https://github.com/GhostCappy/Archipelago/releases/download/kssu-v0.2.21/kssu.apworld">Latest Version (0.2.21)</a>
 
 ## All Versions
+
+#### v0.2.21
+- <a href="https://github.com/GhostCappy/Archipelago/releases/download/kssu-v0.2.21/kssu.apworld">https://github.com/GhostCappy/Archipelago/releases/download/kssu-v0.2.21/kssu.apworld</a>
 
 #### v0.2.2
 - <a href="https://github.com/GhostCappy/Archipelago/releases/download/kssu-v0.2.2/kssu.apworld">https://github.com/GhostCappy/Archipelago/releases/download/kssu-v0.2.2/kssu.apworld</a>

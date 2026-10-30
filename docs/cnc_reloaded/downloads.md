@@ -1,9 +1,12 @@
 # C&amp;C Reloaded
 
 ## Latest
-- <a href="https://github.com/Heinki/Reloaded-Randomizer/releases/download/V1.9/cnc_reloaded.apworld">Latest Version (1.9.0)</a>
+- <a href="https://github.com/Heinki/Reloaded-Randomizer/releases/download/V2.0/cnc_reloaded.apworld">Latest Version (2.0.0)</a>
 
 ## All Versions
+
+#### v2.0.0
+- <a href="https://github.com/Heinki/Reloaded-Randomizer/releases/download/V2.0/cnc_reloaded.apworld">https://github.com/Heinki/Reloaded-Randomizer/releases/download/V2.0/cnc_reloaded.apworld</a>
 
 #### v1.9.0
 - <a href="https://github.com/Heinki/Reloaded-Randomizer/releases/download/V1.9/cnc_reloaded.apworld">https://github.com/Heinki/Reloaded-Randomizer/releases/download/V1.9/cnc_reloaded.apworld</a>
