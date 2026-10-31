@@ -2,105 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-31T00:17:30.979641+00:00</updated>
+  <updated>2026-10-31T06:18:35.820977+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/tag/v0.2.6</id>
-    <title>Pokemon HGSS Singe v0.11.0</title>
-    <updated>2026-10-26T15:46:57+00:00</updated>
-    <author>
-      <name>Olivier</name>
-    </author>
-    <content># Pokemon HGSS Singe APWorld  v0.2.6&#13;
-&#13;
-**New seeds needed** (APWorld version 0.2.6). A seed generated with v0.2.5 keeps working with the v0.2.5 apworld: finish it with that one, and generate new seeds with this one. The BizHawk Client warns you when a seed and the installed apworld do not match.&#13;
-&#13;
-## Files&#13;
-&#13;
-- `poke_hgss.apworld`: the world. Put it in your Archipelago `custom_worlds` folder.&#13;
-- `Poke_HGSS.yaml`: the default options file, ready to edit.&#13;
-- `poke_hgss_tracker.html`: web tracker, open it in your browser (double-click).&#13;
-&#13;
-## How to update&#13;
-&#13;
-1. Delete the old `poke_hgss.apworld` from `custom_worlds`, then add this one (the Launcher's "Install APWorld" does not overwrite an existing file).&#13;
-2. Your YAML keeps working. The new options below are all off by default.&#13;
-3. Generate a new seed.&#13;
-&#13;
-## Highlights&#13;
-&#13;
-- **Logic overhaul.** Every map was walked on the ROM's own collision data (HeartGold and SoulSilver, identical results) and every story lock was checked against the game's scripts: caves, cut trees, boulders, water and story events now ask for exactly what the game needs.&#13;
-- **Items no longer lost**: the count of delivered items now lives in the save, so a reload, a game closed without saving or a battle running when an item arrives no longer loses it.&#13;
-- **Weekday and night events are permanent**, so a check never depends on the day or the hour.&#13;
-- **New quality of life options**, off by default:&#13;
-  - `running_shoes_at_start` and `map_card_at_start`: the Cherrygrove Guide Gent's gifts from the start, useful with a random start;&#13;
-  - `fly_points_at_start`: every Johto town is a Fly destination (not part of the logic);&#13;
-  - `item_received_messages`: "Received X from Bob" on the BizHawk screen.&#13;
-- **Web tracker** redrawn after the game's own Town Map, with in-game icons and Gym Leaders you can tick by hand.&#13;
-&#13;
-## Fixes&#13;
-&#13;
-- Player reports: Clear Bell and Tidal Bell, TM78 "Game Corner JP", items missing from the save, items lost during a battle, the "Bag data looks wrong" message, Jasmine ignoring the Secret Potion, "File hash does not match" with a trimmed US ROM, DeathLink, the Olivine Lighthouse, the Sudowoodo and the Squirtbottle, randomized trainers keeping their old moves.&#13;
-- Radio Tower takeover, Mom at New Bark Town's east shore, `johto_only`, Dexsanity tables, badges found on the ground, Blackthorn Gym's TM59, Super Rod, Coin Case and Basement Key.&#13;
-- Logic loosened where the map allows it: Ice Path B2F and B3F, Monica on Route 40.&#13;
-- Olivine Gym's TM23 and the Department Store B1F Amulet Coin now ask for what the game really needs; the MooMoo Farm checks show as conditional in the trackers.&#13;
-- Patching is about 50 s faster.&#13;
-&#13;
-Full details in `CHANGELOG.md`.&#13;
-&#13;
-## Use of an LLM&#13;
-&#13;
-This project is developed with the help of an LLM. Every change is reviewed, the main files are read, and fixes are tested in game on HeartGold and SoulSilver before release. Details in the README.&#13;
-&#13;
-Thanks You all for your FeedBack !!!! &#13;
-&#13;
-## Next time &#13;
-&#13;
-- `Shop_sanity` : shop will can containt somes Item from Archipelago&#13;
-- Upgrade of `Randomizer_chart_sanity` -&gt; APCheck for each Weakness\Efficiency detecte&#13;
-&#13;
-&#13;
-Have nice day !!!</content>
-    <link href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/tag/v0.2.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-26.0.8</id>
-    <title>The Legend of Zelda - Oracle of Seasons v26.0.8</title>
-    <updated>2026-10-26T17:08:03+00:00</updated>
-    <author>
-      <name>Dinopony</name>
-    </author>
-    <author>
-      <name>Ishigh</name>
-    </author>
-    <content>## 🗳️ New Options&#13;
-- The master_keys option has been renamed to dungeon_key_type, and now includes an option to use unlocks: a new kind of item that immediately opens a specific door on obtention&#13;
-- Freestanding items can now be removed from the randomizable item pool&#13;
-- The trade sequence can also separately be removed, excluding the pedestal&#13;
-- The linked items can also be removed from the itempool&#13;
-&#13;
-## ⏫ Miscellaneous Improvements&#13;
-- Made Blaino reequip items after the match&#13;
-  - It is also no longer possible to open the ring menu during the match&#13;
-&#13;
-## 🧠 Logic&#13;
-- Added the jump between market and forge with just a feather and pegs in hard&#13;
-- Added the use of bombchus to destroy bushes and flower in a few different places&#13;
-- Added the need to progress a bit in the game before getting gasha rewards, shop items and maple trade&#13;
-&#13;
-## 🛠️ Bugfixes&#13;
-- Fixed D2's boss room having holes if Digdogger was the boss&#13;
-- Fixed Gleeok freezing when being beaten in D3&#13;
-- Moved the D4 reward when the room was edited for Dodongo&#13;
-- Fixed Ricky crashing if going up to the swamp and trying to leave&#13;
-- Fixed a crash when leaving Subrosia through the village portal room if coming from the Subrosia start&#13;
-- Fixed the 3rd regular shop item's repeatability depending on the first's&#13;
-- Only randomize bosses when boss rando is enabled</content>
-    <link href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-26.0.8"/>
-  </entry>
   <entry>
     <id>https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.4</id>
     <title>AP Tombola v0.4.0</title>
@@ -1979,7 +1885,7 @@ Free code signing for open source projects, provided by
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release8</id>
-    <title>Ocarina of Time v9.1.0r2</title>
+    <title>Ocarina of Time v9.1.0r3</title>
     <updated>2026-10-30T22:55:22+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1997,5 +1903,62 @@ This is a pretty well tested version by now. Generation fails still might happen
 &#13;
 Please note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.</content>
     <link href="https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release8"/>
+  </entry>
+  <entry>
+    <id>https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.5.6</id>
+    <title>Cursed Words v0.5.3</title>
+    <updated>2026-10-31T00:10:31+00:00</updated>
+    <author>
+      <name>JammyGeeza</name>
+    </author>
+    <content>## Information&#13;
+This archipelago implementation is in **early development** and is in public pre-release for testing, so may not be complete and/or may contain bugs that heavily disrupt the experience. It is not advised to include this in large multiworlds at this time, so only do so at your own risk and inform your host beforehand.&#13;
+&#13;
+## Setup Guide&#13;
+Please visit the [Setup Guide](https://github.com/JammyGeeza/CursedWords-Archipelago#setup-guide) for instructions on how to install the mod client.&#13;
+&#13;
+## Issue / Bug Reporting&#13;
+If you experience issues that are not already on the [known issues list](https://github.com/JammyGeeza/CursedWords-Archipelago/issues/views/12865), please raise a new issue or post in the [Cursed Words Forum in the Archipelago Discord Server](https://discord.com/channels/731205301247803413/1499176806962692196)&#13;
+&#13;
+## Patch Notes&#13;
+This patch provides the following fixes:&#13;
+### APWorld (v0.5.3)&#13;
+- Fixed and unified all references to `Bones The Dog`&#13;
+- Fixed an issue causing Progressive Crowns logic to "leak" across characters&#13;
+- Includes APWorld Version and Minimum Client Version in Slot Data&#13;
+### Client (v0.5.6)&#13;
+- Fixed and unified all references to `Bones The Dog`, which should subsequently fix the Character Selection goal progress UI.&#13;
+- Prevents all "Unlock Summary" banners from showing at the end of a run.&#13;
+- Prevents "secret characters" from being unlocked at the end of a run.&#13;
+- Now checks the APWorld Version and Minimum Client Version and warns if there is a mismatch on connect.&#13;
+  - This mod client will not be compatible with any previous versions of the APWorld.</content>
+    <link href="https://github.com/JammyGeeza/CursedWords-Archipelago/releases/tag/v0.5.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ZAPaDASH04/LEGO-Batman-APworld/releases/tag/v1.0.0</id>
+    <title>Lego Batman: The Video Game v1.0.0</title>
+    <updated>2026-10-31T00:15:47+00:00</updated>
+    <author>
+      <name>ZAPaDASH04</name>
+    </author>
+    <content># LB1 AP Re-release&#13;
+&#13;
+## New features&#13;
+- Characters &amp; Suits have been added as items and locations in the APWorld&#13;
+    - Options to shuffle Ras &amp; Hush and customize the number of minikits/hostages needed (items)&#13;
+    - Options to simplify the logic for Characters that require a whole hero episode (nightwing, etc.) or all hero episodes (bat tank)&#13;
+- Minikit Grouping - Minikits can now be grouped in packs of 1, 2, 5, or 10&#13;
+- Cheaper Shops - you can now lower shop prices &#13;
+- Options to customize how many multipliers are needed for shop purchases based on price (after the effects of cheaper shops)&#13;
+- Option to start with Power Brick &amp; Minikit Detectors&#13;
+- Rewrote logic to use Rule Builder so it is now compatible with the /explain function in UT&#13;
+    - A map pack for UT is being worked on&#13;
+- Purple stud support&#13;
+- A few minor name rewording &amp; cleanup &#13;
+- Please note that due to initial playtesting, power bricks and character tokens are coupled and not decoupled. That means you have to collect the character or power brick in level and then purchase it for 1 check. There consequently will only be 1 item (Character/Power brick unlocked)&#13;
+- Please note that logic only takes Freeplay into consideration. Story mode is not considered in logic ever.&#13;
+&#13;
+There have been multiple versions of this release over the past year trying to fix bugs so if I missed any new features or updates, I apologize.</content>
+    <link href="https://github.com/ZAPaDASH04/LEGO-Batman-APworld/releases/tag/v1.0.0"/>
   </entry>
 </feed>
