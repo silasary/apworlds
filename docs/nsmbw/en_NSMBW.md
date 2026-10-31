@@ -94,7 +94,7 @@
 - Completing towers, castles and secret exits that unlock cannons ( 8 towers, 8 castles and 8 secret exits) World1 tower, 1-3 Secret exit
 - Getting powerups to inventory (from toad-houses or enemy ambushes) e.g. Inventory_powerup_001
 - Unlocking secret exits
-- Hitting blocks, roullette blocks and red rings.
+
 
 ## General randomized things
 - Level placements

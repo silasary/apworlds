@@ -1,6 +1,7 @@
 # New Super Mario Bros Wii Archipelago Randomizer Setup Guide
 
 ## Software
+- A PC Running Windows or Linux (macOS will not work) 
 - [Archipelago V0.6.7](https://github.com/ArchipelagoMW/Archipelago/releases/latest) 
 - [Dolphin emulator](https://dolphin-emu.org/download/) (minimum 2503)
 - [NSMBW AP-World](https://github.com/Miiroun/Archipelago-NewSuperMarioBrosWii/releases/latest)
@@ -9,7 +10,7 @@
   - To dump your game first install the [wii homebrew channel](http://wiibrew.org/wiki/Homebrew_setup), likely by using [Wilbrand](http://wiibrew.org/wiki/Wilbrand) or [Str2hax](https://wiibrew.org/wiki/Str2hax) (recommended).
   - Optionally install [Open Shop Channel](https://oscwii.org/), which you can then use to install one of the following programs.
   - Use [cleanrip](https://wiibrew.org/wiki/CleanRip) or [usb loader gx](https://usbloadergx.com/) (recommended) to dump your game to the SD-card.
-- [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases) (minimum 0.3.5, optional) 
+- [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases) (minimum 0.3.8, optional) 
 
 
 ## Setup
@@ -51,5 +52,5 @@
 - You can optionally use the built-in universal tracker extension to track available locations.
 - Simply download [universal tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) and put it into your custom worlds folder (or double click it).
 - UT is integrated into the NSMBW client if you have it in your custom worlds folder.
-- 0.4.0 includes an internal location and image tracker; for it to work make sure you have UT 0.3.5 or newer.
+- The apworld includes an internal location and image tracker; for it to work make sure you have UT 0.3.8 or newer.
 
