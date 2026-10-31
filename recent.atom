@@ -2,76 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-31T06:18:35.820977+00:00</updated>
+  <updated>2026-10-31T12:15:52.600319+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.4</id>
-    <title>AP Tombola v0.4.0</title>
-    <updated>2026-10-26T18:19:25+00:00</updated>
-    <author>
-      <name>Arenes214</name>
-    </author>
-    <content>## New Additions - APWorld&#13;
-- **Easy Item Links**&#13;
-Link your items with other Tombola players in the world by simply writing what categories of item you want to link!&#13;
-Unlike normal item links, this option accounts for players having different amounts of a particular item, and is able to link *the highest* amount of items theoretically linkable.&#13;
-Example Usage: `easy_item_links: ["Numbers","Traps &amp; Shields","Unlocks","Free Location Hints","Free Marks"]`&#13;
-- **Deprioritize Numbers** Yaml Option&#13;
-Sets the "Deprioritized" flag on numbers, so that they do not appear in other players' Priority Locations&#13;
-- **Universal Tracker Support**&#13;
-- New Milestones Added&#13;
-- New Filler Items Added&#13;
-- Moved to Rule Builder&#13;
-&#13;
-## New Additions - Client&#13;
-- Added the ability to modify the info for slots you have saved&#13;
-- When sending a hinted item, there is now a client-side notification in chat&#13;
-- The Title of the game's window now contains Slot Name and Save Name when connected to a slot&#13;
-- Updated GodotAP to commit `177e052` to fix a security issue&#13;
-&#13;
-## Changes - APWorld&#13;
-- Rowsanity is now enabled by default&#13;
-- Tombola Milestones that require more Tombola than what's required for goal cannot be rolled&#13;
-&#13;
-## Changes - Client&#13;
-- Automark now happens 3 seconds after receiving a Number (Timer is shown on top-right, where the Shields Counter/Trap Timer resides)&#13;
-- Automark now also marks Milestones&#13;
-- When trying to use a Free Mark, a "Please Wait" message now shows before the server sends the go-ahead to Free Mark a number&#13;
-&#13;
-# Bugfixes&#13;
-- Fixed Automark not marking numbers in some situations&#13;
-- Enabling Automark now tries to mark numbers and milestones&#13;
-- Fixed enabling Automark in-game not persisting in case of a Disconnect&#13;
-- Fixed Automark not opening Cards&#13;
-- Fixed Free Location Hints being able to choose a location that is already hinted&#13;
-- Fixed Slot Names for Item Links you are a part of not being highlighted in chat&#13;
-- Fixed the counter of Shields you currently have not visually updating if no shields were already used&#13;
-- Fixed Hint messages having an extra space&#13;
-- Controller Inputs are now ignored&#13;
-- Fixed being able to send an empty message in chat&#13;
-- Fixed Free Marked Numbers visually not being marked after a Blindness Trap&#13;
-- Client now uses **drastically less** CPU/GPU resources</content>
-    <link href="https://github.com/Arenes214/APWorld-Tombola/releases/tag/0.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/barretg/hl1-sven-ap/releases/tag/v0.4.1</id>
-    <title>Half-Life (Sven Co-op) v0.4.0r2</title>
-    <updated>2026-10-26T19:13:03+00:00</updated>
-    <author>
-      <name>hl1-sven-ap</name>
-    </author>
-    <content>## What's New&#13;
-* HEV Suit now always on for Suspension&#13;
-* Deathlink loopback fixed (no more deaths being doubled)&#13;
-* Tripmine drops off of moving entities or func_rotating/func_door no longer erroneously send first tripmine check&#13;
-* Bring in tracelines and other QOL features from HL anniversary branch and update some text output for parity&#13;
-&#13;
-Thanks to Iris, MetaPrism, and AlexCorruptor for the help with testing!</content>
-    <link href="https://github.com/barretg/hl1-sven-ap/releases/tag/v0.4.1"/>
-  </entry>
   <entry>
     <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.3.0</id>
     <title>Deltarune v2.3.0</title>
@@ -1885,7 +1820,7 @@ Free code signing for open source projects, provided by
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release8</id>
-    <title>Ocarina of Time v9.1.0r3</title>
+    <title>Ocarina of Time v9.1.0r2</title>
     <updated>2026-10-30T22:55:22+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1960,5 +1895,41 @@ This patch provides the following fixes:&#13;
 &#13;
 There have been multiple versions of this release over the past year trying to fix bugs so if I missed any new features or updates, I apologize.</content>
     <link href="https://github.com/ZAPaDASH04/LEGO-Batman-APworld/releases/tag/v1.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/petiboy7/IAYBArchipelago/releases/tag/0.4.0</id>
+    <title>IAmYourBeast v0.4.0</title>
+    <updated>2026-10-31T10:49:08+00:00</updated>
+    <author>
+      <name>petiboy7</name>
+    </author>
+    <content># I Am Your Beast Archipelago 0.4.0&#13;
+&#13;
+## What is new?&#13;
+- Levels added in the Quitting Time DLC are now included in the mod&#13;
+&#13;
+## Fixes&#13;
+- The toggle buttons in the levels select screen now persist when starting a level or switching to another screen.</content>
+    <link href="https://github.com/petiboy7/IAYBArchipelago/releases/tag/0.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.16.0</id>
+    <title>Slime Rancher 2 v0.15.0r2</title>
+    <updated>2026-10-31T11:32:36+00:00</updated>
+    <author>
+      <name>Rhelys</name>
+    </author>
+    <content>## New Features&#13;
+- New setting: `randomize_harmonizers` - Allows you to add the 5 Harmonizers to the location pool and the item pool. This setting only works in goals which need to go to the Grey Labyrinth&#13;
+- New setting: `vacpack_shoot_rate` - Customize the shoot rate of the Vacpack from 0.5x to 2x.&#13;
+  - *Last update forced the rate to 2x, but this will allow players to customize it.*&#13;
+&#13;
+## Logic Fixes&#13;
+- Updated Grey Labyrinth access rules when the `region_access_mode` setting is set to `bundled`&#13;
+  - *Having teleporter access to Powderfall Bluffs would give the player access to Hunter Slimes without visiting Starlight Strand. This allows for access for Powderfall Bluffs OR Starlight Strand in the logic path*&#13;
+&#13;
+## Bug Fixes&#13;
+- Fixed an issue where accessing a Research Drone and going to the Archive in less than 1s would cause a check to be dropped</content>
+    <link href="https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.16.0"/>
   </entry>
 </feed>
