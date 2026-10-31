@@ -1,9 +1,12 @@
 # Manual_WatchAShow_Chakraa
 
 ## Latest
-- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/releases/download/2026.09.12/manual_watchashow_chakraa.apworld">Latest Version (2026.9.12)</a>
+- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/releases/download/2026.10.30/manual_watchashow_chakraa.apworld">Latest Version (2026.10.30)</a>
 
 ## All Versions
+
+#### v2026.10.30
+- <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/releases/download/2026.10.30/manual_watchashow_chakraa.apworld">https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/releases/download/2026.10.30/manual_watchashow_chakraa.apworld</a>
 
 #### v2026.9.12
 - <a href="https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/releases/download/2026.09.12/manual_watchashow_chakraa.apworld">https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/releases/download/2026.09.12/manual_watchashow_chakraa.apworld</a>

@@ -7,7 +7,7 @@ The following elements are randomized and locked behind Archipelago items:
 - **Product Licenses:** Access to buy and sell specific item categories in your store.
 - **Store Sections:** Physical expansion rooms of your supermarket.
 - **Furniture:** All Furnitures like Shelves, fridges, freezers, and checkout counters (if Furniture Locks is enabled).
-- **Staff:** Cashiers, restockers, janitors, security guards, and customer helpers.
+- **Staff:** Cashiers, restockers, janitors, security guards, customer helpers, and online order couriers.
 - **Storage Room Upgrades:** Expanding your storage room.
 - **Vehicles:** Personal transport for faster restocking.
 - **Loan Authorizations:** Credit line unlock permits (if Loan Locks is enabled).

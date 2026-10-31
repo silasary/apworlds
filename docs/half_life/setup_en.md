@@ -32,6 +32,9 @@ and the client's `/uninstall` does exactly that.
    Properties → Launch Options), or pick **Half-Life Archipelago** from the game
    list under Custom Game.
 
+Linux users: You must be running with Proton, as native linux is currently unsupported.
+Tested with Proton Hotfix.
+
 ## Playing
 
 **Connect the client first, then start the game.** Nothing is unlocked until the
@@ -148,6 +151,7 @@ Client-side commands, typed in the client rather than the game:
 | `/gamedir [path]` | change the Half-Life folder, or open a picker |
 | `/where` | show the folder, the bridge path and whether the mod is installed |
 | `/missions` | mission unlock status |
+| `/newrun` | starting this slot over: forget which missions were finished on this machine, so the server's completions show as "(Remote Complete)" until played again. Required if restarting on the same seed. |
 | `/deathlink`, `/amnesty <n>` | toggle DeathLink, set the forgiven-deaths allowance |
 | `/chat` | toggle relaying chat between the game and the multiworld |
 | `/force_melee_throw` | toggle Melee Throw on in a seed that has no Melee Throw item |

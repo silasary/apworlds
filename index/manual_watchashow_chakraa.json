@@ -1,11 +1,18 @@
 {
   "License": null,
   "Name": "Manual_WatchAShow_Chakraa",
+  "authors": [
+    "Chakraa"
+  ],
   "description": "Manual games allow you to set custom check locations and custom item names that will be rolled into a multiworld.\nThis allows any variety of game -- PC, console, board games, Microsoft Word memes... really anything -- to be part of a multiworld randomizer.\nThe key component to including these games is some level of manual restriction. Since the items are not actually withheld from the player,\nthe player must manually refrain from using these gathered items until the tracker shows that they have been acquired or sent.",
   "game": "Manual_WatchAShow_Chakraa",
   "github": "https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "1.0": {
       "created_at": "2024-12-31T14:12:58Z",
@@ -118,6 +125,21 @@
       "title": "2026.09.12 - Manual Update",
       "version_simple": "2026.9.12",
       "world_version": "2026.9.12"
+    },
+    "2026.10.30": {
+      "created_at": "2026-10-30T22:41:33Z",
+      "description": "### Added\n- You can now watch up to **999 episodes** (previously 300).\n\n### Changed\n- Much faster generation for long shows. A 300-episode sequential world now generates in a few seconds instead of over a minute, and 999 episodes takes under a minute.\n- Added the `archipelago.json` manifest, so the apworld keeps working with Archipelago 0.7.0.\n\n**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/compare/2026.09.12...2026.10.30\n",
+      "download_url": "https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/releases/download/2026.10.30/manual_watchashow_chakraa.apworld",
+      "has_manifest": true,
+      "hash_sha256": "81f69c0224723922fab4441d4c2c888fe1d142bd80b7ee3bdf904f56313077bc",
+      "html_url": "https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/releases/tag/2026.10.30",
+      "minimum_ap_version": "0.6.7",
+      "size": 121621,
+      "source_url": "https://api.github.com/repos/ChakraaThePanda/Archipelago-Manual-WatchAShow",
+      "tag": "2026.10.30",
+      "title": "2026.10.30 - Episodes 301-999",
+      "version_simple": "2026.10.30",
+      "world_version": "2026.10.30"
     },
     "3.0": {
       "created_at": "2025-01-03T17:05:58Z",

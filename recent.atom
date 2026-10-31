@@ -2,185 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-30T18:25:20.412618+00:00</updated>
+  <updated>2026-10-31T00:17:30.979641+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.11</id>
-    <title>Stardew Valley v8.1.10r2</title>
-    <updated>2026-10-26T03:00:41+00:00</updated>
-    <author>
-      <name>Kaito Kid</name>
-    </author>
-    <author>
-      <name>Jouramie</name>
-    </author>
-    <author>
-      <name>Witchybun (Mod Support)</name>
-    </author>
-    <author>
-      <name>Noa (Entrance Randomizer)</name>
-    </author>
-    <content>## Apworld&#13;
-- Fixed an issue where slimes from the slime hutch were considered valid sources of monster compendium&#13;
-- Added a mines requirement to the logic rules of ancient seed&#13;
-- Fixed several issues with the volcano exit shortcut in ER&#13;
-&#13;
-## Mod&#13;
-- Reduced the weight of Emily's "Say Hello" quest on the board (from 1/10th of your villagers to 1/15th of your villagers)&#13;
-- Fixed an issue where some chaos entrances would fail to match up with each other due to the ` Exit` syntax&#13;
-- Fixed a formatting error in the gateway gazette episodes&#13;
-- Allowed the player to fix their body odor issues&#13;
-- Fixed purchases at Clint that have more than one extra material not benefitting from cheaper prices&#13;
-- Fixed issues where the volcano exit shortcut would not get ERed properly</content>
-    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.11"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/tag/v0.17.2</id>
-    <title>Brotato v0.17.2</title>
-    <updated>2026-10-26T05:34:18+00:00</updated>
-    <author>
-      <name>Rampaging Hippy</name>
-    </author>
-    <content>## Changed&#13;
-&#13;
-- Enabling more logging for character unlock events.</content>
-    <link href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/tag/v0.17.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/colin969/bo3_archipelago/releases/tag/0.5.12</id>
-    <title>Black Ops 3 - Zombies v0.5.12</title>
-    <updated>2026-10-26T11:08:27+00:00</updated>
-    <author>
-      <name>colin969</name>
-    </author>
-    <content>Support added for current patch. &#13;
-In theory this should also work on previous patches now with the same mod, but results may vary and this isn't a supported target.&#13;
-&#13;
-## Changed&#13;
-&#13;
-- Increased maximum Easter Egg goal count to 10</content>
-    <link href="https://github.com/colin969/bo3_archipelago/releases/tag/0.5.12"/>
-  </entry>
-  <entry>
-    <id>https://github.com/randomcodegen/CrashNST-AP/releases/tag/1.0.7</id>
-    <title>Crash Bandicoot N. Sane Trilogy v1.0.7</title>
-    <updated>2026-10-26T12:42:11+00:00</updated>
-    <author>
-      <name>Rando</name>
-    </author>
-    <content>## New Features&#13;
-- Added `/deathlink_amnesty X` to the console&#13;
-  - skips X local deaths before sending the next DeathLink&#13;
-&#13;
-## Bugfixes&#13;
-- Fixed CB3 jet-ski and plane DeathLink sending, receiving, and rider/vehicle desync&#13;
-- Fixed shuffled CB3 secret entrances and Hang 'em High/Future Frenzy secret-gem logic&#13;
-- Removed incorrect ability requirements in Sphynxinator&#13;
-- Fixed qualifying relic runs not registering their AP check when no new medal is awarded&#13;
-- Fixed CB2/CB3 secret-route starts and hub returns after Game Over&#13;
-- Fixed the CB3 elevator sometimes leaving an open hatch without a lift&#13;
-- Prevented auto-released checks from automatically completing level-clear and boss goals&#13;
-&#13;
-**Existing seeds remain compatible. APWorld logic fixes require a new seed.**</content>
-    <link href="https://github.com/randomcodegen/CrashNST-AP/releases/tag/1.0.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/tag/0.5.0</id>
-    <title>Spelunky 2 v0.5.0</title>
-    <updated>2026-10-26T14:12:25+00:00</updated>
-    <author>
-      <name>Eszenn</name>
-    </author>
-    <author>
-      <name>DDRKhat</name>
-    </author>
-    <content>This is an update to both APworld + Client. Huge architectural changes mean that _**ALL**_ previous versions _WILL NOT WORK_.&#13;
-# What's new&#13;
-## The game mod itself&#13;
-The entire thing has been re-written from the ground-up to make future coding changes far more sustainable and more granular. For a general player, you shouldn't notice almost anything different except for...&#13;
-## Friendlier locked-out items&#13;
-Hedjet / Crown / Ankh -- previously they would be replaced upon the level loading and getting near them -- now they will "be replaced" but still exist safely until you collect it's replacement; This can mean you are just about to pick up that Bomb bag then suddenly it'll become a Crown in time because you receive it from the multiworld!&#13;
-_(Not YET for the HouYi Bow or Light Arrow, more R&amp;D required)_ &#13;
-## Deathlink black-listing&#13;
-John Celeste keeps dying and has no Amnesty? Now you can choose to stop accepting deathlinks from them and play in peace!&#13;
-## "CO" goal can now be 7-5&#13;
-After quite some discussion I've been convinced to make this change. One thing to be aware; the goal is that you enter the exit OF your goal level (So a goal of 7-5 means you go through the exit OF 7-5 to meet your goal)&#13;
-## Deathlink taken into account for logic!&#13;
-If you have deathlink on, you are not _logically_ expected to send the "spikes" or "ghost" journal entries until you have an ankh (or telepack, in the instance of the spikes) -- no deaths needed!&#13;
-## Some new "sent location" icons!&#13;
-Just a tiny bit of visual feedback adjustments but now there is a graphical distinction between "useless" filler, "helpful" filler, and "HELPFUL" progression.  Thanks again 'activegalacticnuclear' aka 'Ganymede' for these!!&#13;
-## new "Must visit world" setting&#13;
-For those that want shortcuts to require not just access, but also having visited them :)&#13;
-## Receive "Upgrades" mid-run!&#13;
-During any run if you receive an upgrade, it'll be granted to you (if it's a normal one) or added to waddler (if it's a waddler one) rather than needing to wait for a new run. This respects your "journal entry" and "locked" item settings you choose.&#13;
-## Unknown extras!&#13;
-Due to how long this has taken there's probably a bunch of other small happy changes I've made and failed to document. Oopsies!&#13;
-&#13;
-_**Note:**_ Deathlink messages will refer to a "WIP message", it's something I plan to fully address and handle in a future update but this one has taken FAR too long and caused crashes for FAR too long. I needed it out sooner rather than later.&#13;
-&#13;
-## Bug Fixes!&#13;
-- Send deathlinks even though you are already dead _(D'oh!)_&#13;
-- Boss Doors causing a crash _**ACTUALLY FOR REAL THIS TIME**_&#13;
-- Broken Sword logic not accounting for access to Clone Gun (who'da thunk you need to actually be able to get it... Oops)&#13;
-- _ALL_ locked out items being considered "in logic" _(I was setting the wrong rule and quietly suppressing an error... ugh)_&#13;
-- Eggplant being able to send it's check despite not being unlocked&#13;
-- Probably SEVERAL more&#13;
-&#13;
-# Huge thanks and respect to [Eszenn](https://github.com/Eszenn/) for piloting the original implementation, best of wishes to them.&#13;
-## Big thanks still goes to @cloiss + (discord) ``activegalacticnucleus`` for their contributions to 0.3.0&#13;
-&#13;
-# [Installation Steps here](https://github.com/DDR-Khat/Spelunky2-Archipelago?tab=readme-ov-file#installation-instructions)</content>
-    <link href="https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/tag/0.5.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Drogebot/Archipelago-zfsa/releases/tag/v0.0.10</id>
-    <title>The Legend of Zelda: Four Swords Adventures v0.0.10</title>
-    <updated>2026-10-26T15:14:14+00:00</updated>
-    <author>
-      <name>Drogings</name>
-    </author>
-    <content>* Added Item Pedestals as optional locations&#13;
-* Combined a Pyramid key and moon gate into a progressive key&#13;
-* Fixed logic&#13;
-* Fixed jewel and maiden requirements</content>
-    <link href="https://github.com/Drogebot/Archipelago-zfsa/releases/tag/v0.0.10"/>
-  </entry>
-  <entry>
-    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.3</id>
-    <title>Donkey Kong 64 v2.0.3</title>
-    <updated>2026-10-26T15:27:42+00:00</updated>
-    <author>
-      <name>2dos</name>
-    </author>
-    <author>
-      <name>AlmostSeagull</name>
-    </author>
-    <author>
-      <name>Ballaam</name>
-    </author>
-    <author>
-      <name>Green Bean</name>
-    </author>
-    <author>
-      <name>Killklli</name>
-    </author>
-    <author>
-      <name>Lrauq</name>
-    </author>
-    <author>
-      <name>PoryGone</name>
-    </author>
-    <author>
-      <name>Umed</name>
-    </author>
-    <content>DK64 Randomizer APWorld file for Archipelago version 2.0.3
-
-This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
-    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.3"/>
-  </entry>
   <entry>
     <id>https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/tag/v0.2.6</id>
     <title>Pokemon HGSS Singe v0.11.0</title>
@@ -1470,6 +1296,16 @@ Lynari Desert Unknown puzzle (I kept forgetting this puzzle order so this saved 
     <link href="https://github.com/EverydaySimpleDev/Archipelago/releases/tag/ffcc-beta.0.2.0"/>
   </entry>
   <entry>
+    <id>https://github.com/EverydaySimpleDev/Archipelago/releases/tag/ffcc-beta-0.2.1</id>
+    <title>Final Fantasy Crystal Chronicles v0.2.0r2</title>
+    <updated>2026-10-29T15:19:46+00:00</updated>
+    <author>
+      <name>EverydaySimpleDev</name>
+    </author>
+    <content>Bug Fixes!</content>
+    <link href="https://github.com/EverydaySimpleDev/Archipelago/releases/tag/ffcc-beta-0.2.1"/>
+  </entry>
+  <entry>
     <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.47</id>
     <title>Mental Omega v0.6.10</title>
     <updated>2026-10-29T19:47:10+00:00</updated>
@@ -1792,49 +1628,15 @@ Use **Mod 0.7.2** and **APWorld 0.7.1** with **Sentinel Core 1.1.3**.&#13;
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `a987d13c82f0f5090238d27e777a6cc8849c2026`.
+Built from `0127bd9f2109183bb1dceb9f0ffc107e7830f905`.
 
 ## Downloads
 
 - [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
 - [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
 
-## Since v1.18.4
+## Since v1.18.5
 
-- feat(traps): six more team traps, Jarate-only runs unchanged
-- fix(stability): preserve reports and evidence for each run attempt
-- fix(bots): stop the SourceMod 1.13 crashes at wave start (#247)
-- chore(go): bump to 1.27.3 (#227)
-- docs(stability): record successful hosted reliability checks
-- perf(stability): reuse production image build cache
-- fix(stability): cache runtime packages and recover Docker setup
-- fix(stability): expose Steam failures during Docker startup
-- fix(stability): diagnose and retry transient Steam setup failures
-- fix(plugin): give the buffed ammo again at spawn and resupply (#245)
-- fix(launcher): bot lineup save and card apply report what really happened (#244)
-- fix(stability): show planned-case percentages and actionable failures
-- fix(stability): recover pruned compilers and crashed test servers
-- Include Python in the validated stability build environment
-- Trust the container workspace for source revision stamping
-- Match production CI container and gzip dependency cache format
-- Describe complete catalog coverage beside the stability widgets
-- Document complete catalog stability validation and retained failures
-- Corroborate final running and installed TF2 versions
-- Wait for final map readiness before stability health checks
-- Use native point and tank objectives for Arctic Arrangement
-- Recognize BSP navigation and refresh installs when the mission catalog changes
-- Accept native player capture as Galois delivery evidence
-- Require the mission-specific native witness when aggregating reverse passes
-- feat: cover all playable reverse missions in stability sweeps
-- style: apply pinned gofumpt formatting to waveprobe tests
-- ci: include validated reverse missions in daily stability scores
-- test: prototype opt-in reverse MvM bomb and carrier objective checks
-- ci: add daily cross-platform TF2 stability checks and percentage badges
-- refactor(srcds): one source for server.cfg, args and mods (#237)
-- refactor(fakeroom): draw the test pool through availability
-- fix(settings): leave unticked community packs out of the pool and the seed
-- refactor(settings): declare each environment variable once
-- test(settings): pin what ApplyEnv and the admin .env do today
 </content>
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
   </entry>
@@ -1894,5 +1696,306 @@ Please refer to the [FAQ](https://github.com/GhostCappy/Archipelago/blob/main/wo
 &#13;
 This version is backwards compatible with seeds generated during v0.2.2.</content>
     <link href="https://github.com/GhostCappy/Archipelago/releases/tag/kssu-v0.2.21"/>
+  </entry>
+  <entry>
+    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.3.0%2Bhotfix1</id>
+    <title>Deltarune v2.3.0+hotfix1</title>
+    <updated>2026-10-30T18:57:30+00:00</updated>
+    <author>
+      <name>Mewlif</name>
+    </author>
+    <author>
+      <name>theemeraldsword85</name>
+    </author>
+    <author>
+      <name>Tenebrosful</name>
+    </author>
+    <author>
+      <name>Vintagix</name>
+    </author>
+    <author>
+      <name>Deadzi</name>
+    </author>
+    <author>
+      <name>Charaster</name>
+    </author>
+    <author>
+      <name>Potato</name>
+    </author>
+    <author>
+      <name>TerraFail457</name>
+    </author>
+    <content>[Setup Guide](https://github.com/theemeraldsword85/DELTARUNEAP/blob/v2.2.0/worlds/deltarune/docs/setup_en.md) - [Q&amp;A](https://github.com/theemeraldsword85/DELTARUNEAP/blob/v2.2.0/worlds/deltarune/docs/en_DELTARUNE.md) - [Credits](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/DELTARUNEAP%20CREDITS.md)&#13;
+&#13;
+[Game Mod Releases](https://github.com/Tenebrosful/DeltaruneAP-mod/releases)&#13;
+Or, alternatively,&#13;
+[GameBanana Page](https://gamebanana.com/mods/699556)&#13;
+&#13;
+Report bugs either on the [Discord Channel](https://discord.com/channels/731205301247803413/1481971897024516250) or [the GitHub Issues Tab](https://github.com/theemeraldsword85/DELTARUNEAP/issues)!&#13;
+&#13;
+## Chapter 2&#13;
+- Rouxls's fight is now in logic without Kris or Ralsei if you turn on no-hit logic&#13;
+&#13;
+## Chapter 4&#13;
+- Jackenstein now properly requires Kris if you turn on glitched logic</content>
+    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.3.0%2Bhotfix1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v1.0.0-rc1</id>
+    <title>Starship Titanic v1.0.0rc1</title>
+    <updated>2026-10-30T20:34:26+00:00</updated>
+    <author>
+      <name>rescheer</name>
+    </author>
+    <content>Both client and .apworld updated. Incompatible with older seeds.&#13;
+Make sure to regenerate your YAML templates to see the new options.&#13;
+## New Features&#13;
+- Full client UI redesign!&#13;
+- Logic tracking in the client! See in-logic checks, hover over locked checks to see what they require&#13;
+- New Goal: Parrot Hunt! Receive clues from the multiworld to discover which stateroom the parrot is trapped in&#13;
+- New YAML options (see YAML for detailed descriptions):&#13;
+  - Passenger Class Upgrades: Multiworld (default) or Vanilla&#13;
+  - Stateroom Assignments: Multiworld (default) or Vanilla&#13;
+  - AP Item Delivery Method: Succ-u-Bus (default) or Direct to Inventory&#13;
+  - More Room Access Card generation options: Enabled, Randomized, Selection, Disabled (default)&#13;
+  - Easy Music Room Puzzle: (default false) When true, pre-sets the music room panel controls to the solution&#13;
+- Added YAML-less UT Support&#13;
+## Changes&#13;
+- In-game AP Item notification improvements&#13;
+## Fixes&#13;
+- Tons of graphical fixes affecting most items&#13;
+- Pistachio bowl puzzle required an assigned 2nd class stateroom in logic, but can be completed in any 2nd class stateroom&#13;
+- Checks could briefly be sent from incorrect save files before the guard stops them&#13;
+- Nose could be stuck in inventory in rare circumstances&#13;
+- Mouth could be permanently hidden in very rare circumstances&#13;
+## Known Issues in this release&#13;
+- None&#13;
+&#13;
+Find installation instructions at [https://github.com/rescheer/Starship-Titanic-AP#installation](https://github.com/rescheer/Starship-Titanic-AP#installation)</content>
+    <link href="https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v1.0.0-rc1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.5</id>
+    <title>Team Fortress 2 Mann vs Machine v1.18.5</title>
+    <updated>2026-10-30T20:42:45+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>&lt;p align="center"&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
+    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
+    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+
+## Changes
+
+### Added
+
+- **Six new traps**, contributed by Lee Harrold: Team Mad Milk, Team On Fire,
+  Team Slow Down, Team Bleed, Team Marked For Death and Team Gas. Each hits
+  everybody on RED for ten seconds, like Team Jarate. They are off by default:
+  turn them on one by one under Rewards in the launcher, or list them in the
+  `traps` option. A run made before them still holds Team Jarate alone.
+- A seed made with this apworld needs this launcher or a newer one. An older
+  launcher refuses it when it connects and says to use the launcher the seed
+  was made for, instead of quietly dropping a trap it does not know. Seeds
+  made before keep playing on this one.
+
+### Fixed
+
+- **Servers work on the TF2 update of 29 October 2026.** Windows servers
+  load SigMod again, so the community missions that need it start at their
+  first wave instead of staying on wave 0.
+- **Attribute lookups on the server read the right memory.** The plugin's
+  TF2Attributes lookup handed over its result in the form SourceMod 1.13
+  uses, to a TF2Attributes that did not read it that way. TF2Attributes is now
+  the int64 port, compiled for 1.13.
+- **The defender bots run on SourceMod 1.13**, the same build as the server,
+  with the current Actions (v4.0.1) and TF Econ Data. Before, the bots were
+  compiled with 1.12 because their dependencies did not compile on 1.13.
+- **Max ammo and max metal buffs fill you up again when you spawn.** Since
+  1.18.3 an Engineer with a max metal buff started on 200 metal and only got
+  300 at the next resupply. Spawning and resupplying now give the buffed
+  amount. A buff rebuild in the middle of a life still never adds ammo, so
+  the Windows pile-up stays fixed.
+- **The Docker stack only draws from the community packs you ticked.** With
+  `MVM_EXCLUDED_MISSIONS` empty, `make seed` and the self-hosted multiworld
+  could pick a mission from a pack unticked in the admin page, and the admin
+  page counted those missions in the tier menu and the mission count. They
+  are now left out. A `.env` without `TF2AP_COMMUNITY_PACKS` still draws from
+  every pack, as before; an empty one draws from none.
+- **The Docker server plays like the launcher's.** It went to sleep when
+  the last player left, ignored the robot health set in the admin page, and
+  loaded SigMod whenever it was ticked rather than only when a mission in the
+  pool needs it. It now writes the same server.cfg and command line as the
+  launcher. The launcher in turn now keeps RED defenders out of SigMod's robot
+  limit, as Docker already did.
+
+
+## Windows
+
+Download **`tf2ap.exe`** above. Run it. It installs everything else.
+
+Windows will warn you, and it is a false positive. The exe unpacks archives and
+starts a game server without a code signature, which looks like a virus to a
+scanner. Click **More info**, then **Run anyway**, or check it below first.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
+
+## Linux
+
+Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
+
+```sh
+chmod +x tf2ap-linux-amd64
+./tf2ap-linux-amd64
+```
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
+
+## Docker
+
+Download **`compose.yaml`** and **`env.example`**:
+
+```sh
+mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
+base=https://github.com/m-this/tf2-archipelago/releases/latest/download
+curl -fsSLO "$base/compose.yaml"
+curl -fsSL -o .env "$base/env.example"
+```
+
+Set `SRCDS_RCONPW` in `.env`, then:
+
+```sh
+docker compose --profile seed run --rm seed   # writes ./seed
+docker compose up -d
+```
+
+Upload the file from `seed/` at
+[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
+port into `AP_PORT`.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
+
+## Other assets
+
+| File | For |
+| --- | --- |
+| `tf2_mvm.apworld` | The official Archipelago app. |
+| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
+| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
+| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
+
+## Checking what you downloaded
+
+**`SHA256SUMS`** is attached to this release. It holds the hash of every file
+here, computed by the workflow that built them.
+
+```powershell
+Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
+```
+
+```sh
+sha256sum -c SHA256SUMS --ignore-missing    # Linux
+```
+
+Each binary carries a signed record of the commit and the workflow that built
+it:
+
+```sh
+gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
+```
+
+The binaries are scanned on VirusTotal, and the reports are linked at the end of
+these notes. Expect a few heuristic detections and no named malware family. The
+source is all in the repository, and `make launcher` rebuilds the exe on your
+own machine.
+
+## Code signing policy
+
+Free code signing for open source projects, provided by
+[SignPath.org](https://signpath.org), with a certificate from the
+[SignPath Foundation](https://signpath.org).
+
+&gt; [!WARNING]
+&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
+&gt; unsigned, and Windows warns about it until that changes.
+
+
+## What's Changed
+* refactor(settings): declare each environment variable once by @m-this in https://github.com/m-this/tf2-archipelago/pull/239
+* fix(settings): leave unticked community packs out of the pool and the seed by @m-this in https://github.com/m-this/tf2-archipelago/pull/240
+* refactor(srcds): one source for server.cfg, args and mods by @m-this in https://github.com/m-this/tf2-archipelago/pull/237
+* fix(launcher): bot lineup save and card apply report what really happened by @m-this in https://github.com/m-this/tf2-archipelago/pull/244
+* fix(plugin): give the buffed ammo again at spawn and resupply by @m-this in https://github.com/m-this/tf2-archipelago/pull/245
+* chore(go): bump to 1.27.3 by @m-this in https://github.com/m-this/tf2-archipelago/pull/227
+* fix(bots): stop the SourceMod 1.13 crashes at wave start by @m-this in https://github.com/m-this/tf2-archipelago/pull/247
+* Add daily full-catalog stability checks and percentage badges by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/243
+* chore(deps): pin everything keyed to TF2 11185272 by @m-this in https://github.com/m-this/tf2-archipelago/pull/250
+* chore(deps): tooling, images and modules to latest stable by @m-this in https://github.com/m-this/tf2-archipelago/pull/249
+* chore(release): v1.18.5 by @m-this in https://github.com/m-this/tf2-archipelago/pull/251
+
+
+**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.18.4...v1.18.5
+
+## VirusTotal
+
+- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/Y2Q4NWI0ZDExYTFjNjZjMGY5ZDhkOWM2OWNmMGEyYzA6MTc5MzM5MzU4OQ==/detection)
+- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/ODQ1NzkwZjY0YWI5ODQ3Y2ZhOWFjOWVmNzUxNWYxMjA6MTc5MzM5MzU5MQ==/detection)
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/tag/v0.3.6</id>
+    <title>Supermarket Simulator v0.3.6</title>
+    <updated>2026-10-30T21:17:52+00:00</updated>
+    <author>
+      <name>Lemix028</name>
+    </author>
+    <content>- Fixed the Hiring tab for the new game version.&#13;
+- Added Progressive Courier items to unlock up to two couriers.</content>
+    <link href="https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/tag/v0.3.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/releases/tag/2026.10.30</id>
+    <title>Manual_WatchAShow_Chakraa v2026.10.30</title>
+    <updated>2026-10-30T22:41:33+00:00</updated>
+    <author>
+      <name>Chakraa</name>
+    </author>
+    <content>### Added
+- You can now watch up to **999 episodes** (previously 300).
+
+### Changed
+- Much faster generation for long shows. A 300-episode sequential world now generates in a few seconds instead of over a minute, and 999 episodes takes under a minute.
+- Added the `archipelago.json` manifest, so the apworld keeps working with Archipelago 0.7.0.
+
+**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/compare/2026.09.12...2026.10.30
+</content>
+    <link href="https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/releases/tag/2026.10.30"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release8</id>
+    <title>Ocarina of Time v9.1.0r2</title>
+    <updated>2026-10-30T22:55:22+00:00</updated>
+    <author>
+      <name>espeon65536</name>
+    </author>
+    <author>
+      <name>TreZ</name>
+    </author>
+    <content># OoT Randomizer APWorld v9.1.0 Full Release 8&#13;
+&#13;
+This is a pretty well tested version by now. Generation fails still might happen on occasion, especially when using pre-completed dungeons.&#13;
+&#13;
+&#13;
+## Changes:&#13;
+- Adjuster: Filepicker for Custom Models, Choices are cached&#13;
+&#13;
+Please note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.</content>
+    <link href="https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release8"/>
   </entry>
 </feed>

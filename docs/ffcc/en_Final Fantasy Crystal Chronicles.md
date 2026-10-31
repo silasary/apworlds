@@ -214,6 +214,8 @@ count as that enemy, so an Orc defeated in the Orc King fight counts as an Orc.
   boss is "River Belle Path - Giant Crab"). An enemy that comes back in
   later cycles is one check, in the first cycle it appears in. As with Enemy
   Types, chests aren't checks and don't appear.
+- The Lamia Queen in Moschet Manor never dies: at 1 HP she flees across the
+  room. That counts as defeating her.
 - **Monster Hunt Bosses** (on by default) - the bosses are part of the hunt.
   Turn it off to leave them out of the goal and the checks.
 
@@ -285,8 +287,9 @@ The choice is kept on the server, so it stays the same after reconnecting.
 ## Mog Stamp Hints
 
 With **Mog Stamp Hints** (on by default), every new Mog Stamp from a Moogle
-Nest hints where one of your progression items is: a stage key, a ring, a
-Year Key and so on, in your world or anyone else's. It's always one you
+Nest hints where one of your progression items is: a stage key, a ring and
+so on, in your world or anyone else's. Year Keys are left out, since they
+only tell the logic which year you can be in. It's always one you
 haven't found yet, picked in a random order set by the seed. There are 23
 stamps, one in each Moogle Nest in the dungeons and towns. Tipa's moogle
 gives your stamp card and first stamp.

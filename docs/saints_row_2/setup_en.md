@@ -1,0 +1,1 @@
+Install instructions can be found on the [GitHub repo](https://github.com/hoXyy/SaintsRow2Archipelago#required-mods).
