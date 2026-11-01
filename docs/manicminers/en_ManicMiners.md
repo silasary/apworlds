@@ -105,7 +105,7 @@ Sparks has figured out how to send surplus power out into the galaxy! Manic Mine
 
 An in-game timer can be turned on in the game's Gameplay Settings, to help track Par Times. 
 
-[Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) is a useful Archipelago tool for checking what AP Locations are currently in-logic. Additionally you can use the `/explain` command to view underlying logic, like `/explain Can Build Support Station`. 
+[Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases?q=Tracker) is a useful Archipelago tool for checking what AP Locations are currently in-logic. Additionally you can use the `/explain` command to view underlying logic, like `/explain Can Build Support Station`. If Universal Tracker is installed, it will automatically appear as a tab in the Manic Miners client. MM supports yaml-less UT generation.
 
 ## Under the hood
 

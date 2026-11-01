@@ -2,105 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-10-31T18:18:46.791762+00:00</updated>
+  <updated>2026-11-01T00:24:26.034460+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.3.2</id>
-    <title>Starship Titanic v0.3.2</title>
-    <updated>2026-10-27T00:57:45+00:00</updated>
-    <author>
-      <name>rescheer</name>
-    </author>
-    <content># v0.3.2 (Unstable)&#13;
-Both client and .apworld updated. Make sure to regenerate your YAML templates to see the new options.&#13;
-## New Features&#13;
-- Major feature: Optional Access Cards for each area of the ship&#13;
-- New Client UI Panel for tracking acquired Access Cards&#13;
-- Deliverable Item Reminders: Approaching a Succ-u-Bus terminal that has already been checked will give an in-game reminder of how many AP items are waiting to be delivered. &#13;
-## Fixes&#13;
-- A rare situation could trap the player in the embarkation lobby early in a seed&#13;
-- Checks collected while offline were not being sent properly when the client reconnects&#13;
-- Lemon would not be interactable if it was granted and used in the Vision center puzzle before being picked up naturally&#13;
-## Changes&#13;
-- Added a safety net that will return the Magazine to the player if the 2nd Class upgrade check fails&#13;
-## Known Issues in this release&#13;
-- Minor cosmetic issues with both Ear puzzles&#13;
-&#13;
-## General Tips&#13;
-- Ctrl+C opens the cheat menu, which allows teleporting around the ship. This shouldn't cause any major issues, but I would be careful spawning items, because that may get messy.&#13;
-- No visual tracker yet, but for now I highly recommend Universal Tracker to see in-logic checks&#13;
-&#13;
-Find installation instructions at [https://github.com/rescheer/Starship-Titanic-AP#installation](https://github.com/rescheer/Starship-Titanic-AP#installation)</content>
-    <link href="https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v0.3.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.3.7</id>
-    <title>Universal Tracker v0.3.7</title>
-    <updated>2026-10-27T02:03:24+00:00</updated>
-    <author>
-      <name>FarisTheAncient</name>
-    </author>
-    <content>* Fixes many import/host.yaml related crashes/errors&#13;
-* Entrances are valid in explain&#13;
-* fix tooltips? 👀 ?&#13;
-&#13;
-**Full Changelog**: https://github.com/FarisTheAncient/Archipelago/compare/Tracker_v0.3.6...Tracker_v0.3.7</content>
-    <link href="https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.3.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.3.8</id>
-    <title>Universal Tracker v0.3.8</title>
-    <updated>2026-10-27T03:14:16+00:00</updated>
-    <author>
-      <name>FarisTheAncient</name>
-    </author>
-    <content> * fixes stupid error&#13;
-&#13;
-**Full Changelog**: https://github.com/FarisTheAncient/Archipelago/compare/Tracker_v0.3.7...Tracker_v0.3.8</content>
-    <link href="https://github.com/FarisTheAncient/Archipelago/releases/tag/Tracker_v0.3.8"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Crownmuri/Archipelago/releases/tag/v1.1.2</id>
-    <title>La-Mulana 2 v1.1.2</title>
-    <updated>2026-10-27T06:25:49+00:00</updated>
-    <author>
-      <name>Crownmuri</name>
-    </author>
-    <author>
-      <name>Coookie93</name>
-    </author>
-    <content>## For players, please update the mod to v1.1.2 (Guardian Souls fix for checks normally requiring Guardian Kills)&#13;
-&#13;
-# Changelogs &#13;
-*v1.1.2*&#13;
-- Added IBBoat to IBMain exit logic when CanSealCorridor is met&#13;
-- Moved some locations from HLSpun to HL as they could be obtained early through ER&#13;
-- Added some vertical attacking logic with Whip + Spaulder&#13;
-- Fixed a generation issue where Cliff is unreachable&#13;
-&#13;
-*v1.1.1*&#13;
-- New option: Alpha implemented of Guardian Souls &#13;
-  - Bosses no longer affect Soul Gates, instead 9 Soul items are added to the pool&#13;
-  - Bosses have 1 additional check upon defeating them&#13;
-- QoL toggle: Infinite Starting Weapon Ammo &#13;
-- QoL toggle: Red tint on unchecked AP pots&#13;
-- QoL toggle: hovering AP icon over enemy &amp; npc glossary&#13;
-&#13;
-*v1.1.0*&#13;
-- Added "progressive useful" tagging for items that often lead to large location access / go mode.&#13;
-- Split Require FDC and Required Totem (for DLC)&#13;
-- Enemy Glossary accessibility now takes world difficulty scaling into logic&#13;
-  - This makes Harp and Ganesha's Talisman progressive as they affect the scaling&#13;
-- Non-vanilla soul gate values can now be set (full range from 0 to 9)&#13;
-- With Random Dissonance, sealing the corridor now only requires the charged Beherit&#13;
-  - The Required Guardians requirement is enforced through the Spiral Boat soul gate value &#13;
-  - This allows any post-Ragnarok checks to be in logic before meeting the Required Guardians&#13;
-- Some minor logic corrections and additions</content>
-    <link href="https://github.com/Crownmuri/Archipelago/releases/tag/v1.1.2"/>
-  </entry>
   <entry>
     <id>https://github.com/thefifthmatt/SoulsRandomizers/releases/tag/eldenring-ap-0.1.4</id>
     <title>EldenRing v0.1.4</title>
@@ -171,6 +77,20 @@ Full code refactor to be more modular and robust. Far less reliance on AI as I'm
 2. Close all Archipelago windows, double-click goldeneye.apworld to install, then reopen the Launcher. Create and export your YAML using Options Creator.&#13;
 3. Send your YAML to your host or generate your own game. Open your .apge with ArchipelagoLauncher.exe. When prompted, select EmuHawk.exe and your unpatched USA GoldenEye .z64 ROM.&#13;
 4. BizHawk, the client, and Lua should launch and connect automatically. Leave the 8 MiB Expansion Pak enabled. You’re ready to play!&#13;
+&#13;
+**Play with 1964 (Mouse Support, Improved Framerate and Loading)**&#13;
+&#13;
+Using 1964 Emulator offers Mouse Aim support as well as far better loading times. Follow instructions below to play Goldeneye AP with that instead of Bizhawk.&#13;
+&#13;
+1. Install 1964 through Graslu's GE/PD Release here: [Install 1964](https://github.com/Graslu/1964GEPD/releases)&#13;
+2. Download and extract the 1964ge_ap.zip below.&#13;
+3. Generate the .apge room patch as normal, setup listed in Quick Start above.&#13;
+4. Drag your .apge file on top of 1964GE_AP.cmd (not the .py file)&#13;
+5. Read the top title bar and find your 1964.exe and then your legally acquired **VANILLA** Goldeneye ROM.&#13;
+6. 1964 will automatically open with the AP Patched ROM, alongside a LUA console that will show AP Client Messages&#13;
+7. Enjoy!&#13;
+&#13;
+Note: Because of 1964's increased frame rate, naturally enemies have worse accuracy. The 1964 patch created by this will increase guard accuracy to match original hardware. I mean come on, you've already got mouse aiming... &#13;
 &#13;
 **Items:**&#13;
 &#13;
@@ -1711,7 +1631,7 @@ Free code signing for open source projects, provided by
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release8</id>
-    <title>Ocarina of Time v9.1.0r3</title>
+    <title>Ocarina of Time v9.1.0r2</title>
     <updated>2026-10-30T22:55:22+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1909,5 +1829,99 @@ After beating Garland, just exit Chaos shrine rather than teleporting back to Co
 - Monster sprites&#13;
 - Time out issue connecting</content>
     <link href="https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-26.1.0</id>
+    <title>The Legend of Zelda - Oracle of Seasons v26.1.0</title>
+    <updated>2026-10-31T19:19:56+00:00</updated>
+    <author>
+      <name>Dinopony</name>
+    </author>
+    <author>
+      <name>Ishigh</name>
+    </author>
+    <content>## 🗳️ New Options&#13;
+- The master_keys option has been renamed to dungeon_key_type, and now includes an option to use unlocks: a new kind of item that immediately opens a specific door on obtention&#13;
+- Freestanding items can now be removed from the randomizable item pool&#13;
+- The trade sequence can also separately be removed, excluding the pedestal&#13;
+- The linked items can also be removed from the itempool&#13;
+&#13;
+## ⏫ Miscellaneous Improvements&#13;
+- Made Blaino reequip items after the match&#13;
+  - It is also no longer possible to open the ring menu during the match&#13;
+&#13;
+## 🧠 Logic&#13;
+- Added the jump between market and forge with just a feather and pegs in hard&#13;
+- Added the use of bombchus to destroy bushes and flower in a few different places&#13;
+- Added the need to progress a bit in the game before getting gasha rewards, shop items and maple trade&#13;
+- Added a logical encounter at mt cucco, which includes having bananas&#13;
+&#13;
+## 🛠️ Bugfixes&#13;
+- Fixed D2's boss room having holes if Digdogger was the boss&#13;
+- Fixed Gleeok freezing when being beaten in D3&#13;
+- Moved the D4 reward when the room was edited for Dodongo&#13;
+- Fixed Ricky crashing if going up to the swamp and trying to leave&#13;
+- Fixed a crash when leaving Subrosia through the village portal room if coming from the Subrosia start&#13;
+- Fixed the 3rd regular shop item's repeatability depending on the first's&#13;
+- Only randomize bosses when boss rando is enabled&#13;
+- Fixed boss keys in start inventory being given on the previous dungeon</content>
+    <link href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-26.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.9.0</id>
+    <title>Pokemon Snap v0.9.0</title>
+    <updated>2026-10-31T19:51:25+00:00</updated>
+    <author>
+      <name>ArsonAssassin</name>
+    </author>
+    <author>
+      <name>SomeJakeGuy</name>
+    </author>
+    <author>
+      <name>gerbiljames</name>
+    </author>
+    <author>
+      <name>nielrenned</name>
+    </author>
+    <author>
+      <name>cobyw</name>
+    </author>
+    <content>## What's Changed&#13;
+* Add posesanity! by @nielrenned in https://github.com/nielrenned/PokemonSnap_Archipelago/pull/115&#13;
+* Photo data collection by @nielrenned in https://github.com/nielrenned/PokemonSnap_Archipelago/pull/116&#13;
+&#13;
+**Full Changelog**: https://github.com/nielrenned/PokemonSnap_Archipelago/compare/v0.8.0...v0.9.0</content>
+    <link href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/tag/v0.9.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/fogmike/Archipelago_ManicMiners/releases/tag/v1.6.1</id>
+    <title>Manic Miners v1.6.1</title>
+    <updated>2026-10-31T20:18:42+00:00</updated>
+    <author>
+      <name>fogmike</name>
+    </author>
+    <content>Two important fixes:&#13;
+* Save file was not initialised for brand new players&#13;
+* Missing import broke Linux compatibility &#13;
+&#13;
+## New Contributors&#13;
+* @bigbass1997 made their first contribution in https://github.com/fogmike/Archipelago_ManicMiners/pull/88&#13;
+</content>
+    <link href="https://github.com/fogmike/Archipelago_ManicMiners/releases/tag/v1.6.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.8.0d</id>
+    <title>Refunct v1.8.0r2</title>
+    <updated>2026-10-31T23:13:35+00:00</updated>
+    <author>
+      <name>Spineraks</name>
+    </author>
+    <content>Minor bug fixes!&#13;
+[same apworld &amp; yaml]&#13;
+- fix relocated minigame messing up when you somehow didn't send a check&#13;
+- adjusted setting maps, so you can't be in the wrong map (especially after disconnecting)&#13;
+- fixed smol map so you start at the start&#13;
+- removed unnecessary logging</content>
+    <link href="https://github.com/spinerak/refunct-tas-archipelago/releases/tag/v1.8.0d"/>
   </entry>
 </feed>
