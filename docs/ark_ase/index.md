@@ -4,7 +4,7 @@ ARK: Survival Evolved - engrams, taming, and dossiers as Archipelago items/check
 
 
 ## Downloads
-- <a href="https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/download/v0.1.4-alpha/ark_ase.apworld">Latest Version (1.0.0r5)</a>
+- <a href="https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/download/v0.3.3/ark_ase.apworld">Latest Version (1.0.0r6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
