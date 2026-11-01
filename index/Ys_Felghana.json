@@ -1,0 +1,42 @@
+{
+  "authors": [
+    "polkagrisar"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "Ys Felghana",
+  "github": "https://github.com/polkagrisar/YsFelghana-AP",
+  "manifest_fields": [],
+  "versions": {
+    "Archipelago": {
+      "created_at": "2026-10-06T19:04:30Z",
+      "description": "The first release of the AP world for the game \"Ys: the Oath in Felghana\".\r\n\r\nCheck out the [README](https://github.com/polkagrisar/YsFelghana-AP) for more in-depth information.",
+      "download_url": "https://github.com/polkagrisar/YsFelghana-AP/releases/download/Archipelago/Ys_Felghana.apworld",
+      "has_manifest": false,
+      "hash_sha256": "bb088dab0b503e72c58ca0df2c8d7d94d8f00126c56295f2062a6f9eaefeada6",
+      "html_url": "https://github.com/polkagrisar/YsFelghana-AP/releases/tag/Archipelago",
+      "size": 33496,
+      "source_url": "https://api.github.com/repos/polkagrisar/YsFelghana-AP",
+      "tag": "Archipelago",
+      "title": "Ys: the Oath in Felghana\" - apworld 0.2.0",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
+    },
+    "apworld_0.3.0": {
+      "created_at": "2026-10-10T12:55:06Z",
+      "description": "Note:\r\nIs not compatible with any ongoing archipelago runs that use the old apworld.\r\n\r\nGOLD REWORK:\r\nThere is now a new item \"Magic Wallet\" that functionally divides the store in different tiers.\r\nEvery new wallet unlocks 2 locations, except the final one only unlocking 1.\r\nThere are currently 7 wallets in the pool, needing 5 to unlock the final tier.\r\nThis approach makes it so that:\r\nThere are no grinding for gold at all.\r\nYou can always access the location if you have the correct amount of wallets, you can never \"buy the wrong location\" and not be able\r\nto buy the other ones.\r\nNow the gold that all the pots give in vanilla does not actually give you gold in addition to the sent location.\r\n\r\nXP REWORK:\r\nXp from XP items are now added to a pool, instead of given directly to you when you obtain them.\r\nThen the game will set your XP (and level you up automatically), if your XP is ever below that pool.\r\nException being if you are in a boss room or the room before the boss room, since I want you to have the choice to use Brocia Serum to either level up to the boss level (to prevent grinding), or level down to the boss level (to get the intended challenge), leaving these rooms will fix your level to what you where before entering these rooms.\r\nKnown Issue:\r\nTeleporting between these rooms will let you keep the Recommended boss level from one boss to another, but I think that is fine since Brocia Serum is a choice anyways.\r\n\r\nNote: \r\nThe game uses a somewhat generic function to recalculate your level and actually level you up.\r\nThe simplest way to force this function is to open the inventory.\r\nIt should also trigger upon most room transitions, defeating an enemy, teleporting (possibly more). \r\n\r\nOTHER:\r\nAdded a simple option for changing Filler to Traps.\r\n\r\nAi disclaimer this release: https://github.com/polkagrisar/YsFelghana-AP/commit/0493893963fddadb16b1175ee5ca3a6cb83244c7\r\n1. Helped fix error in Memory.py Lines 915-916 -> 970-971.\r\n2. Helped finding the silent crash I caused in game_watcher_loop in Client.py Lines 453-462",
+      "download_url": "https://github.com/polkagrisar/YsFelghana-AP/releases/download/apworld_0.3.0/Ys_Felghana.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f4bd159552b50fc3653571025913ab5dad6b9f6f139465b83730f64eddcd2db4",
+      "html_url": "https://github.com/polkagrisar/YsFelghana-AP/releases/tag/apworld_0.3.0",
+      "minimum_ap_version": "0.6.6",
+      "size": 33121,
+      "source_url": "https://api.github.com/repos/polkagrisar/YsFelghana-AP",
+      "tag": "apworld_0.3.0",
+      "title": "Ys: the Oath in Felghana\" - apworld 0.3.0",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
+    }
+  }
+}

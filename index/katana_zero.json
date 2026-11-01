@@ -1,0 +1,35 @@
+{
+  "authors": [
+    "CheeserLPC"
+  ],
+  "flags": [
+    "unready",
+    "supports_deathlink"
+  ],
+  "game": "Katana ZERO",
+  "github": "https://github.com/CheeserLPC/Archipelago-KatanaZero",
+  "manifest_fields": [
+    "authors",
+    "flags",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.1.0": {
+      "created_at": "2026-10-30T02:14:42Z",
+      "description": "# Katana ZERO Archipelago Multiworld \u2014 v0.1.0 (Early Alpha Preview)\r\n\r\n> [!WARNING]\r\n> ### \u26a0\ufe0f Early Alpha & Development Disclaimer\r\n> This is an **initial early-access alpha release (v0.1.0)** of the Katana ZERO Archipelago integration.\r\n> While the core multiworld logic, stage unlocks, memory reader, live client hooks, and combat systems have undergone extensive testing, **this project is still in an early state and bugs, desyncs, or unexpected game engine quirks may occur.**\r\n>\r\n> - **Save Data:** The client interacts with the game in memory without permanently modifying your vanilla game files on disk. However, as standard precaution for any game mod/randomizer, backing up your local save directory (`%LOCALAPPDATA%/Katana_ZERO/`) is recommended.\r\n> - **Bug Reports & Feedback:** If you encounter unexpected behavior, crashes, or logic issues, please submit an issue on the [GitHub Issue Tracker](https://github.com/CheeserLPC/Archipelago-KatanaZero/issues).\r\n\r\n---\r\n\r\n## What's Included in This Release\r\n\r\n### Multiworld Progression & Logic\r\n- **VHS Stage Tapes (11 Items):** Progression is gated by stage tapes. Unlocking a tape opens access to that chapter in level select and throughout playthroughs.\r\n- **Combat Mechanic Shards (2 Items):** Build your moveset! Throwing (`Strength Training`) and slow-motion (`Chronos`) are independent progression items.\r\n- **Government Lab Keys (5 Items):** Prism, Phoenix, Savant, Master, and Prototype Keys hidden across the multiworld to breach the Government Lab doors.\r\n- **Swords Shuffle (5 Useful Items):** Find the Prism Sword, Phoenix Blade, Savant Blade, Master Sword, and Claymore Prototype scattered across the world.\r\n- **Enemysanity (487 Check Locations):** Optional mode where every single non-boss enemy in the game holds an item check that is immediately sent upon neutralizing them.\r\n- **3 Configurable Goals:**\r\n  - `government_lab`: Collect all 5 master keys and clear the Government Lab.\r\n  - `all_tapes`: Collect and complete all 11 stage tapes.\r\n  - `boss_rush`: Defeat all 4 major bosses (Mr. V, Kissyface, Headhunter, Psychiatrist).\r\n\r\n###  Combat Traps (7 Unique Types)\r\nWhen rolled into filler item slots, receiving a trap triggers an instant combat challenge:\r\n- **Chronos Overdose:** Inverts left and right movement controls for 15 seconds.\r\n- **Freeze Trap:** Freezes the player in place for 3 seconds.\r\n- **Chronos Disruptor:** Disables slow-motion for 15 seconds.\r\n- **Screen Flip:** Inverts the game camera upside-down for 15 seconds.\r\n- **Spatial Warp:** Teleports the player back to the stage room spawn point.\r\n- **Roll Disruptor:** Disables dodge rolling for 15 seconds.\r\n- **Pacifist Trap:** Disables sword slashes and throwing for 5 seconds.\r\n- *Trap Safety:* Traps are automatically queued during room transitions, cutscenes, and stage clear screens, only triggering once active combat gameplay stabilizes.\r\n\r\n###  Thematic DeathLink\r\n- Real-time DeathLink synchronization across the multiworld.\r\n- Broadcasts randomized Katana ZERO-flavored death messages (e.g., *\"{player} ran out of Chronos.\"*, *\"{player} brought a katana to an automatic rifle fight.\"*, *\"{player} suffered from severe Chronos withdrawal.\"*).\r\n- Configurable **DeathLink Amnesty** (`death_link_amnesty`) allowing a threshold of free deaths before broadcasting a signal.\r\n\r\n###  In-Memory Audio Randomizer\r\n- **Randomize Music:** Shuffles 47 background music tracks across all stages, cutscenes, and boss fights.\r\n- **Randomize Sound Effects:** Shuffles over 440 sound effects in Audio Group 0 for pure chaos.\r\n- **Loop Protection:** Dynamic inline assembly hook prevents pause sounds, VHS tape sounds, and ambient loops from infinitely repeating.\r\n- **Zero Disk Overhead:** Leaves your game `.ogg` files and `data.win` 100% vanilla and untouched.\r\n\r\n###  Engine Stability & Bug Safeguards\r\n- **YYGetReal Safe Fallback:** Global engine hook at `0x018DDAB0` prevents GameMaker YYC native type assertion crashes (`REAL argument incorrect type`), gracefully returning `0.0`.\r\n- **Bunker Headhunter Boss Fight Fix:** Native patch at `0x00486B12` safeguards against energy bullet collision memory reallocation, eliminating the `player_hurt` line 330 crash.\r\n\r\n###  Archipelago Launcher Integration\r\n- Includes `Components.py` registering **\"Katana ZERO Client\"** directly into the Archipelago Launcher.\r\n- Automatic process detection and attachment to `Katana ZERO.exe` with terminal connection banners and auto-rehooking if the game is restarted.\r\n\r\n---\r\n\r\n## Installation & Setup\r\n\r\n1. **Download `katana_zero.apworld`** from the Assets below.\r\n2. Place `katana_zero.apworld` in your Archipelago installation's `custom_worlds/` folder.\r\n3. Start or restart the **Archipelago Launcher**.\r\n4. Generate a YAML configuration from **\"Generate Template Settings\"** -> **\"Katana ZERO\"**.\r\n5. Launch **Katana ZERO**.\r\n6. In the Archipelago Launcher, click **\"Katana ZERO Client\"** and connect to your Archipelago room.\r\n\r\n---\r\n\r\n## Feedback & Community\r\nPlease report any feedback, balance suggestions, or issues at:\r\n\ud83d\udc49 **[GitHub Issues](https://github.com/CheeserLPC/Archipelago-KatanaZero/issues)**\r\n\r\n**Full Changelog**: https://github.com/CheeserLPC/Archipelago-KatanaZero/commits/v0.1.0",
+      "download_url": "https://github.com/CheeserLPC/Archipelago-KatanaZero/releases/download/v0.1.0/katana_zero.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d42d5f8fa0e4717d7dce7cf1ef2cba4a19b6a489b6fdfd9916ef11f482124f53",
+      "html_url": "https://github.com/CheeserLPC/Archipelago-KatanaZero/releases/tag/v0.1.0",
+      "minimum_ap_version": "0.6.8",
+      "prerelease": true,
+      "size": 378145,
+      "source_url": "https://api.github.com/repos/CheeserLPC/Archipelago-KatanaZero",
+      "tag": "v0.1.0",
+      "title": "Katana ZERO Archipelago v0.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "authors": [
+    "polkagrisar"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "Ys Felghana",
+  "github": "https://github.com/polkagrisar/YsFelghana-AP",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "apworld_0.5.0": {
+      "created_at": "2026-10-24T22:41:10Z",
+      "description": "**New features**\r\nSplit Double Jump option:\r\nYou can now split the Double jump item into multiple items, that only grant\r\nyou the ability to double jump in specific areas:\r\nQuarry + Mine (Double Jump - Quarry+)\r\nIllburn + Lava Zone (Double Jump - Illburn+)\r\nMountain + Icebound Cave (\"Double Jump - Mountain+)\r\nCastle + Dungeons + Clock Tower (\"Double Jump - Castle+)\r\nGenos Island (\"Double Jump - Genos+)\r\n\r\nRoom Sanity option:\r\nYou can now make it so that entering new rooms sends location checks.\r\nDifferent amounts to choose from.\r\nFull = 180 extra locations.\r\nNo sphere 0 = 143 extra locations.\r\nOnly the later parts of every Major Areas = 76 extra locations.\r\nNo room sanity = 0 extra locations.\r\n\r\nDisable Traps option:\r\nYou can now remove all traps from the starting pool.\r\n\r\n\r\n**Fixes**\r\nStore locations that are out of logic should no longer be able to be sent\r\nwhen you receive their Vanilla item from another player or from a location\r\nwhile in the store.\r\n\r\nFixed a bug where exiting Harold's House would not set the flags for the town\r\nin the correct position, putting the town in an unintended and bad state.\r\n\r\nFixed a bug where teleporting to outside Valestein Castle and then walking all\r\nthe way to Redmont would also cause the previously mentioned bad state.\r\n\r\nFixed a bug where some connections didn't actually evaluate logic rules correctly.\r\n\r\n0.5.1 Edit:\r\nFixed a bug where Vanilla Double Jump was never actually added to the pool.\r\n\r\n**Other**\r\nStone Shoes now auto-equip in the Clock Tower if the option is on, since\r\nthe shoes prevent slipping on the green snail goo.\r\n\r\n**Ai Usage**\r\nI gave it all the (ROOM) locations in Locations.py (Lines 196 -> 392)\r\nto convert them into the dict format needed in memory.py (Lines 404 -> 591)\r\nso that I didn't have to do it manually.\r\ne.g\r\n\"(ROOM) Redmont - Store #24\",\r\ninto\r\n\"(ROOM) Redmont - Store #24\": None,\r\n\r\nIt taught me more about how dicts and lists works.\r\n",
+      "download_url": "https://github.com/polkagrisar/YsFelghana-AP/releases/download/apworld_0.5.0/ys_felghana.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f6026b061f1a999eab10bdc5ca011f9d9f40a5b395419b89c47c2ffae48b3d2e",
+      "html_url": "https://github.com/polkagrisar/YsFelghana-AP/releases/tag/apworld_0.5.0",
+      "minimum_ap_version": "0.6.6",
+      "size": 38801,
+      "source_url": "https://api.github.com/repos/polkagrisar/YsFelghana-AP",
+      "tag": "apworld_0.5.0",
+      "title": "apworld 0.5.1",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0"
+    }
+  }
+}
