@@ -3,7 +3,7 @@
 ## Required Software
 - [Latest release of Archipelago Multiworld Suite](https://github.com/ArchipelagoMW/Archipelago/releases). 
 - [Crypt of the NecroDancer](https://store.steampowered.com/app/247080/Crypt_of_the_NecroDancer/)
-- [Crypt of the NecroDancer: SYNCRHONY expansion](https://store.steampowered.com/app/2094810/Crypt_of_the_NecroDancer_SYNCHRONY/)
+- [Crypt of the NecroDancer: SYNCHRONY expansion](https://store.steampowered.com/app/2094810/Crypt_of_the_NecroDancer_SYNCHRONY/)
 
 ## Setup process
 1. Download and install the latest release of Archipelago Multiworld from the link above.
@@ -11,7 +11,7 @@
 3. Head over to your NecroDancer game directory and access the `Necrodancer64` folder.
    - Steam: You can access this via right-clicking your game in your library, hovering over "Manage" and selecting "Browse Local Files".
    - Steam File Directory: `Steam\steamapps\common\Crypt of the NecroDancer\Necrodancer64`
-4. Modify `config.json`, adding the following strings to the end of the `scriptWhitelist` property: `"system.file.Storage"` and `"system.network.Client`. An example is provided below.
+4. Modify `config.json`, adding the following strings to the end of the `scriptWhitelist` property: `"system.file.Storage"` and `"system.network.Client"`. An example is provided below.
    ```json
    "scriptWhitelist": ["necro.*","system.game.Audio","system.game.Bitmap","system.game.Entities","system.game.FileIO","system.game.Graphics","system.game.Input","system.network.IPC","system.events.*","system.gfx.*","system.i18n.*","system.utils.*","system.file.Storage","system.network.Client"]
    ```
@@ -21,7 +21,7 @@
    - Mac: `~/Library/Application Support/NecroDancer`
    - Linux: `~/.local/share/NecroDancer`
 
-6. Start the game up and access the menu with the `esc` key. Select `Customize` and then `Mods`. Enable the `ArchipelagoMod` mod.
+6. Start the game up and access the menu with the `esc` key. Select `Customize` and then `Mods`. Enable the `Archipelago Redux` mod.
 
 7. Provided you've followed the setup guide correctly, you should now see a new trap in the lobby labelled "Archipelago".
     - If you do not see this trap after fixing a previous step, be sure to either restart your game or restart the lobby.
@@ -54,7 +54,7 @@ If you would like to validate your config file to make sure it works, you may do
    - Alternately, navigate to the [Player Settings](../player-settings) page, configure your options,
       and click the "Generate Game" button.
    - If you are hosting a multiplayer session, make sure to place the other players' YAML files into this folder as well. If they are playing games that are not officially supported, you will need to include their game's `.apworld` in your `custom_worlds` folder.
-2. Once you've added all the Open the Archipelago Launcher and click "Generate". This will create a zip file in `Archipelago/output`.
+2. Once you've added all the YAML files, open the Archipelago Launcher and click "Generate". This will create a zip file in `Archipelago/output`.
 3. Navigate to the Archipelago website and go to the Host Game page
 4. Click upload file and pass it the .zip created in your output folder
 5. Click the "Create New Room" link.

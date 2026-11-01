@@ -72,7 +72,6 @@ Items that can be shuffled:
 - Blue_Zone() and ._locale
 - The MemFinder
 - ReCollection unlocks
-- Exander (this causes Wink to transform into Exander)
 
 ## What does another world's item look like in Silver Daze?
 
@@ -83,3 +82,7 @@ Itmes in shops and ReCollections will display an Archipelago icon as well as the
 
 Items are automatically added to the player's inventory upon receiving a message from the game. 
 If the game does not give you an item, leaving a room will force a refresh, causing the item to return to your inventory if it is not detected.
+
+## How many locations does Silver Daze have?
+
+Based on your options, the number of in-logic locations can range from as little as 180 to as many as 400.

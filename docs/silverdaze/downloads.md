@@ -1,9 +1,12 @@
 # Silver Daze
 
 ## Latest
-- <a href="https://github.com/udime123/Silver-Daze-APWorld/releases/download/0.7.4/silverdaze.apworld">Latest Version (0.7.4)</a>
+- <a href="https://github.com/udime123/Silver-Daze-APWorld/releases/download/0.7.5/silverdaze.apworld">Latest Version (0.7.5)</a>
 
 ## All Versions
+
+#### v0.7.5
+- <a href="https://github.com/udime123/Silver-Daze-APWorld/releases/download/0.7.5/silverdaze.apworld">https://github.com/udime123/Silver-Daze-APWorld/releases/download/0.7.5/silverdaze.apworld</a>
 
 #### v0.7.4
 - <a href="https://github.com/udime123/Silver-Daze-APWorld/releases/download/0.7.4/silverdaze.apworld">https://github.com/udime123/Silver-Daze-APWorld/releases/download/0.7.4/silverdaze.apworld</a>
