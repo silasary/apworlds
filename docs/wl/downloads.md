@@ -1,9 +1,12 @@
 # Wario Land
 
 ## Latest
-- <a href="https://github.com/randomcodegen/Archipelago/releases/download/1.2.6/wl.apworld">Latest Version (1.2.6)</a>
+- <a href="https://github.com/randomcodegen/Archipelago/releases/download/1.3.0/wl.apworld">Latest Version (1.3.0)</a>
 
 ## All Versions
+
+#### v1.3.0
+- <a href="https://github.com/randomcodegen/Archipelago/releases/download/1.3.0/wl.apworld">https://github.com/randomcodegen/Archipelago/releases/download/1.3.0/wl.apworld</a>
 
 #### v1.2.6
 - <a href="https://github.com/randomcodegen/Archipelago/releases/download/1.2.6/wl.apworld">https://github.com/randomcodegen/Archipelago/releases/download/1.2.6/wl.apworld</a>

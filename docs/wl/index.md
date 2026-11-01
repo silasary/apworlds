@@ -4,7 +4,7 @@ Wario Land: Super Mario Land 3 is a 1994 platform game developed and published b
 
 
 ## Downloads
-- <a href="https://github.com/randomcodegen/Archipelago/releases/download/1.2.6/wl.apworld">Latest Version (1.2.6)</a>
+- <a href="https://github.com/randomcodegen/Archipelago/releases/download/1.3.0/wl.apworld">Latest Version (1.3.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

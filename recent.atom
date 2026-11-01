@@ -2,365 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-01T12:14:39.003421+00:00</updated>
+  <updated>2026-11-01T18:17:31.194290+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/SWCreeperKing/Loddlepelago/releases/tag/v0.1.0-alpha.2</id>
-    <title>Loddlenaut v0.1.0a2</title>
-    <updated>2026-10-28T04:49:03+00:00</updated>
-    <author>
-      <name>SW_CreeperKing</name>
-    </author>
-    <content>- Fix Order button not working&#13;
-- Added Recycle Bot Ingot Cost QoL Option</content>
-    <link href="https://github.com/SWCreeperKing/Loddlepelago/releases/tag/v0.1.0-alpha.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SWCreeperKing/Loddlepelago/releases/tag/v0.1.0-alpha.3</id>
-    <title>Loddlenaut v0.1.0a3</title>
-    <updated>2026-10-28T07:53:35+00:00</updated>
-    <author>
-      <name>SW_CreeperKing</name>
-    </author>
-    <content>- Fixed Item Handler (requires you to restart the current game save)&#13;
-- Fixed Preview Render for shipping packages</content>
-    <link href="https://github.com/SWCreeperKing/Loddlepelago/releases/tag/v0.1.0-alpha.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.3.3</id>
-    <title>ARK Survival Evolved v1.0.0r6</title>
-    <updated>2026-10-28T18:26:57+00:00</updated>
-    <author>
-      <name>Jbaker16163</name>
-    </author>
-    <content># ARK-Ipelago Evolved v0.3.3&#13;
-&#13;
-This release focuses on one bug fix.&#13;
-&#13;
-## Bug Fixes&#13;
-- Fixed certain counts resetting on server restart. &#13;
-&#13;
-## Additional Downloads&#13;
-Avocado's Launcher and Lurch's PopTracker are also attached to this release.&#13;
-&#13;
-- [Lurch's PopTracker](https://github.com/lurch9229/Arkipelago-Poptracker/releases)&#13;
-- [Avocado's Launcher](https://github.com/aSoberAvocado/ARK-Ipelago-Evolved-Launcher/releases)</content>
-    <link href="https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.3.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/IronJade/Shattered-Stars/releases/tag/apworld-v0.2.2</id>
-    <title>Star Ocean: The Second Story v0.2.2</title>
-    <updated>2026-10-28T18:27:50+00:00</updated>
-    <author>
-      <name>IronJade</name>
-    </author>
-    <content># so2.apworld 0.2.2
-
-Version 0.2.2 of the Archipelago world for *Star Ocean: The Second Story* adds **tracker
-support**. [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases) now
-rebuilds your room exactly, without your YAML, and explains what a location needs. The room
-carries its own logic, so the new PopTracker pack shows exactly what the world says. And in story
-mode, with Shattered Stars 0.03.00 connected, both trackers follow the story. It makes the same
-seeds as 0.2.1 from the same options and seed number, and plays on Shattered Stars 0.02.51 and
-later.
-
-It has its own release, apart from [the game's](https://github.com/IronJade/Shattered-Stars/releases/tag/v0.03.00)
-and [the PopTracker pack's](https://github.com/IronJade/Shattered-Stars/releases/tag/poptracker-v1.0.0).
-Get the game from [Shattered Stars 0.03.00](https://github.com/IronJade/Shattered-Stars/releases/tag/v0.03.00),
-the pack from [PopTracker pack 1.0.0](https://github.com/IronJade/Shattered-Stars/releases/tag/poptracker-v1.0.0).
-
-## What's new: Universal Tracker
-
-Universal Tracker (UT) is an Archipelago client that lists the locations you can reach right now,
-by the game's own logic, from what the server says you have received and checked. It builds this
-world again on your machine and asks it. Until now that only worked by chance: UT made the world
-again with another random seed and your YAML, and in open world with `character_items`, in hub
-mode, or in story mode with `character_items`, the party it drew was not yours, so it showed the
-wrong killer-move levels, crafts and learn levels (30 to 130 locations off in our tests).
-
-Now:
-
-- **No YAML needed.** UT rebuilds the world from the room's own data: every option, your party
-  pool and, in hub mode, your start town. Install `tracker.apworld` and the room's `so2.apworld`
-  in Archipelago's `custom_worlds` folder, open Universal Tracker from the Launcher and connect
-  with your slot name. Your game can stay connected at the same time.
-- **It is exact.** For every option mix we test (story, open world and hub mode, with and without
-  the bench, every way the party can be drawn), the locations UT lists as reachable are exactly
-  the ones the generator counted on, step by step through the whole game.
-- **In story order.** UT's list runs through the areas in the order the story reaches them,
-  Arlia first and the Cave of Trials last, then the skill guilds, learn levels, Item Creation and
-  killer moves.
-- **Excluded locations** (`exclude_locations`) show in UT's excluded group.
-- **`/explain &lt;location&gt;` says what a location needs.** The world's rules are now data
-  (Archipelago's Rule Builder) instead of code, so UT's `/explain` prints a location's rule, with
-  what you have in green and what is missing in red, and the ways into its region. The logic is
-  the same as 0.2.1's, rule for rule.
-- **A room it can't track is refused, not tracked wrong.** Each room now says which logic it was
-  made with (`logic_version`, 1). If the so2.apworld you installed can't rebuild the room (a room
-  made with a newer version of this world, for example), UT says "The world has informed UT that
-  your options are incompatible", and its `/faris_asked` command names the so2.apworld to install.
-- **Universal Tracker's map tab.** UT now shows a map tab too: it carries its own map and
-  location data (`apworld/so2/ut_map.py`, `apworld/so2/tracker/`) and takes its pictures from a
-  zip, which UT asks you for once, by a file dialog, and remembers in `host.yaml`: either
-  `so2_shattered_stars_ut.zip`, your own maps, which Shattered Stars 0.03.00 writes when it renders
-  them from your disc (setup's **Render tracker maps for PopTracker**, or
-  `--render-tracker-maps`), or the PopTracker pack's zip, with its plain stand-in maps. It follows
-  the room the game reports and shows a marker for your party on the two world maps. When UT
-  connects, the map tab opens on Expel's world map (with your marker if you are there) and follows
-  your game from its next move: the next room, or a step on a world map. It has no doors: a door is not an AP location, entrance or event, so it carries no
-  "which door leads where" of its own (that's PopTracker, below).
-
-## What's new: logic for PopTracker
-
-The room now carries the world's logic as data (the slot data's `tracker` key: its regions,
-entrances, events and every location's rule, about 4 to 35 KB), so a tracker that can't run the
-world itself can still show exactly what it says. The **PopTracker pack** (`so2_shattered_stars`
-1.0.0, its own release) reads it: with a 0.2.2 room its map and board squares are green when a
-check is in logic and red when not, the same as Universal Tracker, for every option and seed. The
-format already has room for an entrance randomizer later: named entrances, and doors that stay
-unconnected until found.
-
-## What's new: story mode follows the story
-
-Story mode's chapters need no items, so by the logic alone almost every check is reachable from the
-start, and a tracker listed checks in towns the party hadn't reached yet. With Shattered Stars
-0.03.00 connected to the room, the game tells the server which chapter it is in, and both trackers
-now follow it:
-- **Universal Tracker** lists only what the story has reached: a town's checks join the list when
-  the story takes you there, Energy Nede's after the disc switch, the Cave of Trials and the
-  chapter-60 scenes on Expel after the Final Save Point. It follows the chapter live, also back to an
-  earlier save. `enforce_deferred_entrances: "off"` in host.yaml (UT's setting) turns it off.
-- **The PopTracker pack** shows the checks later in the story in blue (and those the story has
-  reached green, as before); its **Story** item turns that off, and its **Chapter** item can be set
-  by hand when the game isn't connected.
-- Before the game has connected, with an older Shattered Stars, and in open world and hub mode
-  (whose stages are keyed) both show what the logic alone says, as before.
-
-The story is followed by its 24 points: the start of each of the 23 story stages, and the Final
-Save Point (chapter 60, step 4000). A stage is the unit: a gift first given in the middle of a stage
-shows from the stage's start.
-
-## Older rooms
-
-- **Rooms made with 0.2.1** track in Universal Tracker with 0.2.2 installed, exactly: 0.2.1's
-  logic is 0.2.2's.
-- **Rooms made with 0.2.0** track with 0.2.2 too. With `skillsanity` on, UT warns in its log that
-  0.2.1 changed the logic of Skillsanity's guild checks and learn levels (they may hold
-  progression since, with stricter rules of their own): some of them may show up **later** than
-  they really became reachable, never earlier. Measured on 45 such rooms (29 showed fewer at some
-  point, 16 the same, none more) and on a player's own; regenerate with 0.2.2 for exact tracking.
-- **A 0.2.0 hell seed** (`encounter_rate: 0` with killer-move checks) is refused: track it with
-  so2.apworld 0.2.0 and your YAML in UT's Players folder.
-- **In PopTracker**, rooms made with 0.2.0 or 0.2.1 have no logic in them: the pack shows every
-  check as reachable (a checklist) and its banner says so. The pack's story awareness needs a
-  0.2.2 room too.
-
-## Your seeds
-
-- **The seeds are the same.** 0.2.2 puts the same items in the same places as 0.2.1 from the same
-  options and seed number, with the same spoilers (checked over the release workflow's 288 seeds).
-  Only the version number written into the seed changes. The room's slot data gains three keys
-  for trackers, `logic_version`, `exclude_locations` and `tracker` (in story mode with the story's
-  points), which the game doesn't read.
-- There are no new options: a YAML from 0.2.1 works as it is.
-- Shattered Stars 0.02.51 plays every 0.2.2 seed; 0.02.50 every one without the bench, as with
-  0.2.1. Shattered Stars 0.03.00 also tells your trackers your map and story.
-
-## Installing
-
-1. Copy `so2.apworld` into the `custom_worlds` folder of **Archipelago 0.6.8 or newer**,
-   replacing the old one. Keep only one copy: Archipelago refuses to load the same game twice.
-2. Generate as usual, with your options YAML or the template, `Star.Ocean.The.Second.Story.yaml`.
-3. Play the seed on [Shattered Stars 0.03.00](https://github.com/IronJade/Shattered-Stars/releases/tag/v0.03.00)
-   (0.02.51 plays it too, without the map and story for trackers).
-4. Trackers: for Universal Tracker, put its `tracker.apworld` beside this `so2.apworld`; for
-   PopTracker, get the [pack](https://github.com/IronJade/Shattered-Stars/releases/tag/poptracker-v1.0.0).
-   How to set both up: [Trackers](https://github.com/IronJade/Shattered-Stars/wiki/Trackers) on
-   the wiki.
-
-Details, every option, and troubleshooting: [Archipelago](https://github.com/IronJade/Shattered-Stars/wiki/Archipelago)
-on the wiki.
-
-## What's in this release
-
-| File | What it is |
-|---|---|
-| `so2.apworld` | The Archipelago world for Star Ocean: The Second Story, version 0.2.2. |
-| `Star.Ocean.The.Second.Story.yaml` | The options template for that world. |
-| `SHA256SUMS` | The SHA-256 sums of the two files (also below). |
-
-The game itself is Shattered Stars, from [its own release](https://github.com/IronJade/Shattered-Stars/releases/tag/v0.03.00)
-(0.03.00 for the tracker keys; 0.02.51 plays the seeds too).
-
-The world was checked with its own tests (882, unchanged by the map tab), Archipelago's general
-tests (379, and 935 scoped to this world), the slow tests' 700 rooms (320 rebuilt the way UT does
-and compared at every sphere, 320 whose logic export was evaluated at every sphere, 60 story
-rooms at 27 story positions each), the release workflow's 288 seeds, the same as 0.2.1's but the
-version number (the map tab adds no slot-data key), and the real Universal Tracker 0.3.6 and
-PopTracker 0.36.0 against local rooms: UT's list was the world's own in all 59 comparisons, the
-story ones included; PopTracker's squares were too, at every point of its 45 checks (37 logic and
-story checks, plus the room maps' door-click, door-colour and auto-tab step); and UT's own map tab loaded
-16/16 of those rooms correctly, both from the repository world and from the packaged
-`so2.apworld`, with the pack's zip and with the game's own zip of a render (every page's picture
-through UT's own image loader).
-
-## Known limitations
-
-- **Story awareness follows stages, not single scenes.** A gift first given in the middle of a
-  stage shows from the stage's start; Fienal's floors count from the last chapters' stage
-  (chapter 58), though the party enters at chapter 60; the Final Save Point counts from the step
-  before the save (chapter 60, step 4000).
-- **PopTracker shows no "out of logic" (yellow).** The room's logic says what is in logic, not
-  what could be done out of it.
-- **Universal Tracker: don't turn Auto Tab off before UT connects.** With Auto Tab turned off
-  (`/toggle_auto_tab`) before its first connect of a session, UT 0.3.6 drops the connection when it
-  connects (an `AttributeError` about `location_icons` in its log; UT's own issue): connect first
-  (once connected, the checkbox is fine), or turn it back on and `/connect` again.
-- **Trackers update only while the game is online**: checks made offline show once the game
-  reconnects and sends them.
-- The rest: see the [Shattered Stars 0.03.00 release notes](https://github.com/IronJade/Shattered-Stars/releases/tag/v0.03.00).
-
-## For developers
-
-- `apworld/so2/ut.py`: the slot data -&gt; option table, the checks, the refusal, the sort order,
-  `LOGIC_VERSION` and when to bump it. docs/apworld/apworld.md "Trackers" and docs/apworld/seed_format.md
-  "Slot data and trackers".
-- `apworld/so2/logic.py`: the rules as Rule Builder data; `test/test_logic.py` keeps every rule a
-  serialisable Rule Builder rule (docs/apworld/apworld.md "Rules as data").
-- `test/test_ut.py` mirrors UT's rebuild and its fuzzer hook's sphere-by-sphere check without UT
-  installed; `SO2_SLOW_TESTS=1` runs 20 seeds per mix. `trackers/tools/ap_ut_check.py` runs the real UT
-  client headless against a local room (the release workflow).
-- `apworld/so2/tracker_export.py` writes the `tracker` key (format 1: docs/apworld/seed_format.md "The
-  tracker export"); `trackers/tools/ap_tracker_logic.py` is the reference evaluator, and `test/test_tracker.py`
-  checks it against the world's own logic sphere by sphere and on random item states for every UT
-  mix (`SO2_SLOW_TESTS=1`: 20 seeds each), plus the export's shape, round trip and size. The
-  PopTracker pack's Lua evaluator is tested against the reference (trackers/tools/ap_poptracker_test.py) and
-  in the real PopTracker 0.36.0 (trackers/tools/ap_poptracker_smoke.py).
-- `apworld/so2/story.py`: story awareness, one source for both trackers: the story's points, each
-  location's point, the export's `story` key, and Universal Tracker's deferred story events
-  (`found_entrances_datastorage_key` = the port's `so2_story_{team}_{player}`,
-  `reconnect_found_entrances`; only in UT's regeneration of a story-mode room, never with
-  `enforce_deferred_entrances` off). docs/apworld/apworld.md "Story awareness", docs/apworld/seed_format.md
-  "Story awareness". `test/test_story.py` checks UT's in-logic set against the reference
-  evaluator's at every story point; trackers/tools/ap_ut_check.py and trackers/tools/ap_poptracker_smoke.py set the
-  story key on a local server as the game does and check both real trackers follow it (UT: 142 of
-  578 checks at chapter 3 up to all 578 at the Final Save Point; PopTracker: 37 green and 546 blue
-  at chapter 3).
-
-## SHA-256 sums
-
-```
-0212e0fd0c811cc8261ac3740d10694c98515d3dae7f2c05c6bb212ff175cdf7  so2.apworld
-09b32d474b303daea70cddc3d86520f591182e5a063d4180a0f77f2c7cbb5c68  Star.Ocean.The.Second.Story.yaml
-```
-</content>
-    <link href="https://github.com/IronJade/Shattered-Stars/releases/tag/apworld-v0.2.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/GhostCappy/Archipelago/releases/tag/kssu-v0.2.2</id>
-    <title>Kirby Super Star Ultra v0.2.2</title>
-    <updated>2026-10-28T18:37:46+00:00</updated>
-    <author>
-      <name>GhostCappy</name>
-    </author>
-    <content>## Bug fixes&#13;
-- "Local" mode for Milky Way wishes is now properly fixed.&#13;
-&#13;
-## Known Bugs&#13;
-Please refer to the [FAQ](https://github.com/GhostCappy/Archipelago/blob/main/worlds/kssu/docs/FAQ.md) for all currently known bugs. If you have any questions, feel free to ping!&#13;
-&#13;
-This version is NOT backwards compatible with seeds generated before v0.2.2. Please finish any current seeds before updating!</content>
-    <link href="https://github.com/GhostCappy/Archipelago/releases/tag/kssu-v0.2.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.30.0</id>
-    <title>Super Crazy Rhythm Castle v0.30.0</title>
-    <updated>2026-10-28T19:35:19+00:00</updated>
-    <author>
-      <name>Jack</name>
-    </author>
-    <author>
-      <name>OpenAI</name>
-    </author>
-    <content># v0.30.0 — Bunker and True Ending
-
-October 28, 2026. Client 0.77.0 / APWorld 0.30.0.
-
-## New progression
-
-- Optional True Ending victory alongside the default King Ferdinand ending.
-- Randomized Bunker Keycard, Demon Key, Virus, Cheat Codes and Game Ender, plus six new checks.
-- Bunker progression defaults to enabled; requires at least two goal Stars. The Bunker Star Eater always requires fewer Stars than the Level 22 entrance and its Superstar cartridge source is randomized.
-- The Demon Key controls the separate Devil quest; Gecko's Data Stick and Note Pad remain native quest setup.
-- New seeds open Demolition Training and School Trip doors with Lobby Access, retaining generated Star gates.
-- Cell Tower Access opens Old Tom's connecting route without nectar delivery; read the note and leave/re-enter the area to update the Star Eater route.
-
-## Fixes and cleanup
-
-- Correct incompatible Bunker/goal settings to raise Archipelago OptionError, rather than generation crashes.
-- Replace an unsafe native event conversion implicated in final-level transition crashes.
-- Remove F8 movement recording and temporary profiling/diagnostic callbacks while preserving movement repairs and ordinary error logging.
-- Add schema21 Universal Tracker reconstruction and preserve legacy schema19/20 rules.
-
-## Updating and validation
-
-Install the client archive with its licenses and scrc.apworld into Archipelago's custom_worlds folder while applications are closed. Use a fresh seed and native save for the new Bunker options. Existing schema19/20 rooms retain their original placements and rules; do not regenerate an active room. Keep its YAML for Universal Tracker. The Ionium YAML creator may still offer the previous indexed version until this release is indexed.
-
-The corrected APWorld passed Ionium's full browser CI preset on Archipelago 0.6.7 and 0.6.8: 458 unit tests, 29,000 attempted fuzz cases, zero failures/timeouts, including Universal Tracker. Invalid option combinations were correctly ignored. Version metadata is updated for this release; index CI remains authoritative.
-
-The native Gecko quest and final ending were investigated in staged saves, but the complete randomized schema21 receipt/source/goal flow has not yet completed an end-to-end gameplay acceptance run. Intermittent performance reports and broader multiplayer coverage remain open. See [known issues](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.0/docs/KNOWN_ISSUES.md) and [testing](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.0/docs/TESTING.md).
-</content>
-    <link href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.30.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ToxicFrog/doom-mods/releases/tag/uzap-0.9.1</id>
-    <title>UZDoom v0.9.1</title>
-    <updated>2026-10-28T20:38:01+00:00</updated>
-    <author>
-      <name>ToxicFrog</name>
-    </author>
-    <content># 0.9.1&#13;
-&#13;
-This is a bugfix release to fix a crash in the client. It is backwards&#13;
-compatible with logic and tuning data from 0.9.0. Updating with games in&#13;
-progress may work but has not been tested.&#13;
-&#13;
-If you are updating from 0.8.x or any earlier version, you are strongly&#13;
-encouraged to also read the 0.9.0 release notes.&#13;
-&#13;
-- New:&#13;
-  - You can now select `all` (0) as the spawn filter in the YAML. This will&#13;
-    spawn checks for all difficulties at once, not just the one you are playing.&#13;
-  - Key shapes and colours are now defined [in GZAPRC](../../blob/uzap-0.9.1/gzap/doc/gzaprc.md#keyshape-missing-held--key-classes-or-patterns).&#13;
-    Logic developers can add this to the GZAPRC for the wad, and players can&#13;
-    provide their own to override the defaults.&#13;
-- Changed:&#13;
- - UZAP now uses `RuleBuilder` internally. This makes generation much faster and&#13;
-   enables the `/explain` command in the client.&#13;
-- Fixed:&#13;
-  - Errors in Ashes 2063 logic. (This was hotfixed back to 0.9.0.)&#13;
-  - Client crash when used with `--slot`.</content>
-    <link href="https://github.com/ToxicFrog/doom-mods/releases/tag/uzap-0.9.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ragmoa/Archipelago/releases/tag/0.5.4</id>
-    <title>Okami HD v0.5.4</title>
-    <updated>2026-10-28T20:53:30+00:00</updated>
-    <author>
-      <name>Axertin</name>
-    </author>
-    <author>
-      <name>Ragmoa</name>
-    </author>
-    <content>- Rework item instaciation.&#13;
-- Junk pool can now be customized with new settings&#13;
-- Added Food Items in Junk pool&#13;
-</content>
-    <link href="https://github.com/Ragmoa/Archipelago/releases/tag/0.5.4"/>
-  </entry>
   <entry>
     <id>https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/tag/0.1.1</id>
     <title>Chants of Sennaar v0.1.1</title>
@@ -881,29 +527,6 @@ Please update both the mod and the apworld before playing this update.&#13;
     <link href="https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/tag/0.2.0"/>
   </entry>
   <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
-    <title>Team Fortress 2 Mann vs Machine v1.18.4r2</title>
-    <updated>2026-10-30T07:23:10+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
-and it is replaced without warning. For something that stays put, use the
-[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
-
-Built from `0127bd9f2109183bb1dceb9f0ffc107e7830f905`.
-
-## Downloads
-
-- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
-- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
-
-## Since v1.18.5
-
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
-  </entry>
-  <entry>
     <id>https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.5.38</id>
     <title>Muse Dash v1.5.38</title>
     <updated>2026-10-30T13:10:33+00:00</updated>
@@ -1242,7 +865,7 @@ Free code signing for open source projects, provided by
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release8</id>
-    <title>Ocarina of Time v9.1.0r2</title>
+    <title>Ocarina of Time v9.1.0r3</title>
     <updated>2026-10-30T22:55:22+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1710,6 +1333,27 @@ FAQ: https://github.com/kenniky/ArchipelagoSSE/blob/main/worlds/ssbb_sse/docs/fa
     <link href="https://github.com/kenniky/ArchipelagoSSE/releases/tag/v0.3.1"/>
   </entry>
   <entry>
+    <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.4</id>
+    <title>The Grinch v1.6.4</title>
+    <updated>2026-11-01T02:59:58+00:00</updated>
+    <author>
+      <name>MarioSpore</name>
+    </author>
+    <author>
+      <name>SomeJakeGuy</name>
+    </author>
+    <content>## Changes&#13;
+- With `randomize_vacuum_tubes`, choose your fate,&#13;
+Find all four at the start, or let the pool decide your state!&#13;
+- The apworld's up to date, running smooth and great, &#13;
+Now powered by Archipelago version `0.6.8`!&#13;
+&#13;
+## Bugfixes&#13;
+- Fixed an advanced logic bug, now the tents can meet their end,&#13;
+No longer must you Seize to make the mission’s check succeed again!</content>
+    <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.4"/>
+  </entry>
+  <entry>
     <id>https://github.com/udime123/Silver-Daze-APWorld/releases/tag/0.7.5</id>
     <title>Silver Daze v0.7.5</title>
     <updated>2026-11-01T05:49:58+00:00</updated>
@@ -1718,5 +1362,373 @@ FAQ: https://github.com/kenniky/ArchipelagoSSE/blob/main/worlds/ssbb_sse/docs/fa
     </author>
     <content>Compatibility change for main Archipelago support. No gameplay changes.</content>
     <link href="https://github.com/udime123/Silver-Daze-APWorld/releases/tag/0.7.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Mitchell1711/Archipelago/releases/tag/v1.0.1</id>
+    <title>Shovel Knight Pocket Dungeon v1.0.0r2</title>
+    <updated>2026-11-01T12:22:47+00:00</updated>
+    <author>
+      <name>Mitchell</name>
+    </author>
+    <content># Shovel Knight Pocket Dungeon Archipelago v1.0.0&#13;
+&#13;
+[Setup](https://github.com/Mitchell1711/Archipelago/blob/skpd_ap/worlds/pocket_dungeon/docs/setup_en.md) | [Mod Page](https://steamcommunity.com/sharedfiles/filedetails/?id=3619001702)&#13;
+&#13;
+Minor update that fixes some edge-case generation issues and adds additional option validation&#13;
+&#13;
+### Changes&#13;
+- Added additional key validation for Excluded Characters and Filler Weights.&#13;
+- Fixed an issue where if Shuffle Refract Characters was off and Starting Character is Refract was on the starting character would not be added to the starting inventory.&#13;
+- Throw an OptionError if every character is added to Excluded Characters.&#13;
+- Setting all filler weights to 0 won't trip up the generator anymore.&#13;
+- Starting Relic Slots will stop filling if there are not enough locations.&#13;
+- Added a failsafe for settings that cause extremely low location counts.</content>
+    <link href="https://github.com/Mitchell1711/Archipelago/releases/tag/v1.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.6</id>
+    <title>Team Fortress 2 Mann vs Machine v1.18.6</title>
+    <updated>2026-11-01T12:47:29+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>&lt;p align="center"&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
+    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
+    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+
+## Changes
+
+### Fixed
+
+- **Servers work on the TF2 update of 30 October 2026.** Windows servers
+  load SigMod again, so the community missions that need it start at their
+  first wave instead of staying on wave 0.
+
+
+## Windows
+
+Download **`tf2ap.exe`** above. Run it. It installs everything else.
+
+Windows will warn you, and it is a false positive. The exe unpacks archives and
+starts a game server without a code signature, which looks like a virus to a
+scanner. Click **More info**, then **Run anyway**, or check it below first.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
+
+## Linux
+
+Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
+
+```sh
+chmod +x tf2ap-linux-amd64
+./tf2ap-linux-amd64
+```
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
+
+## Docker
+
+Download **`compose.yaml`** and **`env.example`**:
+
+```sh
+mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
+base=https://github.com/m-this/tf2-archipelago/releases/latest/download
+curl -fsSLO "$base/compose.yaml"
+curl -fsSL -o .env "$base/env.example"
+```
+
+Set `SRCDS_RCONPW` in `.env`, then:
+
+```sh
+docker compose --profile seed run --rm seed   # writes ./seed
+docker compose up -d
+```
+
+Upload the file from `seed/` at
+[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
+port into `AP_PORT`.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
+
+## Other assets
+
+| File | For |
+| --- | --- |
+| `tf2_mvm.apworld` | The official Archipelago app. |
+| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
+| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
+| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
+
+## Checking what you downloaded
+
+**`SHA256SUMS`** is attached to this release. It holds the hash of every file
+here, computed by the workflow that built them.
+
+```powershell
+Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
+```
+
+```sh
+sha256sum -c SHA256SUMS --ignore-missing    # Linux
+```
+
+Each binary carries a signed record of the commit and the workflow that built
+it:
+
+```sh
+gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
+```
+
+The binaries are scanned on VirusTotal, and the reports are linked at the end of
+these notes. Expect a few heuristic detections and no named malware family. The
+source is all in the repository, and `make launcher` rebuilds the exe on your
+own machine.
+
+## Code signing policy
+
+Free code signing for open source projects, provided by
+[SignPath.org](https://signpath.org), with a certificate from the
+[SignPath Foundation](https://signpath.org).
+
+&gt; [!WARNING]
+&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
+&gt; unsigned, and Windows warns about it until that changes.
+
+
+## What's Changed
+* chore(deps): pin everything keyed to TF2 11191711 by @m-this in https://github.com/m-this/tf2-archipelago/pull/253
+* feat(ci): open the pins pull request when TF2 moves by @m-this in https://github.com/m-this/tf2-archipelago/pull/254
+* chore(release): v1.18.6 by @m-this in https://github.com/m-this/tf2-archipelago/pull/255
+
+
+**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.18.5...v1.18.6
+
+## VirusTotal
+
+- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/ZWFhZTA5YjZmYmQyZmY2OTBlNjMyODkwZmMxZmMwNGQ6MTc5MzUzNzY0Nw==/detection)
+- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/ZjkwNzZiNmFhMzRkY2FhYmJhMTQ2MDBkYTk2ODVkZWI6MTc5MzUzNzY1MA==/detection)
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release9</id>
+    <title>Ocarina of Time v9.1.0r2</title>
+    <updated>2026-11-01T13:59:46+00:00</updated>
+    <author>
+      <name>espeon65536</name>
+    </author>
+    <author>
+      <name>TreZ</name>
+    </author>
+    <content># OoT Randomizer APWorld v9.1.0 Full Release 9&#13;
+&#13;
+This is a pretty well tested version by now. Generation fails still might happen on occasion, especially when using pre-completed dungeons.&#13;
+&#13;
+&#13;
+## Changes:&#13;
+- Fix: Item Type Serialization error with new APPP&#13;
+- Universal Tracker: Dropping locations that require ocarina notes when those are not shuffled&#13;
+&#13;
+Please note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.</content>
+    <link href="https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release9"/>
+  </entry>
+  <entry>
+    <id>https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/tag/3.5.0</id>
+    <title>Wario Land 4 v3.5.0</title>
+    <updated>2026-11-01T14:04:35+00:00</updated>
+    <author>
+      <name>lil David</name>
+    </author>
+    <content>## Option changes&#13;
+* New Required Bosses option&#13;
+  * Determines the number of passage bosses that must be defeated to open the Golden Pyramid&#13;
+  * The Entry Passage can now optionally count toward this requirement, so you can even require all 5&#13;
+  * If the Entry Passage is included, its jewel pieces are now doubled if the Golden Pyramid's are&#13;
+&#13;
+## Logic changes&#13;
+* Fixed the TTL current circle room not requiring super ground pound in anything-goes logic&#13;
+* Added CMV precise throw trick for the agile bat hidden box/diamond to advanced logic&#13;
+&#13;
+**Full Changelog**: https://github.com/lilDavid/Archipelago-Wario-Land-4/compare/3.4.0...3.5.0</content>
+    <link href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/tag/3.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
+    <title>Team Fortress 2 Mann vs Machine v1.18.7</title>
+    <updated>2026-11-01T14:18:08+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
+and it is replaced without warning. For something that stays put, use the
+[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
+
+Built from `a1ea1dd020f07d207a262cdaad1fffb4001090c4`.
+
+## Downloads
+
+- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
+- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
+
+## Since v1.18.7
+
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.7</id>
+    <title>Team Fortress 2 Mann vs Machine v1.18.7r2</title>
+    <updated>2026-11-01T14:18:11+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>&lt;p align="center"&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
+    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
+    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+
+## Changes
+
+### Added
+
+- **The launcher says when SigMod cannot load.** If the server refuses SigMod
+  after a TF2 update, the launcher names the DLL that changed and says to
+  update the launcher. SigMod missions then show as unavailable and are left
+  out of the next seed, instead of sitting on wave 0 with no explanation.
+
+### Changed
+
+- **Windows servers load SigMod after a TF2 update that leaves the game's
+  binaries alone.** SigMod now checks the six binaries it patches instead of
+  the TF2 build number, so a content-only update no longer stops the
+  community missions that need it from starting.
+
+
+## Windows
+
+Download **`tf2ap.exe`** above. Run it. It installs everything else.
+
+Windows will warn you, and it is a false positive. The exe unpacks archives and
+starts a game server without a code signature, which looks like a virus to a
+scanner. Click **More info**, then **Run anyway**, or check it below first.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
+
+## Linux
+
+Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
+
+```sh
+chmod +x tf2ap-linux-amd64
+./tf2ap-linux-amd64
+```
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
+
+## Docker
+
+Download **`compose.yaml`** and **`env.example`**:
+
+```sh
+mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
+base=https://github.com/m-this/tf2-archipelago/releases/latest/download
+curl -fsSLO "$base/compose.yaml"
+curl -fsSL -o .env "$base/env.example"
+```
+
+Set `SRCDS_RCONPW` in `.env`, then:
+
+```sh
+docker compose --profile seed run --rm seed   # writes ./seed
+docker compose up -d
+```
+
+Upload the file from `seed/` at
+[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
+port into `AP_PORT`.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
+
+## Other assets
+
+| File | For |
+| --- | --- |
+| `tf2_mvm.apworld` | The official Archipelago app. |
+| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
+| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
+| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
+
+## Checking what you downloaded
+
+**`SHA256SUMS`** is attached to this release. It holds the hash of every file
+here, computed by the workflow that built them.
+
+```powershell
+Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
+```
+
+```sh
+sha256sum -c SHA256SUMS --ignore-missing    # Linux
+```
+
+Each binary carries a signed record of the commit and the workflow that built
+it:
+
+```sh
+gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
+```
+
+The binaries are scanned on VirusTotal, and the reports are linked at the end of
+these notes. Expect a few heuristic detections and no named malware family. The
+source is all in the repository, and `make launcher` rebuilds the exe on your
+own machine.
+
+## Code signing policy
+
+Free code signing for open source projects, provided by
+[SignPath.org](https://signpath.org), with a certificate from the
+[SignPath Foundation](https://signpath.org).
+
+&gt; [!WARNING]
+&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
+&gt; unsigned, and Windows warns about it until that changes.
+
+
+## What's Changed
+* feat(launcher): say when SigMod refuses to load and leave its missions out by @m-this in https://github.com/m-this/tf2-archipelago/pull/256
+* chore(deploy): SigMod 20261101-2 for Windows by @m-this in https://github.com/m-this/tf2-archipelago/pull/257
+* chore(release): v1.18.7 by @m-this in https://github.com/m-this/tf2-archipelago/pull/258
+
+
+**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.18.6...v1.18.7
+
+## VirusTotal
+
+- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/OGQ4ZmI3MGU0NDJjODkxYTRjMTZhODQ0ZTdiOTJkMDQ6MTc5MzU0MzA5MA==/detection)
+- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/MzY1YmUyYjFiN2JiMThmMDYwMTVlZTNkMzM4Y2E2MTk6MTc5MzU0MzA5Mw==/detection)
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/tag/3.5.1</id>
+    <title>Wario Land 4 v3.5.1</title>
+    <updated>2026-11-01T14:38:25+00:00</updated>
+    <author>
+      <name>lil David</name>
+    </author>
+    <content>## Option changes&#13;
+* Added slot data for required bosses options&#13;
+&#13;
+**Full Changelog**: https://github.com/lilDavid/Archipelago-Wario-Land-4/compare/3.5.0...3.5.1</content>
+    <link href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/tag/3.5.1"/>
   </entry>
 </feed>

@@ -3,12 +3,18 @@
     "lil David"
   ],
   "description": "A golden pyramid has been discovered deep in the jungle, and Wario has set\nout to rob it. But when he enters, he finds the Golden Diva's curse has\ntaken away his moves! To escape with his life and more importantly, the\ntreasure, Wario must find his abilities to defeat the passage bosses and\nthe Golden Diva.",
+  "flags": [
+    "supports_deathlink"
+  ],
   "game": "Wario Land 4",
   "github": "https://github.com/lilDavid/Archipelago-Wario-Land-4",
   "license": "MIT",
   "manifest_fields": [
     "authors",
+    "flags",
     "minimum_ap_version",
+    "repo_url",
+    "tracker",
     "world_version"
   ],
   "setup_guide_url": "https://github.com/lilDavid/Archipelago-Wario-Land-4/blob/main/src/wl4/docs/setup_en.md",
@@ -291,6 +297,36 @@
       "title": "3.4.0",
       "version_simple": "3.4.0",
       "world_version": "3.4.0"
+    },
+    "3.5.0": {
+      "created_at": "2026-11-01T14:04:35Z",
+      "description": "## Option changes\r\n* New Required Bosses option\r\n  * Determines the number of passage bosses that must be defeated to open the Golden Pyramid\r\n  * The Entry Passage can now optionally count toward this requirement, so you can even require all 5\r\n  * If the Entry Passage is included, its jewel pieces are now doubled if the Golden Pyramid's are\r\n\r\n## Logic changes\r\n* Fixed the TTL current circle room not requiring super ground pound in anything-goes logic\r\n* Added CMV precise throw trick for the agile bat hidden box/diamond to advanced logic\r\n\r\n**Full Changelog**: https://github.com/lilDavid/Archipelago-Wario-Land-4/compare/3.4.0...3.5.0",
+      "download_url": "https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.5.0/wl4.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b2c982f33be674c5b5caa577e60186bc70684978aeaa743c0ee98c67290ad45b",
+      "html_url": "https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/tag/3.5.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 65365,
+      "source_url": "https://api.github.com/repos/lilDavid/Archipelago-Wario-Land-4",
+      "tag": "3.5.0",
+      "title": "3.5.0",
+      "version_simple": "3.5.0",
+      "world_version": "3.5.0"
+    },
+    "3.5.1": {
+      "created_at": "2026-11-01T14:38:25Z",
+      "description": "## Option changes\r\n* Added slot data for required bosses options\r\n\r\n**Full Changelog**: https://github.com/lilDavid/Archipelago-Wario-Land-4/compare/3.5.0...3.5.1",
+      "download_url": "https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.5.1/wl4.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1ef076da78d9f1f75b80dfaa87d0cc045bb53b9cdeed4a60914c9d1094716127",
+      "html_url": "https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/tag/3.5.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 65385,
+      "source_url": "https://api.github.com/repos/lilDavid/Archipelago-Wario-Land-4",
+      "tag": "3.5.1",
+      "title": "3.5.1",
+      "version_simple": "3.5.1",
+      "world_version": "3.5.1"
     }
   }
 }

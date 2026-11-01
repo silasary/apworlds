@@ -8,7 +8,7 @@ the Golden Diva.
 
 
 ## Downloads
-- <a href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.4.0/wl4.apworld">Latest Version (3.4.0)</a>
+- <a href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/download/3.5.1/wl4.apworld">Latest Version (3.5.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
