@@ -1,6 +1,6 @@
 For any pose to count, the Pokémon must be center frame and close enough to the player to get Oak to give you a pose score.
 
-Some poses have a [HARD] or [RNG] tag (or both). This means that `hard_checks` or `rng_checks` (or both), respectively, must be enabled for this pose to be a check.
+Some poses have a [HARD] or [RNG] tag (or both). This means that `include_hard_poses` or `include_hard_poses` (or both), respectively, must be enabled for this pose to be a check.
 
 ## Beach
 

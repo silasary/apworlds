@@ -18,6 +18,20 @@
       "version_simple": "2",
       "world_version": "2.post0"
     },
+    "v0.1.0": {
+      "created_at": "2026-11-02T03:25:13Z",
+      "description": "### **Dota 2 Archipelago World \u2014 v0.1.0 Official Release**\r\n\r\n**CrownFall Minigames are here!** \r\n\r\n- Each minigame is unlocked through its respective item \r\n- Minigames contain 3 checks each; Nest of Thorns contains 5\r\n- Castle Carnage is **NOT** included, as the minigame scoring format is different from all other games\r\n- Minigame items will always exist even if Minigame Locations are turned off, \r\n- Scores will be manually submitted with a new client command, so it's an honor system for submitting minigame locations\r\n\r\n- All Heroes option has been removed. Can already do unique hero wins and no need to add 127 more filler items.\r\n\r\n\r\n**New Client Command for Minigames**\r\n\r\n- /minigame {first word of minigame title} {score} \r\n- Example: /minigame Nest 85000 or /minigame spoon 3,000. Capitalization does not matter for the title; supports commas for the score\r\n- minigame keywords are as follows: **gone, bat, oasis, sand, sleet, dragon, zaug's, spoon, spleen, nest**. This is also listed in setup_en.md\r\n\r\n\r\n\r\n",
+      "download_url": "https://github.com/CaptainBoscar/Archipelago-DOTA2/releases/download/v0.1.0/dota_2.apworld",
+      "has_manifest": false,
+      "hash_sha256": "7e1833df78d1f1a74e1874ab6793bfa0aacc62a83d8ecc9f51e42f82037fa399",
+      "html_url": "https://github.com/CaptainBoscar/Archipelago-DOTA2/releases/tag/v0.1.0",
+      "size": 99732,
+      "source_url": "https://api.github.com/repos/CaptainBoscar/Archipelago-DOTA2",
+      "tag": "v0.1.0",
+      "title": "v0.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    },
     "v0.1.0-beta.2": {
       "created_at": "2026-10-15T05:44:58Z",
       "description": "### Dota 2 Archipelago World \u2014 v0.1.0-beta.2\r\n\r\n**Major Bug Fixes and Feature Changes**\r\n\r\n- Total Wins and Unique Hero Wins no longer reset on a reconnect (I was overriding oops)\r\n- No crashing from too many Progressive Group Unlocks being manually sent or found\r\n- Perseverance buy check fixed\r\n\r\n- /heroes now shows {name} - {hero group} - {primary attribute} - {ranged/melee} -{# of legs} - {Carry/Support}\r\n- Total Wins will only increment once per Match ID. A single match can still be submitted multiple times for item checks.\r\n- Multiple Unique Hero Wins can still be added per Match ID if you're playing with a squad, must swap playerID each time and parse\r\n- Deward checks lowered from 1,5,10 to 1,3,7\r\n- Item Locations now use the display names from the game",

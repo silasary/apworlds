@@ -1,9 +1,12 @@
 # Cooking Mama 3
 
 ## Latest
-- <a href="https://github.com/Laxbby/ArchipelagoCM3/releases/download/1.1.2/cookingmama3.apworld">Latest Version (1.1.2)</a>
+- <a href="https://github.com/Laxbby/ArchipelagoCM3/releases/download/1.1.3/cookingmama3.apworld">Latest Version (1.1.3)</a>
 
 ## All Versions
+
+#### v1.1.3
+- <a href="https://github.com/Laxbby/ArchipelagoCM3/releases/download/1.1.3/cookingmama3.apworld">https://github.com/Laxbby/ArchipelagoCM3/releases/download/1.1.3/cookingmama3.apworld</a>
 
 #### v1.1.2
 - <a href="https://github.com/Laxbby/ArchipelagoCM3/releases/download/1.1.2/cookingmama3.apworld">https://github.com/Laxbby/ArchipelagoCM3/releases/download/1.1.2/cookingmama3.apworld</a>
