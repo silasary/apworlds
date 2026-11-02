@@ -33,7 +33,7 @@ There is no patch file for this game: the mod gets everything it needs from the 
    and the password if there is one -> **Connect**. From then on the mod connects by itself when the game starts.
 3. Then start a new game or load your save. A new game waits for the connection (the seed comes from the server).
    A save always plays with the seed it was started with: saves of seeds you've played on this PC also work
-   offline, and sync (checks sent, items received) as soon as you connect. Beating Dracula offline counts too:
+   offline, and sync (checks sent, items received) as soon as you connect. Reaching the goal offline counts too:
    the server is told the next time you connect.
 
 Commands such as `!hint`, `!release` or `!collect` can be sent from the mod's own **Text client** window (menu bar ->

@@ -199,6 +199,22 @@ If you'd rather have the tracker in a separate window, you can still launch
 **Universal Tracker** directly from the Archipelago Launcher and connect to your
 slot; both approaches use the same logic.
 
+## Star Command Missions (optional)
+
+Star Command Missions add a second goal on top of your normal one. In your YAML you
+switch on the kinds of check you want as missions -- Race, Hamm, Boss, Hidden and
+Missing Toys tokens, and returning Mr. Potato Head's parts -- and the seed picks a
+pool of them at random. Every mission you complete gives you a **Mission Star** on top
+of that check's normal item, and the goal also needs the number of stars you asked for.
+
+- The **Missions** tab in the Toy Story 2 Client (it only appears when your seed has
+  missions) lists them level by level and
+  shows how many stars you still need. `/missions` prints the same list.
+- With **Hamm** missions and Hamm's Shop on, Hamm's mission is the most expensive item
+  in each shop, and that item *is* the Mission Star.
+- The Final Showdown stays locked until you have the stars, in both Open and Linear
+  mode. The level select shows how many you still need.
+
 ## Death Link (optional)
 
 If you enable Death Link in your YAML, dying in your game sends a death to everyone

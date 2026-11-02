@@ -12,7 +12,7 @@
 - <a href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.2.0-H3/deadlock.apworld">https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.2.0-H3/deadlock.apworld</a>
 
 #### v1.2.0r3
-- <a href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.2.0-H4/deadlock.apworld">https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.2.0-H4/deadlock.apworld</a>
+- <a href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.2.0-H5/deadlock.apworld">https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.2.0-H5/deadlock.apworld</a>
 
 #### v1.2.0.post3
 - <a href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.2.0/deadlock.apworld">https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.2.0/deadlock.apworld</a>
@@ -24,7 +24,7 @@
 - <a href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.2.0-H2/deadlock.apworld">https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.2.0-H2/deadlock.apworld</a>
 
 #### v1.2.0r2
-- <a href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.2.0-H5/deadlock.apworld">https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.2.0-H5/deadlock.apworld</a>
+- <a href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.2.0-H4/deadlock.apworld">https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.2.0-H4/deadlock.apworld</a>
 
 #### v1.2.0.post2
 - <a href="https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.2.0/deadlock.apworld">https://github.com/ArchipelagoBrad/deadlockipelago/releases/download/1.2.0/deadlock.apworld</a>

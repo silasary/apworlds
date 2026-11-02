@@ -115,6 +115,7 @@ Client-side commands, typed in the client rather than the game:
 | `/install`, `/uninstall` | add or remove the `hl2ap` mod |
 | `/moddir [path]` | show or set the installed mod folder |
 | `/chapters` | chapter unlock status |
+| `/newrun` | starting this slot over: forget which chapters were finished on this machine, so the server's completions show as "(Remote Complete)" until played again. Required if restarting on the same seed. |
 | `/commands` | the in-game commands |
 | `/deathlink` | toggle DeathLink |
 | `/chat` | toggle relaying chat between the game and the multiworld |
@@ -134,9 +135,9 @@ mounted guns need the Airboat Gun and the Buggy Gun.
 
 With `weapons_per_level`, a weapon is held only in chapters whose own item for
 it has arrived: Highway 17 SMG gives you the SMG in Highway 17 and nowhere
-else. A chapter has an item for a weapon where the weapon can be found in it,
-or where the chapter cannot be finished without it. The crowbar and the
-gravity gun stay one item.
+else. Every chapter has an item for every weapon. The crowbar and the gravity
+gun stay one item. It needs `chargesanity`, as without the chargers there are
+too few checks for all those items.
 
 The gravity gun comes as four Progressive Gravity Guns: hold and drop, then
 punts, then the Citadel's supercharge (organics refused), then the full super

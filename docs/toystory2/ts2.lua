@@ -1,7 +1,7 @@
 -- ============================================================================
 -- Toy Story 2 (PS1) Archipelago - ALL-IN-ONE BizHawk script
 -- ----------------------------------------------------------------------------
--- CONNECTOR VERSION: 2.3.3   <-- must match the .apworld release.
+-- CONNECTOR VERSION: 3.0.0   <-- must match the .apworld release.
 --   If a player reports odd behaviour (e.g. checks sending early), have them
 --   confirm this line. It is also printed in the BizHawk Lua console on load and
 --   again when settings are received, so they can read it back without opening
@@ -28,7 +28,7 @@
 -- Single source of truth for the connector release version (see header). Bump this
 -- in lockstep with the .apworld release. Global so it stays in scope across the
 -- Part 1 / Part 2 do...end blocks without consuming a local slot.
-TS2_VERSION = "2.3.3"
+TS2_VERSION = "3.0.0"
 -- Free-text build tag, printed beside the version on load. NOT parsed anywhere:
 -- the client and the title screen only ever read TS2_VERSION, so a hotfix can
 -- be told apart in a player's console without tripping the version check.
@@ -388,7 +388,30 @@ SHOP_PROG_MASK    = 0x1FEC1F   -- client -> lua, bit per slot: reads as progress
 TOY_NAME_LVL  = 0x1FEBF9   -- level the buffer below describes (0 = nothing)
 TOY_NAME_BASE = 0x1FEBFA   -- 36 bytes, "owner|item", NUL padded
 TOY_HINT_LVL  = 0x1FEC1E   -- lua -> client, level whose offer was just shown
--- 0x1FEC20: quick-load switch (client -> lua). free: 0x1FEC21 - 0x1FEC3F
+-- 0x1FEC20: quick-load switch (client -> lua).
+-- 0x1FEC21: feature flags (3.0.0, client -> lua). High nibble 0xB tags a value
+-- the client wrote; boot garbage or an older client reads as "no flags".
+--   bit0 = move Alleys and Gullies' boss-arena battery down
+--   bit1 = move Andy's Neighborhood's Top of Tree battery
+FEATURE_ADDR  = 0x1FEC21
+-- 0x1FEC22: Star Command Missions state (3.0.0, client -> lua). High nibble 0xD
+-- tags a value the client wrote; bit0 = the seed has missions, bit1 = enough
+-- Mission Stars. Untagged (no client yet, older client) reads as "no missions".
+-- 0x1FEC23: Mission Stars still needed (for the Final Showdown label/popup).
+MISSIONS_ADDR      = 0x1FEC22
+MISSIONS_NEED_ADDR = 0x1FEC23
+-- 0x1FEC24: level-live (3.0.0, lua -> client): the level id while the level is
+-- loaded and in play (buzz_moved), 0 otherwise.
+LEVEL_LIVE_ADDR    = 0x1FEC24
+-- free: 0x1FEC25 - 0x1FEC3F
+-- Potato Head reward (3.0.0). Same shape as the missing toy reward above, in
+-- its own buffer: Potato Head and a missing-toy owner share every Potato level,
+-- so one buffer cannot describe both. Sited above the 2.3.0 top in the same
+-- probed free run (see the SHARED BLOCK note at the bottom).
+POTATO_NAME_LVL  = 0x1FEC40   -- level the buffer below describes (0 = nothing)
+POTATO_NAME_BASE = 0x1FEC41   -- 36 bytes, "owner|item", NUL padded
+POTATO_HINT_LVL  = 0x1FEC65   -- lua -> client, level whose offer was just shown
+-- free: 0x1FEC66 - 0x1FEC7F
 
 SHOP_NAME_W       = 36   -- the item name gets a whole line to itself
 SHOP_WIDTH        = 36
@@ -829,6 +852,34 @@ local rex_triggered   = false
 SHARED_CONN_GEN       = 0x1FE96A
 conn_gen_seen         = nil   -- global (200-local limit)
 
+-- ── BOSS DEFEAT LATCH (3.0.0) ──────────────────────────────
+-- A defeat is detected ONCE (boss_defeated latches), and used to be written to
+-- SHARED_BOSS_DEFEATS once. The client re-asserts that byte every tick as
+-- read -> OR the server's bits -> write, a few frames apart; a defeat landing
+-- between its read and its write was overwritten with the stale value and never
+-- set again, so the reward never sent ("beat Toy Barn Encounter, nothing
+-- happened"). Every defeat this session detects is now remembered here and
+-- re-ORed into the byte every frame, so a clobbered bit is back on the next one.
+-- Cleared when the client connects anew (a different seed must not inherit it),
+-- like the rex mask. Globals: the main chunk is at the 200-local ceiling.
+boss_lua_mask = 0
+boss_lua_gen  = nil
+function boss_latch_tick()
+    local gen = mainmemory.read_u8(SHARED_CONN_GEN)
+    if boss_lua_gen == nil then
+        boss_lua_gen = gen
+    elseif gen ~= boss_lua_gen then
+        boss_lua_gen = gen
+        boss_lua_mask = 0
+    end
+    if boss_lua_mask ~= 0 then
+        local d = mainmemory.read_u8(SHARED_BOSS_DEFEATS)
+        if (d & boss_lua_mask) ~= boss_lua_mask then
+            mainmemory.write_u8(SHARED_BOSS_DEFEATS, d | boss_lua_mask)
+        end
+    end
+end
+
 -- ============================================================
 -- TRAP STATE
 -- ============================================================
@@ -1211,10 +1262,16 @@ end
 -- when it has not caught up (the player sprinted to the character on entry), and
 -- the caller then leaves the vanilla line alone rather than showing a blank.
 function toy_reward_label(level)
-    if mainmemory.read_u8(TOY_NAME_LVL) ~= level then return nil end
+    return reward_label(TOY_NAME_LVL, TOY_NAME_BASE, level)
+end
+
+-- Shared by the missing toy and Potato Head offers: "owner|item" out of a
+-- level-tagged buffer, or nil.
+function reward_label(lvl_addr, base, level)
+    if mainmemory.read_u8(lvl_addr) ~= level then return nil end
     local b = {}
     for i = 0, 35 do
-        local c = mainmemory.read_u8(TOY_NAME_BASE + i)
+        local c = mainmemory.read_u8(base + i)
         if c == 0 then break end
         b[#b+1] = string.char(c)
     end
@@ -1231,6 +1288,37 @@ function toy_dialog_for(level)
     local owner, item = toy_reward_label(level)
     if not owner then return nil end
     return toy_wrap(prefix .. owner .. "'s ^" .. item .. "^.")
+end
+
+-- ============================================================
+-- POTATO HEAD REWARD DIALOG  (3.0.0)
+-- ============================================================
+-- Potato Head says what he will give for his part, the same way the missing
+-- toy owners do: who it is for, and the item (or its class). The client
+-- publishes it to POTATO_NAME_*; until it has, the fixed "^ap item^" lines in
+-- NEW_DIALOG are used, so a fast player never sees a blank.
+POTATO_PART_WORD = { [1] = "ear", [4] = "eye", [7] = "arm", [10] = "foot", [13] = "mouth" }
+function potato_reward(level)
+    return reward_label(POTATO_NAME_LVL, POTATO_NAME_BASE, level)
+end
+-- "find my missing part" offer, or nil for the fixed line.
+function potato_offer_for(level)
+    local part = POTATO_PART_WORD[level]; if not part then return nil end
+    local owner, item = potato_reward(level)
+    if not owner then return nil end
+    local r = owner .. "'s ^" .. item .. "^"
+    if level == 13 then   -- no mouth yet: he can only mumble it
+        return toy_wrap("mmm.. mumph! mmmmu mo mmmme " .. r .. " mmmm mub ^mouth^ mmum mi mo mmmump!")
+    end
+    return toy_wrap("hey buzz! find my missing ^" .. part .. "^ and i'll give you " .. r .. "!")
+end
+-- "thanks for my part" line, or nil for the fixed line.
+function potato_thanks_for(level)
+    local part = POTATO_PART_WORD[level]; if not part then return nil end
+    local owner, item = potato_reward(level)
+    if not owner then return nil end
+    return toy_wrap("wow! thanks buzz! in return for finding my ^" .. part ..
+                    "^ i'll let you have " .. owner .. "'s ^" .. item .. "^!")
 end
 
 local NEW_DIALOG = {
@@ -1709,7 +1797,8 @@ LOCK_MSG_SHOW = 193
 -- Goal breakdown published by the Python client (it owns goal_conditions + boss
 -- tracking). Bitmask: b0 = tokens unmet, b1 = bosses unmet, b2 = level-unlock unmet.
 -- Goal breakdown published by the Python client (it owns goal_conditions + boss
--- tracking). Bitmask: b0 = tokens unmet, b1 = bosses unmet, b2 = level-unlock unmet.
+-- tracking). Bitmask: b0 = tokens unmet, b1 = bosses unmet, b2 = level-unlock unmet,
+-- b3 = Star Command Missions unmet (3.0.0).
 -- These live in the SAFE low-shared region (with the game-mode mirror). They were
 -- at 0x1FFFF3-F6, past the validated shared map (ends 0x1FFFF2) in the top-of-RAM
 -- the game corrupts -- so they read 0 in-game and the goal label/popup fell back to
@@ -1767,9 +1856,33 @@ function write_label(hover_id, s)
     if #s >= clr then mainmemory.write_u8(d.start + #s, 0x00) end
 end
 
+-- Star Command Missions (3.0.0): true while the seed has missions and the
+-- client says the stars are not all in. Gates the LINEAR Final Showdown; in
+-- OPEN mode the client already folds missions into the goal flag it publishes.
+function missions_blocked()
+    local v = mainmemory.read_u8(MISSIONS_ADDR)
+    if (v & 0xF0) ~= 0xD0 then return false end
+    return (v & 0x01) ~= 0 and (v & 0x02) == 0
+end
+function missions_needed() return mainmemory.read_u8(MISSIONS_NEED_ADDR) end
+-- Popup line for missing stars. The popup buffer is LOCK_BUF_LEN (23)
+-- characters, so a two-digit count drops the word "mission".
+function missions_msg()
+    local n = missions_needed()
+    local t = "missing " .. n .. " mission star" .. (n == 1 and "" or "s")
+    if #t > 23 then t = "missing " .. n .. " stars" end
+    return t
+end
+
 -- "have/need tokens" for a linear boss gate (live token count vs that gate).
+-- The linear Final Showdown (gate 5) says what the stars still need once the
+-- tokens are in.
 function boss_gate_label(hover_id)
     local gn = LINEAR_GATE_NUM[hover_id]; if not gn then return nil end
+    if gn == 5 and get_ap_tokens() >= get_gate(5) and missions_blocked() then
+        local n = missions_needed()
+        return "need " .. n .. " mission star" .. (n == 1 and "" or "s")
+    end
     return get_ap_tokens() .. "/" .. get_gate(gn) .. " tokens"
 end
 
@@ -1777,6 +1890,20 @@ end
 function goal_label_text()
     local f = mainmemory.read_u8(GOAL_FLAGS_ADDR)
     local t,b,l = (f&1)~=0, (f&2)~=0, (f&4)~=0
+    -- b3 (3.0.0): Star Command Missions unmet, with the number of stars still
+    -- short (client byte). The label has 21 characters: alone it reads
+    -- "req 3 mission stars", next to one other condition "req tokens/3 stars",
+    -- and with two or more others it falls back to "req goal conditions" (the
+    -- popup still lists every one, stars included).
+    if (f&8)~=0 then
+        local n = missions_needed()
+        local stars = n .. " star" .. (n == 1 and "" or "s")
+        if not (t or b or l) then return "req " .. n .. " mission " .. (n == 1 and "star" or "stars") end
+        if (t and b) or (t and l) or (b and l) then return "req goal conditions" end
+        if t then return "req tokens/" .. stars end
+        if b then return "req bosses/" .. stars end
+        return "req level/" .. stars
+    end
     if not (t or b or l) then return nil end
     if t and b and l then return "req tokens/bosses/lvl" end
     if t and b then return "req tokens/bosses" end
@@ -1792,6 +1919,9 @@ function build_lock_msgs(hover_id, kind)
     if kind == "tokens" then
         local gn = LINEAR_GATE_NUM[hover_id] or 5
         local miss = get_gate(gn) - get_ap_tokens(); if miss < 0 then miss = 0 end
+        if gn == 5 and miss == 0 and missions_blocked() then
+            return { missions_msg() }
+        end
         return { "missing " .. miss .. " tokens" }
     elseif kind == "goal" then
         local f = mainmemory.read_u8(GOAL_FLAGS_ADDR)
@@ -1806,6 +1936,9 @@ function build_lock_msgs(hover_id, kind)
                    .. mainmemory.read_u8(GOAL_BOSS_REQ_ADDR) .. " bosses defeated"
         end
         if (f&4)~=0 then m[#m+1] = "missing level unlock" end
+        if (f&8)~=0 then
+            m[#m+1] = missions_msg()
+        end
         if #m == 0 then m[1] = "missing goal conditions" end
         return m
     end
@@ -1974,7 +2107,7 @@ function compute_linear_unlocks(area, tickets, tokens)
             if gn and tokens >= get_gate(gn) then unlock(h) end
         end
     end
-    if tokens >= get_gate(5) and tickets >= 4 then unlock(21) end
+    if tokens >= get_gate(5) and tickets >= 4 and not missions_blocked() then unlock(21) end
     return low, high
 end
 
@@ -2055,7 +2188,9 @@ function apply_linear_area(tickets)
         if gn and tokens>=get_gate(gn) then set_level_unlocked(h,true) end
     end
     local final_gate=get_gate(5)
-    if tokens>=final_gate and tickets>=4 then set_level_unlocked(21,true) end
+    -- Star Command Missions (3.0.0) gate it too. reconcile_map_state_from_shared
+    -- re-runs this as soon as the client's missions byte changes.
+    if tokens>=final_gate and tickets>=4 and not missions_blocked() then set_level_unlocked(21,true) end
 end
 
 -- Per-level last-known-good bundle count + a short debounce counter, so a brief
@@ -3543,6 +3678,7 @@ function update_boss(level)
             if boss_started.bombs and bombs_real_hit and hp==0 and not boss_defeated then
                 boss_defeated=true
                 mainmemory.write_u8(SHARED_BOSS_DEFEATS, defeats|(1<<0))
+                boss_lua_mask = boss_lua_mask | (1<<0)
                 ts2_debug("boss defeat detected: Bombs Away (bit 0) at level="..level..", hp="..hp)
             end
         end
@@ -3557,6 +3693,7 @@ function update_boss(level)
             if boss_started.slime and hp==0 and not boss_defeated then
                 boss_defeated=true
                 mainmemory.write_u8(SHARED_BOSS_DEFEATS, defeats|(1<<1))
+                boss_lua_mask = boss_lua_mask | (1<<1)
                 ts2_debug("boss defeat detected: Slime Time (bit 1) at level="..level..", hp="..hp)
             end
         end
@@ -3584,6 +3721,7 @@ function update_boss(level)
             if boss_started.toybarn and toybarn_real_hit and hp==0 and not boss_defeated then
                 boss_defeated=true
                 mainmemory.write_u8(SHARED_BOSS_DEFEATS, defeats|(1<<2))
+                boss_lua_mask = boss_lua_mask | (1<<2)
                 ts2_debug("boss defeat detected: Toy Barn Encounter (bit 2) at level="..level..", hp="..hp)
             end
         end
@@ -3600,6 +3738,7 @@ function update_boss(level)
             if boss_started.zurg and hp<=9 and not boss_defeated then
                 boss_defeated=true
                 mainmemory.write_u8(SHARED_BOSS_DEFEATS, defeats|(1<<3))
+                boss_lua_mask = boss_lua_mask | (1<<3)
                 ts2_debug("boss defeat detected: Zurg (bit 3) at level="..level..", hp="..hp)
             end
         end
@@ -3645,6 +3784,21 @@ function update_potato(level)
                 -- gadget after entry -- our one-time entry lock isn't enough).
                 if owned==1 then assert_gadget_usable(gadget)
                 else assert_gadget_unusable(gadget) end
+            end
+        end
+    end
+
+    -- Potato Head's MODEL (3.0.0): once his part has been given back he should
+    -- wear it. The game only remembers that for the visit you gave it in, so on
+    -- any later visit he stood there without it until you talked to him (which
+    -- is the only place update_model ran). Put it back as soon as the level is
+    -- live. Written only when the byte differs, so this is one read a frame.
+    if buzz_moved and PARTS[level] and MODEL_ADDRS[level] then
+        local given = potato_exchanged_latch[level] or
+            ((mainmemory.read_u8(SHARED_DESPAWN_PART_EXCH) & (PART_SEED_BIT[level] or 0)) ~= 0)
+        if given then
+            for _,e in ipairs(MODEL_ADDRS[level]) do
+                if mainmemory.read_u8(e.addr) ~= e.val then mainmemory.write_u8(e.addr, e.val) end
             end
         end
     end
@@ -3809,12 +3963,16 @@ function update_potato(level)
                     update_model(level)
                     mainmemory.write_u8(A.POTATO_UI,0)
                 else
-                    write_dialog(NEW_DIALOG.potato_uncollected[level])
+                    local line = potato_offer_for(level)
+                    write_dialog(line or NEW_DIALOG.potato_uncollected[level])
+                    -- Tell the client whose offer was just read, as the toy
+                    -- owners do. It decides whether that becomes a hint.
+                    if line then mainmemory.write_u8(POTATO_HINT_LVL, level) end
                 end
             end
         end
         if PARTS[level] and match_sig(bytes,DIALOG_SIGNATURES.potato_collected1) then
-            write_dialog(NEW_DIALOG.potato_collected1[level])
+            write_dialog(potato_thanks_for(level) or NEW_DIALOG.potato_collected1[level])
             update_model(level)
             part_exchanged=true
             -- Mark this part as turned in so the client sends the
@@ -3889,11 +4047,111 @@ function update_potato(level)
     dialog_was_open=dialog_open2
 end
 
+-- ============================================================================
+-- EASIER BATTERY PLACEMENT (3.0.0)
+-- ============================================================================
+-- Two batteries sit somewhere awkward enough to be a chore with Batterysanity:
+-- Alleys and Gullies' boss-arena battery (lowered, X/Z unchanged) and Andy's
+-- Neighborhood's Top of Tree battery (moved to a reachable spot). The logic does
+-- not change for either -- the new spots are no harder than the old ones.
+--
+-- Each pickup's position is held in four RAM copies; all four are found once per
+-- visit and only a copy still holding the VANILLA position is rewritten, so a
+-- savestate taken after the move is left alone. Verified with
+-- battery_move_test.lua: no other battery or life moves.
+-- Globals only: the main chunk is at Lua's 200-local ceiling.
+-- rec = sanity record base (state-byte address in BATTERIES minus 0x12).
+-- to  = target position; a nil axis keeps the vanilla value.
+MOVED_BATTERIES = {
+    [2] = { {rec = 0x13C5D0, name = "Andy's Neighborhood - Battery - Top of Tree",   -- state 0x13C5E2
+             to = {x = 8792, y = -15391, z = 7372}} },
+    [5] = { {rec = 0x13AD90, name = "Alleys and Gullies - Battery - Boss Arena",     -- state 0x13ADA2
+             to = {x = nil,  y = -21731, z = nil}} },
+}
+MOVED_RANGES = { {0x0C7000, 0x0C8000}, {0x100000, 0x1C0000} }   -- where the copies live
+moved_cache  = { level = -1, entries = {} }                      -- per-visit search results
+
+-- Easier Battery Placement option: one FEATURE_ADDR bit per level.
+MOVED_BIT = { [5] = 0x01, [2] = 0x02 }
+function moved_batteries_enabled(level)
+    local v = mainmemory.read_u8(FEATURE_ADDR)
+    if (v & 0xF0) ~= 0xB0 then return false end
+    return (v & (MOVED_BIT[level] or 0)) ~= 0
+end
+
+function moved_rec_valid(base)
+    local p  = mainmemory.read_u32_le(base)
+    local st = mainmemory.read_u8(base + 0x12)
+    return ((p >= 0x80000000 and p <= 0x801FFFFF) or (p >= 0xA0000000 and p <= 0xA01FFFFF))
+       and (st == 73 or st == 5)
+end
+
+-- Every 4-aligned spot in MOVED_RANGES where x,y,z sit back to back as s32.
+function moved_find_xyz(x, y, z)
+    local pat = {}
+    for _, v in ipairs({x, y, z}) do
+        v = v & 0xFFFFFFFF
+        pat[#pat+1] = v & 0xFF;         pat[#pat+1] = (v >> 8) & 0xFF
+        pat[#pat+1] = (v >> 16) & 0xFF; pat[#pat+1] = (v >> 24) & 0xFF
+    end
+    local hits, CH = {}, 0x10000
+    for _, r in ipairs(MOVED_RANGES) do
+        for base = r[1], r[2] - 1, CH do
+            local scan = math.min(CH, r[2] - base)
+            local arr  = mainmemory.read_bytes_as_array(base, scan + 12)
+            for i = 0, scan - 1, 4 do
+                if arr[i+1] == pat[1] then
+                    local ok = true
+                    for k = 2, 12 do if arr[i+k] ~= pat[k] then ok = false; break end end
+                    if ok then hits[#hits+1] = base + i end
+                end
+            end
+        end
+    end
+    return hits
+end
+
+function moved_reads(a, p)
+    return mainmemory.read_s32_le(a) == p.x and mainmemory.read_s32_le(a + 4) == p.y
+       and mainmemory.read_s32_le(a + 8) == p.z
+end
+
+function moved_batteries_tick(level)
+    if moved_cache.level ~= level then moved_cache = { level = level, entries = {} } end
+    local list = MOVED_BATTERIES[level]
+    if not list or not moved_batteries_enabled(level) then return end
+    for i, e in ipairs(list) do
+        local c = moved_cache.entries[i]
+        if not c and moved_rec_valid(e.rec) then
+            local cur = { x = mainmemory.read_s32_le(e.rec + 4),
+                          y = mainmemory.read_s32_le(e.rec + 8),
+                          z = mainmemory.read_s32_le(e.rec + 12) }
+            local to  = { x = e.to.x or cur.x, y = e.to.y or cur.y, z = e.to.z or cur.z }
+            -- Already at the target (e.g. a savestate taken after the move): track
+            -- the target copies and leave them alone.
+            local from = (cur.x == to.x and cur.y == to.y and cur.z == to.z) and nil or cur
+            c = { from = from, to = to, copies = moved_find_xyz(cur.x, cur.y, cur.z) }
+            moved_cache.entries[i] = c
+        end
+        if c and c.from then
+            for _, a in ipairs(c.copies) do
+                -- Only touch a copy that still holds the vanilla position.
+                if moved_reads(a, c.from) then
+                    mainmemory.write_s32_le(a,     c.to.x)
+                    mainmemory.write_s32_le(a + 4, c.to.y)
+                    mainmemory.write_s32_le(a + 8, c.to.z)
+                end
+            end
+        end
+    end
+end
+
 function update_sanity(level)
     -- Server-seeded despawn first, and ungated: see apply_despawn_seeds. This is
     -- the part that used to wait for the player to start moving, which is what
     -- made already-collected pickups visibly pop out from under them.
     apply_despawn_seeds(level)
+    moved_batteries_tick(level)
 
     -- Wait for the level to settle after load before reading pickup state.
     -- During the load animation the pickup addresses can transiently read as
@@ -4564,8 +4822,24 @@ function on_level_change(new_level, prev_level)
         local d = mainmemory.read_u8(SHARED_BOSS_DEFEATS)
         if (d & (1<<0))==0 then
             mainmemory.write_u8(SHARED_BOSS_DEFEATS, d|(1<<0))
+            boss_lua_mask = boss_lua_mask | (1<<0)
             ts2_debug("boss defeat detected: Bombs Away (bit 0) via its defeat screen (38)"
                 .. (bombs_seen_alive and "" or " -- HP never read alive"))
+        end
+    end
+
+    -- ── TOY BARN ENCOUNTER DEFEAT FALLBACK (3.0.0) ──────
+    -- The same safety net for Toy Barn Encounter, whose in-fight gate also needs
+    -- to SEE a hit step its HP down. Its defeat screen is 41: the four victory
+    -- screens are 35/38/41/44 for levels 3/6/9/12 (each is the boss level + 32,
+    -- confirmed for Bombs Away's 6 -> 38). Pairing the boss level with ITS screen
+    -- means a wrong guess could only ever fail to fire, never fire falsely.
+    if prev_level==9 and new_level==41 and buzz_moved then
+        local d = mainmemory.read_u8(SHARED_BOSS_DEFEATS)
+        if (d & (1<<2))==0 then
+            mainmemory.write_u8(SHARED_BOSS_DEFEATS, d|(1<<2))
+            boss_lua_mask = boss_lua_mask | (1<<2)
+            ts2_debug("boss defeat detected: Toy Barn Encounter (bit 2) via its defeat screen (41)")
         end
     end
 
@@ -4959,8 +5233,16 @@ function update_map(input, hovered)
         -- published goal breakdown changes (e.g. a boss defeat that doesn't move the
         -- token count), so the shorthand on hover 21 stays current.
         if get_game_mode()==0 then
-            local gf_now=mainmemory.read_u8(GOAL_FLAGS_ADDR)
+            -- The star count is part of the label too (3.0.0), so a star coming
+            -- in repaints it even when the flags themselves stay the same.
+            local gf_now=mainmemory.read_u8(GOAL_FLAGS_ADDR)*256+mainmemory.read_u8(MISSIONS_NEED_ADDR)
             if gf_now~=last_goal_flags then last_goal_flags=gf_now; write_all_level_names() end
+        else
+            -- Linear Final Showdown label: "need N mission stars" ticks down as
+            -- stars come in, which moves no token count and no unlock bit.
+            -- (Global: the main chunk is at the 200-local ceiling.)
+            local ms_now=mainmemory.read_u8(MISSIONS_ADDR)*256+mainmemory.read_u8(MISSIONS_NEED_ADDR)
+            if ms_now~=last_missions_state then last_missions_state=ms_now; write_all_level_names() end
         end
 
         -- Block X if: (a) the hovered level is locked, OR (b) we just arrived on
@@ -5332,6 +5614,7 @@ function ts2_lab_forget(level)
                    [13] = {SHARED_MOUTH_COLLECTED, SHARED_MOUTH_EXCHANGED}})[level]
     if part then mainmemory.write_u8(part[1], 0); mainmemory.write_u8(part[2], 0) end
     mainmemory.write_u8(SHARED_BOSS_DEFEATS, 0)
+    boss_lua_mask = 0          -- or the defeat latch would put it straight back
     reset_boss_detection()
     -- The "seen it present first" guards. A savestate taken after a pickup puts
     -- the level back with that pickup already gone; without these cleared, the
@@ -5357,6 +5640,8 @@ function ts2_main()
     -- forever on "Waiting for Python client to write settings". Re-asserting it here
     -- makes validation reliable regardless of when the player connects.
     mainmemory.write_u8(0x1FFFD0, 0xAB)
+    -- Re-assert boss defeats this session detected (see BOSS DEFEAT LATCH).
+    boss_latch_tick()
     -- Logic Lab only (nil in a normal session): stands in for the client.
     if TS2_LAB_HOOK then TS2_LAB_HOOK() end
     -- One-time positive confirmation that the client wrote settings (game-mode
@@ -5511,6 +5796,13 @@ function ts2_main()
             buzz_moved = true
         end
     end
+
+    -- Tell the client the level is live (3.0.0): the level id once the load is
+    -- over and Buzz is in play, 0 otherwise. The client's own settle guard is
+    -- ~7.5 s of wall time from the level change; this lets it start watching
+    -- enemies the moment play starts, so one killed in the first seconds (the
+    -- two robots in Andy's Room) is seen alive first and its check can send.
+    mainmemory.write_u8(LEVEL_LIVE_ADDR, (buzz_moved and level>=1 and level<=15) and level or 0)
 
     -- ══════════════════════════════════════════════════════
     -- MAP SCREEN
@@ -5715,6 +6007,9 @@ if not TS2_LOGIC_LAB then print("[TS2] Waiting for Python client to write settin
 -- 0x1FE8A0-0x1FEB16 passes both tests for all 324 bytes, over 12 levels and 16
 -- dumps, inside a 3,456-byte free run: 2,208 bytes of margin below, 617 above.
 --
+-- 3.0.0 extends it again, to 0x1FEC7F, for the Potato Head reward buffer
+-- (0x1FEC40-0x1FEC65) -- 64 more bytes, still inside that same free run.
+--
 -- 2.3.0 EXTENDED the block to 0x1FE8A0-0x1FEC3F (+297 bytes) to hold Hamm's
 -- Shop item-name buffer: six names at 36 characters each, 216 contiguous bytes,
 -- which could not fit in the gaps left inside the old range. The extension lies
@@ -5750,7 +6045,7 @@ TS2_VER_ADDR     = 0x1FE8A6      -- major, minor, patch
 -- so look for exactly that, once, at load. Read-only, and it cannot false-fire
 -- on real connector data -- the client never writes long runs of 0x20/0x30.
 function ts2_check_shared_block()
-    local lo, hi = 0x1FE8A0, 0x1FEC3F
+    local lo, hi = 0x1FE8A0, 0x1FEC7F
     local ok, buf = pcall(function()
         return (mainmemory.read_bytes_as_array or mainmemory.readbyterange)(lo, hi - lo + 1)
     end)
