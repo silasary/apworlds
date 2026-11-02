@@ -2,66 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-02T12:20:36.088106+00:00</updated>
+  <updated>2026-11-02T18:19:20.494387+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.7.2</id>
-    <title>DOOM Eternal v0.7.1r2</title>
-    <updated>2026-10-29T22:56:32+00:00</updated>
-    <author>
-      <name>snowzzrra</name>
-    </author>
-    <content># DOOM Eternal Archipelago v0.7.2&#13;
-&#13;
-Bug fixes for Linux installation, encounters that unlock too early or never end, and Support Report diagnostics.&#13;
-&#13;
-Use **Mod 0.7.2** and **APWorld 0.7.1** with **Sentinel Core 1.1.3**.&#13;
-&#13;
-## Launcher and room preparation&#13;
-&#13;
-- Fixed Linux/Proton installations being reported as "Installation could not be checked" after a correct install, for rooms without DLC missions and for every room's Fortress of Doom resources.&#13;
-- Fixed the Linux/Proton installer breaking on its first run after a game update, file verification, or a reset of installer backups when files from a previous room were still present.&#13;
-- Repaired stale or empty installer resource maps before running the installer, so it rebuilds them instead of failing later with an unclear error.&#13;
-- Installation failures now state the step that failed and the cause, instead of a generic message.&#13;
-- Fixed Linux/Proton sessions failing with "Session request is too large" for rooms with large enemy plans.&#13;
-&#13;
-## Encounters and enemy randomization&#13;
-&#13;
-- Fixed waits for a specific demon type not counting the replacements of that demon, which could open gates while replacements were still alive (for example, the key encounter in **Super Gore Nest**) or keep a fight waiting forever (for example, the **Super Gore Nest** Slayer Gate with endlessly respawning fodder).&#13;
-- Fixed Spirits spawning in unreachable spots in **UAC Atlantica Facility**, which could leave the last enemy of an encounter out of reach. Those spawn points now use a Cacodemon.&#13;
-- Hell Knight and Spirit health and remaining-enemy waits now track replacements by the enemy they replaced (for example, the catapult fight in **Immora**).&#13;
-&#13;
-## Encounter recovery&#13;
-&#13;
-- Added the `ap_finish_encounter` console command to get out of a stuck combat encounter. It stops the encounter's spawners, defeats its remaining demons, and lets the encounter end normally, so doors, music, the encounter's check, and checkpoints still trigger.&#13;
-- It only affects the active encounter, gives no Killsanity credit for the demons it defeats, and is refused during boss fights.&#13;
-- Each use is recorded in Support Reports.&#13;
-&#13;
-## Support Reports and diagnostics&#13;
-&#13;
-- Support Reports now include the full installer output, the installer state before and after each run, and the failing installation step with its error.&#13;
-- Added diagnostics for enemy removal, replacement counting in waits, spawn positions, checkpoint saving, power-up delivery, and recent crash reports from Windows Error Reporting.&#13;
-- Kept more of the game console around the latest encounter event and separated the current session's item queue from older entries.&#13;
-&#13;
-**These fixes do not require a new room. Rooms that work with v0.7.1 keep working, and the Atlantica spawn fix applies when the launcher prepares the room package again.**</content>
-    <link href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.7.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/LittleLudroth/MHRise-APWorld/releases/tag/v0.5.3</id>
-    <title>Monster Hunter Rise v0.5.3</title>
-    <updated>2026-10-29T23:06:31+00:00</updated>
-    <author>
-      <name>SolomonW</name>
-    </author>
-    <author>
-      <name>LittleLudroth</name>
-    </author>
-    <content>**Full Changelog**: https://github.com/LittleLudroth/MHRise-APWorld/compare/v0.5.2...v0.5.3</content>
-    <link href="https://github.com/LittleLudroth/MHRise-APWorld/releases/tag/v0.5.3"/>
-  </entry>
   <entry>
     <id>https://github.com/SWCreeperKing/Loddlepelago/releases/tag/v0.1.0-alpha.4</id>
     <title>Loddlenaut v0.1.0a4</title>
@@ -500,7 +445,7 @@ Free code signing for open source projects, provided by
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release8</id>
-    <title>Ocarina of Time v9.1.0r2</title>
+    <title>Ocarina of Time v9.1.0r3</title>
     <updated>2026-10-30T22:55:22+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1164,7 +1109,7 @@ Free code signing for open source projects, provided by
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release9</id>
-    <title>Ocarina of Time v9.1.0r4</title>
+    <title>Ocarina of Time v9.1.0r2</title>
     <updated>2026-11-01T13:59:46+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1543,15 +1488,15 @@ What a backbreaking week, hope this resolves most things standing out and adds a
     <author>
       <name>Leiqart</name>
     </author>
-    <content>Alpha for testing on GTA III PC 1.0. An ASI loader and Archipelago 0.6.7+ are required. No compilation is needed.
-
-- **Complete ZIP:** includes the game plugin, APWorld, YAML and installation instructions.
-- **gta3.apworld / GTA3.yaml:** also available separately for convenience.
-- Extract the ZIP, copy the contents of `gta3_game_files/` next to `gta3.exe`, install the APWorld, connect GTA3 Client, then choose **Run Archipelago**.
-
-Generate a new room with this APWorld. Complete live validation of GML / Luigi's Girls, retries and island crossings is still pending. AP progress is journaled, but full GTA world restoration after restarting is not implemented yet.
-
-Validation: 26 Python tests and 76 C++ tests passed. Build source: `49b18c0ab89d9d27b033d3f7a00034b2725d5778`.
+    <content>Alpha for testing on GTA III PC 1.0. An ASI loader and Archipelago 0.6.6+ are required. No compilation is needed.&#13;
+&#13;
+- **Complete ZIP:** includes the game plugin, APWorld, YAML and installation instructions.&#13;
+- **gta3.apworld / GTA3.yaml:** also available separately for convenience.&#13;
+- Extract the ZIP, copy the contents of `gta3_game_files/` next to `gta3.exe`, install the APWorld, connect GTA3 Client, then choose **Run Archipelago**.&#13;
+&#13;
+Generate a new room with this APWorld. Complete live validation of GML / Luigi's Girls, retries and island crossings is still pending. AP progress is journaled, but full GTA world restoration after restarting is not implemented yet.&#13;
+&#13;
+Validation: 26 Python tests and 76 C++ tests passed. Build source: `a1c57a9d0d2eae31abf2a783fd453502377889d6`.&#13;
 </content>
     <link href="https://github.com/Leiqart/gta3-archipelago/releases/tag/v0.3.0-alpha.1"/>
   </entry>
@@ -1583,5 +1528,43 @@ Validation: 26 Python tests and 76 C++ tests passed. Build source: `49b18c0ab89d
 - See the [README](https://github.com/Arcadia64/sotn-recomp-archipelago#setup).
 </content>
     <link href="https://github.com/Arcadia64/sotn-recomp-archipelago/releases/tag/0.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/tag/v1.0.0</id>
+    <title>Puzzle Bobble 4 v1.0.0</title>
+    <updated>2026-11-02T12:15:02+00:00</updated>
+    <author>
+      <name>Hish</name>
+    </author>
+    <content>The final release of Puzzle Bobble 4 for Archipelago!&#13;
+&#13;
+PuzzleBobble4ArchipelagoClient.exe – The client application that connects Puzzle Bobble 4 to an Archipelago server and handles in-game interactions.&#13;
+&#13;
+puzzlebobble4.apworld – The Archipelago world file. Required to generate and host a Puzzle Bobble 4 game.&#13;
+&#13;
+PuzzleBobble4.yaml – The YAML configuration file containing the available game options and settings.&#13;
+&#13;
+PuzzleBobble4PopTracker.zip – The PopTracker package for tracking your progression and locations.</content>
+    <link href="https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/tag/v1.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/2.1.3</id>
+    <title>Dwarf Fortress v2.1.3</title>
+    <updated>2026-11-02T17:13:51+00:00</updated>
+    <author>
+      <name>Dwarfipelago Contributors</name>
+    </author>
+    <content>A fix-only release. **2.1.x and 2.0.x seeds and worlds stay playable** - the item&#13;
+and location tables are untouched.&#13;
+&#13;
+### Fixes&#13;
+&#13;
+- **Fixed gem cutting jobs not being counted.**&#13;
+&#13;
+- **Added the chair/throne logic checks as prerequisites for the toy checks**&#13;
+&#13;
+- **Fixed the skill lowering bug that was introduced when I added less intrusive scanning. This was lowering skills after the checks were done.**&#13;
+</content>
+    <link href="https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/2.1.3"/>
   </entry>
 </feed>

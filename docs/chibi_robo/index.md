@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/EverydaySimpleDev/Archipelago/releases/download/1.3.2/chibi_robo.apworld">Latest Version (1.3.2)</a>
+- <a href="https://github.com/EverydaySimpleDev/Archipelago/releases/download/chibi-robo-1.3.3/chibi_robo.apworld">Latest Version (1.3.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
