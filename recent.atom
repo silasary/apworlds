@@ -2,164 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-01T18:17:31.194290+00:00</updated>
+  <updated>2026-11-02T00:22:27.354297+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/tag/0.1.1</id>
-    <title>Chants of Sennaar v0.1.1</title>
-    <updated>2026-10-29T01:16:29+00:00</updated>
-    <author>
-      <name>synaesthesis</name>
-    </author>
-    <content>### Added&#13;
-- AP client now creates a local save file (in `BepInEx/config/ChantsOfSennaarAP`) to record received checks and properly sync items with the server&#13;
-&#13;
-### Fixed&#13;
-- Received items are now reapplied when a user restarts or changes save files&#13;
-- AP client GUI now displays only after splash screen has ended </content>
-    <link href="https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/tag/0.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.12.1</id>
-    <title>Casualties: Unknown v0.12.1</title>
-    <updated>2026-10-29T02:44:54+00:00</updated>
-    <author>
-      <name>Nichologeam</name>
-    </author>
-    <content>### Casualties: Unknown Archipelago v0.12.1&#13;
-This update is compatible with worlds generated on version 0.12.0!&#13;
-&#13;
-For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
-Development on the Itch.io version of Casualties: Unknown has stopped. To play this mod on the Itch.io version, use CUAP v0.8.0.&#13;
-&#13;
-Note: This will be the last update before the game's full release unless something game breaking is found.&#13;
-&#13;
-# Additions&#13;
-- The slot will now display as "Playing" on the web tracker when in a run, and revert back to "Connected" when on the main menu&#13;
-- The APWorld is now part of the GitHub repo&#13;
-# Changes&#13;
-- Rewrote all logic to use the Rule Builder system [APWorld Change]&#13;
-- Removed RingLink [APWorld Change]&#13;
-- The mod will now refuse to start if KrokMP is installed&#13;
-	- This will eventually be changed to allow for the mod being in disabled mode&#13;
-- Amputated is no longer part of the Deadly Moodlesanity Exclusions preset&#13;
-# Fixes&#13;
-- Fixed Moodlesanity locations relating to hearing loss expecting the player to craft a Drill repair kit without the recipe unlocked [APWorld Change]&#13;
-- Fixed `Moodlesanity - Half-asleep` not sending [APWorld Change]&#13;
-# Known Issues&#13;
-- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators&#13;
-- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game&#13;
-- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game&#13;
-- Skillsanity skill levels received offline will not be given when loading a save file from a previous session. You must start a new run to receive them&#13;
-- There are sometimes accessibility errors relating to Craftsanity locations that require Overgrown Depths access despite the generated seed having access to Overgrown Depths. I do not know how to fix this&#13;
-- EnergyLink sometimes doesn't work when playing in a server with more than one slot. I plan to rewrite EnergyLink entierly in an upcoming update.&#13;
-&#13;
-**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.12.0...v0.12.1</content>
-    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.12.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/BarbeucTheCat/Minecraft-Dungeons-Apworld/releases/tag/v0.0.3</id>
-    <title>Minecraft Dungeons v0.0.3</title>
-    <updated>2026-10-29T09:33:18+00:00</updated>
-    <author>
-      <name>FishTheCook</name>
-    </author>
-    <content>New release the v.0.0.3</content>
-    <link href="https://github.com/BarbeucTheCat/Minecraft-Dungeons-Apworld/releases/tag/v0.0.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EverydaySimpleDev/Archipelago/releases/tag/ffcc-beta.0.2.0</id>
-    <title>Final Fantasy Crystal Chronicles v0.2.0</title>
-    <updated>2026-10-29T15:19:46+00:00</updated>
-    <author>
-      <name>EverydaySimpleDev</name>
-    </author>
-    <content>## New Features&#13;
-&#13;
-- Victory Goal: Monster Hunt. Defeat at least one of every enemy type or every enemy in every cycle! Chests are no longer checks (Keep in mind that if you enable every enemy as a check, you will have over 1000 checks!)&#13;
-&#13;
-- Shop Checks: The first purchase from each shop slot is a check, 94 slots in 8 shops. Each shop sells the same stock all game. Tipa's shop is excluded, since it only exists with a Merchant family. Shella's shop expects Veo Lu Sluice first, for the Shella Mark.&#13;
-&#13;
-- Mog Stamp Hints (on by default): each new Mog Stamp hints where one of your progression items is, in any world.&#13;
-&#13;
-- New AP item model: It no longer looks like a bag but looks like the AP logo! &#13;
-&#13;
-### New Options&#13;
-&#13;
-- Hotspot Elements: the elemental pools change element every year. &#13;
-&#13;
-Match Miasma Streams: each side of the world gets the elements its streams need that year. This seems to be the fix for most of the soft locks due to having the miasma streams randomized!&#13;
-Shuffled: random elements each year. May end up with more soft locks but thought I would still give it as a option for players. The client still has the /element command just in case you get stuck!&#13;
-&#13;
-A dungeon keeps its usual number of elements. The world-map name bubble and the "Change element" menus follow the year too.&#13;
-&#13;
-- Progressive Artifact Order: game order, strength first, magic first, defense first, or random.&#13;
-&#13;
-- Progression Cycles: play only Cycle 1, or Cycles 1-2. Later cycles hold only filler. Makes seeds a bit faster!&#13;
-&#13;
-- Dungeon shortcuts, one option each! Makes it a lot faster to get to the end of stages! These options do not change any logic but are only to be helpful to the player.&#13;
-&#13;
-River Belle Path bridges (Not a big shortcut but I thought I would include it)&#13;
-Goblin Wall gates (All the gates are open in both areas. Making it fast to go to the boss!)&#13;
-Mine boxes (No longer need to keep on hitting the cart to play the stage)&#13;
-Tida webs (Webs don't show up to make it faster on the player!)&#13;
-Moschet Manor doors (Doors will open up right away as you enter the area)&#13;
-Selepation Cave elevators (Elevators start lowered)&#13;
-Conall Curach log bridges (The log bridges start enabled in the stage)&#13;
-Rebena Te Ra gates (All magic puzzle gates are opened!)&#13;
-Lynari Desert Unknown puzzle (I kept forgetting this puzzle order so this saved me some time haha)&#13;
-&#13;
-- Chest Color Matches Contents: gold chests hold progression items! &#13;
-&#13;
-- Hide Collected Chests: chests whose check is done don't appear. Some players may want to farm the chest resources while others want to be able to see the chests they missed.&#13;
-&#13;
-- Magicite Needs Its Ring: magicite only works once you have its ring. Just in case the game wasn't hard enough already :)&#13;
-&#13;
-- Best Bonus Tier: the end-of-dungeon bonus always offers the best tier.&#13;
-&#13;
-- Items Dropped At Your Feet: received items land on the ground in front of you instead of directly into your bag. Might help players who want to do some interesting Co-op play!&#13;
-&#13;
-- Keep Picked-Up Artifacts: picked-up artifacts go straight to your artifact list instead of inside the temporary treasures UI. This will work with any player who picks up the artifact and not just player 1!&#13;
-&#13;
-- Mog stamp hints! Every mog stamp will give you a new hint for a progressive item. &#13;
-&#13;
-&#13;
-## Fixes / Changes&#13;
-&#13;
-- Progressive Equipment pieces now go into your bag to equip, instead of replacing your gear.&#13;
-- The apworld decides the bonus rewards, so the poptracker can show them. Great tracking for you players who want to farm bonus rewards :) &#13;
-- Code clean up for my own sanity!&#13;
-&#13;
-### Logic&#13;
-&#13;
-- Shuffle Loading Zones fix: ring-gated dungeons only count once a dungeon with no ring requirement is reachable. Some seeds used to fail to generate.&#13;
-- Stream elements, hotspots and the "Change element" menus are worked out year by year.&#13;
-- Town shops need their area's year. The Fields of Fum also need the river crossing, and Shella needs Veo Lu Sluice.&#13;
-&#13;
-### Client &#13;
-&#13;
-- New commands:&#13;
-&#13;
-/cycle - Show / change cycle of any stage!&#13;
-/bonus - Shows the current bonus condition, does the math to show the current bonus value! Great for you 100% players out there!&#13;
-/hunt - Shows the remaining enemy types and the best place to find them!&#13;
-/resend - Drops the last item again just in case something goes wrong.&#13;
-/deathlink - on, off or default. The choice is remembered through reconnects. Just in case you change your mind about deathlink during play. This game can get difficult!&#13;
-&#13;
-- Items are delivered in towns too, dropped once the shop menu is closed.&#13;
-- Reports the year, dungeon cycles, current stage and bonus picks to the trackers.&#13;
-&#13;
-### Universal Tracker&#13;
-&#13;
-- The map page shows every pack pin (chests, enemies, shop slots) and highlights hinted ones.&#13;
-- UT rebuilds the seed with its own layout, streams, hotspot and menu tables, so its logic matches generation.&#13;
-&#13;
-</content>
-    <link href="https://github.com/EverydaySimpleDev/Archipelago/releases/tag/ffcc-beta.0.2.0"/>
-  </entry>
   <entry>
     <id>https://github.com/EverydaySimpleDev/Archipelago/releases/tag/ffcc-beta-0.2.1</id>
     <title>Final Fantasy Crystal Chronicles v0.2.0r2</title>
@@ -865,7 +712,7 @@ Free code signing for open source projects, provided by
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release8</id>
-    <title>Ocarina of Time v9.1.0r3</title>
+    <title>Ocarina of Time v9.1.0r2</title>
     <updated>2026-10-30T22:55:22+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1074,6 +921,18 @@ After beating Garland, just exit Chaos shrine rather than teleporting back to Co
 - Monster sprites&#13;
 - Time out issue connecting</content>
     <link href="https://github.com/1-800-thewolf/FF1PSP-Archipelago/releases/tag/v0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ZAPaDASH04/LEGO-Batman-APworld/releases/tag/v1.0.1</id>
+    <title>Lego Batman: The Video Game v1.0.1</title>
+    <updated>2026-10-31T17:09:32+00:00</updated>
+    <author>
+      <name>ZAPaDASH04</name>
+    </author>
+    <content>#Hotfix&#13;
+&#13;
+- Fixed the bug where the A Daring Rescue Holding Cell minikit didn't expect you to be able to leave the sewer.</content>
+    <link href="https://github.com/ZAPaDASH04/LEGO-Batman-APworld/releases/tag/v1.0.1"/>
   </entry>
   <entry>
     <id>https://github.com/Str8UpWHITE64/CrabChampionsAP/releases/tag/2.0.0</id>
@@ -1517,7 +1376,7 @@ Free code signing for open source projects, provided by
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release9</id>
-    <title>Ocarina of Time v9.1.0r2</title>
+    <title>Ocarina of Time v9.1.0r4</title>
     <updated>2026-11-01T13:59:46+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1568,7 +1427,7 @@ Please note: Since OoT is currently not shipped as a bundled .apworld file, but 
 and it is replaced without warning. For something that stays put, use the
 [latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
 
-Built from `a1ea1dd020f07d207a262cdaad1fffb4001090c4`.
+Built from `6d761f715696b653d74211f9ff2b62c6b4d72831`.
 
 ## Downloads
 
@@ -1577,6 +1436,8 @@ Built from `a1ea1dd020f07d207a262cdaad1fffb4001090c4`.
 
 ## Since v1.18.7
 
+- chore(beads): sync issues
+- feat(stability): known-failure list for the daily report
 </content>
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
   </entry>
@@ -1730,5 +1591,102 @@ Free code signing for open source projects, provided by
 &#13;
 **Full Changelog**: https://github.com/lilDavid/Archipelago-Wario-Land-4/compare/3.5.0...3.5.1</content>
     <link href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/tag/3.5.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TylerJG92/WOLAP/releases/tag/v0.3.6-alpha</id>
+    <title>West of Loathing v0.3.2r2</title>
+    <updated>2026-11-01T21:39:55+00:00</updated>
+    <author>
+      <name>Xylen</name>
+    </author>
+    <author>
+      <name>TylerJG92</name>
+    </author>
+    <content># v0.3.6&#13;
+All save files and APWorlds generated with v0.3.0 remain compatible with WOLAP v0.3.6 and APWorld v0.3.2. No regeneration is required to continue playing.&#13;
+&#13;
+## Client Mod Changes&#13;
+* Fixed a bug with Dirtwater shop hinting where `Dirtwater (Grady's Fine Leather Goods) - Bonus Item` was still hinting early&#13;
+&#13;
+## APWorld Changes&#13;
+* No Changes were made</content>
+    <link href="https://github.com/TylerJG92/WOLAP/releases/tag/v0.3.6-alpha"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.4.4</id>
+    <title>Pokemon Black and White v0.4.4</title>
+    <updated>2026-11-01T22:16:04+00:00</updated>
+    <author>
+      <name>BlastSlimey</name>
+    </author>
+    <content>## Changelog&#13;
+&#13;
+- Fixed plugins crashing when trying to import anything in `stage_init(cls)`&#13;
+- Added support for plugins changing location data and adding static encounters, regions, and region connections&#13;
+- Fixed the Abundant Shrine cutscene freezing the game&#13;
+- Fixed potential bugs on route 7&#13;
+- Fixed fossil reanimation names being cut off by one character in extended hint data&#13;
+- Fixed repeating gym and elite four types, if shuffled&#13;
+- Fixed high frequency of same-type type-themed areas when combined with other modifiers&#13;
+&#13;
+### Is this version compatible with older multiworld slots and save files?&#13;
+Yes, back to 0.4.0&#13;
+However, UT might be inaccurate when tracking worlds generated before 0.4.4</content>
+    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.4.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.5.4</id>
+    <title>Hollow Knight: Silksong v0.5.4</title>
+    <updated>2026-11-01T23:10:18+00:00</updated>
+    <author>
+      <name>BatAtVideoGames</name>
+    </author>
+    <content>Changelog may be shorter but quality &gt; quantity (plus it means there are fewer problems to solve yay)&#13;
+What a backbreaking week, hope this resolves most things standing out and adds a bunch of fun stuff, been working on this whenever time allowed me to and the mappers have done insane work.&#13;
+(Also usual small offer to [buy me a coffee](https://streamlabs.com/batatvideogames/tip) if you feel like supporting this)&#13;
+&#13;
+# Changelog&#13;
+&#13;
+## Major&#13;
+&#13;
+- Improved Swim randomization: water falls now return Hornet to her last safe dry landing when possible&#13;
+- Items from supported multiworld games now display their own icons in shops, quest previews and sent-item notifications&#13;
+- Added shared and per-crest Bind randomization for healing and interactions that require Bind&#13;
+- New randomization options: Cogheart Pieces, Crawbell, Farsight, Bellhome Items, Materium (plus Flintstone, Volstone and Magnetite)&#13;
+- Rosary economy for ER/Enemy Souls/Ledge Grab rando&#13;
+&#13;
+## Minor&#13;
+&#13;
+- **Massive logic updates in pretty much everywhere**&#13;
+- Corrected departure logic at nine paid Bellways, including Grand Bellway, so their own randomized station item is no longer required&#13;
+- Fixed Bellway menus allowing travel to locked Bone Bottom on alternative start locations. Empty destination menus now close safely instead of crashing&#13;
+- Fixed Wish Shuffle courier offers overlooking completed Queen’s Egg and Liquid Lacquer&#13;
+- Fixed Liquid Lacquer’s offer appearing in logic before its required second completion&#13;
+- Fixed logic incorrectly using an uncollected vanilla ability to reach its own pickup&#13;
+- Fixed Bell Beast remaining invisible after purchasing a station&#13;
+- Fixed Fourth Chorus becoming inaccessible after leaving during the cloak quest with F4&#13;
+- Fixed falling into Groal’s muckwater without Swim returning you outside the arena&#13;
+- Fixed missing randomized Silkeaters ItemIcon&#13;
+- Fixed shorter goals retaining unavailable relic turn-ins and later-area locations&#13;
+- Fixed silk barricade logic incorrectly allowing Hunter, Reaper, Beast and Shaman crests without Needle Strike&#13;
+- Fixed some generation failures involving vanilla Bellways and Craftmetal&#13;
+- Fixed Act 1 availability checks when later abilities are randomized&#13;
+- Added grave-marker and Ruined Chapel Rosary stashes to Rosary Cache randomization (they don't have the lil AP rosary icon yet)&#13;
+- Impossible solo configurations now stop sooner with a clearer error&#13;
+- Fixed darkness and camera positioning at Terminus' upper entrances in Act 3&#13;
+- Fixed freezing when turning around on a Clawline ring with only one direction unlocked&#13;
+- Sherma's duplicate-not-duplicate can now record the Songclave meeting correctly (relevant for wish-shuffle Balm for the Wounded)&#13;
+- Fixed the Bone Bottom intro incorrectly marking Moss Mother defeated&#13;
+- Fixed Seth's camera swinging left when entering from the right&#13;
+- Fixed Caretaker mistakenly looking for Lace 2 kill instead of boss-credit with boss-sanity on&#13;
+- Fixed some missing UT map images and misplaced item coordinates&#13;
+&#13;
+### Beta Features&#13;
+&#13;
+- Fixed collection wishes appearing in logic without the enemy souls needed to obtain their materials&#13;
+- Fixed entering Slab Chilly Prison from above leaving the room hidden&#13;
+- Fixed missing First Kill routes, including Choir Bellbearer and Reed&#13;
+- Removed the incorrect soul requirement for breaking Vog’s floor</content>
+    <link href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/tag/v0.5.4"/>
   </entry>
 </feed>

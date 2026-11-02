@@ -14,6 +14,7 @@ both
 - fill more funny dialog
 - add funny text "your free trial has ended" to old man in Striaton
 - loot sack grunts broken? apparently not moving even after beating lenora
+- frequent white screens
 
 # Not urgent
 

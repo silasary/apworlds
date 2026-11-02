@@ -1,6 +1,20 @@
 # Changelog
 Versions are sorted in ascending order, i.e. the most recent changes are at the top.
 
+## 0.4.4
+
+- Fixed plugins crashing when trying to import anything in `stage_init(cls)`
+- Added support for plugins changing location data and adding static encounters, regions, and region connections
+- Fixed the Abundant Shrine cutscene freezing the game
+- Fixed potential bugs on route 7
+- Fixed fossil reanimation names being cut off by one character in extended hint data
+- Fixed repeating gym and elite four types, if shuffled
+- Fixed high frequency of same-type type-themed areas when combined with other modifiers
+
+### Is this version compatible with older multiworld slots and save files?
+Yes, back to 0.4.0
+However, UT might be inaccurate when tracking worlds generated before 0.4.4
+
 ## 0.4.3
 
 - Fixed a rare case of patch files failing due to internal species forms

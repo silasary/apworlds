@@ -8,6 +8,9 @@
 #### v0.3.2r2
 - <a href="https://github.com/TylerJG92/WOLAP/releases/download/v0.3.5-alpha/westofloathing.apworld">https://github.com/TylerJG92/WOLAP/releases/download/v0.3.5-alpha/westofloathing.apworld</a>
 
+#### v0.3.2r2
+- <a href="https://github.com/TylerJG92/WOLAP/releases/download/v0.3.6-alpha/westofloathing.apworld">https://github.com/TylerJG92/WOLAP/releases/download/v0.3.6-alpha/westofloathing.apworld</a>
+
 #### v0.3.2
 - <a href="https://github.com/TylerJG92/WOLAP/releases/download/v0.3.4-alpha/westofloathing.apworld">https://github.com/TylerJG92/WOLAP/releases/download/v0.3.4-alpha/westofloathing.apworld</a>
 
