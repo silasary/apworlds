@@ -1,0 +1,89 @@
+{
+  "authors": [
+    "CaptPurpleHeart"
+  ],
+  "game": "One Piece Unlimited Cruise 1",
+  "github": "https://github.com/captpurpleheart/opuc1-archipelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.15.0": {
+      "created_at": "2026-10-21T00:43:13Z",
+      "description": "- Randomized starting Straw Hats. You start with 1 random playable Straw Hat.\r\n- Game Over has been completely removed from the game, you should only encounter the vanilla game over as a fallback if the game fails to do it's work arounds, do let me know if this ever comes up so I can fix it.\r\n- Items include playable Straw Hats / Key Items & Tools / Shrine & Build Site Access / Character Moves & Skills / Access to the Thousand Sunny's facilities such as Development/Cooking/Compounding / Progressive Gabri Levels / Treasure Map Fragments\r\n- Locations include Move Level Ups / Story-based Enemy Ambushes / Chests / Shrines & Build Sites / Stone Monuments / Crafting Recipes / Catching Creatures / Fishing\r\n- You can disable Diminishing Returns on Food items, so they always give the full HP/SP stat increase.\r\n- Crafting Recipe Locations can spoil what item they give out.\r\n- Fishing Rod Upgrades to be 1 item = 1 level, or 1 item = 5 levels, or simply Fishing Rod -> Whopper -> Sea King -> MAX Level\r\n- Treasure Maps to need all their pieces found before a chest can be dug up.\r\n- **PLENTY** of Straw Hat member gating options, so everyone is important!\r\n- Filler Weight Options\r\n- Universal Tracker Support\r\n- Armed Items Tab in the Client.",
+      "download_url": "https://github.com/captpurpleheart/opuc1-archipelago/releases/download/v0.15.0/opuc1.apworld",
+      "has_manifest": true,
+      "hash_sha256": "28e2b6ed9026f3c781a0f87055af336b715bb156eb4b6eb956796b2f5d76440f",
+      "html_url": "https://github.com/captpurpleheart/opuc1-archipelago/releases/tag/v0.15.0",
+      "minimum_ap_version": "0.6.0",
+      "size": 61569,
+      "source_url": "https://api.github.com/repos/captpurpleheart/opuc1-archipelago",
+      "tag": "v0.15.0",
+      "title": "ONE PIECE: Unlimited Cruise 1 Archipelago - ALPHA Build v0.15.0 - \"The Wooded Isle Scope\"",
+      "version_simple": "0.15.0",
+      "world_version": "0.15.0"
+    },
+    "v0.15.1": {
+      "created_at": "2026-10-22T09:39:33Z",
+      "description": "- Fixed a crash (\"Invalid read from 0x00000000\") when picking up an item that discovers an Archipelago Item recipe you don't have the Art for yet, with \"Crafting Recipes Are Discovered Through Arts\" on. Those recipes now stay hidden without the game's \"An Idea!\" popup and appear once you receive the Art.\r\n\r\nReplace your old opuc1.apworld with this one. Existing seeds and YAMLs keep working.",
+      "download_url": "https://github.com/captpurpleheart/opuc1-archipelago/releases/download/v0.15.1/opuc1.apworld",
+      "has_manifest": true,
+      "hash_sha256": "7e3b6d9b6636f252be5705e904340614fb2306f98278c61d42b9c57616397b53",
+      "html_url": "https://github.com/captpurpleheart/opuc1-archipelago/releases/tag/v0.15.1",
+      "minimum_ap_version": "0.6.0",
+      "size": 61816,
+      "source_url": "https://api.github.com/repos/captpurpleheart/opuc1-archipelago",
+      "tag": "v0.15.1",
+      "title": "ONE PIECE: Unlimited Cruise 1 Archipelago - ALPHA Build v0.15.1",
+      "version_simple": "0.15.1",
+      "world_version": "0.15.1"
+    },
+    "v0.19.6": {
+      "created_at": "2026-10-25T18:24:05Z",
+      "description": "The Gorge Isle is here, and with it, a mountain of changes, features and fixes!\r\n\r\n> Generate a new seed with this version and the new `OPUC1.yaml` (0.15.x seeds aren't supported by this client).\r\n\r\n### What's New?\r\n\r\n#### The Gorge Isle\r\nThe main feature of this update, adds the 2nd Island to the AP run. This means Locations for Don Krieg & Captain\r\nKuro, Gecko Moria, all the various ambushes, shrines, stone monuments, treasure chests and more!\r\n\r\nThis also means new locations for Usopp's Workshop / Sanji's Kitchen / Chopper's Pharmacy for all the newly\r\naccessible materials found on Island 2, as well as all the new creatures to Fish/Catch for those sanity options!\r\n\r\n#### The Central Isle & Goal Options\r\nThe Central Isle has been added (the final/5th Island), and is now the new default goal, where you must collect\r\nall 13 Gabri Levels as well as \"The Final Door\" shrine access item, take on the Doom Guardian and win the run! The\r\nsingle Stone Monument \"Inferno\", is the only non-goal related location on the island. Other Goal Options include\r\nEneru and Gecko Moria. If choosing one of those, Doom Guardian will be inaccessible for that run, but you can still\r\nvisit that island for the Stone Monument check.\r\n\r\nBoth The Gorge Isle and The Central Isle are unlocked via Archipelago Items, so you'll be able to access those\r\nislands way earlier than you're supposed to!\r\n\r\n#### New Quality of Life Features!\r\n- Iron Scrap gives Gold Energy.\r\n  - *(10 per Iron Scrap. 10 Iron Scrap = 1 Gold Energy Level)* *(YAML OPTION)*\r\n- The Repeatable Blue Orb Digspot outside the Thousand Sunny on the Wooded Isle now gives Pure Iron Ore instead of\r\n  the Blue Orb. Logic now no-longer counts the one-time digspots for Pure Iron Ore, and now requires Brook +\r\n  Pickaxe for the crafting recipes that require it to go into logic, just in case you lose your one-time Pure Iron\r\n  Ores. If this option is off, it removes the locations for the Crafting Recipes that require Pure Iron Ore (until\r\n  we add Island 4).\r\n  - *(YAML OPTION)*\r\n- The Treasure Map drop slot for enemies now drop Gold Orbs instead.\r\n- The Treasure Map 10 drops for the dust piles on the Thousand Sunny give random orbs out instead.\r\n- Creature Traps no longer expire (compared to the 6 minute timer post-catching a creature), and catch things\r\n  after 10 minutes (compared to the vanilla game's 30-50 minute range). When you leave the location you set the\r\n  trap up (Sunny -> Island for example), it shaves off 10 minutes from the timer. So if you set up a trap, leave\r\n  and come back, you'll immediately get a catch.\r\n  - *(2 DIFFERENT YAML OPTIONS)*\r\n- Progressive Bag Upgrade / Progressive Palette Upgrade / Progressive Cat Burglar / Progressive Light Weight can\r\n  now be chosen to be either Useful or Progression-Skip Balancing, if you don't want those items to be locked\r\n  behind unimportant Super Level Ups.\r\n- The Database Menu is unlocked from the Start (usually unlocks post-Gecko Moria), and the client now uses that\r\n  database for Creature/Fishing checks, which fixes Sea King checks not being sent.\r\n\r\n### Bug-Fixes and Other Changes\r\n- Fixed the \"Idea!\" pop-up causing errors that was still affecting Key Items (like the Tone Dial).\r\n- Attempted to fix the checks being sent on reload.\r\n  - *(I could not replicate this issue on my end, so hopefully this'll help guard against this.)*\r\n- Sea King checks not being sent.\r\n- Pickaxe and Red Fruit chests now also go into logic if you beat Moria before Eneru, as the Kitchen/Medical Rooms\r\n  get opened up if Moria is defeated before Eneru as well as the girl's dorms.\r\n- The Fishing Rod level must match the Line Level for harder fish to go into logic.\r\n- Healing Capsule, Stamina Tonic, Mock Cherry Pie and Dual-Action Tonic are no longer filler for now, since the\r\n  Shrines ask for them as offerings, I'd rather not have people access big areas of islands out of logic. I will\r\n  most likely change this again another time.\r\n- Changed a few Item/Location names.\r\n\r\n## 0.15.1\r\n- Fixed the \"An Idea!\" crash with Crafting Recipes Are Discovered Through Arts.\r\n\r\n## 0.15.0\r\n- First public alpha: the Thousand Sunny and Island 1 (Wooded Isle).",
+      "download_url": "https://github.com/captpurpleheart/opuc1-archipelago/releases/download/v0.19.6/opuc1.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e9e253c83651d07a3bb50b730844e07befd2d3c98e3867588bde42eb8fb09cea",
+      "html_url": "https://github.com/captpurpleheart/opuc1-archipelago/releases/tag/v0.19.6",
+      "minimum_ap_version": "0.6.0",
+      "size": 76425,
+      "source_url": "https://api.github.com/repos/captpurpleheart/opuc1-archipelago",
+      "tag": "v0.19.6",
+      "title": "ONE PIECE: Unlimited Cruise 1 Archipelago - ALPHA Build v0.19.6 - \"The Gorge Isle Scope\"",
+      "version_simple": "0.19.6",
+      "world_version": "0.19.6"
+    },
+    "v0.19.7": {
+      "created_at": "2026-10-26T19:04:45Z",
+      "description": "0.19.7 \u2013 Fixed the Broken Bug-Catcher Net coming back after crafting the Bug-Catcher Net. Client-side only: 0.19.6 seeds keep working, just replace the apworld.",
+      "download_url": "https://github.com/captpurpleheart/opuc1-archipelago/releases/download/v0.19.7/opuc1.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1a5ebec4ee9132bebf62342177bffe3540e6aa08b0106277faac6aaa1b6a6e1c",
+      "html_url": "https://github.com/captpurpleheart/opuc1-archipelago/releases/tag/v0.19.7",
+      "minimum_ap_version": "0.6.0",
+      "size": 76590,
+      "source_url": "https://api.github.com/repos/captpurpleheart/opuc1-archipelago",
+      "tag": "v0.19.7",
+      "title": "ONE PIECE: Unlimited Cruise 1 Archipelago - ALPHA Build v0.19.7",
+      "version_simple": "0.19.7",
+      "world_version": "0.19.7"
+    },
+    "v0.19.9": {
+      "created_at": "2026-10-26T20:15:19Z",
+      "description": "Fixed the real cause of the Bug-Catcher Net issue: crafting the net didn\u2019t swap out the old tool, side effect from removing the \"Idea!\" popup, so the Broken net stayed and the net went missing. The tool swapper has been fixed while keeping the \"Idea!\" pop up crash fix.",
+      "download_url": "https://github.com/captpurpleheart/opuc1-archipelago/releases/download/v0.19.9/opuc1.apworld",
+      "has_manifest": true,
+      "hash_sha256": "37f1bd3a63d8b75404536cf642d4b729930b6f04234739e43965b418333f9fae",
+      "html_url": "https://github.com/captpurpleheart/opuc1-archipelago/releases/tag/v0.19.9",
+      "minimum_ap_version": "0.6.0",
+      "size": 76788,
+      "source_url": "https://api.github.com/repos/captpurpleheart/opuc1-archipelago",
+      "tag": "v0.19.9",
+      "title": "ONE PIECE: Unlimited Cruise 1 Archipelago - ALPHA Build v0.19.9 - Bug-Catcher Net Fix fr this time LOL",
+      "version_simple": "0.19.9",
+      "world_version": "0.19.9"
+    }
+  }
+}
