@@ -14,7 +14,7 @@ game: "Slay the Spire II"
 requires:
   version: 0.6.7 # Minimum Archipelago version for this YAML.
   game:
-    Slay the Spire II: 1.2.0 # Minimum APWorld version for this YAML.
+    Slay the Spire II: 1.2.1 # Minimum APWorld version for this YAML.
 Slay the Spire II:
   #####################
   # Character Options #
@@ -26,15 +26,16 @@ Slay the Spire II:
     - "Silent"
     - "Necrobinder"
 
-  # Up to 20 extra modded characters, by predefined display name (e.g. Watcher) or full internal ID.
+  # Extra modded characters, by predefined display name (e.g. Watcher) or full internal ID.
+  # Any number of predefined characters; at most 20 characters without a predefined name.
   # The mod must be installed; installed IDs are listed in-game under Archipelago Settings.
-  # Some example modded characters and their mods will probably have a list somewhere pinned on discord
+  # Predefined characters, their internal IDs and their mods: https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/blob/setup-docs-do-not-delete/docs/predefined-characters.md
   modded_characters: []
 
-  # Randomly pick this many characters from the lists above. 0-25; 0 uses all of them.
+  # Randomly pick this many characters from the lists above. 0-37; 0 uses all of them.
   pick_num_characters: 0
 
-  # Number of characters you must win with to goal. 0-25; 0 means every character.
+  # Number of characters you must win with to goal. 0-37; 0 means every character.
   num_chars_goal: 0
 
   # Whether characters must be unlocked by "Unlock <Character>" items.
@@ -85,6 +86,11 @@ Slay the Spire II:
   # Relic items you can claim from the Archipelago menu at any time. 0-10.
   # Any further relics are claimed by beating elites or opening chests. tldr; fight elites
   relic_rewards_available_anytime: 2
+
+  # Removes relics that are much stronger in Archipelago. Leave empty to keep every relic.
+  #   Ancient  - Pael's Growth and Glitter, from Anytime Ancient rewards only
+  #   Rare     - Prayer Wheel and White Star, from every relic source
+  remove_op_relics: []
 
   # Start without your special starter card (Bash, Neutralize, ...); two items restore and then
   # upgrade it. Requires include_floor_checks. Can make the early game much harder but late game easier
@@ -191,7 +197,7 @@ Slay the Spire II:
   ################
 
   # How often each filler item is picked: none, low, medium or high
-  # Buffs below apply at the start of your next combat turn.
+  # Buffs below are queued in the order received and apply one per combat.
   one_gold_filler_weight: "none"                    # 1 gold; used as a fallback if every weight is none
   five_gold_filler_weight: "high"                   # 5 gold
   free_attack_filler_weight: "high"                 # Next Attack costs 0
