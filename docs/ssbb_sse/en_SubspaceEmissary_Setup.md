@@ -39,7 +39,7 @@ The mod for the Subspace Emissary APWorld uses the same loading method as most B
 
     ![](images/dolphintool.png)
 
-    **Note:** The Linux Distribution of Dolphin does **not** include DolphinTool, and as such, it must be installed separately. Install `dolphin-emu-tool`, then use `whereis dolphin-tool` to find the install location. Select this location instead of `DolphinTool.exe`
+    **Note:** Some Linux Distros do **not** include DolphinTool in the standrd dolphin package, and as such, it must be installed separately. On Fedora and Arch Linux, you must install `dolphin-emu-tool`. On Debian-based distributions, dolphin-tool is included. The client will attempt to detect and run both native and flatpak installations, and will prompt you to specify the file only if the detection fails
 
     It will also ask you for your Super Smash Bros. Brawl ROM. Note that **only NTSC USA ROMs** will work, and other releases will be rejected. (However, both v1.01 and v1.02 are usable.)
 

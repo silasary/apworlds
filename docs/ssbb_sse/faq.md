@@ -10,6 +10,21 @@ Yes, the build is currently mostly stable, just very barebones. Due to the natur
 
 [See here](./en_SubspaceEmissary.md#what-gets-randomized)
 
+### My client doesn't seem to be connecting to Dolphin / it's not sending or receiving checks correctly.
+
+This is probably an issue with Dolphin memory engine, which has historically been hard to debug. Some notes:
+
+- Dolphin memory engine does **not** work on Mac, and as such this AP implementation is not compatible with Mac.
+- Linux distributions have varying degrees of success, installing Dolphin via flatpak has been found to be the most consistent
+
+### Is there character randomization?
+
+No, not yet.
+
+### Is this compatible with Project: M / other mod?
+
+No, due to Archipelago distribution rules PM and other content mods are not supported and there is no plan to do so. Cosmetic mods should be largely compatible and should be bundled into the SD card folder that is generated before packing.
+
 ### Where should I go to start playing?
 
 When you've opened Brawl, navigate to the Subspace Emissary and create a new save file. Opening an existing save file will immediately send all the checks that that save file has completed... which I assume is not what you want.
