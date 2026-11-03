@@ -314,6 +314,21 @@
       "version_simple": "0.1.9",
       "world_version": "0.1.9"
     },
+    "0.2.0": {
+      "created_at": "2026-11-03T16:33:15Z",
+      "description": "New Features:\r\n- Added an option for enemy sanity checks, meaning killing one enemy of each kind counts as a check\r\n- Added a room randomizer (will randomly switch biome places) with 3 options:\r\n  - depth: close to the classic experience by only swapping biomes in the same depth\r\n  - tier: swaps the biomes by groups delimited by bosses\r\n  - chaotic: can replace any biome with any other biome\r\n  - Note that the Bank still works in the same way as usual\r\n  - This gamemode is still a work in progress, so it is not advised to use it in multiplayer, the in-game tracker isn\u2019t adapted yet, and some other features may not work correctly.\r\n- Gave back a use to the hunter's mirror.\r\n  - A random accessible enemy will be selected upon interaction with the mirror\r\n  - Killing the enemy will randomly hint at one of your accessible checks and slightly reduce the price of the mod shop\r\n\r\nGameplay Changes:\r\n- Now shop mimic blueprints also have a hunter's grenade requirement\r\n- The distillery doesn\u2019t require you to have seen the throne room beforehand\r\n- Increased the number of lore rooms in Prisoners\u2019 Quarters to a maximum of 4 new and 2 previously generated and not looted\r\n  - Disclaimer: adding more rooms increases the complexity of the level and increases the time needed for generation, so it is advised to loot them as soon as possible\r\n- Changed fixed weapon drops, now giving a random filler-like item instead\r\n- A trap weight can be selected for the filler generation, and is also used in death traps\r\n\r\nQuality of Life:\r\n- Refactored the UI control logic to improve stability and allow the use of mouse and controller at the same time without crashing\r\n- Writing in a text field locks the cursor in it, avoiding unwanted movements in the menu\r\n- Disabled launching the game when connected to an incompatible apworld\r\n- Improved responsiveness for text fields and item descriptions\r\n\r\nBug Fixes:\r\n- Some item descriptions not being displayed\r\n- Mutation checks not being counted for the green hole head\r\n- Lag when putting a lot of cells in the forge at once\r\n- Warp being based on biome checks\r\n- Some crashes caused by a disconnection\r\n- Cells being deposited in energy link upon death\r\n- Removed the warp option when doing daily challenge, boss rush and training\r\n- Hunter grenade icon still showing on mobs without blueprints when picking up the grenade before a blueprint\r\n- Bank losing its depth mobs upon reload\r\n- Gray text display on biome, showing checks as accessible when they are from non-accessible higher BSC\r\n- Scrolls on mobs given again on reload\r\n- Flower keys that could be picked multiple times using reload\r\n\r\nAPWorld Changes:\r\n- Complete rework of the apworld, fixing many fill issues\r\n- Added the enemy sanity, room randomizer and trap weight options\r\n- White hole head now requires one Progressive Flask, Cursed Flask, Tainted Flask, or access to the Bank\r\n- Golden Blowtorch is now a Bank item\r\n- Spoiler and universal tracker not taking into account that all stem cells are required for the goal\r\n\r\nOther:\r\n- Changed the image reading library, as SixLabors now requires a license\r\n\r\nCompatible with APWorld 0.1.7 and newer",
+      "download_url": "https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/download/0.2.0/dead_cells.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3495a7cd267fb1085c00c9fc1c00cbe2f09f7313bb1da6f447ef730a2f0d835c",
+      "html_url": "https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.2.0",
+      "minimum_ap_version": "0.6.6",
+      "size": 78921,
+      "source_url": "https://api.github.com/repos/Maxlamenace572/DeadCellsArchipelago",
+      "tag": "0.2.0",
+      "title": "0.2.0",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
+    },
     "BugFix": {
       "created_at": "2026-03-22T05:55:27Z",
       "description": "should fix:\r\n-locked items by Flask1\r\n-filler items not being dropped\r\n-crash entering the swamp",

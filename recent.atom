@@ -2,230 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-03T12:21:50.742443+00:00</updated>
+  <updated>2026-11-03T18:19:41.328287+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v1.0.0-rc1</id>
-    <title>Starship Titanic v1.0.0rc1</title>
-    <updated>2026-10-30T20:34:26+00:00</updated>
-    <author>
-      <name>rescheer</name>
-    </author>
-    <content>Both client and .apworld updated. Incompatible with older seeds.&#13;
-Make sure to regenerate your YAML templates to see the new options.&#13;
-## New Features&#13;
-- Full client UI redesign!&#13;
-- Logic tracking in the client! See in-logic checks, hover over locked checks to see what they require&#13;
-- New Goal: Parrot Hunt! Receive clues from the multiworld to discover which stateroom the parrot is trapped in&#13;
-- New YAML options (see YAML for detailed descriptions):&#13;
-  - Passenger Class Upgrades: Multiworld (default) or Vanilla&#13;
-  - Stateroom Assignments: Multiworld (default) or Vanilla&#13;
-  - AP Item Delivery Method: Succ-u-Bus (default) or Direct to Inventory&#13;
-  - More Room Access Card generation options: Enabled, Randomized, Selection, Disabled (default)&#13;
-  - Easy Music Room Puzzle: (default false) When true, pre-sets the music room panel controls to the solution&#13;
-- Added YAML-less UT Support&#13;
-## Changes&#13;
-- In-game AP Item notification improvements&#13;
-## Fixes&#13;
-- Tons of graphical fixes affecting most items&#13;
-- Pistachio bowl puzzle required an assigned 2nd class stateroom in logic, but can be completed in any 2nd class stateroom&#13;
-- Checks could briefly be sent from incorrect save files before the guard stops them&#13;
-- Nose could be stuck in inventory in rare circumstances&#13;
-- Mouth could be permanently hidden in very rare circumstances&#13;
-## Known Issues in this release&#13;
-- None&#13;
-&#13;
-Find installation instructions at [https://github.com/rescheer/Starship-Titanic-AP#installation](https://github.com/rescheer/Starship-Titanic-AP#installation)</content>
-    <link href="https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v1.0.0-rc1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.5</id>
-    <title>Team Fortress 2 Mann vs Machine v1.18.5</title>
-    <updated>2026-10-30T20:42:45+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-### Added
-
-- **Six new traps**, contributed by Lee Harrold: Team Mad Milk, Team On Fire,
-  Team Slow Down, Team Bleed, Team Marked For Death and Team Gas. Each hits
-  everybody on RED for ten seconds, like Team Jarate. They are off by default:
-  turn them on one by one under Rewards in the launcher, or list them in the
-  `traps` option. A run made before them still holds Team Jarate alone.
-- A seed made with this apworld needs this launcher or a newer one. An older
-  launcher refuses it when it connects and says to use the launcher the seed
-  was made for, instead of quietly dropping a trap it does not know. Seeds
-  made before keep playing on this one.
-
-### Fixed
-
-- **Servers work on the TF2 update of 29 October 2026.** Windows servers
-  load SigMod again, so the community missions that need it start at their
-  first wave instead of staying on wave 0.
-- **Attribute lookups on the server read the right memory.** The plugin's
-  TF2Attributes lookup handed over its result in the form SourceMod 1.13
-  uses, to a TF2Attributes that did not read it that way. TF2Attributes is now
-  the int64 port, compiled for 1.13.
-- **The defender bots run on SourceMod 1.13**, the same build as the server,
-  with the current Actions (v4.0.1) and TF Econ Data. Before, the bots were
-  compiled with 1.12 because their dependencies did not compile on 1.13.
-- **Max ammo and max metal buffs fill you up again when you spawn.** Since
-  1.18.3 an Engineer with a max metal buff started on 200 metal and only got
-  300 at the next resupply. Spawning and resupplying now give the buffed
-  amount. A buff rebuild in the middle of a life still never adds ammo, so
-  the Windows pile-up stays fixed.
-- **The Docker stack only draws from the community packs you ticked.** With
-  `MVM_EXCLUDED_MISSIONS` empty, `make seed` and the self-hosted multiworld
-  could pick a mission from a pack unticked in the admin page, and the admin
-  page counted those missions in the tier menu and the mission count. They
-  are now left out. A `.env` without `TF2AP_COMMUNITY_PACKS` still draws from
-  every pack, as before; an empty one draws from none.
-- **The Docker server plays like the launcher's.** It went to sleep when
-  the last player left, ignored the robot health set in the admin page, and
-  loaded SigMod whenever it was ticked rather than only when a mission in the
-  pool needs it. It now writes the same server.cfg and command line as the
-  launcher. The launcher in turn now keeps RED defenders out of SigMod's robot
-  limit, as Docker already did.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-Windows will warn you, and it is a false positive. The exe unpacks archives and
-starts a game server without a code signature, which looks like a virus to a
-scanner. Click **More info**, then **Run anyway**, or check it below first.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-## Checking what you downloaded
-
-**`SHA256SUMS`** is attached to this release. It holds the hash of every file
-here, computed by the workflow that built them.
-
-```powershell
-Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
-```
-
-```sh
-sha256sum -c SHA256SUMS --ignore-missing    # Linux
-```
-
-Each binary carries a signed record of the commit and the workflow that built
-it:
-
-```sh
-gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
-```
-
-The binaries are scanned on VirusTotal, and the reports are linked at the end of
-these notes. Expect a few heuristic detections and no named malware family. The
-source is all in the repository, and `make launcher` rebuilds the exe on your
-own machine.
-
-## Code signing policy
-
-Free code signing for open source projects, provided by
-[SignPath.org](https://signpath.org), with a certificate from the
-[SignPath Foundation](https://signpath.org).
-
-&gt; [!WARNING]
-&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
-&gt; unsigned, and Windows warns about it until that changes.
-
-
-## What's Changed
-* refactor(settings): declare each environment variable once by @m-this in https://github.com/m-this/tf2-archipelago/pull/239
-* fix(settings): leave unticked community packs out of the pool and the seed by @m-this in https://github.com/m-this/tf2-archipelago/pull/240
-* refactor(srcds): one source for server.cfg, args and mods by @m-this in https://github.com/m-this/tf2-archipelago/pull/237
-* fix(launcher): bot lineup save and card apply report what really happened by @m-this in https://github.com/m-this/tf2-archipelago/pull/244
-* fix(plugin): give the buffed ammo again at spawn and resupply by @m-this in https://github.com/m-this/tf2-archipelago/pull/245
-* chore(go): bump to 1.27.3 by @m-this in https://github.com/m-this/tf2-archipelago/pull/227
-* fix(bots): stop the SourceMod 1.13 crashes at wave start by @m-this in https://github.com/m-this/tf2-archipelago/pull/247
-* Add daily full-catalog stability checks and percentage badges by @kelly-cs in https://github.com/m-this/tf2-archipelago/pull/243
-* chore(deps): pin everything keyed to TF2 11185272 by @m-this in https://github.com/m-this/tf2-archipelago/pull/250
-* chore(deps): tooling, images and modules to latest stable by @m-this in https://github.com/m-this/tf2-archipelago/pull/249
-* chore(release): v1.18.5 by @m-this in https://github.com/m-this/tf2-archipelago/pull/251
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.18.4...v1.18.5
-
-## VirusTotal
-
-- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/Y2Q4NWI0ZDExYTFjNjZjMGY5ZDhkOWM2OWNmMGEyYzA6MTc5MzM5MzU4OQ==/detection)
-- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/ODQ1NzkwZjY0YWI5ODQ3Y2ZhOWFjOWVmNzUxNWYxMjA6MTc5MzM5MzU5MQ==/detection)
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/tag/v0.3.6</id>
-    <title>Supermarket Simulator v0.3.6</title>
-    <updated>2026-10-30T21:17:52+00:00</updated>
-    <author>
-      <name>Lemix028</name>
-    </author>
-    <content>- Fixed the Hiring tab for the new game version.&#13;
-- Added Progressive Courier items to unlock up to two couriers.</content>
-    <link href="https://github.com/Lemix028/SupermarketSimulator-Archipelago/releases/tag/v0.3.6"/>
-  </entry>
   <entry>
     <id>https://github.com/ChakraaThePanda/Archipelago-Manual-WatchAShow/releases/tag/2026.10.30</id>
     <title>Manual_WatchAShow_Chakraa v2026.10.30</title>
@@ -246,7 +27,7 @@ Free code signing for open source projects, provided by
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release8</id>
-    <title>Ocarina of Time v9.1.0r2</title>
+    <title>Ocarina of Time v9.1.0r3</title>
     <updated>2026-10-30T22:55:22+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -910,7 +691,7 @@ Free code signing for open source projects, provided by
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release9</id>
-    <title>Ocarina of Time v9.1.0r4</title>
+    <title>Ocarina of Time v9.1.0r2</title>
     <updated>2026-11-01T13:59:46+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1629,5 +1410,137 @@ Apworld:&#13;
 &#13;
 - Fix mod breaking on the 1.2.0.0 update due to changes in DLC detection.</content>
     <link href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/tag/v0.18.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.5.0</id>
+    <title>Factorio: Platformer v0.5.0</title>
+    <updated>2026-11-03T12:08:46+00:00</updated>
+    <author>
+      <name>lepideble</name>
+    </author>
+    <content>## New features&#13;
+* Switch to [Platformer (2.1 Fork)](https://mods.factorio.com/mod/platformer-fork) for Factorio 2.1 compatibility (https://github.com/lepideble/factorio-apworld/pull/84)&#13;
+&#13;
+## Improvements&#13;
+* Sync client with Archipelago 0.6.8 Factorio Client (https://github.com/lepideble/factorio-apworld/pull/78)&#13;
+* Make all instances of a recipe progressive instead of only the first one (https://github.com/lepideble/factorio-apworld/pull/82)&#13;
+&#13;
+## Fixes&#13;
+* Only send items to first platforms instead of all of them, this fix a crash when a platform was destroyed and makes more sense overall (https://github.com/lepideble/factorio-apworld/pull/81)&#13;
+* Fix crash when item or player names contains quotes (https://github.com/lepideble/factorio-apworld/pull/77)&#13;
+&#13;
+**Full Changelog**: https://github.com/lepideble/factorio-apworld/compare/platformer-0.4.6...platformer-0.5.0</content>
+    <link href="https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.7.3</id>
+    <title>DOOM Eternal v0.7.3</title>
+    <updated>2026-11-03T13:45:02+00:00</updated>
+    <author>
+      <name>snowzzrra</name>
+    </author>
+    <content># DOOM Eternal Archipelago v0.7.3&#13;
+&#13;
+Bug fixes for Linux/Proton disconnections, item and DeathLink delivery, stuck encounters, and the broken camera after dying without a usable weapon.&#13;
+&#13;
+Use **Mod and APWorld 0.7.3** with **Sentinel Core 1.1.4**.&#13;
+&#13;
+## Launcher and connection&#13;
+&#13;
+- Fixed Linux/Proton disconnections ("keepalive ping timeout") while the game was running. Checking whether DOOM is running no longer blocks the connection to the Archipelago server.&#13;
+- Fixed automatic reconnection failing with an error after the client switched from `ws://` to `wss://`.&#13;
+- When the game connection helper stops under Linux/Proton, the launcher now says so and suggests checking the selected Proton version, instead of asking to close a game that is not running.&#13;
+&#13;
+## Item delivery and DeathLink&#13;
+&#13;
+- Fixed items and DeathLinks not arriving in game on some machines until a relaunch. The Core rejected valid game reads that took slightly longer than its time limit; that limit is now more tolerant.&#13;
+- DeathLinks that the Core refuses before running them are now retried instead of being lost.&#13;
+&#13;
+## Encounters and enemy randomization&#13;
+&#13;
+- `ap_finish_encounter` can now also end an encounter stuck waiting for enemies that never spawned, where it previously answered "No active encounter".&#13;
+- Tentacles are no longer in the default enemy pool for new rooms; they can still be enabled through Bestiary Weights. In existing rooms, Tentacles are replaced by a mobile enemy when the launcher prepares the room package again, since a Tentacle in an unreachable spot could keep an encounter from ending (for example, the **Super Gore Nest** Slayer Gate and the arena after the BFG in **Mars Core**).&#13;
+- Fixed floating hands, a broken camera and the player appearing tiny after dying or loading a checkpoint with no ammo and a randomized Chainsaw. The player's owned weapon is now selected even when it has no ammo.&#13;
+&#13;
+## Campaign menu&#13;
+&#13;
+- The Slayer Gate icon in the mission menu now shows a Gate as completed only when you completed it in game in this save. A Gate collected by another player stays open, so you still know to complete it for its Empyrean Key. Gates completed before this version show as open until completed again.&#13;
+&#13;
+## Support Reports and diagnostics&#13;
+&#13;
+- Added diagnostics for Ammo Refill, showing what each ammo pool had before and after a refill.&#13;
+- Added diagnostics for encounters whose enemies fail to spawn and for `ap_finish_encounter` refusals.&#13;
+- Added diagnostics for goal evaluation, recording why victory was or was not sent.&#13;
+- Spawn position diagnostics now cover every map instead of only the first one.&#13;
+&#13;
+**These fixes do not require a new room. Rooms that work with v0.7.2 keep working. The Tentacle default applies to rooms generated with APWorld v0.7.3; the Tentacle replacement in existing rooms applies when the launcher prepares the room package again.**&#13;
+</content>
+    <link href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.7.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.2.0</id>
+    <title>Dead Cells v0.2.0</title>
+    <updated>2026-11-03T16:33:15+00:00</updated>
+    <author>
+      <name>Max_lamenace572</name>
+    </author>
+    <author>
+      <name>OnlyLeafeon</name>
+    </author>
+    <author>
+      <name>Rayze</name>
+    </author>
+    <content>New Features:&#13;
+- Added an option for enemy sanity checks, meaning killing one enemy of each kind counts as a check&#13;
+- Added a room randomizer (will randomly switch biome places) with 3 options:&#13;
+  - depth: close to the classic experience by only swapping biomes in the same depth&#13;
+  - tier: swaps the biomes by groups delimited by bosses&#13;
+  - chaotic: can replace any biome with any other biome&#13;
+  - Note that the Bank still works in the same way as usual&#13;
+  - This gamemode is still a work in progress, so it is not advised to use it in multiplayer, the in-game tracker isn’t adapted yet, and some other features may not work correctly.&#13;
+- Gave back a use to the hunter's mirror.&#13;
+  - A random accessible enemy will be selected upon interaction with the mirror&#13;
+  - Killing the enemy will randomly hint at one of your accessible checks and slightly reduce the price of the mod shop&#13;
+&#13;
+Gameplay Changes:&#13;
+- Now shop mimic blueprints also have a hunter's grenade requirement&#13;
+- The distillery doesn’t require you to have seen the throne room beforehand&#13;
+- Increased the number of lore rooms in Prisoners’ Quarters to a maximum of 4 new and 2 previously generated and not looted&#13;
+  - Disclaimer: adding more rooms increases the complexity of the level and increases the time needed for generation, so it is advised to loot them as soon as possible&#13;
+- Changed fixed weapon drops, now giving a random filler-like item instead&#13;
+- A trap weight can be selected for the filler generation, and is also used in death traps&#13;
+&#13;
+Quality of Life:&#13;
+- Refactored the UI control logic to improve stability and allow the use of mouse and controller at the same time without crashing&#13;
+- Writing in a text field locks the cursor in it, avoiding unwanted movements in the menu&#13;
+- Disabled launching the game when connected to an incompatible apworld&#13;
+- Improved responsiveness for text fields and item descriptions&#13;
+&#13;
+Bug Fixes:&#13;
+- Some item descriptions not being displayed&#13;
+- Mutation checks not being counted for the green hole head&#13;
+- Lag when putting a lot of cells in the forge at once&#13;
+- Warp being based on biome checks&#13;
+- Some crashes caused by a disconnection&#13;
+- Cells being deposited in energy link upon death&#13;
+- Removed the warp option when doing daily challenge, boss rush and training&#13;
+- Hunter grenade icon still showing on mobs without blueprints when picking up the grenade before a blueprint&#13;
+- Bank losing its depth mobs upon reload&#13;
+- Gray text display on biome, showing checks as accessible when they are from non-accessible higher BSC&#13;
+- Scrolls on mobs given again on reload&#13;
+- Flower keys that could be picked multiple times using reload&#13;
+&#13;
+APWorld Changes:&#13;
+- Complete rework of the apworld, fixing many fill issues&#13;
+- Added the enemy sanity, room randomizer and trap weight options&#13;
+- White hole head now requires one Progressive Flask, Cursed Flask, Tainted Flask, or access to the Bank&#13;
+- Golden Blowtorch is now a Bank item&#13;
+- Spoiler and universal tracker not taking into account that all stem cells are required for the goal&#13;
+&#13;
+Other:&#13;
+- Changed the image reading library, as SixLabors now requires a license&#13;
+&#13;
+Compatible with APWorld 0.1.7 and newer</content>
+    <link href="https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.2.0"/>
   </entry>
 </feed>
