@@ -2,43 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-04T06:19:33.969542+00:00</updated>
+  <updated>2026-11-04T12:17:13.525035+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/udime123/Silver-Daze-APWorld/releases/tag/0.7.5</id>
-    <title>Silver Daze v0.7.5</title>
-    <updated>2026-11-01T05:49:58+00:00</updated>
-    <author>
-      <name>Sawyer Friend</name>
-    </author>
-    <content>Compatibility change for main Archipelago support. No gameplay changes.</content>
-    <link href="https://github.com/udime123/Silver-Daze-APWorld/releases/tag/0.7.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Mitchell1711/Archipelago/releases/tag/v1.0.1</id>
-    <title>Shovel Knight Pocket Dungeon v1.0.0r2</title>
-    <updated>2026-11-01T12:22:47+00:00</updated>
-    <author>
-      <name>Mitchell</name>
-    </author>
-    <content># Shovel Knight Pocket Dungeon Archipelago v1.0.0&#13;
-&#13;
-[Setup](https://github.com/Mitchell1711/Archipelago/blob/skpd_ap/worlds/pocket_dungeon/docs/setup_en.md) | [Mod Page](https://steamcommunity.com/sharedfiles/filedetails/?id=3619001702)&#13;
-&#13;
-Minor update that fixes some edge-case generation issues and adds additional option validation&#13;
-&#13;
-### Changes&#13;
-- Added additional key validation for Excluded Characters and Filler Weights.&#13;
-- Fixed an issue where if Shuffle Refract Characters was off and Starting Character is Refract was on the starting character would not be added to the starting inventory.&#13;
-- Throw an OptionError if every character is added to Excluded Characters.&#13;
-- Setting all filler weights to 0 won't trip up the generator anymore.&#13;
-- Starting Relic Slots will stop filling if there are not enough locations.&#13;
-- Added a failsafe for settings that cause extremely low location counts.</content>
-    <link href="https://github.com/Mitchell1711/Archipelago/releases/tag/v1.0.1"/>
-  </entry>
   <entry>
     <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.6</id>
     <title>Team Fortress 2 Mann vs Machine v1.18.6</title>
@@ -171,7 +139,7 @@ Free code signing for open source projects, provided by
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release9</id>
-    <title>Ocarina of Time v9.1.0r2</title>
+    <title>Ocarina of Time v9.1.0r4</title>
     <updated>2026-11-01T13:59:46+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1577,5 +1545,65 @@ Don't worry about it&#13;
 &#13;
 * Modified certain game files to patch data rather than replace it (@buanjautista, #114)</content>
     <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.10.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ClTYOFEVlL/SWD2-Archipelago/releases/tag/v0.3.0</id>
+    <title>SteamWorld Dig 2 v0.3.0</title>
+    <updated>2026-11-04T08:04:29+00:00</updated>
+    <author>
+      <name>Tails</name>
+    </author>
+    <content>## New&#13;
+- **Generators are now locations**, and the Reactor door needs their Device items. `Generators Required` sets all 4 (default) or the vanilla 3&#13;
+- **Orbsanity option**: Orb containers as locations (85)&#13;
+- **Secretsanity option**: Secret Areas (85) and Mini Secrets (35) as locations&#13;
+- **Added Traps**. Trap Link included!&#13;
+  - Leaky Tank Trap: Empties your water tank&#13;
+  - Darkness Trap: Empties your lamp&#13;
+  - Gravity Trap: Increases your gravity&#13;
+  - Freeze Trap: Stops you from moving&#13;
+  - Cutscene Trap: Makes Dorothy talk to herself about random things&#13;
+- **Tool item options**&#13;
+  - Pressure Bomb, Jackhammer and Jet Engine: All progressive, or a main item you need before the upgrades work&#13;
+  - Hook Shot and Grenades: Progressive, or both tiers as individual items&#13;
+- **Progressive Mobility option**: Combines the Hook and Jet items into one progressive item&#13;
+- Vectron is now skipped, freeing the Jet Engine podium of its past plando-y ways. It can hold any item now&#13;
+- The opening cutscene is now skipped&#13;
+- Banners in game when you connect or disconnect&#13;
+- Tracker tab in the client when Universal Tracker is installed&#13;
+&#13;
+## Logic&#13;
+- Yarrow and Sludge River Bend no longer need the Jet&#13;
+- Temple of the Destroyer - Boss Entrance: the Cog Container and Secret Area now take the Hook or Armor (previously Armor only)&#13;
+&#13;
+## Changed&#13;
+- "Hub" areas are now called "Oasis"&#13;
+- `teleporter_locations` is now `teleportersanity`&#13;
+- `hell_cave_locations` is now `include_trials`&#13;
+&#13;
+## Fixed&#13;
+- `/auto_patch` now only takes the files it needs from the game, preventing any weird file shenanigans</content>
+    <link href="https://github.com/ClTYOFEVlL/SWD2-Archipelago/releases/tag/v0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/vicr123/Archipelago/releases/tag/20261104-1</id>
+    <title>Candy Box 2 v1.20261104.1</title>
+    <updated>2026-11-04T08:24:07+00:00</updated>
+    <author>
+      <name>Victor Tran</name>
+    </author>
+    <author>
+      <name>Aren Merzoian</name>
+    </author>
+    <content>This version of the Candy Box 2 randomizer fixes the following bugs:&#13;
+- Long item names no longer cause the button in the shop to disappear.&#13;
+- The hint client now updates live as hint statuses are changed.&#13;
+&#13;
+The client is backwards compatible with apworlds generated with version 20260822-1&#13;
+&#13;
+Tested on AP 0.6.8, YMMV on later versions. Requires AP 0.6.5 or later.&#13;
+&#13;
+Game client available at: https://candybox2-ap.vicr123.com/20261104-1/</content>
+    <link href="https://github.com/vicr123/Archipelago/releases/tag/20261104-1"/>
   </entry>
 </feed>
