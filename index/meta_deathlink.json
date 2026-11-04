@@ -1,0 +1,60 @@
+{
+  "authors": [
+    "CodeGorilla"
+  ],
+  "game": null,
+  "github": "https://github.com/Ars-Ignis/Archipelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.0.1-meta-deathlink": {
+      "created_at": "2026-10-22T06:10:27Z",
+      "description": "Press button, get meta.yaml \r\n<img width=\"648\" height=\"108\" alt=\"image\" src=\"https://github.com/user-attachments/assets/7769a2d2-5ac0-425a-8bed-82e04b57cb05\" />\r\n\r\nwill put more effort into this release post later",
+      "download_url": "https://github.com/Ars-Ignis/Archipelago/releases/download/v0.0.1-meta-deathlink/meta_deathlink.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f6e6dbebee3fccd808a703d2db8c4017503951fe865afd1915a50964f1ff8c32",
+      "html_url": "https://github.com/Ars-Ignis/Archipelago/releases/tag/v0.0.1-meta-deathlink",
+      "minimum_ap_version": "0.6.8",
+      "prerelease": true,
+      "size": 5945,
+      "source_url": "https://api.github.com/repos/Ars-Ignis/Archipelago",
+      "tag": "v0.0.1-meta-deathlink",
+      "title": "DeathLink Meta YAML Tool v0.0.1",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1"
+    },
+    "v1.0.0-meta-deathlink": {
+      "created_at": "2026-10-23T05:42:54Z",
+      "description": "# What is this tool?\r\n\r\nThis tool will create a meta.yaml file for you with the DeathLink-related options for every APWorld you have installed. Specifically, it will pull out every option that has the word `death` and the word `link` in the option name (case-insensitive). As such, it will pick up options like `death_link`, `deathlink`, `DeathLink`, `death_link_amnesty`, `death_link_effect`, etc. This may result in some false positives, but those should be easy enough to spot. The resulting meta.yaml will have a section for each game that has one or more applicable options, with each relevant option displayed as it would be in the template YAML.\r\n\r\n# How do I use it?\r\n## The Basic Way\r\n\r\n1. Download and install meta_deathlink.apworld from the link below.\r\n2. Open up your AP Launcher, and look for this button, and press it. It should make the meta.yaml in your output folder and open it in whatever your default program is for .yaml files.\r\n<img width=\"603\" height=\"89\" alt=\"image\" src=\"https://github.com/user-attachments/assets/8c1a98e7-8557-4596-affe-4efe50f70daa\" />\r\n\r\n\r\n## The Advanced Way\r\n\r\nThis can also be run from CLI, which provides two additional options: `--skip_open_file` will skip opening the generated file at the end of the process, and `--only_player_yamls` will only produce entries for games in the YAMLs in your Players folder. To use the CLI:\r\n\r\n1. Download and install meta_deathlink.apworld from the link below.\r\n2. From the command line where you have Archipelago installed, run the Archipelago Launcher with the argument `\"DeathLink Meta.yaml Generator\"`, followed by ` -- `, followed by the additional arguments you want to use (e.g. on Windows it would be `ArchipelagoLauncher.exe \"DeathLink Meta.yaml Generator\" -- --only_player_yamls`).",
+      "download_url": "https://github.com/Ars-Ignis/Archipelago/releases/download/v1.0.0-meta-deathlink/meta_deathlink.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0133a27a3b21166b137a5b75b1b6b634ab4651c7e33284d0539f7cd22cbb0ee0",
+      "html_url": "https://github.com/Ars-Ignis/Archipelago/releases/tag/v1.0.0-meta-deathlink",
+      "minimum_ap_version": "0.6.8",
+      "size": 7901,
+      "source_url": "https://api.github.com/repos/Ars-Ignis/Archipelago",
+      "tag": "v1.0.0-meta-deathlink",
+      "title": "DeathLink Meta YAML Tool v1.0.0",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
+    },
+    "v1.0.1-meta-deathlink": {
+      "created_at": "2026-10-29T03:03:04Z",
+      "description": "- Populated the meta YAML with null option values for each option, for easy weighing\r\n- Added a [README](https://github.com/Ars-Ignis/Archipelago/blob/meta-deathlink/worlds/meta_deathlink/README.md)",
+      "download_url": "https://github.com/Ars-Ignis/Archipelago/releases/download/v1.0.1-meta-deathlink/meta_deathlink.apworld",
+      "has_manifest": true,
+      "hash_sha256": "5a1d56b5c3c1d7ce2bcc0650b5b31cd470dcb27548a2c8625ee8ff8b9e26aa4a",
+      "html_url": "https://github.com/Ars-Ignis/Archipelago/releases/tag/v1.0.1-meta-deathlink",
+      "minimum_ap_version": "0.6.8",
+      "size": 9006,
+      "source_url": "https://api.github.com/repos/Ars-Ignis/Archipelago",
+      "tag": "v1.0.1-meta-deathlink",
+      "title": "DeathLink Meta YAML Tool v1.0.1",
+      "version_simple": "1.0.1",
+      "world_version": "1.0.1"
+    }
+  }
+}
