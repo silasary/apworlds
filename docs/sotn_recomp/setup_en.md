@@ -3,7 +3,7 @@
 ## What you need
 
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) 0.6.0 or newer.
-- [SymphonyRecomp](https://github.com/BlackLabelHQ/SymphonyRecomp/releases) v0.5.1b or newer, set up with your US
+- [SymphonyRecomp](https://github.com/BlackLabelHQ/SymphonyRecomp/releases) v1.1.2p or newer, set up with your US
   disc image (SLUS-00067) as its README describes.
 - From the [project's releases](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/latest):
   `sotn_recomp.apworld` (this world) and `sotn-archipelago-mod.zip` (the mod).

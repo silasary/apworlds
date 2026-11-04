@@ -6,7 +6,6 @@
 - `stick_ranger.apworld` from the
   [latest release](https://github.com/Kryen112/AP_Stick_Ranger/releases/latest), placed in the
   `custom_worlds` folder of your Archipelago installation.
-- Optional for local installation and play: [Node.js and npm](https://nodejs.org/) installed on your computer, if you want to run the game locally.
 
 ## Configuring your YAML file
 
@@ -28,49 +27,10 @@ Put the finished yaml in Archipelago's `Players` folder before you generate.
 
 ## Where to play the game
 
-### Option 1: Play Online (Recommended)
-
-- Go to the [Stick Ranger Website](https://kryen112.github.io/).
-  - This is the easiest option—no installation required. If the website is unavailable, use the next option.
-  - If Archipelago and the apworld are installed on your computer, clicking your name on the room page
-    opens the website with the host, port and slot name already filled in. Pick "Stick Ranger Client"
-    when the Launcher asks which client to open.
-
-### Option 2: Run the Game Locally
-
-If the website is unavailable, or you wish to use your own copy:
-
-1. Download the source:
-    - Visit the [Stick Ranger website repository](https://github.com/Kryen112/Kryen112.github.io) and choose
-      **Code → Download ZIP**, or take
-      [this direct link](https://github.com/Kryen112/Kryen112.github.io/archive/refs/heads/main.zip).
-    - This is the same code the website runs, so it is always current.
-    - Extract the zip to a folder on your computer.
-2. Install Node.js and npm (if not already installed):
-    - Download and install from [nodejs.org](https://nodejs.org/). Version 20.19 or newer.
-3. Open a terminal/command prompt in the folder where you extracted the files.
-4. Install dependencies:
-    ```sh
-    npm install
-    ```
-5. Start the local development server:
-    ```sh
-    npm run dev
-    ```
-    - The server will start and print a local address (usually `http://localhost:5173/` or similar).
-    - Open this address in your browser.
-
-#### Troubleshooting & Tips
-- npm: command not found?  
-    Make sure Node.js and npm are installed and added to your system PATH.
-- Port in use error:  
-    If you get an error that the port is already in use, either stop the other process or use `npm run dev -- --port=YOURPORT` to specify another port.
-- Game not loading?  
-    Double-check you are in the correct folder and all files were extracted.
+The Stick Ranger client is being rebuilt and is not available yet. This guide will link to it once it is released.
 
 ## Joining a multiworld game
 
 1. Enter your **server address**, **port**, **slot name** and **password** (if applicable).
 2. Click **Connect** and log in.
-3. You can now play Stick Ranger with Archipelago integration!  
-   The website includes a built-in client where you can chat and use client commands.   
+3. You can now play Stick Ranger with Archipelago integration!   

@@ -5,7 +5,7 @@
   - [Extra Song Pack](https://store.steampowered.com/app/1887030/Hatsune_Miku_Project_DIVA_Mega_Mix_Extra_Song_Pack/) (optional, recommended, cheaper bundled)
   - The game can be played in Archipelago without the Extra Song Pack DLC.
 - [The APWorld](https://github.com/Cynichill/DivaAPworld/releases/latest)
-- [[GB]](https://gamebanana.com/mods/514140) [[DMA]](https://divamodarchive.com/post/279) Archipelago Mod
+- [[GH]](https://github.com/Cynichill/Diva-Archipelago-Mod/releases/latest) [[GB]](https://gamebanana.com/mods/514140) Archipelago Mod
 
 ## First Time Setup
 This is a minimal mod setup. **Mod managers are used at your discretion.**
@@ -31,12 +31,12 @@ Hatsune Miku Project DIVA Mega Mix Plus\
 ## Optional Quality of Life Mods 
 Please read descriptions before installing. These may not be relevant to you or may require additional files.
 
-| Mod             | Sources                                                                                                                                              |
-|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ExPatch         | [[GB]](https://gamebanana.com/mods/388083) [[DMA]](https://divamodarchive.com/post/371) [[GH]](https://github.com/nastys/ExPatch/releases/latest)    |
-| High Frame Rate | [[GB]](https://gamebanana.com/mods/380955)                                                                                                           |
-| IntroPatch      | [[GB]](https://gamebanana.com/mods/449088) [[DMA]](https://divamodarchive.com/post/193) [[GH]](https://github.com/nastys/IntroPatch/releases/latest) |
-| Window Thing    | [[GH]](https://github.com/vixen256/window_thing/releases/latest)                                                                                     |
+| Mod             | Sources                                                                                                 |
+|-----------------|---------------------------------------------------------------------------------------------------------|
+| ExPatch         | [[GB]](https://gamebanana.com/mods/388083) [[GH]](https://github.com/nastys/ExPatch/releases/latest)    |
+| High Frame Rate | [[GB]](https://gamebanana.com/mods/380955)                                                              |
+| IntroPatch      | [[GB]](https://gamebanana.com/mods/449088) [[GH]](https://github.com/nastys/IntroPatch/releases/latest) |
+| KeepFocus       | [[GB]](https://gamebanana.com/mods/427425)                                                              |
 
 ## Mod Songs
 **Note: Currently, using mod songs requires the seed to be [generated locally](/tutorial/Archipelago/setup_en#generating-a-multiplayer-game), not on the website. Hosting on the website afterwards is fine.**

@@ -1,9 +1,18 @@
 # Symphony of the Night (Recomp)
 
 ## Latest
-- <a href="https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.0/sotn_recomp.apworld">Latest Version (0.5.0)</a>
+- <a href="https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.3/sotn_recomp.apworld">Latest Version (0.5.3)</a>
 
 ## All Versions
+
+#### v0.5.3
+- <a href="https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.3/sotn_recomp.apworld">https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.3/sotn_recomp.apworld</a>
+
+#### v0.5.2
+- <a href="https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.2/sotn_recomp.apworld">https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.2/sotn_recomp.apworld</a>
+
+#### v0.5.1
+- <a href="https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.1/sotn_recomp.apworld">https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.1/sotn_recomp.apworld</a>
 
 #### v0.5.0
 - <a href="https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.0/sotn_recomp.apworld">https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.0/sotn_recomp.apworld</a>

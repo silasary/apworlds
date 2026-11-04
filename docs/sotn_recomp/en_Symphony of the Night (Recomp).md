@@ -15,7 +15,7 @@ a default options file for "Symphony of the Night (Recomp)".
 
 ## What does randomization do to this game?
 
-Items and relics are shuffled into the multiworld. Options add boss drops, enemy drops (enemysanity), shop and
+Items, relics and boss drops are shuffled into the multiworld. Options add enemy drops (enemysanity), shop and
 candle randomization, a random starting castle, cosmetic changes and more.
 
 ## What is the goal?
@@ -27,13 +27,13 @@ too). It's a shorter game: the reverse castle isn't part of the seed.
 
 ## Which items can be in another player's world?
 
-All of them: equipment, consumables, relics, life and heart vessels. With `trap_percentage` above 0, also traps, which
+All of them: equipment, consumables, relics, life and heart vessels. Also traps (unless `trap_percentage` is 0), which
 go off on you when anyone finds them.
 
 ## What is a location check?
 
-Every item in the castle, including the ones behind breakable walls, the relic spots and, with the options on, boss
-drops and enemies (enemysanity).
+Every item in the castle, including the ones behind breakable walls, the relic spots and boss drops. With the
+option on, enemies too (enemysanity).
 
 ## What does another world's item look like?
 
