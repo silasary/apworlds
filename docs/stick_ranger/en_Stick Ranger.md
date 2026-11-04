@@ -26,7 +26,7 @@ The dots on the world map are colour coded:
 
 The five boss stages (Castle, Submarine Shrine, Pyramid, Ice Castle, Hell Castle) also want a number of
 stage unlocks from the region in front of them, and a number of ranger classes. Both numbers come from
-your YAML, and the class count includes the class you started with.
+your YAML, and the class count includes the class you started with. Mountaintop asks for the same as Ice Castle.
 
 ## Which items can be in another player's world?
 
@@ -51,4 +51,5 @@ Weapons and compos are given to you when you have space in your inventory.
 
 ## What is the goal of Stick Ranger when randomized?
 
-The main goal is to reach and clear the end-game stage chosen in your YAML options (Hell Castle, Volcano, Mountaintop, or a mix of these).
+Clear the boss stage chosen in your YAML options: Castle, Submarine Shrine, Pyramid, Ice Castle, Mountaintop, Hell Castle or Volcano, or a mix of the last three.
+An earlier goal makes for a shorter run: everything past it is cut from the seed, and opens for free play once you have goaled.

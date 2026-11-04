@@ -1,0 +1,61 @@
+# A custom track seed. Requires a client built with custom tracks.
+# Any complete package descriptor is accepted: track key (content_id), file pins,
+# authored laps and measured capability flags. relic: true also needs
+# relic_targets {sapphire, gold, platinum} in ticks (960 per second).
+# Optional measured weapon_crates: with box_locations on, a track on a named block
+# gets Item Box 1 to min(weapon_crates, 15), seated on its own weapon crates; the
+# client counts them and refuses a wrong count.
+# Optional measured checkpoints and ai_nav: the LEV's restart point count and AI
+# paths; with both, Boss Track Shuffle may race a boss there.
+name: CustomPadTest
+game: Crash Team Racing
+Crash Team Racing:
+  accessibility: full
+  oxide_goal: disabled
+  bosses_required_goal: 0
+  gems_required_goal: 5
+  character_unlocks: false
+  podium_rungs: []
+  track_modes:
+    default: [trophy]
+  custom_tracks:
+    - id: package/baby-t-park/1.0.2
+      content_id: baby-t-park
+      uuid: 2c7c7846-2ead-5b8f-a218-beca5792106e
+      revision: "1.0.2"
+      display_name: Baby T Park
+      author: Lockheart
+      laps: 7
+      capabilities: {time_trial: true, arcade: true, relic: false, ctr_tokens: true, wumpa: true, super_turbo_pads: true, weapon_crates: 8}
+      files:
+        - role: lev
+          sha256: be161e0b11aa03505c501b7db012d830405e69e171f84633c2e24ffe9cc3cbf8
+          bytes: 2558168
+          format: ctr-lev
+          format_version: 1
+        - role: vrm
+          sha256: 1a0ff56b51562292ecc30c14e7a2e6d315f641feaa00990d4242abe46434f692
+          bytes: 458808
+          format: ctr-vrm
+          format_version: 1
+      evidence:
+        - capability: trophy
+          file_hashes:
+            - be161e0b11aa03505c501b7db012d830405e69e171f84633c2e24ffe9cc3cbf8
+            - 1a0ff56b51562292ecc30c14e7a2e6d315f641feaa00990d4242abe46434f692
+          verifier: ctr-managed-profile
+          revision: 1
+          level: structural
+  required_entries: [baby-t-park]
+  cup_count: 0
+  crystal_challenge_count: 0
+  boss_garages: false
+  two_stage_density: "off"
+  item_pool:
+    base:
+      trophies: 5
+      relics: {sapphire: 0, gold: 0, platinum: 0}
+      tokens: {red: 0, green: 0, blue: 0, yellow: 0, purple: 0}
+      gems: [red, green, blue, yellow, purple]
+      keys: 4
+    extra: {}

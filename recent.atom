@@ -2,208 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-04T12:17:13.525035+00:00</updated>
+  <updated>2026-11-04T18:16:39.311232+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.6</id>
-    <title>Team Fortress 2 Mann vs Machine v1.18.6</title>
-    <updated>2026-11-01T12:47:29+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-### Fixed
-
-- **Servers work on the TF2 update of 30 October 2026.** Windows servers
-  load SigMod again, so the community missions that need it start at their
-  first wave instead of staying on wave 0.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-Windows will warn you, and it is a false positive. The exe unpacks archives and
-starts a game server without a code signature, which looks like a virus to a
-scanner. Click **More info**, then **Run anyway**, or check it below first.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-## Checking what you downloaded
-
-**`SHA256SUMS`** is attached to this release. It holds the hash of every file
-here, computed by the workflow that built them.
-
-```powershell
-Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
-```
-
-```sh
-sha256sum -c SHA256SUMS --ignore-missing    # Linux
-```
-
-Each binary carries a signed record of the commit and the workflow that built
-it:
-
-```sh
-gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
-```
-
-The binaries are scanned on VirusTotal, and the reports are linked at the end of
-these notes. Expect a few heuristic detections and no named malware family. The
-source is all in the repository, and `make launcher` rebuilds the exe on your
-own machine.
-
-## Code signing policy
-
-Free code signing for open source projects, provided by
-[SignPath.org](https://signpath.org), with a certificate from the
-[SignPath Foundation](https://signpath.org).
-
-&gt; [!WARNING]
-&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
-&gt; unsigned, and Windows warns about it until that changes.
-
-
-## What's Changed
-* chore(deps): pin everything keyed to TF2 11191711 by @m-this in https://github.com/m-this/tf2-archipelago/pull/253
-* feat(ci): open the pins pull request when TF2 moves by @m-this in https://github.com/m-this/tf2-archipelago/pull/254
-* chore(release): v1.18.6 by @m-this in https://github.com/m-this/tf2-archipelago/pull/255
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.18.5...v1.18.6
-
-## VirusTotal
-
-- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/ZWFhZTA5YjZmYmQyZmY2OTBlNjMyODkwZmMxZmMwNGQ6MTc5MzUzNzY0Nw==/detection)
-- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/ZjkwNzZiNmFhMzRkY2FhYmJhMTQ2MDBkYTk2ODVkZWI6MTc5MzUzNzY1MA==/detection)
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release9</id>
-    <title>Ocarina of Time v9.1.0r4</title>
-    <updated>2026-11-01T13:59:46+00:00</updated>
-    <author>
-      <name>espeon65536</name>
-    </author>
-    <author>
-      <name>TreZ</name>
-    </author>
-    <content># OoT Randomizer APWorld v9.1.0 Full Release 9&#13;
-&#13;
-This is a pretty well tested version by now. Generation fails still might happen on occasion, especially when using pre-completed dungeons.&#13;
-&#13;
-&#13;
-## Changes:&#13;
-- Fix: Item Type Serialization error with new APPP&#13;
-- Universal Tracker: Dropping locations that require ocarina notes when those are not shuffled&#13;
-&#13;
-Please note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.</content>
-    <link href="https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release9"/>
-  </entry>
-  <entry>
-    <id>https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/tag/3.5.0</id>
-    <title>Wario Land 4 v3.5.0</title>
-    <updated>2026-11-01T14:04:35+00:00</updated>
-    <author>
-      <name>lil David</name>
-    </author>
-    <content>## Option changes&#13;
-* New Required Bosses option&#13;
-  * Determines the number of passage bosses that must be defeated to open the Golden Pyramid&#13;
-  * The Entry Passage can now optionally count toward this requirement, so you can even require all 5&#13;
-  * If the Entry Passage is included, its jewel pieces are now doubled if the Golden Pyramid's are&#13;
-&#13;
-## Logic changes&#13;
-* Fixed the TTL current circle room not requiring super ground pound in anything-goes logic&#13;
-* Added CMV precise throw trick for the agile bat hidden box/diamond to advanced logic&#13;
-&#13;
-**Full Changelog**: https://github.com/lilDavid/Archipelago-Wario-Land-4/compare/3.4.0...3.5.0</content>
-    <link href="https://github.com/lilDavid/Archipelago-Wario-Land-4/releases/tag/3.5.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
-    <title>Team Fortress 2 Mann vs Machine v1.18.7</title>
-    <updated>2026-11-01T14:18:08+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
-and it is replaced without warning. For something that stays put, use the
-[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
-
-Built from `6d761f715696b653d74211f9ff2b62c6b4d72831`.
-
-## Downloads
-
-- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
-- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
-
-## Since v1.18.7
-
-- chore(beads): sync issues
-- feat(stability): known-failure list for the daily report
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
-  </entry>
   <entry>
     <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.7</id>
     <title>Team Fortress 2 Mann vs Machine v1.18.7r2</title>
@@ -1373,21 +1176,20 @@ Fun Fact: **This was almost 100% done about 10 hours after the update came out**
     <author>
       <name>fdelduque</name>
     </author>
-    <content>- New goal `defeat_richter`: a shorter game that ends by beating or saving Richter
-- New traps: 20% of your filler becomes Poison, Stone and Curse traps by default, and they look like progression items until picked up (`trap_percentage`, `trap_types`, `disguise_traps`)
-- `boss_drops`, `skip_prologue`, `infinite_wing_smash` and `heal_at_save_rooms` are on by default
-- 25+ items arriving at once now share one popup; key items and traps keep their own
-- `starting_area`: sotn.io's fixes for Royal Chapel and Castle Keep starts
-- Works with SymphonyRecomp v1.1.2p
-
-**Downloads**
-- [sotn-archipelago-mod.zip](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.3/sotn-archipelago-mod.zip): goes in recomp's `/mods/` folder
-- [sotn_recomp.apworld](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.3/sotn_recomp.apworld)
-- [Symphony-of-the-Night-Recomp.yaml](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.3/Symphony-of-the-Night-Recomp.yaml): default options
-
-**Setup**: 
-- See the [README](https://github.com/Arcadia64/sotn-recomp-archipelago#setup).
-
+    <content>- Works with SymphonyRecomp v1.1.2p&#13;
+- New goal `defeat_richter`: a shorter game that ends by beating or saving Richter&#13;
+- New traps: 20% of your filler becomes Poison, Stone and Curse traps by default, and they look like progression items until picked up (`trap_percentage`, `trap_types`, `disguise_traps`)&#13;
+- `boss_drops`, `skip_prologue`, `infinite_wing_smash` and `heal_at_save_rooms` are on by default&#13;
+- `starting_area`: sotn.io's fixes for Royal Chapel and Castle Keep starts&#13;
+&#13;
+**Downloads**&#13;
+- [sotn-archipelago-mod.zip](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.3/sotn-archipelago-mod.zip): goes in recomp's `/mods/` folder&#13;
+- [sotn_recomp.apworld](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.3/sotn_recomp.apworld)&#13;
+- [Symphony-of-the-Night-Recomp.yaml](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.3/Symphony-of-the-Night-Recomp.yaml): default options&#13;
+&#13;
+**Setup**: &#13;
+- See the [README](https://github.com/Arcadia64/sotn-recomp-archipelago#setup).&#13;
+&#13;
 </content>
     <link href="https://github.com/Arcadia64/sotn-recomp-archipelago/releases/tag/0.5.3"/>
   </entry>
@@ -1605,5 +1407,174 @@ Tested on AP 0.6.8, YMMV on later versions. Requires AP 0.6.5 or later.&#13;
 &#13;
 Game client available at: https://candybox2-ap.vicr123.com/20261104-1/</content>
     <link href="https://github.com/vicr123/Archipelago/releases/tag/20261104-1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.9</id>
+    <title>PokePark v1.2.9</title>
+    <updated>2026-11-04T13:16:04+00:00</updated>
+    <author>
+      <name>Joe Mama (Mekurushi)</name>
+    </author>
+    <content>- fixed color tag line breaking that crashes the game&#13;
+**Full Changelog**: https://github.com/Mekurushi/Archipelago_Pokepark/compare/1.2.8...1.2.9</content>
+    <link href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.9"/>
+  </entry>
+  <entry>
+    <id>https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v2.0.1</id>
+    <title>The Legend of Zelda - Oracle of Ages v2.0.1</title>
+    <updated>2026-11-04T15:26:55+00:00</updated>
+    <author>
+      <name>josephanimate2021</name>
+    </author>
+    <author>
+      <name>Glan9</name>
+    </author>
+    <author>
+      <name>Piapiou (SenPierre)</name>
+    </author>
+    <author>
+      <name>FlameStripe</name>
+    </author>
+    <content>Hot fixes !&#13;
+&#13;
+* Fixing several explosive logic&#13;
+* Fixing D11 Logic&#13;
+* Fixing Tokay Flipper Cave Logic&#13;
+* Adding several client flag for the tracker</content>
+    <link href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v2.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha1</id>
+    <title>Crash Team Racing v0.3.0a1</title>
+    <updated>2026-11-04T17:13:32+00:00</updated>
+    <author>
+      <name>Dowlle</name>
+    </author>
+    <content>CTR Archipelago 0.3.0-alpha1 is up for testing! It's the first build of 0.3.0 and the biggest update so far, so expect rough edges. I'd love your help finding what's broken. **v0.2.4 stays the current stable release.**
+
+[Full 0.3.0 notes on AP-Pie](https://ap-pie.com/ctr/releases/0-3-0) · [Setup guide](https://ap-pie.com/guides/ctr) · [SETUP.md as shipped](https://github.com/dowlle/ctr-native-ap/blob/v0.3.0-alpha1/SETUP.md)
+
+## Before you try it
+
+- **Use a new folder.** Your 0.2.4 install and rooms stay as they are, and 0.2.x rooms still need the 0.2.4 client.
+- **Make a new YAML.** A lot of options and defaults changed.
+- **This alpha won't update itself.** Grab new alphas by hand.
+
+## What's new
+
+- **A new generator:** seeds are built a new way, and the YAML is one flat list of options. A YAML that sets nothing gives you the original game's shape: 18 tracks, 5 Gem Cups, 4 Crystal Challenges and the boss races, shuffled onto the pads.
+- **Play Solo:** make and play a one-player seed right from the title screen, no server needed.
+- **Custom tracks:** import them from a patch against your own disc or download them from Project Saphi, race them in Custom Arcade and Time Trial, and put them in a seed on pads, in cups and as boss tracks. Every track you install shows up in Play Solo, and tracks with weapon crates get AP item boxes. Cortex Vortex is a full track with its own music.
+- **Wumpa Shop:** every hub has a shop where you spend the fruit you collect on checks. Fruit counts past 10 and goes to your wallet when you finish, and you can replay won tracks to farm more.
+- **New checks:** Crystalsanity, three new arenas, cup sweeps, lap checks and more.
+- **Bosses:** random boss tracks, racers and weapons, boss cups and a chaos Final Challenge.
+- **More:** optional pad approach hints, item and location groups, a Reserve Top-Up filler, new traps, button remapping and an item feed toggle.
+
+## What to test
+
+1. A full seed from a default YAML, start to goal. Tell me if it gets stuck.
+2. Your old YAML and a fresh one from the release's `Crash.Team.Racing.yaml`, then try changing pad placement and random requirements.
+3. A multiworld with other games, with hints, DeathLink and traps.
+4. The Wumpa Shop: collect past 10, finish the race, buy something, and replay a track you've won for more fruit.
+5. Custom tracks in a seed and in Play Solo, including their item boxes.
+6. Play Solo from each preset and from your own YAML. If it freezes, tell me which track.
+7. Bosses, boss cups, the Final Challenge and the new checks.
+
+## Known issues
+
+- Some menus are hard to read, especially Options and Custom Content where text runs over the logo.
+- The Import Track Files list shows "..." instead of track names, and names come from the patch file name.
+- A seed can still fail to generate with some unusual YAMLs. Generate again, and send me the YAML.
+- Short freezes can happen in some races. If you get one, tell me the track.
+
+## Found a problem?
+
+[Open a GitHub issue](https://github.com/dowlle/ctr-native-ap/issues/new/choose) and say it's on 0.3.0-alpha1. Add your platform, YAML or seed, what happened, and the support bundle (`support-bundle.bat` on Windows, `support-bundle.sh` on Linux; look through it before you attach it). Questions are welcome in the [Crash Team Racing channel](https://discord.com/channels/731205301247803413/1222304293751750777) on the Archipelago Discord.
+
+## Downloads
+
+On Windows, grab `ctr-archipelago-v0.3.0-alpha1-windows-x86.zip`. On Linux or Steam Deck, grab `ctr-archipelago-v0.3.0-alpha1-linux-x86.tar.gz` (glibc 2.36 or newer). Each includes the client, the matching `ctr.apworld` and the Play Solo runtime (its own Python, so you don't need Python installed). Use the alpha client and the alpha APWorld together. The separate `ctr.apworld` and `Crash.Team.Racing.yaml` are for hosts. You need your own NTSC-U disc; no game data is included. The client isn't code-signed. Play Solo starts its own Python in the background and its server only listens on your own PC; if your antivirus asks about it, that's what it is.
+
+The client is GPL-3.0; the source for this build is the `v0.3.0-alpha1` tag of this repository. Third-party licenses are in `THIRD_PARTY_NOTICES.md` and `solo-runtime/LICENSES/` in each download.
+
+| File | SHA-256 |
+|---|---|
+| `ctr-archipelago-v0.3.0-alpha1-windows-x86.zip` | `2a601d2d9deb4d717d015798cd3989e6756c4242bb99c55f727a5aa673e9b46e` |
+| `ctr-archipelago-v0.3.0-alpha1-linux-x86.tar.gz` | `dec705f36bb8b40233921cbf4c9a081059fc157ce87a3bc6e9ca6b2e33fef235` |
+| `ctr.apworld` | `ce4badb784c0b62ed2916366f14e879bc278a461fc4466983786e6949ab82a12` |
+</content>
+    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/2.0.0</id>
+    <title>Stick Ranger v2.0.0</title>
+    <updated>2026-11-04T17:15:59+00:00</updated>
+    <author>
+      <name>Kryen112</name>
+    </author>
+    <content>## Installation
+
+-   Download the APworld for Stick Ranger
+-   Put the stick_ranger.apworld in the /custom_worlds folder inside Archipelago
+-   Generate a yaml or download the one in here
+-   Customize the yaml and put it in the /players folder inside Archipelago
+-   Generate a game
+-   Install [Tampermonkey](https://www.tampermonkey.net/) and the client, `stick-ranger-archipelago.user.js` from this
+    release, then play on [the official Stick Ranger page](https://dan-ball.jp/en/javagame/ranger/); the
+    [setup guide](https://github.com/Kryen112/AP_Stick_Ranger/blob/main/stick_ranger/docs/setup_en.md) has the details
+
+## Heads up
+
+-   **Stick Ranger is now played on its official page at dan-ball.jp.** The client is a Tampermonkey userscript,
+    attached to this release. The old website client is gone.
+-   **Early goals are in.** You can now finish on Castle, Submarine Shrine, Pyramid or Ice Castle; see below.
+-   **Your 1.8 yaml still generates.** The new options take their defaults, and a yaml asking for 22 Hell stages
+    reads as the new maximum of 21. Regenerate the template to see the new options.
+-   **Seeds from apworld 1.8.12 and 1.8.13 play in the new client.** Seeds from before 1.8.12 are not supported.
+-   Requires Archipelago **0.6.7 or newer**.
+
+## The userscript client
+
+-   Install [stick-ranger-archipelago.user.js](https://github.com/Kryen112/AP_Stick_Ranger/releases/latest/download/stick-ranger-archipelago.user.js)
+    with Tampermonkey. In Chrome and Edge, turn on **Allow User Scripts** for Tampermonkey first. Tampermonkey keeps
+    the script up to date from the latest release.
+-   The game loads from dan-ball.jp as always; the script adds an Archipelago window on top of it. Stick Ranger is
+    made by ha55ii, and nothing of the game is part of this project.
+-   Everything the old client did is there: stage, class and shop checks, book and shop hints, traps, DeathLink,
+    Ring Link, the multipliers, the map colours, Forget Tree class swaps, free revival with the whole party down,
+    removable compos, and the AP logo ranger symbol.
+
+## Early goals
+
+-   **New goals: Castle, Submarine Shrine, Pyramid and Ice Castle**, next to Mountaintop, Hell Castle, Volcano and
+    the combined goals.
+-   **Everything past your goal is cut**: those stages, their books, enemies and shop rows hold no checks, and their
+    unlocks are never handed out. Boss stages beside your goal that it does not need stay playable but only hold
+    filler. Once you goal, every stage past it opens for free play and every shop is fully stocked.
+-   **Mountaintop is gated like Ice Castle** instead of behind Hell Castle, since it sits in the snow, and the
+    Unlock !!! stage now counts towards Ice instead of Hell.
+-   **New options**: `towns_in_pool` (which towns can be unlocked), `surplus_classes` (what happens to the classes
+    your goal does not need), `cap_loot_at_goal` (filler weapons and compos no stronger than your goal's area) and
+    `scale_loot_with_progress` (filler that grows stronger as your run opens up).
+-   The client's `!hint stage` and `!hint class` follow your goal, so a Mountaintop goal never asks for Ice Castle.
+
+## AP mode and your normal save
+
+-   Connecting reloads the page into AP mode (the address ends in `#ap`). In AP mode the game neither reads nor
+    writes your normal Stick Ranger save; **Disconnect** brings it back.
+-   Rankings are off in AP mode, so multiworld runs never reach Dan-Ball's leaderboards.
+
+## Launcher
+
+-   **Stick Ranger Client** is back in the Launcher. It opens the game page; from a room page, clicking your slot
+    name opens it with the server, port and slot filled in.
+
+## Fixes
+
+-   **New Game** gives back every item received so far at once, without reconnecting.
+-   **Traps** hit a slot only once: starting a New Game or reconnecting never fires them again.
+-   **Full Screen** shows only the game and the Archipelago window.
+</content>
+    <link href="https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/2.0.0"/>
   </entry>
 </feed>
