@@ -1,11 +1,18 @@
 {
   "License": null,
   "Name": "Manual_WorldofWarcraftDungeons_Chakraa",
+  "authors": [
+    "Chakraa"
+  ],
   "description": "Manual games allow you to set custom check locations and custom item names that will be rolled into a multiworld.\nThis allows any variety of game -- PC, console, board games, Microsoft Word memes... really anything -- to be part of a multiworld randomizer.\nThe key component to including these games is some level of manual restriction. Since the items are not actually withheld from the player,\nthe player must manually refrain from using these gathered items until the tracker shows that they have been acquired or sent.",
   "game": "Manual_WorldofWarcraftDungeons_Chakraa",
   "github": "https://github.com/ChakraaThePanda/Archipelago-Manual-WorldofWarcraft-Dungeons",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "2.0": {
       "created_at": "2025-02-10T18:52:03Z",
@@ -146,6 +153,21 @@
       "title": "2026.09.12 - Mythic+ Game Mode",
       "version_simple": "2026.9.12",
       "world_version": "2026.9.12"
+    },
+    "2026.11.03": {
+      "created_at": "2026-11-03T22:07:52Z",
+      "description": "### ADDED\n- **Extra Apexis Crystals** option (`extra_apexis_crystals_percent`, 0 to 100%, default 20%): hides more Apexis Crystals in the multiworld than you need, so you don't have to find every single one.\n\n### CHANGED\n- The goal now needs the amount of Apexis Crystals set in your YAML, not every crystal in the pool.\n\n**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Manual-WorldofWarcraft-Dungeons/compare/2026.09.12...2026.11.03\n",
+      "download_url": "https://github.com/ChakraaThePanda/Archipelago-Manual-WorldofWarcraft-Dungeons/releases/download/2026.11.03/manual_worldofwarcraftdungeons_chakraa.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ca86db663896107a33e07d19833ecbf838b669d949ba127a1a18fdd8c2ed8ce6",
+      "html_url": "https://github.com/ChakraaThePanda/Archipelago-Manual-WorldofWarcraft-Dungeons/releases/tag/2026.11.03",
+      "minimum_ap_version": "0.6.7",
+      "size": 69915,
+      "source_url": "https://api.github.com/repos/ChakraaThePanda/Archipelago-Manual-WorldofWarcraft-Dungeons",
+      "tag": "2026.11.03",
+      "title": "2026.11.03 - Extra Apexis Crystals",
+      "version_simple": "2026.11.3",
+      "world_version": "2026.11.3"
     }
   }
 }

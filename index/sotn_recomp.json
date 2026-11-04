@@ -3,9 +3,11 @@
     "Arcadia64",
     "fdelduque"
   ],
+  "description": "Castlevania: Symphony of the Night (Konami, 1997), played on SymphonyRecomp, the native PC version\nof the PlayStation game, with the Archipelago mod. Explore Dracula's castle as Alucard; relics and\nitems are shuffled across the multiworld.",
   "flags": [],
   "game": "Symphony of the Night (Recomp)",
   "github": "https://github.com/Arcadia64/sotn-recomp-archipelago",
+  "license": null,
   "manifest_fields": [
     "authors",
     "minimum_ap_version",
@@ -90,7 +92,7 @@
     },
     "0.5.0": {
       "created_at": "2026-11-02T07:09:47Z",
-      "description": "Test build of the Richter goal and traps. Expect some bugs, and please open an [issue](https://github.com/Arcadia64/sotn-recomp-archipelago/issues) if you find one. The shuffled castle from the 0.4.0 test build isn't in this one.\n\n- New `goal` option: `defeat_richter` ends the game at Richter in the Castle Keep, for a shorter game. Saving him counts too, and the inverted castle isn't part of the seed\n- New `trap_percentage` and `trap_types` options: some of your filler becomes Poison, Stone and Curse traps, which go off on you when anyone finds them. Off by default\n- New `disguise_traps` option, on by default: traps show the gold progression badge until you pick them up\n- When 25 or more items arrive at once, they share one popup, and key items and traps keep their own\n- Works with SymphonyRecomp 1.0. Played on its 1.0 pre-release code; it also builds on v0.5.1b, but hasn't been played on it yet\n- `starting_area`: sotn.io's fixes for Royal Chapel and Castle Keep starts\n\n**Downloads**\n- [sotn-archipelago-mod.zip](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.0/sotn-archipelago-mod.zip): goes in recomp's `/mods/` folder\n- [sotn_recomp.apworld](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.0/sotn_recomp.apworld)\n- [Symphony-of-the-Night-Recomp.yaml](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.0/Symphony-of-the-Night-Recomp.yaml): default options\n\n**Setup**: \n- See the [README](https://github.com/Arcadia64/sotn-recomp-archipelago#setup).\n",
+      "description": "Test build of the Richter goal and traps. Expect some bugs, and please open an [issue](https://github.com/Arcadia64/sotn-recomp-archipelago/issues) if you find one. The shuffled castle from the 0.4.0 test build isn't in this one.\n\n- New goal `defeat_richter`: a shorter game that ends by beating or saving Richter, with no inverted castle\n- New traps: `trap_percentage` and `trap_types` turn some filler into Poison, Stone and Curse traps (off by default)\n- New `disguise_traps` (on by default): traps look like progression items until picked up\n- 25+ items arriving at once now share one popup; key items and traps keep their own\n- Works with SymphonyRecomp 1.0 (also builds on v0.5.1b, but hasn't been played there yet)\n- `starting_area`: sotn.io's fixes for Royal Chapel and Castle Keep starts\n\n**Downloads**\n- [sotn-archipelago-mod.zip](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.0/sotn-archipelago-mod.zip): goes in recomp's `/mods/` folder\n- [sotn_recomp.apworld](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.0/sotn_recomp.apworld)\n- [Symphony-of-the-Night-Recomp.yaml](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.0/Symphony-of-the-Night-Recomp.yaml): default options\n\n**Setup**: \n- See the [README](https://github.com/Arcadia64/sotn-recomp-archipelago#setup).\n\n",
       "download_url": "https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.0/sotn_recomp.apworld",
       "has_manifest": true,
       "hash_sha256": "681dde8b58d1d3480ac5ac11c5468d9aa46402c63ce761f81a408e6c2097f220",
@@ -103,6 +105,53 @@
       "title": "0.5.0 (test build)",
       "version_simple": "0.5.0",
       "world_version": "0.5.0"
+    },
+    "0.5.1": {
+      "created_at": "2026-11-03T20:44:29Z",
+      "description": "- New goal `defeat_richter`: a shorter game that ends by beating or saving Richter\n- Traps are on by default: `trap_percentage` is now 20\n- `boss_drops`, `skip_prologue`, `infinite_wing_smash` and `heal_at_save_rooms` are on by default\n- Fixed solo `key_items` seeds with boss drops on sometimes failing to generate\n\n**Downloads**\n- [sotn-archipelago-mod.zip](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.1/sotn-archipelago-mod.zip): goes in recomp's `/mods/` folder\n- [sotn_recomp.apworld](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.1/sotn_recomp.apworld)\n- [Symphony-of-the-Night-Recomp.yaml](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.1/Symphony-of-the-Night-Recomp.yaml): default options\n\n**Setup**: \n- See the [README](https://github.com/Arcadia64/sotn-recomp-archipelago#setup).\n\n\n\n\n",
+      "download_url": "https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.1/sotn_recomp.apworld",
+      "has_manifest": true,
+      "hash_sha256": "5b841581a85f09f1d7d3130dcfc4a8f4c5fac6e191c699f6f7ad9c05bcddbbc5",
+      "html_url": "https://github.com/Arcadia64/sotn-recomp-archipelago/releases/tag/0.5.1",
+      "minimum_ap_version": "0.6.0",
+      "prerelease": true,
+      "size": 146417,
+      "source_url": "https://api.github.com/repos/Arcadia64/sotn-recomp-archipelago",
+      "tag": "0.5.1",
+      "title": "0.5.1 (test build)",
+      "version_simple": "0.5.1",
+      "world_version": "0.5.1"
+    },
+    "0.5.2": {
+      "created_at": "2026-11-03T21:47:00Z",
+      "description": "- Fixed the mod not loading on SymphonyRecomp v1.1\n\n**Downloads**\n- [sotn-archipelago-mod.zip](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.2/sotn-archipelago-mod.zip): goes in recomp's `/mods/` folder\n- [sotn_recomp.apworld](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.2/sotn_recomp.apworld)\n- [Symphony-of-the-Night-Recomp.yaml](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.2/Symphony-of-the-Night-Recomp.yaml): default options\n\n**Setup**: \n- See the [README](https://github.com/Arcadia64/sotn-recomp-archipelago#setup).\n",
+      "download_url": "https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.2/sotn_recomp.apworld",
+      "has_manifest": true,
+      "hash_sha256": "775c76a52744f91784ee78f3d2f0a3ff78b415df538f97fb0c53445d7d9260b2",
+      "html_url": "https://github.com/Arcadia64/sotn-recomp-archipelago/releases/tag/0.5.2",
+      "minimum_ap_version": "0.6.0",
+      "prerelease": true,
+      "size": 146417,
+      "source_url": "https://api.github.com/repos/Arcadia64/sotn-recomp-archipelago",
+      "tag": "0.5.2",
+      "title": "0.5.2 (test build)",
+      "version_simple": "0.5.2",
+      "world_version": "0.5.2"
+    },
+    "0.5.3": {
+      "created_at": "2026-11-03T22:32:18Z",
+      "description": "- New goal `defeat_richter`: a shorter game that ends by beating or saving Richter\n- New traps: 20% of your filler becomes Poison, Stone and Curse traps by default, and they look like progression items until picked up (`trap_percentage`, `trap_types`, `disguise_traps`)\n- `boss_drops`, `skip_prologue`, `infinite_wing_smash` and `heal_at_save_rooms` are on by default\n- 25+ items arriving at once now share one popup; key items and traps keep their own\n- `starting_area`: sotn.io's fixes for Royal Chapel and Castle Keep starts\n- Works with SymphonyRecomp v1.1.2p\n\n**Downloads**\n- [sotn-archipelago-mod.zip](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.3/sotn-archipelago-mod.zip): goes in recomp's `/mods/` folder\n- [sotn_recomp.apworld](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.3/sotn_recomp.apworld)\n- [Symphony-of-the-Night-Recomp.yaml](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.3/Symphony-of-the-Night-Recomp.yaml): default options\n\n**Setup**: \n- See the [README](https://github.com/Arcadia64/sotn-recomp-archipelago#setup).\n\n",
+      "download_url": "https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.3/sotn_recomp.apworld",
+      "has_manifest": true,
+      "hash_sha256": "96feb8c38a95650acce594e2a3a9a7f404b3600398735e4d21c22b00df141c55",
+      "html_url": "https://github.com/Arcadia64/sotn-recomp-archipelago/releases/tag/0.5.3",
+      "minimum_ap_version": "0.6.0",
+      "size": 146417,
+      "source_url": "https://api.github.com/repos/Arcadia64/sotn-recomp-archipelago",
+      "tag": "0.5.3",
+      "title": "0.5.3",
+      "version_simple": "0.5.3",
+      "world_version": "0.5.3"
     }
   }
 }
