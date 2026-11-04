@@ -1,0 +1,29 @@
+{
+  "flags": [
+    "unready"
+  ],
+  "game": "Transport Fever 3",
+  "github": "https://github.com/SytHamMer/archipelago-transport-fever-3",
+  "manifest_fields": [
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.1.0": {
+      "created_at": "2026-11-01T00:17:53Z",
+      "description": "# Transport Fever 3 x Archipelago 0.1.0\n\nFirst public test version of an unofficial Archipelago world for Transport Fever 3 (PC, Steam). It is not part of the\nofficial Archipelago repository: it is published here so that people can try it and report how it plays, before it is\nproposed upstream.\n\n## Files\n\n- `transport_fever_3.apworld`: the world (Launcher, **Install APWorld**).\n- `archipelago_tf3_1.zip`: the mod; extract it into `...\\3493540\\local\\mods\\` with the game closed.\n\nThe README and [docs/guide-installation.md](https://github.com/SytHamMer/archipelago-transport-fever-3/blob/main/docs/guide-installation.md) describe the installation, and\n[docs/playing-with-a-friend.md](https://github.com/SytHamMer/archipelago-transport-fever-3/blob/main/docs/playing-with-a-friend.md) a multiworld with another game. Needs Archipelago 0.6.x\n(tested with 0.6.8).\n\n## What it does\n\n- The game locks the transport modes, the vehicles by era, road and track types, construction tools and cargo classes\n  until the items are received.\n- The checks (population, company level, passengers and cargo transported, first lines, deliveries per cargo, missions)\n  are shown in the game as real contracts, and sent by the mod itself.\n- Money grants, money losses (traps), DeathLink, loans scaled by an option, and any start year.\n\n## What is verified\n\nIn game: the road (all vehicle tiers), contracts, notifications, DeathLink, loans, free start year, and a two-player\nmultiworld, including one with Satisfactory.\n\nNot verified yet: tram, water and air menus, the first line and delivery checks of each mode, the rail tiers.\n\n## How it was made\n\nLargely written with an AI assistant (Claude), then read and tested in the game by the author: see \"How this project was\nmade\" in the README.\n\n## Help wanted: balance\n\nThe numbers (checks, delivery amounts, money, logic) are a first guess. They can only be polished with feedback from\nreal games. Please report, in an issue: the YAML (or main options), the start year and climate, what felt too easy, too\nhard, too slow or too fast, how long the game lasted, and the lines starting with `ARCHIPELAGO` in\n`...\\3493540\\local\\crash_dump\\stdout.txt` if something looked wrong.\n\nThe mod uses parts of the game that are not documented: a game update can break it.\n",
+      "download_url": "https://github.com/SytHamMer/archipelago-transport-fever-3/releases/download/v0.1.0/transport_fever_3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "999a444561b09c4e2703940781abd396bb7976376ff33dfdfd2836a027768415",
+      "html_url": "https://github.com/SytHamMer/archipelago-transport-fever-3/releases/tag/v0.1.0",
+      "minimum_ap_version": "0.6.0",
+      "prerelease": true,
+      "size": 30565,
+      "source_url": "https://api.github.com/repos/SytHamMer/archipelago-transport-fever-3",
+      "tag": "v0.1.0",
+      "title": "0.1.0 - first public test version",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    }
+  }
+}
