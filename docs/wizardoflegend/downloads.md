@@ -1,4 +1,4 @@
-# None
+# Wizard of Legend
 
 ## Latest
 - <a href="https://github.com/Skelrin/WoLArchipelago/releases/download/v1.1.0/wizardoflegend.apworld">Latest Version (1.1.0)</a>

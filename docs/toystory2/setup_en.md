@@ -215,11 +215,35 @@ of that check's normal item, and the goal also needs the number of stars you ask
 - The Final Showdown stays locked until you have the stars, in both Open and Linear
   mode. The level select shows how many you still need.
 
-## Death Link (optional)
+## Challenge Options (optional)
 
-If you enable Death Link in your YAML, dying in your game sends a death to everyone
-else with Death Link enabled, and their deaths will kill you. Deaths received while
-you are not in a playable level are queued and applied once you are back in a level.
+These live in the **Challenge** group of your YAML.
+
+- **Death Link:** dying in your game sends a death to everyone else with Death Link
+  enabled, and their deaths will kill you. Deaths received while you are not in a
+  playable level are queued and applied once you are back in a level.
+- **Progressive Battery Capacity:** Buzz's health starts capped at 3. Each
+  *Progressive Battery Capacity* item raises the cap: 3, 6, 9, 12, then 14.
+  - **Extra Battery Capacity** adds two more steps, 17 and 20. The health bar
+    stretches to fit, so it looks a little odd above 14, but it works.
+  - **Rechargeable Battery Capacity** adds one more item after the last step. Once
+    you have it, any damage Buzz takes is put straight back. Death links still kill
+    him.
+  - Both need Progressive Battery Capacity on.
+- **Lives Carry More Weight:** when Buzz dies, he is sent back to the Level Select
+  as soon as he respawns, so the level or boss fight starts over.
+  **...Spare Death Links** lets deaths from other players' death links off the hook.
+
+These make the game much harder. Raise the Extra Battery and 1 Life filler weights,
+and keep Start Every Level With Full Health and Never Game Over on. With a battery
+cap, "full health" means your current cap.
+
+## Playing Co-op on One Slot
+
+Two players can connect to the same slot, each with their own game, and share one
+run. Checks and items are shared by Archipelago as usual. With Coinsanity off, the
+coins you pick up are shared too: they disappear from your partner's game and count
+toward their coin counter as well.
 
 ## Ending a Session
 

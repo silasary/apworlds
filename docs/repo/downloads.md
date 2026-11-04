@@ -1,9 +1,12 @@
 # R.E.P.O
 
 ## Latest
-- <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.5/repo.apworld">Latest Version (0.4.5)</a>
+- <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.5/repo.apworld">Latest Version (0.4.5.post2)</a>
 
 ## All Versions
+
+#### v0.4.5.post2
+- <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.5/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.5/repo.apworld</a>
 
 #### v0.4.5
 - <a href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.5/repo.apworld">https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/download/0.4.5/repo.apworld</a>

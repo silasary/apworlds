@@ -1,9 +1,12 @@
 # Toy Story 2
 
 ## Latest
-- <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/3.0.0/toystory2.apworld">Latest Version (3.0.0)</a>
+- <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/3.1.0/toystory2.apworld">Latest Version (3.1.0)</a>
 
 ## All Versions
+
+#### v3.1.0
+- <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/3.1.0/toystory2.apworld">https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/3.1.0/toystory2.apworld</a>
 
 #### v3.0.0
 - <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/3.0.0/toystory2.apworld">https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/3.0.0/toystory2.apworld</a>

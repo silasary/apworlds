@@ -1,4 +1,4 @@
-# None
+# Pokemon Stadium
 
 
 
@@ -8,9 +8,8 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Pokemon Stadium">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Pokemon Stadium">en_Pokemon Stadium</a>

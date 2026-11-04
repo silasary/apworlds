@@ -1,4 +1,4 @@
-# None
+# Kirby Nightmare in Dream Land
 
 ## Latest
 - <a href="https://github.com/VizCount467/Kirby-NIDL-AP/releases/download/v0.0.2/kirbynidl.apworld">Latest Version (0.0.2.post3)</a>

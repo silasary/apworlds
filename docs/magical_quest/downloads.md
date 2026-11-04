@@ -1,4 +1,4 @@
-# None
+# The Magical Quest Starring Mickey Mouse
 
 ## Latest
 - <a href="https://github.com/Abimo25/MagicalQuestAP/releases/download/v0.1.0/magical_quest.apworld">Latest Version (0.1.0)</a>

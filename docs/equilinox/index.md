@@ -1,6 +1,7 @@
-# None
+# Equilinox
 
-
+Equilinox is a relaxing nature simulation game in
+which you can create and nurture your own ecosystems.
 
 
 ## Downloads
@@ -8,9 +9,8 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Equilinox">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Equilinox">en_Equilinox</a>

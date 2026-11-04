@@ -1,4 +1,4 @@
-# None
+# Pokemon Stadium
 
 ## Latest
 - <a href="https://github.com/jciii91/Pokemon-Stadium-AP-World/releases/download/v1.2.0/pokemon_stadium.apworld">Latest Version (1.2.0)</a>

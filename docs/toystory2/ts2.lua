@@ -1,7 +1,7 @@
 -- ============================================================================
 -- Toy Story 2 (PS1) Archipelago - ALL-IN-ONE BizHawk script
 -- ----------------------------------------------------------------------------
--- CONNECTOR VERSION: 3.0.0   <-- must match the .apworld release.
+-- CONNECTOR VERSION: 3.1.0   <-- must match the .apworld release.
 --   If a player reports odd behaviour (e.g. checks sending early), have them
 --   confirm this line. It is also printed in the BizHawk Lua console on load and
 --   again when settings are received, so they can read it back without opening
@@ -28,7 +28,7 @@
 -- Single source of truth for the connector release version (see header). Bump this
 -- in lockstep with the .apworld release. Global so it stays in scope across the
 -- Part 1 / Part 2 do...end blocks without consuming a local slot.
-TS2_VERSION = "3.0.0"
+TS2_VERSION = "3.1.0"
 -- Free-text build tag, printed beside the version on load. NOT parsed anywhere:
 -- the client and the title screen only ever read TS2_VERSION, so a hotfix can
 -- be told apart in a player's console without tripping the version check.
@@ -403,7 +403,14 @@ MISSIONS_NEED_ADDR = 0x1FEC23
 -- 0x1FEC24: level-live (3.0.0, lua -> client): the level id while the level is
 -- loaded and in play (buzz_moved), 0 otherwise.
 LEVEL_LIVE_ADDR    = 0x1FEC24
--- free: 0x1FEC25 - 0x1FEC3F
+-- 0x1FEC25: Challenge options (3.1.0, client -> lua). Tag 0xA0 in the top three
+-- bits; bit0 Progressive Battery Capacity, bit1 Extra Battery Capacity, bit2
+-- Rechargeable Battery Capacity, bit3 Lives Carry More Weight, bit4 ...spares
+-- death links. Untagged (no client yet, older client) reads as all off.
+-- 0x1FEC26: how many Progressive Battery Capacity items have been received.
+CHALLENGE_ADDR     = 0x1FEC25
+BATTERY_CAP_COUNT_ADDR = 0x1FEC26
+-- free: 0x1FEC27 - 0x1FEC3F
 -- Potato Head reward (3.0.0). Same shape as the missing toy reward above, in
 -- its own buffer: Potato Head and a missing-toy owner share every Potato level,
 -- so one buffer cannot describe both. Sited above the 2.3.0 top in the same
@@ -1865,6 +1872,128 @@ function missions_blocked()
     return (v & 0x01) ~= 0 and (v & 0x02) == 0
 end
 function missions_needed() return mainmemory.read_u8(MISSIONS_NEED_ADDR) end
+
+-- ── CHALLENGE (3.1.0) ────────────────────────────────────────────────────
+-- Globals only: the main chunk is at Lua's 200-local limit.
+BATTERY_CAPS       = { 3, 6, 9, 12, 14 }
+BATTERY_CAPS_EXTRA = { 3, 6, 9, 12, 14, 17, 20 }
+function challenge_flag(bit)
+    local v = mainmemory.read_u8(CHALLENGE_ADDR)
+    if (v & 0xE0) ~= 0xA0 then return false end
+    return (v & (1 << bit)) ~= 0
+end
+-- Buzz's current health cap, or nil when Progressive Battery Capacity is off.
+-- Item count 0 is the first cap (3); counts past the last cap stay on it.
+function battery_cap()
+    if not challenge_flag(0) then return nil end
+    local caps = challenge_flag(1) and BATTERY_CAPS_EXTRA or BATTERY_CAPS
+    local n = mainmemory.read_u8(BATTERY_CAP_COUNT_ADDR)
+    return caps[math.min(n + 1, #caps)]
+end
+-- Rechargeable: the item AFTER the last cap makes Buzz invincible.
+function battery_invincible()
+    if not (challenge_flag(0) and challenge_flag(2)) then return false end
+    local caps = challenge_flag(1) and BATTERY_CAPS_EXTRA or BATTERY_CAPS
+    return mainmemory.read_u8(BATTERY_CAP_COUNT_ADDR) >= #caps
+end
+-- "Full health": the cap when there is one, the game's 14 otherwise. Used by
+-- Start Every Level With Full Health, the Extra Battery filler, the Never Game
+-- Over rescue and respawns.
+function full_hp() return battery_cap() or 14 end
+
+ch_prev_anim   = 0      -- last frame's 0x0A136E (2 = death animation)
+ch_dead        = false  -- Buzz died in this level and hasn't been booted yet
+ch_dead_link   = false  -- ...and that death came from a received death link
+ch_boot_wait   = 0      -- frames left before booting after the respawn
+ch_last_hp     = 0
+ch_level       = -1
+dl_kill_applied = false -- set where a received death link kills Buzz
+ch_cap_count   = -1     -- Progressive Battery Capacity count last frame
+ch_gen         = -1     -- connection generation that count belongs to
+ch_gen_quiet   = 0      -- frames after a (re)connect when increases are ignored
+
+function challenge_reset()
+    ch_prev_anim, ch_dead, ch_dead_link, ch_boot_wait, ch_last_hp = 0, false, false, 0, 0
+    dl_kill_applied = false
+end
+
+-- A Progressive Battery Capacity found while in a level fills Buzz up to the
+-- new cap straight away. Runs on every frame, in or out of a level, so an item
+-- that arrived on the map doesn't count as "new" on the next level entry. The
+-- count the client writes right after a (re)connect is not a pickup, so
+-- increases are ignored for two seconds after the connection changes.
+function battery_cap_pickup(level)
+    local n = mainmemory.read_u8(BATTERY_CAP_COUNT_ADDR)
+    local gen = mainmemory.read_u8(SHARED_CONN_GEN)
+    if gen ~= ch_gen then ch_gen = gen; ch_gen_quiet = 120 end
+    if ch_gen_quiet > 0 then ch_gen_quiet = ch_gen_quiet - 1; ch_cap_count = n; return end
+    local grew = ch_cap_count >= 0 and n > ch_cap_count
+    ch_cap_count = n
+    if not grew or level < 1 or level > 15 then return end
+    local cap = battery_cap()
+    if not cap or DEATH_PHASE ~= 0 or mainmemory.read_u8(0x0A136E) == 2 then return end
+    local hp = mainmemory.read_u8(A.BUZZ_HP)
+    if hp > 0 and hp < cap then
+        mainmemory.write_u8(A.BUZZ_HP, cap)
+        mainmemory.write_u8(A.HEALTH_UI, 88)
+    end
+end
+
+function challenge_tick(level)
+    if level ~= ch_level then ch_level = level; challenge_reset() end
+    if level < 1 or level > 15 then return end
+    local anim  = mainmemory.read_u8(0x0A136E)
+    local hp    = mainmemory.read_u8(A.BUZZ_HP)
+    local cap   = battery_cap()
+    local dying = DEATH_PHASE ~= 0 or anim == 2 or hp == 0 or hp == 255
+
+    -- A death starts: remember it, and whether a received death link did it.
+    if anim == 2 and ch_prev_anim ~= 2 then
+        ch_dead = true
+        ch_dead_link = dl_kill_applied
+        dl_kill_applied = false
+    end
+    -- Respawn: back to full (the cap), and arm the Lives Carry More Weight boot.
+    if ch_prev_anim == 2 and anim == 0 then
+        if cap then mainmemory.write_u8(A.BUZZ_HP, cap); hp = cap; dying = false end
+        if ch_dead and challenge_flag(3) and not (ch_dead_link and challenge_flag(4)) then
+            ch_boot_wait = 30
+        end
+        ch_dead, ch_dead_link = false, false
+    end
+    ch_prev_anim = anim
+
+    -- Lives Carry More Weight: send Buzz to the Level Select half a second
+    -- after he respawns. Same exit the Never Game Over rescue uses; result 5 is
+    -- safe in every level type, bosses included.
+    if ch_boot_wait > 0 then
+        ch_boot_wait = ch_boot_wait - 1
+        if ch_boot_wait == 0 and anim == 0 then
+            mainmemory.write_u8(0x0A135E, 1)
+            mainmemory.write_u8(0x0A136E, 5)
+        end
+    end
+
+    if cap and not dying then
+        local dl_incoming = is_death_link() and mainmemory.read_u8(SHARED_DEATH_LINK) > 0
+        if hp > cap then
+            mainmemory.write_u8(A.BUZZ_HP, cap); hp = cap
+        elseif cap > 14 and ch_last_hp > 14 and hp == 14
+               and mainmemory.read_u8(A.BUZZ_IFRAME) == 0 then
+            -- Above 14 the game's own battery pickup may clamp Buzz down to its
+            -- normal maximum. A drop to exactly 14 with no hit (no i-frames)
+            -- is that, not damage: put back what he had.
+            hp = math.min(ch_last_hp, cap)
+            mainmemory.write_u8(A.BUZZ_HP, hp)
+        end
+        -- Rechargeable: any damage is put straight back. Never against a
+        -- death link (DEATH_PHASE / queued link are checked above and here).
+        if battery_invincible() and hp < cap and not dl_incoming then
+            mainmemory.write_u8(A.BUZZ_HP, cap); hp = cap
+        end
+    end
+    ch_last_hp = dying and 0 or hp
+end
 -- Popup line for missing stars. The popup buffer is LOCK_BUF_LEN (23)
 -- characters, so a two-digit count drops the word "mission".
 function missions_msg()
@@ -3531,11 +3660,12 @@ function update_traps(level)
             mainmemory.write_u8(0x0A135E, 1)
             mainmemory.write_u8(0x0A136E, 5)
             mainmemory.write_u8(A.BUZZ_LIVES, 5)
-            mainmemory.write_u8(A.BUZZ_HP, 14)
+            mainmemory.write_u8(A.BUZZ_HP, full_hp())
         else
             mainmemory.write_u8(0x0B221E, 255)
             mainmemory.write_u8(0x0A155C, 255)
             mainmemory.write_u8(0x0A136E, 2)
+            dl_kill_applied = true   -- Lives Carry More Weight may spare this one
             DEATH_PHASE    = 1
             DEATH_A_FRAMES = 0
         end
@@ -3600,7 +3730,7 @@ function update_traps(level)
         if level>=1 and level<=15 then
             full_health_frames = full_health_frames - 1
             if is_start_full_health() and DEATH_PHASE==0 then
-                mainmemory.write_u8(A.BUZZ_HP, 14)
+                mainmemory.write_u8(A.BUZZ_HP, full_hp())
             end
         else
             full_health_frames = 0
@@ -3622,12 +3752,16 @@ function update_traps(level)
                 -- register as WON.
                 mainmemory.write_u8(0x0A136E, 5)
                 mainmemory.write_u8(A.BUZZ_LIVES, 5)
-                mainmemory.write_u8(A.BUZZ_HP, 14)
+                mainmemory.write_u8(A.BUZZ_HP, full_hp())
             end
         else
             ngo_armed = true
         end
     end
+
+    -- Challenge (3.1.0): health cap, Rechargeable invincibility, Lives Carry
+    -- More Weight. After the death link and NGO blocks so it sees their writes.
+    challenge_tick(level)
 
     -- Filler: Extra life
     local life_q=mainmemory.read_u8(SHARED_EXTRA_LIFE)
@@ -3643,8 +3777,9 @@ function update_traps(level)
     if hp_q>0 then
         mainmemory.write_u8(SHARED_HEALTH_UP,hp_q-1)
         local health=mainmemory.read_u8(A.BUZZ_HP)
-        if health<14 then
-            mainmemory.write_u8(A.BUZZ_HP,math.min(14,health+4))
+        local full=full_hp()
+        if health<full then
+            mainmemory.write_u8(A.BUZZ_HP,math.min(full,health+4))
             mainmemory.write_u8(A.BUZZ_IFRAME,30)
             mainmemory.write_u8(A.HEALTH_UI,88)
         end
@@ -5642,6 +5777,9 @@ function ts2_main()
     mainmemory.write_u8(0x1FFFD0, 0xAB)
     -- Re-assert boss defeats this session detected (see BOSS DEFEAT LATCH).
     boss_latch_tick()
+    -- Progressive Battery Capacity found mid-level fills health (3.1.0). Every
+    -- frame, map included, so the count is always current.
+    battery_cap_pickup(mainmemory.read_u8(A.LEVEL))
     -- Logic Lab only (nil in a normal session): stands in for the client.
     if TS2_LAB_HOOK then TS2_LAB_HOOK() end
     -- One-time positive confirmation that the client wrote settings (game-mode

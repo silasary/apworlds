@@ -1,4 +1,4 @@
-# None
+# Equilinox
 
 ## Latest
 - <a href="https://github.com/AAces17/EquilinoxAPClient/releases/download/0.1.2/equilinox.apworld">Latest Version (0.1.2)</a>
