@@ -3,7 +3,7 @@
 ## What you need
 
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) 0.6.0 or newer.
-- [SymphonyRecomp](https://github.com/BlackLabelHQ/SymphonyRecomp/releases) v0.5.1b or newer, set up with your US
+- [SymphonyRecomp](https://github.com/BlackLabelHQ/SymphonyRecomp/releases) v1.1.2p or newer, set up with your US
   disc image (SLUS-00067) as its README describes.
 - From the [project's releases](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/latest):
   `sotn_recomp.apworld` (this world) and `sotn-archipelago-mod.zip` (the mod).
@@ -33,7 +33,7 @@ There is no patch file for this game: the mod gets everything it needs from the 
    and the password if there is one -> **Connect**. From then on the mod connects by itself when the game starts.
 3. Then start a new game or load your save. A new game waits for the connection (the seed comes from the server).
    A save always plays with the seed it was started with: saves of seeds you've played on this PC also work
-   offline, and sync (checks sent, items received) as soon as you connect. Beating Dracula offline counts too:
+   offline, and sync (checks sent, items received) as soon as you connect. Reaching the goal offline counts too:
    the server is told the next time you connect.
 
 Commands such as `!hint`, `!release` or `!collect` can be sent from the mod's own **Text client** window (menu bar ->

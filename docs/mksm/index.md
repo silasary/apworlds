@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/orizach01/Archipelago-MKSM/releases/download/1.1.1/mksm.apworld">Latest Version (1.1.1)</a>
+- <a href="https://github.com/orizach01/Archipelago-MKSM/releases/download/1.2.0/mksm.apworld">Latest Version (1.2.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

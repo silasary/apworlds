@@ -20,4 +20,4 @@
    - **Password:** Enter the server password if one is required. Leave this field blank if the session has no password.
 6. **Connect.** Once the connection is established, the client is ready to communicate with your Archipelago game session.
 
-You are now ready to play! Progress through Arcade Mode to send location checks to Archipelago and receive items from your multiworld session.
+You are now ready to play! Progress through Puzzle/Arcade worlds or Puzzle/Story Tarot cards to send location checks to Archipelago and receive items from your multiworld session.

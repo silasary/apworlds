@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Laxbby/ArchipelagoCM3/releases/download/1.1.2/cookingmama3.apworld">Latest Version (1.1.2)</a>
+- <a href="https://github.com/Laxbby/ArchipelagoCM3/releases/download/1.1.3/cookingmama3.apworld">Latest Version (1.1.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

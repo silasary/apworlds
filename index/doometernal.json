@@ -2,11 +2,13 @@
   "authors": [
     "snowzzrra"
   ],
+  "description": "Rip and tear, until it is done.\nDoom Eternal Randomizer for Archipelago.",
   "flags": [
     "after_dark"
   ],
   "game": "DOOM Eternal",
   "github": "https://github.com/snowzzrra/DoomEternal-AP-Mod",
+  "license": null,
   "manifest_fields": [
     "authors",
     "minimum_ap_version",
@@ -183,6 +185,21 @@
       "title": "0.7.2 - Beta",
       "version_simple": "0.7.1",
       "world_version": "0.7.1r2"
+    },
+    "0.7.3": {
+      "created_at": "2026-11-03T13:45:02Z",
+      "description": "# DOOM Eternal Archipelago v0.7.3\r\n\r\nBug fixes for Linux/Proton disconnections, item and DeathLink delivery, stuck encounters, and the broken camera after dying without a usable weapon.\r\n\r\nUse **Mod and APWorld 0.7.3** with **Sentinel Core 1.1.4**.\r\n\r\n## Launcher and connection\r\n\r\n- Fixed Linux/Proton disconnections (\"keepalive ping timeout\") while the game was running. Checking whether DOOM is running no longer blocks the connection to the Archipelago server.\r\n- Fixed automatic reconnection failing with an error after the client switched from `ws://` to `wss://`.\r\n- When the game connection helper stops under Linux/Proton, the launcher now says so and suggests checking the selected Proton version, instead of asking to close a game that is not running.\r\n\r\n## Item delivery and DeathLink\r\n\r\n- Fixed items and DeathLinks not arriving in game on some machines until a relaunch. The Core rejected valid game reads that took slightly longer than its time limit; that limit is now more tolerant.\r\n- DeathLinks that the Core refuses before running them are now retried instead of being lost.\r\n\r\n## Encounters and enemy randomization\r\n\r\n- `ap_finish_encounter` can now also end an encounter stuck waiting for enemies that never spawned, where it previously answered \"No active encounter\".\r\n- Tentacles are no longer in the default enemy pool for new rooms; they can still be enabled through Bestiary Weights. In existing rooms, Tentacles are replaced by a mobile enemy when the launcher prepares the room package again, since a Tentacle in an unreachable spot could keep an encounter from ending (for example, the **Super Gore Nest** Slayer Gate and the arena after the BFG in **Mars Core**).\r\n- Fixed floating hands, a broken camera and the player appearing tiny after dying or loading a checkpoint with no ammo and a randomized Chainsaw. The player's owned weapon is now selected even when it has no ammo.\r\n\r\n## Campaign menu\r\n\r\n- The Slayer Gate icon in the mission menu now shows a Gate as completed only when you completed it in game in this save. A Gate collected by another player stays open, so you still know to complete it for its Empyrean Key. Gates completed before this version show as open until completed again.\r\n\r\n## Support Reports and diagnostics\r\n\r\n- Added diagnostics for Ammo Refill, showing what each ammo pool had before and after a refill.\r\n- Added diagnostics for encounters whose enemies fail to spawn and for `ap_finish_encounter` refusals.\r\n- Added diagnostics for goal evaluation, recording why victory was or was not sent.\r\n- Spawn position diagnostics now cover every map instead of only the first one.\r\n\r\n**These fixes do not require a new room. Rooms that work with v0.7.2 keep working. The Tentacle default applies to rooms generated with APWorld v0.7.3; the Tentacle replacement in existing rooms applies when the launcher prepares the room package again.**\r\n",
+      "download_url": "https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.7.3/doometernal.apworld",
+      "has_manifest": true,
+      "hash_sha256": "6b5372407523eb302c1f61dd5687f58e1bcb1dd083e6816e03b7d5f97ae54d46",
+      "html_url": "https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.7.3",
+      "minimum_ap_version": "0.6.7",
+      "size": 1024771,
+      "source_url": "https://api.github.com/repos/snowzzrra/DoomEternal-AP-Mod",
+      "tag": "0.7.3",
+      "title": "0.7.3 - Beta",
+      "version_simple": "0.7.3",
+      "world_version": "0.7.3"
     }
   }
 }
