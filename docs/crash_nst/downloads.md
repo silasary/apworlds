@@ -1,9 +1,12 @@
 # Crash Bandicoot N. Sane Trilogy
 
 ## Latest
-- <a href="https://github.com/randomcodegen/CrashNST-AP/releases/download/1.0.7/crash_nst.apworld">Latest Version (1.0.7)</a>
+- <a href="https://github.com/randomcodegen/CrashNST-AP/releases/download/1.0.8/crash_nst.apworld">Latest Version (1.0.8)</a>
 
 ## All Versions
+
+#### v1.0.8
+- <a href="https://github.com/randomcodegen/CrashNST-AP/releases/download/1.0.8/crash_nst.apworld">https://github.com/randomcodegen/CrashNST-AP/releases/download/1.0.8/crash_nst.apworld</a>
 
 #### v1.0.7
 - <a href="https://github.com/randomcodegen/CrashNST-AP/releases/download/1.0.7/crash_nst.apworld">https://github.com/randomcodegen/CrashNST-AP/releases/download/1.0.7/crash_nst.apworld</a>

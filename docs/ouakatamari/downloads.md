@@ -1,9 +1,12 @@
 # Once Upon a Katamari
 
 ## Latest
-- <a href="https://github.com/ItsSeafoamy/Once-Upon-an-Archipelago/releases/download/v0.3.0/ouakatamari.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/ItsSeafoamy/Once-Upon-an-Archipelago/releases/download/v0.4.0/ouakatamari.apworld">Latest Version (0.4.0)</a>
 
 ## All Versions
+
+#### v0.4.0
+- <a href="https://github.com/ItsSeafoamy/Once-Upon-an-Archipelago/releases/download/v0.4.0/ouakatamari.apworld">https://github.com/ItsSeafoamy/Once-Upon-an-Archipelago/releases/download/v0.4.0/ouakatamari.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/ItsSeafoamy/Once-Upon-an-Archipelago/releases/download/v0.3.0/ouakatamari.apworld">https://github.com/ItsSeafoamy/Once-Upon-an-Archipelago/releases/download/v0.3.0/ouakatamari.apworld</a>
