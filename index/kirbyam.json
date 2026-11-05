@@ -269,6 +269,22 @@
       "title": "KirbyAM APWorld v0.5.0-rc1",
       "version_simple": "0.5.0",
       "world_version": "0.5.0rc1"
+    },
+    "kirbyam-v0.5.0-rc2": {
+      "created_at": "2026-11-05T07:08:16Z",
+      "description": "# \u26a0\ufe0f NOT READY \u2014 EXPECT ISSUES\r\n\r\n**This is an experimental prerelease, not a stable release. Bugs, regressions and incomplete behavior are expected.** Please report problems you encounter.\r\n\r\n## KirbyAM v0.5.0-rc2\r\n\r\nThis second release candidate includes merged PRs #1013, #1014, #1015, #1018 and #1029.\r\n\r\n### v0.5.0 highlights\r\n- Eight Area Keys gate cross-area transitions. Locked mirrors show boards and associated Warp Stars stay hidden until eligible. The Area Keys option is enabled by default.\r\n- Fifteen Hub Connection progression items unlock hub shortcuts independently of physical Big Switch checks.\r\n- New Hub Teleport Trap, `/goal` command, and Defeat a Number of Area Bosses goal (1\u20138 bosses, default 3). New count-goal seeds require the updated KirbyAM client.\r\n- Eight new palettes: Rainbow, Candy Corn, Negative, Pineapple, Cotton Candy, Royal, Pumpkin and Mint Chip, including UFO and HUD support.\r\n- Fix repeated healing sounds at 50% enemy health and accurate scaled health meters.\r\n- Fixes for DeathLink/reconnect behavior, item delivery after completed saves, ability exclusions, queued Invincibility Candy, room-sanity reachability, Moonlight and Carrot Castle levers, tutorial receipts, random-per-room palettes and mGBA reconnects.\r\n- Release preparation/readiness checks, staging status, artifact verification and workflow hardening; isolated graph-cache test fixtures and expanded native/client regression coverage.\r\n\r\nSee the [full v0.5.0 changelog](https://github.com/hasherwi/Archipelago-kirbyam/blob/5bdc27100937db5362949ec8b3e3089c83fd4d13/worlds/kirbyam/CHANGELOG.md) for details.\r\n\r\n### Known limitations\r\n- Only the North American ROM is supported; AP notifications are English. No ROM is included.\r\n- Chests retain their original item sprites and collection animations; statues retain their original ability appearance.\r\n- mGBA notifications require the visible **Archipelago Connector** scripting panel; they are plain text, not game-image overlays.\r\n\r\n### Source and artifact verification\r\nTag: `kirbyam-v0.5.0-rc2`\r\nSource: `5bdc27100937db5362949ec8b3e3089c83fd4d13`\r\n\r\nThe verified APWorld is attached as `kirbyam.apworld`. The candidate artifact comes from the [successful main-branch APWorld build](https://github.com/hasherwi/Archipelago-kirbyam/actions/runs/41985114660) at this exact source commit. Its receipt and SHA-256 were verified, and all 327 packaged files were compared with the checkout, allowing only the expected builder-added manifest fields. No full ROM is included.\r\n\r\n`kirbyam.apworld` SHA-256:\r\n```text\r\n0191a9dbe23eb794e7c62e50cd42f8cb8e56945f4adf6c86d448d092f98b3659\r\n```\r\n\r\n**Automatic release staging is incomplete:** the tag-specific metadata check requires a `v0.5.0-rc2` changelog heading, while this source has `v0.5.0`. The candidate receipt identifies the main-branch build; it is not signed tag-based release provenance. No tag-based attestation is supplied. Protected-tag/environment and immutable-release prerequisites have not been verified. This prerelease does not claim full release-readiness or that all CI tests passed.",
+      "download_url": "https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.5.0-rc2/kirbyam.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0191a9dbe23eb794e7c62e50cd42f8cb8e56945f4adf6c86d448d092f98b3659",
+      "html_url": "https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc2",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 918754,
+      "source_url": "https://api.github.com/repos/hasherwi/Archipelago-kirbyam",
+      "tag": "kirbyam-v0.5.0-rc2",
+      "title": "KirbyAM v0.5.0-rc2 \u2014 Experimental prerelease",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0rc2"
     }
   }
 }

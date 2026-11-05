@@ -1,5 +1,7 @@
 # Kirby publication trust boundary
 
+Use the [release preparation runbook](release-preparation.md) for preflight, draft/tag ordering, readiness and recovery.
+
 **Do not enable or use #993 standalone as safe publication.** Its legacy prune,
 delete and clobber behavior is removed by #994. The safe publisher requires the
 combined stack plus owner-verified tag/environment protections and immutable-release

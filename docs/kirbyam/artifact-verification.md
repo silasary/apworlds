@@ -1,5 +1,7 @@
 # Verify Kirby APWorld artifacts
 
+Use the [release preparation runbook](release-preparation.md) for preflight, draft/tag ordering, readiness and recovery.
+
 APWorlds contain executable Python code. Loading one trusts it with the Archipelago
 process user's permissions. Obtain worlds from a distribution you trust and verify
 its repository, reviewed source, workflow and bytes before installation. Test unfamiliar
