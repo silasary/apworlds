@@ -1,9 +1,12 @@
 # Trails Beyond the Horizon
 
 ## Latest
-- <a href="https://github.com/brimaster2000/Trails-Beyond-the-Horizon-Archipelago/releases/download/v0.1.2-alpha/beyondthehorizon.apworld">Latest Version (0.1.2a0)</a>
+- <a href="https://github.com/brimaster2000/Trails-Beyond-the-Horizon-Archipelago/releases/download/v0.1.3-alpha/beyondthehorizon.apworld">Latest Version (0.1.3a0)</a>
 
 ## All Versions
+
+#### v0.1.3a0
+- <a href="https://github.com/brimaster2000/Trails-Beyond-the-Horizon-Archipelago/releases/download/v0.1.3-alpha/beyondthehorizon.apworld">https://github.com/brimaster2000/Trails-Beyond-the-Horizon-Archipelago/releases/download/v0.1.3-alpha/beyondthehorizon.apworld</a>
 
 #### v0.1.2a0
 - <a href="https://github.com/brimaster2000/Trails-Beyond-the-Horizon-Archipelago/releases/download/v0.1.2-alpha/beyondthehorizon.apworld">https://github.com/brimaster2000/Trails-Beyond-the-Horizon-Archipelago/releases/download/v0.1.2-alpha/beyondthehorizon.apworld</a>
