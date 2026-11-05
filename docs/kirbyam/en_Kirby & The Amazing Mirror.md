@@ -70,6 +70,7 @@ Use exact item/location names from this world (or the item groups listed above) 
 - For a fixed one-hit challenge, set `minimum_health: 1` and `maximum_health: 1`. This removes Vitality Counters and healing filler from the pool. For a one-hit start with four upgrades, use `minimum_health: 1` and `maximum_health: 5`.
 - Filler items use weighted generation rather than equal odds. Current whole-number weights are: Cell Phone Battery 25, Energy Drink 17, 1 Up 15, Max Tomato 15, Small Food 14, Hunk of Meat 9, Invincibility Candy 5.
 - Goal modes:
+  - `defeat_area_boss_count`: Defeat any `required_area_bosses` distinct area bosses (1–8, default 3). Repeats count once; Master Hand + Crazy Hand count as one. Shards and received items do not count. This setting is ignored by other goals. Count-goal seeds require the updated KirbyAM client; older clients incorrectly treat this new mode as Dark Mind.
   - `dark_mind`: Defeat Dark Mind to complete the seed.
   - `defeat_any_area_boss`: Defeat any one `* - Boss Defeat` location (Mustard Mountain, Moonlight Mansion, Candy Constellation, Olive Ocean, Peppermint Palace, Cabbage Cavern, Carrot Castle, or Radish Ruins). In this mode, collecting all Mirror Shards is not required by the goal mode itself.
     - Candy Constellation's Master Hand + Crazy Hand fight is treated as one pooled boss target (`BOSS_DEFEAT_3`).
@@ -148,7 +149,7 @@ You will not see an indicator in the game, instead you'll see you received an it
 
 
 
-Currently a tracker is not available. Goal logic depends on the selected mode: either defeat Dark Mind, defeat any one area boss in `defeat_any_area_boss` mode, or defeat the selected `configured_area_boss` in `defeat_area_boss` mode.
+Currently a tracker is not available. Goal logic depends on the selected mode: either defeat Dark Mind, defeat any one area boss in `defeat_any_area_boss` mode, defeat the selected `configured_area_boss` in `defeat_area_boss` mode, or defeat any N distinct area bosses in `defeat_area_boss_count` mode. Enter `/goal` in the connected client to confirm the requirement; legacy hidden targets stay hidden.
 
 
 

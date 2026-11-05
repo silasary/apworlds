@@ -26,7 +26,7 @@ clear it.
 1. Create your options file (YAML).
 2. Open `ArchipelagoLauncher.exe`. If someone else is generating the multiworld, continue to step 6.
 3. As this is a custom world, you will need to generate the multiworld locally. To do this, place your YAML files in the `Players` folder.
-4. Once this is done select open next to the `Generate` option within the Archipelago Launcher. This will open a terminal and take a few moments to generate the multiworld. 
+4. Once this is done select open next to the `Generate` option within the Archipelago Launcher. This will open a terminal and take a few moments to generate the multiworld.
 5. If there are no issues you'll see a new `.zip` file within the `output` folder of your Archipelago directory. You can take that file and upload it to [Archipelago](https://archipelago.gg/uploads) to host your world.
 6. Your host, will send you a link to your room, find your name and click the `Download Patch File` text in the same row. After the download is complete you should see your patch file will have the `.apkirbyam` file extension.
 6. In the Archipelago Launcher, select the "Open Patch" option and select your patch file.
@@ -37,6 +37,36 @@ clear it.
 If you're playing a single-player seed and you don't care about autotracking or hints, you can stop here, close the
 client, and load the patched ROM in any emulator. However, for multiworlds and other Archipelago features, continue
 below using your selected emulator and its connector.
+
+## Checking Your Goal
+
+After connecting your KirbyAM slot, enter `/goal` in the client to display the seed's victory condition.
+For an area-boss goal it names the resolved boss and area, including when the generator chose a random boss.
+Legacy hidden-boss seeds keep their target hidden. If slot data or the target is unavailable, the command says so.
+This command only displays information; it does not change progress or report completion. It is also listed in `/help`.
+
+For a shorter multi-boss seed, use:
+
+```yaml
+Kirby & The Amazing Mirror:
+  goal: defeat_area_boss_count
+  required_area_bosses: 3
+```
+
+The count can be 1–8 (default 3). Defeat any N distinct area bosses; repeats count once and
+Master Hand + Crazy Hand count together as one. This is an alternative victory condition: other goals ignore the count.
+`/goal` displays, for example, "Defeat any 3 distinct area bosses."
+
+**Count-goal seeds require the updated KirbyAM APWorld/client on the player's machine.** Older clients treat this
+unknown goal as Dark Mind; the framework's minimum-client-version check does not enforce the KirbyAM plugin update.
+Existing goals and legacy hidden-boss seeds remain supported by the updated client. No ROM patch rebuild is needed
+for this client-side goal addition.
+
+Before playing a count-goal seed, install the APWorld containing this feature on each player's machine,
+restart the client, connect to the intended slot and run `/goal`. It must show the configured number of
+distinct area bosses. An unknown command, a Dark Mind requirement or unavailable goal data means the
+client/slot setup needs correcting before play. Updating only the generator or server does not update
+the player's client. A successful server connection alone does not establish compatibility.
 
 ## Connecting to a Server
 

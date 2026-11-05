@@ -9,7 +9,7 @@ command state is not saved in the profile. Logic corrections apply to newly gene
 
 ## Starting a new run
 
-1. Install Archipelago 0.6.7.
+1. Install Archipelago 0.6.8.
 2. Copy `los.apworld` into Archipelago's `custom_worlds` folder.
 3. Copy the package's `Game Folder` contents into the Lords of Shadow installation folder. This
    adds only `bin/dinput8.dll`; it does not replace the game executable or a retail archive.
