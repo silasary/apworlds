@@ -256,6 +256,22 @@
       "title": "2026.11.02 - Bifrost Mode (Alpha)",
       "version_simple": "2026.11.2",
       "world_version": "2026.11.2"
+    },
+    "2026.11.05": {
+      "created_at": "2026-11-05T21:24:14Z",
+      "description": "> **Still the Bifrost Alpha.** This one's mostly fixes for switching between slots in the same client window. Conquest players get them too, so it's worth updating either way.\n\n### Fixed\n- Finishing your goal on one slot and then connecting to another slot in the same client window could instantly goal the new slot too, and release it if you're on auto release. Sorry about that one!\n- Bifrost progress made while the client was closed now only gets sent to the slot it actually belongs to. Before, connecting to a different Bifrost slot first would send it there instead, goal included.\n- Conquest chapters you beat while the client was disconnected now get sent when you reconnect. Before, they were lost until you restarted the client.\n- The \"pinned save no longer found\" warning shows up again after switching rooms, instead of staying quiet if you'd already seen it once.\n\n### Changed\n- The client now cleans up after itself in the Bifrost folder. Bonus records for runs whose save is gone get deleted, and empty leftover folders get removed, so it stops piling up files over time. Any run you can still load keeps its records.\n\n**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.11.02...2026.11.05\n",
+      "download_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.11.05/northgard.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0b960363f10f7f606864f6fb607da55f18ad34dc89e93d9b469e5aff9d09835c",
+      "html_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.11.05",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 10538217,
+      "source_url": "https://api.github.com/repos/ChakraaThePanda/Archipelago-Northgard",
+      "tag": "2026.11.05",
+      "title": "2026.11.05 - Slot Switching Fixes",
+      "version_simple": "2026.11.5",
+      "world_version": "2026.11.5"
     }
   }
 }

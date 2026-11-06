@@ -4,7 +4,7 @@ Nova Lands is a farming and exploration game where you can grow crops, raise ani
 
 
 ## Downloads
-- <a href="https://github.com/Foxolotl713/NovaLandsMods/releases/download/ap0.2.0/novalands.apworld">Latest Version (0.2.0.post3)</a>
+- <a href="https://github.com/Foxolotl713/NovaLandsMods/releases/download/ap0.2.1/novalands.apworld">Latest Version (0.2.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

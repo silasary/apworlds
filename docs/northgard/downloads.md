@@ -1,9 +1,12 @@
 # Northgard
 
 ## Latest
-- <a href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.11.02/northgard.apworld">Latest Version (2026.11.2)</a>
+- <a href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.11.05/northgard.apworld">Latest Version (2026.11.5)</a>
 
 ## All Versions
+
+#### v2026.11.5
+- <a href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.11.05/northgard.apworld">https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.11.05/northgard.apworld</a>
 
 #### v2026.11.2
 - <a href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.11.02/northgard.apworld">https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.11.02/northgard.apworld</a>

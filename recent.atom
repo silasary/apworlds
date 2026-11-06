@@ -2,176 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-05T18:21:18.821377+00:00</updated>
+  <updated>2026-11-06T00:24:04.070666+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Arcadia64/sotn-recomp-archipelago/releases/tag/0.5.0</id>
-    <title>Symphony of the Night (Recomp) v0.5.0</title>
-    <updated>2026-11-02T07:09:47+00:00</updated>
-    <author>
-      <name>Arcadia64</name>
-    </author>
-    <author>
-      <name>fdelduque</name>
-    </author>
-    <content>Test build of the Richter goal and traps. Expect some bugs, and please open an [issue](https://github.com/Arcadia64/sotn-recomp-archipelago/issues) if you find one. The shuffled castle from the 0.4.0 test build isn't in this one.
-
-- New goal `defeat_richter`: a shorter game that ends by beating or saving Richter, with no inverted castle
-- New traps: `trap_percentage` and `trap_types` turn some filler into Poison, Stone and Curse traps (off by default)
-- New `disguise_traps` (on by default): traps look like progression items until picked up
-- 25+ items arriving at once now share one popup; key items and traps keep their own
-- Works with SymphonyRecomp 1.0 (also builds on v0.5.1b, but hasn't been played there yet)
-- `starting_area`: sotn.io's fixes for Royal Chapel and Castle Keep starts
-
-**Downloads**
-- [sotn-archipelago-mod.zip](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.0/sotn-archipelago-mod.zip): goes in recomp's `/mods/` folder
-- [sotn_recomp.apworld](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.0/sotn_recomp.apworld)
-- [Symphony-of-the-Night-Recomp.yaml](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.0/Symphony-of-the-Night-Recomp.yaml): default options
-
-**Setup**: 
-- See the [README](https://github.com/Arcadia64/sotn-recomp-archipelago#setup).
-
-</content>
-    <link href="https://github.com/Arcadia64/sotn-recomp-archipelago/releases/tag/0.5.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/tag/v1.0.0</id>
-    <title>Puzzle Bobble 4 v1.0.0</title>
-    <updated>2026-11-02T12:15:02+00:00</updated>
-    <author>
-      <name>Hish</name>
-    </author>
-    <content>The final release of Puzzle Bobble 4 for Archipelago!&#13;
-&#13;
-PuzzleBobble4ArchipelagoClient.exe – The client application that connects Puzzle Bobble 4 to an Archipelago server and handles in-game interactions.&#13;
-&#13;
-puzzlebobble4.apworld – The Archipelago world file. Required to generate and host a Puzzle Bobble 4 game.&#13;
-&#13;
-PuzzleBobble4.yaml – The YAML configuration file containing the available game options and settings.&#13;
-&#13;
-PuzzleBobble4PopTracker.zip – The PopTracker package for tracking your progression and locations.</content>
-    <link href="https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/tag/v1.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/captpurpleheart/opuc1-archipelago/releases/tag/v0.25.1</id>
-    <title>One Piece Unlimited Cruise 1 v0.25.1</title>
-    <updated>2026-11-02T15:54:21+00:00</updated>
-    <author>
-      <name>CaptPurpleHeart</name>
-    </author>
-    <content>The Iceberg Isle is here! Our biggest update yet, with tons of new options and quality of life changes!&#13;
-&#13;
-# What's New?&#13;
-## **The Iceberg Isle, Unexplored Ice Region**&#13;
-The main feature of this update, adds the 3rd Island to the AP run. This means Locations for Wapol, Spandam &amp; Aokiji, all the various ambushes, shrines, stone monuments, treasure chests and more!&#13;
-This also means new locations for Usopp's Workshop / Sanji's Kitchen / Chopper's Pharmacy for all the newly accessible materials found on the new Island as well as all the new fish &amp; creatures to Fish/Catch for those sanity options!&#13;
-&#13;
-## **Death Link &amp; Trap Items!**&#13;
-- Death Link support has been added. When a Straw Hat is defeated, it sends out a Death Link. Receiving a Death Link causes your current active character to be defeated (it waits until it's safe, and never happens on the Thousand Sunny).&#13;
-- Additional Option to choose whether or not falling in the abyss/deep water sends out a Death Link.&#13;
-- Trap Items have been added. You can weight them in the Filler Weighting category, now renamed to include Traps. Only 1 Trap can be active at a time, the rest get queued.&#13;
-```Included Trap Items:&#13;
-Burn Trap - Inflicts burn status on your active character until 25% of your Max HP has been depleted. If you only have 1 character left, you will never go below 10% HP. Burn Traps wait until you're off the Thousand Sunny.&#13;
-Poison Trap - Inflicts Poison for 10 Seconds on your active character.&#13;
-Frozen Trap / Paralysis Trap / Sleep Trap / Stun Trap - applies the respective status on your active character for 5 seconds.&#13;
-```&#13;
-## **Optional Gunpowder Logic**&#13;
-- Logic for Gunpowder has been added, and various options regarding it. Since Gunpowder can be used to break rock paths and X digspots (Clay / Marble / Pure Iron Ore), it can do a lot of things the Pickaxe can do. Random ground dig items and treasure map chests still need the Pickaxe.&#13;
-- You can turn off Gunpowder logic completely, so the Pickaxe will be the only logical requirement for the things it's needed for, or only have Gunpowder go into logic when it's craftable, or when you can get it from enemy drops, and whether or not Nami's Whirlwind is logically important for farming enemy gunpowder drops.&#13;
-- You can choose a new Drop Rate for Gunpowder for the Gunners (5-100%, 20% by default; vanilla is 4-5%). Nami's Whirlwind steals at the same rate, and Cat Burglar multiplies it (Level 1 x3, Level 2 x4, Level 3 x5).&#13;
-&#13;
-## **New Features &amp; YAML Options!**&#13;
-- **NEW FEATURE** - Fish Tank Storage &amp; Ship Steering Wheel are open from the start&#13;
-- **NEW FEATURE** - Gabri Level Tracker next to the Connect button of the Client&#13;
-- **NEW OPTION** - Starting Costumes YAML Category, where you can choose between the Unlimited Outfits or the Thriller Bark outfits *(and their styles)* at the start of the run&#13;
-- **NEW OPTION** - 4X and 5X Move EXP Multipliers&#13;
-- **NEW OPTION** - Flower Flower Power Item Type option (Useful/Progression)&#13;
-- **NEW OPTION** - Early Tool and Bag Upgrade Options *(Pickaxe / Bug-Catcher Net / Fishing Rod / Vacuum Cleaner / one or both Bag Upgrades)*&#13;
-- **NEW OPTION** - Kitchen &amp; Pharmacy open from the start *("Start With" unlock option; Usopp's Workshop "Vanilla" is now called "Start With" too)*&#13;
-- **NEW OPTION** - Increased random dig item rates (Clay / Handy Rock / Ice Shard)&#13;
-&gt; *(25% per dig instead of 5%)*&#13;
-- **NEW OPTION** - Increased Bitter Grass / Nectar / Medicinal Herb drop rates depending on the move type (Normal/Slash/Vacuum)&#13;
-&gt; *(Standard Hits increased drop chances, Slash Hits increased even more, Vacuum increased even more again)*&#13;
-- **NEW OPTION** - Chopper &amp; Brook to be immune to the cold weather of the Iceberg Isle&#13;
-- **NEW OPTION** - Equalise Fish Rates&#13;
-&gt; *(All Fish have the same hook chance for their respective ranges)*&#13;
-- **NEW OPTION** - Quick Recipes for Fish/Creature recipes&#13;
-&gt; *(All Recipes only require 1 of any given Fish/Creature)*&#13;
-- **NEW OPTION** - Guaranteed Creature Drops&#13;
-&gt; *(All the Item Drop Rates from Creatures have been increased to 100%)*&#13;
-&#13;
-## **Bug-Fixes and Other Changes**&#13;
-- **NEW LOCATION** - Added a "First Step on Central Isle" Location.&#13;
-- **CHANGE** - Changed the options page layout, should look a lot cleaner now&#13;
-- **CHANGE** - Changed some Item/Location names&#13;
-- **CHANGE** - Tone Dial &amp; Vision Dial are now Useful items&#13;
-- **CHANGE** - Crafting Recipes now say what type of item they hold if the Item Name is too long, or if the player's name cannot be displayed due to a lack of font&#13;
-&gt; *(EXAMPLE: This recipe also comes with PurpleHeart's Progression Item! / This recipe also comes with an Archipelago Filler Item!)*&#13;
-- **CHANGE** - Removed the "Sea Kings are Important" option, they're not a big deal to catch with the Sea King Rod (which is logically expected)&#13;
-- **CHANGE** - Elephant Tuna goes into logic with Level 5 Fishing Rod &amp; Level 11 Line&#13;
-- **CHANGE** - Traps Never Expire and Fast Traps are now a single YAML Option called "Better Traps"&#13;
-- **FIX** - Honey Bees &amp; Royal Jelly are no longer a part of the Wooded Isle Part 1 Region&#13;
-- **FIX** - Garment Box now correctly turns on the Wardrobe touch spots on the Sunny if found on an Island&#13;
-- **FIX** - Sharks now require the Whopper Rod as a minimum</content>
-    <link href="https://github.com/captpurpleheart/opuc1-archipelago/releases/tag/v0.25.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/2.1.3</id>
-    <title>Dwarf Fortress v2.1.3</title>
-    <updated>2026-11-02T17:13:51+00:00</updated>
-    <author>
-      <name>Dwarfipelago Contributors</name>
-    </author>
-    <content>A fix-only release. **2.1.x and 2.0.x seeds and worlds stay playable** - the item&#13;
-and location tables are untouched.&#13;
-&#13;
-### Fixes&#13;
-&#13;
-- **Fixed gem cutting jobs not being counted.**&#13;
-&#13;
-- **Added the chair/throne logic checks as prerequisites for the toy checks**&#13;
-&#13;
-- **Fixed the skill lowering bug that was introduced when I added less intrusive scanning. This was lowering skills after the checks were done.**&#13;
-</content>
-    <link href="https://github.com/EthanTheBrave/Dwarfipelago/releases/tag/2.1.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/IxrecsRandomizers/OuterWildsArchipelagoRandomizer/releases/tag/v1.4.1</id>
-    <title>Outer Wilds v1.4.1</title>
-    <updated>2026-11-02T18:12:27+00:00</updated>
-    <author>
-      <name>IxrecsRandomizers</name>
-    </author>
-    <content>For installation instructions [see the README](https://github.com/Ixrec/OuterWildsArchipelagoRandomizer#installation).&#13;
-&#13;
-- Interstellar Warp Drive item and related behavior changes to warp unlocks and Launch Codes (from @RS-Mind)&#13;
-	- As the name implies, the new IWD item is required to use the ship's "Interstellar Mode" to warp to or from any custom system added by story mods.&#13;
-	- The Launch Codes item has been reimplemented. Now you can sit down in the pilot's seat without it, and instead most of the controls won't work without it. This tweak allows you to warp to other systems without Launch Codes, so the Interstellar Warp Drive and Launch Codes items are both individually valuable.&#13;
-	- Forgotten Castaways: The "Deep Bramble Coordinates" item has been removed. IWD is a replacement and generalization of it.&#13;
-		- FC Logsanity: As part of that generalization, IWD does not block you from checking "DB Ship Log: Stranded Nomai 5 - Warp" and "FC Ship Log: Bramble's Doorstep 2 - Nomai" the way DBC did.&#13;
-	- Hearth's Neighbor (1): The warp to the custom system is no longer unlocked by looking at the new museum object, but simply by receiving IWD.&#13;
-	- Fret's Quest: Normally, the custom system warp is unlocked by "FQ: The Ritual (Text Wheel)" just before entering the custom system. This often felt like a bug when randomizing FQ, because entering the custom system without reading that text wheel is perfectly reasonable behavior when you don't have the Translator. The randomizer now "fixes" this by making "FQ: Ask About New Planet" unlock the custom system warp instead.&#13;
-	- Last but not least: The randomizer now disables the "You have a warp drive!" text that pops up when you first enter your ship.&#13;
-- Astral Vision item and related changes to Astral Codec (from @aXu-AP)&#13;
-	- The vision takes effect immediately upon receiving the item; no visit to the Tesseract necessary. That means some checks on LC and ET can become in logic without Launch Codes.&#13;
-	- The Tesseract is missing until you get the item. Checks from interacting with the Tesseract are triggered when the player approaches the Tesseract with Astral Vision.&#13;
-- The Stranger Light Modulator is now required to push a raft, so it won't be as easy to circumnavigate the Stranger out of logic.&#13;
-- The "Randomize Ghost Matter" mod setting is now on by default. Combined with the Astral Vision rework, this should make ghost matter logic more meaningful than it used to be.&#13;
-- The "Randomize Stranger Codes" mod setting is now on by default.&#13;
-- Added upgrade_maxima option to go along with upgrade_counts.&#13;
-	- This changes the semantics of upgrade_counts. Previously each upgrade added 50% to a stat no matter how many there were, so increasing upgrade_counts would also increase the maximum %s. Now the randomizer will calculate the %-per-upgrade based on both options, so increasing only upgrade_counts will now make each individual upgrade weaker.&#13;
-	- The idea is to eventually remove the mod's overly flexible logic-breaking settings for oxygen/fuel/boost (which were originally only intended as a testing tool), once we're confident that these more carefully designed options cover most of the unproblematic customization players want to do.&#13;
-- Updated required_friends' maximum to 10 now that Heliostudy exists.&#13;
-- Corrected Heliostudy "Friend" description from "You have already was" to "You have already been".&#13;
-- Internal logic refactors and tests. I'm mostly mentioning this in case it causes weird bugs. The only player-facing impacts should be:&#13;
-	- The logic now uses Rule Builder, so Universal Tracker's `/explain` command will have better output (not that you need UT when we have the in-game tracker).&#13;
-	- Putting a vanilla warp connection in warp_platform_plando now works instead of crashing generation&#13;
-</content>
-    <link href="https://github.com/IxrecsRandomizers/OuterWildsArchipelagoRandomizer/releases/tag/v1.4.1"/>
-  </entry>
   <entry>
     <id>https://github.com/FlySniper/Archipelago/releases/tag/wargroove2-1.1.13</id>
     <title>Wargroove 2 v1.1.14</title>
@@ -955,6 +790,23 @@ Don't worry about it&#13;
     <link href="https://github.com/WolfBoi008/One-More-Night/releases/tag/3.0.1"/>
   </entry>
   <entry>
+    <id>https://github.com/WolfBoi008/One-More-Night/releases/tag/3.1.0</id>
+    <title>Manual_OneMoreNight_WolfBoi008 v3.1.0</title>
+    <updated>2026-11-04T04:29:51+00:00</updated>
+    <author>
+      <name>WolfBoi008</name>
+    </author>
+    <content># Known Issues&#13;
+Same as before.&#13;
+# Changelog&#13;
+- **Added Option: One Nighter.**&#13;
+  - This is currently a Check per minute survived for 5 total minutes, but this may be subject to change based on player feedback and input!&#13;
+- **Added Option: Endless Checks.**&#13;
+- Renamed the Buttonsanity Category used on the Items side to reduce Item Category clutter.&#13;
+- Added a secret Check because @waterlessant12 told me you could do it multiple times.</content>
+    <link href="https://github.com/WolfBoi008/One-More-Night/releases/tag/3.1.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.10.0</id>
     <title>CrossCode v0.10.0</title>
     <updated>2026-11-04T05:42:14+00:00</updated>
@@ -1502,5 +1354,81 @@ The verified APWorld is attached as `kirbyam.apworld`. The candidate artifact co
 &#13;
 **Automatic release staging is incomplete:** the tag-specific metadata check requires a `v0.5.0-rc2` changelog heading, while this source has `v0.5.0`. The candidate receipt identifies the main-branch build; it is not signed tag-based release provenance. No tag-based attestation is supplied. Protected-tag/environment and immutable-release prerequisites have not been verified. This prerelease does not claim full release-readiness or that all CI tests passed.</content>
     <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ItsSeafoamy/Once-Upon-an-Archipelago/releases/tag/v0.4.1</id>
+    <title>Once Upon a Katamari v0.4.1</title>
+    <updated>2026-11-05T20:11:42+00:00</updated>
+    <author>
+      <name>Seafoamy</name>
+    </author>
+    <content>This is a mod only update. The apworld remains unchanged from v0.4.0.&#13;
+&#13;
+## Fixes&#13;
+- The level "ACTUALLY Hiding in a Theme Park!" would not always be accessible even if you owned the level.&#13;
+&#13;
+See the [README](https://github.com/ItsSeafoamy/Once-Upon-an-Archipelago/blob/main/README.md) for more info and setup instructions.</content>
+    <link href="https://github.com/ItsSeafoamy/Once-Upon-an-Archipelago/releases/tag/v0.4.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.11.05</id>
+    <title>Northgard v2026.11.5</title>
+    <updated>2026-11-05T21:24:14+00:00</updated>
+    <author>
+      <name>Chakraa</name>
+    </author>
+    <content>&gt; **Still the Bifrost Alpha.** This one's mostly fixes for switching between slots in the same client window. Conquest players get them too, so it's worth updating either way.
+
+### Fixed
+- Finishing your goal on one slot and then connecting to another slot in the same client window could instantly goal the new slot too, and release it if you're on auto release. Sorry about that one!
+- Bifrost progress made while the client was closed now only gets sent to the slot it actually belongs to. Before, connecting to a different Bifrost slot first would send it there instead, goal included.
+- Conquest chapters you beat while the client was disconnected now get sent when you reconnect. Before, they were lost until you restarted the client.
+- The "pinned save no longer found" warning shows up again after switching rooms, instead of staying quiet if you'd already seen it once.
+
+### Changed
+- The client now cleans up after itself in the Bifrost folder. Bonus records for runs whose save is gone get deleted, and empty leftover folders get removed, so it stops piling up files over time. Any run you can still load keeps its records.
+
+**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.11.02...2026.11.05
+</content>
+    <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.11.05"/>
+  </entry>
+  <entry>
+    <id>https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/0.7.4</id>
+    <title>Cyberpunk 2077 v0.7.4</title>
+    <updated>2026-11-05T22:06:39+00:00</updated>
+    <author>
+      <name>247Tossing</name>
+    </author>
+    <content>Patch 2.5 support.&#13;
+&#13;
+- RED4ext.SDK is updated for the patch 2.5 native layouts, and CyberpunkAP.dll is rebuilt.&#13;
+- The InventoryDataManagerV2.EquipItem wrapper forwards the optional forceEquip argument. Thanks to RimuruLeThug.&#13;
+- The README lists the dependency versions used by this build.&#13;
+&#13;
+This build is for Cyberpunk 2077 2.5 with RED4ext 1.31.0, redscript 0.5.32, Cyber Engine Tweaks 1.38.0, Codeware 1.21.0, TweakXL 1.12.0, ArchiveXL 1.28.0, and Phone Extension 0.9.&#13;
+</content>
+    <link href="https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/0.7.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v1.0.1</id>
+    <title>Starship Titanic v1.0.1</title>
+    <updated>2026-11-05T22:59:47+00:00</updated>
+    <author>
+      <name>rescheer</name>
+    </author>
+    <content>Client changes only. Compatible with v1.0.x seeds.&#13;
+## New Features&#13;
+- Hover over Succ-U-Bus tile to see what AP items are waiting to be delivered (if any)&#13;
+## Changes&#13;
+- Improved timing of save/seed mismatch detection&#13;
+## Fixes&#13;
+- Magazine safety net could be incorrectly triggered when disconnected from the AP server&#13;
+- Bar glass would become un-interactable if the Barbot has to return it to you after being given the puree&#13;
+- Client-placed-mail item flag was not surviving save/loads&#13;
+## Known Issues in this release&#13;
+- None&#13;
+&#13;
+Find installation instructions at [https://github.com/rescheer/Starship-Titanic-AP#installation](https://github.com/rescheer/Starship-Titanic-AP#installation)</content>
+    <link href="https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v1.0.1"/>
   </entry>
 </feed>
