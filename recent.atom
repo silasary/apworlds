@@ -2,47 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-06T12:21:15.631855+00:00</updated>
+  <updated>2026-11-06T18:17:42.469431+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/captpurpleheart/opuc1-archipelago/releases/tag/v0.25.15</id>
-    <title>One Piece Unlimited Cruise 1 v0.25.15</title>
-    <updated>2026-11-03T08:25:14+00:00</updated>
-    <author>
-      <name>CaptPurpleHeart</name>
-    </author>
-    <content># Hotfix Changes&#13;
-- **NEW FEATURE** - Stackable items can now be stacked up to 99.&#13;
-- **FIX** - Mass-item receiving has been made more consistent. The client now waits for a quiet moment, so events don't overlap and get missed.&#13;
-&gt; *(such as map fragment finds, character dialogue and key items like Jet Dial/Tone Dial/Vision Dial not removing themselves like they're supposed to. Release on New Game has been tested, no items/events were missed.)*&#13;
-- **FIX** - Fixed a black screen hold that would occur the first time un-pausing on the Thousand Sunny when starting with Thriller Bark outfits.&#13;
-&gt; *(Note: Switching your outfits back to Unlimited later with the Garment Box Wardrobes may reset to your Starting Costumes upon reloading a Save.)*</content>
-    <link href="https://github.com/captpurpleheart/opuc1-archipelago/releases/tag/v0.25.15"/>
-  </entry>
-  <entry>
-    <id>https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.5.0</id>
-    <title>Factorio: Platformer v0.5.0</title>
-    <updated>2026-11-03T12:08:46+00:00</updated>
-    <author>
-      <name>lepideble</name>
-    </author>
-    <content>## New features&#13;
-* Switch to [Platformer (2.1 Fork)](https://mods.factorio.com/mod/platformer-fork) for Factorio 2.1 compatibility (https://github.com/lepideble/factorio-apworld/pull/84)&#13;
-&#13;
-## Improvements&#13;
-* Sync client with Archipelago 0.6.8 Factorio Client (https://github.com/lepideble/factorio-apworld/pull/78)&#13;
-* Make all instances of a recipe progressive instead of only the first one (https://github.com/lepideble/factorio-apworld/pull/82)&#13;
-&#13;
-## Fixes&#13;
-* Only send items to first platforms instead of all of them, this fix a crash when a platform was destroyed and makes more sense overall (https://github.com/lepideble/factorio-apworld/pull/81)&#13;
-* Fix crash when item or player names contains quotes (https://github.com/lepideble/factorio-apworld/pull/77)&#13;
-&#13;
-**Full Changelog**: https://github.com/lepideble/factorio-apworld/compare/platformer-0.4.6...platformer-0.5.0</content>
-    <link href="https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.5.0"/>
-  </entry>
   <entry>
     <id>https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.7.3</id>
     <title>DOOM Eternal v0.7.3</title>
@@ -1466,7 +1430,7 @@ Fixed a logical error. Swimming Upstream - Bell now has the same logical require
   </entry>
   <entry>
     <id>https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/tag/v0.4.3</id>
-    <title>Death's Door v0.4.2r2</title>
+    <title>Death's Door v0.4.3.post2</title>
     <updated>2026-11-06T08:57:12+00:00</updated>
     <author>
       <name>rose.as.romeo</name>
@@ -1474,11 +1438,44 @@ Fixed a logical error. Swimming Upstream - Bell now has the same logical require
     <author>
       <name>ChrisIsAwesome</name>
     </author>
-    <content>Virtually the same as the previous version with some QoL fixes.&#13;
+    <content># Death's Door Archipelago 0.4.3&#13;
 &#13;
-Fixed some logic issues that only got you access to areas that did not have any respawning enemies in it. That meant you could not farm enough souls for early shop purchases required by logic.&#13;
+Use apworld 0.4.3 together with mod 0.4.3. Seeds generated with apworld 0.4.2 also work with mod 0.4.3, and Universal Tracker with apworld 0.4.3 tracks 0.4.2 seeds.&#13;
 &#13;
-Fixed a few UI instances to improve legibility </content>
+## APWorld (deaths_door 0.4.3)&#13;
+- **Shop logic only counts areas where you can farm souls.** Before, logic could expect shop upgrades after doors that only open areas without enemies, which was a problem in solo seeds.&#13;
+  - The Camp of the Free Crows, Castle Lockstone (its arena enemies don't respawn) and the Mushroom Dungeon lobby no longer count.&#13;
+  - The Old Watchtowers count once you have the Hookshot.&#13;
+  - The Stranded Sailor counts once you have the Bomb or Hookshot and have lit the lamp that opens the way from the Lost Cemetery.&#13;
+  - Shop upgrades 1 to 5 of a stat are now expected after 1, 2, 3, 4 and 6 of these areas (out of 8).&#13;
+- **Lost Cemetery - Shortcut to East Tree Lever** is now in logic from the exit to Overgrown Ruins, where the lever is. Before, it could stay out of logic. (Also in the 0.4.2 hotfix.)&#13;
+&#13;
+## Mod (ArchipelagoRandomizer 0.4.3)&#13;
+- The shop's "Received" and "Next" lines are shorter and stay in the left half of the description, so the price no longer covers them.&#13;
+</content>
     <link href="https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/tag/v0.4.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.3.0</id>
+    <title>Xenoblade X v0.3.0</title>
+    <updated>2026-11-06T15:13:32+00:00</updated>
+    <author>
+      <name>Maragon</name>
+    </author>
+    <author>
+      <name>Nina</name>
+    </author>
+    <content>- Added new options to add shop items to the locations. Logic is a bit sparse right now.&#13;
+- Added battle items to the filler item pool.&#13;
+- Added ingame display and markers for new shop locations.&#13;
+- Fixed a bug that caused elma to be party locked.&#13;
+- Fixed a bug that caused a invalid duplicate instance detect on linux.&#13;
+- Added new failure behaviour to ask for the mod and settings path if the client is unable to find it.&#13;
+- Improved the fasterRunSpeed to also handle swim in the same way.&#13;
+- Compressed the runSpeed to handle default, swim, skell, flight states.&#13;
+- Introduced a new walkSpeed to handle non dash states.&#13;
+- Changed the default value for runSpeed to 2.0.&#13;
+- Discontinued the support for WeAreGoingToPlad graphic pack.</content>
+    <link href="https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.3.0"/>
   </entry>
 </feed>
