@@ -4,7 +4,7 @@ Archipelago support is built into Stella, so no mods are required.
 
 # Archipelago setup
 
-Download the apworld and yaml from the releases page. Place the apworld in your Archipelago/custom_worlds folder. Modify the yaml to your liking.
+Download the apworld and yaml from the [releases](https://github.com/giovannialayan/oigArchipelago/releases/) page. Place the apworld in your Archipelago/custom_worlds folder. Modify the yaml to your liking.
 
 # Connecting
 

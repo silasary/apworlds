@@ -5,7 +5,7 @@ The fun of LEGO, the drama of Batman and the uniqueness of the combination makes
 
 
 ## Downloads
-- <a href="https://github.com/ZAPaDASH04/LEGO-Batman-APworld/releases/download/v1.0.1/lego_batman_1.apworld">Latest Version (1.0.1)</a>
+- <a href="https://github.com/ZAPaDASH04/LEGO-Batman-APworld/releases/download/v1.0.2/lego_batman_1.apworld">Latest Version (1.0.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

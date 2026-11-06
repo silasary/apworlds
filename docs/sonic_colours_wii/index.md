@@ -1,6 +1,6 @@
 # Sonic Colours (Wii)
 
-
+Sonic Colours Wii PAL and NTSC-U Archipelago integration.
 
 
 ## Downloads
