@@ -2,56 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-06T06:20:22.727671+00:00</updated>
+  <updated>2026-11-06T12:21:15.631855+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/tag/0.4.5</id>
-    <title>R.E.P.O v0.4.5.post2</title>
-    <updated>2026-11-03T01:17:33+00:00</updated>
-    <author>
-      <name>Automagic</name>
-    </author>
-    <content>Mod:&#13;
-* Fixed several issues caused by code changes in REPO 0.5.0 (the Sunstone update)&#13;
-* added all store items, valuables, the new level, and the new enemy from the Sunstone update&#13;
-&#13;
-Apworld:&#13;
-* filler item weights can now be set using the Options Creator&#13;
-* added items and locations from the Sunstone update&#13;
-* changed the classification of a few store items&#13;
-* enemies temporarily require the same amount of strength upgrades to pick up as normal when the player has a stun item&#13;
-  * I realized late that the "stunned strength breakpoints" I had in the apworld were  incorrect, so I made this change to buy me time to calculate the correct ones</content>
-    <link href="https://github.com/Automagic00/R.E.P.O.-Archipelago-Client-Mod/releases/tag/0.4.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/tag/v0.18.0</id>
-    <title>Brotato v0.18.0</title>
-    <updated>2026-11-03T03:01:57+00:00</updated>
-    <author>
-      <name>Rampaging Hippy</name>
-    </author>
-    <content>Updates to add the characters from the Primal Dread DLC and the related 1.2.0.0 update.&#13;
-&#13;
-## Added&#13;
-&#13;
-- Added options for including the characters from the Primal Dread DLC:&#13;
-  - `enable_primal_dread_dlc` to enable/disable DLC settings (more may come in the future).&#13;
-  - `include_primal_dread_characters` to select the DLC characters to include in generation.&#13;
-- Added new Primal Dread values to the `starting_characters` option.&#13;
-&#13;
-## Changed&#13;
-&#13;
-- Set the Archipelago Client version of the mod to 0.6.8.&#13;
-- Updated the minimum supported Brotato version for the mod to 1.2.0.0 (the Primal Dread update)&#13;
-&#13;
-## Fixed&#13;
-&#13;
-- Fix mod breaking on the 1.2.0.0 update due to changes in DLC detection.</content>
-    <link href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/tag/v0.18.0"/>
-  </entry>
   <entry>
     <id>https://github.com/captpurpleheart/opuc1-archipelago/releases/tag/v0.25.15</id>
     <title>One Piece Unlimited Cruise 1 v0.25.15</title>
@@ -1386,6 +1341,81 @@ Find installation instructions at [https://github.com/rescheer/Starship-Titanic-
     <link href="https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v1.0.1"/>
   </entry>
   <entry>
+    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha2</id>
+    <title>Crash Team Racing v0.3.0a2</title>
+    <updated>2026-11-06T00:02:02+00:00</updated>
+    <author>
+      <name>Dowlle</name>
+    </author>
+    <content>CTR Archipelago 0.3.0-alpha2 is up for testing! It fixes a lot of what you found in alpha1 and adds a few new things. It's still an alpha, so expect rough edges. **v0.2.4 stays the current stable release.**
+
+[Full 0.3.0 notes on AP-Pie](https://ap-pie.com/ctr/releases/0-3-0) · [Setup guide](https://ap-pie.com/guides/ctr) · [SETUP.md as shipped](https://github.com/dowlle/ctr-native-ap/blob/v0.3.0-alpha2/SETUP.md)
+
+## Before you try it
+
+- **Use a new folder**, or replace your alpha1 folder. Your 0.2.4 install and rooms stay as they are.
+- **Use the alpha2 client and the alpha2 APWorld together.** An alpha1 room still connects to the alpha2 client.
+- **Make a new YAML** if yours is from 0.2.x. An alpha1 YAML still works, and there are a few new options.
+
+## Fixed since alpha1
+
+- Opening the tracker during the hub save camera could start a race with the save menu on screen.
+- Wumpa you get outside a race (shop or other players) is added right away.
+- Wumpa Wipeout removes all your fruit, also above 10.
+- Spoiler Items with coloured boxes off no longer stops the seed from starting.
+- Arcade, Time Trial, Versus and Battle play like the original game again.
+- Loading another save profile no longer keeps a racer that's locked in the room.
+- AP boxes on custom tracks no longer sink into the ground.
+- Cups and boss garages show the right track and racer names.
+- Hit Character checks count a boss race as soon as you can enter it.
+- Bosses on custom tracks no longer stall.
+- A boss cup now races the rival its garage names, and its banner reads "&lt;Boss&gt;'s Cup".
+- Only one Cortex Vortex per seed.
+- Custom track downloads retry on rate limits and show the real error.
+- Play Solo tells you which track it can't publish.
+- No more looping podium noise in the hub after a Trophy win.
+
+## New
+
+- **Custom Tracks screen:** Library, This Seed and Import tabs. The importer keeps track names, lets you rename them and imports all valid tracks at once.
+- **Custom track music:** custom tracks play their own music.
+- **Box Author Mode** in Options, Authoring: place and export AP boxes yourself.
+- **Play Solo:** every YAML option on the options screen, including lists like Crystal Arenas and the boss pools as checklists. The screen tells you when a value won't generate. No password by default, and no menu freeze with big libraries.
+- **Leaving a race pays:** Exit to map, Restart and a DeathLink loss bank the fruit you picked up, minus hits. Starting fruit never banks.
+- **Wumpa Shop pacing:** expensive shelves come into logic later, by Keys. New option `wumpa_shop_logic_scale`.
+- **Wumpa bundles** are on by default.
+- **Hint filters:** pad and shop hints can be limited to progression items, and pad hints can wait for Warp Pad Preview.
+- **Pad colours** match across the pad beam, hub map and tracker. Open pads have a green beam, stage 2 pads a blue-violet one, and a finished pad you can still replay for Wumpa keeps the light blue beam.
+- **Clearer YAML descriptions** for almost every option.
+
+## Known issues
+
+- The Custom Tracks screen still has rough edges: the Library can show only some of your tracks, the Project Saphi catalogue may not show, This Seed can say no seed is loaded while you're connected, and the Import help text is cut off. Fixes come in alpha3.
+- The race-start banner of a cup can show another cup's name, for example "Red Gem Cup" for the Purple Gem Cup. The standings show the right name.
+- Some menus are still hard to read where text runs over the logo.
+- A seed can still fail to generate with some unusual YAMLs. Generate again, and send me the YAML.
+- Short freezes can happen in some races. If you get one, tell me the track.
+
+## Found a problem?
+
+Post it in the [#ctr-bug-reports forum](https://discord.com/channels/522082434871722016/1567553276726091827) on Discord and say it's on 0.3.0-alpha2. Add your platform, YAML or seed, what happened, and the support bundle (`support-bundle.bat` on Windows, `support-bundle.sh` on Linux; look through it before you attach it). No Discord? [Open a GitHub issue](https://github.com/dowlle/ctr-native-ap/issues/new/choose) instead.
+
+## Downloads
+
+On Windows, grab `ctr-archipelago-v0.3.0-alpha2-windows-x86.zip`. On Linux or Steam Deck, grab `ctr-archipelago-v0.3.0-alpha2-linux-x86.tar.gz` (glibc 2.36 or newer). Each includes the client, the matching `ctr.apworld` and the Play Solo runtime. The separate `ctr.apworld` and `Crash.Team.Racing.yaml` are for hosts. You need your own NTSC-U disc; no game data is included. The client isn't code-signed.
+
+The client is GPL-3.0; the source for this build is the `v0.3.0-alpha2` tag of this repository. Third-party licenses are in `THIRD_PARTY_NOTICES.md` and `solo-runtime/LICENSES/` in each download.
+
+| File | SHA-256 |
+|---|---|
+| `ctr-archipelago-v0.3.0-alpha2-windows-x86.zip` | `373c533e7953a200af3693b8f4a84c4c8c2807046e8ebf9d6aa5abd262e0b101` |
+| `ctr-archipelago-v0.3.0-alpha2-linux-x86.tar.gz` | `8f6065409375b69c6f541dfa64547b714cf8b2eb33307bdccfd4a7e4570a5972` |
+| `ctr.apworld` | `2e9eb829af2e457f5d32641dbcc5a55c76c9a4bec142f791751528b67fa58b1a` |
+
+</content>
+    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha2"/>
+  </entry>
+  <entry>
     <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.13</id>
     <title>Stardew Valley v8.1.12r2</title>
     <updated>2026-11-06T02:54:02+00:00</updated>
@@ -1416,5 +1446,39 @@ Find installation instructions at [https://github.com/rescheer/Starship-Titanic-
     <content>New client command. /deathlink. It toggles deathlink. shocker.&#13;
 Fixed a logical error. Swimming Upstream - Bell now has the same logical requirements as Swimming Upstream - Treasure.</content>
     <link href="https://github.com/blitzashspear/ap-yhtwtg/releases/tag/release-1.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Crownmuri/Archipelago/releases/tag/v1.1.3</id>
+    <title>La-Mulana 2 v1.1.3</title>
+    <updated>2026-11-06T08:39:46+00:00</updated>
+    <author>
+      <name>Crownmuri</name>
+    </author>
+    <author>
+      <name>Coookie93</name>
+    </author>
+    <content># Changelogs &#13;
+- Fixed item groups (Skulls, Orbs etc.) not working correctly with plando&#13;
+- Split HoM logic region into HoMLeft/HoMRight due to a blocking pot&#13;
+- Fixed several locations that require additional logic when only having the Flare Gun&#13;
+- Fixed several locations that require additional logic when only having the Chakram</content>
+    <link href="https://github.com/Crownmuri/Archipelago/releases/tag/v1.1.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/tag/v0.4.3</id>
+    <title>Death's Door v0.4.2r2</title>
+    <updated>2026-11-06T08:57:12+00:00</updated>
+    <author>
+      <name>rose.as.romeo</name>
+    </author>
+    <author>
+      <name>ChrisIsAwesome</name>
+    </author>
+    <content>Virtually the same as the previous version with some QoL fixes.&#13;
+&#13;
+Fixed some logic issues that only got you access to areas that did not have any respawning enemies in it. That meant you could not farm enough souls for early shop purchases required by logic.&#13;
+&#13;
+Fixed a few UI instances to improve legibility </content>
+    <link href="https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/tag/v0.4.3"/>
   </entry>
 </feed>

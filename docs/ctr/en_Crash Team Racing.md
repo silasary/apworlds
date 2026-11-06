@@ -113,8 +113,16 @@ whole seed; spending never takes that back. A slot that the server checks for
 you, for example after a Collect, shows SOLD and costs nothing. Buying needs a
 connection to the server. Any slot may hold any item, unless
 `wumpa_shop_progression` is `excluded`: then the shop holds no progression
-items. In logic a shop slot needs its hub and one finished race on a trophy
-track; prices and shelf unlocks are not in logic.
+items. In logic a shop slot needs its hub and a repeatable Trophy or CTR race
+that banks fruit. Higher prices and shelf unlocks also need later Keys: at the
+default `wumpa_shop_logic_scale: 100`, up to 100 fruit needs 0 Keys, 300 needs
+1, 600 needs 2, and 900 needs 3. Larger amounts, including 1200 and above,
+need all 4 Keys. This uses the higher of the price and lifetime shelf unlock,
+and the hub's own Key requirement still applies. Lower logic scale values
+expect less farming early; higher values allow more. This option changes
+placement and tracker logic independently of prices. You may still farm and
+buy before the logic expects it. Previously generated rooms keep their original
+shop logic.
 
 Wumpa Goal counts the fruit you banked over the whole seed. With N. Oxide in
 your goal, his garage also waits for that count, so beating him completes the
@@ -200,7 +208,7 @@ a Relic tier, a Gem colour, and the sums `AnyCtrToken`, `AnyRelic` and
 `AnyGem`. Counts are whole numbers from 1 up to what the seed has of that item.
 Pads you leave out keep the randomized rule, and a track or cup shuffled onto a
 pad takes that pad's rule. Your rules ignore Requirement Weights, only set the
-first requirement of a pad (Two-Stage Gate Density still adds the second), and
+first requirement of a pad (Pads With Two Requirements still adds the second), and
 are never changed to make a seed work: a rule that cannot work stops
 generation with an error that names the pad, the item and the count. The
 option needs randomized or random_without_4_keys unlock requirements, and
