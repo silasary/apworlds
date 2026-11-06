@@ -1,0 +1,89 @@
+{
+  "authors": [
+    "Kevin Anderson"
+  ],
+  "game": "Homura-Hime",
+  "github": "https://github.com/Kevanderson97/homura-hime-archipelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.3.2": {
+      "created_at": "2026-10-14T15:30:04Z",
+      "description": "First public release.\n\n**Install** (details in the README):\n1. Install BepInEx 5 (x64) into the Homura Hime game folder.\n2. Extract `HomuraHimeArchipelago-plugin-0.3.2.zip` into the game folder.\n3. Put `homura_hime.apworld` into Archipelago's `custom_worlds` folder (Archipelago 0.6.6 or newer).\n4. Edit `Homura-Hime.yaml` and generate a multiworld with it.\n\nPlugin and world are both version 0.3.2. Requires your own copy of Homura Hime; no game files are included.",
+      "download_url": "https://github.com/Kevanderson97/homura-hime-archipelago/releases/download/v0.3.2/homura_hime.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ab313b017300d042f9819b97fa590fff082a210090ed873cbf8bf62ce9b13b3d",
+      "html_url": "https://github.com/Kevanderson97/homura-hime-archipelago/releases/tag/v0.3.2",
+      "minimum_ap_version": "0.6.6",
+      "size": 38916,
+      "source_url": "https://api.github.com/repos/Kevanderson97/homura-hime-archipelago",
+      "tag": "v0.3.2",
+      "title": "v0.3.2",
+      "version_simple": "0.3.2",
+      "world_version": "0.3.2"
+    },
+    "v0.3.3": {
+      "created_at": "2026-10-16T00:44:23Z",
+      "description": "Bug-fix release. Plugin and world are both version 0.3.3; the install steps are the same as in 0.3.2 (see the README). Seeds generated with 0.3.2 still work with this plugin.\r\n\r\n## Fixes\r\n\r\n**Harumi**\r\n- Harumi's rewards no longer repeat his stage dialogue every time the hub is reloaded. The game waited for a reward screen that never opened when an Archipelago location paid the reward, so it never saved the stage as done. The plugin now ends that wait and the stage completes once.\r\n\r\n**Glitched Spirit Helper (extra challenge trials)**\r\n- Finishing a trial no longer leaves you stuck without a reward screen. The same fix applies to the tournament reward. The items still arrive as normal notifications at the side of the screen.\r\n\r\n**Transformation**\r\n- The Transformation gauge now charges from hits and parries when you only have Transformation, not just with the ultimate finisher.\r\n- Receiving Transformation shows its name, \"Transform: Fireheart\", and a description instead of \"No translation found\".\r\n\r\n**Item quests**\r\n- If you already own the item an NPC asks for (Elevator Lever in Level 2 Area 1, Nurikabe's Shoe in Level 2 Area 4, Nurikabe's Hat in Level 3 Area 5), the fetch step finishes at once. You no longer have to go to the original place, and the locations that step would have paid out (including the fight) are checked for you. Not yet covered by the item-quest skip: Nurikabe's Glove (level 5 area 5).\r\n\r\n**Shop**\r\n- A sold-out shop entry keeps the randomized name, icon and description of the item it gave.\r\n\r\n**Other**\r\n- A guard against a rare crash inside the game's audio library when a scene unloads right after a voice line (seen when leaving Level 4 Area 2 for the Demonic Realm).\r\n",
+      "download_url": "https://github.com/Kevanderson97/homura-hime-archipelago/releases/download/v0.3.3/homura_hime.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c9dc39ec725bdbd5b16e22e63de9f5ec42f4addcacb62807776cbf28a21f4d18",
+      "html_url": "https://github.com/Kevanderson97/homura-hime-archipelago/releases/tag/v0.3.3",
+      "minimum_ap_version": "0.6.6",
+      "size": 38916,
+      "source_url": "https://api.github.com/repos/Kevanderson97/homura-hime-archipelago",
+      "tag": "v0.3.3",
+      "title": "v0.3.3",
+      "version_simple": "0.3.3",
+      "world_version": "0.3.3"
+    },
+    "v0.3.4": {
+      "created_at": "2026-10-18T23:44:18Z",
+      "description": "Bug-fix release. Most YAML options still untested, but default options are 100% completable. See README for installation instructions. If updating, generate a new seed with the new AP World, as changes have been made.\r\n\r\n### Fixes:\r\n\r\n**Finale:**\r\n\r\n- Choosing \"Kill\" now immediately completes the goal instead of waiting for the end of the credits. Choosing \"Spare\" does not complete the goal.\r\n\r\n**Hub progress:**\r\n\r\n- Mihare Shrine progress now updates properly after the chapter Climax: The Choice\r\n- Teleporting to Mihare Shrine via chapter select no longer places you under the floor\r\n- Hub progress properly keeps pace through chapters 6, 7, and 8.\r\n\r\n**Rewards:**\r\n\r\n- A reward screen that hands out several things now pays several checks. Glitched Spirit trials give two (the Konpeito or Senbei and the note), the tournament reward gives three, and the Level 1 clear board gives two. This adds 13 locations.\r\n\r\n**Item-Gated NPCs:**\r\n\r\n- All NPCs will no longer let you progress if you don't have the required item. Previously, some of the NPCs would let you through regardless due to a leftover flag in the scene, despite having a check for the item in their code.\r\n- The Chapter 4 Nurikabe without its Fresh Fish now ends its dialogue after \"\u2026I won't budge until I get to eat fish!\" instead of letting you offer to give a fish you do not own.\r\n\r\n**Shop:**\r\n\r\n- Buying an HP or Spirit shard slot no longer puts a shard fragment in your inventory. Previously it would temporarily add a shard, which would be a problem if you were at 2/3 shards.\r\n- \"Sold Out\" items now display as their randomized names instead of the original item's name\r\n\r\n**Items:**\r\n\r\n- Full Heal received in the middle of a fight now visually fills the health bar, not only the back-end value.\r\n- An Ultimate Charge received during a Transformation refills the Transformation meter and gives you the ultimate (Mirage Daydream Slash) again. Outside a Transformation it fills the gauge as before.\n\n**Goal protection:**\n\n- The goal can no longer be completed on the wrong Archipelago game. The title-screen button that replays the ending doesn't load a save, so it could finish a new server using an old save. Choosing \"Kill\" now only completes the goal if a save of the connected game (same slot and seed) has reached the ending, and the final boss's second phase has been cleared on the server (when the seed includes encounter clears).\n\n**Shards:**\n\n- Receiving enough shards at once to make more than one crystal now combines all of them. The shard screen reopens after you close it while a full set of three shards remains, until fewer than three are left. Previously only one crystal was made.",
+      "download_url": "https://github.com/Kevanderson97/homura-hime-archipelago/releases/download/v0.3.4/homura_hime.apworld",
+      "has_manifest": true,
+      "hash_sha256": "5ffd055918fa82fb65d044f13a7e5a54d40f58b4323b6418f7de6aef6b94056f",
+      "html_url": "https://github.com/Kevanderson97/homura-hime-archipelago/releases/tag/v0.3.4",
+      "minimum_ap_version": "0.6.6",
+      "size": 39259,
+      "source_url": "https://api.github.com/repos/Kevanderson97/homura-hime-archipelago",
+      "tag": "v0.3.4",
+      "title": "v0.3.4",
+      "version_simple": "0.3.4",
+      "world_version": "0.3.4"
+    },
+    "v0.4.0": {
+      "created_at": "2026-11-04T04:21:51Z",
+      "description": "Feature release: The Climax is its own world, level key settings, a balanced randomized level order with odds, added two traps, and a number of fixes for the cut-content guns. See README for installation instructions.\n\n**Seeds from 0.3.x are not accepted by this plugin. Update the plugin and the .apworld together and generate a new seed.** An old YAML still works: `level_unlock_items: true` now means freeform keys, and the old `level_order` values `vanilla` and `randomized` still work.\n\n### New:\n\n**Climax: The Choice is a world of its own:**\n\n- The game now has nine worlds before the Finale: Chapters 1-8 and the Climax. The Climax is shuffled like a chapter, is never the first world, needs one cleared chapter before it opens, has its own key (\"Climax Unlock\") and is required for the Finale.\n\n**Level keys (`level_unlock_items`: off / linear_progression / freeform_progression):**\n\n- Linear progression adds a \"Progressive Level Key\" item: the first one opens the second world, and so on. Freeform adds one key per world, usable at once in any order.\n- In freeform mode, using the Torii gate in any hub opens the Chapter Select.\n- After clearing a world, the hub shows the post-mission report of the world you just cleared (not the story's).\n- In Linear Progression, the keys are needed to advance but levels must still be played in order (randomized or vanilla). In freeform, levels are accessible and in-logic as soon as a key is obtained.\n\n**Randomized Order (`level_order`: off / balanced / full):**\n\n- Balanced makes Chapters 1-4 likely to come early (the first world is always one of them) and Chapters 5-8 and the Climax likely to come late. Full is a plain shuffle. The later chapters are pretty hard as the first world, so the weighted randomization may make the beginning of the game easier.\n- With freeform keys, the keys turn up in play order.\n\n**Traps (`puffer_swarm_traps`, default 20, and `hexed_doll_trio_traps`, default 5; both can be `disabled`):**\n\n- **Puffer Swarm Trap**: four flying bomb puffers and four flying spiky puffers appear around you, 6 to 20 metres away.\n- **Hexed Doll Trio Trap**: a Hexed Doll of each of the three colours appears as a group, 4 to 8 metres away, with health and stagger bars.\n- A trap only goes off in a level (never in the hub), while you are in control, and while you stand on solid ground. In the air, on a rail or in a boost it waits until you land. The count is lowered when there is no room in the seed.\n- The game additively loads a couple scenes at launch during the splash screen to capture the instances of the enemies it needs to spawn. This should have no discernable impact on the game. If you load a save that doesn't use the traps, they'll be removed from memory and the scenes will be re-loaded when connecting to a server that has traps enabled. This may cause a hitch, but will only be at the main menu and only in that niche case. \n\n**Saves:**\n\n- A save that belongs to an Archipelago slot can only be loaded from the main menu while you are connected to that slot and seed. In the Continue panel the other saves are greyed out, with a note at the bottom, and every bound save says which slot it is associated with. Connecting while the panel is open frees the matching saves. Offline play of a bound save is no longer possible.\n- While the trap setup runs, no save can be loaded and no game started.\n\n### Fixes:\n\n**Cut-content guns:**\n\n- Ruptured Bones (shotgun) and Ann's Board now break the large boxes with Konpeito, like the standard shot. Their damage boxes were solid colliders, which Unity does not report as hits against solid boxes.\n- Ann's Board shows its name in the menus again (the game's own text calls it \"Ann's Support\", and the plugin's name was lost when the text was reloaded).\n- Sounds: the shotgun and Ann's Board play the game's own sounds (the board's when you release the shot, not when it is summoned), and every flame orb of the missile gun plays a short charge sound.\n- Fortunate Misfortune (missile): the red target boxes and the charged orbs no longer stay on screen after switching guns or cancelling a charge; aiming while a shot is impossible (a boost ring, a cutscene) no longer leaves the gun stuck; the missiles' flame and trail no longer hang in the air after a hit; missiles follow you in a domain; a missile that reaches a spiky puffer or another enemy whose lock point lies outside its hurtbox now hits it instead of circling until it expires.\n- The standard gun could stop firing after a shot; fixed.\n\n**Generation:**\n\n- Putting every currency and utility item on `local_items` no longer fails for about one seed in eight.\n\n**Connection:**\n\n- Connecting to another slot at the title screen is no longer judged against the save that was played before.\n\n### Known issues:\n\n- Doing the Nurikabe's Hat quest shows the \"found the hat\" picture although the hat comes from the multiworld. Other quest items probably do the same.\n",
+      "download_url": "https://github.com/Kevanderson97/homura-hime-archipelago/releases/download/v0.4.0/homura_hime.apworld",
+      "has_manifest": true,
+      "hash_sha256": "9c2b02aaf5d321368cc6ed0b9e17d31ccff390c5fa22cfcb4ebd7b11aea45601",
+      "html_url": "https://github.com/Kevanderson97/homura-hime-archipelago/releases/tag/v0.4.0",
+      "minimum_ap_version": "0.6.6",
+      "size": 46726,
+      "source_url": "https://api.github.com/repos/Kevanderson97/homura-hime-archipelago",
+      "tag": "v0.4.0",
+      "title": "v0.4.0",
+      "version_simple": "0.4.0",
+      "world_version": "0.4.0"
+    },
+    "v0.4.1": {
+      "created_at": "2026-11-05T05:45:03Z",
+      "description": "Feature release: the Soul Cores are items that gate the Chapter 6-8 boss fights, a new goal that only needs Chapters 6-8, optional locations as one setting, and options presets. See README for installation instructions.\n\n**Update the plugin and the .apworld together and generate a new seed.** Seeds from 0.4.0 still play with this plugin, but they have no Soul Cores and no new goal. Two options of the YAML changed (see below): a YAML that names `encounter_clears` or `encounter_rewards` has to be edited.\n\n### New:\n\n**Soul Cores are items:**\n\n- Each boss of Levels 1-5 leaves a Soul Core, and Chapters 6-8 fight the same five bosses again. The five Soul Cores (Agasa's, Ling Ling's, Chirakuin's, Yumiko & Kumiko's and Mamiya's) are now items of the multiworld, and the way to each rematch needs the core of that boss.\n- Without the core, the transition does nothing and the game says \"<Name>'s Soul Core required to continue\". This covers the doors to Ling Ling and the Corpse Princess, Nozomi, Yumiko & Kumiko's Demonic Realm and the Realm's own door, the walk to the memory tree before Agasa, and the pathway across the end of Chapter 8's last area before Mamiya. Everything else that leads to those fights (the Chapter Select, automatic changes of scene) is refused as well.\n- The hub used to hand the cores out when a world was cleared. Those five hand-overs are locations now (\"Hub: Soul Core (1st World Cleared)\" up to the 5th). The hub follows the number of worlds you have cleared, so the n-th core's location is checked after the n-th world you clear, whichever world that is. The cores are always shuffled, whatever `shuffle_key_items` says.\n- Shops show the Soul Cores with their own picture and description.\n\n**Goal (`goal`: all_worlds / return_all_soul_cores):**\n\n- `return_all_soul_cores` opens the Finale as soon as Chapters 6, 7 and 8 are cleared (which takes every Soul Core). Chapters 1-5 and the Climax stay playable for their checks but are not needed. It shortens the game when Chapters 6-8 can come before the other worlds: with a randomized order, or with freeform level keys. In the story order without freeform keys every world comes before Chapter 8 anyway.\n- The goal is still reported by the Kill ending, and a save has to have reached the Finale by the new rule.\n\n**Optional locations (`optional_locations`, default on) replace `encounter_rewards`; `encounter_clears` is gone:**\n\n- Every fight is a location now (110), always. Removed the toggle for removing mandatory fights as locations.\n- `optional_locations` decides whether the optional content counts: the ambush fights and their chests, the glitched-spirit trials, the Kushinada head chases and the optional fights (78 locations in all, the same ones `optional_location_importance` is about). Off: they are not locations, the game hands out what it always did there, and the fixed items they held leave the pool.\n\n**Options presets:** Standard (the defaults), Balanced Random (balanced order, progressive keys, few traps) and Chaos (full random order, freeform keys, the Return All Soul Cores goal, most values random, Death Link on, cut content and advanced movement on).\n\n**Packaging:** the .apworld is built with Archipelago's own \"Build APWorlds\" tool and keeps the tests out of the package; the world has a bug report page.\n\n### Changes:\n\n- The sample YAML is regenerated for this version.\n\n### Known issues:\n\n- Doing the Nurikabe's Hat quest shows the \"found the hat\" picture although the hat comes from the multiworld. Other quest items probably do the same. Undecided if I want to keep this behavior or not.\n",
+      "download_url": "https://github.com/Kevanderson97/homura-hime-archipelago/releases/download/v0.4.1/homura_hime.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d28b841f04065e11a27db037158a279aff34b09400dae36f60eb2fb0f3b2118c",
+      "html_url": "https://github.com/Kevanderson97/homura-hime-archipelago/releases/tag/v0.4.1",
+      "minimum_ap_version": "0.6.6",
+      "size": 49271,
+      "source_url": "https://api.github.com/repos/Kevanderson97/homura-hime-archipelago",
+      "tag": "v0.4.1",
+      "title": "v0.4.1",
+      "version_simple": "0.4.1",
+      "world_version": "0.4.1"
+    }
+  }
+}
