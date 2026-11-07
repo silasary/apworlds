@@ -121,6 +121,10 @@ and the Corpse Princess, Nozomi, Yumiko & Kumiko and Mamiya at the door of their
 the end of the Ikai in Chapter 8 (the first area of that chapter is her fight). Without the core the door or the tree
 does nothing and the game says "<Name>'s Soul Core required to continue".
 
+## Does it work with Universal Tracker?
+
+Yes. The tracker needs no yaml: everything it needs comes from the slot data when it connects.
+
 ## How do money and the shops work?
 
 The Konpeito the game pays at its locations (chests, trials, Harumi, stage clears) is taken out and put into the pool as
