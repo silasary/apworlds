@@ -1,9 +1,12 @@
 # Cyberpunk 2077
 
 ## Latest
-- <a href="https://github.com/247Tossing/cyberpunk_archipelago/releases/download/0.7.4/cyberpunk2077.apworld">Latest Version (0.7.4)</a>
+- <a href="https://github.com/247Tossing/cyberpunk_archipelago/releases/download/v0.7.5/cyberpunk2077.apworld">Latest Version (0.7.5)</a>
 
 ## All Versions
+
+#### v0.7.5
+- <a href="https://github.com/247Tossing/cyberpunk_archipelago/releases/download/v0.7.5/cyberpunk2077.apworld">https://github.com/247Tossing/cyberpunk_archipelago/releases/download/v0.7.5/cyberpunk2077.apworld</a>
 
 #### v0.7.4
 - <a href="https://github.com/247Tossing/cyberpunk_archipelago/releases/download/0.7.4/cyberpunk2077.apworld">https://github.com/247Tossing/cyberpunk_archipelago/releases/download/0.7.4/cyberpunk2077.apworld</a>
