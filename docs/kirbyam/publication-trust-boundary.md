@@ -1,51 +1,61 @@
 # Kirby publication trust boundary
 
-Use the [release preparation runbook](release-preparation.md) for preflight, draft/tag ordering, readiness and recovery.
+Use the [release preparation runbook](release-preparation.md). One maintainer can
+approve the source, prepare the release, review the verified draft and authorize
+publication. A separate reviewer is not required. Existing repository/environment
+restrictions still apply; changing them is a separate owner decision.
 
-**Do not enable or use #993 standalone as safe publication.** Its legacy prune,
-delete and clobber behavior is removed by #994. The safe publisher requires the
-combined stack plus owner-verified tag/environment protections and immutable-release
-enforcement. Tests must remain offline; a skipped publisher job is not evidence of
-successful signing, immutable staging or publication.
+## Implemented boundary
 
-Partial #982 coverage. Build outputs do not authorize publication. The writer job
-requires this repository, a protected `kirbyam-v*` tag push and the `kirbyam-release`
-environment. Its checkout selects main, disables persisted credentials, and executes
-only main's publisher policy. That policy checks the event/ref again, requires the
-tagged commit to be in main history, reads its manifest/changelog as data, and derives
-all release metadata independently of build outputs. Tagged manifest versions must
-already agree; automatic writer-side version-sync PRs are removed. Build jobs retain
-read-only contents access. In the combined #993/#994 stack, the protected publisher
-has contents:write for draft asset staging, id-token:write to obtain the short-lived
-GitHub OIDC identity, and attestations:write to record provenance. These permissions
-are job-scoped; build/dependency jobs receive no signing rights. The publisher has
-no pull-requests:write authority.
+Build outputs do not authorize publication. The staging job requires this repository
+and a `kirbyam-v*` tag-push event. It keeps the `kirbyam-release` environment so existing
+approval/deployment restrictions are honored, without requiring them to be configured.
+Tag protection is optional: it is no longer a condition for starting the staging job.
 
-## Owner configuration still required (not performed by this PR)
+The staging checkout selects main, disables persisted credentials and executes main's
+publisher policy. That policy checks repository/event/ref again, requires the tagged
+commit in main history, reads its manifest/changelog as data and derives metadata
+independently of build outputs. The manifest must already match; the writer cannot
+repair versions or create PRs. Forks, branch builds and manual dispatches cannot stage.
 
-Protect main and release tags against unauthorized updates/deletion. Configure
-kirbyam-release with required reviewers and prevent self-review; allow only approved
-protected release tags. Review the exact tagged SHA and build artifact before approval.
-An environment name in YAML does not establish these protections. Until these settings
-are inspected and approved, end-to-end release authorization acceptance remains open.
-Do not weaken the protected-ref condition to make an unconfigured repository publish.
-A maintainer with workflow/settings authority remains in the trusted computing base.
+Build/dependency jobs have read-only contents access and no signing rights. Only the
+staging job has contents:write, id-token:write and attestations:write. The latter two
+use GitHub's short-lived OIDC identity and provenance service; no personal token or
+persistent signing credential is added. Action pins and disabled checkout credential
+persistence remain unchanged. There is no pull-requests:write permission.
 
-The self-hosted smoke job now permits main only, with no persisted checkout credentials.
-Its actual host/network isolation, ephemerality, installed runtime and cleanup have NOT
-been verified. The owner must establish a dedicated isolated runner with no unrelated
-credentials, restrict its runner group to reviewed workflows, and document cleanup
-before treating it as safe. A main-only guard does not make arbitrary dependencies safe.
-No runner, environment, repository setting, credential or trust setting was changed here.
+The publisher verifies exact bytes and provenance, allows only the APWorld, receipt
+and attestation bundle, and adds missing assets only to an unpublished draft. It never
+clobbers, deletes or publishes. Per-tag concurrency serializes staging jobs; it is not
+a lock against manual publication or another API client. The owner must wait for staging
+and verification to finish, then separately approve publication of that exact draft.
+
+## Trust and optional safeguards
+
+This is a single-maintainer process, not separation of duties. People who can change
+main, workflow source, release tags or repository settings are trusted release operators.
+A trusted-main script cannot defend against someone authorized to rewrite the workflow
+that invokes it. Protected main/tags, environment reviewers and immutable releases can
+reduce risk, but are optional additions and require separately approved settings changes.
+No live setting or access permission is changed by this source update.
+
+Retain the named environment even without reviewers. If it already requires another
+person or blocks owner self-approval, follow that rule until the owner explicitly
+approves an exact setting change. Do not remove the environment to bypass it.
+
+Without server-side immutable releases, verification proves a snapshot, not that assets
+or tags cannot later change. Preserve source/run/digests and public verification, avoid
+concurrent release edits and correct public mistakes with a new version. Readiness
+reports immutability separately; it never substitutes checksums for signed provenance.
 
 ## Remaining scope
 
-Global full-application release permissions are outside the Kirby-only boundary.
-The #994 companion implements artifact receipts, signed provenance and no-replacement
-draft staging for #983; see artifact-verification.md. Do not enable or use #993 alone
-as safe publication: it retains legacy prune/delete/clobber behavior. Safe publication
-requires the combined #993/#994 stack plus owner-verified protections and immutable
-release enforcement. Live signing, publication, race and owner-settings acceptance
-remain unverified. Provenance does not prove builder-produced code is harmless.
-Tests use in-memory contexts and inspect workflow source; they never publish or modify
-release state. Hosted tag/environment behavior still requires owner-approved validation.
+The main-only self-hosted smoke job still has no persisted checkout credentials. Its
+host/network isolation, ephemerality, runtime and cleanup remain unverified. The owner
+must establish an isolated runner without unrelated credentials before treating it as
+safe. Nothing here changes that runner or the global full-application release workflow.
+
+Live OIDC signing, staging and public delivery remain acceptance work for #982/#983/#1012.
+Tests are offline and never publish or change settings. Provenance proves origin, not
+that executable APWorld code is harmless. The removed legacy prune/delete/clobber
+publisher is not a supported fallback.

@@ -285,6 +285,38 @@
       "title": "KirbyAM v0.5.0-rc2 \u2014 Experimental prerelease",
       "version_simple": "0.5.0",
       "world_version": "0.5.0rc2"
+    },
+    "kirbyam-v0.5.0-rc3": {
+      "created_at": "2026-11-06T22:52:15Z",
+      "description": "> [!WARNING]\r\n> **Experimental prerelease \u2014 bugs are expected. This release is not ready for general use.** Please report problems with your seed, settings, and client logs.\r\n\r\nBuilt from main commit `056abe2c3b0e1be70b0f05a8dee72ffa94782f5a`.\r\n\r\nThis release includes the Rainbow Route 1-06 lower-cave chest logic correction and starting Area Key item-pool lifecycle fix in #1033, plus the save-file selection changelog update in #1034. Universal Tracker verification confirms the chest is no longer reachable from the upper path at the start, while legitimate alternate routes remain available.\r\n\r\nThe v0.5.0 changes include Area Keys, Hub Connections, additional Kirby palettes, Hub Teleport Trap, the `/goal` command, the area-boss-count goal, File 1 selection, and expanded AP save storage.\r\n\r\nSee the [complete v0.5.0 changelog](https://github.com/hasherwi/Archipelago-kirbyam/blob/056abe2c3b0e1be70b0f05a8dee72ffa94782f5a/worlds/kirbyam/CHANGELOG.md#v050) for features, fixes, and known limitations.\r\n\r\nRelease build, artifact attestation, staged download comparison and provenance verification passed in [run 42309254412](https://github.com/hasherwi/Archipelago-kirbyam/actions/runs/42309254412), attempt 1. Broader CI is not claimed fully green. The prior reviewed gameplay source passed 5,576 focused Kirby tests, with one skipped; Python 3.11 jobs encountered environment setup failures.\r\n\r\nThe RC3 tag was replaced before publication to include the single-maintainer release workflow in #1036. The release contains the APWorld, its provenance receipt and signed attestation bundle. Verify them before installing; provenance establishes origin, not freedom from bugs.",
+      "download_url": "https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.5.0-rc3/kirbyam.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0dfc57eb84762a3051594ca97214baa7147a995bc9538257e4d09909ec8bf60b",
+      "html_url": "https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc3",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 953857,
+      "source_url": "https://api.github.com/repos/hasherwi/Archipelago-kirbyam",
+      "tag": "kirbyam-v0.5.0-rc3",
+      "title": "KirbyAM APWorld v0.5.0-rc3",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0rc3"
+    },
+    "kirbyam-v0.5.0-rc4": {
+      "created_at": "2026-11-06T23:47:52Z",
+      "description": "> [!WARNING]\n> **Experimental prerelease. Bugs are expected. This release is not ready for general use.** Please report problems with your seed, settings, and client logs.\n\n> [!CAUTION]\n> **Back up RC3 saves before switching to RC4.** RC3 used an expanded save layout that is not directly compatible with the restored native layout. Opening an RC3 save in RC4 may cause native invalid-save recovery to clear or replace it. Use a fresh save or a preserved pre-#1024 native-layout save for the same seed. Repatching a ROM does not migrate saves. Keep the original RC3 ROM and save separately if progress needs recovery later.\n\nBuilt from main commit `744b1a5708ecaafd80313b7836a9197a25f5db0e`.\n\nRC4 restores native file selection and its three save files, deferring the file-selection skip and coupled expanded-save foundation from #1024. The independent Rainbow Route 1-06 lower-cave chest logic correction and starting Area Key lifecycle fix from #1033 remain included. The reported RC3 startup/sprite failure is tracked in #1037; the exact original failure was not reproduced.\n\nValidation: the reviewed code tree passed 5,545 hosted Kirby tests with one skip, plus both standard-server item-history tests. All 448 focused local regression tests passed. The rebuilt ROM patch matches the pre-feature patch exactly. Native mGBA checks passed fresh, continued and cold-reloaded gameplay in all three save files, reset/re-entry, selector/menu/Back behavior and save checksums. These controlled tests do not establish live AP/BizHawk or full-campaign acceptance. Broader CI is not claimed fully green: other platform jobs and synthetic ROM smoke are still pending; unrelated LLVM repository and Python 3.11 setup failures remain. The lawful-ROM rebuild, native startup tests, type checks, generation fuzz, CodeQL and C tests passed.\n\nSee the [complete v0.5.0 changelog](https://github.com/hasherwi/Archipelago-kirbyam/blob/744b1a5708ecaafd80313b7836a9197a25f5db0e/worlds/kirbyam/CHANGELOG.md#v050) and [rollback/save compatibility notes](https://github.com/hasherwi/Archipelago-kirbyam/blob/744b1a5708ecaafd80313b7836a9197a25f5db0e/worlds/kirbyam/dev-docs/rc4-file-selection-rollback.md).\n\nRelease build, artifact signing, staged download comparison, source/digest checks and attestation verification passed in [run 42314534000](https://github.com/hasherwi/Archipelago-kirbyam/actions/runs/42314534000), attempt 1. The APWorld contents retain the lower-cave chest fix and restored native-layout patch, with no full ROMs or saves. The release contains the APWorld, its provenance receipt and signed attestation bundle. Verify them before installing; provenance establishes origin, not freedom from bugs.\n",
+      "download_url": "https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.5.0-rc4/kirbyam.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1d36b8c9959f1579055932e7caa71f5677e5741a62d6c7d7ab75866980b62a91",
+      "html_url": "https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc4",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 925869,
+      "source_url": "https://api.github.com/repos/hasherwi/Archipelago-kirbyam",
+      "tag": "kirbyam-v0.5.0-rc4",
+      "title": "KirbyAM APWorld v0.5.0-rc4",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0rc4"
     }
   }
 }

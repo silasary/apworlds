@@ -2,227 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-06T18:17:42.469431+00:00</updated>
+  <updated>2026-11-07T00:20:58.484363+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.7.3</id>
-    <title>DOOM Eternal v0.7.3</title>
-    <updated>2026-11-03T13:45:02+00:00</updated>
-    <author>
-      <name>snowzzrra</name>
-    </author>
-    <content># DOOM Eternal Archipelago v0.7.3&#13;
-&#13;
-Bug fixes for Linux/Proton disconnections, item and DeathLink delivery, stuck encounters, and the broken camera after dying without a usable weapon.&#13;
-&#13;
-Use **Mod and APWorld 0.7.3** with **Sentinel Core 1.1.4**.&#13;
-&#13;
-## Launcher and connection&#13;
-&#13;
-- Fixed Linux/Proton disconnections ("keepalive ping timeout") while the game was running. Checking whether DOOM is running no longer blocks the connection to the Archipelago server.&#13;
-- Fixed automatic reconnection failing with an error after the client switched from `ws://` to `wss://`.&#13;
-- When the game connection helper stops under Linux/Proton, the launcher now says so and suggests checking the selected Proton version, instead of asking to close a game that is not running.&#13;
-&#13;
-## Item delivery and DeathLink&#13;
-&#13;
-- Fixed items and DeathLinks not arriving in game on some machines until a relaunch. The Core rejected valid game reads that took slightly longer than its time limit; that limit is now more tolerant.&#13;
-- DeathLinks that the Core refuses before running them are now retried instead of being lost.&#13;
-&#13;
-## Encounters and enemy randomization&#13;
-&#13;
-- `ap_finish_encounter` can now also end an encounter stuck waiting for enemies that never spawned, where it previously answered "No active encounter".&#13;
-- Tentacles are no longer in the default enemy pool for new rooms; they can still be enabled through Bestiary Weights. In existing rooms, Tentacles are replaced by a mobile enemy when the launcher prepares the room package again, since a Tentacle in an unreachable spot could keep an encounter from ending (for example, the **Super Gore Nest** Slayer Gate and the arena after the BFG in **Mars Core**).&#13;
-- Fixed floating hands, a broken camera and the player appearing tiny after dying or loading a checkpoint with no ammo and a randomized Chainsaw. The player's owned weapon is now selected even when it has no ammo.&#13;
-&#13;
-## Campaign menu&#13;
-&#13;
-- The Slayer Gate icon in the mission menu now shows a Gate as completed only when you completed it in game in this save. A Gate collected by another player stays open, so you still know to complete it for its Empyrean Key. Gates completed before this version show as open until completed again.&#13;
-&#13;
-## Support Reports and diagnostics&#13;
-&#13;
-- Added diagnostics for Ammo Refill, showing what each ammo pool had before and after a refill.&#13;
-- Added diagnostics for encounters whose enemies fail to spawn and for `ap_finish_encounter` refusals.&#13;
-- Added diagnostics for goal evaluation, recording why victory was or was not sent.&#13;
-- Spawn position diagnostics now cover every map instead of only the first one.&#13;
-&#13;
-**These fixes do not require a new room. Rooms that work with v0.7.2 keep working. The Tentacle default applies to rooms generated with APWorld v0.7.3; the Tentacle replacement in existing rooms applies when the launcher prepares the room package again.**&#13;
-</content>
-    <link href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/tag/0.7.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/captpurpleheart/opuc1-archipelago/releases/tag/v0.25.18</id>
-    <title>One Piece Unlimited Cruise 1 v0.25.18</title>
-    <updated>2026-11-03T15:15:32+00:00</updated>
-    <author>
-      <name>CaptPurpleHeart</name>
-    </author>
-    <content># Hotfix Changes&#13;
-- **NEW OPTION** - Crafting Stacking Items can now be vanilla amount or full 99 copies upon crafting.&#13;
-&gt; (Vanilla = 10 for Traps, 30 for Powders, 50 for Bombs)&#13;
-- **LOGIC UPDATE** - Fire-based moves such as Diable Jambe and Single Sword Flying Dragon Blaze are counted in logic for Iceberg Isle's Ice Rock Paths. They can be used to break those rocks to access new areas.&#13;
-- **LOGIC UPDATE** - Lightning Beetles now in logic before Eneru if Traps can be made. They can be caught with Traps outside Eneru's Boss Room before defeating him.</content>
-    <link href="https://github.com/captpurpleheart/opuc1-archipelago/releases/tag/v0.25.18"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Cynichill/DivaAPworld/releases/tag/1.5.4</id>
-    <title>Hatsune Miku Project Diva Mega Mix+ v1.5.4</title>
-    <updated>2026-11-03T16:20:42+00:00</updated>
-    <author>
-      <name>Cynichill</name>
-    </author>
-    <author>
-      <name>repod</name>
-    </author>
-    <content># Changelog:&#13;
-&#13;
-## World&#13;
-- Added Lane trap&#13;
-- Added a button to the JSON Generator to get a list of New Classics IDs&#13;
-&#13;
-## Mod&#13;
-&#13;
-- Added Lane trap&#13;
-- Improve hint tracking and song hiding&#13;
-- Fixed text log crash and clear grades other than Standard&#13;
-</content>
-    <link href="https://github.com/Cynichill/DivaAPworld/releases/tag/1.5.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.2.0</id>
-    <title>Dead Cells v0.2.0</title>
-    <updated>2026-11-03T16:33:15+00:00</updated>
-    <author>
-      <name>Max_lamenace572</name>
-    </author>
-    <author>
-      <name>OnlyLeafeon</name>
-    </author>
-    <author>
-      <name>Rayze</name>
-    </author>
-    <content>New Features:&#13;
-- Added an option for enemy sanity checks, meaning killing one enemy of each kind counts as a check&#13;
-- Added a room randomizer (will randomly switch biome places) with 3 options:&#13;
-  - depth: close to the classic experience by only swapping biomes in the same depth&#13;
-  - tier: swaps the biomes by groups delimited by bosses&#13;
-  - chaotic: can replace any biome with any other biome&#13;
-  - Note that the Bank still works in the same way as usual&#13;
-  - This gamemode is still a work in progress, so it is not advised to use it in multiplayer, the in-game tracker isn’t adapted yet, and some other features may not work correctly.&#13;
-- Gave back a use to the hunter's mirror.&#13;
-  - A random accessible enemy will be selected upon interaction with the mirror&#13;
-  - Killing the enemy will randomly hint at one of your accessible checks and slightly reduce the price of the mod shop&#13;
-&#13;
-Gameplay Changes:&#13;
-- Now shop mimic blueprints also have a hunter's grenade requirement&#13;
-- The distillery doesn’t require you to have seen the throne room beforehand&#13;
-- Increased the number of lore rooms in Prisoners’ Quarters to a maximum of 4 new and 2 previously generated and not looted&#13;
-  - Disclaimer: adding more rooms increases the complexity of the level and increases the time needed for generation, so it is advised to loot them as soon as possible&#13;
-- Changed fixed weapon drops, now giving a random filler-like item instead&#13;
-- A trap weight can be selected for the filler generation, and is also used in death traps&#13;
-&#13;
-Quality of Life:&#13;
-- Refactored the UI control logic to improve stability and allow the use of mouse and controller at the same time without crashing&#13;
-- Writing in a text field locks the cursor in it, avoiding unwanted movements in the menu&#13;
-- Disabled launching the game when connected to an incompatible apworld&#13;
-- Improved responsiveness for text fields and item descriptions&#13;
-&#13;
-Bug Fixes:&#13;
-- Some item descriptions not being displayed&#13;
-- Mutation checks not being counted for the green hole head&#13;
-- Lag when putting a lot of cells in the forge at once&#13;
-- Warp being based on biome checks&#13;
-- Some crashes caused by a disconnection&#13;
-- Cells being deposited in energy link upon death&#13;
-- Removed the warp option when doing daily challenge, boss rush and training&#13;
-- Hunter grenade icon still showing on mobs without blueprints when picking up the grenade before a blueprint&#13;
-- Bank losing its depth mobs upon reload&#13;
-- Gray text display on biome, showing checks as accessible when they are from non-accessible higher BSC&#13;
-- Scrolls on mobs given again on reload&#13;
-- Flower keys that could be picked multiple times using reload&#13;
-&#13;
-APWorld Changes:&#13;
-- Complete rework of the apworld, fixing many fill issues&#13;
-- Added the enemy sanity, room randomizer and trap weight options&#13;
-- White hole head now requires one Progressive Flask, Cursed Flask, Tainted Flask, or access to the Bank&#13;
-- Golden Blowtorch is now a Bank item&#13;
-- Spoiler and universal tracker not taking into account that all stem cells are required for the goal&#13;
-&#13;
-Other:&#13;
-- Changed the image reading library, as SixLabors now requires a license&#13;
-&#13;
-Compatible with APWorld 0.1.7 and newer</content>
-    <link href="https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v1.0.0</id>
-    <title>Starship Titanic v1.0.0</title>
-    <updated>2026-11-03T19:06:53+00:00</updated>
-    <author>
-      <name>rescheer</name>
-    </author>
-    <content>Major updates to both client and .apworld. Incompatible with older seeds.&#13;
-Make sure to regenerate your YAML templates to see the new options.&#13;
-## New Features&#13;
-- Full client UI redesign&#13;
-- In-client Logic tracking: See in-logic checks. Hover over locked checks to see what they require&#13;
-- In-client hints: Click just about anything in the client to request a hint for it&#13;
-- New Goal: Parrot Hunt! Receive clues from the multiworld to discover which stateroom the parrot is trapped in&#13;
-- New YAML options (see YAML for detailed descriptions):&#13;
-  - Passenger Class Upgrades: Multiworld (default) or Vanilla&#13;
-  - Stateroom Assignments: Multiworld (default) or Vanilla&#13;
-  - AP Item Delivery Method: Succ-u-Bus (default) or Direct to Inventory&#13;
-  - More Room Access Card generation options: Enabled, Randomized, Selection, Disabled (default)&#13;
-  - Easy Music Room Puzzle: (default false) When true, pre-sets the music room panel controls to the solution&#13;
-  - Skip Intro: Skips past the intro and opening credits&#13;
-  - Quick Elevator/Quick Pellerator: Drastically shortens ride animations&#13;
-  - Quick Barbot Freakout: Drastically shortens animation and control lockout after completing the Titanic Titillator&#13;
-- New Checks: Puree the Starlings, Defeat the Maitre'D, Music Room puzzle, SGT Stateroom Furniture puzzle, Arboretum Seasons&#13;
-- Added YAML-less UT Support&#13;
-## Changes&#13;
-- Traps have been removed temporarily. I've never gotten around to implementing them, so they've never actually done anything&#13;
-- Added full [Location](https://github.com/rescheer/Starship-Titanic-AP/blob/main/docs/Location.md) and [Item](https://github.com/rescheer/Starship-Titanic-AP/blob/main/docs/Items.md) lists to the repo for reference&#13;
-## Fixes&#13;
-- Tons of cosmetic fixes affecting most items&#13;
-- Pistachio bowl puzzle required an assigned 2nd class stateroom in logic, but can be completed in any 2nd class stateroom&#13;
-- Checks could briefly be sent from incorrect save files before the guard stops them&#13;
-- Nose could be stuck in inventory in rare circumstances&#13;
-- Mouth could be permanently hidden in very rare circumstances&#13;
-- Being granted an item while standing at its natural pickup location causes issues&#13;
-- Turning in the Magazine before the check-in conversation would eat it with no results&#13;
-- Swapping the music in the restaurant would make fighting the Maitre'D impossible&#13;
-- Repairing Titania would block access to the rest of the ship, blocking progress in goals that don't end there&#13;
-- Installed fuses and Titania parts would be removed and returned to inventory when their checks are sent&#13;
-- Incorrect random room calculation sometimes assigned a Parrot Hunt room that didn't exist&#13;
-- Fixed a few minor logic issues&#13;
-- Fixed several crash causes&#13;
-## Known Issues in this release&#13;
-- None&#13;
-&#13;
-Find installation instructions at [https://github.com/rescheer/Starship-Titanic-AP#installation](https://github.com/rescheer/Starship-Titanic-AP#installation)</content>
-    <link href="https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v1.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Drogebot/Archipelago-zfsa/releases/tag/v0.1.0</id>
-    <title>The Legend of Zelda: Four Swords Adventures v0.1.0</title>
-    <updated>2026-11-03T19:33:22+00:00</updated>
-    <author>
-      <name>Drogings</name>
-    </author>
-    <content>* Added Item down-/upgrade buttons&#13;
-* Added GBA Controller Support&#13;
-* Added Multi-Player&#13;
-* You can use any Save Slot now&#13;
-* Added AP Client Logo&#13;
-* Expanded Death Link death messages&#13;
-* Fixed some Logic&#13;
-* Fixed some Locations&#13;
-* Fixed some Doors&#13;
-* Fixed Item Level visual</content>
-    <link href="https://github.com/Drogebot/Archipelago-zfsa/releases/tag/v0.1.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.12.3</id>
     <title>Casualties: Unknown v0.12.3</title>
@@ -1401,6 +1185,20 @@ The client is GPL-3.0; the source for this build is the `v0.3.0-alpha2` tag of t
     <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.13"/>
   </entry>
   <entry>
+    <id>https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/tag/V1.0.0</id>
+    <title>Fantastic Fist v1.0.0</title>
+    <updated>2026-11-06T04:41:06+00:00</updated>
+    <author>
+      <name>WaluigiGoesWa</name>
+    </author>
+    <content>Roomsanity and Checkpointsanity added.&#13;
+Roomsanity turns entering each of the 212 rooms into a location.&#13;
+Checkpointsanity turns each of the 42 checkpoints into a location.&#13;
+&#13;
+All settings in the YAML now work, marking the 1.0.0 release!</content>
+    <link href="https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/tag/V1.0.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/blitzashspear/ap-yhtwtg/releases/tag/release-1.1.1</id>
     <title>You Have to Win the Game v1.1.1</title>
     <updated>2026-11-06T05:08:02+00:00</updated>
@@ -1477,5 +1275,129 @@ Use apworld 0.4.3 together with mod 0.4.3. Seeds generated with apworld 0.4.2 al
 - Changed the default value for runSpeed to 2.0.&#13;
 - Discontinued the support for WeAreGoingToPlad graphic pack.</content>
     <link href="https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Kryen112/HP2PC_AP/releases/tag/v3.0.0</id>
+    <title>Harry Potter 2 PC v3.0.0</title>
+    <updated>2026-11-06T19:35:47+00:00</updated>
+    <author>
+      <name>Kryen112</name>
+    </author>
+    <content># HP2PC_AP v3.0.0
+
+The randomizer now runs on the original game installed from your own disc, with SafeDiscShim. Everyone needs to reinstall: follow the attached `PLAYER_SETUP.md`.
+
+### New
+
+- **Plays on your own disc install.** Install the game from your disc and add SafeDiscShim (free, open source) so the disc check works on Windows 10 and 11. Keep the disc in the drive while you play. No game files ship with this project.
+- **One install for both game modes.** Vanilla and open castle seeds play on the same install. The client tells the mod which mode the seed uses.
+- **Borderless window.** The game opens at your monitor's size without a window frame.
+- **60 fps cap.** The game is held at the speed its physics and timers are tuned for.
+- **Widescreen view.** The view widens on wide screens, and the menus draw in a centered 4:3 area with black bars at the sides.
+- **Non-English discs.** The dialogue randomizer works on the game's own language.
+- **Linux (experimental).** The client finds the game's Wine or Proton prefix and launches the game through Wine. Nobody has confirmed the disc check under Wine yet.
+
+All three display settings are on by default and can be turned off in `host.yaml`.
+
+### Changed
+
+- **Quieter client window.** On connect, the client only says when the mod was updated. Routine details go to the log file.
+- **Player names with accents** show with the nearest plain letters, since the game cannot draw them.
+
+### Fixed
+
+- **See-through textures** (torch cages, fences, Harry's glasses) no longer draw solid, also after Alt+Tab.
+- **Trader menus** take clicks again on wide screens.
+</content>
+    <link href="https://github.com/Kryen112/HP2PC_AP/releases/tag/v3.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/toent/Archipelago-MKWii/releases/tag/pre0.4.0</id>
+    <title>Mario Kart Wii v0.4.0</title>
+    <updated>2026-11-06T21:26:30+00:00</updated>
+    <author>
+      <name>toent</name>
+    </author>
+    <content>## Pre-Release Version 0.4.0: In game unlock display&#13;
+**This is a version of the in game unlock display that does not require a new APWorld.** &#13;
+It is also a bit of a public test so please report any issues in the discord. There's some *known issues* with the mii's. Also for the vehicles screen there might be like a 0.5 seconds delay with the display updating, this is known please give it some time. &#13;
+The experience for you shouldn't be any different than normal, except for that you will find a new `icon_manifest.json` in the zip, this is crucial, please don't delete it. Upon running the game with the client for the first time you will see a `bins/` folder added to the directory, this is UI textures turned into binaries that the client writes into memory during runtime. Even during the first run you shouldn't be able to notice the client gathering these textures.&#13;
+&#13;
+### Changelog:&#13;
+- [Client] Added in game unlock displaying.&#13;
+- [Client] Added automatic first run texture binary gathering.&#13;
+&#13;
+**REQUIRES APWORLD VERSION 0.3.1+**&#13;
+&#13;
+_Linux users, download the source code here to run the client._&#13;
+&#13;
+**Full Changelog**: https://github.com/toent/Archipelago-MKWii/compare/v0.3.2...pre0.4.0</content>
+    <link href="https://github.com/toent/Archipelago-MKWii/releases/tag/pre0.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc3</id>
+    <title>Kirby &amp; The Amazing Mirror v0.5.0rc3</title>
+    <updated>2026-11-06T22:52:15+00:00</updated>
+    <author>
+      <name>Harrison Sherwin</name>
+    </author>
+    <content>&gt; [!WARNING]&#13;
+&gt; **Experimental prerelease — bugs are expected. This release is not ready for general use.** Please report problems with your seed, settings, and client logs.&#13;
+&#13;
+Built from main commit `056abe2c3b0e1be70b0f05a8dee72ffa94782f5a`.&#13;
+&#13;
+This release includes the Rainbow Route 1-06 lower-cave chest logic correction and starting Area Key item-pool lifecycle fix in #1033, plus the save-file selection changelog update in #1034. Universal Tracker verification confirms the chest is no longer reachable from the upper path at the start, while legitimate alternate routes remain available.&#13;
+&#13;
+The v0.5.0 changes include Area Keys, Hub Connections, additional Kirby palettes, Hub Teleport Trap, the `/goal` command, the area-boss-count goal, File 1 selection, and expanded AP save storage.&#13;
+&#13;
+See the [complete v0.5.0 changelog](https://github.com/hasherwi/Archipelago-kirbyam/blob/056abe2c3b0e1be70b0f05a8dee72ffa94782f5a/worlds/kirbyam/CHANGELOG.md#v050) for features, fixes, and known limitations.&#13;
+&#13;
+Release build, artifact attestation, staged download comparison and provenance verification passed in [run 42309254412](https://github.com/hasherwi/Archipelago-kirbyam/actions/runs/42309254412), attempt 1. Broader CI is not claimed fully green. The prior reviewed gameplay source passed 5,576 focused Kirby tests, with one skipped; Python 3.11 jobs encountered environment setup failures.&#13;
+&#13;
+The RC3 tag was replaced before publication to include the single-maintainer release workflow in #1036. The release contains the APWorld, its provenance receipt and signed attestation bundle. Verify them before installing; provenance establishes origin, not freedom from bugs.</content>
+    <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/tag/v1.2.0</id>
+    <title>Puzzle Bobble 4 v1.2.0</title>
+    <updated>2026-11-06T22:55:34+00:00</updated>
+    <author>
+      <name>Hish</name>
+    </author>
+    <content>Update 1.2.0 of Puzzle Bobble 4 for Archipelago!&#13;
+&#13;
+PuzzleBobble4ArchipelagoClient.exe – The client application that connects Puzzle Bobble 4 to an Archipelago server and handles in-game interactions.&#13;
+&#13;
+puzzlebobble4.apworld – The Archipelago world file. Required to generate and host a Puzzle Bobble 4 game.&#13;
+&#13;
+PuzzleBobble4.yaml – The YAML configuration file containing the available game options and settings.&#13;
+&#13;
+PuzzleBobble4PopTracker.zip – The PopTracker package for tracking your progression and locations. (Still 1.0.0)</content>
+    <link href="https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/tag/v1.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc4</id>
+    <title>Kirby &amp; The Amazing Mirror v0.5.0rc4</title>
+    <updated>2026-11-06T23:47:52+00:00</updated>
+    <author>
+      <name>Harrison Sherwin</name>
+    </author>
+    <content>&gt; [!WARNING]
+&gt; **Experimental prerelease. Bugs are expected. This release is not ready for general use.** Please report problems with your seed, settings, and client logs.
+
+&gt; [!CAUTION]
+&gt; **Back up RC3 saves before switching to RC4.** RC3 used an expanded save layout that is not directly compatible with the restored native layout. Opening an RC3 save in RC4 may cause native invalid-save recovery to clear or replace it. Use a fresh save or a preserved pre-#1024 native-layout save for the same seed. Repatching a ROM does not migrate saves. Keep the original RC3 ROM and save separately if progress needs recovery later.
+
+Built from main commit `744b1a5708ecaafd80313b7836a9197a25f5db0e`.
+
+RC4 restores native file selection and its three save files, deferring the file-selection skip and coupled expanded-save foundation from #1024. The independent Rainbow Route 1-06 lower-cave chest logic correction and starting Area Key lifecycle fix from #1033 remain included. The reported RC3 startup/sprite failure is tracked in #1037; the exact original failure was not reproduced.
+
+Validation: the reviewed code tree passed 5,545 hosted Kirby tests with one skip, plus both standard-server item-history tests. All 448 focused local regression tests passed. The rebuilt ROM patch matches the pre-feature patch exactly. Native mGBA checks passed fresh, continued and cold-reloaded gameplay in all three save files, reset/re-entry, selector/menu/Back behavior and save checksums. These controlled tests do not establish live AP/BizHawk or full-campaign acceptance. Broader CI is not claimed fully green: other platform jobs and synthetic ROM smoke are still pending; unrelated LLVM repository and Python 3.11 setup failures remain. The lawful-ROM rebuild, native startup tests, type checks, generation fuzz, CodeQL and C tests passed.
+
+See the [complete v0.5.0 changelog](https://github.com/hasherwi/Archipelago-kirbyam/blob/744b1a5708ecaafd80313b7836a9197a25f5db0e/worlds/kirbyam/CHANGELOG.md#v050) and [rollback/save compatibility notes](https://github.com/hasherwi/Archipelago-kirbyam/blob/744b1a5708ecaafd80313b7836a9197a25f5db0e/worlds/kirbyam/dev-docs/rc4-file-selection-rollback.md).
+
+Release build, artifact signing, staged download comparison, source/digest checks and attestation verification passed in [run 42314534000](https://github.com/hasherwi/Archipelago-kirbyam/actions/runs/42314534000), attempt 1. The APWorld contents retain the lower-cave chest fix and restored native-layout patch, with no full ROMs or saves. The release contains the APWorld, its provenance receipt and signed attestation bundle. Verify them before installing; provenance establishes origin, not freedom from bugs.
+</content>
+    <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc4"/>
   </entry>
 </feed>

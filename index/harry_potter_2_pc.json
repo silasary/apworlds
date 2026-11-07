@@ -258,6 +258,20 @@
       "title": "v2.9.1",
       "version_simple": "2.9.1",
       "world_version": "2.9.1"
+    },
+    "v3.0.0": {
+      "created_at": "2026-11-06T19:35:47Z",
+      "description": "# HP2PC_AP v3.0.0\n\nThe randomizer now runs on the original game installed from your own disc, with SafeDiscShim. Everyone needs to reinstall: follow the attached `PLAYER_SETUP.md`.\n\n### New\n\n- **Plays on your own disc install.** Install the game from your disc and add SafeDiscShim (free, open source) so the disc check works on Windows 10 and 11. Keep the disc in the drive while you play. No game files ship with this project.\n- **One install for both game modes.** Vanilla and open castle seeds play on the same install. The client tells the mod which mode the seed uses.\n- **Borderless window.** The game opens at your monitor's size without a window frame.\n- **60 fps cap.** The game is held at the speed its physics and timers are tuned for.\n- **Widescreen view.** The view widens on wide screens, and the menus draw in a centered 4:3 area with black bars at the sides.\n- **Non-English discs.** The dialogue randomizer works on the game's own language.\n- **Linux (experimental).** The client finds the game's Wine or Proton prefix and launches the game through Wine. Nobody has confirmed the disc check under Wine yet.\n\nAll three display settings are on by default and can be turned off in `host.yaml`.\n\n### Changed\n\n- **Quieter client window.** On connect, the client only says when the mod was updated. Routine details go to the log file.\n- **Player names with accents** show with the nearest plain letters, since the game cannot draw them.\n\n### Fixed\n\n- **See-through textures** (torch cages, fences, Harry's glasses) no longer draw solid, also after Alt+Tab.\n- **Trader menus** take clicks again on wide screens.\n",
+      "download_url": "https://github.com/Kryen112/HP2PC_AP/releases/download/v3.0.0/harry_potter_2_pc.apworld",
+      "has_manifest": true,
+      "hash_sha256": "918d1941907460887e9aa9819d7efa891071abee53fd4d4d0a9769347813e12c",
+      "html_url": "https://github.com/Kryen112/HP2PC_AP/releases/tag/v3.0.0",
+      "size": 648084,
+      "source_url": "https://api.github.com/repos/Kryen112/HP2PC_AP",
+      "tag": "v3.0.0",
+      "title": "v3.0.0",
+      "version_simple": "3.0.0",
+      "world_version": "3.0.0"
     }
   }
 }

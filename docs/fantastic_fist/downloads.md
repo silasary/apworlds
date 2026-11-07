@@ -1,9 +1,12 @@
 # Fantastic Fist
 
 ## Latest
-- <a href="https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/download/V0.0.7/fantastic_fist.apworld">Latest Version (0.0.7)</a>
+- <a href="https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/download/V1.0.0/fantastic_fist.apworld">Latest Version (1.0.0)</a>
 
 ## All Versions
+
+#### v1.0.0
+- <a href="https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/download/V1.0.0/fantastic_fist.apworld">https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/download/V1.0.0/fantastic_fist.apworld</a>
 
 #### v0.0.7
 - <a href="https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/download/V0.0.7/fantastic_fist.apworld">https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/download/V0.0.7/fantastic_fist.apworld</a>

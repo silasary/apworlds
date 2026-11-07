@@ -12,12 +12,12 @@ or malicious behavior. An APWorld update does not repair host Python or OS trust
 ## Source policy implemented for future releases
 
 The builder records the artifact SHA-256, exact source commit, repository, ref, event,
-workflow path and run/attempt in kirbyam.provenance.json. The protected publisher
+workflow path and run/attempt in kirbyam.provenance.json. The staging publisher
 checks this receipt against its GitHub context and the actual downloaded APWorld.
 The receipt alone is not authenticated. The publisher attests both files with the
 pinned GitHub provenance action and verifies their signatures and source/workflow
 identity before uploading, then downloads and compares every staged asset byte for
-byte and repeats verification. Signing rights exist only in the protected publisher,
+byte and repeats verification. Signing rights exist only in the staging publisher,
 which checks out trusted main, not tagged project code. No signing credentials are
 created by this PR; no attestation or release operation runs in its fixture tests.
 
@@ -28,9 +28,9 @@ bundled node24 JavaScript. GitHub OIDC/attestation services remain trusted onlin
 The runner's gh CLI must support the verification flags below; failure stops staging.
 This is source implementation, not evidence of a successfully signed public release.
 
-## Draft assembly and owner prerequisites
+## Draft assembly and owner review
 
-An owner prepares an empty draft for the intended protected tag; absent drafts fail
+An owner prepares an empty draft for the intended release tag; absent drafts fail
 closed rather than treating an API failure as permission to create a release. Only
 kirbyam.apworld, kirbyam.provenance.json and kirbyam.attestation.jsonl are permitted.
 Full ROMs are forbidden. Unknown assets cause failure and are never deleted.
@@ -41,15 +41,18 @@ replacing it; the owner must review the existing verified draft, not erase evide
 Rerunning only the publisher also fails the receipt run-attempt check; do not rewrite
 the receipt to force it through. Review the existing run or rebuild the entire workflow.
 
-Before enabling this path, the owner must enable GitHub immutable future releases,
-protect release tags/main and configure the release environment described in
-publication-trust-boundary.md. None of those settings was changed or verified here.
+One maintainer may perform all reviews. Protected tags, required environment reviewers
+and GitHub immutable releases are optional safeguards, not staging prerequisites.
+Existing restrictions remain enforced; no settings or credentials are changed here.
 Keep the draft unpublished throughout staging. State is checked before each upload,
-but API calls are not an atomic transaction: immutable-release enforcement is needed
-to close concurrent publication races. Do not claim source checks alone establish
-server-side immutability. Assemble and verify all intended assets while draft, review
-the exact SHA, then separately authorize public publication. Correct published mistakes
-with a new version. Older releases without provenance are not retroactively verified.
+and per-tag concurrency serializes staging jobs, but API calls are not an atomic
+transaction against manual publication. The owner must avoid concurrent edits and
+wait for staging and verification to finish before separately authorizing publication.
+Immutable releases, when enabled, provide stronger server-side enforcement. Without
+them, verification establishes a snapshot only: assets and tags could later change.
+Record the actual immutable status, preserve verification evidence and correct public
+mistakes with a new version. Older releases without provenance are not retroactively
+verified. The readiness command's optional strict profile still requires immutability.
 
 ## Consumer and post-publication verification
 
@@ -79,5 +82,6 @@ or unauthenticated checksums. Preserve the verification log and source decision.
 
 After separately authorized publication, repeat these download/signature/digest checks
 on the public asset in a new directory and record the release's immutable status.
-No public release was made or checked by this PR. Live OIDC signing, owner settings,
-post-publication verification and concurrency enforcement remain #983 acceptance gaps.
+No public release was made or checked by this PR. Live OIDC signing and
+post-publication verification remain #983 acceptance gaps.
+Do not claim immutable or atomic publication guarantees without separate evidence.
