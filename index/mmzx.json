@@ -1,10 +1,17 @@
 {
+  "authors": [
+    "Nekusen"
+  ],
   "description": "Mega Man ZX is a 2006 Nintendo DS action platformer by Inti Creates and\nCapcom. Explore the interconnected areas, collect biometals, Card Keys and\nupgrades, complete missions and defeat Serpent.",
   "flags": [],
   "game": "Mega Man ZX",
   "github": "https://github.com/Nekusen/Archipelago-MegaManZX",
   "license": "MIT",
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "setup_guide_url": "https://github.com/Nekusen/Archipelago-MegaManZX/blob/main/docs/setup_en.md",
   "sheet_disclosure": [
     "Extensive",
@@ -53,6 +60,21 @@
       "title": "Release 0.2.1",
       "version_simple": "0.2.1",
       "world_version": "0.2.1"
+    },
+    "v0.3.0": {
+      "created_at": "2026-11-07T11:50:25Z",
+      "description": "### Added\r\n\r\n- Added the goal `defeat_omega_zero`: beat Omega Zero in N-1. The door of his arena opens with your `goal_requirements`\r\n  (the rest of Area N is open as always).\r\n- Added `zero3_bosses` and `zero4_bosses`: the eight Mega Man Zero 3/4 bosses of N-1 are in the game and each one beaten\r\n  is a check. They can be named in `boss_logic`\r\n  - IMPORTANT: each option needs your own Mega Man Zero 3 or Zero 4 (GBA) ROM. The game keeps the\r\n    sprites of those bosses in the cartridge, so the launcher asks for the ROM when you open the `.apmmzx` and converts\r\n    them from it. With the option off no ROM is ever asked for.\r\n- Added the goal requirement `Mutos Reploid Hunting`: beat `required_mutos_reploids` of those bosses (1 to 8; 5 or more\r\n  need both games on).\r\n- Added the location `Obtain Biometal Z`, sent when you beat Giro in D-2.\r\n- Added `area_m_access`: what opens the seal at the entrance of Area M.\r\n  - `open`: the seal is open from the start, as before.\r\n  - `biometals`: get the five `Obtain Biometal` checks of your game (Z, H, F, L and P).\r\n  - `passwords`: collect `required_passwords` Passwords out of the `total_passwords` in the pool.\r\n  - With `biometals` or `passwords` the Transerver Access of Area M is not in the pool.\r\n- Missions can be played again through the new \"Replay Missions\" option in the Transerver consoles.\r\n  - While a mission picked there is under way, entering an area does not accept that area's mission. Report or abort the one you picked to go back to normal.\r\n  - \"Abort Mission\" is now offered only for a mission picked from the \"Replay Missions\" list. \r\n  - Troop Reinforcement replays like any other mission. There's no briefing, head to Area D and play it through.\r\n- Added `mission_objectives`: the objects and events of the story missions can be checks, and items too.\r\n  - `locations_only`: Multiple events and items from the story become checks, like the four Computer Chips in area B, the guardians of Pass The Test or the people trapped in Area G. The game itself plays as before, nothing is changed in progression or how the open world behaves.\r\n  - `locations_and_items`: the same location, but the objects are also items of the pool. A mission is reported only with its object, Rayfly shows up only with a Computer Chip, the F-3 and G-2 doors open with their own items, and so on.\r\n- Added \"door constraints\": each seed can lock some of the doors between rooms behind a Card Key, so the map opens in smaller steps instead of most of it at once. A locked door shows the colour of its key.\r\n  - `door_constraints_min` and `door_constraints_max`: how many doors a seed locks (0 to 15, both 0 by default).\r\n- Added `include_warps_in_logic`: the teleports to the Guardian Base at the end of Troop Reinforcement and Repel The Army count as a way into Area X, so a check there may expect you to clear one of those missions instead of holding its Transerver Access. Off by default.\r\n- The eight \"Item A\" usables in the game are now items of the pool, and the eight places that hand them out are locations.\r\n  - Usable items get added to your inventory when you get them as items from the multiworld. Picking them in the game only sends a location.\r\n  - A usable you have used comes back when you open any Transerver console, so you can use them as much as you want.\r\n  - The child gives the cake location on any day, even if its not your birthday, once Save The People is completed.\r\n- Added `sub_tank_refill_operator`: a Guardian next to your starting Transerver who, for 200 E-Crystals,\r\n  refills every Sub Tank you hold.\r\n- Added `infinite_lives`: when this option is on you lose no lifes and you can't Game Over. With it on, the 1-Up item is not in\r\n  the filler pool.\r\n\r\n### Changed\r\n\r\n- The entire logic has been reworked to use AP's Rule Builder. This is mostly internal, but as an upside this means you can now use /get_logical_path or /explain in Universal Tracker.\r\n- The filler item pool has been reworked: now there's `25 E-Crystals`, `50 E-Crystals`, `100 E-Crystals`, `Energy Refill`, `Weapon Energy Refill`\r\n  and `1-Up`. The goal is to lower the total ammount of useless E-Crystals, as well as making filler feel at least slightly relevant.\r\n- Some client messages have been modified so they only show in debug , as they are not relevant for the player usually.\r\n\r\n### Fixed\r\n\r\n- Small logic fixes and adjustments\r\n- The following missions had their \"cleared mission\" flag removed by other events sometimes. This should be fixed now.\r\n  - Stop The Dig stopped counting as completed after reporting Repel The Army.\r\n  - Find The Survivors stopped counting as completed after reporting Recover The Disk\r\n  - Fight The Mavericks after reporting Attack The Excavators",
+      "download_url": "https://github.com/Nekusen/Archipelago-MegaManZX/releases/download/v0.3.0/mmzx.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3a80b8504453abe54e5ad4c46e95d6d2cdefa8ada4b65c42fd914e00ff0ec47a",
+      "html_url": "https://github.com/Nekusen/Archipelago-MegaManZX/releases/tag/v0.3.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 271107,
+      "source_url": "https://api.github.com/repos/Nekusen/Archipelago-MegaManZX",
+      "tag": "v0.3.0",
+      "title": "Release 0.3.0",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0"
     }
   }
 }

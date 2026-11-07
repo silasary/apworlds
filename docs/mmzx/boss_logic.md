@@ -28,9 +28,19 @@ Use the boss name or its room code as the key.
 | Pandora | M-3 | |
 | Prometheus & Pandora | O-2 | |
 | Serpent | D-5 | The gate to the final area follows `goal_requirements`; a requirement here is added on top |
-| Omega Zero | N-1 | Not used at the moment as there's no checks behind Omega Zero |
+| Omega Zero | N-1 | With the goal `defeat_omega_zero` the door of his arena follows `goal_requirements`; a requirement here is added on top |
+| Hellbat Schilt | N-1 | Mega Man Zero 3 boss, only with `zero3_bosses` |
+| Blazin' Flizard | N-1 | Mega Man Zero 3 boss, only with `zero3_bosses` |
+| Deathtanz Mantisk | N-1 | Mega Man Zero 3 boss, only with `zero3_bosses` |
+| Childre Inarabitta | N-1 | Mega Man Zero 3 boss, only with `zero3_bosses` |
+| Fenri Lunaedge | N-1 | Mega Man Zero 4 boss, only with `zero4_bosses` |
+| Noble Mandrago | N-1 | Mega Man Zero 4 boss, only with `zero4_bosses` |
+| Sol Titanion | N-1 | Mega Man Zero 4 boss, only with `zero4_bosses` |
+| Pegasolta Eclair | N-1 | Mega Man Zero 4 boss, only with `zero4_bosses` |
 
-Giga Aspis, the boss for the first mission, is not listed because the randomizer skips it.
+Giga Aspis, the boss for the first mission, is not listed because the randomizer skips it. The eight Mega Man Zero
+bosses share N-1 with Omega Zero, so the room code `N-1` names Omega Zero alone: use their names. A requirement on one
+of them whose option is off is accepted and ignored.
 
 "Any Model" is an implicit requirement already for every boss, so you're never expected to walk through a boss room without them
 
