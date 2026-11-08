@@ -114,6 +114,21 @@
       "title": "0.3.1",
       "version_simple": "0.3.1",
       "world_version": "0.3.1"
+    },
+    "0.4.0": {
+      "created_at": "2026-11-07T19:55:28Z",
+      "description": "## OpenTTD Cargolock 0.4.0 - NewGRF Vehicle Compatibility\r\n\r\n### Features\r\n- NewGRF vehicles compatibility! NewGRF Vehicles added will be distributed in vehicle tiers using two modes:\r\n  - `Simple Date Tiers` is the default distribution mode, divides the introduction-date span into the configured number of tiers.\r\n  - `Simple Count Tiers` sorts vehicles by introduction date and split them into groups with roughly the same number of vehicles.\r\n- Configurable number of progressive tiers separately for each vehicle category. Default values keep the vanilla vehicles in their curated tiers (the distribution of vehicles from every version previous to this one). Reducing a category\u2019s tier count below its vanilla tier count compresses later tiers into the last one.\r\n- New `enable_trams` option; Gives trams their own progressive tiers and cargo. You will need to include a NewGRF that includes trams since there are no trams in the vanilla game.\r\n- Fixed several issues with NewGRF vehicle compatibility\r\n\r\n### NewGRF Compatibility\r\nShould work with any NewGRF that just adds vehicles, tested with the most popular vehicle collection NewGRFs(Iron horse, SHARK, av8 for example). \r\nIncompatible with any NewGRFs that reworks industries, adds cargo types ect\r\nIf you have any issues ping me on discord! @kbab13\r\n\r\n### Update your old YAMLs\r\nYou will have to update your previous version existing yamls, here are all the added yaml options:\r\n  - `vehicle_tier_distribution_mode`\r\n  - `enable_trams`\r\n  - `train_tier_count`\r\n  - `road_vehicle_tier_count`\r\n  - `aircraft_tier_count`\r\n  - `ship_tier_count`\r\n  - `tram_tier_count`",
+      "download_url": "https://github.com/kbab13reel/openttd-archipelago/releases/download/0.4.0/openttd_cargolock.apworld",
+      "has_manifest": true,
+      "hash_sha256": "2b19364f8be5cf743a0a1ae639e0357dbee12ff5ab0662a4065cef4133993847",
+      "html_url": "https://github.com/kbab13reel/openttd-archipelago/releases/tag/0.4.0",
+      "minimum_ap_version": "0.6.6",
+      "size": 21030,
+      "source_url": "https://api.github.com/repos/kbab13reel/openttd-archipelago",
+      "tag": "0.4.0",
+      "title": "0.4.0",
+      "version_simple": "0.4.0",
+      "world_version": "0.4.0"
     }
   }
 }

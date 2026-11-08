@@ -5,7 +5,7 @@ Rush through a series of levels making smart use of your restricted cards to cle
 
 
 ## Downloads
-- <a href="https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/download/v0.2.0/neonwhite.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/download/v0.2.1/neonwhite.apworld">Latest Version (0.2.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

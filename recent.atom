@@ -2,133 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-07T18:16:16.623454+00:00</updated>
+  <updated>2026-11-08T00:25:39.933587+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/ZAPaDASH04/LEGO-Batman-APworld/releases/tag/v1.0.2</id>
-    <title>Lego Batman: The Video Game v1.0.2</title>
-    <updated>2026-11-04T03:13:02+00:00</updated>
-    <author>
-      <name>ZAPaDASH04</name>
-    </author>
-    <content>- Dying of Laughter use Strength on table minikit no longer allows for killer croc to be in logic&#13;
-- Fixed Zoo's company Lion's cage minikit logic. Now checks for explosives&#13;
-- Fixed Steeling the Show freeplay region logic. Now checks for explosives.</content>
-    <link href="https://github.com/ZAPaDASH04/LEGO-Batman-APworld/releases/tag/v1.0.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/tag/Beta-1.4-4</id>
-    <title>LEGO Star Wars III: The Clone Wars v1.4.post4</title>
-    <updated>2026-11-04T03:36:29+00:00</updated>
-    <author>
-      <name>Newtboy</name>
-    </author>
-    <content>**Full Changelog**: https://github.com/Newtboy/Newtboy-LSW3-Archipelago/compare/Beta-1.4-2...Beta-1.4-4&#13;
-&#13;
-MANY MANY MANY STUPID IDIOTIC BUGS FIXED&#13;
-Don't worry about it&#13;
--# Someone else should really look at my code sometime</content>
-    <link href="https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/tag/Beta-1.4-4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Kevanderson97/homura-hime-archipelago/releases/tag/v0.4.0</id>
-    <title>Homura-Hime v0.4.0</title>
-    <updated>2026-11-04T04:21:51+00:00</updated>
-    <author>
-      <name>Kevin Anderson</name>
-    </author>
-    <content>Feature release: The Climax is its own world, level key settings, a balanced randomized level order with odds, added two traps, and a number of fixes for the cut-content guns. See README for installation instructions.
-
-**Seeds from 0.3.x are not accepted by this plugin. Update the plugin and the .apworld together and generate a new seed.** An old YAML still works: `level_unlock_items: true` now means freeform keys, and the old `level_order` values `vanilla` and `randomized` still work.
-
-### New:
-
-**Climax: The Choice is a world of its own:**
-
-- The game now has nine worlds before the Finale: Chapters 1-8 and the Climax. The Climax is shuffled like a chapter, is never the first world, needs one cleared chapter before it opens, has its own key ("Climax Unlock") and is required for the Finale.
-
-**Level keys (`level_unlock_items`: off / linear_progression / freeform_progression):**
-
-- Linear progression adds a "Progressive Level Key" item: the first one opens the second world, and so on. Freeform adds one key per world, usable at once in any order.
-- In freeform mode, using the Torii gate in any hub opens the Chapter Select.
-- After clearing a world, the hub shows the post-mission report of the world you just cleared (not the story's).
-- In Linear Progression, the keys are needed to advance but levels must still be played in order (randomized or vanilla). In freeform, levels are accessible and in-logic as soon as a key is obtained.
-
-**Randomized Order (`level_order`: off / balanced / full):**
-
-- Balanced makes Chapters 1-4 likely to come early (the first world is always one of them) and Chapters 5-8 and the Climax likely to come late. Full is a plain shuffle. The later chapters are pretty hard as the first world, so the weighted randomization may make the beginning of the game easier.
-- With freeform keys, the keys turn up in play order.
-
-**Traps (`puffer_swarm_traps`, default 20, and `hexed_doll_trio_traps`, default 5; both can be `disabled`):**
-
-- **Puffer Swarm Trap**: four flying bomb puffers and four flying spiky puffers appear around you, 6 to 20 metres away.
-- **Hexed Doll Trio Trap**: a Hexed Doll of each of the three colours appears as a group, 4 to 8 metres away, with health and stagger bars.
-- A trap only goes off in a level (never in the hub), while you are in control, and while you stand on solid ground. In the air, on a rail or in a boost it waits until you land. The count is lowered when there is no room in the seed.
-- The game additively loads a couple scenes at launch during the splash screen to capture the instances of the enemies it needs to spawn. This should have no discernable impact on the game. If you load a save that doesn't use the traps, they'll be removed from memory and the scenes will be re-loaded when connecting to a server that has traps enabled. This may cause a hitch, but will only be at the main menu and only in that niche case. 
-
-**Saves:**
-
-- A save that belongs to an Archipelago slot can only be loaded from the main menu while you are connected to that slot and seed. In the Continue panel the other saves are greyed out, with a note at the bottom, and every bound save says which slot it is associated with. Connecting while the panel is open frees the matching saves. Offline play of a bound save is no longer possible.
-- While the trap setup runs, no save can be loaded and no game started.
-
-### Fixes:
-
-**Cut-content guns:**
-
-- Ruptured Bones (shotgun) and Ann's Board now break the large boxes with Konpeito, like the standard shot. Their damage boxes were solid colliders, which Unity does not report as hits against solid boxes.
-- Ann's Board shows its name in the menus again (the game's own text calls it "Ann's Support", and the plugin's name was lost when the text was reloaded).
-- Sounds: the shotgun and Ann's Board play the game's own sounds (the board's when you release the shot, not when it is summoned), and every flame orb of the missile gun plays a short charge sound.
-- Fortunate Misfortune (missile): the red target boxes and the charged orbs no longer stay on screen after switching guns or cancelling a charge; aiming while a shot is impossible (a boost ring, a cutscene) no longer leaves the gun stuck; the missiles' flame and trail no longer hang in the air after a hit; missiles follow you in a domain; a missile that reaches a spiky puffer or another enemy whose lock point lies outside its hurtbox now hits it instead of circling until it expires.
-- The standard gun could stop firing after a shot; fixed.
-
-**Generation:**
-
-- Putting every currency and utility item on `local_items` no longer fails for about one seed in eight.
-
-**Connection:**
-
-- Connecting to another slot at the title screen is no longer judged against the save that was played before.
-
-### Known issues:
-
-- Doing the Nurikabe's Hat quest shows the "found the hat" picture although the hat comes from the multiworld. Other quest items probably do the same.
-</content>
-    <link href="https://github.com/Kevanderson97/homura-hime-archipelago/releases/tag/v0.4.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/WolfBoi008/One-More-Night/releases/tag/3.0.1</id>
-    <title>Manual_OneMoreNight_WolfBoi008 v3.0.1</title>
-    <updated>2026-11-04T04:23:34+00:00</updated>
-    <author>
-      <name>WolfBoi008</name>
-    </author>
-    <content># Known Issues&#13;
-#43: Memory Achievements Do Not Consider Unique Cases - I could use some help refining this, since doing it alone would be annoying...&#13;
-# Changelog&#13;
-- Added the remaining buttons that were added in this update and were previously missed because **goddammit, Dav!**&#13;
-- Removed the Heat Death Check as the Threat no longer kills you in its rework.</content>
-    <link href="https://github.com/WolfBoi008/One-More-Night/releases/tag/3.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/WolfBoi008/One-More-Night/releases/tag/3.1.0</id>
-    <title>Manual_OneMoreNight_WolfBoi008 v3.1.0</title>
-    <updated>2026-11-04T04:29:51+00:00</updated>
-    <author>
-      <name>WolfBoi008</name>
-    </author>
-    <content># Known Issues&#13;
-Same as before.&#13;
-# Changelog&#13;
-- **Added Option: One Nighter.**&#13;
-  - This is currently a Check per minute survived for 5 total minutes, but this may be subject to change based on player feedback and input!&#13;
-- **Added Option: Endless Checks.**&#13;
-- Renamed the Buttonsanity Category used on the Items side to reduce Item Category clutter.&#13;
-- Added a secret Check because @waterlessant12 told me you could do it multiple times.</content>
-    <link href="https://github.com/WolfBoi008/One-More-Night/releases/tag/3.1.0"/>
-  </entry>
   <entry>
     <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.10.0</id>
     <title>CrossCode v0.10.0</title>
@@ -1184,6 +1062,17 @@ See the [complete v0.5.0 changelog](https://github.com/hasherwi/Archipelago-kirb
     <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0"/>
   </entry>
   <entry>
+    <id>https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/tag/V1.1.0</id>
+    <title>Fantastic Fist v1.1.0</title>
+    <updated>2026-11-07T00:14:50+00:00</updated>
+    <author>
+      <name>WaluigiGoesWa</name>
+    </author>
+    <content>Hints now include entrance information.&#13;
+Added aliasing to UT support (Locations in UT now include what level they are in).</content>
+    <link href="https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/tag/V1.1.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/v0.7.5</id>
     <title>Cyberpunk 2077 v0.7.5</title>
     <updated>2026-11-07T03:02:23+00:00</updated>
@@ -1322,7 +1211,7 @@ All three display settings are on by default and can be turned off in `host.yaml
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release10</id>
-    <title>Ocarina of Time v9.1.0r2</title>
+    <title>Ocarina of Time v9.1.0r5</title>
     <updated>2026-11-07T15:28:42+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1358,6 +1247,29 @@ Please note: Since OoT is currently not shipped as a bundled .apworld file, but 
 - Fixes an issue where the Tomb warp would not be usable without receiving the Crypt Warp First&#13;
 - Fixes an issue where the Plunger in Creepy 3 could be picked up and crash the game</content>
     <link href="https://github.com/vgm5/Night_Of_100_Frights_ap_world/releases/tag/Release_1_4_3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MLSTRM/ArchipelagoFF132/releases/tag/ff132/0.3.1</id>
+    <title>Final Fantasy XIII-2 v0.3.1</title>
+    <updated>2026-11-07T16:28:20+00:00</updated>
+    <author>
+      <name>MLSTRM</name>
+    </author>
+    <content>Stabilisation release (0.3.1)&#13;
+&#13;
+AP specific:&#13;
+- Logical fixes and name clarity changes to some locations&#13;
+- Fix UT win condition accuracy&#13;
+- Fix granting of some fragment skills by the AP client&#13;
+&#13;
+Modding tool changes associated:&#13;
+&#13;
+- Improve sorting of items within inventory for custom AP items&#13;
+- Improve battle rando to not shuffle superbosses into the pool accidentally&#13;
+- Improve DLC option detection based on AP data&#13;
+&#13;
+Requires FFModdingWPF 0.8.2.65+ https://github.com/Bartz24/FFModdingWPF/releases/tag/pre-release-0.8</content>
+    <link href="https://github.com/MLSTRM/ArchipelagoFF132/releases/tag/ff132/0.3.1"/>
   </entry>
   <entry>
     <id>https://github.com/awakenbad/SanAndreasAP/releases/tag/v1.0.0</id>
@@ -1424,5 +1336,107 @@ https://github.com/aurabot24/Archipelago-ALttPR/releases/latest&#13;
 * Generation no longer requires a GUI Python library&#13;
 </content>
     <link href="https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.8.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/NyanMC/ap-islesoftrials/releases/tag/0.2.0e</id>
+    <title>Isles of Trials v0.2.0r2</title>
+    <updated>2026-11-07T19:02:47+00:00</updated>
+    <author>
+      <name>NyanMC</name>
+    </author>
+    <content>slightly modified the title screen&#13;
+slash will now meow if they attempt to use the sword or fireball spell, but do not have one&#13;
+&#13;
+the apworld has not changed from 0.2.0</content>
+    <link href="https://github.com/NyanMC/ap-islesoftrials/releases/tag/0.2.0e"/>
+  </entry>
+  <entry>
+    <id>https://github.com/kbab13reel/openttd-archipelago/releases/tag/0.4.0</id>
+    <title>OpenTTD Cargolock v0.4.0</title>
+    <updated>2026-11-07T19:55:28+00:00</updated>
+    <author>
+      <name>kbab</name>
+    </author>
+    <content>## OpenTTD Cargolock 0.4.0 - NewGRF Vehicle Compatibility&#13;
+&#13;
+### Features&#13;
+- NewGRF vehicles compatibility! NewGRF Vehicles added will be distributed in vehicle tiers using two modes:&#13;
+  - `Simple Date Tiers` is the default distribution mode, divides the introduction-date span into the configured number of tiers.&#13;
+  - `Simple Count Tiers` sorts vehicles by introduction date and split them into groups with roughly the same number of vehicles.&#13;
+- Configurable number of progressive tiers separately for each vehicle category. Default values keep the vanilla vehicles in their curated tiers (the distribution of vehicles from every version previous to this one). Reducing a category’s tier count below its vanilla tier count compresses later tiers into the last one.&#13;
+- New `enable_trams` option; Gives trams their own progressive tiers and cargo. You will need to include a NewGRF that includes trams since there are no trams in the vanilla game.&#13;
+- Fixed several issues with NewGRF vehicle compatibility&#13;
+&#13;
+### NewGRF Compatibility&#13;
+Should work with any NewGRF that just adds vehicles, tested with the most popular vehicle collection NewGRFs(Iron horse, SHARK, av8 for example). &#13;
+Incompatible with any NewGRFs that reworks industries, adds cargo types ect&#13;
+If you have any issues ping me on discord! @kbab13&#13;
+&#13;
+### Update your old YAMLs&#13;
+You will have to update your previous version existing yamls, here are all the added yaml options:&#13;
+  - `vehicle_tier_distribution_mode`&#13;
+  - `enable_trams`&#13;
+  - `train_tier_count`&#13;
+  - `road_vehicle_tier_count`&#13;
+  - `aircraft_tier_count`&#13;
+  - `ship_tier_count`&#13;
+  - `tram_tier_count`</content>
+    <link href="https://github.com/kbab13reel/openttd-archipelago/releases/tag/0.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/tag/v0.2.1</id>
+    <title>Neon White v0.2.0r2</title>
+    <updated>2026-11-07T21:02:21+00:00</updated>
+    <author>
+      <name>Badhamknibbs</name>
+    </author>
+    <author>
+      <name>stxticOVFL</name>
+    </author>
+    <content>*Looking for the Neon White mod? Find it [here!](https://github.com/stxticOVFL/NWArchipelagoMod/releases/latest)*&#13;
+*Compatible with v0.2.x of the NWArchipelago mod.*&#13;
+&#13;
+**0.2.1: fixes a logic issue with Fuse Master/Master and Apartment Standard/Expert.** &#13;
+&#13;
+- ### **Card abilities can now be split across missions!**&#13;
+	- Abilities can be set to either:&#13;
+		- unlock **per in-game mission** (e.g. Rebirth - Elevate (Fire) to get it for every level that is in Rebirth in the base game), which is **currently the new default**, &#13;
+		- unlock per **generated mission** (e.g. Mission 1 - Elevate (Fire) to get it for every level in your *own* Mission 1), &#13;
+		- or keep them **global** (e.g. one Elevate (Fire) for the whole game).&#13;
+	- You can also set certain cards to be **forced to be global** on the mission settings (e.g. it defaults to Katana and the Book of Life being 1 item each for the whole game.)&#13;
+	- Additionally, some cards are now marked as *Useful* instead of *Progression* when they aren't logically relevant, and only cards that appear in those missions will appear in the item pool at all. &#13;
+- Level Randomization has been tweaked to make for better progression!&#13;
+	- Levels now properly take into account all the items you would have to clear every check in that level, and influences other levels that are similar to it to be closer to it.&#13;
+	- The **Level Selection Variance** setting acts very similar still, with 0% meaning it will guarantee levels in a linear order, and 100% being very random. The **default for this setting was changed** to *30%* down from *50%*.&#13;
+- The **Starting Level Count** setting has been changed to go off of total check counts for your starting items. &#13;
+	- Previously, it only added starting levels that were guaranteed to be completable to your max medal, and would not select any levels that don't have gifts. &#13;
+	- This change was made to prevent restrictive starts even harder, and should make the start of the world more open. Thus, the **default for this setting was changed** to *3* down from *5*. Most settings couldn't reach 5 starting levels that fit in the criteria anyway.&#13;
+- New filler items have been introduced to help any potential filler feel less repetitive.&#13;
+	- Added items: Garbage, Book of Death Page, Cloud 9 Minigolf Ball, Neon Mask, Secret of Heaven.&#13;
+		- All of these are referenced in voiced dialogue!&#13;
+	- (Hopefully with all of these changes, you won't be seeing that much of these anyway!)&#13;
+&#13;
+## APWorld-Only Changes&#13;
+- **Universal Tracker is now** (actually) **fully supported!** (and I actually tested it this time)&#13;
+	- This includes **yaml-less, glitched logic, custom location sorting that fits your mission order, and shiny new `/explain` for relevant checks!**  &#13;
+- There are now **option groups** that helps keep the options in the launcher's options creator nice and categorized/sorted!&#13;
+- An absurd amount of internal restructuring that makes for both less fill errors and faster fill!&#13;
+	- Neon Ranks outside of the % required are classified as Useful for item filling. They're turned back to Progression in post fill (keeps UT in check and makes spoiler log generate faster).&#13;
+	- A custom rule builder rule class has been made to check rules faster than before, including its own caching system which especially helps for worlds with multiple Neon Whites.&#13;
+	- There is now a custom fill hook that places items inside the progression item pool in a way that speeds up gen and helps the generator get less stuck.&#13;
+	- Fuzzer meta files have been added to the repo for checking progress against the fuzzer tool:&#13;
+		- [`fuzzer_default`](https://github.com/Badhamknibbs/ArchipelagoNeonWhite/blob/main/worlds/neonwhite/fuzzer_default.yaml) checks against most of the default settings. (**100%!**)&#13;
+		- [`fuzzer_player`](https://github.com/Badhamknibbs/ArchipelagoNeonWhite/blob/main/worlds/neonwhite/fuzzer_player.yaml) checks settings that are within reasonable ranges and probabilities for most people who play this APWorld. (**~100%!**)&#13;
+		- [`fuzzer_all`](https://github.com/Badhamknibbs/ArchipelagoNeonWhite/blob/main/worlds/neonwhite/fuzzer_all.yaml) just ensures the goal condition is set to `3bosses` to help limit the amount of ignored results. (roughly **98%** success rate!)&#13;
+- Various other changes were made to ensure we pass all unit tests!&#13;
+	- (except for the memory leak test: there are no problems when actually generating (including no-output), but specifically the test doesn't appear to like it.)&#13;
+&#13;
+### **Check the [game info](https://github.com/Badhamknibbs/ArchipelagoNeonWhite/blob/main/worlds/neonwhite/docs/en_Neon%20White.md) and [complete setup guide!](https://github.com/Badhamknibbs/ArchipelagoNeonWhite/blob/main/worlds/neonwhite/docs/setup_en.md)**&#13;
+&#13;
+**Diff compared to v0.2.0**: https://github.com/Badhamknibbs/ArchipelagoNeonWhite/compare/v0.2.0...v0.2.1&#13;
+**Diff compared to v0.1.1**: https://github.com/Badhamknibbs/ArchipelagoNeonWhite/compare/v0.1.1...v0.2.1&#13;
+**Diff compared to v0.1.0**: https://github.com/Badhamknibbs/ArchipelagoNeonWhite/compare/v0.1.0...v0.2.1&#13;
+</content>
+    <link href="https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/tag/v0.2.1"/>
   </entry>
 </feed>
