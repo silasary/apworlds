@@ -6,7 +6,7 @@ collecting souls from defeated enemies to gain their abilities.
 
 
 ## Downloads
-- <a href="https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.09.04/cvaos.apworld">Latest Version (2026.9.4)</a>
+- <a href="https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.11.07/cvaos.apworld">Latest Version (2026.11.7)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

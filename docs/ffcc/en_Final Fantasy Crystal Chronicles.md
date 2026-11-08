@@ -8,13 +8,32 @@ Players take on the role of adventurers who travel in a caravan gathering mystic
 Ported to Archipelago, this World provides the following:
 - Items, Food, Magicite, Artifacts
 - Chest Locations
+- Enemies as checks (Monster Hunt Checks)
 - Shop slots as checks (Shop Checks), or shuffled shop stock and prices
+- Grooming the Moogle as checks, or as the goal (Mog Grooming)
+- On-screen messages for the items you send and receive, a play timer and enemy health bars
 - Dolphin automatic integration (No Support For Bizhawk)
 
 ## Where is the options page?
 
 The [player options page for this game](../player-options) contains all the options you need to configure and export
 a config file.
+
+There are a lot of options, so the page has presets that set many of them at once. Pick one, then change anything you
+like:
+
+- **Beginner:** one cycle per dungeon, the dungeon shortcuts opened, no traps, Free Cure Magicite and enemy health on
+  screen.
+- **Full Randomizer:** stage keys, shuffled loading zones and Miasma Streams, progressive artifacts and equipment,
+  cycle, year and shop checks, randomized shops and bonus pools, and the extra spell rings.
+- **Chaos:** Full Randomizer, plus shuffled hotspots, a random artifact order, reshuffled tribe stats and lots of
+  traps.
+- **Monster Hunter:** defeating each enemy type is a check, and defeating them all wins.
+- **Speedrun:** reach and beat the final boss, with the speedrun timer on screen, the shortcuts opened and no traps.
+- **Stamp Collector:** collect all 23 Mog Stamps to win.
+- **Mog Grooming Only:** no dungeons. Find the grooming tools, then dye and trim Mog.
+
+The Launcher's "Generate Template Options" also writes a YAML file for each preset, in `Players/Templates/Presets`.
 
 ## What does randomization do to this game?
 
@@ -24,51 +43,112 @@ elements the Miasma Streams ask for, and shuffle shop stock and prices. With all
 
 ## What is the goal?
 
-Depending on the Victory Goal option, either collect a Myrrh drop from all 13 dungeons' trees, defeat the final boss
-at Mount Vellenge and reach the credits, or complete the Monster Hunt (see below).
+The Victory Goal option picks one of these:
+
+- **All Myrrh:** collect a Myrrh drop from all 13 dungeons' trees.
+- **Final Boss:** defeat the final boss at Mount Vellenge and reach the credits.
+- **Monster Hunt:** defeat at least one of every enemy type (see Monster Hunt below).
+- **Mog Stamps:** collect all 23 Mog Stamps from the Moogle Nests. There is a nest in each of the 14 dungeons
+  (Mount Vellenge too) and in Tipa, Port Tipa, Marr's Pass, Alfitaria, Shella, the Fields of Fum, West Jegon
+  River, Leuda and Mag Mell, so the logic expects all of them to be reachable before the goal. The client shows
+  your stamp count each time you get one.
+- **Mog Grooming:** dye or trim a Moogle's fur in any Moogle Nest (see Mog Grooming below).
 
 ## What items and locations get shuffled?
 
 Locations are the dungeon chests, counted separately for each cycle a chest can be opened in. Optionally, reaching a
-dungeon's second and third cycle, the start of each new year, defeating enemies (Monster Hunt Checks) and buying
-from the towns' shops (Shop Checks) are checks too.
+dungeon's second and third cycle, the start of each new year, defeating enemies (Monster Hunt Checks), buying
+from the towns' shops (Shop Checks) and grooming a Moogle (Mog Grooming Checks) are checks too.
 
 Items are artifacts, spell rings, magicite, materials, food, recipes and phoenix downs, plus stage keys, progressive
-artifacts and progressive equipment when those options are on, and traps.
+artifacts, progressive equipment, gil and the Moogle's grooming tools when those options are on, and traps.
 
 ## What does another world's item look like in this game?
 
-A chest holding another player's item gives an "AP Item" when opened.
+A chest holding another player's item has the Archipelago logo on it and opens empty. The
+item is sent when the chest opens. Your own items that the client hands over instead of the
+chest (artifacts, spell rings, stage keys, gil and traps) use the same chest.
 
 ## Gold chests
 
 With **Chest Color Matches Contents** (on by default), a chest holding a
 progression or useful item, for you or for another player, is gold, and a
-chest holding filler looks normal. A chest can hold something different in 
-each cycle, so its color can change from one cycle to the next.
+chest holding filler looks normal. A chest with the Archipelago logo can be
+gold too. A chest can hold something different in each cycle, so its color
+can change from one cycle to the next.
 
 ## When the player receives an item, what happens?
 
-The client puts the item into the game while you are in a dungeon (items that arrive elsewhere wait until you
-enter one): artifacts and stage keys go to your artifact list, progressive equipment upgrades what you have
-equipped, traps take effect, and everything else goes in your bag. If the bag is full, the item waits until there is
-room unless you change the options in the yaml.
+The client puts the item into the game while you are in a dungeon or a town (items that arrive on the world map
+wait until you enter one). Artifacts and stage keys go to your artifact list, progressive equipment puts the next
+piece in your bag, traps take effect, and everything else goes in your bag. If the bag is full, the item waits until
+there is room unless you change the options in the yaml.
 
 A chest's check is sent when you open it, so keep the client connected while playing. Chests can be opened again on
 a later visit in the same cycle if a check was missed.
+
+With **Gil Weight** above 0, some filler is gil (100, 500 or 1000). It is never dropped on the ground but given directly to player 1.
+
+## On-screen messages, play timer and enemy health
+
+These show up over the game itself, so you don't need to look at the client:
+
+- **Show Item Messages** (on by default): each item you receive, and each of your finds that belongs to someone
+  else, is named at the bottom of the screen ("Received Ring of Fire from Jane", "Sent Master Sword to Bob",
+  "Found Phoenix Down"). Up to three lines show at once, newest at the bottom.
+- **Show Play Timer:** a clock in the top-right corner once you choose New Game or load a save. It only counts
+  while you play: it stops while the game is paused, in a menu or loading, and keeps going through cutscenes
+  and talking.
+  - **play_time** shows your save's own play time.
+  - **speedrun_automatic** starts at 0 when you choose New Game (so the intro is timed) or load a save, and
+    stops on the final blow to the last boss.
+  - **speedrun_manual** only starts, stops and resets when you tell it to.
+  - In both speedrun modes, hold **L + R + Z** and press D-pad **Up** to pause or resume the timer, **Down** to
+    reset it to 0, or **Left** to hide or show it.
+- **Show Enemy Health:** each enemy shows its health above it, as a small red bar, as numbers ("12/20") or both.
+  Bosses keep their own health gauge.
+
+Item messages need the client to be connected. The timer and enemy health work on their own.
+
+## Which character gets the items
+
+Items go to the character you are playing, whichever of your save's family members that is. The client tells you
+who when you connect ("Playing as ..."), and `/party` lists your caravan's characters and who each controller is
+playing.
+
+## Choosing "Other" at character creation
+
+The patched game adds **Other** to the gender screen when you create a character. An Other character uses the male
+models and hairstyles, and the game's gendered text uses neutral wording for them ("they", "their", "child"),
+including the family's farewell when your caravan sets out. Male and female characters read exactly as before.
+
+## Playing with friends (multiplayer)
+
+With more than one player (GBA controllers), the client shares the multiworld's items with the whole party:
+
+- Artifacts, stage keys and Spell Rings go to every player. Someone who joins later gets the ones they missed.
+- Progressive equipment gives every player the next piece for their own tribe.
+- Other items go in player 1's bag, or the next player's if it is full (player 1 still gets them at their
+  feet with "Items Dropped At Your Feet").
+- A trap hits one random player, with its visual effect (Trap Visuals) on whoever it hits. The Chalice Element
+  Trap changes the shared chalice.
+- Free Cure Magicite gives every player a Stone of Cure.
+- With DeathLink, any player running out of hearts sends a death, and a death from someone else takes out the
+  whole party.
 
 ## Items dropped at your feet
 
 With **Items Dropped At Your Feet**, received items are put on the ground in
 front of you instead of in your bag, so you only pick up what you want and
 the bag doesn't fill up by itself. Materials, food, recipes, magicite and
-Phoenix Downs are dropped. Progressive Equipment always goes in your bag . 
-Artifacts, stage keys and Spell Rings  still go straight to you unless you 
-enable Keep picked-up artifacts.
+Phoenix Downs are dropped. Artifacts are dropped too when **Keep Picked-Up
+Artifacts** is on (it is by default), and otherwise they go straight into your
+artifact list. Progressive Equipment always goes in your bag, and stage keys and
+Spell Rings always go straight to you.
 
 An item counts as received as soon as it is on the ground. Items are only
-given inside a dungeon or a town, one at a time. Items left on the ground are 
-gone once you leave the area. If you missed one, use `/resend` in the client 
+given inside a dungeon or a town, one at a time. Items left on the ground are
+gone once you leave the area. If you missed one, use `/resend` in the client
 to drop the last item again, or `/resend <item name>` for any item you have received.
 
 ## Keep picked-up artifacts
@@ -126,7 +206,7 @@ Unknown. The pack's hotspot map icons show the usual elements.
 
 ## Progressive Equipment
 
-With the Progressive Equipment option, the item pool gets 6 each of 
+With the Progressive Equipment option, the item pool gets 6 each of
 Progressive Weapon, Progressive Armor and Progressive Tribal Gear (shield,
 gauntlets, helm or belt, depending on your tribe). Each one puts the next
 piece for your tribe in your bag, for example a Lilty's lance goes Partisan,
@@ -180,6 +260,13 @@ Artifacts to your `start_inventory`.
   only go into your command list once you have the matching ring. Receiving
   a Ring of Fire, Blizzard, Thunder or Life unlocks its magicite right away.
   The Ring of Cure is an artifact, so Cure stays locked until you find it.
+- **Free Cure Magicite:** each time you enter a dungeon you get a Stone of
+  Cure. With Magicite Needs Its Ring it only works once you have the Ring of
+  Cure.
+- **Extra Spell Rings:** adds a Ring of Gravity, Holy, Slow, Stop and Haste
+  to the game and the item pool. Like the other magic rings, each casts its spell
+  from the command list without magicite. The logic never needs them. The
+  PopTracker pack shows them in the **Extra Spell Rings** group.
 - **Always Best Bonus Tier:** the end-of-dungeon bonus always gives the best
   reward tier your score reached, instead of a random tier up to it.
 
@@ -269,13 +356,14 @@ job is Merchant, so not every game has it. The Selkie Peddler, who turns up
 on other stages, and the blacksmiths' crafting aren't checks either.
 
 Keep the client connected while shopping: it sees the purchase on the
-yes/no screen. The PopTracker pack's **Shops** tab has a map of each town
+yes/no screen. The PopTracker pack's **Towns** tab has a map of each town
 with a green box at every shop, holding a section per slot.
 
 ## DeathLink
 
 With **DeathLink** on, running out of hearts in a dungeon sends a death to the
-other DeathLink players, and a death from them empties your hearts. You can
+other DeathLink players, and a death from them empties your hearts (in
+multiplayer, every player's). You can
 switch it for your slot from the client at any time:
 
 - `/deathlink off` or `/deathlink on`
@@ -298,6 +386,68 @@ The client sends the hint when it sees the new stamp, so keep it connected.
 It remembers which stamps already gave a hint, so loading an older save
 doesn't hint again. A stamp only gives a hint the first time you get it.
 
+The PopTracker pack has a **Mog Stamps** group with an icon for each stamp,
+and a pin for each Moogle Nest on its dungeon or town map. They light up and
+clear as you collect stamps. The pins show with the Mog Stamps goal or Mog
+Stamp Hints.
+
+## Mog Grooming
+
+In a Moogle Nest you can groom the Moogle: dye its fur with the **Red**,
+**Blue** and **Green** dyes, **Wash** the dye out, or **Trim** its fur. The
+Moogle's fur is shared by every nest, so it doesn't matter which one you use.
+Tipa has a nest from the start.
+
+- **Victory Goal: Mog Grooming** - win by grooming the Moogle enough.
+  **Mog Grooming Goal** picks what counts: **dye** (that much of its fur dyed,
+  in any colours), **trim** (that much of it cut) or **both**.
+  **Mog Grooming Percent** sets how much, from 10 to 95 (default 50). A few
+  spots on the Moogle can't be reached or is very hard to get, so it never asks for more than 95.
+- **Grooming Tools** - the five tools are items: **Red Dye**, **Blue Dye**,
+  **Green Dye**, **Mog Soap** (the Wash tool) and **Mog Scissors** (the Trim
+  tool). A tool does nothing until you've found it. It's **with_goal** by
+  default (only with the Mog Grooming goal), and can be **off** or **always**.
+- **Mog Grooming Checks** - **radars**, **milestones** or **all**:
+  - **Radars:** in this game, the colour the Moogle's fur shows most sets the
+    GBA radar. Each one is a check: **Mog Radar - Red (Monster Radar)**,
+    **Mog Radar - Green (Score Radar)** and **Mog Radar - Blue (Treasure
+    Radar)**. A colour only wins if it clearly beats the other two, and big
+    rings around the body and lines out from the centre count much more
+    than scattered dabs.
+  - **Milestones:** **Mog Grooming - Dyed 25% / 50% / 75%** (in any colours)
+    and **Mog Grooming - Cut 25% / 50% / 75%**.
+  - With Grooming Tools on, a radar check needs its colour's dye, the dye
+    milestones need any dye, and the cut milestones need the scissors.
+- **Mog Grooming Only** - a seed of only the Moogle. This world has no
+  chests or other checks, just the 9 grooming checks and the Mog Grooming
+  goal. The tools are items, and you start with one random dye. It's a short
+  seed to play on its own, or to join a multiworld with.
+
+While you're in a Moogle Nest, the top of the screen shows how far you've
+got ("Dyed 54%/50%  Cut 0%/50%") and how much of each colour there is. If you
+pick a tool you haven't found, it says which item you need. Cut fur can
+still be dyed. If you cut too much, `/regrow` in the client grows the fur
+back to full length and keeps its colours. It shows on your next stroke.
+
+Keep the client connected: it checks the Moogle's fur while you're in a nest.
+The radar checks also count from anywhere, since your save keeps the radar.
+
+## Starting stats
+
+**Starting Stats** changes each tribe's starting Strength, Magic and Defense. Artifacts and equipment add to them as
+usual.
+
+- **Shuffle Tribes:** each tribe gets another tribe's stats.
+- **Same Total:** each tribe keeps its total, but the points are spread at random.
+- **Fully Random:** each stat is a random number.
+
+**Starting Stats Minimum** and **Starting Stats Maximum** set how low and how high a stat can go in the last two modes.
+**Starting Hearts** sets how many hearts every character starts with, from 2 to 8 (the game's own is 4). Heart
+artifacts still add one each, up to the game's limit of 8.
+
+Male and female characters of a tribe always get the same stats, and so does every player of that tribe in co-op. The
+stats also apply to characters in an existing save, and the spoiler log lists them.
+
 ## Dungeon shortcuts
 
 Each of these options opens part of one dungeon from the start. They only
@@ -314,6 +464,7 @@ make the dungeon quicker: the logic doesn't change.
 | Conall Curach Log Bridges | The log bridges are there without bombing Daemon's Court's logs |
 | Rebena Te Ra Gates Open | The switch gates and barriers start open (not the item pedestals) |
 | Unknown Element Puzzle Solved | Lynari Desert's hotspot gives Unknown right away, and its element obstacles are gone (saved in your save file) |
+| Lynari Desert North Exit | A quicksand pit at the first area's northern dead end (where the two rock pillars were) drops you into the second area. The PopTracker map shows it as a gold marker |
 
 ## Chests with extra requirements
 
@@ -324,7 +475,7 @@ make the dungeon quicker: the logic doesn't change.
   cast the spell for you). They only hold filler items unless the
   "Rebena Te Ra Timed Chests" option is on.
 
-## Credis / Shoutouts
+## Credits / Shoutouts
 PaulSRC
 - Created the awesome title and AP client logos
 
@@ -334,5 +485,5 @@ Zcanann
 ACluelessBull, Scionceon
 - Other AMAZING devs who have looked into the game and spent HOURS of time collecting research notes / ideas
 
-And of course, the amazing community! 
-- For all the spend hours sending bug reports / ideas and just great overall research notes :)
+And of course, the amazing community!
+- For all the hours spent sending bug reports / ideas and just great overall research notes :)

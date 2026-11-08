@@ -1,9 +1,12 @@
 # Blue Prince
 
 ## Latest
-- <a href="https://github.com/BatmenzDW/Archipelago/releases/download/v0.1.3/blueprince.apworld">Latest Version (0.1.3)</a>
+- <a href="https://github.com/BatmenzDW/Archipelago/releases/download/v0.1.4/blueprince.apworld">Latest Version (0.1.4)</a>
 
 ## All Versions
+
+#### v0.1.4
+- <a href="https://github.com/BatmenzDW/Archipelago/releases/download/v0.1.4/blueprince.apworld">https://github.com/BatmenzDW/Archipelago/releases/download/v0.1.4/blueprince.apworld</a>
 
 #### v0.1.3
 - <a href="https://github.com/BatmenzDW/Archipelago/releases/download/v0.1.3/blueprince.apworld">https://github.com/BatmenzDW/Archipelago/releases/download/v0.1.3/blueprince.apworld</a>

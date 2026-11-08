@@ -110,6 +110,21 @@
       "title": "v0.9.5",
       "version_simple": "0.9.5",
       "world_version": "0.9.5"
+    },
+    "v0.9.6": {
+      "created_at": "2026-11-08T01:03:56Z",
+      "description": "\n### Fixed\n\n- The day/night cycle should no longer freeze when a tutorial step is skipped\n- Woolhaven tarot cards should no longer hold items out of logic. They now need all four\n  Bishops, and are left out of seeds whose goal doesn't go that far.\n- Sermon checks could stop for good if the last sermon upgrade arrived before you'd preached them\n  all. The sermon meter now keeps filling while sermon checks remain.\n- Building checks need the tech that unlocks the building correctly now in the universal tracker.\n- `region_access_order: all_unlocked` now correctly opens every region.\n- Broom Level 10 is gone. Turns out there are only 9.\n- Snail Shrines now need Anura, in the universal tracker.\n- The Archipelago panel no longer freezes if it fails to draw. Escape or the pause button should\n  always close it.\n- An item arriving just as you connect can no longer be given twice by accident.\n- Death Link no longer stays attached after you disconnect.\n- `death_link: true` and `death_link: false` no longer fail generation.\n\n### Added\n\n- Loading a save that has never used AP asks first. Connecting a save that was played on\n  a different seed or slot stops and asks before anything is given to it.\n- Quitting to the main menu now disconnects automatically, so a server cant follow you into another save.\n  It also stops a reconnect that was still retrying.\n- The example YAML now lists the Death Link options.\n- Achievements are now a toggle so you can disable them. Since some of this mod will literally give you hard to earn\n  achievements for free.\n\n",
+      "download_url": "https://github.com/IanCichy/CultOfTheLamb_Archipelago/releases/download/v0.9.6/cult_of_the_lamb.apworld",
+      "has_manifest": true,
+      "hash_sha256": "282305ad599df820bc3ec754cddfa038f96ac3a589434f14f793270c2195fd98",
+      "html_url": "https://github.com/IanCichy/CultOfTheLamb_Archipelago/releases/tag/v0.9.6",
+      "minimum_ap_version": "0.6.6",
+      "size": 83203,
+      "source_url": "https://api.github.com/repos/IanCichy/CultOfTheLamb_Archipelago",
+      "tag": "v0.9.6",
+      "title": "v0.9.6",
+      "version_simple": "0.9.6",
+      "world_version": "0.9.6"
     }
   }
 }

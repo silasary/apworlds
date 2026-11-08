@@ -7,7 +7,7 @@ discover a hidden 46th room within the mansion thereon to secure his inheritance
 
 
 ## Downloads
-- <a href="https://github.com/BatmenzDW/Archipelago/releases/download/v0.1.3/blueprince.apworld">Latest Version (0.1.3)</a>
+- <a href="https://github.com/BatmenzDW/Archipelago/releases/download/v0.1.4/blueprince.apworld">Latest Version (0.1.4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

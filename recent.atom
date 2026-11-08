@@ -2,174 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-08T00:25:39.933587+00:00</updated>
+  <updated>2026-11-08T06:22:37.352250+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.10.0</id>
-    <title>CrossCode v0.10.0</title>
-    <updated>2026-11-04T05:42:14+00:00</updated>
-    <author>
-      <name>CodeTriangle</name>
-    </author>
-    <content># Changes since 0.9.8&#13;
-&#13;
-## Additions&#13;
-&#13;
-* Added platform quest locations and Facility X goal (@buanjautista, #103)&#13;
-  * Platform quests are in the pool when Quest Randomization is enabled.&#13;
-  * Quest Randomization is required for Facility X goal.&#13;
-* Added trap support and initial set of traps (@buanjautista, #105)&#13;
-  * Full list of traps is available in the template YAML and on Discord.&#13;
-&#13;
-## Changes to Generation&#13;
-&#13;
-* The number of SP upgrades in the pool is now decided by an option, `progressive_sp_unlocks` (@buanjautista, #102)&#13;
-&#13;
-## Changes to Locations&#13;
-&#13;
-* Renamed Maroon Valley locations to "Valley" to make it consistent with other region names (@Valkhiya, #112)&#13;
-&#13;
-## Changes to Logic&#13;
-&#13;
-* Renamed all regions to more readable names and split regions into more granular chunks reflecting their actual location (@Valkhiya, #107)&#13;
-  * This will also improve the user experience for the small minority of worlds that use region names for hints.&#13;
-&#13;
-## Fixes to Logic&#13;
-&#13;
-* Fixed many logic issues discovered while changing regions (@Valkhiya, #107)&#13;
-  * **Ba'kii Kum Shade Statue** no longer requires **Maroon Cave Pass**.&#13;
-  * **Encrypted Key: A Switch in Altitude** was moved to fall from rise.&#13;
-  * **Crocus Pocus** moved to harbor from rise.&#13;
-  * **The Observatory** moved to rise from wasteland.&#13;
-  * **Heating the Hermit** moved to bergen from of mine.1, now requires mine.2 as condition (mine.1 doesn't contain carritrichs).&#13;
-  * **Building a Base** moved to bergen from mine.1, now requires mine.4 as condition instead of heat (bringing it in line with egg pot botanics region).&#13;
-  * **Raising the Steaks** now required garden.mid access instead of garden (garden doesn't contain bee hives).&#13;
-  * Observatory goal moved to rise from harbor&#13;
-  * Facility X goal moved to ridge from ridge.north&#13;
-* Added bidirectional region connectors (@Valkhiya, #107)&#13;
-  * Passage from trail to valley now requires green leaf and blue ice instead of just blue ice&#13;
-  * Passage from fall to garden now requires red flame and green seed instead of just green seed&#13;
-  * Passage from fall to ridge now requires red flame and star instead of just star&#13;
-&#13;
-## Internal Changes&#13;
-&#13;
-* Merge Open World into CCMultiworldRandomizer (@CodeTriangle, #73)&#13;
- * The mod will prompt you to uninstall and disable CC-Open-World.&#13;
-* Introduced an automation system to cut down on packaging issues.&#13;
-&#13;
-# Changes since 0.10.0 Prerelease 4&#13;
-&#13;
-## Changes to Generation&#13;
-&#13;
-* Merged Archipelago 0.6.8 into the development branch.&#13;
-&#13;
-## Changes to Options&#13;
-&#13;
-* Added a link to a wiki page about the different trap types to the description of `trap_weights`.&#13;
-&#13;
-## Changes to Mod&#13;
-&#13;
-* Modified certain game files to patch data rather than replace it (@buanjautista, #114)</content>
-    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.10.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ClTYOFEVlL/SWD2-Archipelago/releases/tag/v0.3.0</id>
-    <title>SteamWorld Dig 2 v0.3.0</title>
-    <updated>2026-11-04T08:04:29+00:00</updated>
-    <author>
-      <name>Tails</name>
-    </author>
-    <content>## New&#13;
-- **Generators are now locations**, and the Reactor door needs their Device items. `Generators Required` sets all 4 (default) or the vanilla 3&#13;
-- **Orbsanity option**: Orb containers as locations (85)&#13;
-- **Secretsanity option**: Secret Areas (85) and Mini Secrets (35) as locations&#13;
-- **Added Traps**. Trap Link included!&#13;
-  - Leaky Tank Trap: Empties your water tank&#13;
-  - Darkness Trap: Empties your lamp&#13;
-  - Gravity Trap: Increases your gravity&#13;
-  - Freeze Trap: Stops you from moving&#13;
-  - Cutscene Trap: Makes Dorothy talk to herself about random things&#13;
-- **Tool item options**&#13;
-  - Pressure Bomb, Jackhammer and Jet Engine: All progressive, or a main item you need before the upgrades work&#13;
-  - Hook Shot and Grenades: Progressive, or both tiers as individual items&#13;
-- **Progressive Mobility option**: Combines the Hook and Jet items into one progressive item&#13;
-- Vectron is now skipped, freeing the Jet Engine podium of its past plando-y ways. It can hold any item now&#13;
-- The opening cutscene is now skipped&#13;
-- Banners in game when you connect or disconnect&#13;
-- Tracker tab in the client when Universal Tracker is installed&#13;
-&#13;
-## Logic&#13;
-- Yarrow and Sludge River Bend no longer need the Jet&#13;
-- Temple of the Destroyer - Boss Entrance: the Cog Container and Secret Area now take the Hook or Armor (previously Armor only)&#13;
-&#13;
-## Changed&#13;
-- "Hub" areas are now called "Oasis"&#13;
-- `teleporter_locations` is now `teleportersanity`&#13;
-- `hell_cave_locations` is now `include_trials`&#13;
-&#13;
-## Fixed&#13;
-- `/auto_patch` now only takes the files it needs from the game, preventing any weird file shenanigans</content>
-    <link href="https://github.com/ClTYOFEVlL/SWD2-Archipelago/releases/tag/v0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/vicr123/Archipelago/releases/tag/20261104-1</id>
-    <title>Candy Box 2 v1.20261104.1</title>
-    <updated>2026-11-04T08:24:07+00:00</updated>
-    <author>
-      <name>Victor Tran</name>
-    </author>
-    <author>
-      <name>Aren Merzoian</name>
-    </author>
-    <content>This version of the Candy Box 2 randomizer fixes the following bugs:&#13;
-- Long item names no longer cause the button in the shop to disappear.&#13;
-- The hint client now updates live as hint statuses are changed.&#13;
-&#13;
-The client is backwards compatible with apworlds generated with version 20260822-1&#13;
-&#13;
-Tested on AP 0.6.8, YMMV on later versions. Requires AP 0.6.5 or later.&#13;
-&#13;
-Game client available at: https://candybox2-ap.vicr123.com/20261104-1/</content>
-    <link href="https://github.com/vicr123/Archipelago/releases/tag/20261104-1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.9</id>
-    <title>PokePark v1.2.9</title>
-    <updated>2026-11-04T13:16:04+00:00</updated>
-    <author>
-      <name>Joe Mama (Mekurushi)</name>
-    </author>
-    <content>- fixed color tag line breaking that crashes the game&#13;
-**Full Changelog**: https://github.com/Mekurushi/Archipelago_Pokepark/compare/1.2.8...1.2.9</content>
-    <link href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.9"/>
-  </entry>
-  <entry>
-    <id>https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v2.0.1</id>
-    <title>The Legend of Zelda - Oracle of Ages v2.0.1</title>
-    <updated>2026-11-04T15:26:55+00:00</updated>
-    <author>
-      <name>josephanimate2021</name>
-    </author>
-    <author>
-      <name>Glan9</name>
-    </author>
-    <author>
-      <name>Piapiou (SenPierre)</name>
-    </author>
-    <author>
-      <name>FlameStripe</name>
-    </author>
-    <content>Hot fixes !&#13;
-&#13;
-* Fixing several explosive logic&#13;
-* Fixing D11 Logic&#13;
-* Fixing Tokay Flipper Cave Logic&#13;
-* Adding several client flag for the tracker</content>
-    <link href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v2.0.1"/>
-  </entry>
   <entry>
     <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha1</id>
     <title>Crash Team Racing v0.3.0a1</title>
@@ -1073,6 +910,51 @@ Added aliasing to UT support (Locations in UT now include what level they are in
     <link href="https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/tag/V1.1.0"/>
   </entry>
   <entry>
+    <id>https://github.com/EverydaySimpleDev/Archipelago/releases/tag/ffcc-beta-0.3.0</id>
+    <title>Final Fantasy Crystal Chronicles v0.3.0</title>
+    <updated>2026-11-07T01:59:43+00:00</updated>
+    <author>
+      <name>EverydaySimpleDev</name>
+    </author>
+    <content># New Presets / Goals!&#13;
+&#13;
+- **Option presets:** pick Beginner, Full Randomizer, Chaos, Monster Hunter, Speedrun, Stamp Collector or Mog Grooming Only, then tweak anything you like&#13;
+- **Mog Stamps goal:** collect all 23 stamps from the Moogle Nests&#13;
+- **Mog Grooming goal:** dye or trim the Moogle's fur (10–95%)&#13;
+  - Grooming tools can be items you have to find (dyes, Mog Soap, Mog Scissors)&#13;
+  - Up to 9 new checks: a radar for each dye, plus 25/50/75% dye and trim milestones&#13;
+  - **Mog Grooming Only:** a short game with no dungeons, just you and the Moogle&#13;
+&#13;
+## New options&#13;
+- **Starting Stats:** shuffle the tribes' stats, respread each tribe's points, or roll them fully at random (both genders and every co-op player of a tribe match)&#13;
+- **Starting Hearts:** start with 2 to 8 hearts&#13;
+- **Show Item Messages:** items you send and receive appear at the bottom of the screen (on by default)&#13;
+- **Show Play Timer:** play time, or a speedrun timer that starts at New Game and stops on the final blow (or run it by hand with L + R + Z and the D-pad)&#13;
+- **Show Enemy Health:** a bar, numbers or both&#13;
+- **Extra Spell Rings:** Gravity, Holy, Slow, Stop and Haste&#13;
+- **Free Cure Magicite**, **Gil Weight**, **Lynari Desert North Exit** and a new **Command Slot Trap**&#13;
+&#13;
+## Multiplayer&#13;
+- Items go to whichever player slot you're playing. Try the new `/party` command&#13;
+- In co-op, everyone gets artifacts, stage keys and spell rings, even if they join late&#13;
+- Progressive equipment matches each player's tribe&#13;
+- Traps hit one random player&#13;
+&#13;
+## Chests &amp; client&#13;
+- Chests with another player's item show the **Archipelago logo** (and no more lag opening them)&#13;
+- `/regrow` grows the Moogle's fur back if you trimmed too early&#13;
+- Seed files are now `.apffcc` (old `.ffcc` still works)&#13;
+&#13;
+## Fixes / Other Updates&#13;
+- Ring of Cure is now its own item, so you can hint it, even with Progressive Artifacts on&#13;
+- Monster Hunt matches kills more reliably and skips enemies that never appear&#13;
+- The "Items Dropped At Your Feet" description is fixed&#13;
+- Updated gender menu in player creation to include "Other" as a option and matched most if not all in game text to match it! I am so sorry if I missed one :)&#13;
+- Setup guide, game page and tracker README are all up to date&#13;
+- Code cleanup to stay inline with AP coding standards</content>
+    <link href="https://github.com/EverydaySimpleDev/Archipelago/releases/tag/ffcc-beta-0.3.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/v0.7.5</id>
     <title>Cyberpunk 2077 v0.7.5</title>
     <updated>2026-11-07T03:02:23+00:00</updated>
@@ -1438,5 +1320,134 @@ You will have to update your previous version existing yamls, here are all the a
 **Diff compared to v0.1.0**: https://github.com/Badhamknibbs/ArchipelagoNeonWhite/compare/v0.1.0...v0.2.1&#13;
 </content>
     <link href="https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/tag/v0.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BatmenzDW/Archipelago/releases/tag/v0.1.4</id>
+    <title>Blue Prince v0.1.4</title>
+    <updated>2026-11-07T23:59:40+00:00</updated>
+    <author>
+      <name>deefdragon</name>
+    </author>
+    <author>
+      <name>BatmenzDW</name>
+    </author>
+    <content>Patch Notes:&#13;
+&#13;
+- Renamed a large number of location checks for clarity&#13;
+- Fixed Advanced Experiments not requiring all Microchips and Scorch Sundial&#13;
+- Fixed other car trunk spawns being in logic when the upgrade disk can't be spent/blocked from spawning.&#13;
+- Reworked trunk rarities&#13;
+- Improved Commissary logic&#13;
+&#13;
+As this is an Alpha, expect issues and please report them when you encounter them on GitHub Issues or in the appropriate Discord Channel/Thread.</content>
+    <link href="https://github.com/BatmenzDW/Archipelago/releases/tag/v0.1.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/anonymous-heap/Archipelago/releases/tag/cvaos-apworld-2026.10.30</id>
+    <title>Castlevania - Aria of Sorrow v2026.10.30</title>
+    <updated>2026-11-08T02:43:01+00:00</updated>
+    <author>
+      <name>dem1995</name>
+    </author>
+    <content>- **Logic matches the logic spreadsheet again.** The pickup requirements now come from the current [logic spreadsheet](https://docs.google.com/spreadsheets/d/1FraahXhneKxnXsj_FX9LxrFJLJpsDQJNIrsSCmVWqEo/edit?gid=430351875#gid=430351875). Two pickups gain routes in default logic, and several more gain routes that need a trick option.&#13;
+- **New option: Inbounds Zip Logic.** Some routes in the spreadsheet need an inbounds zip. Like quick-save resets, no Logic Difficulty Preset expects one, so logic uses them only when you set this option to `in_logic`.&#13;
+- **Nothing else changes.** Patching and the clients are the same as in 2026.09.04, so seeds from either release play with either version, and you can update partway through a seed.&#13;
+&#13;
+**Fixes**&#13;
+- Logic no longer expects Hippogryph alone to reach Tallest Ascent [009 Lance] from rooms 006 and 00A.&#13;
+- Logic no longer expects Skeleton Blaze alone to reach Aqueducts [70E Super Potion (A)].&#13;
+&#13;
+**Installing**&#13;
+- Put `cvaos.apworld` in your Archipelago `custom_worlds` folder, replacing any older copy. It needs Archipelago 0.6.6 or newer.&#13;
+- Seeds from 2026.09.04 play with this version, and seeds from this version play with the 2026.09.04 clients, so you can update partway through a seed.&#13;
+</content>
+    <link href="https://github.com/anonymous-heap/Archipelago/releases/tag/cvaos-apworld-2026.10.30"/>
+  </entry>
+  <entry>
+    <id>https://github.com/anonymous-heap/Archipelago/releases/tag/cvaos-apworld-2026.11.01</id>
+    <title>Castlevania - Aria of Sorrow v2026.11.1</title>
+    <updated>2026-11-08T02:44:00+00:00</updated>
+    <author>
+      <name>dem1995</name>
+    </author>
+    <content>- **New option: Progressive Movement.** Three Progressive Movement items replace Flying Armor, Malphas and Giant Bat, and always give them in that order. Your own copies show up as Skull Keys and need the client connected to grant their soul.&#13;
+- **Universal Tracker support.** UT now rebuilds your seed's logic from the server, with no YAML needed, including your logic difficulty and Hard Mode settings. Seeds generated before this release only give it their goal and Hard Mode setting, so it uses the defaults for their other logic options. UT also gets a map tab for the whole castle, the Chaotic Realm and each area, with a pin for every location coloured by logic. It marks where Soma is and follows him from area to area, and nothing extra needs installing. Locations that only an out-of-logic trick reaches show in UT's colour for reachable with tricks.&#13;
+- **New browser map tracker.** Type `/map` in the BizHawk Client or the Collection Client, or press their "Open map" button, to open a map of the castle in your browser. The Launcher also offers it as "Aria of Sorrow Tracker", including from a room page's link. It shows each location's logic status and where Soma is. By default it shows only the parts of the castle you have explored, which the Castle Maps reveal by area, and a toggle shows everything. Find Route draws the way from Soma's room to the location you select, except in race rooms. It runs on your own machine and needs nothing else installed.&#13;
+- **New option: Hard Mode Pickups.** The five Hard Mode-only pickups can be shuffled with Hard Mode (the default), always (they then spawn in normal mode too), or never.&#13;
+- **Giant Bat stays late.** With item smoothing on, the early mobility soul is now Malphas or Hippogryph, never Giant Bat.&#13;
+- **The Ancient Books explain themselves.** With Ancient Book Soul Drops on, Books 1 and 3 now say in the pause menu that their soul always drops. Book 2 has no drop effect, because the Giant Bat soul is a multiworld item, and the option text now says so.&#13;
+- **Clearer Advance Collection messages.** If the collection is running the Japanese or European Aria of Sorrow, Circle of the Moon or Harmony of Dissonance, the client now says which one and asks for the US Aria of Sorrow.&#13;
+- **Advance Collection installer:** it now asks where game.exe is if your Steam library isn't on the default path. If an install fails partway, it puts the collection's stock files back, and tells you if it couldn't. It now installs any seed, including ones generated for BizHawk, and the Launcher has a **CVAoS Collection Restore** button that puts the stock game back.&#13;
+&#13;
+- **Renamed option:** "Library-to-Forbidden-Area Button Handling (Study Sealswitch)" is now **Forbidden Area Button**. Existing YAMLs still work, because the setting's name in the YAML (`forbidden_area_button`) is unchanged.&#13;
+&#13;
+**Fixes**&#13;
+- Ability souls you receive (Malphas, Hippogryph, Galamoth and the rest) now arrive switched on. Before, they arrived switched off in the Ability menu and did nothing until you turned them on.&#13;
+- With Oops! All Whips on, logic no longer expects a weapon to break floors or ceilings, since every weapon swings like the Whip Sword. It waits for Black Panther instead.&#13;
+- With the Study Sealswitch shuffled, logic no longer expects you to climb from the Forbidden Area up to the Study without it.&#13;
+- Logic no longer counts on farming the Manticore that guards its room only once.&#13;
+- Seeds with the Study Sealswitch shuffled have a Lucky Charm again. The Sealswitch now takes the place of a 100 Gold pickup.&#13;
+- The room where the Forbidden Area button was no longer shows Castle Corridor's particle effects.&#13;
+- A DeathLink that arrives while Sky Fish is active now plays Soma's death animation.&#13;
+- A received item's "Got" box no longer replaces the box for something you picked up at the same moment.&#13;
+- Received weapons, armor and accessories now play the equipment pickup sound.&#13;
+- On a save made with the game's Copy option, received souls now count the ones you already had. Received gold now stops at the game's cap of 999,999.&#13;
+- The Collection Client now sends your checks again after it reconnects.&#13;
+- Starting inventory is now actually given to you in game, in seeds generated with this version.&#13;
+- Seeds already in progress keep working after you update. Their starting inventory still isn't given in game.&#13;
+- Item smoothing no longer puts progression in locations you excluded, takes it out of priority locations, or moves plando'd Ancient Books.&#13;
+- Seeds with many priority locations (about 25 or more) no longer fail to generate when item smoothing is on.&#13;
+- With Soul Shuffle and Keep Soul Drop Rates on, a Headhunter, Death, Legion or Balore soul that landed on an ordinary enemy could never drop. It now drops at that enemy's usual rate.&#13;
+- DeathLink deaths no longer pile up: one that arrives while Soma is already dead is dropped, and several during a pause kill him once.&#13;
+- Reconnecting while Soma is dying no longer sends his death to everyone a second time.&#13;
+- Moving on to a seed without DeathLink no longer leaves DeathLink switched on in the client.&#13;
+- A received item is no longer given twice when BizHawk pauses or the connection drops at the wrong moment.&#13;
+- Installing a different seed into the collection while the client is open now reconnects you as the new seed's slot.&#13;
+- The BizHawk client no longer stops working when a request times out, for example while BizHawk is paused.&#13;
+- Patching now checks that the base ROM is the original US ROM and says so if it isn't.&#13;
+- When the generator needs extra filler, it now makes only plain filler, never a soul or a Hard Mode item.&#13;
+- The Randomize Pickups option, which did nothing, is no longer shown.&#13;
+&#13;
+**Installing**&#13;
+- Put `cvaos.apworld` in your Archipelago `custom_worlds` folder, replacing any older copy. It needs Archipelago 0.6.6 or newer.&#13;
+- Seeds from 2026.09.04 and 2026.10.30 still play with this version, so you can update partway through one. Seeds generated with this version need this version's clients, and older clients refuse them.&#13;
+</content>
+    <link href="https://github.com/anonymous-heap/Archipelago/releases/tag/cvaos-apworld-2026.11.01"/>
+  </entry>
+  <entry>
+    <id>https://github.com/anonymous-heap/Archipelago/releases/tag/cvaos-apworld-2026.11.07</id>
+    <title>Castlevania - Aria of Sorrow v2026.11.7</title>
+    <updated>2026-11-08T02:44:31+00:00</updated>
+    <author>
+      <name>dem1995</name>
+    </author>
+    <content>- **New Experimental options.** A collapsed "Experimental" group on the options page holds four new options and a new Soul Shuffle value. Their balance is measured but not play-tested, so they may change between versions. Each one is opt-in and off by default, so released YAMLs keep working and play as before. A Soul Shuffle of "random" still never picks the new value. The options page's "Experimental" preset turns all five on, at the settings they were measured with.&#13;
+- **Experimental: Enemy Checks.** The first defeat of each boss ("bosses", 10 checks) or of each kind of enemy ("all", 112 checks) is a check. The client reads defeats from the game's Enemy List, so one made while it is disconnected is sent when it reconnects. Each check adds one item from this game to the pool, and it is never progression. Iron Golem's and Final Guard's checks hold only filler for now. With "all" and the default hint cost, a hint costs 22 checks instead of 11.&#13;
+- **Enemy checks in hints, groups and trackers.** A hint for an enemy check names the rooms where that enemy appears. Location groups such as "Boss Defeats", "Unrouted Enemy Defeats" and "Chapel Defeats" let you exclude or prioritize enemy checks together. Both map trackers pin each check in every room where its enemy appears.&#13;
+- **Most enemy checks come late in logic.** The routes to most rooms' enemies aren't recorded yet, so logic expects all eight movement souls before those checks. You will usually make them much earlier, so once one of an enemy's rooms is reachable, the trackers show its check in their colour for reachable with tricks. A boss's check needs only a way into its arena.&#13;
+- **Experimental: Soul Shuffle "matched".** Each soul trades places only with a soul of the same colour and strength tier, rated from community tier lists. Each enemy keeps its own soul drop rate, so a run gives about as many souls of each colour and tier as an unshuffled one.&#13;
+- **Experimental: Enemy Drop Rate.** Enemies drop their soul and their common item more often, from 100% (no change) up to 1000%. Enemies your seed reaches early get only a small part of the boost, while strong souls you could find early, rare drops and the better items keep their usual chance. Above 100, it replaces Multiply Soul Drop Rates.&#13;
+- **Experimental: Item Drop Shuffle.** The items that enemies drop move into the item pool, so any player's location can hold them. An enemy whose drop moved drops a similar item from this game instead. The drops are then dealt out again, so early enemies drop cheap items and the castle's last enemies drop the best ones.&#13;
+- **Experimental: Wide Item Smoothing.** Weapons and armor that are too good for the start of a run stay out of it, whether they come from a pickup, an enemy check, another world or an enemy drop. It also makes sure you hold an early weapon and armor, and it sets Item Smoothing to strict and Item Smoothing Order to spheres. In a multiworld it runs Archipelago's progression balancing itself, which a host can turn off with `wide_smoothing_runs_balancing` in host.yaml.&#13;
+- **New client commands: /souls and /drops.** In both clients, `/souls` lists which enemy drops each soul and how often, and `/drops` lists the items each enemy drops. They read the ROM you are playing, so they work for any seed.&#13;
+- **Drop tables in the spoiler.** When a seed changes which enemy drops which soul or item, or how often, the spoiler now lists every enemy's drops and their chances.&#13;
+- **Received gold gets its banner.** Gold you receive now shows the game's "$100"-style box and plays the gold sound, as a gold pickup does.&#13;
+- **Items have one name.** Every copy of an item now shares its plain name, so every Potion is "Potion" and a hint for "Potion" can find any of them. Location names still tell the pickups apart, and seeds from earlier versions still grant and track the same items. A YAML that names a numbered copy, such as "Potion (A)", still works in local and non-local items, start hints, item links' item pools and plando lists, where the old name now stands for every copy. In `start_inventory` and an item link's replacement item, use the plain name instead.&#13;
+- **Local play-data log.** The client now writes a log of each run to the `cvaos_play_data` folder inside your Archipelago `logs` folder. It records the souls you own, your checks, your equipped weapon and armor, and the drops your Enemy List shows. Nothing in it is sent to the server or to other players.&#13;
+- **Saves from another seed send no checks.** If you load a save that has received more items than the server has sent for this seed, such as one from another seed or a New Game+ started from one, the client holds back its checks and goal and prints a warning. It carries on once you load this seed's save. If the server lost its most recent checks in a crash, your own save can trip this too; type `/trust_save` to send its checks.&#13;
+- **New seeds need this version.** Seeds generated with this version need this apworld to apply their patch and this version's clients to play. An older apworld stops with "Unknown procedure", and an older client refuses the ROM. Seeds from the 2026.09.04, 2026.10.30 and 2026.11.01 releases still play with this version, so you can update partway through one.&#13;
+- **Patches that need a newer apworld say so.** From this version on, applying a patch that holds a feature this apworld doesn't know fails with a message naming the version the seed needs, instead of building a ROM without that feature.&#13;
+- **Cheaper filler.** When Archipelago needs extra filler for this game, as item links do, it now makes only cheap consumables and gold. Before, a linked player could get Gungner, Samurai Armor or other mid-game gear at the very start. It also stops adding a consumable you already have 9 of in your pool, the most the game lets you carry, and adds gold instead.&#13;
+&#13;
+**Fixes**&#13;
+- Soma can now pick up a Skull Key while he holds 9. Before, a player who reached 9 Skull Keys while the client was disconnected could no longer collect other players' items.&#13;
+- When the Collection Client or the installer meets a seed it can't use, the message now names every patch format it accepts, rather than only the newest.&#13;
+- For contributors: the routing tool now builds the same graph as generation, a transdoor override that would change nothing fails at load, and an unusable custom pickup icon raises an error that names the problem instead of exiting.&#13;
+&#13;
+**Installing**&#13;
+- Put `cvaos.apworld` in your Archipelago `custom_worlds` folder, replacing any older copy. It needs Archipelago 0.6.6 or newer.&#13;
+- Seeds from 2026.09.04, 2026.10.30 and 2026.11.01 still play with this version, so you can update partway through one. Seeds generated with this version need this version's apworld and clients.&#13;
+</content>
+    <link href="https://github.com/anonymous-heap/Archipelago/releases/tag/cvaos-apworld-2026.11.07"/>
   </entry>
 </feed>

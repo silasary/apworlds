@@ -1,9 +1,18 @@
 # Castlevania - Aria of Sorrow
 
 ## Latest
-- <a href="https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.09.04/cvaos.apworld">Latest Version (2026.9.4)</a>
+- <a href="https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.11.07/cvaos.apworld">Latest Version (2026.11.7)</a>
 
 ## All Versions
+
+#### v2026.11.7
+- <a href="https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.11.07/cvaos.apworld">https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.11.07/cvaos.apworld</a>
+
+#### v2026.11.1
+- <a href="https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.11.01/cvaos.apworld">https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.11.01/cvaos.apworld</a>
+
+#### v2026.10.30
+- <a href="https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.10.30/cvaos.apworld">https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.10.30/cvaos.apworld</a>
 
 #### v2026.9.4
 - <a href="https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.09.04/cvaos.apworld">https://github.com/anonymous-heap/Archipelago/releases/download/cvaos-apworld-2026.09.04/cvaos.apworld</a>
