@@ -1,6 +1,6 @@
 # TFT Archipelago
 
-
+Archipelago world definition for the TFT Archipelago overlay client.
 
 
 ## Downloads

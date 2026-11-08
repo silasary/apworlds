@@ -8,6 +8,9 @@
 #### v0.6.0r2
 - <a href="https://github.com/Alpaka623/tft-archipelago-releases/releases/download/v0.5.9/tft_archipelago.apworld">https://github.com/Alpaka623/tft-archipelago-releases/releases/download/v0.5.9/tft_archipelago.apworld</a>
 
+#### v0.6.0r2
+- <a href="https://github.com/Alpaka623/tft-archipelago-releases/releases/download/v0.5.10/tft_archipelago.apworld">https://github.com/Alpaka623/tft-archipelago-releases/releases/download/v0.5.10/tft_archipelago.apworld</a>
+
 #### v0.6.0
 - <a href="https://github.com/Alpaka623/tft-archipelago-releases/releases/download/v0.5.8/tft_archipelago.apworld">https://github.com/Alpaka623/tft-archipelago-releases/releases/download/v0.5.8/tft_archipelago.apworld</a>
 

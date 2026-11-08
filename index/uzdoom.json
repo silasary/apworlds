@@ -139,6 +139,20 @@
       "title": "UZArchipelago 0.9.2",
       "version_simple": "0.9.2",
       "world_version": "0.9.2"
+    },
+    "uzap-0.9.3": {
+      "created_at": "2026-11-08T15:48:27Z",
+      "description": "# 0.9.3\r\n\r\nThis is ostensibly a bugfix release, mostly focused on fixes to the rule\r\ncompiler and combat logic.\r\n\r\nHowever, it is also a feature release, and a big one, because this release\r\nfinally adds support for\r\n\r\n\ud83d\udd25\ud83d\udd25\ud83d\udd25 [**Hedon Bloodrite episode 1: Crystal Heart**](../../blob/uzap-0.9.3/gzap/wads/hedon_bloodrite/NOTES.md) \ud83d\udd25\ud83d\udd25\ud83d\udd25\r\n\r\nand Hedon support is something that has been a long-term goal of mine since I\r\noriginally started this project nearly two years ago.\r\n\r\nEpisode 2 is likely going to be a while yet; it's both larger and more\r\ncomplicated than episode 1.\r\n\r\n\ud83d\udec8 [Logic pack downloads](../../blob/uzap-0.9.3/gzap/doc/support-table.md)\r\n\r\n- New:\r\n  - Complete logic for Hedon Bloodrite episode 1 (MAP01-MAP10).\r\n- For logic developers:\r\n  - An `AP-ITEM` record without a `pos` field will now define tag and category\r\n    information for that item without adding any locations or items to the\r\n    randomization pool.\r\n  - New `overstock` flag allows configuring behaviour when items get pruned from\r\n    the randomization pool.\r\n  - `scanner { replacement ...; }` is now a valid construct that declares an\r\n    actor replacement to be applied only when scanning, not when playing.\r\n- Fixed:\r\n  - Generation should no longer fail if `AP-REGION` directives are re-ordered\r\n    or if region access rules contain mutual recursion.\r\n  - Another combat logic issue that would draw incorrect conclusions about\r\n    reachability if weapons required by combat logic were not present in the\r\n    pool.\r\n  - Universal Tracker is now aware of which maps are starting maps (and thus\r\n    have different combat logic behaviour in some configurations).\r\n  - Per-map weapon mode no longer forgets about weapons that don't exist in some\r\n    levels.\r\n  - The inventory menu now respects `GZAPRC` `tag` directives for weapons.\r\n  - `item/<name>/<count>` prereqs now work properly rather than always treating\r\n    `count` as 1.",
+      "download_url": "https://github.com/ToxicFrog/doom-mods/releases/download/uzap-0.9.3/uzdoom.apworld",
+      "has_manifest": true,
+      "hash_sha256": "862886eebba8a09f56b932b5cf74f86d45beeabf563438169d885374cbc2af72",
+      "html_url": "https://github.com/ToxicFrog/doom-mods/releases/tag/uzap-0.9.3",
+      "size": 70105,
+      "source_url": "https://api.github.com/repos/ToxicFrog/doom-mods",
+      "tag": "uzap-0.9.3",
+      "title": "UZArchipelago 0.9.3",
+      "version_simple": "0.9.3",
+      "world_version": "0.9.3"
     }
   }
 }
