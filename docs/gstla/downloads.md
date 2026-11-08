@@ -1,9 +1,12 @@
 # Golden Sun The Lost Age
 
 ## Latest
-- <a href="https://github.com/cjmang/Archipelago/releases/download/0.2.3-beta/gstla.apworld">Latest Version (0.2.3b0)</a>
+- <a href="https://github.com/cjmang/Archipelago/releases/download/0.2.4-beta/gstla.apworld">Latest Version (0.2.4b0)</a>
 
 ## All Versions
+
+#### v0.2.4b0
+- <a href="https://github.com/cjmang/Archipelago/releases/download/0.2.4-beta/gstla.apworld">https://github.com/cjmang/Archipelago/releases/download/0.2.4-beta/gstla.apworld</a>
 
 #### v0.2.3b0
 - <a href="https://github.com/cjmang/Archipelago/releases/download/0.2.3-beta/gstla.apworld">https://github.com/cjmang/Archipelago/releases/download/0.2.3-beta/gstla.apworld</a>

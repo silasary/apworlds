@@ -2,11 +2,191 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-08T06:22:37.352250+00:00</updated>
+  <updated>2026-11-08T12:24:38.836355+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
+  <entry>
+    <id>https://github.com/WolfBoi008/One-More-Night/releases/tag/3.1.0</id>
+    <title>Manual_OneMoreNight_WolfBoi008 v3.1.0</title>
+    <updated>2026-11-04T04:29:51+00:00</updated>
+    <author>
+      <name>WolfBoi008</name>
+    </author>
+    <content># Known Issues&#13;
+Same as before.&#13;
+# Changelog&#13;
+- **Added Option: One Nighter.**&#13;
+  - This is currently a Check per minute survived for 5 total minutes, but this may be subject to change based on player feedback and input!&#13;
+- **Added Option: Endless Checks.**&#13;
+- Renamed the Buttonsanity Category used on the Items side to reduce Item Category clutter.&#13;
+- Added a secret Check because @waterlessant12 told me you could do it multiple times.</content>
+    <link href="https://github.com/WolfBoi008/One-More-Night/releases/tag/3.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.10.0</id>
+    <title>CrossCode v0.10.0</title>
+    <updated>2026-11-04T05:42:14+00:00</updated>
+    <author>
+      <name>CodeTriangle</name>
+    </author>
+    <content># Changes since 0.9.8&#13;
+&#13;
+## Additions&#13;
+&#13;
+* Added platform quest locations and Facility X goal (@buanjautista, #103)&#13;
+  * Platform quests are in the pool when Quest Randomization is enabled.&#13;
+  * Quest Randomization is required for Facility X goal.&#13;
+* Added trap support and initial set of traps (@buanjautista, #105)&#13;
+  * Full list of traps is available in the template YAML and on Discord.&#13;
+&#13;
+## Changes to Generation&#13;
+&#13;
+* The number of SP upgrades in the pool is now decided by an option, `progressive_sp_unlocks` (@buanjautista, #102)&#13;
+&#13;
+## Changes to Locations&#13;
+&#13;
+* Renamed Maroon Valley locations to "Valley" to make it consistent with other region names (@Valkhiya, #112)&#13;
+&#13;
+## Changes to Logic&#13;
+&#13;
+* Renamed all regions to more readable names and split regions into more granular chunks reflecting their actual location (@Valkhiya, #107)&#13;
+  * This will also improve the user experience for the small minority of worlds that use region names for hints.&#13;
+&#13;
+## Fixes to Logic&#13;
+&#13;
+* Fixed many logic issues discovered while changing regions (@Valkhiya, #107)&#13;
+  * **Ba'kii Kum Shade Statue** no longer requires **Maroon Cave Pass**.&#13;
+  * **Encrypted Key: A Switch in Altitude** was moved to fall from rise.&#13;
+  * **Crocus Pocus** moved to harbor from rise.&#13;
+  * **The Observatory** moved to rise from wasteland.&#13;
+  * **Heating the Hermit** moved to bergen from of mine.1, now requires mine.2 as condition (mine.1 doesn't contain carritrichs).&#13;
+  * **Building a Base** moved to bergen from mine.1, now requires mine.4 as condition instead of heat (bringing it in line with egg pot botanics region).&#13;
+  * **Raising the Steaks** now required garden.mid access instead of garden (garden doesn't contain bee hives).&#13;
+  * Observatory goal moved to rise from harbor&#13;
+  * Facility X goal moved to ridge from ridge.north&#13;
+* Added bidirectional region connectors (@Valkhiya, #107)&#13;
+  * Passage from trail to valley now requires green leaf and blue ice instead of just blue ice&#13;
+  * Passage from fall to garden now requires red flame and green seed instead of just green seed&#13;
+  * Passage from fall to ridge now requires red flame and star instead of just star&#13;
+&#13;
+## Internal Changes&#13;
+&#13;
+* Merge Open World into CCMultiworldRandomizer (@CodeTriangle, #73)&#13;
+ * The mod will prompt you to uninstall and disable CC-Open-World.&#13;
+* Introduced an automation system to cut down on packaging issues.&#13;
+&#13;
+# Changes since 0.10.0 Prerelease 4&#13;
+&#13;
+## Changes to Generation&#13;
+&#13;
+* Merged Archipelago 0.6.8 into the development branch.&#13;
+&#13;
+## Changes to Options&#13;
+&#13;
+* Added a link to a wiki page about the different trap types to the description of `trap_weights`.&#13;
+&#13;
+## Changes to Mod&#13;
+&#13;
+* Modified certain game files to patch data rather than replace it (@buanjautista, #114)</content>
+    <link href="https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.10.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ClTYOFEVlL/SWD2-Archipelago/releases/tag/v0.3.0</id>
+    <title>SteamWorld Dig 2 v0.3.0</title>
+    <updated>2026-11-04T08:04:29+00:00</updated>
+    <author>
+      <name>Tails</name>
+    </author>
+    <content>## New&#13;
+- **Generators are now locations**, and the Reactor door needs their Device items. `Generators Required` sets all 4 (default) or the vanilla 3&#13;
+- **Orbsanity option**: Orb containers as locations (85)&#13;
+- **Secretsanity option**: Secret Areas (85) and Mini Secrets (35) as locations&#13;
+- **Added Traps**. Trap Link included!&#13;
+  - Leaky Tank Trap: Empties your water tank&#13;
+  - Darkness Trap: Empties your lamp&#13;
+  - Gravity Trap: Increases your gravity&#13;
+  - Freeze Trap: Stops you from moving&#13;
+  - Cutscene Trap: Makes Dorothy talk to herself about random things&#13;
+- **Tool item options**&#13;
+  - Pressure Bomb, Jackhammer and Jet Engine: All progressive, or a main item you need before the upgrades work&#13;
+  - Hook Shot and Grenades: Progressive, or both tiers as individual items&#13;
+- **Progressive Mobility option**: Combines the Hook and Jet items into one progressive item&#13;
+- Vectron is now skipped, freeing the Jet Engine podium of its past plando-y ways. It can hold any item now&#13;
+- The opening cutscene is now skipped&#13;
+- Banners in game when you connect or disconnect&#13;
+- Tracker tab in the client when Universal Tracker is installed&#13;
+&#13;
+## Logic&#13;
+- Yarrow and Sludge River Bend no longer need the Jet&#13;
+- Temple of the Destroyer - Boss Entrance: the Cog Container and Secret Area now take the Hook or Armor (previously Armor only)&#13;
+&#13;
+## Changed&#13;
+- "Hub" areas are now called "Oasis"&#13;
+- `teleporter_locations` is now `teleportersanity`&#13;
+- `hell_cave_locations` is now `include_trials`&#13;
+&#13;
+## Fixed&#13;
+- `/auto_patch` now only takes the files it needs from the game, preventing any weird file shenanigans</content>
+    <link href="https://github.com/ClTYOFEVlL/SWD2-Archipelago/releases/tag/v0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/vicr123/Archipelago/releases/tag/20261104-1</id>
+    <title>Candy Box 2 v1.20261104.1</title>
+    <updated>2026-11-04T08:24:07+00:00</updated>
+    <author>
+      <name>Victor Tran</name>
+    </author>
+    <author>
+      <name>Aren Merzoian</name>
+    </author>
+    <content>This version of the Candy Box 2 randomizer fixes the following bugs:&#13;
+- Long item names no longer cause the button in the shop to disappear.&#13;
+- The hint client now updates live as hint statuses are changed.&#13;
+&#13;
+The client is backwards compatible with apworlds generated with version 20260822-1&#13;
+&#13;
+Tested on AP 0.6.8, YMMV on later versions. Requires AP 0.6.5 or later.&#13;
+&#13;
+Game client available at: https://candybox2-ap.vicr123.com/20261104-1/</content>
+    <link href="https://github.com/vicr123/Archipelago/releases/tag/20261104-1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.9</id>
+    <title>PokePark v1.2.9</title>
+    <updated>2026-11-04T13:16:04+00:00</updated>
+    <author>
+      <name>Joe Mama (Mekurushi)</name>
+    </author>
+    <content>- fixed color tag line breaking that crashes the game&#13;
+**Full Changelog**: https://github.com/Mekurushi/Archipelago_Pokepark/compare/1.2.8...1.2.9</content>
+    <link href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/tag/1.2.9"/>
+  </entry>
+  <entry>
+    <id>https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v2.0.1</id>
+    <title>The Legend of Zelda - Oracle of Ages v2.0.1</title>
+    <updated>2026-11-04T15:26:55+00:00</updated>
+    <author>
+      <name>josephanimate2021</name>
+    </author>
+    <author>
+      <name>Glan9</name>
+    </author>
+    <author>
+      <name>Piapiou (SenPierre)</name>
+    </author>
+    <author>
+      <name>FlameStripe</name>
+    </author>
+    <content>Hot fixes !&#13;
+&#13;
+* Fixing several explosive logic&#13;
+* Fixing D11 Logic&#13;
+* Fixing Tokay Flipper Cave Logic&#13;
+* Adding several client flag for the tracker</content>
+    <link href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/tag/v2.0.1"/>
+  </entry>
   <entry>
     <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha1</id>
     <title>Crash Team Racing v0.3.0a1</title>
@@ -140,64 +320,6 @@ The client is GPL-3.0; the source for this build is the `v0.3.0-alpha1` tag of t
 -   **Full Screen** shows only the game and the Archipelago window.
 </content>
     <link href="https://github.com/Kryen112/AP_Stick_Ranger/releases/tag/2.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc1</id>
-    <title>Kirby &amp; The Amazing Mirror v0.5.0rc1</title>
-    <updated>2026-11-04T20:35:42+00:00</updated>
-    <author>
-      <name>Harrison Sherwin</name>
-    </author>
-    <content>## v0.5.0-rc1&#13;
-&#13;
-### New Features&#13;
-- Added eight Area Key progression items for Areas 2 through 9. Cross-area mirrors (and other transitions like Warp Stars) now require the destination area's key (Issue #42).&#13;
-- Add a default-on Area Keys option under Make the game easier. Turning it off removes Area Key requirements and replaces the eight keys with filler.&#13;
-- Added 15 Hub Connection progression items that unlock matching hub shortcuts while preserving alternate overland routes. Physical Big Switch checks remain independent, and received connections are restored across reconnects (Issue #482).&#13;
-- Add Hub Teleport Trap, which returns Kirby to Rainbow Route’s central hub (Issue #697).&#13;
-- Add `/goal` to display the seed's victory condition, including its resolved boss target while preserving legacy hidden targets (Issue #923).&#13;
-- Add Defeat a Number of Area Bosses: defeat any 1–8 distinct area bosses, default 3 (Issue #973). Other goals ignore the count. New count-goal seeds require the updated KirbyAM client; older clients interpret the new goal as Dark Mind.&#13;
-&#13;
-### Improvements&#13;
-- None.&#13;
-&#13;
-### Known Limitations&#13;
-- Only the North American ROM is supported; AP notifications are English.&#13;
-- Chests retain their original item sprites and collection animations; statues retain their original ability appearance. Mirrors and warp stars locked by Area Keys have no visual indicator.&#13;
-- mGBA notifications require the visible **Archipelago Connector** scripting panel; they are plain text, not game-image overlays.&#13;
-&#13;
-### Bug Fixes&#13;
-- Avoid a misleading ROM compatibility warning when disconnecting from the server.&#13;
-- Resume item delivery and gameplay polling when continuing a completed save, while keeping ending, title and demo screens deferred (Issue #1004).&#13;
-- Keep duplicate incoming DeathLinks suppressed when reconnecting to the same seed and slot.&#13;
-- Preserve Mr. Frosty’s ice cubes and Boxy’s boxes as no-ability sources when passive-enemy ability randomization is disabled.&#13;
-- Keep Invincibility Candy queued until its native effect can start, including after leaving hubs or boss rooms and after an active Candy effect expires.&#13;
-- Honor excluded passive enemies, minibosses, and boss spawns in Completely Random ability mode.&#13;
-- Make repeated explicit `/toggle_text` disable commands safe for Kirby slots.&#13;
-- Recreate the mGBA connector listener after socket errors and ignore callbacks from an obsolete listener.&#13;
-- Keep Moonlight arrivals in Olive 6-13 behind the received Olive lever wall while preserving the physical RoomSanity check and return chute.&#13;
-- Retry mGBA connections after self-connected sockets or malformed VERSION replies instead of stopping the client. Shared Archipelago transport and the stock BizHawk launcher are unchanged.&#13;
-- Preserve excluded Minny grants in Completely Random mode while retaining normal ability gating (Issue #997).&#13;
-- Correct the Carrot Castle lever placement and labels to room 5-05 (Issue #972).&#13;
-- Restore outgoing DeathLink detection on dead gameplay frames while keeping fresh item delivery paused. Links received while already dead no longer kill the next respawn (Issue #975).&#13;
-- Restore packaged region discovery on Python 3.11 by using a package resource anchor.&#13;
-- Fix room-sanity generation by making each physical room check reachable from its valid compartment and restoring the missing Moonlight 2-05 lower descent (Issues #945, #969).&#13;
-- Random-per-room colors now update Kirby and the HUD when native palette transformations remain enabled during gameplay (Issue #966).&#13;
-- Allow the six guaranteed starting ability receipts and notices during the tutorial. Other items stay deferred, and Sword still requires its ability item (Issue #967).&#13;
-- Bootstrap Kirby build/test dependencies with checksum-pinned pip 26.2.2 and certifi 2026.10.19 after the eMudhra/emSign incident (Issue #978), with matching development guidance. Global AP dependencies, Docker and general workflows are unchanged.&#13;
-&#13;
-### Internal Changes&#13;
-- Preserve compiled Hub switch mapping with generated lookup tables, fixed configuration addresses and explicit overlap checks. Historical native door aliases remain unchanged.&#13;
-- Verify the complete wheel inventory and SHA-256 bytes before offline Kirby ROM-smoke dependency installation (Issue #980; broader dependency matrices remain open).&#13;
-- Pin Kirby workflow actions to audited commit identities and reject mutable action references (Issue #981; interpreter/toolchain downloads remain separate).&#13;
-- Add draft-artifact receipts, signed provenance and download verification; refuse published-asset replacement (Issue #983). Plugin-trust guidance and owner immutability prerequisites are documented.&#13;
-- Gate Kirby publication on protected tags, release-environment approval and trusted-main validation; remove publisher PR authority and limit self-hosted smoke runs to main (Issue #982).&#13;
-- Carry the abandoned v0.4.2 security work into v0.5.0; see the [integration plan](https://github.com/hasherwi/Archipelago-kirbyam/blob/98ffe79fcef2e24690ec7d3fd7916cb07b1ef684/worlds/kirbyam/dev-docs/v050-security-integration.md) for dependencies and pending acceptance gates.&#13;
-- Execute the full native mailbox/ACK path for all 24 Spray Paint/Music Sheet IDs and Vitality grants for all four player structures, including duplicate delivery and dead-state safety (Issues #971, #953).&#13;
-- Exercise all eight shard receipts through twelve cold client/transport restarts, partial native saves and interleaved acknowledged food receipts (Issue #974).&#13;
-- Verify starting Vitality with stock-server empty/nonempty normal histories, duplicate precollects and repeated cold-RAM recovery without replay healing (Issue #943).&#13;
-- Integrate room connections and requirements into world-generation logic (PR #914).</content>
-    <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc1"/>
   </entry>
   <entry>
     <id>https://github.com/Haywire32/LoS-Archipelago/releases/tag/v0.7.6</id>
@@ -393,51 +515,6 @@ Seeds generated with 0.1.X should all be compatible.</content>
     <link href="https://github.com/randomcodegen/CrashNST-AP/releases/tag/1.0.8"/>
   </entry>
   <entry>
-    <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc2</id>
-    <title>Kirby &amp; The Amazing Mirror v0.5.0rc2</title>
-    <updated>2026-11-05T07:08:16+00:00</updated>
-    <author>
-      <name>Harrison Sherwin</name>
-    </author>
-    <content># ⚠️ NOT READY — EXPECT ISSUES&#13;
-&#13;
-**This is an experimental prerelease, not a stable release. Bugs, regressions and incomplete behavior are expected.** Please report problems you encounter.&#13;
-&#13;
-## KirbyAM v0.5.0-rc2&#13;
-&#13;
-This second release candidate includes merged PRs #1013, #1014, #1015, #1018 and #1029.&#13;
-&#13;
-### v0.5.0 highlights&#13;
-- Eight Area Keys gate cross-area transitions. Locked mirrors show boards and associated Warp Stars stay hidden until eligible. The Area Keys option is enabled by default.&#13;
-- Fifteen Hub Connection progression items unlock hub shortcuts independently of physical Big Switch checks.&#13;
-- New Hub Teleport Trap, `/goal` command, and Defeat a Number of Area Bosses goal (1–8 bosses, default 3). New count-goal seeds require the updated KirbyAM client.&#13;
-- Eight new palettes: Rainbow, Candy Corn, Negative, Pineapple, Cotton Candy, Royal, Pumpkin and Mint Chip, including UFO and HUD support.&#13;
-- Fix repeated healing sounds at 50% enemy health and accurate scaled health meters.&#13;
-- Fixes for DeathLink/reconnect behavior, item delivery after completed saves, ability exclusions, queued Invincibility Candy, room-sanity reachability, Moonlight and Carrot Castle levers, tutorial receipts, random-per-room palettes and mGBA reconnects.&#13;
-- Release preparation/readiness checks, staging status, artifact verification and workflow hardening; isolated graph-cache test fixtures and expanded native/client regression coverage.&#13;
-&#13;
-See the [full v0.5.0 changelog](https://github.com/hasherwi/Archipelago-kirbyam/blob/5bdc27100937db5362949ec8b3e3089c83fd4d13/worlds/kirbyam/CHANGELOG.md) for details.&#13;
-&#13;
-### Known limitations&#13;
-- Only the North American ROM is supported; AP notifications are English. No ROM is included.&#13;
-- Chests retain their original item sprites and collection animations; statues retain their original ability appearance.&#13;
-- mGBA notifications require the visible **Archipelago Connector** scripting panel; they are plain text, not game-image overlays.&#13;
-&#13;
-### Source and artifact verification&#13;
-Tag: `kirbyam-v0.5.0-rc2`&#13;
-Source: `5bdc27100937db5362949ec8b3e3089c83fd4d13`&#13;
-&#13;
-The verified APWorld is attached as `kirbyam.apworld`. The candidate artifact comes from the [successful main-branch APWorld build](https://github.com/hasherwi/Archipelago-kirbyam/actions/runs/41985114660) at this exact source commit. Its receipt and SHA-256 were verified, and all 327 packaged files were compared with the checkout, allowing only the expected builder-added manifest fields. No full ROM is included.&#13;
-&#13;
-`kirbyam.apworld` SHA-256:&#13;
-```text&#13;
-0191a9dbe23eb794e7c62e50cd42f8cb8e56945f4adf6c86d448d092f98b3659&#13;
-```&#13;
-&#13;
-**Automatic release staging is incomplete:** the tag-specific metadata check requires a `v0.5.0-rc2` changelog heading, while this source has `v0.5.0`. The candidate receipt identifies the main-branch build; it is not signed tag-based release provenance. No tag-based attestation is supplied. Protected-tag/environment and immutable-release prerequisites have not been verified. This prerelease does not claim full release-readiness or that all CI tests passed.</content>
-    <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc2"/>
-  </entry>
-  <entry>
     <id>https://github.com/giovannialayan/oigArchipelago/releases/tag/1.0.3</id>
     <title>Stella v1.0.3</title>
     <updated>2026-11-05T18:59:04+00:00</updated>
@@ -489,23 +566,6 @@ See the [README](https://github.com/ItsSeafoamy/Once-Upon-an-Archipelago/blob/ma
 **Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.11.02...2026.11.05
 </content>
     <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.11.05"/>
-  </entry>
-  <entry>
-    <id>https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/0.7.4</id>
-    <title>Cyberpunk 2077 v0.7.4</title>
-    <updated>2026-11-05T22:06:39+00:00</updated>
-    <author>
-      <name>247Tossing</name>
-    </author>
-    <content>Patch 2.5 support.&#13;
-&#13;
-- RED4ext.SDK is updated for the patch 2.5 native layouts, and CyberpunkAP.dll is rebuilt.&#13;
-- The InventoryDataManagerV2.EquipItem wrapper forwards the optional forceEquip argument. Thanks to RimuruLeThug.&#13;
-- The README lists the dependency versions used by this build.&#13;
-&#13;
-This build is for Cyberpunk 2077 2.5 with RED4ext 1.31.0, redscript 0.5.32, Cyber Engine Tweaks 1.38.0, Codeware 1.21.0, TweakXL 1.12.0, ArchiveXL 1.28.0, and Phone Extension 0.9.&#13;
-</content>
-    <link href="https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/0.7.4"/>
   </entry>
   <entry>
     <id>https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v1.0.1</id>
@@ -741,29 +801,6 @@ _Linux users, download the source code here to run the client._&#13;
     <link href="https://github.com/toent/Archipelago-MKWii/releases/tag/pre0.4.0"/>
   </entry>
   <entry>
-    <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc3</id>
-    <title>Kirby &amp; The Amazing Mirror v0.5.0rc3</title>
-    <updated>2026-11-06T22:52:15+00:00</updated>
-    <author>
-      <name>Harrison Sherwin</name>
-    </author>
-    <content>&gt; [!WARNING]&#13;
-&gt; **Experimental prerelease — bugs are expected. This release is not ready for general use.** Please report problems with your seed, settings, and client logs.&#13;
-&#13;
-Built from main commit `056abe2c3b0e1be70b0f05a8dee72ffa94782f5a`.&#13;
-&#13;
-This release includes the Rainbow Route 1-06 lower-cave chest logic correction and starting Area Key item-pool lifecycle fix in #1033, plus the save-file selection changelog update in #1034. Universal Tracker verification confirms the chest is no longer reachable from the upper path at the start, while legitimate alternate routes remain available.&#13;
-&#13;
-The v0.5.0 changes include Area Keys, Hub Connections, additional Kirby palettes, Hub Teleport Trap, the `/goal` command, the area-boss-count goal, File 1 selection, and expanded AP save storage.&#13;
-&#13;
-See the [complete v0.5.0 changelog](https://github.com/hasherwi/Archipelago-kirbyam/blob/056abe2c3b0e1be70b0f05a8dee72ffa94782f5a/worlds/kirbyam/CHANGELOG.md#v050) for features, fixes, and known limitations.&#13;
-&#13;
-Release build, artifact attestation, staged download comparison and provenance verification passed in [run 42309254412](https://github.com/hasherwi/Archipelago-kirbyam/actions/runs/42309254412), attempt 1. Broader CI is not claimed fully green. The prior reviewed gameplay source passed 5,576 focused Kirby tests, with one skipped; Python 3.11 jobs encountered environment setup failures.&#13;
-&#13;
-The RC3 tag was replaced before publication to include the single-maintainer release workflow in #1036. The release contains the APWorld, its provenance receipt and signed attestation bundle. Verify them before installing; provenance establishes origin, not freedom from bugs.</content>
-    <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc3"/>
-  </entry>
-  <entry>
     <id>https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/tag/v0.2.0</id>
     <title>Neon White v0.2.0</title>
     <updated>2026-11-06T22:54:53+00:00</updated>
@@ -836,69 +873,6 @@ PuzzleBobble4PopTracker.zip – The PopTracker package for tracking your progres
     <link href="https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/tag/v1.2.0"/>
   </entry>
   <entry>
-    <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc4</id>
-    <title>Kirby &amp; The Amazing Mirror v0.5.0rc4</title>
-    <updated>2026-11-06T23:47:52+00:00</updated>
-    <author>
-      <name>Harrison Sherwin</name>
-    </author>
-    <content>&gt; [!WARNING]
-&gt; **Experimental prerelease. Bugs are expected. This release is not ready for general use.** Please report problems with your seed, settings, and client logs.
-
-&gt; [!CAUTION]
-&gt; **Back up RC3 saves before switching to RC4.** RC3 used an expanded save layout that is not directly compatible with the restored native layout. Opening an RC3 save in RC4 may cause native invalid-save recovery to clear or replace it. Use a fresh save or a preserved pre-#1024 native-layout save for the same seed. Repatching a ROM does not migrate saves. Keep the original RC3 ROM and save separately if progress needs recovery later.
-
-Built from main commit `744b1a5708ecaafd80313b7836a9197a25f5db0e`.
-
-RC4 restores native file selection and its three save files, deferring the file-selection skip and coupled expanded-save foundation from #1024. The independent Rainbow Route 1-06 lower-cave chest logic correction and starting Area Key lifecycle fix from #1033 remain included. The reported RC3 startup/sprite failure is tracked in #1037; the exact original failure was not reproduced.
-
-Validation: the reviewed code tree passed 5,545 hosted Kirby tests with one skip, plus both standard-server item-history tests. All 448 focused local regression tests passed. The rebuilt ROM patch matches the pre-feature patch exactly. Native mGBA checks passed fresh, continued and cold-reloaded gameplay in all three save files, reset/re-entry, selector/menu/Back behavior and save checksums. These controlled tests do not establish live AP/BizHawk or full-campaign acceptance. Broader CI is not claimed fully green: other platform jobs and synthetic ROM smoke are still pending; unrelated LLVM repository and Python 3.11 setup failures remain. The lawful-ROM rebuild, native startup tests, type checks, generation fuzz, CodeQL and C tests passed.
-
-See the [complete v0.5.0 changelog](https://github.com/hasherwi/Archipelago-kirbyam/blob/744b1a5708ecaafd80313b7836a9197a25f5db0e/worlds/kirbyam/CHANGELOG.md#v050) and [rollback/save compatibility notes](https://github.com/hasherwi/Archipelago-kirbyam/blob/744b1a5708ecaafd80313b7836a9197a25f5db0e/worlds/kirbyam/dev-docs/rc4-file-selection-rollback.md).
-
-Release build, artifact signing, staged download comparison, source/digest checks and attestation verification passed in [run 42314534000](https://github.com/hasherwi/Archipelago-kirbyam/actions/runs/42314534000), attempt 1. The APWorld contents retain the lower-cave chest fix and restored native-layout patch, with no full ROMs or saves. The release contains the APWorld, its provenance receipt and signed attestation bundle. Verify them before installing; provenance establishes origin, not freedom from bugs.
-</content>
-    <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0</id>
-    <title>Kirby &amp; The Amazing Mirror v0.5.0</title>
-    <updated>2026-11-06T23:47:52+00:00</updated>
-    <author>
-      <name>Harrison Sherwin</name>
-    </author>
-    <content>## v0.5.0&#13;
-&#13;
-The official v0.5.0 release of Kirby &amp; The Amazing Mirror for Archipelago, built from main commit `744b1a5708ecaafd80313b7836a9197a25f5db0e`.&#13;
-&#13;
-### Highlights&#13;
-- Eight **Area Keys** for Areas 2–9 gate cross-area travel. Locked mirrors show boards, associated Warp Stars stay hidden, and receiving a key updates eligible nearby routes while preserving other requirements. The default-on Area Keys option can be disabled to replace all eight keys with filler.&#13;
-- Fifteen **Hub Connections** unlock hub shortcuts independently of their physical Big Switch checks, while alternate overland routes remain available.&#13;
-- Eight new Kirby palettes: Rainbow, Candy Corn, Negative, Pineapple, Cotton Candy, Royal, Pumpkin and Mint Chip.&#13;
-- **Hub Teleport Trap**, the `/goal` command, and **Defeat a Number of Area Bosses** (1–8 distinct area bosses, default 3). New boss-count seeds require the updated KirbyAM client.&#13;
-- Fixes for lower-cave chest logic, Room Sanity reachability, starting-item delivery, DeathLink, reconnects, enemy ability randomization, Invincibility Candy and scaled enemy health.&#13;
-&#13;
-### Why you may start with the Moonlight Mansion Area Key&#13;
-With Area Keys enabled, generation counts the checks your slot can actually reach with its starting inventory and the real access rules. If **fewer than four checks** are reachable, it gives you the **Moonlight Mansion - Area Key** at the start so you have more places to explore.&#13;
-&#13;
-The key is moved out of the randomized item pool and its place is filled with a filler item, so this does not create a duplicate key or change the pool size. If at least four starting checks are reachable, generation does not automatically grant the key; it remains randomized unless you explicitly included it in your starting inventory.&#13;
-&#13;
-**Room Sanity checks count toward that threshold.** With Room Sanity off, the corrected Rainbow Route 1-06 chest is no longer a free starting check, so the usual start receives the Moonlight Mansion key. With Room Sanity on, the additional reachable room checks can provide enough checks to keep the key randomized. Room Sanity is not a hard exemption: the same fewer-than-four rule applies to the actual starting state, including custom starting inventory. Disabling Area Keys disables this fallback.&#13;
-&#13;
-### Downloads and verification files&#13;
-- **`kirbyam.apworld`** is the Archipelago world package to install.&#13;
-- **`kirbyam.provenance.json`** is a build receipt. It records the package's SHA-256 hash, source commit, tag, repository, workflow, and run/attempt so you can check that your download is the exact intended build.&#13;
-- **`kirbyam.attestation.jsonl`** is the signed GitHub build-provenance bundle for the APWorld and its receipt. It lets verification tools check that both files came from this repository's release workflow at the claimed source and tag, rather than trusting an unsigned checksum alone.&#13;
-&#13;
-The two verification files are attached for integrity, provenance and auditing. They are not extra game content or files you install into Archipelago. Provenance verifies origin and bytes; it does not guarantee the absence of bugs. GitHub's automatically generated source archives are separate from these three release assets. No full ROMs or saves are included.&#13;
-&#13;
-### Compatibility and details&#13;
-Only the North American ROM is supported. AP notifications are in English. Chests and statues retain their native item/ability appearance. mGBA notifications appear in the visible Archipelago Connector scripting panel, not over the game image.&#13;
-&#13;
-See the [complete v0.5.0 changelog](https://github.com/hasherwi/Archipelago-kirbyam/blob/744b1a5708ecaafd80313b7836a9197a25f5db0e/worlds/kirbyam/CHANGELOG.md#v050), [save compatibility notes](https://github.com/hasherwi/Archipelago-kirbyam/blob/744b1a5708ecaafd80313b7836a9197a25f5db0e/worlds/kirbyam/dev-docs/rc4-file-selection-rollback.md), and [release verification guide](https://github.com/hasherwi/Archipelago-kirbyam/blob/744b1a5708ecaafd80313b7836a9197a25f5db0e/worlds/kirbyam/docs/release-preparation.md).</content>
-    <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0"/>
-  </entry>
-  <entry>
     <id>https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/tag/V1.1.0</id>
     <title>Fantastic Fist v1.1.0</title>
     <updated>2026-11-07T00:14:50+00:00</updated>
@@ -953,23 +927,6 @@ Added aliasing to UT support (Locations in UT now include what level they are in
 - Setup guide, game page and tracker README are all up to date&#13;
 - Code cleanup to stay inline with AP coding standards</content>
     <link href="https://github.com/EverydaySimpleDev/Archipelago/releases/tag/ffcc-beta-0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/v0.7.5</id>
-    <title>Cyberpunk 2077 v0.7.5</title>
-    <updated>2026-11-07T03:02:23+00:00</updated>
-    <author>
-      <name>247Tossing</name>
-    </author>
-    <content>District progression no longer dumps every access token into sphere 1.
-
-0.7.3 and 0.7.4 requested every district access token as an early item. With district locks on, all of those tokens landed in sphere 1 and Victory moved to sphere 2. 0.7.5 places the tokens with the normal progression fill.
-
-A location listed in priority_locations stays priority. If that location cannot legally receive a progression item, generation fails and names it. Built-in priority checks that a fresh inventory cannot reach are no longer priority, which lets two-player seeds generate.
-
-minimum_ap_version remains 0.6.6. required_client_version remains 0.1.0. The slot data protocol version remains 2, so a 0.7.4 game install can play a seed from this apworld.
-</content>
-    <link href="https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/v0.7.5"/>
   </entry>
   <entry>
     <id>https://github.com/Kevanderson97/homura-hime-archipelago/releases/tag/v0.4.2</id>
@@ -1371,7 +1328,7 @@ As this is an Alpha, expect issues and please report them when you encounter the
       <name>dem1995</name>
     </author>
     <content>- **New option: Progressive Movement.** Three Progressive Movement items replace Flying Armor, Malphas and Giant Bat, and always give them in that order. Your own copies show up as Skull Keys and need the client connected to grant their soul.&#13;
-- **Universal Tracker support.** UT now rebuilds your seed's logic from the server, with no YAML needed, including your logic difficulty and Hard Mode settings. Seeds generated before this release only give it their goal and Hard Mode setting, so it uses the defaults for their other logic options. UT also gets a map tab for the whole castle, the Chaotic Realm and each area, with a pin for every location coloured by logic. It marks where Soma is and follows him from area to area, and nothing extra needs installing. Locations that only an out-of-logic trick reaches show in UT's colour for reachable with tricks.&#13;
+- **Universal Tracker support.** UT now rebuilds your seed's logic from the server, with no YAML needed, including your logic difficulty and Hard Mode settings. Seeds generated before this release only give it their goal and Hard Mode setting, so it uses the defaults for their other logic options. UT also gets a map tab for the whole castle, the Chaotic Realm and each area, with a pin for every location colored by logic. It marks where Soma is and follows him from area to area, and nothing extra needs installing. Locations that only an out-of-logic trick reaches show in UT's color for reachable with tricks.&#13;
 - **New browser map tracker.** Type `/map` in the BizHawk Client or the Collection Client, or press their "Open map" button, to open a map of the castle in your browser. The Launcher also offers it as "Aria of Sorrow Tracker", including from a room page's link. It shows each location's logic status and where Soma is. By default it shows only the parts of the castle you have explored, which the Castle Maps reveal by area, and a toggle shows everything. Find Route draws the way from Soma's room to the location you select, except in race rooms. It runs on your own machine and needs nothing else installed.&#13;
 - **New option: Hard Mode Pickups.** The five Hard Mode-only pickups can be shuffled with Hard Mode (the default), always (they then spawn in normal mode too), or never.&#13;
 - **Giant Bat stays late.** With item smoothing on, the early mobility soul is now Malphas or Hippogryph, never Giant Bat.&#13;
@@ -1424,8 +1381,8 @@ As this is an Alpha, expect issues and please report them when you encounter the
     <content>- **New Experimental options.** A collapsed "Experimental" group on the options page holds four new options and a new Soul Shuffle value. Their balance is measured but not play-tested, so they may change between versions. Each one is opt-in and off by default, so released YAMLs keep working and play as before. A Soul Shuffle of "random" still never picks the new value. The options page's "Experimental" preset turns all five on, at the settings they were measured with.&#13;
 - **Experimental: Enemy Checks.** The first defeat of each boss ("bosses", 10 checks) or of each kind of enemy ("all", 112 checks) is a check. The client reads defeats from the game's Enemy List, so one made while it is disconnected is sent when it reconnects. Each check adds one item from this game to the pool, and it is never progression. Iron Golem's and Final Guard's checks hold only filler for now. With "all" and the default hint cost, a hint costs 22 checks instead of 11.&#13;
 - **Enemy checks in hints, groups and trackers.** A hint for an enemy check names the rooms where that enemy appears. Location groups such as "Boss Defeats", "Unrouted Enemy Defeats" and "Chapel Defeats" let you exclude or prioritize enemy checks together. Both map trackers pin each check in every room where its enemy appears.&#13;
-- **Most enemy checks come late in logic.** The routes to most rooms' enemies aren't recorded yet, so logic expects all eight movement souls before those checks. You will usually make them much earlier, so once one of an enemy's rooms is reachable, the trackers show its check in their colour for reachable with tricks. A boss's check needs only a way into its arena.&#13;
-- **Experimental: Soul Shuffle "matched".** Each soul trades places only with a soul of the same colour and strength tier, rated from community tier lists. Each enemy keeps its own soul drop rate, so a run gives about as many souls of each colour and tier as an unshuffled one.&#13;
+- **Most enemy checks come late in logic.** The routes to most rooms' enemies aren't recorded yet, so logic expects all eight movement souls before those checks. You will usually make them much earlier, so once one of an enemy's rooms is reachable, the trackers show its check in their color for reachable with tricks. A boss's check needs only a way into its arena.&#13;
+- **Experimental: Soul Shuffle "matched".** Each soul trades places only with a soul of the same color and strength tier, rated from community tier lists. Each enemy keeps its own soul drop rate, so a run gives about as many souls of each color and tier as an unshuffled one.&#13;
 - **Experimental: Enemy Drop Rate.** Enemies drop their soul and their common item more often, from 100% (no change) up to 1000%. Enemies your seed reaches early get only a small part of the boost, while strong souls you could find early, rare drops and the better items keep their usual chance. Above 100, it replaces Multiply Soul Drop Rates.&#13;
 - **Experimental: Item Drop Shuffle.** The items that enemies drop move into the item pool, so any player's location can hold them. An enemy whose drop moved drops a similar item from this game instead. The drops are then dealt out again, so early enemies drop cheap items and the castle's last enemies drop the best ones.&#13;
 - **Experimental: Wide Item Smoothing.** Weapons and armor that are too good for the start of a run stay out of it, whether they come from a pickup, an enemy check, another world or an enemy drop. It also makes sure you hold an early weapon and armor, and it sets Item Smoothing to strict and Item Smoothing Order to spheres. In a multiworld it runs Archipelago's progression balancing itself, which a host can turn off with `wide_smoothing_runs_balancing` in host.yaml.&#13;
@@ -1449,5 +1406,34 @@ As this is an Alpha, expect issues and please report them when you encounter the
 - Seeds from 2026.09.04, 2026.10.30 and 2026.11.01 still play with this version, so you can update partway through one. Seeds generated with this version need this version's apworld and clients.&#13;
 </content>
     <link href="https://github.com/anonymous-heap/Archipelago/releases/tag/cvaos-apworld-2026.11.07"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MatthewMarinets/war3-ap-maps/releases/tag/0.0.2-initial</id>
+    <title>Warcraft 3 v0.0.2</title>
+    <updated>2026-11-08T07:30:07+00:00</updated>
+    <author>
+      <name>MatthewMarinets</name>
+    </author>
+    <content>### 0.0.2 -- Undead Campaign release&#13;
+This is the second release of Archipelago Warcraft 3, featuring the Undead campaign. The Human campaign can be played in combination with the Undead campaign, or each can be played separately. Additionally, the night elf and tavern heroes that were unavailable to play in 0.0.1 are now included.&#13;
+&#13;
+### Installation instructions&#13;
+* archipelago.w3n should be placed in the Documents/Warcraft III/Campaigns folder&#13;
+* wc3.apworld should be installed with your existing Archipelago installation, either by putting it in custom_worlds/ or installing it through the launcher&#13;
+* The template yaml is provided for your convenience, and also because I believe the template generated by the Archipelago launcher doesn't give the best introduction to yaml. It is formatted slightly differently, but has all the same options&#13;
+* To start playing, launch the warcraft 3 AP client and then separately launch warcraft 3 the game and go to custom campaigns -&gt; Archipelago&#13;
+* If playing on 1.29, make sure you update the registry key&#13;
+  * **Windows**: Run `/setup` through the ap client on Windows&#13;
+  * **Linux**: Run regedit through the same Wine prefix (`drive_c/windows/regedit.exe`)&#13;
+    * Navigate to key `HKEY_CURRENT_USER\SOFTWARE\Blizzard Entertainment\Warcraft III`&#13;
+      * If this folder doesn't already exist, make sure you've already run Warcraft 3 for the first time so it creates it&#13;
+    * Add a DWORD key `Allow Local Files`&#13;
+    * Set the value of `Allow Local Files` to 1&#13;
+&#13;
+### Game versions&#13;
+* Reforged / current release Warcraft 3 is not supported&#13;
+* If you have the game through battle.net, install 1.29 using the dropdown right above the play button in the battle.net launcher&#13;
+* If you have your old CD keys, you can install version 1.29 or version 1.30 from The Hive and use your CD keys on that installation</content>
+    <link href="https://github.com/MatthewMarinets/war3-ap-maps/releases/tag/0.0.2-initial"/>
   </entry>
 </feed>

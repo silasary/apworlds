@@ -2,7 +2,8 @@
   "authors": [
     "Dragion",
     "Platano Bailando",
-    "Karanum"
+    "Karanum",
+    "Dracador"
   ],
   "description": "Golden Sun The Lost Age puts the player into the roles of an Adept named Felix and his allies\nas they seek to restore the power of Alchemy to the world of Weyard. Along the way, the player \nuses Psynergy to defeat enemies and discover new locations, help out local populations, \nand find elemental Djinn which augment the character's powers.",
   "game": "Golden Sun The Lost Age",
@@ -144,6 +145,21 @@
       "title": "0.2.3-beta",
       "version_simple": "0.2.3",
       "world_version": "0.2.3b0"
+    },
+    "0.2.4-beta": {
+      "created_at": "2026-11-02T11:58:20Z",
+      "description": "# General\r\nGame description is [here](https://github.com/cjmang/Archipelago/blob/gstla/worlds/gstla/docs/en_Golden%20Sun%20The%20Lost%20Age.md).\r\n(Don't expect the link to the options page to work.)\r\n\r\nGame setup guide is [here](https://github.com/cjmang/Archipelago/blob/gstla/worlds/gstla/docs/setup_en.md).\r\n\r\nTo install the AP World, use the Archipelago Launcher's Install APWorld button, or just copy and paste gstla.apworld into your custom_worlds folder.\r\nOnce the apworld is installed you can find a yaml after running Generate Template Options in the AP Launcher, or by using the Options Creator.\r\n\r\nIn general this AP World implementation relies heavily on the existing randomizer, which you can find here: https://gs2randomiser.com/en/index.html\r\n\r\nPlease reach out in the [GSTLA Post in Future Game Design on the AP discord if you find issues.](https://discord.com/channels/731205301247803413/1055515261270241320).\r\n\r\n# New Features / Bug fixes\r\n## Deathlink\r\nWith this release, we introduce support for Deathlinks (#59)\r\nEither set it via your YAML (`death_link: true`), or turn it on/off while playing with `/deathlink`\r\n\r\n## Support for Auto-Tabbing in the PopTracker\r\nThanks to @Brian0255, the APWorld and PopTracker now support Auto-Tabbing. (#58)\r\nThe PopTracker pack will now swap to that map automatically when you change maps in the game. You can toggle this in the pack settings.\r\n\r\nNote: Requires PopTracker Pack version 0.3.4/0.4.0.\r\nYou can find it over at https://github.com/cloudofdarkhole6/GSTLAPopTracker/releases\r\n\r\n## Bug fixes\r\n* fix receiving items via !getitem (#60)\r\n\r\n# Additional notes\r\n## Minimum Archipelago version\r\nArchipelago version 0.6.7+ is required. It will not work on 0.6.6 or earlier versions.\r\nThis is the last release that will support Archipelago 0.6.7. Upcoming releases will require 0.6.8.\r\n\r\n## Change of maintainers\r\nGoing forward, I'll be maintaining this project together with Platano.\r\nMany thanks to @Dragion147 who developed and maintained this project for the last few years!",
+      "download_url": "https://github.com/cjmang/Archipelago/releases/download/0.2.4-beta/gstla.apworld",
+      "has_manifest": true,
+      "hash_sha256": "5b64899da304a619e8280045d0036114ae42dd1c3652f1330e7f051f81ea8c0b",
+      "html_url": "https://github.com/cjmang/Archipelago/releases/tag/0.2.4-beta",
+      "minimum_ap_version": "0.6.7",
+      "size": 241431,
+      "source_url": "https://api.github.com/repos/cjmang/Archipelago",
+      "tag": "0.2.4-beta",
+      "title": "0.2.4-beta",
+      "version_simple": "0.2.4",
+      "world_version": "0.2.4b0"
     }
   }
 }
