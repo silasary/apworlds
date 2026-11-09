@@ -12,5 +12,4 @@ and enforces capture locks until the AP item is received. Progress is surfaced t
 ## Game Information
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 

@@ -2,127 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-09T00:21:34.614573+00:00</updated>
+  <updated>2026-11-09T06:29:00.497444+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/randomcodegen/CrashNST-AP/releases/tag/1.0.8</id>
-    <title>Crash Bandicoot N. Sane Trilogy v1.0.8</title>
-    <updated>2026-11-05T06:47:26+00:00</updated>
-    <author>
-      <name>Rando</name>
-    </author>
-    <content>## New Features&#13;
-- Hints show the physical entrance and its island, floor or hub section if shuffled&#13;
-## Bugfixes&#13;
-- Fixed normal-completion returns from Hang 'em High and Future Frenzy secret entrances to the C3 secret room, preventing returns behind locked hub gates&#13;
-- Fixed C2/C3 colored-gem pause icons to show received AP items instead&#13;
-- Now retries startup hooks automatically while verified game functions are not yet ready, keeping the save gate closed until startup succeeds&#13;
-&#13;
-**Client fixes support existing seeds.**  &#13;
-**Entrance hint data requires a new seed generated with APWorld 1.0.8**</content>
-    <link href="https://github.com/randomcodegen/CrashNST-AP/releases/tag/1.0.8"/>
-  </entry>
-  <entry>
-    <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc2</id>
-    <title>Kirby &amp; The Amazing Mirror v0.5.0rc2</title>
-    <updated>2026-11-05T07:08:16+00:00</updated>
-    <author>
-      <name>Harrison Sherwin</name>
-    </author>
-    <content># ⚠️ NOT READY — EXPECT ISSUES&#13;
-&#13;
-**This is an experimental prerelease, not a stable release. Bugs, regressions and incomplete behavior are expected.** Please report problems you encounter.&#13;
-&#13;
-## KirbyAM v0.5.0-rc2&#13;
-&#13;
-This second release candidate includes merged PRs #1013, #1014, #1015, #1018 and #1029.&#13;
-&#13;
-### v0.5.0 highlights&#13;
-- Eight Area Keys gate cross-area transitions. Locked mirrors show boards and associated Warp Stars stay hidden until eligible. The Area Keys option is enabled by default.&#13;
-- Fifteen Hub Connection progression items unlock hub shortcuts independently of physical Big Switch checks.&#13;
-- New Hub Teleport Trap, `/goal` command, and Defeat a Number of Area Bosses goal (1–8 bosses, default 3). New count-goal seeds require the updated KirbyAM client.&#13;
-- Eight new palettes: Rainbow, Candy Corn, Negative, Pineapple, Cotton Candy, Royal, Pumpkin and Mint Chip, including UFO and HUD support.&#13;
-- Fix repeated healing sounds at 50% enemy health and accurate scaled health meters.&#13;
-- Fixes for DeathLink/reconnect behavior, item delivery after completed saves, ability exclusions, queued Invincibility Candy, room-sanity reachability, Moonlight and Carrot Castle levers, tutorial receipts, random-per-room palettes and mGBA reconnects.&#13;
-- Release preparation/readiness checks, staging status, artifact verification and workflow hardening; isolated graph-cache test fixtures and expanded native/client regression coverage.&#13;
-&#13;
-See the [full v0.5.0 changelog](https://github.com/hasherwi/Archipelago-kirbyam/blob/5bdc27100937db5362949ec8b3e3089c83fd4d13/worlds/kirbyam/CHANGELOG.md) for details.&#13;
-&#13;
-### Known limitations&#13;
-- Only the North American ROM is supported; AP notifications are English. No ROM is included.&#13;
-- Chests retain their original item sprites and collection animations; statues retain their original ability appearance.&#13;
-- mGBA notifications require the visible **Archipelago Connector** scripting panel; they are plain text, not game-image overlays.&#13;
-&#13;
-### Source and artifact verification&#13;
-Tag: `kirbyam-v0.5.0-rc2`&#13;
-Source: `5bdc27100937db5362949ec8b3e3089c83fd4d13`&#13;
-&#13;
-The verified APWorld is attached as `kirbyam.apworld`. The candidate artifact comes from the [successful main-branch APWorld build](https://github.com/hasherwi/Archipelago-kirbyam/actions/runs/41985114660) at this exact source commit. Its receipt and SHA-256 were verified, and all 327 packaged files were compared with the checkout, allowing only the expected builder-added manifest fields. No full ROM is included.&#13;
-&#13;
-`kirbyam.apworld` SHA-256:&#13;
-```text&#13;
-0191a9dbe23eb794e7c62e50cd42f8cb8e56945f4adf6c86d448d092f98b3659&#13;
-```&#13;
-&#13;
-**Automatic release staging is incomplete:** the tag-specific metadata check requires a `v0.5.0-rc2` changelog heading, while this source has `v0.5.0`. The candidate receipt identifies the main-branch build; it is not signed tag-based release provenance. No tag-based attestation is supplied. Protected-tag/environment and immutable-release prerequisites have not been verified. This prerelease does not claim full release-readiness or that all CI tests passed.</content>
-    <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/giovannialayan/oigArchipelago/releases/tag/1.0.3</id>
-    <title>Stella v1.0.3</title>
-    <updated>2026-11-05T18:59:04+00:00</updated>
-    <author>
-      <name>oig</name>
-    </author>
-    <content>Compatible with Stella patch 10&#13;
-&#13;
-fixed issue that caused some seeds to be unbeatable&#13;
-&#13;
-Setup guide: https://github.com/giovannialayan/oigArchipelago/blob/main/worlds/stella/docs/setup_en.md&#13;
-&#13;
-Download the apworld and yaml files below</content>
-    <link href="https://github.com/giovannialayan/oigArchipelago/releases/tag/1.0.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ItsSeafoamy/Once-Upon-an-Archipelago/releases/tag/v0.4.1</id>
-    <title>Once Upon a Katamari v0.4.1</title>
-    <updated>2026-11-05T20:11:42+00:00</updated>
-    <author>
-      <name>Seafoamy</name>
-    </author>
-    <content>This is a mod only update. The apworld remains unchanged from v0.4.0.&#13;
-&#13;
-## Fixes&#13;
-- The level "ACTUALLY Hiding in a Theme Park!" would not always be accessible even if you owned the level.&#13;
-&#13;
-See the [README](https://github.com/ItsSeafoamy/Once-Upon-an-Archipelago/blob/main/README.md) for more info and setup instructions.</content>
-    <link href="https://github.com/ItsSeafoamy/Once-Upon-an-Archipelago/releases/tag/v0.4.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.11.05</id>
-    <title>Northgard v2026.11.5</title>
-    <updated>2026-11-05T21:24:14+00:00</updated>
-    <author>
-      <name>Chakraa</name>
-    </author>
-    <content>&gt; **Still the Bifrost Alpha.** This one's mostly fixes for switching between slots in the same client window. Conquest players get them too, so it's worth updating either way.
-
-### Fixed
-- Finishing your goal on one slot and then connecting to another slot in the same client window could instantly goal the new slot too, and release it if you're on auto release. Sorry about that one!
-- Bifrost progress made while the client was closed now only gets sent to the slot it actually belongs to. Before, connecting to a different Bifrost slot first would send it there instead, goal included.
-- Conquest chapters you beat while the client was disconnected now get sent when you reconnect. Before, they were lost until you restarted the client.
-- The "pinned save no longer found" warning shows up again after switching rooms, instead of staying quiet if you'd already seen it once.
-
-### Changed
-- The client now cleans up after itself in the Bifrost folder. Bonus records for runs whose save is gone get deleted, and empty leftover folders get removed, so it stops piling up files over time. Any run you can still load keeps its records.
-
-**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.11.02...2026.11.05
-</content>
-    <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.11.05"/>
-  </entry>
   <entry>
     <id>https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/0.7.4</id>
     <title>Cyberpunk 2077 v0.7.4</title>
@@ -161,6 +45,58 @@ This build is for Cyberpunk 2077 2.5 with RED4ext 1.31.0, redscript 0.5.32, Cybe
 &#13;
 Find installation instructions at [https://github.com/rescheer/Starship-Titanic-AP#installation](https://github.com/rescheer/Starship-Titanic-AP#installation)</content>
     <link href="https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v1.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/OSoffocles/Well-Dweller-APWorld/releases/tag/v0.2.2-alpha</id>
+    <title>well_dweller v0.2.2a0</title>
+    <updated>2026-11-05T23:10:50+00:00</updated>
+    <author>
+      <name>OSoffocles</name>
+    </author>
+    <content># Release notes&#13;
+&#13;
+## v0.2.2-alpha&#13;
+APWorld 0.2.2 + game mod 0.1.12. **Update both** (`well_dweller.apworld` and `WellDwellerAP.dll`) and start a new save&#13;
+for a new seed. YAMLs from v0.2.1 still work; the template only has a new description for `time_trial_checks`.&#13;
+&#13;
+### Time trials&#13;
+- `time_trial_checks` now also covers the checks next to the gate each trial opens (vessels, trinket slots, spirits,&#13;
+  the Docks Postage Stamp and Pearl, ...). With the option off none of these are checks; with it on they also need&#13;
+  you to be able to beat the trial.&#13;
+&#13;
+### Logic&#13;
+Many fixes from player reports. Soar alone, Endless Climb alone and the Slingshot alone were each counted in places&#13;
+where they don't get you there:&#13;
+- Hunter's Cabin: the race (AH_15) needs Climb; the upper part needs Climb or Soar; AH_13 token and the AH_18 checks&#13;
+  from the upper tent have their own needs.&#13;
+- Gravenvalley: the Witch Burning Ticket area (past AD_24) needs the Slingshot with Climb, Soar or Hover; AD_19 token&#13;
+  and lever need Climb + Wall Sling/Slingshot or Soar.&#13;
+- The Docks: the right side needs Climb + Hover (the AK_28/AK_30/AK_31 puzzle also the Slingshot).&#13;
+- Autumn Forest from Gravenvalley: Endless Climb, Climb + Wall Sling, or Soar + Hover.&#13;
+- Midnight Drench: new way in from Gravenvalley, left of Lida (after beating her; with lever items also through the&#13;
+  AD_20 gate). Lady of the Drains, the AP_30 lever, and the AC_02/AC_04 checks need the Drains elevator.&#13;
+- Burial Vault: only from Willow's side (Drains elevator) with Climb + Wall Sling or Soar.&#13;
+- Night Garden frog spa (AN_50 token): needs the Lady of the Drains beaten and the frogs freed.&#13;
+- Golden Gate Key: now also needed for the levers, vessels and slots behind the golden gates, not only the Looter Parts.&#13;
+- Smaller fixes: AN_16 lever, AN_18 and AN_20 slots, Bog AB_03/AB_12/AB_22/AB_26 and the golden gate area,&#13;
+  AT_22 + Golden Needle (from the Food chase), castle AC_35/AC_40, Drains AP_32/AP_33/AP_35, Dollmaker AU_07-AU_11.&#13;
+&#13;
+### Client and map tracker&#13;
+- Map markers for the Docks and Night Garden Spirit Fragments.&#13;
+- The HUD no longer shows item messages from an earlier seed.&#13;
+&#13;
+### Game mod (0.1.12)&#13;
+- The shop shows the right AP item for Trinket Point, Flaming Vessel and Oil Vial (it showed the first shop trinket's&#13;
+  item, or nothing after that was bought).&#13;
+&#13;
+### Known issues&#13;
+- The game's own Spirit Nest counts the Spirit Fragments you picked up in the world, not the ones you received, so&#13;
+  the ending scene can play before you have all 5 fragment items. The `final_flock` goal only completes once you&#13;
+  have received them too.&#13;
+- Shop checks come into logic later than you can actually buy them (by design, so the shop doesn't fill the&#13;
+  first spheres).&#13;
+</content>
+    <link href="https://github.com/OSoffocles/Well-Dweller-APWorld/releases/tag/v0.2.2-alpha"/>
   </entry>
   <entry>
     <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha2</id>
@@ -236,6 +172,25 @@ The client is GPL-3.0; the source for this build is the `v0.3.0-alpha2` tag of t
 
 </content>
     <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/mariokirby1703/Lumas-Archipelago/releases/tag/sonic_colours_v0.2.1</id>
+    <title>Sonic Colours (Wii) v0.2.1</title>
+    <updated>2026-11-06T02:49:43+00:00</updated>
+    <author>
+      <name>Luma</name>
+    </author>
+    <content># Sonic Colours (Wii) AP v0.2.1&#13;
+## New features&#13;
+- **60 FPS** as an optional miscellaneous setting&#13;
+- **Custom rank checks:** select any combination of C, B, A and S ranks&#13;
+&#13;
+## Fixes and improvements&#13;
+- Fixed support for **all six save slots**, resolving checks stopping after the initial save selection&#13;
+&#13;
+## Known issues&#13;
+- **60 FPS can cause physics issues**, including continuous spring bouncing and falling out of loops</content>
+    <link href="https://github.com/mariokirby1703/Lumas-Archipelago/releases/tag/sonic_colours_v0.2.1"/>
   </entry>
   <entry>
     <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.13</id>
@@ -349,6 +304,44 @@ Use apworld 0.4.3 together with mod 0.4.3. Seeds generated with apworld 0.4.2 al
 - Changed the default value for runSpeed to 2.0.&#13;
 - Discontinued the support for WeAreGoingToPlad graphic pack.</content>
     <link href="https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/WCutePy/ArchipelagoAlmia/releases/tag/ranger_v0.0.1-rando</id>
+    <title>Pokemon Ranger Shadows of Almia v0.0.1.post0</title>
+    <updated>2026-11-06T19:56:38+00:00</updated>
+    <author>
+      <name>WCutePy</name>
+    </author>
+    <content># Pokemon Ranger Shadows of Almia randomizer&#13;
+&#13;
+This is a randomizer that randomizes the Pokémon all over almia! It makes use of the Archipelago framework but currently does not yet have Archipelago support. This is to come.&#13;
+&#13;
+See [the docs](https://github.com/WCutePy/ArchipelagoAlmia/blob/main/worlds/pokemon_ranger_soa/docs/en_PokemonRangerSoA.md) for more information&#13;
+&#13;
+## What does randomization do to this game?&#13;
+&#13;
+Pokemon randomization can change the following.&#13;
+- Wild encounters&#13;
+  - Excluding Doduo and Staraptor&#13;
+- Static encounters&#13;
+  - Excluding boss encounters&#13;
+- NPC Pokémon (WIP)&#13;
+- Partners&#13;
+&#13;
+Multiple algorithms are (not yet) possible for wild encounter randomization.&#13;
+As a base this randomizer ensures the &#13;
+story is always beatable, by iterating over wild encounters&#13;
+as they become accessible in the story and placing required field moves amongst all currently accessible spots.&#13;
+&#13;
+Movement field moves such as swim, river flow or airlift have multiple copies placed such that moving back and forth over their terrain is always possible.&#13;
+&#13;
+Quest required pokemon are placed across all potential spots.&#13;
+Static encounters are filled such that they have a similar HP to their original counter part. Remaining wild spots are filled randomly, ensuring one of each species exists in the wild.&#13;
+&#13;
+**NOTE** This rando spans the full story, the randomizer does **not** randomize postgame or ensure postgame quests are beatable.&#13;
+&#13;
+Actual apworld file and linked commit are not in sync, but did not want to make a 0.0.2 already even though I could be sitting at 0.0.4 with these patches 😢 </content>
+    <link href="https://github.com/WCutePy/ArchipelagoAlmia/releases/tag/ranger_v0.0.1-rando"/>
   </entry>
   <entry>
     <id>https://github.com/toent/Archipelago-MKWii/releases/tag/pre0.4.0</id>
@@ -1225,7 +1218,7 @@ complicated than episode 1.&#13;
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release11</id>
-    <title>Ocarina of Time v9.1.0r2</title>
+    <title>Ocarina of Time v9.1.0r4</title>
     <updated>2026-11-08T20:35:58+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1259,7 +1252,8 @@ Please note: Since OoT is currently not shipped as a bundled .apworld file, but 
     <author>
       <name>BatAtVideoGames</name>
     </author>
-    <content>## As of this update Archipelago 0.6.8 is the minimum version required, if you're still running 0.6.7 please update the launcher [here](https://github.com/ArchipelagoMW/Archipelago/releases)&#13;
+    <content>&gt; [!WARNING]&#13;
+&gt; ## As of this update Archipelago 0.6.8 is the minimum version required, if you're still running 0.6.7 please update the launcher [here](https://github.com/ArchipelagoMW/Archipelago/releases)&#13;
 &#13;
 The _pretty_ update. Very happy with all the major changes, glhf and enjoy.&#13;
 (Also as per usual if you enjoy these and want to [buying me a coffee](https://streamlabs.com/batatvideogames/tip) I'd appreciate it)&#13;
@@ -1361,5 +1355,32 @@ All 47 release client regression projects, repository validation and 11 tool tes
 &#13;
 </content>
     <link href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.30.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/narramoment/Archipelago/releases/tag/1.2.0</id>
+    <title>Jak II v1.2.0</title>
+    <updated>2026-11-09T01:35:19+00:00</updated>
+    <author>
+      <name>narramoment</name>
+    </author>
+    <content>- UT implementation&#13;
+- change names of seal pieces and side mission location names&#13;
+- fixed GOT text bugs&#13;
+&#13;
+**Full Changelog**: https://github.com/narramoment/Archipelago/compare/1.0.0...1.2.0</content>
+    <link href="https://github.com/narramoment/Archipelago/releases/tag/1.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/gjgfuj/SlotLock/releases/tag/slotlockv0.11.4</id>
+    <title>SlotLock v0.11.4</title>
+    <updated>2026-11-09T01:45:05+00:00</updated>
+    <author>
+      <name>Sandra (TheSandromatic)</name>
+    </author>
+    <content>* Fixed webhost support. This means moving Options to options.py and adding a docs folder (currently just contains a placeholder file since we don't have actual docs.)&#13;
+* Perform many extra random shuffles of location and item lists during linear fill. Hopefully this will fix the issue of the locations not being very random.&#13;
+&#13;
+**Full Changelog**: https://github.com/gjgfuj/SlotLock/compare/slotlockv0.11.3...slotlockv0.11.4</content>
+    <link href="https://github.com/gjgfuj/SlotLock/releases/tag/slotlockv0.11.4"/>
   </entry>
 </feed>

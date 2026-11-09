@@ -1,9 +1,12 @@
 # Duke Nukem 3D
 
 ## Latest
-- <a href="https://github.com/LLCoolDave/Duke3DAP/releases/download/0.0.8/duke3d.apworld">Latest Version (0.0.8)</a>
+- <a href="https://github.com/randomcodegen/NBloodAP/releases/download/0.0.9/duke3d.apworld">Latest Version (0.0.9)</a>
 
 ## All Versions
+
+#### v0.0.9
+- <a href="https://github.com/randomcodegen/NBloodAP/releases/download/0.0.9/duke3d.apworld">https://github.com/randomcodegen/NBloodAP/releases/download/0.0.9/duke3d.apworld</a>
 
 #### v0.0.8
 - <a href="https://github.com/LLCoolDave/Duke3DAP/releases/download/0.0.8/duke3d.apworld">https://github.com/LLCoolDave/Duke3DAP/releases/download/0.0.8/duke3d.apworld</a>

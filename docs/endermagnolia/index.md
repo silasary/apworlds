@@ -8,8 +8,6 @@ Ender Magnolia: BLOOM IN THE MIST
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_Ender Magnolia">English</a>
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 

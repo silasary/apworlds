@@ -4,6 +4,34 @@
   "github": "https://github.com/LanaHIki/KHMelonMixAP",
   "manifest_fields": [],
   "versions": {
+    "0.2": {
+      "created_at": "2026-10-12T14:09:06Z",
+      "description": "Character set per mission rando:\r\n   each mission has a character assigned. so mission 2 will always be goofy that seed, mission 3 always donald.\r\n   Old setting is true rando where you get unlockable character items\r\nXion language locking: some languages start different on the option, that's now fixed.\r\nimproved mission reward detection\r\n\r\n\r\nOn the ap client side:\r\nadded debug bundle for searching bug easier\r\nDays added to the mission location names\r\nMelonmix now says if it's connected the first time you click the button\r\nMission 13 and 52 were missing chests",
+      "download_url": "https://github.com/LanaHIki/KHMelonMixAP/releases/download/0.2/khdays.apworld",
+      "has_manifest": true,
+      "hash_sha256": "298252ae93512c34225dd86f289cee43c0c4afac0f9b02602fb292247831bb82",
+      "html_url": "https://github.com/LanaHIki/KHMelonMixAP/releases/tag/0.2",
+      "size": 73787,
+      "source_url": "https://api.github.com/repos/LanaHIki/KHMelonMixAP",
+      "tag": "0.2",
+      "title": "0.2 release",
+      "version_simple": "0.2",
+      "world_version": "0.2"
+    },
+    "0.3": {
+      "created_at": "2026-10-12T14:09:06Z",
+      "description": "Fixes range extender crashing item replay(if you have the bug happen in an async or longer sync, you can dowload just melonmixAP v0.3 it should be compatibile still with v0.2 client.)\r\n\r\nSea salt icecream as a mcguffin. You can set the pool and required and when you get that amount xion unlocks. Mission goal still available where you have to beat 70% of mission to unlock xion.\r\n(i don't recommend using archi's randomize option on pool and required, i haven't found the way yet to limit them, if you know ping me so you don't get random generate errors)\r\n\r\nStarting character changed how it's handled. it's now a yaml option. Use archipelagos normal randomize option to randomize starting character\r\n\r\nAdded chest logic to some chests, should help with softlocked seeds.\r\nChecklist also adheres to this logic so the checks wont show up if you don't have the ability to.\r\n\r\nIn general look at the options creator for the new things, also if you're using 0.3 ap world client you have to regen your seed",
+      "download_url": "https://github.com/LanaHIki/KHMelonMixAP/releases/download/0.3/khdays.apworld",
+      "has_manifest": true,
+      "hash_sha256": "377615b7bba0ed67ce5c03947e77937cc517596d92e196a8021129d280f3b98b",
+      "html_url": "https://github.com/LanaHIki/KHMelonMixAP/releases/tag/0.3",
+      "size": 76116,
+      "source_url": "https://api.github.com/repos/LanaHIki/KHMelonMixAP",
+      "tag": "0.3",
+      "title": "v0.3",
+      "version_simple": "0.3",
+      "world_version": "0.3"
+    },
     "0.4": {
       "created_at": "2026-10-23T13:03:54Z",
       "description": "Bit more expiremental with progressive items.\r\nThey're mostly in progressive bundles. progressive gears are random from a pool but the pool size increases as you find progressive gears. the rest are set. Not married to each catagory but tried to seperate some stuff and make it more obvious what is what.\r\n\r\nAdded some more logic to hopefully smooth out the run a bit.\r\nXion not having keyblade should be fixed now.\r\nFixed some item database stuff as well.",
