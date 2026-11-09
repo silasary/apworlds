@@ -2,160 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-09T12:19:10.096294+00:00</updated>
+  <updated>2026-11-09T18:19:17.917430+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v1.0.1</id>
-    <title>Starship Titanic v1.0.1</title>
-    <updated>2026-11-05T22:59:47+00:00</updated>
-    <author>
-      <name>rescheer</name>
-    </author>
-    <content>Client changes only. Compatible with v1.0.x seeds.&#13;
-## New Features&#13;
-- Hover over Succ-U-Bus tile to see what AP items are waiting to be delivered (if any)&#13;
-## Changes&#13;
-- Improved timing of save/seed mismatch detection&#13;
-## Fixes&#13;
-- Magazine safety net could be incorrectly triggered when disconnected from the AP server&#13;
-- Bar glass would become un-interactable if the Barbot has to return it to you after being given the puree&#13;
-- Client-placed-mail item flag was not surviving save/loads&#13;
-## Known Issues in this release&#13;
-- None&#13;
-&#13;
-Find installation instructions at [https://github.com/rescheer/Starship-Titanic-AP#installation](https://github.com/rescheer/Starship-Titanic-AP#installation)</content>
-    <link href="https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v1.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/OSoffocles/Well-Dweller-APWorld/releases/tag/v0.2.2-alpha</id>
-    <title>well_dweller v0.2.2a0</title>
-    <updated>2026-11-05T23:10:50+00:00</updated>
-    <author>
-      <name>OSoffocles</name>
-    </author>
-    <content># Release notes&#13;
-&#13;
-## v0.2.2-alpha&#13;
-APWorld 0.2.2 + game mod 0.1.12. **Update both** (`well_dweller.apworld` and `WellDwellerAP.dll`) and start a new save&#13;
-for a new seed. YAMLs from v0.2.1 still work; the template only has a new description for `time_trial_checks`.&#13;
-&#13;
-### Time trials&#13;
-- `time_trial_checks` now also covers the checks next to the gate each trial opens (vessels, trinket slots, spirits,&#13;
-  the Docks Postage Stamp and Pearl, ...). With the option off none of these are checks; with it on they also need&#13;
-  you to be able to beat the trial.&#13;
-&#13;
-### Logic&#13;
-Many fixes from player reports. Soar alone, Endless Climb alone and the Slingshot alone were each counted in places&#13;
-where they don't get you there:&#13;
-- Hunter's Cabin: the race (AH_15) needs Climb; the upper part needs Climb or Soar; AH_13 token and the AH_18 checks&#13;
-  from the upper tent have their own needs.&#13;
-- Gravenvalley: the Witch Burning Ticket area (past AD_24) needs the Slingshot with Climb, Soar or Hover; AD_19 token&#13;
-  and lever need Climb + Wall Sling/Slingshot or Soar.&#13;
-- The Docks: the right side needs Climb + Hover (the AK_28/AK_30/AK_31 puzzle also the Slingshot).&#13;
-- Autumn Forest from Gravenvalley: Endless Climb, Climb + Wall Sling, or Soar + Hover.&#13;
-- Midnight Drench: new way in from Gravenvalley, left of Lida (after beating her; with lever items also through the&#13;
-  AD_20 gate). Lady of the Drains, the AP_30 lever, and the AC_02/AC_04 checks need the Drains elevator.&#13;
-- Burial Vault: only from Willow's side (Drains elevator) with Climb + Wall Sling or Soar.&#13;
-- Night Garden frog spa (AN_50 token): needs the Lady of the Drains beaten and the frogs freed.&#13;
-- Golden Gate Key: now also needed for the levers, vessels and slots behind the golden gates, not only the Looter Parts.&#13;
-- Smaller fixes: AN_16 lever, AN_18 and AN_20 slots, Bog AB_03/AB_12/AB_22/AB_26 and the golden gate area,&#13;
-  AT_22 + Golden Needle (from the Food chase), castle AC_35/AC_40, Drains AP_32/AP_33/AP_35, Dollmaker AU_07-AU_11.&#13;
-&#13;
-### Client and map tracker&#13;
-- Map markers for the Docks and Night Garden Spirit Fragments.&#13;
-- The HUD no longer shows item messages from an earlier seed.&#13;
-&#13;
-### Game mod (0.1.12)&#13;
-- The shop shows the right AP item for Trinket Point, Flaming Vessel and Oil Vial (it showed the first shop trinket's&#13;
-  item, or nothing after that was bought).&#13;
-&#13;
-### Known issues&#13;
-- The game's own Spirit Nest counts the Spirit Fragments you picked up in the world, not the ones you received, so&#13;
-  the ending scene can play before you have all 5 fragment items. The `final_flock` goal only completes once you&#13;
-  have received them too.&#13;
-- Shop checks come into logic later than you can actually buy them (by design, so the shop doesn't fill the&#13;
-  first spheres).&#13;
-</content>
-    <link href="https://github.com/OSoffocles/Well-Dweller-APWorld/releases/tag/v0.2.2-alpha"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha2</id>
-    <title>Crash Team Racing v0.3.0a2</title>
-    <updated>2026-11-06T00:02:02+00:00</updated>
-    <author>
-      <name>Dowlle</name>
-    </author>
-    <content>CTR Archipelago 0.3.0-alpha2 is up for testing! It fixes a lot of what you found in alpha1 and adds a few new things. It's still an alpha, so expect rough edges. **v0.2.4 stays the current stable release.**
-
-[Full 0.3.0 notes on AP-Pie](https://ap-pie.com/ctr/releases/0-3-0) · [Setup guide](https://ap-pie.com/guides/ctr) · [SETUP.md as shipped](https://github.com/dowlle/ctr-native-ap/blob/v0.3.0-alpha2/SETUP.md)
-
-## Before you try it
-
-- **Use a new folder**, or replace your alpha1 folder. Your 0.2.4 install and rooms stay as they are.
-- **Use the alpha2 client and the alpha2 APWorld together.** An alpha1 room still connects to the alpha2 client.
-- **Make a new YAML** if yours is from 0.2.x. An alpha1 YAML still works, and there are a few new options.
-
-## Fixed since alpha1
-
-- Opening the tracker during the hub save camera could start a race with the save menu on screen.
-- Wumpa you get outside a race (shop or other players) is added right away.
-- Wumpa Wipeout removes all your fruit, also above 10.
-- Spoiler Items with coloured boxes off no longer stops the seed from starting.
-- Arcade, Time Trial, Versus and Battle play like the original game again.
-- Loading another save profile no longer keeps a racer that's locked in the room.
-- AP boxes on custom tracks no longer sink into the ground.
-- Cups and boss garages show the right track and racer names.
-- Hit Character checks count a boss race as soon as you can enter it.
-- Bosses on custom tracks no longer stall.
-- A boss cup now races the rival its garage names, and its banner reads "&lt;Boss&gt;'s Cup".
-- Only one Cortex Vortex per seed.
-- Custom track downloads retry on rate limits and show the real error.
-- Play Solo tells you which track it can't publish.
-- No more looping podium noise in the hub after a Trophy win.
-
-## New
-
-- **Custom Tracks screen:** Library, This Seed and Import tabs. The importer keeps track names, lets you rename them and imports all valid tracks at once.
-- **Custom track music:** custom tracks play their own music.
-- **Box Author Mode** in Options, Authoring: place and export AP boxes yourself.
-- **Play Solo:** every YAML option on the options screen, including lists like Crystal Arenas and the boss pools as checklists. The screen tells you when a value won't generate. No password by default, and no menu freeze with big libraries.
-- **Leaving a race pays:** Exit to map, Restart and a DeathLink loss bank the fruit you picked up, minus hits. Starting fruit never banks.
-- **Wumpa Shop pacing:** expensive shelves come into logic later, by Keys. New option `wumpa_shop_logic_scale`.
-- **Wumpa bundles** are on by default.
-- **Hint filters:** pad and shop hints can be limited to progression items, and pad hints can wait for Warp Pad Preview.
-- **Pad colours** match across the pad beam, hub map and tracker. Open pads have a green beam, stage 2 pads a blue-violet one, and a finished pad you can still replay for Wumpa keeps the light blue beam.
-- **Clearer YAML descriptions** for almost every option.
-
-## Known issues
-
-- The Custom Tracks screen still has rough edges: the Library can show only some of your tracks, the Project Saphi catalogue may not show, This Seed can say no seed is loaded while you're connected, and the Import help text is cut off. Fixes come in alpha3.
-- The race-start banner of a cup can show another cup's name, for example "Red Gem Cup" for the Purple Gem Cup. The standings show the right name.
-- Some menus are still hard to read where text runs over the logo.
-- A seed can still fail to generate with some unusual YAMLs. Generate again, and send me the YAML.
-- Short freezes can happen in some races. If you get one, tell me the track.
-
-## Found a problem?
-
-Post it in the [#ctr-bug-reports forum](https://discord.com/channels/522082434871722016/1567553276726091827) on Discord and say it's on 0.3.0-alpha2. Add your platform, YAML or seed, what happened, and the support bundle (`support-bundle.bat` on Windows, `support-bundle.sh` on Linux; look through it before you attach it). No Discord? [Open a GitHub issue](https://github.com/dowlle/ctr-native-ap/issues/new/choose) instead.
-
-## Downloads
-
-On Windows, grab `ctr-archipelago-v0.3.0-alpha2-windows-x86.zip`. On Linux or Steam Deck, grab `ctr-archipelago-v0.3.0-alpha2-linux-x86.tar.gz` (glibc 2.36 or newer). Each includes the client, the matching `ctr.apworld` and the Play Solo runtime. The separate `ctr.apworld` and `Crash.Team.Racing.yaml` are for hosts. You need your own NTSC-U disc; no game data is included. The client isn't code-signed.
-
-The client is GPL-3.0; the source for this build is the `v0.3.0-alpha2` tag of this repository. Third-party licenses are in `THIRD_PARTY_NOTICES.md` and `solo-runtime/LICENSES/` in each download.
-
-| File | SHA-256 |
-|---|---|
-| `ctr-archipelago-v0.3.0-alpha2-windows-x86.zip` | `373c533e7953a200af3693b8f4a84c4c8c2807046e8ebf9d6aa5abd262e0b101` |
-| `ctr-archipelago-v0.3.0-alpha2-linux-x86.tar.gz` | `8f6065409375b69c6f541dfa64547b714cf8b2eb33307bdccfd4a7e4570a5972` |
-| `ctr.apworld` | `2e9eb829af2e457f5d32641dbcc5a55c76c9a4bec142f791751528b67fa58b1a` |
-
-</content>
-    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha2"/>
-  </entry>
   <entry>
     <id>https://github.com/mariokirby1703/Lumas-Archipelago/releases/tag/sonic_colours_v0.2.1</id>
     <title>Sonic Colours (Wii) v0.2.1</title>
@@ -564,6 +415,24 @@ Added aliasing to UT support (Locations in UT now include what level they are in
     <link href="https://github.com/EverydaySimpleDev/Archipelago/releases/tag/ffcc-beta-0.3.0"/>
   </entry>
   <entry>
+    <id>https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v1.0.2</id>
+    <title>Starship Titanic v1.0.2</title>
+    <updated>2026-11-07T02:14:37+00:00</updated>
+    <author>
+      <name>rescheer</name>
+    </author>
+    <content>Client changes only. Compatible with v1.0.x seeds.&#13;
+## Changes&#13;
+- Much simpler hook-based system for handling 2nd Class and 1st class upgrades&#13;
+## Fixes&#13;
+- Client could sometimes ignore an item grant when it incorrectly assumed it was a duplicate&#13;
+## Known Issues in this release&#13;
+- None&#13;
+&#13;
+Find installation instructions at [https://github.com/rescheer/Starship-Titanic-AP#installation](https://github.com/rescheer/Starship-Titanic-AP#installation)</content>
+    <link href="https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v1.0.2"/>
+  </entry>
+  <entry>
     <id>https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/v0.7.5</id>
     <title>Cyberpunk 2077 v0.7.5</title>
     <updated>2026-11-07T03:02:23+00:00</updated>
@@ -662,43 +531,6 @@ minimum_ap_version remains 0.6.6. required_client_version remains 0.1.0. The slo
   - Find The Survivors stopped counting as completed after reporting Recover The Disk&#13;
   - Fight The Mavericks after reporting Attack The Excavators</content>
     <link href="https://github.com/Nekusen/Archipelago-MegaManZX/releases/tag/v0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Kryen112/HP2PC_AP/releases/tag/v3.0.0</id>
-    <title>Harry Potter 2 PC v3.0.0.post2</title>
-    <updated>2026-11-07T15:03:38+00:00</updated>
-    <author>
-      <name>Kryen112</name>
-    </author>
-    <content># HP2PC_AP v3.0.0
-
-The randomizer now runs on the original game installed from your own disc, with SafeDiscShim. Everyone needs to reinstall: follow the attached `PLAYER_SETUP.md`.
-
-### New
-
-- **Plays on your own disc install.** Install the game from your disc and add SafeDiscShim (free, open source) so the disc check works on Windows 10 and 11. Keep the disc in the drive while you play. No game files ship with this project.
-- **One install for both game modes.** Vanilla and open castle seeds play on the same install. The client tells the mod which mode the seed uses.
-- **Borderless window.** The game opens at your monitor's size without a window frame.
-- **60 fps cap.** The game is held at the speed its physics and timers are tuned for.
-- **Widescreen view.** The view widens on wide screens, and the menus draw in a centered 4:3 area with black bars at the sides.
-- **Non-English discs.** The dialogue randomizer works on the game's own language.
-- **Linux (experimental).** The client finds the game's Wine or Proton prefix and launches the game through Wine. Nobody has confirmed the disc check under Wine yet.
-
-All three display settings are on by default and can be turned off in `host.yaml`.
-
-### Changed
-
-- **Quieter client window.** On connect, the client only says when the mod was updated. Routine details go to the log file.
-- **Player names with accents** show with the nearest plain letters, since the game cannot draw them.
-- **Ghost players** wear a pair of grey-blue glasses that stays visible on their see-through face.
-
-### Fixed
-
-- **See-through textures** (torch cages, fences, Harry's glasses) no longer draw solid, also after Alt+Tab.
-- **Trader menus** take clicks again on wide screens.
-- **Ghost players** carry their wand again.
-</content>
-    <link href="https://github.com/Kryen112/HP2PC_AP/releases/tag/v3.0.0"/>
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release10</id>
@@ -1200,8 +1032,22 @@ complicated than episode 1.&#13;
     <link href="https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.8.1"/>
   </entry>
   <entry>
+    <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.48</id>
+    <title>Mental Omega v0.7.0</title>
+    <updated>2026-11-08T20:34:26+00:00</updated>
+    <author>
+      <name>Mental Omega Randomizer contributors</name>
+    </author>
+    <content>- Add new maps for Fortress mode&#13;
+- Add new Perks for Fortress mode&#13;
+- Adjust permanent unlocks Ui for Shopmode&#13;
+- Fix Skirmish Faction selection in all modes&#13;
+- Add new Archipelago modes, Keymodes and Multi Mission completion! One mission will still give the current gridmode layout, multiple will place many missions that need to be completed on the map! Keymode ONLY in Archipelago! One works as a "currency" while the other unlocks the mission randomly on the grid!</content>
+    <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.48"/>
+  </entry>
+  <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release11</id>
-    <title>Ocarina of Time v9.1.0r2</title>
+    <title>Ocarina of Time v9.1.0r4</title>
     <updated>2026-11-08T20:35:58+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1434,5 +1280,50 @@ The client is GPL-3.0, and the source for this build is the `v0.3.0-alpha3` tag 
 | `ctr.apworld` | `1f7ab7960996982af83238b3ac9228243594e6910d2274e7f6666fa47c6b8997` |
 </content>
     <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Kryen112/HP2PC_AP/releases/tag/v3.0.0</id>
+    <title>Harry Potter 2 PC v3.0.0.post3</title>
+    <updated>2026-11-09T16:33:01+00:00</updated>
+    <author>
+      <name>Kryen112</name>
+    </author>
+    <content># HP2PC_AP v3.0.0
+
+The randomizer now runs on the original PC release of the game with SafeDiscShim, instead of the separate install that v2.12.0 and earlier needed. Everyone needs to set up again: follow the attached `PLAYER_SETUP.md`.
+
+### Upgrading from v2.12.0 or earlier
+
+- **Clean your host.yaml first.** Delete the whole `harry_potter_2_pc_options` block from `host.yaml` in your Archipelago folder before you start the new client. The old block points at the old install, and the client would carry that path over. With the block gone, the client asks for your new install on the first connect and writes fresh settings.
+- **Replace the apworld.** Swap the old `harry_potter_2_pc.apworld` in `custom_worlds` for this one.
+- **Start new seeds and saves.** Seeds and saves from the old setup do not carry over. You can leave the old install alone or remove it.
+
+### New
+
+- **Plays on the original game.** Install the game and add SafeDiscShim (free, open source), which lets the game's copy protection run on Windows 10 and 11. No game files ship with this project.
+- **One install for both game modes.** Vanilla and open castle seeds play on the same install. The client tells the mod which mode the seed uses.
+- **Borderless window.** The game opens at your monitor's size without a window frame.
+- **60 fps cap.** The game is held at the speed its physics and timers are tuned for.
+- **Widescreen view.** The view widens on wide screens, and the menus draw in a centered 4:3 area with black bars at the sides.
+- **Non-English installs.** The dialogue randomizer works on the game's own language.
+- **Linux (experimental).** The client finds the game's Wine or Proton prefix and launches the game through Wine. Nobody has confirmed the disc check under Wine yet.
+
+All three display settings are on by default and can be turned off in `host.yaml`.
+
+### Changed
+
+- **Quieter client window.** On connect, the client only says when the mod was updated. Routine details go to the log file.
+- **Player names with accents** show with the nearest plain letters, since the game cannot draw them.
+- **Ghost players** wear a pair of grey-blue glasses that stays visible on their see-through face.
+- **Open castle seeds with nothing to do at the start** are rejected at generation with a hint (add starting spells or turn on secrets), instead of failing to fill.
+
+### Fixed
+
+- **See-through textures** (torch cages, fences, Harry's glasses) no longer draw solid, also after Alt+Tab.
+- **Trader menus** take clicks again on wide screens.
+- **Ghost players** carry their wand again.
+- **A force-closed game** no longer comes back fullscreen at 640x480 on the next launch.
+</content>
+    <link href="https://github.com/Kryen112/HP2PC_AP/releases/tag/v3.0.0"/>
   </entry>
 </feed>
