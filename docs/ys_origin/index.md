@@ -8,6 +8,8 @@ Ys Origin randomizer world (Hugo slice).
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Ys Origin">English</a>
 
 ## Setup Guide
+- <a href="setup_en">English</a>
 

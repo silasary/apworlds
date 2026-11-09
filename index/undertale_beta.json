@@ -11,6 +11,96 @@
     "world_version"
   ],
   "versions": {
+    "undertale-beta-2.0.0-1": {
+      "created_at": "2026-10-06T10:30:57Z",
+      "description": "ADDED:\r\n- Four new spells using ideas from @NyanMC\r\n   - PatientStand: a heal-type spell that heals you while you are stationary during the opponent's turn, takes longer to start healing after moving or when the turn starts\r\n   - Pacify: a pacifist-type spell that instantly spares a non-boss/miniboss opponent\r\n   - DefShatter: a violent-type spell that drastically lowers the defense of everyone, including you, during the battle and can be done repeatedly for a stacking effect\r\n   - RestfulSleep: a heal-type spell that can heal you above maximum HP which is kept after the battle ends\r\n-  A new option for AddDoorLocks: maximum value of 210 (199 if goal is Genocide)\r\n   - Either read the option in the yaml to see what it does, or set it to maximum and experience the effects blind\r\n- The item menu now shows a brief description of the item you are hovering over without having to select \"INFO\"\r\n   - The Infinite Box now also has the same brief description\r\n- Now have an archipelago.json so Archipelago should no longer complain\r\n\r\nCHANGED:\r\n- The spells now all have different sounds on use\r\n- RedBuster is completely reworked, now lowers enemy defense on hit instead of defense being inverse for its damage\r\n- Updated the doc files for Undertale\r\n\r\nFIXED:\r\n- Popato Chisps Machine and Pacifist goal will now properly be said to be reachable inside Universal Tracker (Generation was unaffected)\r\n- Maybe some other minor fixes I don't remember",
+      "download_url": "https://github.com/jonloveslegos/Archipelago/releases/download/undertale-beta-2.0.0-1/undertale_beta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "eb46571158c56aca3f71d112cbe264d86f66aa37d4b0d751aaf63558d48c062b",
+      "html_url": "https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-1",
+      "minimum_ap_version": "0.6.7",
+      "size": 6078051,
+      "source_url": "https://api.github.com/repos/jonloveslegos/Archipelago",
+      "tag": "undertale-beta-2.0.0-1",
+      "title": "Undertale Beta 2.0.0-1",
+      "version_simple": "2.0.0",
+      "world_version": "2.0.0.post1"
+    },
+    "undertale-beta-2.0.0-1.1": {
+      "created_at": "2026-10-06T21:24:49Z",
+      "description": "FIXED:\r\n- Universal Tracker is now provided the info needed to know which doors were chosen for DoorLock\r\n\r\n\r\nThat's it, just a quick fix that was important.",
+      "download_url": "https://github.com/jonloveslegos/Archipelago/releases/download/undertale-beta-2.0.0-1.1/undertale_beta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "52d957524403706c5f694273d49867a0a41ed4556a5d068d98dee5598bc9f72b",
+      "html_url": "https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-1.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 6078605,
+      "source_url": "https://api.github.com/repos/jonloveslegos/Archipelago",
+      "tag": "undertale-beta-2.0.0-1.1",
+      "title": "Undertale Beta 2.0.0-1.1",
+      "version_simple": "2.0.0",
+      "world_version": "2.0.0r2"
+    },
+    "undertale-beta-2.0.0-1.2": {
+      "created_at": "2026-10-07T14:27:15Z",
+      "description": "CHANGES:\r\n- RestfulSleep now is limited to raising HP to double your Max HP\r\n- PatientStand with Green Soul Mode now is prevented from moving the Shield, but is not interrupted if the shield is moved to block a projectile that is extremely close to hitting you\r\n\r\nFIXES:\r\n- Hotland elevator left floor 1 now requires access to the cutscene that unblocks the path (already existed, but in specific situations it didn't successfully add this requirement)\r\n- Hotland elevator floors 2 and 3 now require access to the cutscenes that unlock those options inside the elevator (already existed, but in specific situations it didn't successfully add this requirement)\r\n- Waterfall and Snowdin minibosses now require the rooms they are found in to get the xp from them.\r\n- Toriel's basement now requires access to the the cutscene where she shows you the bedroom, and access to the living room with her chair\r\n- Removed the debug code that makes new saves start with two spells they shouldn't have\r\n- Sans and Papyrus's house is no longer a viable door lock on Genocide goal\r\n- PatientStand no longer resets your HP to your Max HP if you have overheal\r\n- Overheal moves the HP numbers to prevent white text on a yellow background\r\n- Undyne's spear projectiles can now be grazed",
+      "download_url": "https://github.com/jonloveslegos/Archipelago/releases/download/undertale-beta-2.0.0-1.2/undertale_beta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "dc5655fea7aea295d53d25f3ff54af51e0384c29bbf07f171bec0d77f8b7ae4b",
+      "html_url": "https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-1.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 6526123,
+      "source_url": "https://api.github.com/repos/jonloveslegos/Archipelago",
+      "tag": "undertale-beta-2.0.0-1.2",
+      "title": "Undertale Beta 2.0.0-1.2",
+      "version_simple": "2.0.0",
+      "world_version": "2.0.0r3"
+    },
+    "undertale-beta-2.0.0-2": {
+      "created_at": "2026-10-16T07:28:56Z",
+      "description": "ADDED:\r\n* Undyne the Undying lowers TP gain like Asgore\r\n* The Save Point hub warp feature is expanded, it now allows warping to any Save Point you have reached\r\n* Two new extra chests located at the two enemy encounter dead-ends in Core\r\n* A new extra chest located in the \"Don't step on the flowers\" maze in Ruins\r\n* A new extra chest located in Asgore's bedroom in New Home\r\n* You can now choose to add Stat/LOVE Traps to the pool, if the corresponding randomization option is enabled and your goal includes Genocide. These traps lower your Stats/LOVE for the rest of the playthrough, making it a race to get to the end without having to beat Sans at lowered stats, or you can have stat traps in your starting inventory to play the entire game with reduced stats\r\n* You can now press Q to start a random encounter if it is possible within the current room\r\n* The title screen now tells players about the \"I\" and \"O\" keybinds that allow resizing the window, which have existed for a while but were never stated anywhere (sorry for the people who could have used this and didn't know)\r\n* New options to exclude or force certain Door Locks (I don't have a good way to tell players what doors are called outside of the game itself, so if anyone wants to know specific doors, please ping me [ `mewlif` ] in the discord and ask, I'll answer when I can, hopefully a better solution can be figured out soon)\r\n* Killsanity now has an option for choosing \"unlocked\" encounters, meaning the locations for killing enemies exist, but you do not need any items to unlock encounters, the fully enabled option is now renamed to \"locked\" (The same feature for Sparesanity will be coming in a later patch)\r\n\r\nCHANGES:\r\n* The spider webs in Hotland can now send the corresponding spider web locations from Ruins (This is always Out-of-Logic, meaning you are never required to do this)\r\n* Karmic Tension drains faster\r\n* Hub Shop now sells Punch Cards instead of Glamburgers\r\n* \"Free Nicecream\" and \"Hotel Door hush Puppy\" are no longer excluded, since the Hub Shop can now sell both required consumables\r\n* \"Free Nicecream\" and \"Hotel Door hush Puppy\" now require Temmie Flakes instead of the normal items if you replaced all consumables with Temmie Flakes\r\n* Punch Card and Hot Dog are no longer considered Progression, because of the prior changes\r\n* Encounters are no longer more frequent on Genocide route, because of the Q feature being added\r\n* \"BraveBash\" now only grants 75% reduced damage while moving, and no longer removes your INV frames while stationary\r\n\r\nFIXES:\r\n* Stat Rando now properly randomizes the DEF from LOVE 20\r\n* Game no longer crashes after beating Omega Flowey\r\n* \"PatientStand\" and \"BraveBash\" now properly work with Purple Soul mode\r\n* Grazing should now work with Purple Soul Mode\r\n* The Graze outline should no longer be off-center\r\n* Hopefully the battle UI will no longer randomly duplicate during the Muffet Fight\r\n* The \"KR\" text now moves with the HP numbers during Sans",
+      "download_url": "https://github.com/jonloveslegos/Archipelago/releases/download/undertale-beta-2.0.0-2/undertale_beta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ec3b06a9350234b4010ab4865d4ca12888a71938f87e4734971aeefee4a2ec06",
+      "html_url": "https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-2",
+      "minimum_ap_version": "0.6.7",
+      "size": 6545842,
+      "source_url": "https://api.github.com/repos/jonloveslegos/Archipelago",
+      "tag": "undertale-beta-2.0.0-2",
+      "title": "Undertale Beta 2.0.0-2",
+      "version_simple": "2.0.0",
+      "world_version": "2.0.0.post2"
+    },
+    "undertale-beta-2.0.0-2.1": {
+      "created_at": "2026-10-20T22:06:44Z",
+      "description": "ADDED:\r\n- \"start_inventory_from_pool\" is now supported, is \"start_inventory\" except the items are also removed from the pool\r\n- Various new options for making Sans, Undyne, and Asgore, logically require a minimum amount of stats. (Asgore only counts Weapons and Armor)\r\n- Sparesanity can now be unlocked like Killsanity\r\n- Five new chests added. One at Snowdin Town, two in Waterfall, one in the MTT Resort, one at the end of New Home\r\n\r\nCHANGES:\r\n- Hub Shopkeeper has a slightly altered sprite to try to have a less stiff pose\r\n- Hub Shopkeeper has many Talk dialogue changes, the post-pacifist dialogue is the most changed from the before.\r\n- The text telling you about the \"Q\" hotkey now has a black border\r\n\r\nREMOVED:\r\n- Removed the secret Wall Temmie interaction, the purpose was scrapped a long time ago",
+      "download_url": "https://github.com/jonloveslegos/Archipelago/releases/download/undertale-beta-2.0.0-2.1/undertale_beta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c37f9e4a7c1949e6f0d3610077a1fa6296a2127c9607a762baf334f0ce5191fe",
+      "html_url": "https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-2.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 6602364,
+      "source_url": "https://api.github.com/repos/jonloveslegos/Archipelago",
+      "tag": "undertale-beta-2.0.0-2.1",
+      "title": "Undertale Beta 2.0.0-2.1",
+      "version_simple": "2.0.0",
+      "world_version": "2.0.0r2"
+    },
+    "undertale-beta-2.0.0-2.2": {
+      "created_at": "2026-10-26T23:12:46Z",
+      "description": "CHANGED:\r\n- You no longer receive items automatically, you now press \"V\" to receive all unreceived items. This will make the game no longer lag from having received a large amount of items. (Ice traps will still be received mid-battle)\r\n\r\nFIXES:\r\n- I don't remember all of the fixes, but there were quite a few",
+      "download_url": "https://github.com/jonloveslegos/Archipelago/releases/download/undertale-beta-2.0.0-2.2/undertale_beta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "317f1b02d3aef4405256bc64ebd75106aa2a282de3df4d38e5fac9c95b04da20",
+      "html_url": "https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-2.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 6577931,
+      "source_url": "https://api.github.com/repos/jonloveslegos/Archipelago",
+      "tag": "undertale-beta-2.0.0-2.2",
+      "title": "Undertale Beta 2.0.0-2.2",
+      "version_simple": "2.0.0",
+      "world_version": "2.0.0r3"
+    },
     "undertale-beta-2.0.0-2.3": {
       "created_at": "2026-11-03T12:52:11Z",
       "description": "FIXES:\r\n- Transition after Toriel fight now properly requires killing everything in the Ruins for Genocide route (Only made an impact if one of the doors after that were locked with door locks)\r\n- Generation no longer crashes if you are playing Genocide without LOVE nor Stat randomization",
@@ -24,7 +114,7 @@
       "tag": "undertale-beta-2.0.0-2.3",
       "title": "Undertale Beta 2.0.0-2.3",
       "version_simple": "2.0.0",
-      "world_version": "2.0.0.post2"
+      "world_version": "2.0.0r4"
     }
   }
 }

@@ -2,28 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-09T06:29:00.497444+00:00</updated>
+  <updated>2026-11-09T12:19:10.096294+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/0.7.4</id>
-    <title>Cyberpunk 2077 v0.7.4</title>
-    <updated>2026-11-05T22:06:39+00:00</updated>
-    <author>
-      <name>247Tossing</name>
-    </author>
-    <content>Patch 2.5 support.&#13;
-&#13;
-- RED4ext.SDK is updated for the patch 2.5 native layouts, and CyberpunkAP.dll is rebuilt.&#13;
-- The InventoryDataManagerV2.EquipItem wrapper forwards the optional forceEquip argument. Thanks to RimuruLeThug.&#13;
-- The README lists the dependency versions used by this build.&#13;
-&#13;
-This build is for Cyberpunk 2077 2.5 with RED4ext 1.31.0, redscript 0.5.32, Cyber Engine Tweaks 1.38.0, Codeware 1.21.0, TweakXL 1.12.0, ArchiveXL 1.28.0, and Phone Extension 0.9.&#13;
-</content>
-    <link href="https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/0.7.4"/>
-  </entry>
   <entry>
     <id>https://github.com/rescheer/Starship-Titanic-AP/releases/tag/v1.0.1</id>
     <title>Starship Titanic v1.0.1</title>
@@ -1218,7 +1201,7 @@ complicated than episode 1.&#13;
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release11</id>
-    <title>Ocarina of Time v9.1.0r4</title>
+    <title>Ocarina of Time v9.1.0r2</title>
     <updated>2026-11-08T20:35:58+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1256,7 +1239,7 @@ Please note: Since OoT is currently not shipped as a bundled .apworld file, but 
 &gt; ## As of this update Archipelago 0.6.8 is the minimum version required, if you're still running 0.6.7 please update the launcher [here](https://github.com/ArchipelagoMW/Archipelago/releases)&#13;
 &#13;
 The _pretty_ update. Very happy with all the major changes, glhf and enjoy.&#13;
-(Also as per usual if you enjoy these and want to [buying me a coffee](https://streamlabs.com/batatvideogames/tip) I'd appreciate it)&#13;
+(Also as per usual if you enjoy these and want to [buy me a coffee](https://streamlabs.com/batatvideogames/tip) I'd appreciate it)&#13;
 &#13;
 # Changelog &#13;
 &#13;
@@ -1382,5 +1365,74 @@ All 47 release client regression projects, repository validation and 11 tool tes
 &#13;
 **Full Changelog**: https://github.com/gjgfuj/SlotLock/compare/slotlockv0.11.3...slotlockv0.11.4</content>
     <link href="https://github.com/gjgfuj/SlotLock/releases/tag/slotlockv0.11.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha3</id>
+    <title>Crash Team Racing v0.3.0a3</title>
+    <updated>2026-11-09T08:47:42+00:00</updated>
+    <author>
+      <name>Dowlle</name>
+    </author>
+    <content>Alpha3 is here! Mostly fixes from your alpha2 reports (thanks!), plus seven new traps, hub fast travel and way less lag if you have a lot of custom tracks. Still an alpha, so expect rough edges. 0.2.4 is still the stable release.
+
+[Full 0.3.0 notes on AP-Pie](https://ap-pie.com/ctr/releases/0-3-0) · [Setup guide](https://ap-pie.com/guides/ctr) · [SETUP.md as shipped](https://github.com/dowlle/ctr-native-ap/blob/v0.3.0-alpha3/SETUP.md)
+## Before you try it
+- Put it in a new folder or replace your alpha2 one. Your 0.2.4 install isn't touched.
+- Use the alpha3 client and APWorld together. Alpha2 rooms still connect fine.
+- Your alpha2 YAML still works. The seven new traps are on at their default weights, so set them to 0 in `trap_weights` if you don't want them. `ctr_first` is now `trophy_ctr_combined` (the old name still works).
+- Got a YAML from someone else? If it says `version: 0.6.8` and you generate on 0.6.7 (Play Solo does), it won't load. Change the number to your version.
+## Fixed since alpha2
+- Fixed the freezes with big custom track libraries in the menus, Play Solo and at race start. Connecting to a room with lots of custom tracks is way faster too.
+- Cup banners show the right cup name.
+- Pads stayed locked on "Key x2" after you got the Keys until you reloaded the hub. Fixed.
+- Aku Aku hints in hub door corridors could smear the mask or crash the game. Fixed.
+- Bosses on N. Gin Labs could gain a lap on the barrel ramp. Fixed.
+- Boss cups follow One-Lap Cup Races now.
+- Seeds with all 27 pads as cups generate again.
+- The Purple Gem Cup boss gauntlet doesn't ask for all five Gem Cups anymore.
+- Saphi downloads wait when the site is busy instead of failing.
+- Custom tracks: no more duplicates in Play Solo after a re-import, This Seed always shows your seed, and the Library tells you when the Saphi catalogue failed to load.
+- Boss races on custom tracks don't show the retail track's boxes anymore.
+- No more AP boxes on the unreachable crate on Ancient Lake and North Pole.
+## New
+- Seven new traps: Always Jumping, No Drifting, Rival Surge, Mud Season, Limp Mode, Stuck Steering and Wumpa Leak. Trap notices now take one line in the feed instead of three.
+- Hub fast travel: pause in a hub, pick TRAVEL, and go to any hub you have the Keys for.
+- New `trap_display` option, so traps can look like progression (or a mix).
+- The feed tells you what an item opened, like `Crash Cove OPEN`.
+- Pads only glow green or blue-violet when there's something in logic behind them. Only out-of-logic stuff left? Orange dot on the map and a plain light blue beam.
+- Slide Coliseum and Turbo Track can show up in cups, and testers added nine more cup names.
+- Missing a custom track? This Seed tells you where to download it.
+- DK Pass and Ancient Lake have box spots placed by testers, so their boxes aren't sitting on weapon crates anymore.
+- All AP menus use the same buttons: Cross or Circle to confirm, Triangle or Start to go back. Button hints match your Xbox or Steam Deck controller (you can turn that off in Options).
+- Play Solo opens imported YAMLs with all their options, and has a page to set each trap's weight.
+- The importer knows more track names and supports a few more tracks, including three from Coco Team Racing.
+- New defaults: both pad hint filters are on, and Crystal Challenges can use all seven arenas.
+- Experimental and off by default: recorded AI laps. Up to three racers drive laps from the files in your `ap-navpaths` folder.
+## Known issues
+- North Pole can have broken trees when it's the third race of a cup.
+- The screen froze once in a custom track race when a release sent a ton of items at once. Restarting the client fixed it. I'm looking into it.
+- Some menu text is hard to read where it runs over the logo.
+- The Saphi catalogue might still not show up for some people. If the Library says it failed, send me your `ctr-ap.log`.
+- Space Labs 1.2.4 and Matsuri 1.1.0 can't be installed yet (other Space Labs versions work).
+- Some unusual YAMLs still fail to generate. Try again, and send me the YAML if it keeps failing.
+- Short freezes can still happen in races. Tell me which track.
+- With Trap Display on, a disguised trap can still show its trap name. Fix is coming in alpha4.
+- Cortex Vortex plays Oxide Station's music and says Oxide Station on the standings screen.
+- Parking Lot can have a black patch in the sky.
+- In the hub, the item feed can overlap the pad title and character picker.
+## Found a problem?
+[Open a GitHub issue](https://github.com/dowlle/ctr-native-ap/issues/new/choose) and mention you're on alpha3. Add your platform, YAML or seed, what happened, and the support bundle (`support-bundle.bat` on Windows, `support-bundle.sh` on Linux; have a quick look through it first). Testing on the Appie's Games Discord? You can post it there too.
+## Downloads
+Windows: `ctr-archipelago-v0.3.0-alpha3-windows-x86.zip`. Linux or Steam Deck: `ctr-archipelago-v0.3.0-alpha3-linux-x86.tar.gz` (needs glibc 2.36 or newer). Both come with the client, the matching `ctr.apworld` and the Play Solo runtime. The separate `ctr.apworld` and `Crash.Team.Racing.yaml` are for hosts. You need your own NTSC-U copy of the game; nothing from the disc is included. The client isn't code-signed.
+
+The client is GPL-3.0, and the source for this build is the `v0.3.0-alpha3` tag of this repository. Third-party licenses are in `THIRD_PARTY_NOTICES.md` and `solo-runtime/LICENSES/` in each download.
+
+| File | SHA-256 |
+|---|---|
+| `ctr-archipelago-v0.3.0-alpha3-windows-x86.zip` | `0e1d34a88723ff7adee6e7d3c2c953cbe6699a311d1826d162f47f16186e7385` |
+| `ctr-archipelago-v0.3.0-alpha3-linux-x86.tar.gz` | `d9670173c5ac7c902b5709cbc935c17858216f6021892fd9090e7d7fe68f7ff9` |
+| `ctr.apworld` | `1f7ab7960996982af83238b3ac9228243594e6910d2274e7f6666fa47c6b8997` |
+</content>
+    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha3"/>
   </entry>
 </feed>

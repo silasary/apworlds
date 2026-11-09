@@ -10,6 +10,10 @@ to rescue the Seven Sages, and then confront Ganondorf to save Hyrule!
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="de_Ocarina of Time">German</a>
+- <a href="en_Ocarina of Time">English</a>
 
 ## Setup Guide
+- <a href="setup_de">German</a>
+- <a href="setup_en">English</a>
 

@@ -1,10 +1,10 @@
 # Moonlighter
 
-
+Moonlighter is a game.
 
 
 ## Downloads
-- <a href="https://github.com/FeluciaPS/MoonlighterAP/releases/download/v0.1.0-beta/moonlighter.apworld">Latest Version (0.1.0b0)</a>
+- <a href="https://github.com/FeluciaPS/MoonlighterAP/releases/download/v0.1.1-beta/moonlighter.apworld">Latest Version (0.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

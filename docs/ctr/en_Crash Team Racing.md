@@ -10,7 +10,8 @@ requirements or reduce the two-stage gate and trap settings.
 
 A YAML that sets no content gets the original game's shape: the 18 original race
 tracks, 5 Gem Cups, 4 Crystal Challenges and the five garages, shuffled onto the
-27 warp pads, with the cup races drawn. Custom tracks and Cortex Vortex join the
+27 warp pads, with the cup races drawn. The 4 Crystal Challenges are drawn from
+all 7 arenas, the 4 original ones and the 3 new ones. Custom tracks and Cortex Vortex join the
 same pool. YAML files from v0.2.x need a new look: option names that are gone are
 ignored without a message. A v0.2.x room plays on the v0.2.4 client only.
 
@@ -40,6 +41,12 @@ whole slot, which is useful for races. Players can also turn the colours off
 for themselves in the game under **OPTIONS → Archipelago → Item Box Colours**.
 When the YAML turned them off, that row shows **OFF (SEED)** and cannot be
 turned on.
+
+## Why do some weapon crates stay ordinary?
+
+On a custom track without hand-placed AP boxes, up to 15 eligible weapon crates become AP boxes. Crates at reviewed excluded positions stay normal weapon crates, including the origin crate in the reviewed Ancient Lake revisions.
+
+Hand-placed AP layouts keep every weapon crate ordinary and use their own spots. A saved room keeps the layout recorded in its seed.
 
 ## Options in detail
 
