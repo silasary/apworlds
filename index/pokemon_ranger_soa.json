@@ -1,0 +1,30 @@
+{
+  "authors": [
+    "WCutePy"
+  ],
+  "flags": [],
+  "game": "Pokemon Ranger Shadows of Almia",
+  "github": "https://github.com/WCutePy/ArchipelagoAlmia",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "ranger_v0.0.1-rando": {
+      "created_at": "2026-11-06T19:56:38Z",
+      "description": "# Pokemon Ranger Shadows of Almia randomizer\r\n\r\nThis is a randomizer that randomizes the Pok\u00e9mon all over almia! It makes use of the Archipelago framework but currently does not yet have Archipelago support. This is to come.\r\n\r\nSee [the docs](https://github.com/WCutePy/ArchipelagoAlmia/blob/main/worlds/pokemon_ranger_soa/docs/en_PokemonRangerSoA.md) for more information\r\n\r\n## What does randomization do to this game?\r\n\r\nPokemon randomization can change the following.\r\n- Wild encounters\r\n  - Excluding Doduo and Staraptor\r\n- Static encounters\r\n  - Excluding boss encounters\r\n- NPC Pok\u00e9mon (WIP)\r\n- Partners\r\n\r\nMultiple algorithms are (not yet) possible for wild encounter randomization.\r\nAs a base this randomizer ensures the \r\nstory is always beatable, by iterating over wild encounters\r\nas they become accessible in the story and placing required field moves amongst all currently accessible spots.\r\n\r\nMovement field moves such as swim, river flow or airlift have multiple copies placed such that moving back and forth over their terrain is always possible.\r\n\r\nQuest required pokemon are placed across all potential spots.\r\nStatic encounters are filled such that they have a similar HP to their original counter part. Remaining wild spots are filled randomly, ensuring one of each species exists in the wild.\r\n\r\n**NOTE** This rando spans the full story, the randomizer does **not** randomize postgame or ensure postgame quests are beatable.\r\n\r\nActual apworld file and linked commit are not in sync, but did not want to make a 0.0.2 already even though I could be sitting at 0.0.4 with these patches \ud83d\ude22 ",
+      "download_url": "https://github.com/WCutePy/ArchipelagoAlmia/releases/download/ranger_v0.0.1-rando/pokemon_ranger_soa.apworld",
+      "has_manifest": true,
+      "hash_sha256": "2023946c47cc870ee44c84328bc25869aebd5050f9534219548926667a177f6d",
+      "html_url": "https://github.com/WCutePy/ArchipelagoAlmia/releases/tag/ranger_v0.0.1-rando",
+      "minimum_ap_version": "0.6.7",
+      "size": 222419,
+      "source_url": "https://api.github.com/repos/WCutePy/ArchipelagoAlmia",
+      "tag": "ranger_v0.0.1-rando",
+      "title": "Pokemon Ranger Shadows of Almia - v0.0.1-rando",
+      "version_simple": "0.0.1",
+      "world_version": "0.0.1.post0"
+    }
+  }
+}
