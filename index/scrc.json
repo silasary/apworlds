@@ -322,6 +322,21 @@
       "title": "v0.30.0 - Bunker and True Ending",
       "version_simple": "0.30.0",
       "world_version": "0.30.0"
+    },
+    "v0.30.1": {
+      "created_at": "2026-11-08T23:15:19Z",
+      "description": "# v0.30.1 \u2014 Network security fixes\n\nClient **0.77.1** / APWorld **0.30.0**.\n\n- Remote server addresses now use encrypted WebSockets by default and do not silently retry over plaintext after a TLS failure.\n- Incoming decompressed messages are limited to **32 MiB** before parsing; partial messages must finish within **60 seconds**. Idle connections remain supported.\n- Connection setup refuses to proceed if the receive protection cannot load.\n\n## Updating\n\nClose the game and replace the client files with the contents of **RhythmCastleAP-v0.77.1.zip**, including license notices.\n\nYour current seed, save and APWorld remain compatible. **scrc.apworld is byte-for-byte unchanged from v0.30.0**; existing players do not need to replace it. Item IDs, progression rules and victory conditions are unchanged.\n\n`localhost:port` still works. If you deliberately use a trusted remote server without TLS, enter `ws://host:port` explicitly; its traffic and room password are unencrypted. Do not use plaintext merely to bypass an unexpected certificate error.\n\nThe unpublished cutscene candidate is not included. In-game acceptance and a live very-large-room test have not been performed for this network guard; the automated tests are described in the linked validation record.\n\nSee [security validation](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.1/docs/testing/2026-11-08-network-security.md) and [known issues](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.1/docs/KNOWN_ISSUES.md).\r\n\n## Validation\nAll 47 release client regression projects, repository validation and 11 tool tests passed. The Release build completed with zero warnings/errors. Targeted tests cover oversized-message rejection, fragmented JSON parsing, fail-closed connection setup, guard reinstallation and TLS failure without plaintext retry.\n\r\n",
+      "download_url": "https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.30.1/scrc.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f68ce1452968d826a39b2331f4f684851ed32034aef61f414b537f36e0c54843",
+      "html_url": "https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.30.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 72236,
+      "source_url": "https://api.github.com/repos/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago",
+      "tag": "v0.30.1",
+      "title": "v0.30.1 \u2014 Network security fixes",
+      "version_simple": "0.30.0",
+      "world_version": "0.30.0r2"
     }
   }
 }

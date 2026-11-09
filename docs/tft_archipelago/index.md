@@ -4,7 +4,7 @@ Archipelago world definition for the TFT Archipelago overlay client.
 
 
 ## Downloads
-- <a href="https://github.com/Alpaka623/tft-archipelago-releases/releases/download/v0.5.9/tft_archipelago.apworld">Latest Version (0.6.0r2)</a>
+- <a href="https://github.com/Alpaka623/tft-archipelago-releases/releases/download/v0.5.10/tft_archipelago.apworld">Latest Version (0.6.0r2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -315,6 +315,21 @@
       "version_simple": "9.1.0",
       "world_version": "9.1.0r5"
     },
+    "v9.1.0-release11": {
+      "created_at": "2026-11-08T20:35:58Z",
+      "description": "# OoT Randomizer APWorld v9.1.0 Full Release 11\r\n\r\n## NOT compatible with old seeds. Please make sure to only run this with freshly generated seeds (ASM was rebuilt)\r\n\r\n## Changes:\r\n- Fix: UT not handling certain edge cases\r\n  - Trade Shuffle Starts not handled\r\n  - Mask shop not handled properly\r\n  - Unshuffled shop items not included (will still be off in edge cases with how the randomizer handles them)\r\n- Fix: Patch generation crash when trap was placed on non AP location\r\n- Feat: Finding an OoT item for another world now properly shows the recipient\r\n  - Bumped the displayable name length to 16 characters\r\n  - Adjusted hints and getItem text boxes to handle the new text\r\n  - Remove flavor text for out of world oot items.\r\n- Feat: UT now lists deferred entrances\r\n\r\nPlease note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.",
+      "download_url": "https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release11/oot.apworld",
+      "has_manifest": true,
+      "hash_sha256": "45af518b2d1edfd397f9602afabec77d3dc0d3b3f51430930abb71426a8e88a5",
+      "html_url": "https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release11",
+      "minimum_ap_version": "0.6.4",
+      "size": 3688302,
+      "source_url": "https://api.github.com/repos/TreZc0/OoTR-APWorld",
+      "tag": "v9.1.0-release11",
+      "title": "v9.1.0-release11",
+      "version_simple": "9.1.0",
+      "world_version": "9.1.0r2"
+    },
     "v9.1.0-release2": {
       "created_at": "2026-09-10T09:34:44Z",
       "description": "# OoT Randomizer APWorld v9.1.0 Full Release 2\r\n\r\nThis is a pretty well tested version by now. Generation fails still might happen on occasion, especially when using pre-completed dungeons.\r\n\r\n## Changes:\r\n- Fixed a few left faulty grotto item ids that caused items not to show there in certain settings\r\n- Fixed lag with RetroArch connector and risk of item duplication on connect.\r\n- Removed fork mentions from template to comply with AP rules\r\n\r\nPlease note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.\r\nEven after deletion, the \"Open Patch\" Workflow in AP currently still starts the OoT Client, even if you deleted the world. So make sure you have the correct \"Ocarina of Time Client\" open that references the APWorld 9.1.0 after patching, or patch directly through the new Adjuster. If your client says \"Archipelago Ocarina of Time Client 0.6.x\" in the top bar with no info about the apworld version, you are using the old client.",
@@ -373,7 +388,7 @@
       "tag": "v9.1.0-release6",
       "title": "v9.1.0-release6",
       "version_simple": "9.1.0",
-      "world_version": "9.1.0r2"
+      "world_version": "9.1.0r3"
     },
     "v9.1.0-release7": {
       "created_at": "2026-10-20T14:05:24Z",
@@ -403,7 +418,7 @@
       "tag": "v9.1.0-release8",
       "title": "v9.1.0-release8",
       "version_simple": "9.1.0",
-      "world_version": "9.1.0r3"
+      "world_version": "9.1.0r2"
     },
     "v9.1.0-release9": {
       "created_at": "2026-11-01T13:59:46Z",
@@ -418,7 +433,7 @@
       "tag": "v9.1.0-release9",
       "title": "v9.1.0-release9",
       "version_simple": "9.1.0",
-      "world_version": "9.1.0r2"
+      "world_version": "9.1.0r4"
     },
     "v9.10-release5": {
       "created_at": "2026-09-25T18:37:53Z",
