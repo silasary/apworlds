@@ -26,7 +26,7 @@ Stargazer Colosseum Clears: 0x124FF
 
 Colosseum Unlock Bitfield 1: 0x12509
 Colosseum Unlock Bitfield 2: 0x12508
-Post Game Flag: 0x12511
+Post Game Flag: 0x12511 | Bit Index 6
 
 Mark if the Player is Currently Borrowing a New Pass from Gateway: 0x125B7
 
@@ -38,6 +38,88 @@ Joel's Rental Pass: 0x255E9
 Natalie's Rental Pass: 0x25CD5
 
 Flags #383-#390: 0x12565
+
+Total Battles Byte 1: 0x124EA
+Total Battles Byte 2: 0x124EB
+Total Battles Byte 3: 0x124E4
+
+1st Pokémon's Displayed HP: 0x8044e0d6 | Halfword
+2nd Pokémon's Displayed HP: 0x8044e1b2 | Halfword
+3rd Pokémon's Displayed HP: 0x8044e28e | Halfword
+
+Pokémon Indexes:
+0x0 = First Player Pokémon
+0x1 = First Enemy Pokémon
+0x2 = Second Player Pokémon
+0x3 = Second Enemy Pokémon
+
+Address for Battle Result:
+*0x8062d600[-0x4d3c][0x14][0x1c] + 0x23e4 | Bits 0 & 1
+Bit 0 is 1 and Bit 1 is 0 = Win
+Bit 0 is 0 and Bit 1 is 1 = Loss
+Other = Draw
+
+Player's Perfect Points:
+*(*0x806257f8 + 0x30) + 0x1a | Byte
+
+Address for the Data of Pokémon Currently out in the Field:
+*0x8062d600[-0x4d3c][0x14][0x1c][0x30]
+
+Pokémon Turn Action Tracker: 0x0 + PKMN Index | Byte
+Seems to track what menu the player is currently on while choosing what the specific Pokémon should do.
+0xa-0xc = Processing chosen action.
+0xd = Action chosen, waiting for turn to start.
+Turn Happenings: 0x8 | Word
+Causes stuff to happen in the battle.
+0x2b = Trigger battle ending
+Field Pokémon's Index in the Party: 0x219c + PKMN Index | Byte
+
+Offset for each Pokémon: PKMN Index * 0xc0 (Add this to all offsets below)
+
+Field Pokémon Moves Offset: 0x2d4c | 1 Halfword per Move
+Field Pokémon's Stat Modifiers: 0x2d58 | 1 Byte per Stat
+Stat Order:
+0x0 = HP??? No idea what this is.
+0x1 = Attack
+0x2 = Defense
+0x3 = Speed
+0x4 = Special Attack
+0x5 = Special Defense
+0x6 = Accuracy
+0x7 = Evasion
+Field Pokémon Moves' PP Offset: 0x2d6c + Move Index | 1 Byte per Move
+Field Pokémon Nickname Offset: 0x2d76 | 10 Halfwords + 0xffff as a Terminator
+Field Pokémon Current HP Offset: 0x2d8c | Word
+Max HP is at an Offset of 0x4 from the Current HP
+Field Pokémon Non-Volatile Status Condition: 0x2daf | Byte
+Non Volatile Statuses:
+Bit Indexes 0-2 = Sleep (Also functions as a turn counter, from 0-7 turns)
+Bit Index 3 = Poison
+Bit Index 4 = Burn
+Bit Index 5 = Freeze
+Bit Index 6 = Paralysis
+Bit Index 7 = Badly Poisoned
+Field Pokémon Volatile Status Conditions: 0x2db0 | Word
+Volatile Statuses:
+Bit Index 20 = Getting Pumped Status
+Bit Index 26 = Trapped Status
+
+Address for the Data of the Party:
+*0x8062d600[-0x4d3c][0x14][0x1c][trainer_idx * 4 + 0x68]
+trainer_idx = 0x0 for the Player, 0x1 for the Opponent
+
+Number of Pokémon in Party Offset: 0x4 | Word
+
+Address for the Data of a Pokémon in the Party:
+party_addr + pkmn_party_idx * 0xa4 + 0x8
+
+Party Pokémon's Non-Volatile Status Condition: 0x8b | Byte
+Party Pokémon Current HP Offset: 0x8e | Halfword
+Max HP is at an Offset of 0x2 from the Current HP
+
+Singles or Doubles Flag:
+*0x8062d600[-0x4d3c][0x14][0x1c][0x2c] bit index 1
+Flag = 0x0 if Singles, 0x1 if Doubles
 
 Rental Pass Bits:
 

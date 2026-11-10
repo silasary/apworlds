@@ -1,6 +1,9 @@
 # Kirby: Planet Robobot
 
+Kirby: Planet Robobot on the Nintendo 3DS.
 
+Kirby storms the Access Ark to stop the Haltmann Works Company. Collect Code
+Cubes, wield 27 copy abilities and the Robobot Armor, and unlock every mode.
 
 
 ## Downloads

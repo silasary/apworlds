@@ -42,6 +42,8 @@ InitSaveSlotFlags = Gateway and Main Street Unlock
 8013a054 = Courtyard Unlock
 8013a0a4 = Stargazer Unlock
 
+Post Game Unlock: 8011584c
+
 
 FUN_800e7f24 sets various flags for Battle Passes
 param 1 = What flag to change
@@ -95,8 +97,6 @@ Other addresses that check if a Rental Pass is in Gateway (not sure what these d
 	800dccd4
 	800c8930
 
-800cdbd4 may be starting rental pass call? probably not
-
 8008f0f8 handles the buttons in Colosseum Battle menu
 Cases 0x0-0x9 handle if you can select each colosseum
 From case 0xa onwards, even cases handle how to display the button icons,
@@ -130,9 +130,34 @@ SetButtonDPadMapping (FUN_80053fe8) sets the d-pad mappings for a specific menu 
 
 SetButtonDPadMappingFrom0x8044c258 (FUN_8005b548) calls SetButtonDPadMapping with 0x8044c258 as the start_address parameter. It also sets DAT_8044d420 + button_id * 2 to param_6, not sure for what purpose this is though.
 
-SetGroupButtonDPadMapping (FUN_80084cac) runs a loop to set the mappings for multiple different buttons, using SetButtonDPadMappingFrom0x8044c258. It takes a memory address as a parameter, with a said memory address containing the start of a bunch 4 byte groups of button mappings, with each byte representing a direction (in the order of up left right and down). The loop will read a group of button mappings, set is as the mappings for a button id, increment the button id and then move on to the next group of mappings, rinse and repeat until one of the groups starts with 0xFF, which signal it to break the loop and end the function.
+SetGroupButtonDPadMapping (FUN_80084cac) runs a loop to set the mappings for multiple different buttons, using SetButtonDPadMappingFrom0x8044c258. It takes a memory address as a parameter, with said memory address containing the start of a bunch 4 byte groups of button mappings, with each byte representing a direction (in the order of up left right and down). The loop will read a group of button mappings, set is as the mappings for a button id, increment the button id and then move on to the next group of mappings, rinse and repeat until one of the groups starts with 0xFF, which signal it to break the loop and end the function.
 
 FUN_80084d10, specifically from 0x80084f20 onwards, handles where pressing each direction on the d-pad should take you in the Colosseum Battle menu. It achieves this through a ton of nestled if-else statements, each one checking for if the player lacks at least 1 of a specific group of Colosseums, meant as a way to check for different game states. Once it finds a specific game state, it calls SetGroupButtonDPadMapping, with an address to a different set of mappings depending on the game state, and SetButtonDPadMappingFrom0x8044c258, to set the mappings for the return button, said mappings being 0 for every direction except for up, which is either 1 (Gateway) or 6 (Sunny Park) depending on the game state.
+
+
+FUN_80138130 handles updating the number of the current battle after a win.
+It gets called at 80078a54 in HandleBattleEnd (FUN_80077174), which handles various things that happen once a battle ends, such as showing the Continue/Quicksave/Retire buttons or the prompt for using Perfect Points.
+806257f8 points to 8044fa90, which, at an offset of 0x30, stores a pointer to a set of data, which, at an offset of 0xc, stores whether the player is in a Colosseum (value of 0) or a Free Battle (value of 1). It may also store other values.
+This is used to check for what to do once the player presses a button after winning.
+From 8044fa90, at an offset of 0x10, is a variable that is used to change what HandleBattleEnd does, depending on stuff like if the player won or lost the battle.
+FUN_80075670 handles setting the initial value of this flag, with it potentially changing in HandleBattleEnd. 800756d0 is where the flag gets set when the player wins a battle, with the value it gets set to being zero.
+From 8044fa90, at an offset of 0x28, is a variable that is used to know what to set the HandleBattleEnd flag to in FUN_80075670. 0 is used if the player wins the battle and 1 if they lose.
+This value is set by FUN_800746d8 at 800746fc and is based on the paramater.
+This function is called at 80031a14 to set the flag when the player wins or loses, which is in turn called by FUN_80230d38 at 80231a94 through a branch to CTR, which in turn gets called by FUN_80230044 at 80230a08
+The value is pulled from 80c42a40 at an offset of 0xC
+Field 0x585EC of the save slot at an offset of 0x10 contains the ID for the current Colosseum, and at an offset of 0x16, it contains a halfword with the current battle number.
+
+Colosseum IDs at field 0x585EC[0x10]:
+0x3E8 = Gateway Colosseum
+0x3E9 = Main Street Colosseum
+0x3EA = Waterfall Colosseum
+0x3EB = Neon Colosseum
+0x3EC = Crystal Colosseum
+0x3ED = Sunny Park Colosseum
+0x3EE = Magma Colosseum
+0x3EF = Courtyard Colosseum
+0x3F0 = Sunset Colosseum
+0x3F1 = Stargazer Colosseum
 
 
 0x806251b8 - Pointer To Some Table About The Bitflag In The Save File, Set At Runtime (Maybe loaded from fsys file?)
@@ -155,23 +180,14 @@ BITFLAG_TABLE_ENTRY (Each Entry is 0xC in Size)
 0x9 (byte) if true, does something after init in FUN_801673C8 to init again?
 
 
-The word at 91c0f4dc + 0x4 is read on loop at many points in the game
-It is read by FUN_8039a298, which is called at 801675f8
+A check for if the Player Pokémon fainted (may be useful?): 0x803b3a2c
 
-The byte at 91c0f4dc + 0x8 is read on loop at many points in the game
-It is read by FUN_8039a230, which is called at 801675e8
+Save Pokémon's HP After Healing/Taking Damage: 0x803cecc4
+When saving new HP value, r5 tracks the Pokémon's index number
 
-The word at 91c0d898 + 0x4 is read during the intro movie showcasing Pokétopia
-It is read by FUN_8039a298, which is called at 801675f8
+Switch Pokémon: 0x803bda0c
 
-The byte at 91c0d898 + 0x8 is read during the intro movie showcasing Pokétopia
-It is read by FUN_8039a230, which is called at 801675e8
-
-Various bytes and words are read on loop in Colosseum select menu
-This includes:
-91c0dae4, 91c0f4dc, 91c0da84, 91c0da90, 91c0da9c, 91c0daa8, 91c0dacc,
-91c0dac0, 91c0dad8, 91c0dab4, 91c0da6c, 91c0dafc, 91c0d8f8, 91c0da78,
-91c0d904
+Save Pokémon HP from Battle Data to Party Data: 0x803dec14
 
 
 Fresh Save File Documentation
@@ -251,49 +267,3 @@ Upon entering menu after "transfering PKMN from DS":
 0x19B05 : (00 -> 08)
 0x58600 : (02 -> 14)
 
-
--- Axcel's madman's notes on FUN_8016746c which may be illegible --
-
-r0 = lr
-r30 = param 1
-r28 = param 2
-r27 = param 3
-
-r29 = 80625174
-
-r4 = param 1
-r3 = r29 + 0x44 = 806251b8
-
-r3 = value in 806251b8 = 91c0d820
-
-r0 = param 1 * 0xC
-
-r3 = value in 0x0010(r3) + r0 = 91c0d850 + r0 
-
-r3 = value in 0x0008(r3)
-
-r31 = 91a2f4ac
-rlwinm    r31, r3, 0, 24, 31 (000000ff)
-r31 = 0x1
-
-r3 = r29 + 0x44 = 806251b8
-
-r3 = value in 0x0010(r3) + r0
-
-r3 = 0x0004(r3) = 0x196
-
-rlwinm    r27, r3, 27, 5, 31 (ffffffe0)
-rlwinm    r30, r3, 0, 27, 31 (0000001f)
-
-r4 = 0x80460000
-r3 = 0x00070000
-
-r4 = -0x2180(r4) = 0x918f6d40
-
--- stuff I didn't write down (my brain was melting) --
-
-r4 = 0x918f6d40
-rlwinm    r4, r27, 2, 0, 29 (3fffffff) = 0x00000030
-r29 = current save slot + 0x124D8
-
-Bit to turn on = 0x1 shifted left by (bits 27-31 of the value in (save file start address + 0x316B10) + param1 * 12 + 0x4)

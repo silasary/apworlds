@@ -10,11 +10,14 @@ Currently, the following items can get shuffled:
 - Colosseums  
 - Rental Passes  
 - Pokétopia Badges (Macguffin for unlocking Stargazer Colosseum)  
-- Poké Coupons  
+- Poké Coupons
+- Perfect Points
+- Items that trigger special effects mid-battle
   
 As for locations:  
 - Clearing Colosseums  
-- Borrowing Rental Passes from Gateway Colosseum  
+- Borrowing Rental Passes from Gateway Colosseum
+- Winning individual battles
   
 ## What is the goal of Pokémon Battle Revolution
   
@@ -25,7 +28,7 @@ The goal is to beat Stargazer Colosseum, which will unlocked through the followi
 
 ## When the player receives an item, what happens?
 
-Colosseums and Rental Passes will be automatically unlocked, while Poké Coupons and Pokétopia Badges will be instantly added onto the amount you already have.  
+Colosseums and Rental Passes will be automatically unlocked, while Poké Coupons and Pokétopia Badges will be instantly added onto the amount you already have. Mid-Battle items will be put in a queue and used up whenever possible.  
 In the case of Rental Passes, you may need to exit the menu for them to properly appear.
 
 ## Can I play this offline?
@@ -46,8 +49,7 @@ However, you can still import Pokémon in using [PKHeX](https://projectpokemon.o
 
 ## Known Issues
 
-The D-Pad controls are, for the most part, completely unusable when selecting a Colosseum to enter. Fixing this would take a complete rewrite of how this functions, so don't expect it for a bit.  
-For now, you can use the Wii Remote pointer instead.
+None at the current moment.
 
 ## Credits
 
@@ -55,6 +57,9 @@ For now, you can use the Wii Remote pointer instead.
 - Axcel Snowpix (APWorld Code, ROM Patch, Reverse Engineering, Playtesting)
 - HeckaBad (ROM Patch, Reverse Engineering, Debugger, Playtesting)
 - bwappi (Client Logo, Reverse Engineering, Playtesting)
+
+### Contributors
+- Silvris (Pokémon Data Structure Script)
   
 ### Special Thanks
 - Chesyon (Reverse Engineering Help, Playtesting)
@@ -65,4 +70,5 @@ For now, you can use the Wii Remote pointer instead.
 - Pokechu22 (Fix Black Screen Effects Patch)
 - PJSamm (PBR Docs)
 - PKHeX (Useful Memory Addresses)
-  
+- APQuest (Base for the APWorld Code)
+- The Wind Waker AP (Base for the Client Code)

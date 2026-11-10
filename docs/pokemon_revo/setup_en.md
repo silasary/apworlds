@@ -5,7 +5,7 @@
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest) (Note that if you're on Linux, you may need to use the tarball)
 - [Pokémon Battle Revolution APWorld & disc-riider-py](https://github.com/Axcel-Snowpix/PokemonRevoAP/releases/latest)
 - [Dolphin Emulator](https://dolphin-emu.org/download)
-- Pokémon Battle Revolution USA ISO ROM
+- Pokémon Battle Revolution USA ISO ROM (Must be an ISO)
 
 ### Configuring Dolphin
 
@@ -27,8 +27,8 @@ There's a few ways to install the APWorld
 ## Installing disc-riider-py
 
 Open the Archipelago Launcher and search for the `Browse Files` option. Click it, and it'll open the folder containing your Archipelago installation.  
-Then, take the `disc-riider-py.zip` file you downloaded, put it in your Archipelago installation's `lib` folder and extract its contents.  
-Make sure there's only one `disc-riider-py` folder, with no copies inside it.
+Then, take the disc-riider-py zip file you downloaded, put it in your Archipelago installation's `lib` folder and extract its contents.  
+Make sure the `disc-riider-py` folder is in the `lib` folder, and not nested in any other sub-folders.
 
 ## Options and Generating
 
