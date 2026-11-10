@@ -2,72 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-10T12:21:16.841567+00:00</updated>
+  <updated>2026-11-10T18:20:40.587839+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/WCutePy/ArchipelagoAlmia/releases/tag/ranger_v0.0.1-rando</id>
-    <title>Pokemon Ranger Shadows of Almia v0.0.1.post0</title>
-    <updated>2026-11-06T19:56:38+00:00</updated>
-    <author>
-      <name>WCutePy</name>
-    </author>
-    <content># Pokemon Ranger Shadows of Almia randomizer&#13;
-&#13;
-This is a randomizer that randomizes the Pokémon all over almia! It makes use of the Archipelago framework but currently does not yet have Archipelago support. This is to come.&#13;
-&#13;
-See [the docs](https://github.com/WCutePy/ArchipelagoAlmia/blob/main/worlds/pokemon_ranger_soa/docs/en_PokemonRangerSoA.md) for more information&#13;
-&#13;
-## What does randomization do to this game?&#13;
-&#13;
-Pokemon randomization can change the following.&#13;
-- Wild encounters&#13;
-  - Excluding Doduo and Staraptor&#13;
-- Static encounters&#13;
-  - Excluding boss encounters&#13;
-- NPC Pokémon (WIP)&#13;
-- Partners&#13;
-&#13;
-Multiple algorithms are (not yet) possible for wild encounter randomization.&#13;
-As a base this randomizer ensures the &#13;
-story is always beatable, by iterating over wild encounters&#13;
-as they become accessible in the story and placing required field moves amongst all currently accessible spots.&#13;
-&#13;
-Movement field moves such as swim, river flow or airlift have multiple copies placed such that moving back and forth over their terrain is always possible.&#13;
-&#13;
-Quest required pokemon are placed across all potential spots.&#13;
-Static encounters are filled such that they have a similar HP to their original counter part. Remaining wild spots are filled randomly, ensuring one of each species exists in the wild.&#13;
-&#13;
-**NOTE** This rando spans the full story, the randomizer does **not** randomize postgame or ensure postgame quests are beatable.&#13;
-&#13;
-Actual apworld file and linked commit are not in sync, but did not want to make a 0.0.2 already even though I could be sitting at 0.0.4 with these patches 😢 </content>
-    <link href="https://github.com/WCutePy/ArchipelagoAlmia/releases/tag/ranger_v0.0.1-rando"/>
-  </entry>
-  <entry>
-    <id>https://github.com/toent/Archipelago-MKWii/releases/tag/pre0.4.0</id>
-    <title>Mario Kart Wii v0.4.0</title>
-    <updated>2026-11-06T21:26:30+00:00</updated>
-    <author>
-      <name>toent</name>
-    </author>
-    <content>## Pre-Release Version 0.4.0: In game unlock display&#13;
-**This is a version of the in game unlock display that does not require a new APWorld.** &#13;
-It is also a bit of a public test so please report any issues in the discord. There's some *known issues* with the mii's. Also for the vehicles screen there might be like a 0.5 seconds delay with the display updating, this is known please give it some time. &#13;
-The experience for you shouldn't be any different than normal, except for that you will find a new `icon_manifest.json` in the zip, this is crucial, please don't delete it. Upon running the game with the client for the first time you will see a `bins/` folder added to the directory, this is UI textures turned into binaries that the client writes into memory during runtime. Even during the first run you shouldn't be able to notice the client gathering these textures.&#13;
-&#13;
-### Changelog:&#13;
-- [Client] Added in game unlock displaying.&#13;
-- [Client] Added automatic first run texture binary gathering.&#13;
-&#13;
-**REQUIRES APWORLD VERSION 0.3.1+**&#13;
-&#13;
-_Linux users, download the source code here to run the client._&#13;
-&#13;
-**Full Changelog**: https://github.com/toent/Archipelago-MKWii/compare/v0.3.2...pre0.4.0</content>
-    <link href="https://github.com/toent/Archipelago-MKWii/releases/tag/pre0.4.0"/>
-  </entry>
   <entry>
     <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.0-rc3</id>
     <title>Kirby &amp; The Amazing Mirror v0.5.0rc3</title>
@@ -901,7 +840,7 @@ complicated than episode 1.&#13;
   </entry>
   <entry>
     <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.48</id>
-    <title>Mental Omega v0.7.0</title>
+    <title>Mental Omega v1.48.0</title>
     <updated>2026-11-08T20:34:26+00:00</updated>
     <author>
       <name>Mental Omega Randomizer contributors</name>
@@ -910,12 +849,13 @@ complicated than episode 1.&#13;
 - Add new Perks for Fortress mode&#13;
 - Adjust permanent unlocks Ui for Shopmode&#13;
 - Fix Skirmish Faction selection in all modes&#13;
+- Fix Shopmode header not sticky anymore&#13;
 - Add new Archipelago modes, Keymodes and Multi Mission completion! One mission will still give the current gridmode layout, multiple will place many missions that need to be completed on the map! Keymode ONLY in Archipelago! One works as a "currency" while the other unlocks the mission randomly on the grid!</content>
     <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.48"/>
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release11</id>
-    <title>Ocarina of Time v9.1.0r2</title>
+    <title>Ocarina of Time v9.1.0r4</title>
     <updated>2026-11-08T20:35:58+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1148,51 +1088,6 @@ The client is GPL-3.0, and the source for this build is the `v0.3.0-alpha3` tag 
 | `ctr.apworld` | `1f7ab7960996982af83238b3ac9228243594e6910d2274e7f6666fa47c6b8997` |
 </content>
     <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Kryen112/HP2PC_AP/releases/tag/v3.0.0</id>
-    <title>Harry Potter 2 PC v3.0.0.post3</title>
-    <updated>2026-11-09T16:33:01+00:00</updated>
-    <author>
-      <name>Kryen112</name>
-    </author>
-    <content># HP2PC_AP v3.0.0
-
-The randomizer now runs on the original PC release of the game with SafeDiscShim, instead of the separate install that v2.12.0 and earlier needed. Everyone needs to set up again: follow the attached `PLAYER_SETUP.md`.
-
-### Upgrading from v2.12.0 or earlier
-
-- **Clean your host.yaml first.** Delete the whole `harry_potter_2_pc_options` block from `host.yaml` in your Archipelago folder before you start the new client. The old block points at the old install, and the client would carry that path over. With the block gone, the client asks for your new install on the first connect and writes fresh settings.
-- **Replace the apworld.** Swap the old `harry_potter_2_pc.apworld` in `custom_worlds` for this one.
-- **Start new seeds and saves.** Seeds and saves from the old setup do not carry over. You can leave the old install alone or remove it.
-
-### New
-
-- **Plays on the original game.** Install the game and add SafeDiscShim (free, open source), which lets the game's copy protection run on Windows 10 and 11. No game files ship with this project.
-- **One install for both game modes.** Vanilla and open castle seeds play on the same install. The client tells the mod which mode the seed uses.
-- **Borderless window.** The game opens at your monitor's size without a window frame.
-- **60 fps cap.** The game is held at the speed its physics and timers are tuned for.
-- **Widescreen view.** The view widens on wide screens, and the menus draw in a centered 4:3 area with black bars at the sides.
-- **Non-English installs.** The dialogue randomizer works on the game's own language.
-- **Linux (experimental).** The client finds the game's Wine or Proton prefix and launches the game through Wine. Nobody has confirmed the disc check under Wine yet.
-
-All three display settings are on by default and can be turned off in `host.yaml`.
-
-### Changed
-
-- **Quieter client window.** On connect, the client only says when the mod was updated. Routine details go to the log file.
-- **Player names with accents** show with the nearest plain letters, since the game cannot draw them.
-- **Ghost players** wear a pair of grey-blue glasses that stays visible on their see-through face.
-- **Open castle seeds with nothing to do at the start** are rejected at generation with a hint (add starting spells or turn on secrets), instead of failing to fill.
-
-### Fixed
-
-- **See-through textures** (torch cages, fences, Harry's glasses) no longer draw solid, also after Alt+Tab.
-- **Trader menus** take clicks again on wide screens.
-- **Ghost players** carry their wand again.
-- **A force-closed game** no longer comes back fullscreen at 640x480 on the next launch.
-</content>
-    <link href="https://github.com/Kryen112/HP2PC_AP/releases/tag/v3.0.0"/>
   </entry>
   <entry>
     <id>https://github.com/toent/Archipelago-MKWii/releases/tag/v0.4.0</id>
@@ -1451,5 +1346,90 @@ Too many fixes to name, I will just mention a few notable.&#13;
 &#13;
 # Remove previous versions of this apworld from your custom worlds folder</content>
     <link href="https://github.com/WritingHusky/Twilight_Princess_apworld/releases/tag/v0.4.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Kryen112/HP2PC_AP/releases/tag/v3.0.0</id>
+    <title>Harry Potter 2 PC v3.0.0.post4</title>
+    <updated>2026-11-10T14:51:58+00:00</updated>
+    <author>
+      <name>Kryen112</name>
+    </author>
+    <content># HP2PC_AP v3.0.0
+
+The randomizer now runs on the original PC release of the game with SafeDiscShim, instead of the separate install that v2.12.0 and earlier needed. Everyone needs to set up again: follow the attached `PLAYER_SETUP.md`.
+
+### Upgrading from v2.12.0 or earlier
+
+- **Clean your host.yaml first.** Delete the whole `harry_potter_2_pc_options` block from `host.yaml` in your Archipelago folder before you start the new client. The old block points at the old install, and the client would carry that path over. With the block gone, the client asks for your new install on the first connect and writes fresh settings.
+- **Replace the apworld.** Swap the old `harry_potter_2_pc.apworld` in `custom_worlds` for this one.
+- **Start new seeds and saves.** Seeds and saves from the old setup do not carry over. You can leave the old install alone or remove it.
+
+### New
+
+- **Plays on the original game.** Install the game and add SafeDiscShim (free, open source), which lets the game's copy protection run on Windows 10 and 11. No game files ship with this project.
+- **One install for both game modes.** Vanilla and open castle seeds play on the same install. The client tells the mod which mode the seed uses.
+- **Borderless window.** The game opens at your monitor's size without a window frame.
+- **60 fps cap.** The game is held at the speed its physics and timers are tuned for.
+- **Widescreen view.** The view widens on wide screens, and the menus draw in a centered 4:3 area with black bars at the sides.
+- **Non-English installs.** The dialogue randomizer works on the game's own language.
+- **Linux (experimental).** The client finds the game's Wine or Proton prefix and launches the game through Wine. Nobody has confirmed the disc check under Wine yet.
+
+All three display settings are on by default and can be turned off in `host.yaml`.
+
+### Changed
+
+- **Quieter client window.** On connect, the client only says when the mod was updated. Routine details go to the log file.
+- **Player names with accents** show with the nearest plain letters, since the game cannot draw them.
+- **Ghost players** wear a pair of grey-blue glasses that stays visible on their see-through face.
+- **Open castle seeds with nothing to do at the start** are rejected at generation with a hint (add starting spells or turn on secrets), instead of failing to fill.
+
+### Fixed
+
+- **See-through textures** (torch cages, fences, Harry's glasses) no longer draw solid, also after Alt+Tab.
+- **Trader menus** take clicks again on wide screens.
+- **Ghost players** carry their wand again.
+- **A force-closed game** no longer comes back fullscreen at 640x480 on the next launch.
+- **First start of the game** no longer crashes with `BeginScene failed (DDERR_SURFACELOST)`. The setup guide has you switch the game to windowed before you start it for the first time.
+- **Freestanding cards** (the Grand Staircase card, the Castle Exterior ledge cards and others) no longer vanish after your first visit to their area. Saves where one already went missing get it back on the next visit.
+- **Traps and items for other worlds** show their Archipelago logo again instead of being invisible.
+- **Chests and containers** open again on your next visit when you left their item lying uncollected, so an item that bounced out of reach is never lost. The Entry Hall wooden chest no longer turns into an unopenable box after leaving and returning.
+- **Cauldron items** drop next to the cauldron instead of landing somewhere out of reach.
+- **Cards bought from a vendor** stay where they dropped until you pick them up.
+</content>
+    <link href="https://github.com/Kryen112/HP2PC_AP/releases/tag/v3.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.10.3</id>
+    <title>The Legend of Zelda - Phantom Hourglass v0.10.3</title>
+    <updated>2026-11-10T17:53:50+00:00</updated>
+    <author>
+      <name>carrotinator</name>
+    </author>
+    <author>
+      <name>Tanker50207</name>
+    </author>
+    <author>
+      <name>palex00</name>
+    </author>
+    <author>
+      <name>CelestialKitsune</name>
+    </author>
+    <author>
+      <name>DayKat</name>
+    </author>
+    <author>
+      <name>1313e</name>
+    </author>
+    <author>
+      <name>Catzador</name>
+    </author>
+    <content>Compatible with seeds generated in versions v10.x&#13;
+[Setup Guide](https://github.com/carrotinator/Archipelago/blob/main/worlds/tloz_ph/docs/setup.md)&#13;
+&#13;
+- Fixed B13 phantoms not spawning with Zauz goal&#13;
+- Fixed goal requirement crash with certain spirit settings&#13;
+- Fixed typo in spirit logic&#13;
+- Fixed bug in spirit logic where a single `Spirit (Progressive)` counted for all spirits</content>
+    <link href="https://github.com/carrotinator/Archipelago/releases/tag/ph-v0.10.3"/>
   </entry>
 </feed>
