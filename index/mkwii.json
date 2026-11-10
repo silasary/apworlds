@@ -324,6 +324,20 @@
       "title": "MKWii AP Release Version 0.3.2",
       "version_simple": "0.3.2",
       "world_version": "0.3.2"
+    },
+    "v0.4.0": {
+      "created_at": "2026-11-09T18:17:17Z",
+      "description": "## Release Version 0.4.0: In game unlock display & Item name clean up\r\n**If you are looking for a version of the in game unlock display with the old APWorld check out [pre0.4.0](https://github.com/toent/Archipelago-MKWii/releases/tag/pre0.4.0).**\r\nHiya :3 here is finally a full release of the in game unlock display after the tests of pre0.4.0 went smoothly, additionally I unspaghettified some of the project's code and cleaned up the APWorld Items. The experience for you shouldn't be any different than normal, except for that you will find a new `icon_manifest.json` in the zip, this is crucial, please don't delete it. Upon running the game with the client for the first time you will see a `bins/` folder added to the directory, this is UI textures turned into binaries that the client writes into memory during runtime. Even during the first run you shouldn't be able to notice the client gathering these textures. If you have any problems on first launch, please close the game and client, check if the `bins/` folder has been created and filled and start the game and client again.\r\n\r\n\r\n### Changelog:\r\n- [Client] Added in game unlock displaying.\r\n- [Client] Added automatic first run texture binary gathering.\r\n- [Client] Improved code quality by now using a shared library with mkwii info.\r\n- [APWorld] Removed prefixes from item names.\r\n- [APWorld] Added suffixes to powerups and filler items.\r\n- [APWorld] Added option to place meta picks either not starting, out of sphere 1, or not in the item pool at all.\r\n- [APWorld] Removed mii's from starting characters as their weight class cannot be factored into AP Logic.\r\n- [APWorld] Improved code quality by now using a shared library with mkwii info.\r\n- [Tracker] Improved code quality by now using a shared library with mkwii info.\r\n\r\n### Known Issues:\r\n- There's some known issues with the mii's (both for display and actual locking).\r\n- For the vehicles screen there might be like a 0.5 seconds delay with the display updating, this is known please give it some time.\r\n\r\n**REQUIRES THIS NEW APWORLD**\r\n\r\n_Linux users, download the source code here to run the client._\r\n\r\n**Full Changelog**: https://github.com/toent/Archipelago-MKWii/compare/v0.3.2...v0.4.0",
+      "download_url": "https://github.com/toent/Archipelago-MKWii/releases/download/v0.4.0/mkwii.apworld",
+      "has_manifest": false,
+      "hash_sha256": "f897c941d88ca8641eb083279716d70e95e315b5cbfa82749f2d895a26f7e4e3",
+      "html_url": "https://github.com/toent/Archipelago-MKWii/releases/tag/v0.4.0",
+      "size": 17322,
+      "source_url": "https://api.github.com/repos/toent/Archipelago-MKWii",
+      "tag": "v0.4.0",
+      "title": "MKWii AP Release Version 0.4.0",
+      "version_simple": "0.4.0",
+      "world_version": "0.4.0r2"
     }
   }
 }

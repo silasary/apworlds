@@ -212,11 +212,12 @@ Every entry contains the following 3 arguments:
 - `type` is either `Trainer` or `Wild`.
 - `mode` is either `Multiply`, `Add`, or `Power`. You can alternatively use the internal numbers 0-2 (accordingly).
 - `value` is the value that should be used in the calculation. 
-  The `Multiply` mode interprets it as a percentage and allows for values in range 1 to 10000. 
-  The `Add` mode interprets it as whole levels and allows for values in range -99 to 99.
+  The `Multiply` mode interprets it as a percentage and allows for values in range -10000 to 10000. 
+  The `Add` mode interprets it as whole levels and allows for values in range -1000 to 1000.
   The `Power` mode interprets it as a percentage and allows for values in range 1 to 700.
-
-Do note that after every calculation, the result is rounded down and capped at 1 and 100
+- `cap` determines whether the level should be capped at 1 and 100 after this calculation step. The default is `true`.
+  The final level will always be capped again after all calculations have been applied.
+  - Note that having a negative number at some point and then raising it to a non-whole number will lead to unexpected results.
 
 ## An example on how using this option could look like
 
@@ -229,15 +230,19 @@ Pokemon Black and White:
     - type: Trainer
       mode: Add
       value: -4
+      cap: true
     - type: Trainer
       mode: Power
       value: 110
+      cap: true
     - type: Trainer
       mode: Multiply
       value: 67
+      cap: true
     - type: Trainer
       mode: Add
       value: 4
+      cap: true
 ```
 
 Here's another example that sets the levels of all wild and trainer pokémon in the game to exactly 20:
@@ -248,20 +253,24 @@ Pokemon Black and White:
     - type: Trainer
       mode: Add
       value: -99
+      cap: true
     - type: Trainer
       mode: Multiply
       value: 20
+      cap: true
     - type: Wild
       mode: Add
       value: -99
+      cap: true
     - type: Wild
       mode: Multiply
       value: 20
+      cap: true
 ```
 
 # Dexsanity Plando guide
 
-(This guide also applies to `Seensanity`, `Formsanity`, `Shinysanity`, and `Shinyformsanity`.)
+(This guide also applies to `Seensanity`, `Formsanity`, `Gendersanity`, `Shinysanity`, `Shinyformsanity`, and `Shinygendersanity`.)
 
 ## How does this work?
 
@@ -285,6 +294,9 @@ weighted/unweighted lists) instead, which differ slightly from the forms names u
 other plando options and the spoiler log. 
 See [here](plando%20lists.md#Formsanity-names) for a list of all allowed forms.
 
+In the case of all `Gendersanity` variants, you can write the name of the pokémon followed by either `male` or `female`
+in order to get a check for just that gender of that pokémon. Otherwise, you will get checks for both genders.
+
 ## An example on how using this option could look like
 
 ```
@@ -295,14 +307,19 @@ Pokemon Black and White:
   
     # A simple lists of dex numbers
   - [50, 51, 52, 53, 59]
+  
     # A simple lists of names
   - [Omanyte, Omastar, Tirtouga, Carracosta]
+  
     # A single number (which is then the amount of random checks again)
   - 5
+  
     # A list of just a single range (All Unova pokémon btw.)
   - [494-649]
+  
     # A list containing one of every way to define your checks
   - [151, Maractus, 210-220, [411, Genesect], {6: 5, Charmander: 2, "1-3": 1}]
+  
     # A list of lists of lists of names, you can go wild with nesting things
   - [[[Goldeen, Finneon], [Magikarp, Luvdisc]], [[Alomomola, Basculin], [Remoraid, Barboach], Feebas]]
   ...
@@ -311,6 +328,12 @@ Pokemon Black and White:
   - ["Castform (Normal)", ["Castform (Sunny)", "Castform (Rainy)", "Castform (Snowy)"]]
   - [{"Burmy (Plant)": 5, "Burmy (Trash)": 1, "Burmy (Sandy)": 1}, {"Wormadam (Trash)": 5, "Wormadam (Sandy)": 2}]
   - 5
+  ...
+  gendersanity:
+  - [Dunsparce, "Wooper male", ["Garchomp female", "Hydreigon female"]]
+  
+    # This would be the same as just [Slakoth]
+  - ["Slakoth male", "Slakoth female"]
 ```
 
 # Stats Plando guide

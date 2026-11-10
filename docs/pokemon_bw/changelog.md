@@ -1,6 +1,26 @@
 # Changelog
 Versions are sorted in ascending order, i.e. the most recent changes are at the top.
 
+## 0.4.5
+
+- Added the Legendary Hunt NPC to the tracker goal bitmap
+- Made damage-inflicting moves more likely in levelup moveset randomization
+- Fixed `Route 13 - Item on cliff #2` not appearing anymore when receiving any Gram before talking to the Wingull girl
+- Added `Include progression moves` to `Randomize Level Up Movesets`
+  - This includes HM moves and Flash, now they will be excluded by default
+- Excluded Deerling and Sawsbuck from being randomized onto not-always-logic-disabled trainers
+  - This is due to automatic form change being problematic for `Formsanity` (+ variants) and the Poptracker pack
+- Added re-seeding wrapper to make future RNG-affecting changes less likely to break UT accuracy
+- Fixed Clay and Iris/Drayden having higher leveled pokémon in sphere-based scaling when becoming accessible at the same time as later gym leaders
+- Added `Show-a-pokémon locations` location group
+- Fixed `Icirrus City - Item from the former Team Rocket member's wife (Winter)` not being in the `Season-dependant items` location group
+- Fixed incorrect levels for certain boss trainers when using `Modify Levels`
+- Added the `cap` argument to `Modify Levels` (advanced mode) and increased allowed value ranges
+
+### Is this version compatible with older multiworld slots and save files?
+Yes, back to 0.4.0
+However, UT might be inaccurate when tracking worlds generated before 0.4.5
+
 ## 0.4.4
 
 - Fixed plugins crashing when trying to import anything in `stage_init(cls)`

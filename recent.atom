@@ -2,76 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-09T18:19:17.917430+00:00</updated>
+  <updated>2026-11-10T00:19:16.582772+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/mariokirby1703/Lumas-Archipelago/releases/tag/sonic_colours_v0.2.1</id>
-    <title>Sonic Colours (Wii) v0.2.1</title>
-    <updated>2026-11-06T02:49:43+00:00</updated>
-    <author>
-      <name>Luma</name>
-    </author>
-    <content># Sonic Colours (Wii) AP v0.2.1&#13;
-## New features&#13;
-- **60 FPS** as an optional miscellaneous setting&#13;
-- **Custom rank checks:** select any combination of C, B, A and S ranks&#13;
-&#13;
-## Fixes and improvements&#13;
-- Fixed support for **all six save slots**, resolving checks stopping after the initial save selection&#13;
-&#13;
-## Known issues&#13;
-- **60 FPS can cause physics issues**, including continuous spring bouncing and falling out of loops</content>
-    <link href="https://github.com/mariokirby1703/Lumas-Archipelago/releases/tag/sonic_colours_v0.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.13</id>
-    <title>Stardew Valley v8.1.12r2</title>
-    <updated>2026-11-06T02:54:02+00:00</updated>
-    <author>
-      <name>Kaito Kid</name>
-    </author>
-    <author>
-      <name>Jouramie</name>
-    </author>
-    <author>
-      <name>Witchybun (Mod Support)</name>
-    </author>
-    <author>
-      <name>Noa (Entrance Randomizer)</name>
-    </author>
-    <content>- Fixed spring onions foraging locations not sending when cropsanity is turned off&#13;
-- Fixed Leo's arrival not playing the mailbox animation properly&#13;
-- Fixed Leo not spawning when you receive the npc before collecting 10 walnuts</content>
-    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.13"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/tag/V1.0.0</id>
-    <title>Fantastic Fist v1.0.0</title>
-    <updated>2026-11-06T04:41:06+00:00</updated>
-    <author>
-      <name>WaluigiGoesWa</name>
-    </author>
-    <content>Roomsanity and Checkpointsanity added.&#13;
-Roomsanity turns entering each of the 212 rooms into a location.&#13;
-Checkpointsanity turns each of the 42 checkpoints into a location.&#13;
-&#13;
-All settings in the YAML now work, marking the 1.0.0 release!</content>
-    <link href="https://github.com/DannySchultzDev/Fantastic-Fist-Archipelago-Client/releases/tag/V1.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/blitzashspear/ap-yhtwtg/releases/tag/release-1.1.1</id>
-    <title>You Have to Win the Game v1.1.1</title>
-    <updated>2026-11-06T05:08:02+00:00</updated>
-    <author>
-      <name>blitzashspear</name>
-    </author>
-    <content>New client command. /deathlink. It toggles deathlink. shocker.&#13;
-Fixed a logical error. Swimming Upstream - Bell now has the same logical requirements as Swimming Upstream - Treasure.</content>
-    <link href="https://github.com/blitzashspear/ap-yhtwtg/releases/tag/release-1.1.1"/>
-  </entry>
   <entry>
     <id>https://github.com/Crownmuri/Archipelago/releases/tag/v1.1.3</id>
     <title>La-Mulana 2 v1.1.3</title>
@@ -1047,7 +982,7 @@ complicated than episode 1.&#13;
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release11</id>
-    <title>Ocarina of Time v9.1.0r4</title>
+    <title>Ocarina of Time v9.1.0r2</title>
     <updated>2026-11-08T20:35:58+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1325,5 +1260,125 @@ All three display settings are on by default and can be turned off in `host.yaml
 - **A force-closed game** no longer comes back fullscreen at 640x480 on the next launch.
 </content>
     <link href="https://github.com/Kryen112/HP2PC_AP/releases/tag/v3.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/toent/Archipelago-MKWii/releases/tag/v0.4.0</id>
+    <title>Mario Kart Wii v0.4.0r2</title>
+    <updated>2026-11-09T18:17:17+00:00</updated>
+    <author>
+      <name>toent</name>
+    </author>
+    <content>## Release Version 0.4.0: In game unlock display &amp; Item name clean up&#13;
+**If you are looking for a version of the in game unlock display with the old APWorld check out [pre0.4.0](https://github.com/toent/Archipelago-MKWii/releases/tag/pre0.4.0).**&#13;
+Hiya :3 here is finally a full release of the in game unlock display after the tests of pre0.4.0 went smoothly, additionally I unspaghettified some of the project's code and cleaned up the APWorld Items. The experience for you shouldn't be any different than normal, except for that you will find a new `icon_manifest.json` in the zip, this is crucial, please don't delete it. Upon running the game with the client for the first time you will see a `bins/` folder added to the directory, this is UI textures turned into binaries that the client writes into memory during runtime. Even during the first run you shouldn't be able to notice the client gathering these textures. If you have any problems on first launch, please close the game and client, check if the `bins/` folder has been created and filled and start the game and client again.&#13;
+&#13;
+&#13;
+### Changelog:&#13;
+- [Client] Added in game unlock displaying.&#13;
+- [Client] Added automatic first run texture binary gathering.&#13;
+- [Client] Improved code quality by now using a shared library with mkwii info.&#13;
+- [APWorld] Removed prefixes from item names.&#13;
+- [APWorld] Added suffixes to powerups and filler items.&#13;
+- [APWorld] Added option to place meta picks either not starting, out of sphere 1, or not in the item pool at all.&#13;
+- [APWorld] Removed mii's from starting characters as their weight class cannot be factored into AP Logic.&#13;
+- [APWorld] Improved code quality by now using a shared library with mkwii info.&#13;
+- [Tracker] Improved code quality by now using a shared library with mkwii info.&#13;
+&#13;
+### Known Issues:&#13;
+- There's some known issues with the mii's (both for display and actual locking).&#13;
+- For the vehicles screen there might be like a 0.5 seconds delay with the display updating, this is known please give it some time.&#13;
+&#13;
+**REQUIRES THIS NEW APWORLD**&#13;
+&#13;
+_Linux users, download the source code here to run the client._&#13;
+&#13;
+**Full Changelog**: https://github.com/toent/Archipelago-MKWii/compare/v0.3.2...v0.4.0</content>
+    <link href="https://github.com/toent/Archipelago-MKWii/releases/tag/v0.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.4.5</id>
+    <title>Pokemon Black and White v0.4.5</title>
+    <updated>2026-11-09T22:58:20+00:00</updated>
+    <author>
+      <name>BlastSlimey</name>
+    </author>
+    <content>## Changelog&#13;
+&#13;
+- Added the Legendary Hunt NPC to the tracker goal bitmap&#13;
+- Made damage-inflicting moves more likely in levelup moveset randomization&#13;
+- Fixed `Route 13 - Item on cliff #2` not appearing anymore when receiving any Gram before talking to the Wingull girl&#13;
+- Added `Include progression moves` to `Randomize Level Up Movesets`&#13;
+  - This includes HM moves and Flash, now they will be excluded by default&#13;
+- Excluded Deerling and Sawsbuck from being randomized onto not-always-logic-disabled trainers&#13;
+  - This is due to automatic form change being problematic for `Formsanity` (+ variants) and the Poptracker pack&#13;
+- Added re-seeding wrapper to make future RNG-affecting changes less likely to break UT accuracy&#13;
+- Fixed Clay and Iris/Drayden having higher leveled pokémon in sphere-based scaling when becoming accessible at the same time as later gym leaders&#13;
+- Added `Show-a-pokémon locations` location group&#13;
+- Fixed `Icirrus City - Item from the former Team Rocket member's wife (Winter)` not being in the `Season-dependant items` location group&#13;
+- Fixed incorrect levels for certain boss trainers when using `Modify Levels`&#13;
+- Added the `cap` argument to `Modify Levels` (advanced mode) and increased allowed value ranges&#13;
+&#13;
+### Is this version compatible with older multiworld slots and save files?&#13;
+Yes, back to 0.4.0&#13;
+However, UT might be inaccurate when tracking worlds generated before 0.4.5</content>
+    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.4.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/StalledStorm/ArchipelagoMine/releases/tag/v1.22.5</id>
+    <title>Metroid Fusion v1.22.5</title>
+    <updated>2026-11-09T22:59:45+00:00</updated>
+    <author>
+      <name>StalledStorm</name>
+    </author>
+    <content>## Changes&#13;
+* Convert old world versions to new versioning scheme, to fix error that occurs on patching (@snowflav-goob)&#13;
+* Update mars patcher to 0.18.1 and align apworld accordingly&#13;
+&#13;
+Setup guide link: [here](https://github.com/StalledStorm/ArchipelagoMine/wiki/Metroid-Fusion-Setup-Guide)</content>
+    <link href="https://github.com/StalledStorm/ArchipelagoMine/releases/tag/v1.22.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.13.0-pre1</id>
+    <title>Casualties: Unknown v0.13.0rc1</title>
+    <updated>2026-11-09T23:00:18+00:00</updated>
+    <author>
+      <name>Nichologeam</name>
+    </author>
+    <content>### Casualties: Unknown Archipelago v0.13.0-pre1&#13;
+This update is NOT compatible with worlds generated on previous versions!&#13;
+&#13;
+For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
+Development on the Itch.io version of Casualties: Unknown has stopped. To play this mod on the Itch.io version, use CUAP v0.8.0.&#13;
+Development on the Steam Demo version of Casualties: Unknown has stopped. To play this mod on the Steam Demo version, use CUAP v0.12.3.&#13;
+&#13;
+This is a pre-release testing version! Be aware that some things have not been updated or finished yet!&#13;
+# Additions&#13;
+- Partly support 1.0 release [APWorld Change]&#13;
+	- New layers, Moodlesanity, Randomize Recipes, and Craftsanity are all supported!&#13;
+	- New options are NOT supported!&#13;
+	- New items do NOT work with Gifting! (low priority, expect a stable release before this is added)&#13;
+- Craftsanity now gives you the option to exclude the new Merc Scarf&#13;
+# Changes&#13;
+- Proguseful (Progression + Useful) items now appear gold inside the console, similar to how other games handle it&#13;
+- The window title now shows the mod version&#13;
+- Reworded option descriptions to use correct terminology regarding locations and checks [APWorld Change]&#13;
+- The Defeat Elder Thornback goal removes all locations after Overgrown Depths [APWorld Change]&#13;
+- The default depth for a Reach Depth goal is now 2700 [APWorld Change]&#13;
+- Critical barotrauma has been added to the Deadly Moodlesanity exclusions preset [APWorld Change]&#13;
+- Barotrauma, Critical barotrauma, and Bent prosthesis have been added to the Difficult Moodlesanity exclusions preset [APWorld Change]&#13;
+- Changed some of the option groups around [APWorld Change]&#13;
+# Fixes&#13;
+- Fixed `Craftsanity - Riot helmet` not requiring any INT with Skillsanity enabled [APWorld Change]&#13;
+- Fixed Craftsanity location logic requirements leaking between generations [APWorld Change]&#13;
+	- This could only be seen when the Python instance was not terminated between generations, such as with a fuzzer or a generate until successful script&#13;
+# Known Issues&#13;
+- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators&#13;
+- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game&#13;
+- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game&#13;
+- Skillsanity skill levels received offline will not be given when loading a save file from a previous session. You must start a new run to receive them&#13;
+- EnergyLink sometimes doesn't work when playing in a server with more than one slot. I plan to rewrite EnergyLink entirely before a stable 0.13 release&#13;
+&#13;
+**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.12.3...v0.13.0-pre1</content>
+    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.13.0-pre1"/>
   </entry>
 </feed>
