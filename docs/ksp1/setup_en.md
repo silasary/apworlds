@@ -118,6 +118,28 @@ Install UT, connect to your AP server, and you'll see which unchecked locations 
 body order. Use `/explain <location>` to see a detailed rocket design breakdown for any mission, or
 `/explain parts [filter]` to list your received parts by type (optionally filtered by name).
 
+### Map tab (optional)
+
+UT can also show your locations on a solar-system map, using the map pack made by Kerbonaut. The map
+images are a separate download; the marker positions ship with the `.apworld`.
+
+1. Download `UT.Maps.zip` from the latest
+   [KSP-Style-Flags release](https://github.com/1Kerbonaut/KSP-Style-Flags/releases). Keep it zipped.
+2. Connect UT to your slot. The first time, UT opens a **Select Map Zip** dialog — pick the `UT.Maps.zip`
+   you downloaded. UT remembers it in your `host.yaml`, so you only do this once.
+3. Open UT's map tab. It starts on the map for your starting body, with a marker for each location
+   colored by whether it's in logic. Each body's mission markers are labelled with the mission's
+   delta-v from your starting body (e.g. `Duna - orbit dV 4570` from Kerbin).
+
+Don't want the map? Cancel the dialog — UT remembers that and won't ask again. If you change your mind,
+type `/reload_pack` in UT to get the dialog back. The choice lives in `host.yaml`; you can also edit it
+there:
+
+```yaml
+ksp1_options:
+  ut_pack_path: /path/to/UT.Maps.zip   # or '' to be asked on next connect, or null for no map
+```
+
 ## Troubleshooting
 
 If you run into problems:

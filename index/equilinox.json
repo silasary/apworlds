@@ -1,10 +1,17 @@
 {
+  "authors": [
+    "AAces"
+  ],
   "description": "Equilinox is a relaxing nature simulation game in\nwhich you can create and nurture your own ecosystems.",
   "flags": [],
   "game": "Equilinox",
   "github": "https://github.com/AAces17/EquilinoxAPClient",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "setup_guide_url": "https://github.com/AAces17/EquilinoxAPClient/blob/master/README.md",
   "sheet_disclosure": [
     "Minimal",
@@ -53,6 +60,21 @@
       "title": "EquilinoxAP v0.1.2",
       "version_simple": "0.1.2",
       "world_version": "0.1.2"
+    },
+    "0.2.0": {
+      "created_at": "2026-11-10T22:52:46Z",
+      "description": "## Changelog\r\n\r\n### General Changes/Additions\r\n- Replaced \"Evolve Camel\" goal with \"Evolve Species\" goal: \r\n  - Choose a set of species and a count `n` (defaults to all selected species), where you need to evolve `n` of the species in the set to send the goal\r\n- Add \"Progressive DP/Min Bonus\" item:\r\n  - Yaml option to add 0 - 40 (default 10) of these to the item pool. Having received `n` of these items, you will have a constant bonus of `+15(n^2+n) dp/min`\r\n- Notable logic changes:\r\n  - Logically require dp generation (either via the new \"Progressive DP/Min Bonus\" item or via animals) for most purchases and evolutions\r\n  - More tasks and evolutions logically require species satisfaction\r\n    - (While I tested many of these changes, please report any checks that appear in logic too early in case I missed some)\r\n- Add item groups for unlock permits: `Tier 1 Plant Permits`, `Tier 1 Animal Permits`, `Stone Permits`, and `Large Rock Permits`. \r\n- Fix .apworld manifest?\r\n\r\n\r\n### Minor Client Changes\r\n- Display connection status, received dp items, and goal progress in the AP Toolbar menu\r\n- Make fast-forward (the double arrow button on the bottom bar) a toggle instead of a press-and-hold\r\n- Send in-game notification when trying to connect\r\n- Mouseover of locked tier 1 shop items now displays \"Find in the multiworld: ______ Permit\" instead of \"Unlocked by task: _______\"\r\n\r\n\r\n## Updating the Mod\r\n\r\nView the [Setup Guide](https://github.com/AAces17/EquilinoxAPClient#setup-instructions) on the Github repository.\r\n\r\nThis updated client should be compatible with worlds generated on any v0.1.x. However, updating the client mid-run is not necessary unless you really want the new QOL features. ",
+      "download_url": "https://github.com/AAces17/EquilinoxAPClient/releases/download/0.2.0/equilinox.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4b0219d5fc8f39b6f4cc0a09e34e315023ba59591c50adeb17487b5f5db378f2",
+      "html_url": "https://github.com/AAces17/EquilinoxAPClient/releases/tag/0.2.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 37276,
+      "source_url": "https://api.github.com/repos/AAces17/EquilinoxAPClient",
+      "tag": "0.2.0",
+      "title": "EquilinoxAP v0.2.0",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
     }
   }
 }

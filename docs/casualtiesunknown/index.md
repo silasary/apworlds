@@ -5,7 +5,7 @@ Or make it silly. Whatever you wish I have no control over you.
 
 
 ## Downloads
-- <a href="https://github.com/Nichologeam/CUAP/releases/download/v0.13.0-pre1/casualtiesunknown.apworld">Latest Version (0.13.0rc1)</a>
+- <a href="https://github.com/Nichologeam/CUAP/releases/download/v0.13.0-pre4/casualtiesunknown.apworld">Latest Version (0.13.0rc4)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

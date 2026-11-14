@@ -332,6 +332,22 @@
       "title": "KirbyAM APWorld v0.5.0-rc4",
       "version_simple": "0.5.0",
       "world_version": "0.5.0rc4"
+    },
+    "kirbyam-v0.5.1-rc1": {
+      "created_at": "2026-11-13T04:01:36Z",
+      "description": "## KirbyAM v0.5.1-rc1\n\nA prerelease for testing the v0.5.1 update, not the final release.\n\n### What's changed\n- Improved logic for item placement and accessible locations, including source-aware ability routes and safeguards against unreachable checks.\n- Starting inventory: Ice added; Beam kept; Wheel, Mini, Cutter, Stone and Burning removed.\n- Copy Ability Room access is now an AP item.\n- Fixed shuffled enemy ability assignments being overwritten by native behavior, and preserved starting-item counts and legacy-seed compatibility.\n\n### Download guide\n- **kirbyam.apworld**: the installable Kirby & The Amazing Mirror world for Archipelago. This is the file players need. Requires Archipelago 0.6.7 or newer and your own supported North American game ROM; no ROM is included.\n- **kirbyam.provenance.json**: machine-readable build receipt identifying this package's source commit, tag, workflow run and package digest. Not an additional game component.\n- **kirbyam.attestation.jsonl**: signed build-provenance bundle for verifying the APWorld and receipt against the GitHub Actions build. Intended for verification, not installation.\n- **Source code (zip / tar.gz)**: GitHub-generated snapshots of the repository at this tag, for developers. These are not installable APWorld packages and are not the three workflow-attested release assets above.\n\n### Testing limits\nTraversal coverage is still being expanded. Four targets retain older rules outside reviewed source assignments. Testing covers selected gameplay scenarios, not a complete playthrough or every multiplayer setup. Further traversal work continues separately in #1092; Crash traversal is planned for advanced logic.\n\n[Full v0.5.1 changelog](https://github.com/hasherwi/Archipelago-kirbyam/blob/kirbyam-v0.5.1-rc1/worlds/kirbyam/CHANGELOG.md) \u00b7 [Changes in #1052](https://github.com/hasherwi/Archipelago-kirbyam/pull/1052)\n",
+      "download_url": "https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.5.1-rc1/kirbyam.apworld",
+      "has_manifest": true,
+      "hash_sha256": "79a03e6f20ee513badef6a1945564554ad81bda69b08d5401621e310282233e3",
+      "html_url": "https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.1-rc1",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 2514730,
+      "source_url": "https://api.github.com/repos/hasherwi/Archipelago-kirbyam",
+      "tag": "kirbyam-v0.5.1-rc1",
+      "title": "KirbyAM APWorld v0.5.1-rc1",
+      "version_simple": "0.5.1",
+      "world_version": "0.5.1rc1"
     }
   }
 }

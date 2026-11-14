@@ -1,8 +1,8 @@
 {
   "authors": [
+    "PhoenixAki",
     "mayaxtg",
-    "ebbeaht",
-    "PhoenixAki"
+    "ebbeaht"
   ],
   "description": "Spyro: A Hero's Tail is a 3D platformer and collect-a-thon released in 2004 for the Xbox, Playstation 2 and GameCube.",
   "game": "Spyro: A Hero's Tail",
@@ -264,6 +264,22 @@
       "title": "Spyro: A Hero's Tail: v2.2.2",
       "version_simple": "2.2.0",
       "world_version": "2.2.0r3"
+    },
+    "AHT-v2.3.0-PR": {
+      "created_at": "2026-11-11T09:30:29Z",
+      "description": "# Spyro: A Hero's Tail v2.3.0: The \"I Could Barely Fit the Full Changelog\" Update\r\nAs is becoming tradition, v2.3.0 has *way* more than was originally planned. My to-do list is almost completely empty now, but there is just barely enough to justify a v2.4 probably not super long into the future, depending on irl factors.\r\n\r\n[Setup Guide](<https://github.com/PhoenixAki/PhoenixAP/wiki/Spyro:-AHT-1-%E2%80%90-Setup-Guide-&-FAQ>)\r\n## Hotfix 1 (11/12/26 at approximately 7:15PM EST)\r\n- Fixed an issue that led to Universal Tracker occasionally reporting incorrect info when evaluating glitched logic.\r\n- Added convenience client command `/enabled_tricks` that outputs all tricks enabled for this seed.\r\n- Fixed an issue with & re-wrote the code that ensures `dragon_eggs_goal` and `light_gems_goal` aren't set too high as a result of `exclude_chest_items` and/or `minigame_checks`.\r\n- Fixed Global Lockpicks not increasing in-game when received due to an item name client typo.\r\n- Fixed Red's Laboratory Lockpicks generating a client error due to an off-by-1 client typo.\r\n- Updated game mod files to v22.1, which is a non-critical update that fixes 2 things:\r\n  - When cannons are locked, the Icy Camp cannon no longer shows the :b: symbol above it still.\r\n  - When using level lockpicks, the pause menu lockpick counts now turn green to make it easier to tell when all are collected.\r\n\r\n# Changelog (compared to v2.2.2)\r\n## Most Notable\r\n- AHT AP now supports 31 different tricks via `enabled_tricks`. Each one is an alternative logical path to different regions or locations in the game.\r\n  - This comes with glitched logic on the tracker page. Things that are possible to do, but only through a trick that you don't have enabled, will display as \"glitched\".\r\n  - This also comes with, unsurprisingly, a large number of logic adjustments. Most changes were small in scope to support tricks, but some areas got their logic completely rewritten (Red's Lab being the most impacted).\r\n- New option `item_bundles` lets you bundle Dark Gems, Global Lockpicks, or Light Gems together so you receive multiple at a time.\r\n- New option `cannon_lock` lets you lock the ability to use cannons behind a \"Cannon Unlock\" item. Minigame cannons are not affected.\r\n  - On a related note, \"Turret\" minigames have been renamed to \"Cannon\" now, to be more consistently named.\r\n- New option `minigame_checks` replaces `vanilla_minigame_rewards`. It allows you to partially or fully disable each type of minigame.\r\n- New option `chest_keys` replaces and is an expansion of `key_rings`. It allows you to choose from now 4 different ways to unlock chests.\r\n- Pay careful attention to your YAML. Many options have had their settings altered for various reasons.\r\n- More code refactoring than I could ever hope to list here. The most heavily rewritten areas include the generator's code for creating items, the client's code for processing received items, and the generator's code for handling edge cases (`auto_corrections` stuff), but almost everything was touched at least a little bit.\r\n## Less Notable\r\n- New option `disguise_shop_items` replaces `hide_shop_item_names`. It allows for further hiding of shop item information.\r\n- `trap_length` has been expanded slightly to allow for individual customization of each type of trap's length.\r\n- Added 11 YAML presets, mostly intended to show off notable features or to minimize/maximize certain types of items.\r\n- Condensed the 6 min/max range options for randomized costs into a single option called `random_costs`.\r\n- Expanded the \"Breath Bombs\" filler category so that each type of bomb is individually choosable. They also now use their vanilla game models instead of lockpicks.\r\n- DeathLink can now temporarily be disabled in the client using `/toggle_deathlink`.\r\n- A number of options that were previously unable to be randomized now can be.\r\n- Options Creator is supported again. Previous update(s) introduced some option types that weren't compatible, but I have fixed that now.\r\n- In the event a new save file is needed, map icons will now correctly reflect current logic. Similarly, the shop is synced so that already-bought items will appear as bought.\r\n- Shop items now properly list in ascending order on the tracker page.\r\n## Fixes\r\n- Fixed a client bug where if a host sent multiple copies of an item via `/send` or similar, only the first one would get processed.\r\n- Fixed a client memory error that would occur if connecting to an AP room that is password protected.\r\n- Fixed a niche issue impacting seeds that have no goal and are fixed by `auto_corrections`, in which the client wouldn't get the memo about the fix.\r\n- Strengthened the client's logic so the game is not patched if there is a mismatch between versions, and the Dolphin process is properly unhooked when disconnecting.\r\n- Fixed the client not properly logging to a .txt file.\r\n\r\n## What's Changed (auto-generated by GitHub)\r\n* v2.3.0 Update by @PhoenixAki in https://github.com/PhoenixAki/PhoenixAP/pull/13\r\n**Full Changelog**: https://github.com/PhoenixAki/PhoenixAP/compare/AHT-v2.2.2...AHT-v2.3.0-PR",
+      "download_url": "https://github.com/PhoenixAki/PhoenixAP/releases/download/AHT-v2.3.0-PR/spyro_aht.apworld",
+      "has_manifest": true,
+      "hash_sha256": "33e5469e01bb6f0a77c4fcbe5af2172839bb4fdc6c1773cc147f4f7b5c8d5929",
+      "html_url": "https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.3.0-PR",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 98010,
+      "source_url": "https://api.github.com/repos/PhoenixAki/PhoenixAP",
+      "tag": "AHT-v2.3.0-PR",
+      "title": "Spyro: A Hero's Tail: v2.3.0 (Prerelease)",
+      "version_simple": "2.3.0",
+      "world_version": "2.3.0"
     }
   }
 }

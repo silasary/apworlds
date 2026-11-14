@@ -4,7 +4,7 @@ Harry Potter and the Chamber of Secrets (PC) randomizer.
 
 
 ## Downloads
-- <a href="https://github.com/Kryen112/HP2PC_AP/releases/download/v3.0.0/harry_potter_2_pc.apworld">Latest Version (3.0.0.post4)</a>
+- <a href="https://github.com/Kryen112/HP2PC_AP/releases/download/v3.0.0/harry_potter_2_pc.apworld">Latest Version (3.0.0.post5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

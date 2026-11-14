@@ -6,7 +6,7 @@ to save Woody and infinity and beyond!
 
 
 ## Downloads
-- <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/3.1.1/toystory2.apworld">Latest Version (3.1.1)</a>
+- <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/3.1.3/toystory2.apworld">Latest Version (3.1.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

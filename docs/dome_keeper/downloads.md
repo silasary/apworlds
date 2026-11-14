@@ -1,9 +1,15 @@
 # Dome Keeper
 
 ## Latest
-- <a href="https://github.com/Arrcival/ArchipelagoDK/releases/download/v2.0.2/dome_keeper.apworld">Latest Version (2.0.2)</a>
+- <a href="https://github.com/Arrcival/ArchipelagoDK/releases/download/v2.1.1/dome_keeper.apworld">Latest Version (2.1.1)</a>
 
 ## All Versions
+
+#### v2.1.1
+- <a href="https://github.com/Arrcival/ArchipelagoDK/releases/download/v2.1.1/dome_keeper.apworld">https://github.com/Arrcival/ArchipelagoDK/releases/download/v2.1.1/dome_keeper.apworld</a>
+
+#### v2.1.0
+- <a href="https://github.com/Arrcival/ArchipelagoDK/releases/download/v2.1.0/dome_keeper.apworld">https://github.com/Arrcival/ArchipelagoDK/releases/download/v2.1.0/dome_keeper.apworld</a>
 
 #### v2.0.2
 - <a href="https://github.com/Arrcival/ArchipelagoDK/releases/download/v2.0.2/dome_keeper.apworld">https://github.com/Arrcival/ArchipelagoDK/releases/download/v2.0.2/dome_keeper.apworld</a>

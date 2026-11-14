@@ -4,7 +4,7 @@ Warcraft 3 is a fantasy real-time strategy game developed and published by Blizz
 
 
 ## Downloads
-- <a href="https://github.com/MatthewMarinets/war3-ap-maps/releases/download/0.0.2-initial/wc3.apworld">Latest Version (0.0.2)</a>
+- <a href="https://github.com/MatthewMarinets/war3-ap-maps/releases/download/0.0.2-initial/wc3.apworld">Latest Version (0.0.2.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

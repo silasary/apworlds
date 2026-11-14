@@ -13,7 +13,7 @@
 
 ## General Concept
 
-The DWAP Client is a C# client which reads memory addresses from ePSXe and communicates with Archipelago. Location Checks are sent when specific memory addresses update, and items are given by editing the memory addresses.
+The DWAP Client is a C# client which reads memory addresses from Duckstation and communicates with Archipelago. Location Checks are sent when specific memory addresses update, and items are given by editing the memory addresses.
 
 ## Joining a MultiWorld Game
 

@@ -1,7 +1,7 @@
 -- ============================================================================
 -- Toy Story 2 (PS1) Archipelago - ALL-IN-ONE BizHawk script
 -- ----------------------------------------------------------------------------
--- CONNECTOR VERSION: 3.1.1   <-- must match the .apworld release.
+-- CONNECTOR VERSION: 3.1.3   <-- must match the .apworld release.
 --   If a player reports odd behaviour (e.g. checks sending early), have them
 --   confirm this line. It is also printed in the BizHawk Lua console on load and
 --   again when settings are received, so they can read it back without opening
@@ -28,41 +28,274 @@
 -- Single source of truth for the connector release version (see header). Bump this
 -- in lockstep with the .apworld release. Global so it stays in scope across the
 -- Part 1 / Part 2 do...end blocks without consuming a local slot.
-TS2_VERSION = "3.1.1"
+TS2_VERSION = "3.1.3"
 -- Free-text build tag, printed beside the version on load. NOT parsed anywhere:
 -- the client and the title screen only ever read TS2_VERSION, so a hotfix can
 -- be told apart in a player's console without tripping the version check.
 TS2_BUILD = nil
 
--- ── Debug logging (OFF by default) ──────────────────────────────────────────
--- A player who hits a bug (a crash, a stuck connection, a wrong send) can set
---   TS2_DEBUG = true
--- reproduce the problem, and send the resulting ts2_debug.txt (written next to
--- EmuHawk.exe) with their report. It records: the connector version, the client
--- handshake, every level transition, boss defeats, savestate loads, a periodic
--- heartbeat of the game state, and -- most useful for a crash -- any Lua error
--- from the main loop, with its message. Leave it false for normal play; when off
--- it costs nothing (a single flag check).
-TS2_DEBUG = false
+-- ── Debug log (ON by default since 3.1.2) ──────────────────────────────────
+-- Every session writes ts2_debug.txt in a ts2_debug folder next to ts2.lua
+-- (normally Archipelago\data\lua\ts2_debug -- BizHawk runs a script from its
+-- own folder), so a player who hits a crash already has the log when they
+-- report it, and can delete the whole folder whenever they like. Lua can't
+-- make folders without popping a command window, so the CLIENT creates it
+-- (3.1.3); without it (no client, or ts2.lua loaded from somewhere else) the
+-- files go straight next to ts2.lua as in 3.1.2. A seed whose
+-- yaml has "Turn Debug Off" on switches it off: the client says so through
+-- DEBUG_ADDR, and until it does, lines are held in memory rather than written
+-- (so a debug-off player never gets a file). If no client turns up within
+-- TS2_DEBUG_DECIDE_FRAMES the held lines are written anyway -- "it never
+-- connected" is exactly the session worth having a log of.
+--
+-- What it records: the session (connector, BizHawk, Lua, ROM), the client
+-- handshake, level changes, boss defeats and boss health, deaths, savestate
+-- loads, every change to the shared bytes the client drives (items, traps,
+-- death links), every on-screen item-feed message, every change to the game
+-- code words this script patches, a heartbeat every ~10s, any Lua error, and,
+-- if the game looks frozen in a level, a FREEZE report plus a one-off RAM dump
+-- (ts2_freeze_dump.bin) taken while the crash is still on screen.
+-- Setting TS2_DEBUG = false here turns it off for every seed.
+TS2_DEBUG = true
 TS2_DEBUG_FILE = "ts2_debug.txt"
+TS2_DEBUG_OLD_FILE = "ts2_debug.old.txt"        -- the previous log, once it gets big
+TS2_DEBUG_MAX_BYTES = 5 * 1024 * 1024
+TS2_DEBUG_DUMP_FILE = "ts2_freeze_dump.bin"
+TS2_DEBUG_DIR = "ts2_debug"
+ts2_dbg_dir_ok = nil         -- does TS2_DEBUG_DIR exist? (checked on first use)
+-- Where a debug file goes: inside TS2_DEBUG_DIR when it exists, else beside
+-- ts2.lua. Opening a file for append inside it only works if it exists.
+function ts2_dbg_path(name)
+    if ts2_dbg_dir_ok == nil then
+        local f = io.open(TS2_DEBUG_DIR .. "/" .. TS2_DEBUG_FILE, "a")
+        ts2_dbg_dir_ok = f ~= nil
+        if f then f:close() end
+    end
+    return ts2_dbg_dir_ok and (TS2_DEBUG_DIR .. "/" .. name) or name
+end
 TS2_DEBUG_HEARTBEAT = 600   -- frames between heartbeat snapshots (~10s at 60fps)
+TS2_DEBUG_DECIDE_FRAMES = 3600   -- write without a client after ~60s
+TS2_DEBUG_HOLD_MAX = 3000        -- lines held while undecided
+-- 0x1FEC27, client -> lua: 0xD0 debug on, 0xD1 "Turn Debug Off". Zeroed on init
+-- so boot garbage can never read as either.
+DEBUG_ADDR = 0x1FEC27
+DEBUG_TAG  = 0xD0
 -- Globals (not locals): the main chunk is at the 200-local ceiling.
 ts2_dbg_handle = nil
 ts2_dbg_hb_frame = 0
-function ts2_debug(msg)
-    if not TS2_DEBUG then return end
-    if ts2_dbg_handle == nil then
-        ts2_dbg_handle = io.open(TS2_DEBUG_FILE, "a")
-        if ts2_dbg_handle then
-            ts2_dbg_handle:write("\n==== ts2 debug session (connector " ..
-                tostring(TS2_VERSION) .. ") ====\n")
-            ts2_dbg_handle:write("If you are reporting a bug, attach this whole file.\n")
+ts2_dbg_state = "pending"        -- "pending" (holding lines), "on", "off"
+ts2_dbg_held = {}
+ts2_dbg_wait = 0
+ts2_dbg_settings_wait = 0
+function ts2_dbg_open()
+    if ts2_dbg_handle then return ts2_dbg_handle end
+    -- Keep the file from growing forever now that it is always on: past the
+    -- cap, the current log becomes ts2_debug.old.txt and a fresh one starts.
+    local f = io.open(ts2_dbg_path(TS2_DEBUG_FILE), "rb")
+    if f then
+        local size = f:seek("end") or 0
+        f:close()
+        if size > TS2_DEBUG_MAX_BYTES then
+            pcall(os.remove, ts2_dbg_path(TS2_DEBUG_OLD_FILE))
+            pcall(os.rename, ts2_dbg_path(TS2_DEBUG_FILE), ts2_dbg_path(TS2_DEBUG_OLD_FILE))
         end
     end
+    ts2_dbg_handle = io.open(ts2_dbg_path(TS2_DEBUG_FILE), "a")
     if ts2_dbg_handle then
-        local fr = (type(emu) == "table" and emu.framecount and emu.framecount()) or -1
-        ts2_dbg_handle:write(string.format("[f%d] %s\n", fr, msg))
+        local function g(fn) local ok, v = pcall(fn); return ok and tostring(v) or "?" end
+        ts2_dbg_handle:write(string.format(
+            "\n==== ts2 debug session %s ====\n"
+            .. "connector %s%s | BizHawk %s | %s | ROM %s (hash %s)\n"
+            .. "If you are reporting a bug, attach this whole file.\n",
+            os.date("%Y-%m-%d %H:%M:%S"), tostring(TS2_VERSION),
+            TS2_BUILD and (" (" .. TS2_BUILD .. ")") or "",
+            g(client.getversion), tostring(_VERSION),
+            g(gameinfo.getromname), g(gameinfo.getromhash)))
         ts2_dbg_handle:flush()
+    end
+    return ts2_dbg_handle
+end
+function ts2_debug(msg)
+    if not TS2_DEBUG or ts2_dbg_state == "off" then return end
+    local fr = (type(emu) == "table" and emu.framecount and emu.framecount()) or -1
+    local line = string.format("[f%d %s] %s\n", fr, os.date("%H:%M:%S"), msg)
+    if ts2_dbg_state == "pending" then
+        if #ts2_dbg_held < TS2_DEBUG_HOLD_MAX then ts2_dbg_held[#ts2_dbg_held + 1] = line end
+        return
+    end
+    local h = ts2_dbg_open()
+    if h then h:write(line); h:flush() end
+end
+-- Settle "on" or "off" once per script session. Runs every frame until then.
+function ts2_debug_decide()
+    if ts2_dbg_state ~= "pending" then return end
+    if not TS2_DEBUG then ts2_dbg_state = "off"; ts2_dbg_held = {}; return end
+    local v = mainmemory.read_u8(DEBUG_ADDR)
+    local verdict = nil
+    if (v & 0xFE) == DEBUG_TAG then
+        verdict = (v & 1) == 1 and "off" or "on"
+    elseif SETTINGS_SEEN then
+        -- A client from before 3.1.2 never writes the byte: count it as on.
+        ts2_dbg_settings_wait = ts2_dbg_settings_wait + 1
+        if ts2_dbg_settings_wait > 300 then verdict = "on" end
+    else
+        ts2_dbg_wait = ts2_dbg_wait + 1
+        if ts2_dbg_wait >= TS2_DEBUG_DECIDE_FRAMES then verdict = "on" end
+    end
+    if verdict == "off" then
+        ts2_dbg_state = "off"; ts2_dbg_held = {}
+        print("[TS2] Debug log off (this seed's yaml has Turn Debug Off).")
+    elseif verdict == "on" then
+        ts2_dbg_state = "on"
+        local h = ts2_dbg_open()
+        if h then
+            for _, line in ipairs(ts2_dbg_held) do h:write(line) end
+            h:flush()
+        end
+        ts2_dbg_held = {}
+        if not SETTINGS_SEEN then ts2_debug("no client settings after 60s -- logging anyway") end
+        print("[TS2] Debug log on: " .. ts2_dbg_path(TS2_DEBUG_FILE)
+              .. (ts2_dbg_dir_ok and ", in the folder next to ts2.lua." or ", next to ts2.lua."))
+    end
+end
+
+-- Watchers: log what changed, never what stayed the same. Each entry is
+-- {address, size (1/2/4), label}. Read once per frame; cheap.
+TS2_DBG_SHARED = {
+    {0x1FFFE3, 1, "tokens"}, {0x1FFFE5, 1, "level unlocks lo"}, {0x1FFFE7, 1, "level unlocks hi"},
+    {0x1FFFE9, 1, "tickets"}, {0x1FFFEB, 1, "laser level"}, {0x1FFFEC, 1, "spin level"},
+    {0x1FFFED, 1, "move unlocks lo"}, {0x1FFFEF, 1, "move unlocks hi"},
+    {0x1FFFF2, 1, "boss defeats"}, {0x1FFFD2, 1, "dizzy trap queue"},
+    {0x1FE981, 1, "narrow vision trap queue"}, {0x1FE982, 1, "invincible enemies trap queue"},
+    {0x1FE983, 1, "freeze trap queue"}, {0x1FE984, 1, "cutscene trap queue"},
+    {0x1FE985, 1, "damage trap queue"}, {0x1FE986, 1, "death link queue"},
+    {0x1FE987, 1, "extra life queue"}, {0x1FE988, 1, "extra battery queue"},
+    {0x1FE96B, 1, "invincible buzz queue"}, {0x1FEC22, 1, "missions"},
+    {0x1FEC25, 1, "challenge flags"}, {0x1FEC26, 1, "battery capacity count"},
+    {0x0A136E, 1, "death/exit state"}, {0x0B2222, 1, "lives"},
+}
+-- Game code this script rewrites. A CPU crash is most often a bad instruction,
+-- so every change here (ours, or the game reloading an overlay) is logged.
+TS2_DBG_CODE = {
+    {0x048AC4, 4, "push"}, {0x049A04, 4, "double jump"}, {0x04A636, 4, "laser prog"},
+    {0x04AD20, 4, "spin L2"}, {0x04AFF4, 4, "pole vault"}, {0x04B000, 4, "vault"},
+    {0x04BD48, 4, "rope"}, {0x04C308, 4, "ledge a"}, {0x04C310, 4, "ledge"},
+    {0x04C31C, 4, "ledge b"}, {0x04C324, 4, "ledge c"}, {0x06D610, 4, "enemy damage"},
+    {0x0750C0, 4, "shop patch A"}, {0x0778D8, 4, "shop patch B"},
+    {0x074FE8, 4, "spin meter box"}, {0x075DBC, 4, "spin meter bar"},
+}
+ts2_dbg_last = {}
+ts2_dbg_code_count = {}
+ts2_dbg_feed_seq = nil
+ts2_dbg_boss_hp = nil
+ts2_dbg_freeze = {sig = nil, same = 0, reported = false, dumped = false}
+function ts2_dbg_read(a, n)
+    if n == 1 then return mainmemory.read_u8(a)
+    elseif n == 2 then return mainmemory.read_u16_le(a) end
+    return mainmemory.read_u32_le(a)
+end
+function ts2_debug_watch(level)
+    for _, w in ipairs(TS2_DBG_SHARED) do
+        local v = ts2_dbg_read(w[1], w[2])
+        local was = ts2_dbg_last[w[1]]
+        if was ~= nil and was ~= v then
+            ts2_debug(string.format("%s: %d -> %d", w[3], was, v))
+        end
+        ts2_dbg_last[w[1]] = v
+    end
+    for _, w in ipairs(TS2_DBG_CODE) do
+        local v = ts2_dbg_read(w[1], 4)
+        local key = w[1] + 0x10000000
+        local was = ts2_dbg_last[key]
+        if was ~= nil and was ~= v then
+            local n = (ts2_dbg_code_count[key] or 0) + 1
+            ts2_dbg_code_count[key] = n
+            if n <= 50 then
+                ts2_debug(string.format("code 0x%06X (%s): %08X -> %08X  level=%d%s",
+                    w[1], w[3], was, v, level, n == 50 and "  (no more lines for this one)" or ""))
+            end
+        end
+        ts2_dbg_last[key] = v
+    end
+    -- The on-screen item feed: one line per message shown.
+    local seq = mainmemory.read_u8(0x1FEA00)
+    if ts2_dbg_feed_seq ~= nil and seq ~= ts2_dbg_feed_seq and seq ~= 0 then
+        local t = {}
+        for i = 0, 127 do
+            local c = mainmemory.read_u8(0x1FEA01 + i)
+            if c == 0 then break end
+            t[#t + 1] = (c >= 32 and c < 127) and string.char(c) or "."
+        end
+        ts2_debug("item feed: " .. table.concat(t))
+    end
+    ts2_dbg_feed_seq = seq
+    -- Boss health, only in a boss fight (the address means nothing elsewhere).
+    if level == 3 or level == 6 or level == 9 or level == 12 or level == 15 then
+        local hp = mainmemory.read_u16_le(0x0C2F1A)
+        if ts2_dbg_boss_hp ~= nil and hp ~= ts2_dbg_boss_hp then
+            ts2_debug(string.format("boss hp: %d -> %d (level %d)", ts2_dbg_boss_hp, hp, level))
+        end
+        ts2_dbg_boss_hp = hp
+    else
+        ts2_dbg_boss_hp = nil
+    end
+end
+-- Freeze detector. The game redraws its transform table (0x180000-0x19FFFF)
+-- every frame while a level is running; a crashed PS1 CPU stops touching it.
+-- 3.1.3: the game's own globals (0x0A0000-0x0BFFFF) are sampled too, because
+-- they keep ticking through dialogs and quiet moments that can leave the
+-- drawing static, and a crashed CPU stops those as well. Sampled every 30
+-- frames, and only while the level is live and not paused, so menus and
+-- loading screens can't trip it. 10 seconds of nothing changing in a live
+-- level is reported (at most TS2_DEBUG_FREEZE_MAX times a session), with one
+-- RAM dump taken while the crash is still on screen.
+-- (3.1.2 also asked BizHawk for the CPU registers here. Nymashock doesn't
+-- support that and prints an error to the Lua Console, pcall or not.)
+TS2_DEBUG_FREEZE_MAX = 3
+function ts2_debug_freeze(level, live)
+    local fz = ts2_dbg_freeze
+    if not live or mainmemory.read_u8(0x0A10F4) ~= 0 then fz.sig = nil; fz.same = 0; return end
+    if emu.framecount() % 30 ~= 0 then return end
+    local acc = 0
+    for i = 0, 127 do
+        acc = (acc * 31 + mainmemory.read_u32_le(0x180000 + i * 0x400)) % 4294967291
+    end
+    for i = 0, 255 do
+        acc = (acc * 31 + mainmemory.read_u32_le(0x0A0000 + i * 0x200)) % 4294967291
+    end
+    if acc == fz.sig then fz.same = fz.same + 30 else fz.sig = acc; fz.same = 0; fz.reported = false end
+    if fz.same >= 600 and not fz.reported and (fz.count or 0) < TS2_DEBUG_FREEZE_MAX then
+        fz.reported = true
+        fz.count = (fz.count or 0) + 1
+        ts2_debug(string.format(
+            "FREEZE? nothing in the game has changed for 10s in level %d (hp=%d lives=%d)",
+            level, mainmemory.read_u8(0x0B221E), mainmemory.read_u8(0x0B2222)))
+        if not fz.dumped then
+            fz.dumped = true
+            local okd, err = pcall(function()
+                local out = io.open(ts2_dbg_path(TS2_DEBUG_DUMP_FILE), "wb")
+                if not out then error("could not open " .. ts2_dbg_path(TS2_DEBUG_DUMP_FILE)) end
+                local CH = 0x10000
+                for base = 0, 0x200000 - CH, CH do
+                    local t = mainmemory.read_bytes_as_array and mainmemory.read_bytes_as_array(base, CH)
+                    local parts = {}
+                    if t then
+                        for i = 1, CH, 4096 do
+                            parts[#parts + 1] = string.char(table.unpack(t, i, math.min(i + 4095, CH)))
+                        end
+                    else
+                        local r = mainmemory.readbyterange(base, CH)
+                        local buf = {}
+                        for i = 0, CH - 1 do buf[#buf + 1] = string.char(r[i] or 0) end
+                        parts[1] = table.concat(buf)
+                    end
+                    out:write(table.concat(parts))
+                end
+                out:close()
+            end)
+            ts2_debug(okd and ("RAM saved to " .. ts2_dbg_path(TS2_DEBUG_DUMP_FILE) .. " -- send it with this log")
+                          or ("RAM dump failed: " .. tostring(err)))
+        end
     end
 end
 
@@ -408,9 +641,11 @@ LEVEL_LIVE_ADDR    = 0x1FEC24
 -- Rechargeable Battery Capacity, bit3 Lives Carry More Weight, bit4 ...spares
 -- death links. Untagged (no client yet, older client) reads as all off.
 -- 0x1FEC26: how many Progressive Battery Capacity items have been received.
+-- 0x1FEC27: debug log on/off (3.1.2, client -> lua), DEBUG_ADDR up top.
+-- 0x1FEC28-0x1FEC2B: spin meter mirror (3.1.2, lua -> game HUD), SPIN_MIRROR_ADDR.
 CHALLENGE_ADDR     = 0x1FEC25
 BATTERY_CAP_COUNT_ADDR = 0x1FEC26
--- free: 0x1FEC27 - 0x1FEC3F
+-- free: 0x1FEC2C - 0x1FEC3F
 -- Potato Head reward (3.0.0). Same shape as the missing toy reward above, in
 -- its own buffer: Potato Head and a missing-toy owner share every Potato level,
 -- so one buffer cannot describe both. Sited above the 2.3.0 top in the same
@@ -693,16 +928,63 @@ function get_spin_level()       return mainmemory.read_u8(0x1FFFEC) end  -- SHAR
 SPIN_SUPER       = 0xFFFFFED2   -- written every frame while super spin is ON
 SPIN_DIZZY       = 0xFFFFFF87   -- Dizzy Buzz value (triggers Buzz's dizzy animation)
 SPIN_UI_ADDR     = 0x0C2ACF     -- spin UI element (re-hidden during dizzy w/o spin)
-SPIN_HOLD_FRAMES = 8            -- frames O must be held to flip the super-spin toggle
+SPIN_HOLD_FRAMES = 15           -- frames the spin button must be held for the big move (3.1.2)
+SPIN_PAD_WORD    = 0x0A15BC     -- the game's own pad state; it charges the spin on 0x2000
+SPIN_PAD_BTN     = 0x2000
+SPIN_L2_BYTE     = 0x04AD22     -- pre-3.1.2 instant charge wrote 0 here; vanilla is 0x40
 SPIN_DIZZY_CLEAR = 1            -- frames to hold 0x0A139C at 0 before the dizzy value
 SPIN_UI_HOLD     = 180          -- keep hiding the spin UI 3s (60fps) after dizzy ends
 spin3_on = false                -- super-spin toggle
-spin_streak = 0                 -- noise-tolerant "O held" counter
+spin_streak = 0                 -- frames the spin button has been held
 spin_consumed = false           -- current hold already flipped the toggle
 dizzy_seq = 0                   -- >0 while the clear-then-dizzy write sequence runs
 dizzy_active = false            -- dizzy live; hands off 0x0A139C until the game zeroes it
 spin_ui_hidden = nil            -- learned value of the spin UI while it is hidden
 spin_ui_hold = 0                -- frames left to keep hiding the spin UI post-dizzy
+-- Progressive Spin level 2 (3.1.2): no dizzy, then a cooldown. From spin_probe:
+-- a full spin runs 0x0A139C from -300 up to -121 (spinning), then -121 to 0 is
+-- the dizzy.
+SPIN2_COOLDOWN   = 180          -- frames (3s) with no spin after an L2 spin ends
+SPIN2_DIZZY_FROM = -121         -- 0x0A139C at/above this (after a spin) is dizzy
+spin2_live = false              -- an L2 spin is running (0x0A139C seen at -200 or lower)
+spin2_cooldown = 0              -- frames left with the spin switched off
+-- The cooldown on the spin meter (3.1.2). The game's HUD code reads the spin
+-- value 0x0A139C twice: at 0x80074FE8, where nonzero keeps the box on screen,
+-- and at 0x80075DBC, where it draws the bar (a charge v of 0..60 fills v/2 of
+-- 30 notches; while spinning, below -119, it drains with (-(v+120))/6). Writing
+-- 0x0A139C ourselves shows nothing, because the game's spin code resets it
+-- before the HUD looks. So both reads are pointed at SPIN_MIRROR_ADDR, a word
+-- in our shared block. Every frame it copies 0x0A139C, so the meter looks
+-- exactly as it always has, except during the L2 cooldown, when it counts 59
+-- down to 1 and the bar drains over the 3 seconds. The code is main-executable
+-- code, identical in every level, and is put back when the script closes.
+SPIN_MIRROR_ADDR = 0x1FEC28
+SPIN_HUD_PATCHES = {
+    {0x074FE4, 0x3C02800A, 0x3C028020},   -- lui v0,0x800A    -> lui v0,0x8020
+    {0x074FE8, 0x8C42139C, 0x8C42EC28},   -- lw v0,0x139C(v0) -> lw v0,-0x13D8(v0): 0x801FEC28
+    {0x075DB8, 0x3C04800A, 0x3C048020},   -- lui a0,0x800A    -> lui a0,0x8020
+    {0x075DBC, 0x8C84139C, 0x8C84EC28},   -- lw a0,0x139C(a0) -> lw a0,-0x13D8(a0)
+}
+function spin_hud_patch(on)
+    for _, p in ipairs(SPIN_HUD_PATCHES) do
+        local cur = mainmemory.read_u32_le(p[1])
+        local want = on and p[3] or p[2]
+        -- Only ever swap the two known forms: anything else isn't this code.
+        if cur ~= want and (cur == p[2] or cur == p[3]) then mainmemory.write_u32_le(p[1], want) end
+    end
+end
+function spin_meter_tick()
+    if spin2_cooldown > 0 then
+        local v = math.ceil(60 * spin2_cooldown / SPIN2_COOLDOWN)
+        mainmemory.write_u32_le(SPIN_MIRROR_ADDR, math.max(1, math.min(59, v)))
+    else
+        mainmemory.write_u32_le(SPIN_MIRROR_ADDR, mainmemory.read_u32_le(0x0A139C))
+    end
+    spin_hud_patch(true)   -- mirror first, so the HUD never reads it stale
+end
+if event and event.onexit then
+    event.onexit(function() pcall(spin_hud_patch, false) end, "ts2_spin_meter")
+end
 function clear_spin3()
     mainmemory.write_u32_le(0x0A139C, 0)   -- zeroes 0x0A139C..0x0A139F
 end
@@ -3043,28 +3325,67 @@ function update_moves()
     input=mainmemory.read_u8(A.INPUT)
 
     -- ── Progressive Spin ──────────────────────────────────
-    -- L1 = base spin (move bit). L2 writes 0 to 0x04AD22 (exclusive). L3 = "super
-    -- spin": HOLD O to toggle FFFFFED2 -> 0x0A139C. Native spin is suppressed without
-    -- the move, at L3 (super spin replaces it), and while super spin is on. The Dizzy
-    -- Buzz trap (update_traps) drives the same address and OUTRANKS the spin: once a
-    -- dizzy is live we hand off until the game itself zeroes 0x0A139C.
+    -- L1 = base spin (move bit). L2 = holding the button charges to full at
+    -- once, no dizzy, then a cooldown. L3 = "super spin": HOLD the button to
+    -- toggle FFFFFED2 -> 0x0A139C. At L2 and L3 a TAP is still the game's normal
+    -- quick spin (3.1.2): the big move needs SPIN_HOLD_FRAMES of holding. Native
+    -- spin is suppressed without the move, while super spin is on, and during the
+    -- L2 cooldown. The Dizzy Buzz trap (update_traps) drives the same address and
+    -- OUTRANKS the spin: once a dizzy is live we hand off until the game itself
+    -- zeroes 0x0A139C.
     local SPIN_LEVEL = get_spin_level()
 
-    -- Native spin enable (A.SPIN): blocked w/o the move, at L3, or while super on.
-    if (not HAS_SPIN) or SPIN_LEVEL>=3 or spin3_on then
+    -- The spin button, read the way the game's charge code reads it (A.INPUT
+    -- gives idle/garbage reads in-level).
+    local spin_held = (mainmemory.read_u16_le(SPIN_PAD_WORD) & SPIN_PAD_BTN) ~= 0
+    if spin_held then spin_streak = math.min(spin_streak + 1, 255) else spin_streak = 0; spin_consumed = false end
+
+    -- L2 (3.1.2): end the spin where the dizzy would start, then a cooldown.
+    -- Whether the spin finishes or a hit cuts it short, the moment 0x0A139C
+    -- leaves the spin range is the end: zero it (no dizzy) and switch the spin
+    -- off for SPIN2_COOLDOWN frames of unpaused play. A Dizzy Buzz trap owns
+    -- 0x0A139C while it runs, so it is never cancelled.
+    if SPIN_LEVEL==2 and dizzy_seq==0 and not dizzy_active then
+        local sv = mainmemory.read_u32_le(0x0A139C)
+        if sv >= 0x80000000 then sv = sv - 0x100000000 end
+        if sv <= -200 then
+            spin2_live = true
+        elseif spin2_live and sv >= SPIN2_DIZZY_FROM then
+            spin2_live = false
+            if sv < 0 then mainmemory.write_u32_le(0x0A139C, 0) end
+            spin2_cooldown = SPIN2_COOLDOWN
+        end
+    else
+        spin2_live = false
+    end
+    -- The pause menu stops the clock.
+    if spin2_cooldown > 0 and mainmemory.read_u8(A.PAUSE) == 0 then
+        spin2_cooldown = spin2_cooldown - 1
+    end
+
+    -- Native spin enable (A.SPIN): blocked w/o the move, while super on, or during
+    -- the L2 cooldown. (Not at L3 any more: a tap there is the quick spin.)
+    if (not HAS_SPIN) or spin3_on or spin2_cooldown>0 then
         mainmemory.write_u32_le(A.SPIN, 0xFFFFFFFF); spin_restored=false
     elseif not spin_restored then
         mainmemory.write_u32_le(A.SPIN, 0x00000000); spin_restored=true
     end
 
-    -- L2 only: write 0 to 0x04AD22 each frame.
-    if SPIN_LEVEL==2 then mainmemory.write_u8(0x04AD22, 0) end
+    -- L2: the game charges normally (a tap lets go below full, which the game
+    -- turns into the quick spin); once the button has been held for
+    -- SPIN_HOLD_FRAMES, jump the charge to full. Before 3.1.2 this was a code
+    -- patch at 0x04AD22 that filled it on the very first frame, so put that
+    -- byte back if an older script or a savestate left it patched.
+    if mainmemory.read_u32_le(0x04AD20) == 0x14000002 then mainmemory.write_u8(SPIN_L2_BYTE, 0x40) end
+    if SPIN_LEVEL==2 and spin_streak>=SPIN_HOLD_FRAMES and not spin_consumed
+       and spin2_cooldown==0 and dizzy_seq==0 and not dizzy_active then
+        local cv = mainmemory.read_u32_le(0x0A139C)
+        if cv > 0 and cv < 60 then mainmemory.write_u32_le(0x0A139C, 60) end
+        spin_consumed = true
+    end
 
-    -- L3: HOLD O to flip the super-spin toggle (noise-tolerant streak).
+    -- L3: HOLD the button for SPIN_HOLD_FRAMES to flip the super-spin toggle.
     if SPIN_LEVEL>=3 then
-        local circle_down = (input & 0x20) == 0   -- O/circle bit 0x20, active-low
-        if circle_down then spin_streak = math.min(spin_streak+1, SPIN_HOLD_FRAMES)
-        else spin_streak = math.max(spin_streak-1, 0) end
         if spin_streak>=SPIN_HOLD_FRAMES and not spin_consumed then
             if spin3_on then spin3_on=false
             -- Only ACTIVATE super spin while grounded (0x0B2214 == 0). It can be
@@ -3074,9 +3395,6 @@ function update_moves()
                    and mainmemory.read_u8(0x0B2214) == 0 then spin3_on=true end
             spin_consumed = true
         end
-        if spin_streak==0 then spin_consumed=false end
-    else
-        spin_streak=0; spin_consumed=false
     end
 
     -- Address ownership: dizzy sequence -> dizzy hands-off -> normal spin driving.
@@ -4430,10 +4748,77 @@ function update_auto_coins(level)
     end
 end
 
+-- Coin UI overrides (3.1.2). With Coinsanity on, a pickup hides the coin UI for
+-- a few seconds, because the picked-up coins are checks, not money. Two things
+-- now beat that: pressing R1 (the game's "show the HUD" button) and receiving a
+-- Coin Bundle for the level you're in. R1 is read from joypad.get(), the
+-- emulated controller, not from A.INPUT: that byte gives idle/garbage reads
+-- in-level, which is why the old code refused to look at R1 at all.
+--
+-- How long it stays: each HUD element has a show timer (0x0CD400 lives,
+-- 0x0CD402 health, 0x0CD404 coins); R1 sets all three to 0x5A, and every
+-- coin pickup puts the coin timer back up to 0xB4. Left alone, pickups would
+-- keep the coin UI up long after the rest of the HUD went. So during an R1
+-- override the coin timer is never allowed above the lives timer, and the
+-- coin UI leaves together with the lives UI. After a received bundle it may
+-- only count down from where it started.
+COIN_UI_OVERRIDE_MAX = 600   -- frames; a safety cap in case the UI never reads as hidden
+coin_ui_override = 0         -- frames left while R1/a bundle has the coin UI showing
+coin_ui_seen = false         -- the UI has been seen up during this override
+coin_ui_follow_lives = false -- R1: the coin UI goes when the lives UI goes
+coin_ui_cap = 0              -- received bundle: the highest the coin timer may be
+coin_r1_was_down = false
+function r1_is_pressed()
+    local ok, pad = pcall(joypad.get)
+    if not ok or type(pad) ~= "table" then return false end
+    for name, val in pairs(pad) do
+        if val == true and type(name) == "string" and (name == "R1" or name:sub(-3) == " R1") then
+            return true
+        end
+    end
+    return false
+end
+function coin_ui_override_start(follow_lives)
+    coin_ui_override = COIN_UI_OVERRIDE_MAX
+    coin_ui_seen = false
+    coin_ui_follow_lives = follow_lives and true or false
+    coin_ui_cap = 0xFFFF
+end
+
+-- A Coin Bundle for this level arrived (3.1.2): pop the coin UI the way a
+-- normal pickup does, and keep a pickup's suppression from hiding it again.
+function coin_ui_show_received()
+    mainmemory.write_u16_le(A.COIN_ANIM, COIN_UI_VALUE)
+    suppress_coin_ui = 0
+    coin_ui_override_start(false)
+    coin_ui_cap = COIN_UI_VALUE       -- counts down from here, whatever a pickup does
+end
+
 function update_coins(level)
     if not is_coinsanity() or not COIN_LEVEL_IDS[level] then return end
     coin_load_timer=coin_load_timer+1
     if coin_load_timer<COIN_LOAD_WAIT then return end
+
+    -- R1 / received-bundle override (see coin_ui_override above). Handled
+    -- before the cases below because several of them return early.
+    local r1 = r1_is_pressed()
+    if r1 and not coin_r1_was_down then coin_ui_override_start(true) end
+    coin_r1_was_down = r1
+    if coin_ui_override > 0 then
+        coin_ui_override = coin_ui_override - 1
+        suppress_coin_ui = 0
+        local t = mainmemory.read_u16_le(A.COIN_ANIM)
+        local cap
+        if coin_ui_follow_lives then
+            cap = mainmemory.read_u16_le(A.LIVES_UI)
+        else
+            if t < coin_ui_cap then coin_ui_cap = t end
+            cap = coin_ui_cap
+        end
+        if t > cap then mainmemory.write_u16_le(A.COIN_ANIM, cap); t = cap end
+        if t > 0 then coin_ui_seen = true
+        elseif coin_ui_seen then coin_ui_override = 0 end   -- gone, with the rest of the HUD
+    end
 
     -- ADOPT SERVER BASELINE — the client's _restore_from_server writes the highest
     -- Coin Bundle already checked on the server into SHARED_COINS[level] on (re)connect.
@@ -4512,6 +4897,9 @@ function update_coins(level)
     -- floor that fixes "coins start at 0 on re-entry".
     if raw_coins < ap_coins then
         mainmemory.write_u8(A.COIN, ap_coins)
+        -- A Coin Bundle received in this level also lands here (it raises ap
+        -- above the counter), and is the one case where ap itself went up.
+        if ap_coins > (last_ap_coins[level] or 0) then coin_ui_show_received() end
         last_ap_coins[level]=ap_coins
         return
     end
@@ -4523,6 +4911,7 @@ function update_coins(level)
     if ap_coins > (last_ap_coins[level] or 0) then
         mainmemory.write_u8(A.COIN, ap_coins)
         last_ap_coins[level]=ap_coins
+        coin_ui_show_received()
         return
     end
     last_ap_coins[level]=ap_coins
@@ -4545,13 +4934,13 @@ function update_coins(level)
             next_t=get_coin_next_threshold(level)
         end
         mainmemory.write_u8(A.COIN, ap_coins)
-        suppress_coin_ui=180  -- suppress the pickup animation (matches original)
+        -- Suppress the pickup animation -- unless R1 or a received bundle
+        -- already has the UI up, in which case the pickup just shows.
+        if coin_ui_override == 0 then suppress_coin_ui=180 end
     end
-    -- Keep the coin pickup UI suppressed for the duration. We do NOT try to let
-    -- R1 reveal it: A.INPUT is unreliable in-level (idle/garbage reads with bit 3
-    -- clear were cancelling the suppression and letting the UI flash back on).
-    -- Suppress BOTH the coin counter UI and the coin pickup ANIMATION address;
-    -- hiding only the counter still let the pickup animation play.
+    -- Keep the coin pickup UI suppressed for the duration. Suppress BOTH the
+    -- coin counter UI and the coin pickup ANIMATION address; hiding only the
+    -- counter still let the pickup animation play.
     if suppress_coin_ui>0 then
         mainmemory.write_u8(A.COIN_UI,0)
         mainmemory.write_u8(A.COIN_ANIM,0)
@@ -4842,6 +5231,8 @@ function on_init()
     -- game when the script loaded together with it).
     mainmemory.write_u8(0x1FEA00, 0)
     for i = 0, 127 do mainmemory.write_u8(0x1FEA01 + i, 0) end
+    -- Debug on/off byte (3.1.2): only the client may set it.
+    mainmemory.write_u8(DEBUG_ADDR, 0)
     -- Feed mode cycle counter (Select button -> client advances mode)
     mainmemory.write_u8(FEED_CYCLE_ADDR, 0)
     -- Coin bundle counters
@@ -5013,6 +5404,8 @@ function on_level_change(new_level, prev_level)
     dizzy_seq = 0
     dizzy_active = false
     spin_ui_hold = 0
+    spin2_live = false
+    spin2_cooldown = 0
     clear_spin3()
     -- Snapshot the free-running counter at a MAP(16) -> LEVEL(1..15) transition.
     -- (Only that transition; other entries use the movement/timeout fallbacks.)
@@ -5034,6 +5427,7 @@ function on_level_change(new_level, prev_level)
 
     -- Coin sanity
     coin_load_timer=0
+    coin_ui_override=0; suppress_coin_ui=0
     coin_baseline_set=false
     coin_reassert=0
     coins_this_visit[new_level]=0
@@ -5780,6 +6174,8 @@ function ts2_main()
     -- Progressive Battery Capacity found mid-level fills health (3.1.0). Every
     -- frame, map included, so the count is always current.
     battery_cap_pickup(mainmemory.read_u8(A.LEVEL))
+    -- Spin meter mirror (3.1.2), every frame so it is never stale anywhere.
+    spin_meter_tick()
     -- Logic Lab only (nil in a normal session): stands in for the client.
     if TS2_LAB_HOOK then TS2_LAB_HOOK() end
     -- One-time positive confirmation that the client wrote settings (game-mode
@@ -5799,16 +6195,32 @@ function ts2_main()
     local buzz_y  = mainmemory.read_u8(A.BUZZ_Y)
     local hovered = mainmemory.read_u8(A.HOVER)
 
-    -- DEBUG heartbeat: periodically snapshot the game state. If the emulator or
-    -- script dies, the LAST heartbeat in the log shows where the player was, which
-    -- is the single most useful clue for a hard-to-reproduce crash.
-    if TS2_DEBUG then
+    -- Debug log (3.1.2): settle on/off with the client, then the watchers.
+    -- The watchers run under pcall: a bug in the LOG must never stop the
+    -- randomizer, and an error anywhere in ts2_main skips the rest of the frame.
+    pcall(ts2_debug_decide)
+    if TS2_DEBUG and ts2_dbg_state ~= "off" then
+        if not ts2_dbg_watch_broken then
+            local okw, errw = pcall(ts2_debug_watch, level)
+            if okw then
+                okw, errw = pcall(ts2_debug_freeze, level, mainmemory.read_u8(LEVEL_LIVE_ADDR) ~= 0)
+            end
+            if not okw then
+                ts2_dbg_watch_broken = true
+                ts2_debug("debug watchers stopped after an error: " .. tostring(errw))
+            end
+        end
+        -- Heartbeat: periodically snapshot the game state. If the emulator or
+        -- script dies, the LAST heartbeat in the log shows where the player
+        -- was, which is the single most useful clue for a hard-to-reproduce crash.
         ts2_dbg_hb_frame = ts2_dbg_hb_frame + 1
         if ts2_dbg_hb_frame >= TS2_DEBUG_HEARTBEAT then
             ts2_dbg_hb_frame = 0
             ts2_debug(string.format(
-                "heartbeat: level=%d hover=%d buzz=(%d,%d) buzz_moved=%s",
-                level, hovered, buzz_x, buzz_y, tostring(buzz_moved)))
+                "heartbeat: level=%d hover=%d buzz=(%d,%d) buzz_moved=%s hp=%d lives=%d coins=%d",
+                level, hovered, buzz_x, buzz_y, tostring(buzz_moved),
+                mainmemory.read_u8(A.BUZZ_HP), mainmemory.read_u8(A.BUZZ_LIVES),
+                mainmemory.read_u8(A.COIN)))
         end
     end
 
@@ -6220,12 +6632,12 @@ event.onframestart(function()
             print("\n[TS2] *** SCRIPT ERROR -- tracking has STOPPED. ***")
             print("[TS2] " .. tostring(err))
             print("[TS2] Send that line to imklubb, then reload ts2.lua.\n")
-            if TS2_DEBUG then
+            if TS2_DEBUG and ts2_dbg_state ~= "off" then
                 ts2_debug("FATAL Lua error in main loop: " .. tostring(err))
             else
                 -- Recorded even with debug OFF: this runs at most once per
                 -- session and it is the single most useful line in a bug report.
-                local h = io.open(TS2_DEBUG_FILE, "a")
+                local h = io.open(ts2_dbg_path(TS2_DEBUG_FILE), "a")
                 if h then
                     h:write(string.format(
                         "\n==== ts2 SCRIPT ERROR (connector %s) ====\n%s\n",

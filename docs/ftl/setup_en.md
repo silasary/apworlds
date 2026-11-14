@@ -173,7 +173,8 @@ Losing a run costs you only the run. Your items are kept.
 
 Without a server, click **Solo mode** in the connection panel. Solo mode applies the slot data of a real generated seed and hands
 out its items one per check, in the order a real fill produced. It is a way to try the loop and the pacing
-alone.
+alone. It is always the same demo seed shipped with the mod, not your YAML: your options do not apply. A check
+that held another player's item in that seed gives filler instead, so every check gives something.
 
 A solo run is saved in the FTL profile: the items received and the checks sent survive a restart, and a solo
 run that was going when FTL closed picks up again at the next launch. **Stop solo** puts it aside; clicking
@@ -190,6 +191,10 @@ build with the Archipelago module, or Hyperspace is not loaded at all. Check `da
 
 **My unlocks disappear between sessions.** Steam Cloud is still enabled, or the mods were re-applied without
 Hyperspace.
+
+**"Failed to make copy of original code executable" at launch on Linux.** SELinux (Fedora and others) refuses
+Hyperspace the right to patch the game in memory. Run `sudo setsebool -P selinuxuser_execheap 1` (and, if the error
+stays, `sudo setsebool -P selinuxuser_execmem 1`), then start again. No need to turn SELinux off.
 
 **Where is the log?** `FTL_HS.log` in the game folder (in `data/` on Linux), rewritten at every launch. Lines
 from the mod start with `[AP`.

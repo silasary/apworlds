@@ -562,6 +562,21 @@
       "title": "0.6.4",
       "version_simple": "0.6.4",
       "world_version": "0.6.4"
+    },
+    "0.6.5": {
+      "created_at": "2026-11-13T00:45:23Z",
+      "description": "For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).\r\n\r\n- Raised the minimum AP version to 0.6.7 and simplified the .apworld code, now that AP 0.6.8 has been out for a while.\r\n- Lady E's boss fight was triggering the UT map page for Nobility Hall (i.e. the Fengs boss fight). Now it triggers the Cortex Center page instead.\r\n- Most timeouts have been raised from 2 seconds to 5 seconds. No one was complaining about this in 9S, but some work involving the Outer Wilds randomizer and the MC.Net library both these randomizers use has demonstrated that 2 seconds is way too short of a timeout.\r\n- `vanilla` logic:\r\n\t- Some GoS (East) connections were missing the logical requirement to trigger and survive the spike ball chase\r\n- `medium` logic:\r\n\t- \"AF (Elevator) - Below Root Node\" to \"Lower Left Exit\" now allows bow hover + TCK\r\n\t- \"AF (Elevator) - Lower Left Exit\" to \"Below Root Node\" now also allows CL + SR, CL + CS, and AD + CS\r\n\t- \"Factory (PA) - Guard Production Station\" to \"Right Fire Zone & Wuqiang Arena\" now allows nymph + TCK + grapple using T-dashes with qi from TCK                       \r\n\t- \"GoS (East): Upper Right of Room Above Yin Jifu's Tomb\" was placed in the wrong logical region, so it would sometimes be incorrectly in-logic with only T-dash\r\n\t- \"GoS (East): Spike Ball Hall Upper Left\" now allows bow hover and CS-dash\r\n- `ledge_storage` logic:\r\n\t- GoS (East) - Stone Carvings\" to \"Upper Exit\" was incorrectly in logic with only LG and T-dash. Now this path also logically requires access to the Outside Yin Jifu's Tomb region where the usable ledge is, and some movement item to bring qi to that ledge.\r\n\t- \"GoS (West) - Lower Platform Rotation Button\" to \"Upper Right Exit\" now allows just LG, because you can wall slide up the green platform after T-dash setup\r\n\t- \"OW - Shortcut Elevator\" to \"Robot\" now allows LG + CL + AD + WC because using AD + CL from the moving boxes can skip the 1st grapple, and then triple jump can skip the 2nd grapple\r\n- Code changes to prepare for entrance randomization. These should have no effect yet; just mentioning them in case bugs are discovered.\r\n",
+      "download_url": "https://github.com/IxrecsRandomizers/NineSolsArchipelagoRandomizer/releases/download/0.6.5/nine_sols.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c851c1be8ef7b557b04d4c26ae72a876928f39563713e34758c0db63e23637b1",
+      "html_url": "https://github.com/IxrecsRandomizers/NineSolsArchipelagoRandomizer/releases/tag/0.6.5",
+      "minimum_ap_version": "0.6.7",
+      "size": 3662852,
+      "source_url": "https://api.github.com/repos/IxrecsRandomizers/NineSolsArchipelagoRandomizer",
+      "tag": "0.6.5",
+      "title": "0.6.5",
+      "version_simple": "0.6.5",
+      "world_version": "0.6.5"
     }
   }
 }

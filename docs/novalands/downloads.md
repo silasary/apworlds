@@ -1,9 +1,12 @@
 # Nova Lands
 
 ## Latest
-- <a href="https://github.com/Foxolotl713/NovaLandsMods/releases/download/ap0.2.2/novalands.apworld">Latest Version (0.2.2)</a>
+- <a href="https://github.com/Foxolotl713/NovaLandsMods/releases/download/ap0.2.3-prerelease/novalands.apworld">Latest Version (0.2.2r2)</a>
 
 ## All Versions
+
+#### v0.2.2r2
+- <a href="https://github.com/Foxolotl713/NovaLandsMods/releases/download/ap0.2.3-prerelease/novalands.apworld">https://github.com/Foxolotl713/NovaLandsMods/releases/download/ap0.2.3-prerelease/novalands.apworld</a>
 
 #### v0.2.2
 - <a href="https://github.com/Foxolotl713/NovaLandsMods/releases/download/ap0.2.2/novalands.apworld">https://github.com/Foxolotl713/NovaLandsMods/releases/download/ap0.2.2/novalands.apworld</a>

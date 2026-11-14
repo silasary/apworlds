@@ -340,6 +340,36 @@
       "title": "Toy Story 2 AP 3.1.1",
       "version_simple": "3.1.1",
       "world_version": "3.1.1"
+    },
+    "3.1.2": {
+      "created_at": "2026-11-09T08:27:44Z",
+      "description": "# Update\r\n- Progressive Spin Level 2 sucked... I fixed it. Now you no longer get dizzy, but a 3 sec. cooldown has been added to prevent you from spamming it.\r\n- A 15 Frame grace period has been added to Spin Level 2 and 3 so it's easier to do single spins if you don't want to do a fully charged spin\r\n- Coinsanity has been freed from it's 5 denomination shackles. You can now choose from a number range for coinsanity\r\n- A new setting to toggle all coins in a level as one check has been added to circumvent the new range change\r\n- The Coin UI now pops up and shows the amount of coins you have if you get a Coin Bundle while in the same level.\r\n- Debug on the lua has now been turned on by default and gives me more information if I need it from you. You can turn it off in the lua like normal, or there is a new setting in your yaml to turn the debug off. _**PLEASE NOTE! This will save a text file to your computer until it hits 5mb. It then renames it to \"old\" and starts a new one.**_\r\n\r\n# Old Lua Fail Safe\r\n- The client will now detect whether you have an incorrect lua and overwrite your lua to the matching client. This will rename your old one.\r\n- The client will also now give explicit instructions if it doesn't detect that you're connected to the lua after a few seconds of launching.\r\n\r\n# Fixes\r\n- The Coin UI no longer disappears or stays hidden when it shouldn't.\r\n\r\n# Logic\r\n- `Andy's House - Hint Block (Andy's Room Bookshelf)` has been corrected from \"Double Jump AND Ledge Grab\" to \"Double Jump OR Ledge Grab\"",
+      "download_url": "https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/3.1.2/toystory2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "25cb4040c11a4ed3d4d52a5a9b9781ffa2e3128e7695f33fdb529979bebf74e1",
+      "html_url": "https://github.com/imklubb/Archipelago-Toy-Story-2/releases/tag/3.1.2",
+      "minimum_ap_version": "0.6.4",
+      "size": 3502693,
+      "source_url": "https://api.github.com/repos/imklubb/Archipelago-Toy-Story-2",
+      "tag": "3.1.2",
+      "title": "Toy Story 2 AP 3.1.2",
+      "version_simple": "3.1.2",
+      "world_version": "3.1.2"
+    },
+    "3.1.3": {
+      "created_at": "2026-11-09T08:27:44Z",
+      "description": "# New Option\r\n- You can now set the amount of coins in a level for Coinsanity between a range. Please keep in mind that if you set Hamm to Vanilla checks the minimum will automatically be set to 50.\r\n\r\n# Debug\r\n- The new debug file will now be sorted into a folder in your lua file automatically so you can easily delete it when you're done\r\n\r\n# Fix\r\n- The new debug's freeze detection was too sensitive to things like loading screens. This has been reevaluated and toned down",
+      "download_url": "https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/3.1.3/toystory2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0e3eca0aa1bbfa666d81bb17fa0efc3113b0c89ae376899ab0fcf0314ce78531",
+      "html_url": "https://github.com/imklubb/Archipelago-Toy-Story-2/releases/tag/3.1.3",
+      "minimum_ap_version": "0.6.4",
+      "size": 3504261,
+      "source_url": "https://api.github.com/repos/imklubb/Archipelago-Toy-Story-2",
+      "tag": "3.1.3",
+      "title": "Toy Story 2 AP 3.1.3",
+      "version_simple": "3.1.3",
+      "world_version": "3.1.3"
     }
   }
 }

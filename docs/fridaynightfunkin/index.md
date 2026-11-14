@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Z11Coding/Mixtape-Engine-Rework/releases/download/ap-only-1/fridaynightfunkin.apworld">Latest Version (2.3.1r2)</a>
+- <a href="https://github.com/Z11Coding/Mixtape-Engine-Rework/releases/download/ap-only-2/fridaynightfunkin.apworld">Latest Version (2.3.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

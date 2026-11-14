@@ -188,7 +188,7 @@ How coins appear on the map depends on your **Coinsanity Checks Bundle Size**:
 
 - **Size 1** (the default): every coin is its own check, so coins are shown
   individually at their exact positions.
-- **Size 5 and above**: coins are grouped into `Coin Bundle N` checks. A bundle covers
+- **Size 2 and above, or Coinsanity Checks All Coins**: coins are grouped into `Coin Bundle N` checks. A bundle covers
   several coins at once and has no single position of its own, so each level instead
   gets one **Coin Bundles** pin, placed where the PopTracker pack draws its coin
   counter — on both the level map and Level Select.
@@ -258,8 +258,15 @@ toward their coin counter as well.
 - **No starting items / nothing unlocked:** You most likely loaded the Lua off the
   title screen. Return to the title screen after pressing Start (the main menu),
   reload `ts2.lua`, and reconnect.
-- **`ts2.lua` has a debug mode. Switch the line to true if you're having general connection
-  issues or game crashes.
+- **Debug log:** `ts2.lua` keeps a log called `ts2_debug.txt` in a `ts2_debug` folder next
+  to `ts2.lua` (normally `Archipelago/data/lua/ts2_debug/`). If the game freezes mid-level
+  it also saves `ts2_freeze_dump.bin` there. You can delete the whole folder any time. Send both with any crash or bug report. It's on by
+  default; the **Turn Debug Off** option (Debug group) switches it off for a seed.
+- **Client stuck on "Awaiting connection to BizHawk":** the client keeps the right
+  `ts2.lua` in `Archipelago/data/lua/` and replaces an older copy there when it starts.
+  Open `ts2.lua` from that folder. If the Lua Console shows "Waiting for Python client
+  to write settings..." with no version number after it, that copy is from an old
+  release.
 - **Coin counts, checks, or unlocks look wrong after reconnecting:** You may have
   reconnected or reloaded the scripts while inside a level. Return to the map or
   title screen and reconnect from there; the state will re-sync correctly.

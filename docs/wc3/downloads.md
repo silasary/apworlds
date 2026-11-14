@@ -1,9 +1,12 @@
 # Warcraft 3
 
 ## Latest
-- <a href="https://github.com/MatthewMarinets/war3-ap-maps/releases/download/0.0.2-initial/wc3.apworld">Latest Version (0.0.2)</a>
+- <a href="https://github.com/MatthewMarinets/war3-ap-maps/releases/download/0.0.2-initial/wc3.apworld">Latest Version (0.0.2.post2)</a>
 
 ## All Versions
+
+#### v0.0.2.post2
+- <a href="https://github.com/MatthewMarinets/war3-ap-maps/releases/download/0.0.2-initial/wc3.apworld">https://github.com/MatthewMarinets/war3-ap-maps/releases/download/0.0.2-initial/wc3.apworld</a>
 
 #### v0.0.2
 - <a href="https://github.com/MatthewMarinets/war3-ap-maps/releases/download/0.0.2-initial/wc3.apworld">https://github.com/MatthewMarinets/war3-ap-maps/releases/download/0.0.2-initial/wc3.apworld</a>

@@ -27,5 +27,9 @@
 5. Start a new game (or load a save from this seed). Keep the client open while playing. A save from another
    seed, or one never played with the client, is ignored (no checks sent, no items given).
 
+**Known issue:** don't load a save after quitting to the title screen. With the client running, loading then
+hangs on a black screen (and with the client closed, the game crashes at "Now Loading"). Quitting to the title
+itself is fine, and your save is fine: close the game, start it again (client at the title screen) and load.
+
 The client's "Armed Items" tab lists received items it is still holding back, and why (for example the Pickaxe
 until you reach the Thousand Sunny, or items waiting for room in your bag).

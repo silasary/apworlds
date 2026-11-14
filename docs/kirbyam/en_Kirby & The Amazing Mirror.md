@@ -18,11 +18,11 @@
 - Progression & useful items which the player would normally acquire throughout the game have been moved around. (Mirror Shards, Maps, Vitality, Sound Player)
 - Normal copy ability enemies can be randomized to give a different copy ability. When using `shuffled` mode, a spoiler log includes the enemy to ability assignments.
 - Enemies which typically do not give abilities can be randomized to give abilities.
-- Minny can be kept vanilla with the `ability_randomization_minny` toggle while still randomizing other enemy ability sources.
+- Minny always grants Mini, subject to the Mini Ability unlock when ability gating is on. The Minny-specific randomization option has been removed; other enemy randomization settings are unchanged.
 - Enemies that cannot be swallowed are excluded from the enemy copy-ability randomization pool.
 - The chance for an enemy to not have a copy ability can be controlled via the `ability_randomization_no_ability_weight`
-- Ability statues (sometimes called ability trophies or ability stands) have a dedicated boolean toggle (`ability_randomization_statues`). With the toggle off, statues retain their vanilla abilities. In `shuffled` mode, each statue keeps one seed-deterministic assignment, which appears in the spoiler log. In `completely_random` mode, a regular statue makes a fresh draw every time its grant is triggered; independent draws may still repeat by chance. Statue draws use the configured ability whitelist, respect `ability_randomization_minny`, and remove gated abilities until their AP unlock items are received. Statues always draw an ability when at least one eligible ability remains and intentionally ignore `ability_randomization_no_ability_weight`, `ability_randomization_passive_enemies`, `ability_randomization_minibosses`, and `ability_randomization_boss_spawns`. The Master Sword stand is not treated as a regular randomized statue.
-- All 25 AP ability items are listed in `data/items.json` with stable item IDs, labels, classifications, and tags for trackers. Beam, Burning, Cutter, Mini, Stone, and Wheel are guaranteed starting items. `Ability Gating` defaults on under `Make the game harder`; when enabled, the other 19 ability items enter the pool and unlock their matching abilities when received. With gating off, those unlock items are omitted from the pool. `data/abilities.json` retains the runtime IDs and gating policy. Receiving an ability item grants ownership, not an immediate ability change.
+- Ability statues (sometimes called ability trophies or ability stands) have a dedicated boolean toggle (`ability_randomization_statues`). With the toggle off, statues retain their vanilla abilities. In `shuffled` mode, each statue keeps one seed-deterministic assignment, which appears in the spoiler log. In `completely_random` mode, a regular statue makes a fresh draw every time its grant is triggered; independent draws may still repeat by chance. Statue draws use the configured ability whitelist, exclude Mini from the regular-statue pool, and remove gated abilities until their AP unlock items are received. Statues always draw an ability when at least one eligible ability remains and intentionally ignore `ability_randomization_no_ability_weight`, `ability_randomization_passive_enemies`, `ability_randomization_minibosses`, and `ability_randomization_boss_spawns`. The Master Sword stand is not treated as a regular randomized statue.
+- All 25 AP ability items are listed in `data/items.json` with stable item IDs, labels, classifications, and tags for trackers. Beam is the only guaranteed starting item. The other abilities, including Burning and Stone, use source-backed traversal rules and remain gated when Ability Gating is enabled. `Ability Gating` defaults on under `Make the game harder`; when enabled, the other 24 ability items enter the pool and unlock their matching abilities when received. With gating off, those unlock items are omitted from the pool. `data/abilities.json` retains the runtime IDs and gating policy. Receiving an ability item grants ownership, not an immediate ability change.
 
 
 
@@ -149,7 +149,15 @@ You will not see an indicator in the game, instead you'll see you received an it
 
 
 
-Currently a tracker is not available. Goal logic depends on the selected mode: either defeat Dark Mind, defeat any one area boss in `defeat_any_area_boss` mode, defeat the selected `configured_area_boss` in `defeat_area_boss` mode, or defeat any N distinct area bosses in `defeat_area_boss_count` mode. Enter `/goal` in the connected client to confirm the requirement; legacy hidden targets stay hidden.
+Use [BlameMateo's Kirby & The Amazing Mirror PopTracker pack](https://github.com/BlameMateo/Kirby-The-Amazing-Mirror-PopTracker)
+for an optional map tracker with Archipelago autotracking. Download the pack from its
+[releases page](https://github.com/BlameMateo/Kirby-The-Amazing-Mirror-PopTracker/releases)
+and follow the maintained [installation and support instructions](https://github.com/BlameMateo/Kirby-The-Amazing-Mirror-PopTracker/blob/main/kirby_and_the_amazing_mirror/README.md).
+
+See the [setup guide's PopTracker section](https://github.com/hasherwi/Archipelago-kirbyam/blob/main/worlds/kirbyam/docs/setup_en.md#optional-poptracker)
+for connection details and version requirements.
+
+Goal logic depends on the selected mode: either defeat Dark Mind, defeat any one area boss in `defeat_any_area_boss` mode, defeat the selected `configured_area_boss` in `defeat_area_boss` mode, or defeat any N distinct area bosses in `defeat_area_boss_count` mode. Enter `/goal` in the connected client to confirm the requirement; legacy hidden targets stay hidden.
 
 
 
@@ -172,28 +180,25 @@ you're playing a multiworld game, the client will sync your game with the server
 
 ## Starting ability unlocks
 
-Beam, Burning, Cutter, Mini, Stone and Wheel are a fixed starting set. New seeds
-precollect their AP unlock items, so they appear in starting inventory, received
-history and trackers. An unlock grants permission to acquire the ability through
-normal gameplay; it does not equip an ability. These six remain usable before
-connecting to the server or receiving mailbox deliveries.
+New seeds automatically start with the Beam unlock only. Burning and Stone are
+progression unlocks in the shuffled pool when Ability Gating is enabled. Receiving
+an unlock grants permission to acquire an ability through normal gameplay; it
+does not equip it or create an enemy, statue or projectile.
 
-This fixed set is precollected with `ability_gating` both on and off. When gating
-is off, all abilities remain usable and no ability unlocks enter the shuffled
-pool. With gating on, the other unlocks retain their existing pool and gate rules.
-The six starting items never consume location slots.
+Beam is precollected with Ability Gating on or off. With gating on, the other24
+unlock items enter the pool. With gating off, all abilities remain usable and
+no ability unlocks enter the pool. Explicit `start_inventory` remains additive:
+an explicit positive Beam count replaces its automatic copy, while explicit
+Stone, Burning and other starting counts are retained.
 
-If `start_inventory` explicitly includes one of these six, its requested positive
-count is retained and no automatic copy is added. Counts above one are redundant
-ownership grants and never equip or stack an effect. Other explicit starting items
-retain their usual behavior. There is no new starting-ability selection option.
+Use a matching updated APWorld/client. Existing seeds keep their original
+inventory and gate policy, including the historical22-ability fallback when
+an old slot lacks an explicit nonempty gate list. No starting packets are
+inserted into old histories. Reconnect/reset ownership recovery still uses
+received item history.
 
-Use a matching updated APWorld/client for new seeds. Existing seeds retain their
-original inventory and gate policy; the client does not insert starting packets
-into old histories. Reconnect/reset recovery rebuilds ownership from server history,
-while the native bootstrap keeps the fixed starting permissions available offline.
-The six useful items are tracked in CollectionState without adding traversal gates.
-
-The unchanged native unlock handler and gate bootstrap are covered by host tests;
-these tests are not emulator save/load acceptance. Fresh live acceptance of this
-inventory representation remains pending.
+Traversal requires reachable physical sources and directed routes, not merely
+unlock ownership. Generation validates every enabled check after placement,
+including with minimal accessibility, and refuses unsafe placements before
+creating an output archive. Such a refusal is not a playable seed or a guarantee
+that every possible option/seed combination will generate successfully.

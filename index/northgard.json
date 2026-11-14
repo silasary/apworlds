@@ -272,6 +272,51 @@
       "title": "2026.11.05 - Slot Switching Fixes",
       "version_simple": "2026.11.5",
       "world_version": "2026.11.5"
+    },
+    "2026.11.11": {
+      "created_at": "2026-11-11T14:22:32Z",
+      "description": "> Thanks to everyone who played the alpha and reported bugs. If you're coming from 2026.10.25, this release also includes everything from the Bifrost alpha and the slot switching fixes, summed up below.\r\n\r\n### Added\r\n- **Bifrost mode!** Set `game_mode: bifrost` in your YAML to play the roguelite instead of Conquest. Your progress carries over between runs, won or lost. Realms are items, objectives and some perk cards are checks, and new bonus items give you random perks or buildings that fit your clan. Co-op works too. See the [2026.11.02 notes](https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.11.02) for the full rundown.\r\n\r\n### Fixed\r\n- Bonus items you got during a realm no longer vanish if you lose or retry that realm. They come back as the exact same perk when the realm starts again. (Thanks Aeros Valos for the report!)\r\n- If you already lost some bonuses to this, just update and keep playing your run. They come back on their own at the start of your next realm. Since the old version didn't remember the exact perk, you get a fresh one from the same category. No files to delete.\r\n- Finishing your goal on one slot and then connecting to another slot in the same client window no longer goals the new slot too.\r\n- Bifrost progress made while the client was closed now only gets sent to the slot it belongs to.\r\n- Conquest chapters you beat while the client was disconnected now get sent when you reconnect.\r\n\r\n### Changed\r\n- Checks and items now go through in about a second instead of up to 5, in both modes.\r\n- Conquest-only options are now labeled \"(Conquest)\" so it's clear which mode they're for.\r\n\r\n**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.10.25...2026.11.11\r\n",
+      "download_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.11.11/northgard.apworld",
+      "has_manifest": true,
+      "hash_sha256": "bdcf761b2fd30873c5e3ff4de4e5c72a8657dad86d161584a26ae4461a2f21e1",
+      "html_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.11.11",
+      "minimum_ap_version": "0.6.7",
+      "size": 10544196,
+      "source_url": "https://api.github.com/repos/ChakraaThePanda/Archipelago-Northgard",
+      "tag": "2026.11.11",
+      "title": "2026.11.11 - Bifrost Mode",
+      "version_simple": "2026.11.11",
+      "world_version": "2026.11.11"
+    },
+    "2026.11.13": {
+      "created_at": "2026-11-13T05:39:28Z",
+      "description": "### Fixed\n- AP cards can always be picked now. If the perk hidden behind an AP card was one you already had (usually from a bonus item), the card showed up grey and clicking it did nothing, so that check was stuck. (Thanks Aeros Valos for the report!)\n\n**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.11.11...2026.11.13\n",
+      "download_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.11.13/northgard.apworld",
+      "has_manifest": true,
+      "hash_sha256": "87a078971e87b3dd2ed37ef985ec25bd8137ca8c1227a88ff418c317f417df98",
+      "html_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.11.13",
+      "minimum_ap_version": "0.6.7",
+      "size": 10546213,
+      "source_url": "https://api.github.com/repos/ChakraaThePanda/Archipelago-Northgard",
+      "tag": "2026.11.13",
+      "title": "2026.11.13 - AP Card Fix",
+      "version_simple": "2026.11.13",
+      "world_version": "2026.11.13"
+    },
+    "2026.11.13.2": {
+      "created_at": "2026-11-13T16:36:21Z",
+      "description": "### Fixed\n- Reward screens can't get stuck in co-op anymore. Objective rewards used to offer perks someone in the group already had, which showed up grey and couldn't be picked. Now they only offer perks nobody has yet, and if one you already own still slips through, you can pick it and it just gives nothing.\n\n### Changed\n- Objectives holding a progression item now show up first on your maps, and realms holding one get offered first in the lobby. Should mean way fewer runs hunting for that one Wyvern.\n\n**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.11.13...2026.11.13.2\n",
+      "download_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.11.13.2/northgard.apworld",
+      "has_manifest": true,
+      "hash_sha256": "b91ef00111d27183f4aa9975bee7db1288ae02bd494f94497a76e0a90adbc282",
+      "html_url": "https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.11.13.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 10560461,
+      "source_url": "https://api.github.com/repos/ChakraaThePanda/Archipelago-Northgard",
+      "tag": "2026.11.13.2",
+      "title": "2026.11.13.2 - Co-op Reward Fix",
+      "version_simple": "2026.11.13",
+      "world_version": "2026.11.13.2"
     }
   }
 }

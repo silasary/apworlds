@@ -1,9 +1,12 @@
 # Chrono Trigger Rando-Dalton Imperial
 
 ## Latest
-- <a href="https://github.com/Anguirel86/ap_ctrdi/releases/download/v0.0.4/ctrdi.apworld">Latest Version (0.0.4)</a>
+- <a href="https://github.com/Anguirel86/ap_ctrdi/releases/download/v0.0.5/ctrdi.apworld">Latest Version (0.0.5)</a>
 
 ## All Versions
+
+#### v0.0.5
+- <a href="https://github.com/Anguirel86/ap_ctrdi/releases/download/v0.0.5/ctrdi.apworld">https://github.com/Anguirel86/ap_ctrdi/releases/download/v0.0.5/ctrdi.apworld</a>
 
 #### v0.0.4
 - <a href="https://github.com/Anguirel86/ap_ctrdi/releases/download/v0.0.4/ctrdi.apworld">https://github.com/Anguirel86/ap_ctrdi/releases/download/v0.0.4/ctrdi.apworld</a>

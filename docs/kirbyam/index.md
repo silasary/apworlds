@@ -7,7 +7,7 @@ and restore peace by reuniting the shattered Dimension Mirror.
 
 
 ## Downloads
-- <a href="https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.5.0/kirbyam.apworld">Latest Version (0.5.0)</a>
+- <a href="https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.5.1-rc1/kirbyam.apworld">Latest Version (0.5.1rc1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -25,8 +25,11 @@ and restore peace by reuniting the shattered Dimension Mirror.
 - <a href="hub-object-evidence">hub-object-evidence</a>
 - <a href="hub-receipt-ordering">hub-receipt-ordering</a>
 - <a href="hub-save-and-graph">hub-save-and-graph</a>
+- <a href="mini-star-recovery">mini-star-recovery</a>
 - <a href="minny-runtime-validation">minny-runtime-validation</a>
 - <a href="publication-trust-boundary">publication-trust-boundary</a>
 - <a href="python-trust-update">python-trust-update</a>
+- <a href="rainbow-east-switch-location">rainbow-east-switch-location</a>
 - <a href="release-preparation">release-preparation</a>
+- <a href="traversal-logic">traversal-logic</a>
 - <a href="workflow-input-inventory">workflow-input-inventory</a>

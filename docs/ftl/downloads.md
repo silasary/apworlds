@@ -1,9 +1,12 @@
 # FTL: Faster Than Light
 
 ## Latest
-- <a href="https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.5.0-mv.1/ftl.apworld">Latest Version (0.5.0r2)</a>
+- <a href="https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.6.0/ftl.apworld">Latest Version (0.6.0)</a>
 
 ## All Versions
+
+#### v0.6.0
+- <a href="https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.6.0/ftl.apworld">https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.6.0/ftl.apworld</a>
 
 #### v0.5.0r2
 - <a href="https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.5.0-mv.1/ftl.apworld">https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.5.0-mv.1/ftl.apworld</a>

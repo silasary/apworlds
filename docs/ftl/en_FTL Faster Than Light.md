@@ -33,15 +33,11 @@ Three things are taken away from you at the start and handed back as items.
 Kestrel, see below) and the hangar fills up as ship keys arrive. Type B and Type C layouts are items of their
 own by default, so you no longer have to earn two achievements with a ship before you may fly its Type B.
 
+**Early Ship Keys** puts 1 ship key by default (up to 9) in your own first checks, so a second ship comes early
+instead of hanging on the luck of the fill. Set it to 0 to let every key land anywhere.
+
 **Excluded Ships and Layouts** leaves out the ships or layouts you never want: name a ship ("Engi Cruiser") or
 a layout ("Engi Cruiser B"). Your first ship and the Kestrel A cannot be left out.
-
-**Multiverse** (off by default) plays with FTL: Multiverse 5.5.1 instead: its ships replace the base game's, and
-you start with the MV Kestrel Cruiser. Apply Multiverse's Data and Assets with the mod. Victory Layouts then
-takes Multiverse's names, like "Union Cruiser B". Shop Weapons, Shop Drones and Shop Augments draw from Multiverse's
-own catalogue (120 weapons, 25 drones and 22 augments for sale).
-**Multiverse Achievement Checks** (off by default) adds 26 of Multiverse's achievements (Accomplishments and
-Special Events) as checks. They only ever hold filler or traps.
 
 **Layouts in the Seed** keeps 7 layouts by default, drawn at random among those Ship Layouts allows. Your first
 ship and the Kestrel A are always in, and a Type B or C only comes with its ship's Type A. The others have no key
@@ -75,7 +71,7 @@ not purely theoretical - turn Shop Item Delivery off for a longer, more delibera
 if a slot is free, and goes to the cargo hold otherwise.
 
 Every weapon and drone exists **twice** in the item pool. The first copy unlocks it as described above. The
-second puts it in the **Archipelago menu** that opens at the first beacon of every new run: there you take
+second puts it in the **Archipelago menu** that opens at the start of every new run: there you take
 one weapon, one drone and one crew member from everything you have collected, for that run only.
 
 By default they come in **bundles**: a Weapon Bundle holds 3 weapons, a Drone Bundle 2 drones, an Augment
@@ -91,6 +87,8 @@ shields, a Mantis fighter, a Rock repairman and a Slug gunner. Lanius and Crysta
 On top of that, "Head Start" items give you one free level of a system, or one extra bar of reactor power, at
 the beginning of *every future run*. This is what makes a roguelike work in an Archipelago: an item that
 arrives during a run you are about to lose is not wasted, because it makes the next run start stronger.
+They are extras, placed only in checks left over once every other item has its place: with the default
+options there are more items than checks, so turn on more checks or raise Archipelago Shop Checks to get them.
 
 Four options make received items count right away, all off by default:
 
@@ -102,7 +100,28 @@ Four options make received items count right away, all off by default:
 - **Run Start Scrap**: each new run starts with a percentage of all the scrap items you received.
 - **Combat Checks per Ship**: with each ship, the first fights you win in a run send checks ("Kestrel
   Cruiser: Fight 1 won"). Those fights give less scrap (Combat Check Scrap, 50 % by default); missiles, fuel
-  and drone parts stay.
+  and drone parts stay. With **Combat Checks Mode** on `per_sector`, the first fights of each sector send their
+  own check instead ("Sector 3 fight 1 won"), up to **Fights per Sector** (2 by default).
+
+## Options that change a run
+
+All off by default, and all in the `solo_game` preset.
+
+- **Sector Skip**: a layout that already reached the next sector may skip sectors 1 to 4. The first beacon of
+  such a sector is an exit: jump at once for 60 scrap and one more pick in the start-of-run menu, or explore as
+  usual. The skipped sector's checks wait for another run.
+- **Sector Locks**: each layout needs two Sector Passes, the first to leave sector 4, the second to leave
+  sector 7. Without them the exit stays shut and says why. The logic knows it.
+- **Flagship Sabotage** (0 to 5): each phase of the Flagship arrives weakened. 1: hull -10 %. 2: and shields -1.
+  3: hull -20 %. 4: and weapons -1. 5: hull -30 %.
+- **Kestrel Needs Its Key**: when you do not start with the Kestrel, the Kestrel A needs its key like any other
+  ship (see below).
+- **Archipelago Shop Deal Scrap** (0 to 200 %, default 100): what the shop's deals and blood pacts pay. A deal
+  gives scrap now, and a trap is sprung in exchange: on another Trap Link player two times out of three,
+  otherwise on you, in your next fight. A blood pact pays more and may kill one of your crew for good, never
+  the last one. 0 turns them off.
+- **Crew Names** (`multiworld` by default): crew who join you during a run take the other players' slot names,
+  then FTL's own (`multiworld_and_team` adds the people who made and tested the mod, `vanilla` keeps FTL's).
 
 ## What is considered a check?
 
@@ -111,9 +130,10 @@ Four options make received items count right away, all off by default:
   the checks live. It can be cut down to the two sectors FTL itself celebrates (5 and 8), trimmed from the
   shallow end with Sectorsanity First Sector, or turned off.
 - **Systems.** Off by default: most ships start with half of the systems, so those checks would go out on the
-  first jump. Turned on (`first_install`), installing a system is a check, sixteen in all: the run where you
-  finally buy Cloaking pays for itself. With `every_level`, each level of each system is its own check as well -
-  sixty-eight in all, and every upgrade you buy sends something out.
+  first jump. Turned on (`first_install`), installing a system is a check, twelve in all: the run where you
+  finally buy Cloaking pays for itself. Engines, Oxygen, Piloting and Weapon Control have no Install check, since
+  every ship starts with them. With `every_level`, each level of each system is its own check as well -
+  sixty-four in all, and every upgrade you buy sends something out.
   With **Systemsanity per Ship**, each ship has its own Install checks ("Kestrel Cruiser: Install Cloaking"),
   never for a system that ship can start with.
 - **Crew.** The first time a Human, Engi, Zoltan, Mantis, Rock, Slug or Lanius joins your crew, from an
@@ -135,6 +155,13 @@ Four options make received items count right away, all off by default:
   sold while you fly that ship.
   Prices follow importance first, then depth: filler costs 10 to 25 scrap, useful items 30 to 65, and
   progression items 70 to 150, more in later sectors and the later they sit in the multiworld.
+  By default (**Archipelago Shop Hints** on `seen`) the packages you see become hints for their owners.
+- **Archipelago events.** With **Archipelago Event Checks** (5 by default, up to 20), the packages of the relay
+  and pirate events are checks of their own, "Archipelago Event 1", 2..., before the events fall back on the
+  shop's packages.
+- **Reactor.** With **Reactor Checks** (off by default), reaching reactor power 10, 15, 20 and 25 sends a check.
+  The logic expects them around sectors 2, 4, 6 and 7.
+- **Fights.** With **Combat Checks per Ship**, winning fights sends checks (see above).
 
 ## Archives
 
@@ -215,8 +242,9 @@ starts you have collected apply to the next one.
 
 Two families of options decide how much ship the generator assumes you have before it sends you deep.
 
-**Sector Logic** counts blueprints without caring which: `relaxed` puts every sector in logic as soon as the
-layout is, `standard` expects a couple of blueprints before the deep sectors, `strict` expects a real ship.
+**Sector Logic** counts blueprints without caring which: `none` puts every sector in logic as soon as the
+layout is (for experienced players: you may be expected to win with very little; `relaxed`, its old name, still
+works), `standard` expects a couple of blueprints before the deep sectors, `strict` expects a real ship.
 
 `power` looks at the ship instead: each check is judged on the ship that does it, from its real start. Sector 5
 needs 2 shield layers, sector 8 also Weapon Control 5, the Flagship 3 layers, Weapon Control 6 and Engines 4.
@@ -242,10 +270,12 @@ None of this changes what the game lets you do. It changes what the generator is
 
 ## FTL-specific things you should know
 
-**The Kestrel Type A is always playable.** Hyperspace can unlock a vanilla ship but it cannot re-lock one, so
-the Kestrel A that every FTL profile starts with stays available no matter what. Its key still exists as an
-item for the sake of uniformity, and it is handed to you at the start of the seed, which is why the logic may
-freely assume you own it. In practice: you are never stranded with nothing to fly.
+**The Kestrel Type A.** Hyperspace can unlock a vanilla ship but it cannot re-lock one, so the Kestrel A that every
+FTL profile starts with always shows in the hangar. By default it is yours: its key is handed to you at the start
+of the seed, so the logic may freely assume you own it, and you are never stranded with nothing to fly. With
+**Kestrel Needs Its Key** on, and another starting ship, the Kestrel A waits for its key like any ship: the hangar
+marks it NO KEY and refuses START with it until the key comes in. A Kestrel A left out of the seed is marked NOT IN
+SEED the same way.
 
 **Only Archipelago unlocks ships.** FTL would unlock ships its own way (an event, an achievement): the mod
 refuses those unlocks, and at the main menu it locks again any ship FTL unlocked before (an older version of the
@@ -253,12 +283,11 @@ mod could not). The one exception is Layout Unlocks set to vanilla, where a Type
 achievements is kept, and becomes playable once the ship's key is in. If a ship you did not receive is playable
 all the same, the hangar marks it NOT RECEIVED, and a run with it sends nothing, not even its victory.
 
-**A separate profile is created.** The mod tells Hyperspace to keep its own profile file
-(`hs_ap_prof.sav`) and to start it empty, which is the only way to have every ship locked at the beginning.
-Your vanilla profile, your unlocks and your high scores are not touched. Achievements you earned years ago do
-not count: a ship achievement check only fires when you earn it again. And because Hyperspace cannot re-lock a
-ship, a new seed on an old profile would start with the previous seed's ships: the mod notices, refuses the seed
-and offers to erase the Archipelago profile, keeping a dated copy next to it.
+**Each seed has its own save.** The mod tells Hyperspace to keep its own profile files, one per seed plus one
+for solo mode, each starting empty: that is the only way to have every ship locked at the beginning. Your vanilla
+profile, your unlocks and your high scores are not touched. Achievements you earned years ago do not count: a ship
+achievement check only fires when you earn it again. When you join a new seed, the mod asks before switching, and
+the **Saves** button on the main menu lists every save, with its checks and the last time played, to load one again.
 
 **Achievement checks arrive one jump late.** The mod reads your profile at every jump rather than watching for
 the achievement popup, so a check is sent at the next jump after you earn it. It can also arrive during a run
@@ -282,7 +311,13 @@ bitterness.
 **Traps wait for a safe beacon.** A fire or a hull breach is delivered at the next jump to a quiet beacon, not
 in the middle of the Flagship fight. So does everything else you receive: scrap, a weapon, a new crew member.
 An item that arrives mid-combat waits. Received deaths are the one exception - a death link that waited for a
-quiet moment would not be a death link.
+quiet moment would not be a death link. The Anti-Ship Battery Trap, the Power Surge Trap and the Hazard Trap are
+armed at a quiet beacon too, then spring at the next beacon with a hostile ship: an anti-ship battery joins that
+fight, the enemy unleashes a Flagship power surge (its lasers or its drones, lighter in sectors 1 and 2), or the
+beacon gets a hazard it did not have (nebula, ion storm, asteroids, sun or pulsar). The battery and the hazard
+go away when the fight is over. One per fight, never in the Last Stand, and at most two of each can wait at once. The O2 Drain
+Trap is an ordinary one: at a quiet beacon, every room loses its air at once and the oxygen system has to
+fill the ship again. It never hits a ship whose oxygen system is down; another trap takes its place.
 
 **A weapon arrives in your cargo hold, not in a slot.** You still have to equip it, and if your cargo is full
 the mod holds the item and delivers it later rather than dropping it.
@@ -293,16 +328,21 @@ on, so if you enable the general achievements and only ever win on Hard, check t
 
 ## Custom events and hints
 
-Five encounters of the mod's own appear at beacons marked ARCHIPELAGO, each a choice with no way back:
+Seven encounters of the mod's own appear at Archipelago beacons, each a choice with no way back. By default only
+the relay and the pirates are marked ARCHIPELAGO on the map (**Event Beacons** can mark them all, or none):
 
 - **A relay** carrying two packages for other worlds. Route one: its check is sent, for 15 scrap. If there is no
   package to route, the scrap is refunded.
 - **Pirates holding a package**, preferably one for another player. Pay them 20 scrap, or fight them: win, and the
   package goes out for free on top of the usual loot.
-- **A Zoltan checkpoint** asks for a tithe to the shared Energy Link reserve, or lets you draw fuel from it.
+- **A Zoltan checkpoint** sells 3 fuel for 15 scrap. With Energy Link it costs 20 and also adds 1 fuel to the shared
+  reserve, or you can draw fuel from the reserve instead. Paying has no other effect.
 - **A Slug** sells a hint for 20 scrap: a real Archipelago hint about one of your unvisited locations, recorded on
   the server like any other. Without a server, or with nothing left to find, the scrap is refunded.
 - **A surge from another world** you can absorb, or push back out as a trap on Trap Link.
+- **An Engi technician**, in Engi and civilian sectors, bets 30 scrap that they can overclock your reactor: 75
+  scrap if it holds, hull and engine damage if it does not. Or let them test the engines for 3 fuel, or leave.
+- **An arms dealer**, rare, in pirate sectors: a random weapon for 45 scrap, or a random augment for 4 fuel.
 
 **No branch ever locks a check away.** These encounters appear at random, so the generator cannot rely on them.
 

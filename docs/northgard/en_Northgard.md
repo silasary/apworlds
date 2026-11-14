@@ -30,7 +30,8 @@ Two Progression Modes control exactly how that gate works:
 Each realm is unlocked by an item. Midgard is always open; Muspelheim, Niflheim, Nidavellir,
 Idavoll and Vanaheim each need the item named after them. In the lobby, a realm you don't have
 yet shows as a greyed-out card you can't pick, and it lights up as soon as its item arrives.
-Vanaheim is still only offered as the last step of a run.
+Realms you can play that still hold a progression item are offered first. Vanaheim is still
+only offered as the last step of a run.
 
 Your progress carries over between runs, won or lost, so expect to play many runs.
 
@@ -52,11 +53,13 @@ Chapter's battle. The exact count per Chapter is set by the "Items per Chapter" 
 Locations:
 - Completing each realm (Vanaheim is the goal, not a location).
 - Every objective a realm can have: its portals, the Wyvern, the Nidavellir Beacon, the
-  Pillar of God and the Befriend objectives. Maps favour the objectives you haven't done yet.
+  Pillar of God and the Befriend objectives. Maps favour objectives holding a progression
+  item first, then the ones you haven't done yet.
 - Some of the cards on perk screens (after a wave or an objective). These show the
   Archipelago logo, and hovering one shows which item it holds. Picking it sends that item
   instead of giving the perk; on later visits that card is a normal perk again. The "AP Perk
   Cards" option sets how many cards are Archipelago cards. Portal rewards always have one.
+  Objective rewards never offer a perk someone in your group already has.
 
 Items:
 - The 5 realms.

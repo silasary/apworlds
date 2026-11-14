@@ -1,9 +1,12 @@
 # Sly 2: Band of Thieves
 
 ## Latest
-- <a href="https://github.com/NikolajDanger/APSly2/releases/download/v1.1.2/sly2.apworld">Latest Version (1.1.2)</a>
+- <a href="https://github.com/NikolajDanger/APSly2/releases/download/v1.2.0/sly2.apworld">Latest Version (1.2.0)</a>
 
 ## All Versions
+
+#### v1.2.0
+- <a href="https://github.com/NikolajDanger/APSly2/releases/download/v1.2.0/sly2.apworld">https://github.com/NikolajDanger/APSly2/releases/download/v1.2.0/sly2.apworld</a>
 
 #### v1.1.2
 - <a href="https://github.com/NikolajDanger/APSly2/releases/download/v1.1.2/sly2.apworld">https://github.com/NikolajDanger/APSly2/releases/download/v1.1.2/sly2.apworld</a>

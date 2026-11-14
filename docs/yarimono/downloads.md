@@ -14,6 +14,9 @@
 #### v1.0.0r2
 - <a href="https://github.com/msent0/Yarimono-Archipelago/releases/download/v1.0.1/yarimono.apworld">https://github.com/msent0/Yarimono-Archipelago/releases/download/v1.0.1/yarimono.apworld</a>
 
+#### v1.0.0r2
+- <a href="https://github.com/msent0/Yarimono-Archipelago/releases/download/v1.1.2/yarimono.apworld">https://github.com/msent0/Yarimono-Archipelago/releases/download/v1.1.2/yarimono.apworld</a>
+
 #### v1.0.0
 - <a href="https://github.com/msent0/Yarimono-Archipelago/releases/download/v1.0.0/yarimono.apworld">https://github.com/msent0/Yarimono-Archipelago/releases/download/v1.0.0/yarimono.apworld</a>
 

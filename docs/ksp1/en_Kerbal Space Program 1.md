@@ -197,6 +197,25 @@ experiments; instead you complete missions and contracts:
 - **Contracts** (10 by default) — Native KSP contracts injected by the client; completing one checks its reward
   location(s). Under the default Count goal mode, completing contracts is also how you unlock your goal.
 
+### Item and location groups
+
+Part items use KSP's internal part names (`liquidEngine2.v2` is the Swivel), so groups are the easy way to
+find things. In any text client (including the Universal Tracker), `/item_groups` and `/location_groups` list
+the groups, and `/item_groups Engines` lists one group's members. A group name works anywhere a single name
+does: `!hint Docking Ports` hints one docking port, `!missing Mun` lists your unchecked Mun locations, and
+YAML options like `start_hints` accept groups too.
+
+- **Item groups:** Parts, Engines, Solid Boosters, Fuel Tanks, Decouplers, Heat Shields, Parachutes,
+  Landing Legs, Command Pods, Probe Cores, Reaction Wheels, RCS, Power, Batteries, Antennas, Docking Ports,
+  Wheels, Control Surfaces, Engine Mounts, Science Instruments, Mining, MakingHistory Parts, Contracts,
+  Discover Bodies, Buildings, Science Packs, Traps, Buffs.
+- **Location groups:** one per body (missions, home milestones and contracts on that body), Missions,
+  Contracts, Home Milestones, Tech Tree, KSC Science, Starting Inventory, Contract Thresholds, and one per
+  mission event (Orbits, Flybys, Landings, Flag Plants, Sample Returns, …).
+
+Groups are fixed lists covering every seed, so `/location_groups Home Milestones` prints every possible
+home's milestones. `!missing` and `!hint` only ever show what is actually in your seed.
+
 ## KSC building upgrades (Buildings In Logic)
 
 With **Buildings In Logic** (on by default) your KSC facilities start un-upgraded and you unlock them
@@ -398,6 +417,9 @@ as you receive items and complete checks.
   and equipment logic thinks you need, and why a mission might not be in logic yet.
 - `/explain parts [filter]` — Lists all parts you've received, grouped by type. Optionally filter by
   name (e.g. `/explain parts engine`).
+- **Map tab** — your locations on a solar-system map, using Kerbonaut's map pack
+  ([KSP-Style-Flags releases](https://github.com/1Kerbonaut/KSP-Style-Flags/releases), `UT.Maps.zip`).
+  See the setup guide for installing it.
 
 ## I am stuck!
 

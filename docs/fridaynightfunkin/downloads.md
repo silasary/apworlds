@@ -1,9 +1,12 @@
 # Friday Night Funkin
 
 ## Latest
-- <a href="https://github.com/Z11Coding/Mixtape-Engine-Rework/releases/download/ap-only-1/fridaynightfunkin.apworld">Latest Version (2.3.1r2)</a>
+- <a href="https://github.com/Z11Coding/Mixtape-Engine-Rework/releases/download/ap-only-2/fridaynightfunkin.apworld">Latest Version (2.3.5)</a>
 
 ## All Versions
+
+#### v2.3.5
+- <a href="https://github.com/Z11Coding/Mixtape-Engine-Rework/releases/download/ap-only-2/fridaynightfunkin.apworld">https://github.com/Z11Coding/Mixtape-Engine-Rework/releases/download/ap-only-2/fridaynightfunkin.apworld</a>
 
 #### v2.3.1r2
 - <a href="https://github.com/Z11Coding/Mixtape-Engine-Rework/releases/download/ap-only-1/fridaynightfunkin.apworld">https://github.com/Z11Coding/Mixtape-Engine-Rework/releases/download/ap-only-1/fridaynightfunkin.apworld</a>

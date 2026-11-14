@@ -4,7 +4,7 @@ Northgard is a Viking-themed strategy game. This randomizer covers Conquest mode
 
 
 ## Downloads
-- <a href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.11.05/northgard.apworld">Latest Version (2026.11.5)</a>
+- <a href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/download/2026.11.13.2/northgard.apworld">Latest Version (2026.11.13.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

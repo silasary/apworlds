@@ -8,6 +8,9 @@
 #### v0.4.0r2
 - <a href="https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/download/v0.4.1/phoa.apworld">https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/download/v0.4.1/phoa.apworld</a>
 
+#### v0.4.0r2
+- <a href="https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/download/v0.4.2/phoa.apworld">https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/download/v0.4.2/phoa.apworld</a>
+
 #### v0.4.0
 - <a href="https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/download/v0.4.0/phoa.apworld">https://github.com/Amphyros/Phoenotopia-Awakening-AP-client/releases/download/v0.4.0/phoa.apworld</a>
 

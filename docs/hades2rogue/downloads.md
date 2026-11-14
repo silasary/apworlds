@@ -1,9 +1,12 @@
 # Hades2Rogue
 
 ## Latest
-- <a href="https://github.com/BrittisH39/Hades2Archipelago/releases/download/v0.10.0/Hades2Rogue.apworld">Latest Version (0.10.0)</a>
+- <a href="https://github.com/BrittisH39/Hades2Archipelago/releases/download/v0.11.0/Hades2Rogue.apworld">Latest Version (0.11.0)</a>
 
 ## All Versions
+
+#### v0.11.0
+- <a href="https://github.com/BrittisH39/Hades2Archipelago/releases/download/v0.11.0/Hades2Rogue.apworld">https://github.com/BrittisH39/Hades2Archipelago/releases/download/v0.11.0/Hades2Rogue.apworld</a>
 
 #### v0.10.0
 - <a href="https://github.com/BrittisH39/Hades2Archipelago/releases/download/v0.10.0/Hades2Rogue.apworld">https://github.com/BrittisH39/Hades2Archipelago/releases/download/v0.10.0/Hades2Rogue.apworld</a>

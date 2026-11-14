@@ -26,11 +26,14 @@ folder for generating.
 
 ## Connecting
 
-1. On the title screen press **F10** to open the connection form (the game locks the mouse, so the form is driven by the
-   keyboard).
-2. Fill in **Server** (`host:port`, e.g. `archipelago.gg:38281`), **Slot** (your player name) and **Password** if the
-   room has one. Tab or Up/Down switches fields, Ctrl+V pastes.
-3. Press **F11** to connect (F12 disconnects, F10 closes the form). The status line under the form shows the result.
+1. Press **F10** to open the connection form (on a controller: hold Start, Select, LB, RB, LT and RT together).
+   The game locks the mouse, so the form is driven by the keyboard.
+2. Fill in **Server** (`host:port`, e.g. `archipelago.gg:38281`), **Slot name** (your player name) and **Password**
+   if the room has one. Up/Down or Tab switches fields, Ctrl+V pastes.
+3. Press **Enter** (or select **Connect**) to connect; **F12** or the **Disconnect** button disconnects, and **Esc**
+   (or Start on a controller) closes the form. The status line at the top of the form shows the result. Right moves
+   to the box at the right, where anything you type is sent to the server as your slot when you press Enter (a
+   `!command` or a chat message); Left moves back.
 4. Start a **new game** for a new seed. The randomizer's progress is stored in that save file, so later sessions
    continue where you left off: load the save and connect again.
 

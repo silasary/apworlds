@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/download/v1.2.0/puzzlebobble4.apworld">Latest Version (1.2.0)</a>
+- <a href="https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/download/v1.3.0/puzzlebobble4.apworld">Latest Version (1.3.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

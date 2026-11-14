@@ -319,6 +319,20 @@
       "title": "v1.1.2",
       "version_simple": "1.1.2",
       "world_version": "1.1.2"
+    },
+    "v1.2.0": {
+      "created_at": "2026-11-11T18:28:46Z",
+      "description": "Sly 2 Archipelago implementation. For setup instructions, check out the [README](https://github.com/NikolajDanger/APSly2/blob/main/README.md).\r\n\r\n## Changes\r\n### Features\r\n- Job skipping! The new `skip_jobs` yaml option allows you to list jobs to skip: they have no checks (or any task checks with `tasksanity`), and the client completes each of them in-game as soon as they become available. You can also skip a job during play with the new `/skip_job <job name>` command, which sends its checks. Running `/skip_job` without a job name lists the jobs you can skip right now.\r\n- New pickpocketing modes with the `pickpocket_check_mode` yaml option: `lootsanity` (the old behavior, one check per loot type), `unique` (a check for every new type of loot you pickpocket) and `total` (a check every `pickpocket_check_step` pieces of loot). `pickpocket_check_max` sets how many there are.\r\n- Three new traps:\r\n  - Debt Trap: takes a percentage of your coins, set with the new `debt_trap_percentage` option.\r\n  - Bottle Sound Trap: plays the clink of a nearby bottle that isn't there.\r\n  - Hypnosis Trap: hypnotizes the current character.\r\n- Trap durations can now be set per trap with the new `trap_duration` option.\r\n- The new `ring_link_behavior` option decides whether coins from received items and Debt Traps are shared over ring link.\r\n- `scout_thiefnet` now has three options: `show_and_scout` (the old `true`), `show_only` (the old `false`) and the new `hide`, where ThiefNet only shows whose item each one is until it is hinted.\r\n- ThiefNet costs can now go up to 99,999 coins, and 5-digit prices display properly in ThiefNet. Please don't actually do this.\r\n- The ThiefNet icon theme and text color can now be set in the yaml with the new `thiefnet_icon_theme` and `thiefnet_text_color` options (the `/thiefnet_theme` and `/thiefnet_text` commands still override them in-game).\r\n- The `skip_intro` option is back, and skips the Cairo intro straight to the episode select when starting a new game.\r\n- The release now includes `sly2_essentials.yaml`, a cut-down template with just the most important options, next to the full template.\r\n\r\n### Bug fixes and improvements\r\n- Added a \"Traps\" item group.\r\n- Skipping the intro with `/menu` no longer breaks autosaving.\r\n- A Sly 1 or Energy Drain Trap received while pickpocketing is no longer lost.\r\n- Some client and generation optimizations (faster item/location lookups, loot model install and read cache).\r\n",
+      "download_url": "https://github.com/NikolajDanger/APSly2/releases/download/v1.2.0/sly2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "6006dd224e765f02bf36191306a68409d6c5f1426b9af5d4de26b397c4664536",
+      "html_url": "https://github.com/NikolajDanger/APSly2/releases/tag/v1.2.0",
+      "size": 3505697,
+      "source_url": "https://api.github.com/repos/NikolajDanger/APSly2",
+      "tag": "v1.2.0",
+      "title": "v1.2.0",
+      "version_simple": "1.2.0",
+      "world_version": "1.2.0"
     }
   }
 }

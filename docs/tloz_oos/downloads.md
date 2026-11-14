@@ -1,9 +1,12 @@
 # The Legend of Zelda - Oracle of Seasons
 
 ## Latest
-- <a href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/download/oos-26.1.0/tloz_oos.apworld">Latest Version (26.1.0)</a>
+- <a href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/download/oos-26.2.0/tloz_oos.apworld">Latest Version (26.2.0)</a>
 
 ## All Versions
+
+#### v26.2.0
+- <a href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/download/oos-26.2.0/tloz_oos.apworld">https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/download/oos-26.2.0/tloz_oos.apworld</a>
 
 #### v26.1.0
 - <a href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/download/oos-26.1.0/tloz_oos.apworld">https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/download/oos-26.1.0/tloz_oos.apworld</a>

@@ -1,9 +1,15 @@
 # Digimon World
 
 ## Latest
-- <a href="https://github.com/ArsonAssassin/DWAP/releases/download/0.4.0.0/dw1.apworld">Latest Version (0.4.0.0.post2)</a>
+- <a href="https://github.com/ArsonAssassin/DWAP/releases/download/0.5.1.0/dw1.apworld">Latest Version (0.5.1.0)</a>
 
 ## All Versions
+
+#### v0.5.1.0
+- <a href="https://github.com/ArsonAssassin/DWAP/releases/download/0.5.1.0/dw1.apworld">https://github.com/ArsonAssassin/DWAP/releases/download/0.5.1.0/dw1.apworld</a>
+
+#### v0.5.0.0
+- <a href="https://github.com/ArsonAssassin/DWAP/releases/download/0.5.0.0/dw1.apworld">https://github.com/ArsonAssassin/DWAP/releases/download/0.5.0.0/dw1.apworld</a>
 
 #### v0.4.0.0.post2
 - <a href="https://github.com/ArsonAssassin/DWAP/releases/download/0.4.0.0/dw1.apworld">https://github.com/ArsonAssassin/DWAP/releases/download/0.4.0.0/dw1.apworld</a>

@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/download/Beta-1.4-4/lsw3.apworld">Latest Version (1.4.post4)</a>
+- <a href="https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/download/Beta-1.4-5/lsw3.apworld">Latest Version (1.4.post5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

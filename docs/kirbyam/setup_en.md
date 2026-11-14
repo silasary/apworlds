@@ -5,7 +5,7 @@
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases). This source fork now bundles framework 0.6.8; the standalone KirbyAM APWorld retains its 0.6.7 minimum.
 - A USA Kirby & The Amazing Mirror ROM. The Archipelago community cannot provide this.
 - [BizHawk](https://tasvideos.org/BizHawk/ReleaseHistory) 2.7 or later
-- Alternatively, the **draft mGBA integration** below, with current runtime acceptance still outstanding.
+- Alternatively, standalone [mGBA](https://mgba.io/downloads.html) with scripting support; see the setup below.
 
 ### Configuring BizHawk
 
@@ -99,12 +99,34 @@ progress or asynchronous items not yet saved may require replay. Keep each seed/
 on a fresh, isolated native save; do not share saves or savestates between seeds.
 
 
-## Standalone mGBA (draft v0.4.0 integration)
+## Optional PopTracker
 
-This candidate uses the same **Archipelago BizHawk Client** application. Current
-mGBA connection, gameplay, save/reload and goal acceptance is still outstanding;
-no current version/platform combination is certified yet. A ROM boot alone does
-not prove AP integration works. BizHawk setup above remains available.
+Use [BlameMateo's Kirby & The Amazing Mirror PopTracker pack](https://github.com/BlameMateo/Kirby-The-Amazing-Mirror-PopTracker)
+for an optional map tracker with Archipelago autotracking. Download the pack from its
+[releases page](https://github.com/BlameMateo/Kirby-The-Amazing-Mirror-PopTracker/releases)
+and follow the maintained [installation and support instructions](https://github.com/BlameMateo/Kirby-The-Amazing-Mirror-PopTracker/blob/main/kirby_and_the_amazing_mirror/README.md).
+
+After loading the pack in PopTracker, connect its Archipelago autotracker using your AP server's
+address and port, your KirbyAM slot name, and the room password if required. Keep the game client
+and emulator connector running as described above; the tracker does not replace them.
+
+Check the pack's release notes and manifest for current requirements. At the time of writing,
+pack v0.3.1 declares PopTracker 0.25.9 as its minimum and 0.36.0 as its target version; it does not
+publish an APWorld version compatibility range. These declarations are not a guarantee that every
+APWorld/pack combination has been tested. For tracker problems, use the pack's GitHub issues or
+the Kirby & The Amazing Mirror thread on the Archipelago Discord, as directed by its README.
+
+## Standalone mGBA
+
+Standalone mGBA uses the same **Archipelago BizHawk Client** application through
+the bundled connector. The integration was completed in
+[#941](https://github.com/hasherwi/Archipelago-kirbyam/issues/941).
+Real mGBA testing includes completed-save item delivery and reconnects in
+[#1005](https://github.com/hasherwi/Archipelago-kirbyam/pull/1005), and mGBA 0.10.5
+Vitality delivery and HUD updates in
+[#953](https://github.com/hasherwi/Archipelago-kirbyam/issues/953).
+These results cover the recorded versions and scenarios, not every platform,
+configuration or GUI workflow. Follow the setup below and keep each seed's saves isolated.
 
 1. Use mGBA 0.10.0 or newer **with Tools > Scripting**, Lua and built-in sockets.
 2. Install the KirbyAM APWorld containing this integration and restart the
@@ -126,7 +148,7 @@ not prove AP integration works. BizHawk setup above remains available.
    Different existing files are never replaced: use a fresh directory when
    upgrading. The adapter is bundled inside the APWorld, so no shared AP source
    edits or global `rom_start` changes are needed. See
-   [provenance and limitations](https://github.com/hasherwi/Archipelago-kirbyam/blob/codex/v040-mgba-support/worlds/kirbyam/mgba/README.md).
+   [connector provenance and license](https://github.com/hasherwi/Archipelago-kirbyam/blob/main/worlds/kirbyam/mgba/README.md).
 5. Put the patched ROM in a fresh directory unique to this seed/team/slot. Configure
    mGBA's save/state directory there; do not reuse player saves or states from another
    seed. Verify the save destination before playing.
@@ -143,7 +165,7 @@ name BizHawk; protocol 1 cannot independently identify the emulator.
 
 ### Known limitation: mGBA notification display
 
-The current v0.4.0 mGBA adapter displays item notices as plain text in the
+The bundled mGBA adapter displays item notices as plain text in the
 **Archipelago Connector** panel in **Tools > Scripting**, not over the game image.
 Keep that scripting panel visible to see these notices while playing. This path
 has no item colors, icons, configurable screen position or timed fade, and does
@@ -152,8 +174,9 @@ not provide the same in-game OSD behavior as the BizHawk connector.
 Normal AP server messages still appear separately in the Archipelago client/log.
 That log is not a guaranteed replay of a missing item-delivery notice. This is a
 limitation of this integration, not a claim about every mGBA version or its possible
-overlay capabilities. The approved mocked harness verified the text-print call;
-notification appearance in the real mGBA GUI remains untested.
+overlay capabilities. Automated coverage verifies the text-print call; the gameplay
+results linked above do not establish visual acceptance of this notification panel
+or every launcher/export GUI workflow.
 
 ### mGBA troubleshooting
 
