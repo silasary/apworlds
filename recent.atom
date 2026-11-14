@@ -2,143 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-14T12:18:20.558875+00:00</updated>
+  <updated>2026-11-14T18:14:31.858040+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/AAces17/EquilinoxAPClient/releases/tag/0.2.0</id>
-    <title>Equilinox v0.2.0</title>
-    <updated>2026-11-10T22:52:46+00:00</updated>
-    <author>
-      <name>AAces</name>
-    </author>
-    <content>## Changelog&#13;
-&#13;
-### General Changes/Additions&#13;
-- Replaced "Evolve Camel" goal with "Evolve Species" goal: &#13;
-  - Choose a set of species and a count `n` (defaults to all selected species), where you need to evolve `n` of the species in the set to send the goal&#13;
-- Add "Progressive DP/Min Bonus" item:&#13;
-  - Yaml option to add 0 - 40 (default 10) of these to the item pool. Having received `n` of these items, you will have a constant bonus of `+15(n^2+n) dp/min`&#13;
-- Notable logic changes:&#13;
-  - Logically require dp generation (either via the new "Progressive DP/Min Bonus" item or via animals) for most purchases and evolutions&#13;
-  - More tasks and evolutions logically require species satisfaction&#13;
-    - (While I tested many of these changes, please report any checks that appear in logic too early in case I missed some)&#13;
-- Add item groups for unlock permits: `Tier 1 Plant Permits`, `Tier 1 Animal Permits`, `Stone Permits`, and `Large Rock Permits`. &#13;
-- Fix .apworld manifest?&#13;
-&#13;
-&#13;
-### Minor Client Changes&#13;
-- Display connection status, received dp items, and goal progress in the AP Toolbar menu&#13;
-- Make fast-forward (the double arrow button on the bottom bar) a toggle instead of a press-and-hold&#13;
-- Send in-game notification when trying to connect&#13;
-- Mouseover of locked tier 1 shop items now displays "Find in the multiworld: ______ Permit" instead of "Unlocked by task: _______"&#13;
-&#13;
-&#13;
-## Updating the Mod&#13;
-&#13;
-View the [Setup Guide](https://github.com/AAces17/EquilinoxAPClient#setup-instructions) on the Github repository.&#13;
-&#13;
-This updated client should be compatible with worlds generated on any v0.1.x. However, updating the client mid-run is not necessary unless you really want the new QOL features. </content>
-    <link href="https://github.com/AAces17/EquilinoxAPClient/releases/tag/0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Arrcival/ArchipelagoDK/releases/tag/v2.1.0</id>
-    <title>Dome Keeper v2.1.0</title>
-    <updated>2026-11-10T23:50:45+00:00</updated>
-    <author>
-      <name>Arrcival</name>
-    </author>
-    <content>reverted the whole layer logic to biome generation BUT with protection from floodfill depth check&#13;
-also changed keys numbers to symbols (square, round, triangle, cross, lines, diagonal, heart)&#13;
-fixed issues when not owning the DLC and having a DLC keeper/assignment, this should also be printed in the text box</content>
-    <link href="https://github.com/Arrcival/ArchipelagoDK/releases/tag/v2.1.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Kevanderson97/homura-hime-archipelago/releases/tag/v0.4.3</id>
-    <title>Homura-Hime v0.4.3</title>
-    <updated>2026-11-11T02:23:16+00:00</updated>
-    <author>
-      <name>Kevin Anderson</name>
-    </author>
-    <content>Plugin release: A connection screen styled like the game, a Server window for commands, controller support for connection UI, and fixes for reconnecting, Death Link and the death menu. See README for installation instructions.
-
-**Update the plugin and the .apworld together.** The world only changes its version number: seeds from 0.4.1 and 0.4.2 play with this plugin without generating anything new (checked against real slot data of both), and saves and server records are not touched.
-
-### New:
-
-**The connection screen (F10) is a full-screen menu in the game's own style:**
-
-- It uses the look of the title screen's Continue menu
-- **Server window:** the right side shows what the server says (command results, chat, hints for you, the items you send and receive) and has a box to type into. Enter sends the text as your slot: `!hint`, `!collect`, `!getitem`, ordinary chat.
-- **Keyboard:** Up/Down move through the fields and buttons, Left/Right move between the left column and the Server window (Left returns to the item you were on), Tab goes through everything, Enter does what the selected item does, Ctrl+V pastes, F11 connects, F12 disconnects, Esc closes.
-- **Controller:** the D-Pad (or left stick) moves, A does what Enter does, B or Start closes. Hold **Start, Select, LB, RB, LT and RT** together to open the screen without a keyboard.
-- **More readable disconnected text:** the text containing the plugin version and instructing how to open the Server Connect menu has a style background and is larger and more readable now. It returns to being small and unintrusive when connected
-
-### Fixes:
-
-- **Reconnecting gave the same items again.** Connecting again while playing (a manual disconnect and connect, or pressing Connect twice) put the progress stored in the game's save file back over the live progress, so items received since the last save were granted a second time. The same went for unlocked chapters, progressive keys, cleared worlds and anything set aside. The stored progress now only replaces the live one when the game loads a save or you switch to another save or slot. Locations checked while offline are still sent when you connect.
-- **Death menu:** after a Death Link death the death menu could fail to appear when tabbed out and leave the game stuck. The game re-evaluates the menu when it is lost.
-- **Death Link messages** no longer name the enemy that killed you; they say that you died, like the other games do, so a message sent to other players is no longer wrong about the cause.
-- Connecting no longer fails because of keys the game did not receive: F11, F12 and Esc are read from the game's update, so they work with an input method or a keyboard tool running.
-- Connecting twice from one key press no longer connects twice; the log says what is going on ("Connecting to ... as ...", "Connect ignored: ...", "Disconnected from Archipelago").
-
-### Changes:
-
-- The setup guide and READMEs describe the new connection screen and the controller combination.
-- Tests for the new screen's logic (focus, controller edge detection, the console log, the death menu, the death cause) and for reading the slot data of real 0.4.1 and 0.4.2 seeds.
-</content>
-    <link href="https://github.com/Kevanderson97/homura-hime-archipelago/releases/tag/v0.4.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.13.0-pre2</id>
-    <title>Casualties: Unknown v0.13.0rc2</title>
-    <updated>2026-11-11T08:37:35+00:00</updated>
-    <author>
-      <name>Nichologeam</name>
-    </author>
-    <content>### Casualties: Unknown Archipelago v0.13.0-pre2&#13;
-This update is NOT compatible with worlds generated on previous versions!&#13;
-&#13;
-For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
-Development on the Itch.io version of Casualties: Unknown has stopped. To play this mod on the Itch.io version, use CUAP v0.8.0.&#13;
-Development on the Steam Demo version of Casualties: Unknown has stopped. To play this mod on the Steam Demo version, use CUAP v0.12.3.&#13;
-&#13;
-This is a pre-release testing version! New features have not been thoroughly tested!&#13;
-# Additions&#13;
-- New goals for getting each ending [APWorld Change]&#13;
-- Sawian Unlocks YAML option [APWorld Change]&#13;
-- Goal Requires All Sawians YAML option [APWorld Change]&#13;
-	- New `apchecksawians` command to check your progress&#13;
-- Unlock Brainchip YAML option [APWorld Change]&#13;
-- Minigame Randomization now includes the Prosthesis Repair and Hand-Crank minigames [APWorld Change]&#13;
-- New traps added in 1.0 now drop Archipelago Items when broken&#13;
-- Certain hardware setups cause BepInEx to load before the game does. Instructions to fix this now print to the log&#13;
-# Changes&#13;
-- The mod now disables Steam Achievements on startup&#13;
-- You can now remove the Cargo without the Minigames item when Minigame Randomization is set to As One&#13;
-- Replaced all instances of "Experiment" with "the Sawian" in option descriptions [APWorld Change]&#13;
-- Colored instances of the word "Archipelago" now visually cycle colors from left -&gt; right instead of right -&gt; left&#13;
-# Fixes&#13;
-- Fixed Craftsanity always being enabled regardless of the YAML option [APWorld Change]&#13;
-- Fixed Craftsanity locations requiring Bio-chem fluid being logically impossible [APWorld Change]&#13;
-- Fixed the Drill repair kit Recipe logically requiring the items required for the Demo recipe instead of the release one [APWorld Change]&#13;
-- Ascent Unlock Mode YAML option now actually works in-game&#13;
-- Fixed `WHERE WE MUST REACH Unlock` not putting hearing loss related Moodlesanity locations into logic [APWorld Change]&#13;
-- Fixed Unchipped Trap not actually turning off the Brainchip&#13;
-- Fixed Unchipped Trap not removing the line of sight shader after it runs out&#13;
-# Known Issues&#13;
-- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators&#13;
-- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game&#13;
-- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game&#13;
-- Skillsanity skill levels received offline will not be given when loading a save file from a previous session. You must start a new run to receive them&#13;
-- EnergyLink sometimes doesn't work when playing in a server with more than one slot. I plan to rewrite EnergyLink entirely before a stable 0.13 release&#13;
-&#13;
-**Full Changelog (from last pre-release)**: https://github.com/Nichologeam/CUAP/compare/v0.13.0-pre1...v0.13.0-pre2&#13;
-**Full Changelog (from last stable)**: https://github.com/Nichologeam/CUAP/compare/v0.12.3...v0.13.0-pre2</content>
-    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.13.0-pre2"/>
-  </entry>
   <entry>
     <id>https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.3.0-PR</id>
     <title>Spyro: A Hero's Tail v2.3.0</title>
@@ -523,7 +391,7 @@ The Steam copy needs a downgrade to 1.0 first: see the README's *Steam version* 
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release12</id>
-    <title>Ocarina of Time v9.1.0r2</title>
+    <title>Ocarina of Time v9.1.0r5</title>
     <updated>2026-11-11T19:48:02+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1670,5 +1538,85 @@ Only the North American ROM is supported. AP notifications are English; mGBA not
 [Full v0.5.1 changelog](https://github.com/hasherwi/Archipelago-kirbyam/blob/kirbyam-v0.5.1-rc2/worlds/kirbyam/CHANGELOG.md)
 </content>
     <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.1-rc2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tathxo/DSAP/releases/tag/v0.3.0</id>
+    <title>Dark Souls Remastered v0.3.0</title>
+    <updated>2026-11-14T12:30:28+00:00</updated>
+    <author>
+      <name>Noka</name>
+    </author>
+    <author>
+      <name>ArsonAssassin</name>
+    </author>
+    <content># Version 0.3.0 - AP Icon, Regional and Categorical Shuffle options, New Weapon Upgrade System&#13;
+### Version update -&gt; 0.3.0. **Client is _NOT_ compatible with 0.2.x generated apworlds**. &#13;
+**Make sure your host generates with the v0.3.0 apworld**.&#13;
+&#13;
+### Features&#13;
+* Add **AP icon via optional patch** `APIconPatch.apdsr` - see Setup Guide for more details. Huge thanks to Nave for this!&#13;
+* Yaml options: **Optional Region selection** - explicit selection for DLC, Painted Work, and Great Hollow+Ash Lake. Unshuffled regions will not have their bosses removed for the `all_bosses` goal.&#13;
+* Yaml options: Toggleable **shuffling by location category** (subcategories of Corpse items/One-time Enemy drops, etc). For categories without prog items, includes an option for Local-only Randomization. `/lrspoiler` command added to check where local items are randomized from and to.&#13;
+  * By customizing these options, you can both decrease filler item bloat in the multiworld _and_ lower your check count, which can play better with other worlds/significantly reduce how long a run takes.&#13;
+* Yaml option: `lord_soul_shuffle`, to **allow lord souls to be unshuffled**.&#13;
+* **Location Groups** added for locations by category (see updated list in Game Info page).&#13;
+* If `ornstein_and_smough` is chosen as goal, all locations considered "post o+s" (the lordvessel and any locations requiring the lordvessel) will not be shuffled. If catacombs is put behind o+s in logic, it will also not be shuffled.&#13;
+* Yaml Options: **Weapon upgrade system Updated**! Now `Progressive Incoming Weapon Upgrade`s - in the same style as the Soul and Weight Multiplier options. Only affects items received via AP once the relevant progressive items are received. Does not affect items from unrandomized or local_only-randomized locations.&#13;
+* "Collect" Support included from experimental v0.2.6.2 below.&#13;
+&#13;
+### Fixes&#13;
+* Fully rewrote/Changed method of flag polling/location checking - Drastically reducing number of memory reads in DSR process and improving performance by up to 160x.&#13;
+* Removed network delay on item popups for others &amp; self&#13;
+* Refactored boss tracking - when bosses are killed, it will sync that they were killed between all saves.</content>
+    <link href="https://github.com/tathxo/DSAP/releases/tag/v0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Panda291/Archipelago/releases/tag/v0.3.1</id>
+    <title>Ratchet &amp; Clank v0.3.1</title>
+    <updated>2026-11-14T12:43:29+00:00</updated>
+    <author>
+      <name>Panad</name>
+    </author>
+    <author>
+      <name>Myth197</name>
+    </author>
+    <author>
+      <name>Amondo</name>
+    </author>
+    <content>General bugfixes to skillpoint logic and some typos</content>
+    <link href="https://github.com/Panda291/Archipelago/releases/tag/v0.3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.5.1</id>
+    <title>Factorio: Platformer v0.5.1</title>
+    <updated>2026-11-14T13:08:30+00:00</updated>
+    <author>
+      <name>lepideble</name>
+    </author>
+    <content>## New features&#13;
+* Add fluid free samples (https://github.com/lepideble/factorio-apworld/pull/88)&#13;
+&#13;
+## Improvements&#13;
+* Reveal items and locations hinted with start hint option in tech tree (https://github.com/lepideble/factorio-apworld/pull/87)&#13;
+* Make combinators non progressive in split technology mode (https://github.com/lepideble/factorio-apworld/pull/90)&#13;
+&#13;
+## Fixes&#13;
+* Fix dummy pack name and icon (https://github.com/lepideble/factorio-apworld/pull/89)&#13;
+&#13;
+**Full Changelog**: https://github.com/lepideble/factorio-apworld/compare/platformer-0.5.0...platformer-0.5.1</content>
+    <link href="https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.5.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.5.2</id>
+    <title>Factorio: Platformer v0.5.2</title>
+    <updated>2026-11-14T14:37:34+00:00</updated>
+    <author>
+      <name>lepideble</name>
+    </author>
+    <content>## Fixes&#13;
+* Fix an error message showing when unlocking recipes for fluid that can't be barreled (https://github.com/lepideble/factorio-apworld/pull/91)&#13;
+&#13;
+**Full Changelog**: https://github.com/lepideble/factorio-apworld/compare/platformer-0.5.1...platformer-0.5.2</content>
+    <link href="https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.5.2"/>
   </entry>
 </feed>

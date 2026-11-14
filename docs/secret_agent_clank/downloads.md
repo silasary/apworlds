@@ -1,9 +1,15 @@
 # Secret Agent Clank
 
 ## Latest
-- <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/secret_agent_clank-v0.0.10/secret_agent_clank.apworld">Latest Version (0.0.10)</a>
+- <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/secret_agent_clank-v0.1.0/secret_agent_clank.apworld">Latest Version (0.1.0)</a>
 
 ## All Versions
+
+#### v0.1.0
+- <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/secret_agent_clank-v0.1.0/secret_agent_clank.apworld">https://github.com/Panguu/Archipelago-RaCSM/releases/download/secret_agent_clank-v0.1.0/secret_agent_clank.apworld</a>
+
+#### v0.0.11
+- <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/secret_agent_clank-v0.0.11/secret_agent_clank.apworld">https://github.com/Panguu/Archipelago-RaCSM/releases/download/secret_agent_clank-v0.0.11/secret_agent_clank.apworld</a>
 
 #### v0.0.10
 - <a href="https://github.com/Panguu/Archipelago-RaCSM/releases/download/secret_agent_clank-v0.0.10/secret_agent_clank.apworld">https://github.com/Panguu/Archipelago-RaCSM/releases/download/secret_agent_clank-v0.0.10/secret_agent_clank.apworld</a>

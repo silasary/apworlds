@@ -1,9 +1,15 @@
 # Factorio: Platformer
 
 ## Latest
-- <a href="https://github.com/lepideble/factorio-apworld/releases/download/platformer-0.5.0/factorio_platformer.apworld">Latest Version (0.5.0)</a>
+- <a href="https://github.com/lepideble/factorio-apworld/releases/download/platformer-0.5.2/factorio_platformer.apworld">Latest Version (0.5.2)</a>
 
 ## All Versions
+
+#### v0.5.2
+- <a href="https://github.com/lepideble/factorio-apworld/releases/download/platformer-0.5.2/factorio_platformer.apworld">https://github.com/lepideble/factorio-apworld/releases/download/platformer-0.5.2/factorio_platformer.apworld</a>
+
+#### v0.5.1
+- <a href="https://github.com/lepideble/factorio-apworld/releases/download/platformer-0.5.1/factorio_platformer.apworld">https://github.com/lepideble/factorio-apworld/releases/download/platformer-0.5.1/factorio_platformer.apworld</a>
 
 #### v0.5.0
 - <a href="https://github.com/lepideble/factorio-apworld/releases/download/platformer-0.5.0/factorio_platformer.apworld">https://github.com/lepideble/factorio-apworld/releases/download/platformer-0.5.0/factorio_platformer.apworld</a>

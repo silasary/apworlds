@@ -48,10 +48,24 @@ This section is for players who want to host a solo or multiplayer game.
 
 ### Starting a Game
 
-1. Launch the **Secret Agent Clank Client** from the Archipelago launcher.
-2. Connect to your Archipelago server with your slot name.
-3. In PCSX2, load the game and wait at the **main menu** for the client to connect. The same client automatically selects the address map from the disc serial.
-4. Wait for the client's **Ready to start a new game** message before selecting **New Game**. The frontend patch starts the new save directly on the selected planet, without first loading Boltaire Museum.
+1. Open your `.apsac` file (from the room page or the generated zip) with the
+   Archipelago Launcher, or drag it onto **Secret Agent Clank Client**.
+2. The first time you use a given patch build, a **Secret Agent Clank Patcher**
+   window asks for your clean USA ISO and shows its progress while it writes
+   `Secret Agent Clank AP <build>.iso` to your Archipelago folder. The original
+   ISO is never modified. Later seeds on the same build skip this step.
+3. The client then opens and connects as the slot in the `.apsac` (and to the
+   room's server, if the file came from a room page).
+4. Boot the **patched ISO** in PCSX2. Set `secret_agent_clank_options.iso_start`
+   in `host.yaml` to `true` (default program) or to the path of `pcsx2-qt.exe`
+   to have it booted for you. The client verifies the build before writing game
+   data, and loading pauses until the client has initialized the current level.
+5. Start a **New Game** after the client connects. The permanent frontend hooks
+   use your seed's starting case.
+
+Run settings and received items are synchronized as data, so one patched ISO
+serves every seed of a patch build. If a world update changes the build, the
+next `.apsac` you open patches a new ISO automatically.
 
 > **Important:** Always start from a New Game at the beginning of a seed. Loading a save from a previous run will cause inventory and location state to be out of sync. To continue an ongoing session, simply reconnect to the same Archipelago connection address and load the save file you used for that session.
 
@@ -60,7 +74,15 @@ This section is for players who want to host a solo or multiplayer game.
 ## Troubleshooting
 
 **Client says "Wrong game in PCSX2"**
-Make sure you are running a recognized serial: `SCUS-97623` (US). Restart the client after updating so it loads the regional detection code.
+Use the patched USA `SCUS-97623` ISO generated for the installed world release.
+If the client reports mismatched code or an incompatible savestate, cold boot
+that ISO instead of loading a state created with the clean game or another build.
+
+**Loading waits for the client**
+Without a client the patched game loads normally. Once the client is connected,
+each level load waits briefly while the client sets up that level's items,
+settings and checks. If loading stays stuck, the client has likely lost its
+connection: reconnect it, or close it to let the game carry on alone.
 
 **Weapons/Gadgets are not appearing after receiving items**
 Use `/reconnect` in the client console to re-apply everything received so far.
