@@ -1,9 +1,12 @@
 # ForgeAP
 
 ## Latest
-- <a href="https://github.com/BramTeurlings/forge-APWorld/releases/download/APWorld-0.1.1/ForgeAP.apworld">Latest Version (0.1.1)</a>
+- <a href="https://github.com/BramTeurlings/forge-APWorld/releases/download/APWorld-0.2.0/ForgeAP.apworld">Latest Version (0.2.0)</a>
 
 ## All Versions
+
+#### v0.2.0
+- <a href="https://github.com/BramTeurlings/forge-APWorld/releases/download/APWorld-0.2.0/ForgeAP.apworld">https://github.com/BramTeurlings/forge-APWorld/releases/download/APWorld-0.2.0/ForgeAP.apworld</a>
 
 #### v0.1.1
 - <a href="https://github.com/BramTeurlings/forge-APWorld/releases/download/APWorld-0.1.1/ForgeAP.apworld">https://github.com/BramTeurlings/forge-APWorld/releases/download/APWorld-0.1.1/ForgeAP.apworld</a>

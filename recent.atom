@@ -2,30 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-14T06:16:39.633187+00:00</updated>
+  <updated>2026-11-14T12:18:20.558875+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-2.4</id>
-    <title>Undertale Beta v2.0.0r3</title>
-    <updated>2026-11-10T22:05:24+00:00</updated>
-    <author>
-      <name>Mewlif</name>
-    </author>
-    <content>CHANGED:&#13;
-- True Lab elevator no longer requires the New Home Keys/Key Pieces, the chain will instead block you once you are in New Home after finishing the True Lab, the savepoints don't disappear to allow backtracking if you missed something.&#13;
-- The Spell option now describes the general functions of spells&#13;
-&#13;
-FIXES:&#13;
-- No longer spams the generation log&#13;
-- Warping out of True Lab no longer dulls the color of Frisk's sprites&#13;
-&#13;
-REMOVED:&#13;
-- Linux copies of data.unx can no longer be patched, the patch was 5x the size of the rest of the apworld, use Steam to download the Windows version of Undertale instead</content>
-    <link href="https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-2.4"/>
-  </entry>
   <entry>
     <id>https://github.com/AAces17/EquilinoxAPClient/releases/tag/0.2.0</id>
     <title>Equilinox v0.2.0</title>
@@ -542,7 +523,7 @@ The Steam copy needs a downgrade to 1.0 first: see the README's *Steam version* 
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release12</id>
-    <title>Ocarina of Time v9.1.0r5</title>
+    <title>Ocarina of Time v9.1.0r2</title>
     <updated>2026-11-11T19:48:02+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1656,5 +1637,38 @@ FIXES:&#13;
 - The room from failing the pillar lever puzzle in Ruins no longer thinks you can go there from the pre-solved room&#13;
 - Non-genocide route goals no longer think Worn Dagger and Heart Locket have the genocide stats</content>
     <link href="https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.1-rc2</id>
+    <title>Kirby &amp; The Amazing Mirror v0.5.1rc2</title>
+    <updated>2026-11-14T07:03:53+00:00</updated>
+    <author>
+      <name>Harrison Sherwin</name>
+    </author>
+    <content>## v0.5.1-rc2
+
+Release candidate for v0.5.1, built from merged main commit `9b4aaa513d8aed325f4ecf32c2a39eb1bf018961`.
+
+### Changes since v0.5.0
+- Copy Ability Room access is now an AP item (Issue #1002).
+- Improved Logic for Item Placement and Accessible Locations (PR #1041, #1042, #1045, #1048, #1051, #1052).
+- Starting inventory: Ice added; Beam kept; Wheel, Mini, Cutter, Stone and Burning removed.
+- Fixed starting-inventory counts and native enemy behavior overwriting shuffled abilities, including Waddle Doo/Parasol resets.
+- **New in rc2:** Carrot and Radish chute-side barriers now require their corresponding Lever Wall items. Same-side returns and room visits remain available; all four lever chains were audited (Issue #1093, PR #1094).
+
+Regenerate seeds to use the corrected placement logic. Updating the APWorld does not rewrite existing generated seeds or spoilers.
+
+### Downloads
+- **kirbyam.apworld**: the installable Kirby &amp; the Amazing Mirror world package for Archipelago, including the committed ROM patch. This is the file players need; it does not contain a full game ROM.
+- **kirbyam.provenance.json**: build receipt identifying the source commit, workflow run and package checksum; useful for verification, not required for normal play.
+- **kirbyam.attestation.jsonl**: signed GitHub build-provenance bundle for verifying the package and receipt; not a game file.
+- **Source code (zip / tar.gz)**: GitHub-generated repository snapshots for developers, not substitutes for the installable APWorld.
+
+### Known limitations
+Only the North American ROM is supported. AP notifications are English; mGBA notifications require the visible Archipelago Connector scripting panel. Original chest/statue visuals remain. Ranged-attack logic still has coverage gaps. Testing covers selected scenarios, not a complete playthrough or every multiplayer setup; the Carrot barrier correction has static geometry/regression coverage but not a fresh native closed/open comparison.
+
+[Full v0.5.1 changelog](https://github.com/hasherwi/Archipelago-kirbyam/blob/kirbyam-v0.5.1-rc2/worlds/kirbyam/CHANGELOG.md)
+</content>
+    <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.1-rc2"/>
   </entry>
 </feed>

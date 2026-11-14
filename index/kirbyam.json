@@ -348,6 +348,22 @@
       "title": "KirbyAM APWorld v0.5.1-rc1",
       "version_simple": "0.5.1",
       "world_version": "0.5.1rc1"
+    },
+    "kirbyam-v0.5.1-rc2": {
+      "created_at": "2026-11-14T07:03:53Z",
+      "description": "## v0.5.1-rc2\n\nRelease candidate for v0.5.1, built from merged main commit `9b4aaa513d8aed325f4ecf32c2a39eb1bf018961`.\n\n### Changes since v0.5.0\n- Copy Ability Room access is now an AP item (Issue #1002).\n- Improved Logic for Item Placement and Accessible Locations (PR #1041, #1042, #1045, #1048, #1051, #1052).\n- Starting inventory: Ice added; Beam kept; Wheel, Mini, Cutter, Stone and Burning removed.\n- Fixed starting-inventory counts and native enemy behavior overwriting shuffled abilities, including Waddle Doo/Parasol resets.\n- **New in rc2:** Carrot and Radish chute-side barriers now require their corresponding Lever Wall items. Same-side returns and room visits remain available; all four lever chains were audited (Issue #1093, PR #1094).\n\nRegenerate seeds to use the corrected placement logic. Updating the APWorld does not rewrite existing generated seeds or spoilers.\n\n### Downloads\n- **kirbyam.apworld**: the installable Kirby & the Amazing Mirror world package for Archipelago, including the committed ROM patch. This is the file players need; it does not contain a full game ROM.\n- **kirbyam.provenance.json**: build receipt identifying the source commit, workflow run and package checksum; useful for verification, not required for normal play.\n- **kirbyam.attestation.jsonl**: signed GitHub build-provenance bundle for verifying the package and receipt; not a game file.\n- **Source code (zip / tar.gz)**: GitHub-generated repository snapshots for developers, not substitutes for the installable APWorld.\n\n### Known limitations\nOnly the North American ROM is supported. AP notifications are English; mGBA notifications require the visible Archipelago Connector scripting panel. Original chest/statue visuals remain. Ranged-attack logic still has coverage gaps. Testing covers selected scenarios, not a complete playthrough or every multiplayer setup; the Carrot barrier correction has static geometry/regression coverage but not a fresh native closed/open comparison.\n\n[Full v0.5.1 changelog](https://github.com/hasherwi/Archipelago-kirbyam/blob/kirbyam-v0.5.1-rc2/worlds/kirbyam/CHANGELOG.md)\n",
+      "download_url": "https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.5.1-rc2/kirbyam.apworld",
+      "has_manifest": true,
+      "hash_sha256": "064e65f10c740e0e0a51e23f34a6bc2ea01b019baf3206ab487f6822e707c79a",
+      "html_url": "https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.1-rc2",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 2531306,
+      "source_url": "https://api.github.com/repos/hasherwi/Archipelago-kirbyam",
+      "tag": "kirbyam-v0.5.1-rc2",
+      "title": "KirbyAM APWorld v0.5.1-rc2",
+      "version_simple": "0.5.1",
+      "world_version": "0.5.1rc2"
     }
   }
 }
