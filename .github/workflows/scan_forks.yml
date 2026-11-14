@@ -21,6 +21,9 @@ jobs:
       run: |
         git config --global user.email "ci@katelyngigante.com"
         git config --global user.name "Github Actions"
+    - uses: actions/setup-python@v7
+      with:
+        python-version: '3.13.15'
     - name: Install Dependencies
       run: |
         python3 -m pip install --upgrade pip
