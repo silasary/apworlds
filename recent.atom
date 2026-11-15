@@ -2,65 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-15T06:14:42.835563+00:00</updated>
+  <updated>2026-11-15T12:16:21.302496+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release12</id>
-    <title>Ocarina of Time v9.1.0r5</title>
-    <updated>2026-11-11T19:48:02+00:00</updated>
-    <author>
-      <name>espeon65536</name>
-    </author>
-    <author>
-      <name>TreZ</name>
-    </author>
-    <content># OoT Randomizer APWorld v9.1.0 Full Release 12&#13;
-&#13;
-## Changes:&#13;
-- Fix: Generation Crash when an excluded item was part of a multi hint (King Zora + Adult Shuffle for example)&#13;
-- Fix: Entrance Reachability didn't properly factor in time travel access&#13;
-- Fix: ZL and Spritiual stone on Rauru could hinder progression&#13;
-- Fix: Stone Detection for time travel and entrance placement too defensive&#13;
-&#13;
-Please note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.</content>
-    <link href="https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release12"/>
-  </entry>
-  <entry>
-    <id>https://github.com/SWCreeperKing/Widgitpelago/releases/tag/v0.3.0</id>
-    <title>Widget Inc v0.2.0r2</title>
-    <updated>2026-11-11T20:43:34+00:00</updated>
-    <author>
-      <name>SW_CreeperKing</name>
-    </author>
-    <content>- [Client] Updated MelonLoader to 7.3 and so installation instructions changed&#13;
-- [Client] Updated and Improved Connection UI, now with Production Multiplier settings&#13;
-- [Client] Updated Custom Assets handling&#13;
-- [ApWorld] Removed Production Multiplier settings</content>
-    <link href="https://github.com/SWCreeperKing/Widgitpelago/releases/tag/v0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ArsonAssassin/DWAP/releases/tag/0.5.0.0</id>
-    <title>Digimon World v0.5.0.0</title>
-    <updated>2026-11-11T21:16:50+00:00</updated>
-    <author>
-      <name>ArsonAssassin</name>
-    </author>
-    <content>**Full Changelog**: https://github.com/ArsonAssassin/DWAP/compare/0.4.0.0...0.5.0.0</content>
-    <link href="https://github.com/ArsonAssassin/DWAP/releases/tag/0.5.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ArsonAssassin/DWAP/releases/tag/0.5.1.0</id>
-    <title>Digimon World v0.5.1.0</title>
-    <updated>2026-11-11T21:16:50+00:00</updated>
-    <author>
-      <name>ArsonAssassin</name>
-    </author>
-    <content/>
-    <link href="https://github.com/ArsonAssassin/DWAP/releases/tag/0.5.1.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Maxlamenace572/DeadCellsArchipelago/releases/tag/0.2.1</id>
     <title>Dead Cells v0.2.1</title>
@@ -1308,7 +1254,7 @@ Updated the ctrando lib to pick up some additional fixes to generation</content>
 ### Archipelago Client (v1.4.0)&#13;
 &#13;
 #### Progression Item Sound&#13;
-- Added a sound effect that plays when receiving a **Progression Item**, making it easier to notice received items while **BK**.&#13;
+- Added a sound effect that plays when receiving a **Progression Item**, making it easier to notice received items while playing or **BK**.&#13;
 - Added the `/soundtest` command to play the progression-item sound to adjust the client's volume through the Windows Volume Mixer.&#13;
 &#13;
 ### APWorld (v1.4.0)&#13;
@@ -1542,5 +1488,165 @@ POPTRACKER INSTALLATION INSTRUCTIONS:&#13;
 [Setup Guide](&lt;https://github.com/Joshark/archipelago-sms/blob/main/worlds/sms/docs/setup_en.md&gt;)&#13;
 [Dolphin GC/Wii Emulator](&lt;https://dolphin-emu.org/download/&gt;)</content>
     <link href="https://github.com/Joshark/archipelago-sms/releases/tag/0.6.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.13.0</id>
+    <title>Casualties: Unknown v0.13.0</title>
+    <updated>2026-11-15T06:06:14+00:00</updated>
+    <author>
+      <name>Nichologeam</name>
+    </author>
+    <content>### Casualties: Unknown Archipelago v0.13.0&#13;
+This update is compatible with worlds generated on versions 0.13.0-pre3 and above!&#13;
+&#13;
+For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
+Development on the Itch.io version of Casualties: Unknown has stopped. To play this mod on the Itch.io version, use CUAP v0.8.0.&#13;
+Development on the Steam Demo version of Casualties: Unknown has stopped. To play this mod on the Steam Demo version, use CUAP v0.12.3.&#13;
+&#13;
+# Additions&#13;
+- Support Casualties: Unknown 1.0.2 [APWorld Change]&#13;
+- Craftsanity now gives you the option to exclude the new Merc Scarf [APWorld Change]&#13;
+- New goals for getting each ending [APWorld Change]&#13;
+- Sawian Unlocks YAML option [APWorld Change]&#13;
+- Goal Requires All Sawians YAML option [APWorld Change]&#13;
+	- New `apchecksawians` command to check your progress&#13;
+- Unlock Brainchip YAML option [APWorld Change]&#13;
+- Minigame Randomization now includes the Prosthesis Repair and Hand-Crank minigames [APWorld Change]&#13;
+- Certain hardware setups cause BepInEx to load before the game does. Instructions to fix this now print to the log&#13;
+- Limb Unlocks have had a complete rework [APWorld Change]&#13;
+	- Now all limbs start as wood prosthesis and must be upgraded through items&#13;
+- Sawblades, Pistons, Guards, Lava lamps, both types of Ceiling turrets, Cryo-drones, and Pus sacks now drop Archipelago Items&#13;
+# Changes&#13;
+- Proguseful (Progression + Useful) items now appear gold inside the console, similar to how other games handle it&#13;
+- The window title now shows the mod version&#13;
+- Reworded option descriptions to use correct terminology regarding locations and checks [APWorld Change]&#13;
+- The Defeat Elder Thornback goal removes all locations after Overgrown Depths [APWorld Change]&#13;
+- The default depth for a Reach Depth goal is now 2700 [APWorld Change]&#13;
+- Critical barotrauma has been added to the Deadly Moodlesanity exclusions preset [APWorld Change]&#13;
+- Barotrauma, Critical barotrauma, and Bent prosthesis have been added to the Difficult Moodlesanity exclusions preset [APWorld Change]&#13;
+- Changed some of the option groups around [APWorld Change]&#13;
+- The mod now disables Steam Achievements on startup&#13;
+- You can now remove the Cargo without the Minigames item when Minigame Randomization is set to As One&#13;
+- Replaced all instances of "Experiment" with "the Sawian" in option descriptions [APWorld Change]&#13;
+- Colored instances of the word "Archipelago" now visually cycle colors from left -&gt; right instead of right -&gt; left&#13;
+- Updated KaitoKid.ArchipelagoUtilities.Net to 3.1.16&#13;
+- Internal bleeding and Hemothorax no longer logically require a living limb, as you can get both from impact damage and traps [APWorld Change]&#13;
+	- This is technically true for the bleeding moodles themselves as well, but that sounds unfun&#13;
+- Dislocations now logically require a living limb [APWorld Change]&#13;
+	- Specifically "Moodlesanity - Dislocated limb". Specific moodles like "Dislocated spine" do work with prosthesis&#13;
+- The automatic starting layer reselection when selecting an invalid layer now includes layers after Overgrown Depths [APWorld Change]&#13;
+# Fixes&#13;
+- Fixed Craftsanity - Riot helmet not requiring any INT with Skillsanity enabled [APWorld Change]&#13;
+- Fixed Craftsanity location logic requirements leaking between generations [APWorld Change]&#13;
+	- This could only be seen when the Python instance was not terminated between generations, such as with a fuzzer or a generate until successful script&#13;
+- Fixed the "Deadly and Difficult" Moodlesanity Exclusions preset making generation fail [APWorld Change]&#13;
+- Tweaked EnergyLink to hopefully fix it not working sometimes&#13;
+- Fixed not being able to receive Skills in a run after saving and reloading it&#13;
+- Fixed Sawian Unlocks not locking Sawians after exiting to the main menu after a run/tutorial&#13;
+- Fixed Sawian Unlocks always being enabled modside&#13;
+# Known Issues&#13;
+- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators&#13;
+- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game&#13;
+- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game&#13;
+&#13;
+**Full Changelog (from last pre-release)**: https://github.com/Nichologeam/CUAP/compare/v0.13.0-pre4...v0.13.0&#13;
+**Full Changelog (from last stable)**: https://github.com/Nichologeam/CUAP/compare/v0.12.3...v0.13.0</content>
+    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.13.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/tag/0.3.0</id>
+    <title>Chants of Sennaar v0.3.0</title>
+    <updated>2026-11-15T07:51:33+00:00</updated>
+    <author>
+      <name>synaesthesis</name>
+    </author>
+    <content>Floor 2 has now been added to ChantsOfSennaarAP!&#13;
+All Warrior runes and journal pages are now included as AP items and locations.&#13;
+&#13;
+Additionally, Terminals can now be unlocked through the multiworld!&#13;
+This increases the possibility of non-linear game progression beyond the vanilla sequence of events and unlocks.&#13;
+&#13;
+**IMPORTANT:**&#13;
+This update is **not** backwards-compatible with 0.2.x components.&#13;
+Please update both the mod and the apworld before playing this update.&#13;
+&#13;
+## Added&#13;
+- 33 new runes as AP items and location checks&#13;
+- 11 new pages as AP location checks&#13;
+- 3 new key items as AP items&#13;
+- 4 new terminals as AP items&#13;
+&#13;
+## Changed&#13;
+- Increased maximum page count for journal hunt goal to 21&#13;
+- Journal page names now contain a descriptor referencing their means of acquisition&#13;
+- Mod now prevents backwards access from Abbey Great Door to Abbey Underground 1 until Lens is received&#13;
+- Moved text client from the top-center of the screen to the top-right third of the screen&#13;
+&#13;
+## Fixed&#13;
+- Updated several logic connections between scenes and runes in Floor 1&#13;
+- Fixed item ID assignment for filler-class key items&#13;
+- Mod now suppresses repeated display of specific tutorial messages when no journal pages have been completed</content>
+    <link href="https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/tag/0.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Leiqart/gta3-archipelago/releases/tag/v0.4.0</id>
+    <title>Grand Theft Auto III v0.4.0</title>
+    <updated>2026-11-15T09:07:44+00:00</updated>
+    <author>
+      <name>Leiqart</name>
+    </author>
+    <content>Weapon licenses, a save file between sessions, and $10000 to fill the pool. Use the plugin and the APWorld of this release together, and generate a new room for it.
+
+## What's new
+
+- **Weapon licenses**: nine weapons the shops sell are items (Uzi, shotgun, AK-47, M-16, sniper rifle, rocket launcher, flamethrower, Molotov cocktail, grenade). A shop shows the weapon out of stock until you receive its license; the pistol and the body armour are sold as in the game.
+- **$10000**: the only extra item, which fills the rest of the pool.
+- **Excluded locations** (`exclude_locations`): each one takes the place of a license, from the grenade's back, and gets a $10000; that weapon is then sold as in the game. A room of GTA III alone can fill 9 at most.
+- **`start_inventory_from_pool`**: start with items taken out of the pool, like `Uzi License: 1`; each one leaves a $10000 in its place.
+- **Between sessions**: GTA3 Client keeps your money, health, armour and weapons in a save file of its own, one per room (`gta3_saves` in Archipelago's folder). A new game started with **Run Archipelago** gets them back, with the items received in the meantime, and never gives an item twice.
+- **Received items**: items that arrive together show in one message, for 3 seconds; a new message takes the place of the previous one.
+
+## Known limitations
+
+- The missions passed do not come back between sessions: a new game starts the story again. Play a run in one session for now.
+- Saving and loading a game is not supported yet.
+- Only `gta3.exe` 1.0 is supported: downgrade the Steam copy first (see the README's *Steam version* section).
+- With `need_money` on, the logic counts no money: you may have to earn it in the game.
+- Played far out of the story's order, a mission may still rely on something an earlier one sets up. Please report the ones that break.
+
+## Installation
+
+You need GTA III for PC **version 1.0**, Archipelago **0.6.7** or newer, and the ASI loader [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/latest/download/Ultimate-ASI-Loader.zip) (32-bit, `Ultimate-ASI-Loader.zip`, not the `_x64` one).
+
+1. Put the `dinput8.dll` of `Ultimate-ASI-Loader.zip` next to `gta3.exe`.
+2. Put `GTA3Archipelago.asi` in the `scripts` folder next to `gta3.exe` (create it if needed).
+3. Double-click `gta3.apworld` to install it in Archipelago, or copy it into Archipelago's `custom_worlds` folder.
+4. Write your YAML (`game: Grand Theft Auto III`, with the options of the README) and generate or join a room.
+5. Open **GTA3 Client** from the Archipelago Launcher and connect to the room.
+6. Start GTA III and choose **Run Archipelago** in the main menu. Keep GTA3 Client open while you play.
+
+Coming from 0.3.0: replace both files with this release's, and generate a new room.
+
+## Files
+
+- `GTA3Archipelago.asi`: the game plugin, for the `scripts` folder.
+- `gta3.apworld`: the GTA III world and GTA3 Client, for Archipelago.
+- `README.md`: how it plays, the options, and the full installation guide.
+- `LICENSE-MinHook.txt`: the license of MinHook, which the plugin contains.
+</content>
+    <link href="https://github.com/Leiqart/gta3-archipelago/releases/tag/v0.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/captpurpleheart/tsfp-archipelago/releases/tag/v1.3.1</id>
+    <title>TimeSplitters Future Perfect v1.3.1</title>
+    <updated>2026-11-15T10:54:40+00:00</updated>
+    <author>
+      <name>CaptPurpleHeart</name>
+    </author>
+    <content>Hotfix for 1.3.0.&#13;
+&#13;
+## Fixed&#13;
+- **A Death Link you receive now kills you instead of failing the mission.** Some modes awarded a trophy when a mission was failed for you, because the score or time was already in range. Nothing happens if you are already dead, or in the menus.</content>
+    <link href="https://github.com/captpurpleheart/tsfp-archipelago/releases/tag/v1.3.1"/>
   </entry>
 </feed>

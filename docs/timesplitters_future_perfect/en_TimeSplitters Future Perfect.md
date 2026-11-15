@@ -110,11 +110,39 @@ With Streamer Mode on, the licensed song in the Disco map and the credits is rep
 A Monkey", another track from the game. It applies while the client is connected, from the next
 time that music starts.
 
+## In-game announcements
+While you play, the client shows Archipelago news in the game's own text at the bottom of the
+screen: items you receive ("Received ... from ..."), items you send ("Sent ... to ...") and your own
+items you find ("Found ..."). Death Links you receive show in large text in the middle. This works in
+Story, Arcade League and Challenges. Messages that arrive while you are in the menus are not shown.
+
+Type `/announce` in the client to see the settings, `/announce off` or `/announce on` to switch them
+all, or for example `/announce sent off` or `/announce filler off` to hide one kind. Your choice is
+remembered. Announcements need Dolphin's cheat codes to be off.
+
+## Award screen
+After a mission, the "New Feature Unlocked" screen also lists what you found at the locations you
+checked, and what other players sent you, since the last time it was shown:
+1. your story levels, arcade missions and challenges ("NEW STORY LEVEL AVAILABLE!",
+   "NEW MISSION AVAILABLE!", "NEW CHALLENGE AVAILABLE!"),
+2. your characters, weapons and cheats (listed by the game itself, as usual),
+3. starting armour and score multipliers ("ARCHIPELAGO ITEM FOUND!"), then weapon buffs
+   ("WEAPON BUFF FOUND!"),
+4. items for other players ("PLAYER'S ITEM!"): progression items first, then useful, traps and filler.
+The mission or story level you have just played is not listed, even if its item arrived while you
+were in the menus. The screen holds 10 entries. This needs Dolphin's cheat codes to be off, and the client connected to Dolphin before you
+finish your first mission after starting the game.
+
 ## Death Link
 With Death Link on, failing a mission sends a death to everyone else with it on: dying in a
-Story level, failing a Story objective, or failing an Arcade League mission or Challenge. Dying
-and respawning in an Arcade League match does not count. When someone else's death arrives, the
-mission you are playing fails; nothing happens if you are in the menus or a custom Arcade match.
+Story level, failing a Story objective, or failing an Arcade League mission or Challenge. In
+Arcade League missions you respawn when you die, so a death is sent every few deaths instead: the
+Death Link Amnesty option (1 to 5, default 3) sets how many deaths in one mission send one
+(1 = every death). The count starts again with every mission, including a restart. When someone
+else's death arrives, you die in the mission you are playing, just as if you had been killed: in
+Story levels and Challenges that fails the mission, in Arcade League missions you respawn. A death
+you receive is never sent on and doesn't count towards Amnesty. Nothing happens if you are in the
+menus or a custom Arcade match, or are already dead.
 Finishing an Arcade League mission or Challenge below Bronze counts as failing it. Receiving
 deaths needs Dolphin's cheat codes to be off.
 
