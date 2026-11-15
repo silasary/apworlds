@@ -2,280 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-14T18:14:31.858040+00:00</updated>
+  <updated>2026-11-15T00:16:54.039516+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.3.0-PR</id>
-    <title>Spyro: A Hero's Tail v2.3.0</title>
-    <updated>2026-11-11T09:30:29+00:00</updated>
-    <author>
-      <name>PhoenixAki</name>
-    </author>
-    <author>
-      <name>mayaxtg</name>
-    </author>
-    <author>
-      <name>ebbeaht</name>
-    </author>
-    <content># Spyro: A Hero's Tail v2.3.0: The "I Could Barely Fit the Full Changelog" Update&#13;
-As is becoming tradition, v2.3.0 has *way* more than was originally planned. My to-do list is almost completely empty now, but there is just barely enough to justify a v2.4 probably not super long into the future, depending on irl factors.&#13;
-&#13;
-[Setup Guide](&lt;https://github.com/PhoenixAki/PhoenixAP/wiki/Spyro:-AHT-1-%E2%80%90-Setup-Guide-&amp;-FAQ&gt;)&#13;
-## Hotfix 1 (11/12/26 at approximately 7:15PM EST)&#13;
-- Fixed an issue that led to Universal Tracker occasionally reporting incorrect info when evaluating glitched logic.&#13;
-- Added convenience client command `/enabled_tricks` that outputs all tricks enabled for this seed.&#13;
-- Fixed an issue with &amp; re-wrote the code that ensures `dragon_eggs_goal` and `light_gems_goal` aren't set too high as a result of `exclude_chest_items` and/or `minigame_checks`.&#13;
-- Fixed Global Lockpicks not increasing in-game when received due to an item name client typo.&#13;
-- Fixed Red's Laboratory Lockpicks generating a client error due to an off-by-1 client typo.&#13;
-- Updated game mod files to v22.1, which is a non-critical update that fixes 2 things:&#13;
-  - When cannons are locked, the Icy Camp cannon no longer shows the :b: symbol above it still.&#13;
-  - When using level lockpicks, the pause menu lockpick counts now turn green to make it easier to tell when all are collected.&#13;
-&#13;
-# Changelog (compared to v2.2.2)&#13;
-## Most Notable&#13;
-- AHT AP now supports 31 different tricks via `enabled_tricks`. Each one is an alternative logical path to different regions or locations in the game.&#13;
-  - This comes with glitched logic on the tracker page. Things that are possible to do, but only through a trick that you don't have enabled, will display as "glitched".&#13;
-  - This also comes with, unsurprisingly, a large number of logic adjustments. Most changes were small in scope to support tricks, but some areas got their logic completely rewritten (Red's Lab being the most impacted).&#13;
-- New option `item_bundles` lets you bundle Dark Gems, Global Lockpicks, or Light Gems together so you receive multiple at a time.&#13;
-- New option `cannon_lock` lets you lock the ability to use cannons behind a "Cannon Unlock" item. Minigame cannons are not affected.&#13;
-  - On a related note, "Turret" minigames have been renamed to "Cannon" now, to be more consistently named.&#13;
-- New option `minigame_checks` replaces `vanilla_minigame_rewards`. It allows you to partially or fully disable each type of minigame.&#13;
-- New option `chest_keys` replaces and is an expansion of `key_rings`. It allows you to choose from now 4 different ways to unlock chests.&#13;
-- Pay careful attention to your YAML. Many options have had their settings altered for various reasons.&#13;
-- More code refactoring than I could ever hope to list here. The most heavily rewritten areas include the generator's code for creating items, the client's code for processing received items, and the generator's code for handling edge cases (`auto_corrections` stuff), but almost everything was touched at least a little bit.&#13;
-## Less Notable&#13;
-- New option `disguise_shop_items` replaces `hide_shop_item_names`. It allows for further hiding of shop item information.&#13;
-- `trap_length` has been expanded slightly to allow for individual customization of each type of trap's length.&#13;
-- Added 11 YAML presets, mostly intended to show off notable features or to minimize/maximize certain types of items.&#13;
-- Condensed the 6 min/max range options for randomized costs into a single option called `random_costs`.&#13;
-- Expanded the "Breath Bombs" filler category so that each type of bomb is individually choosable. They also now use their vanilla game models instead of lockpicks.&#13;
-- DeathLink can now temporarily be disabled in the client using `/toggle_deathlink`.&#13;
-- A number of options that were previously unable to be randomized now can be.&#13;
-- Options Creator is supported again. Previous update(s) introduced some option types that weren't compatible, but I have fixed that now.&#13;
-- In the event a new save file is needed, map icons will now correctly reflect current logic. Similarly, the shop is synced so that already-bought items will appear as bought.&#13;
-- Shop items now properly list in ascending order on the tracker page.&#13;
-## Fixes&#13;
-- Fixed a client bug where if a host sent multiple copies of an item via `/send` or similar, only the first one would get processed.&#13;
-- Fixed a client memory error that would occur if connecting to an AP room that is password protected.&#13;
-- Fixed a niche issue impacting seeds that have no goal and are fixed by `auto_corrections`, in which the client wouldn't get the memo about the fix.&#13;
-- Strengthened the client's logic so the game is not patched if there is a mismatch between versions, and the Dolphin process is properly unhooked when disconnecting.&#13;
-- Fixed the client not properly logging to a .txt file.&#13;
-&#13;
-## What's Changed (auto-generated by GitHub)&#13;
-* v2.3.0 Update by @PhoenixAki in https://github.com/PhoenixAki/PhoenixAP/pull/13&#13;
-**Full Changelog**: https://github.com/PhoenixAki/PhoenixAP/compare/AHT-v2.2.2...AHT-v2.3.0-PR</content>
-    <link href="https://github.com/PhoenixAki/PhoenixAP/releases/tag/AHT-v2.3.0-PR"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/tag/0.5.1</id>
-    <title>Spelunky 2 v0.5.1</title>
-    <updated>2026-11-11T12:56:34+00:00</updated>
-    <author>
-      <name>Eszenn</name>
-    </author>
-    <author>
-      <name>DDRKhat</name>
-    </author>
-    <content>This is an update to both APworld + Client. Both previous versions supported (but you should update APworld to fix logic issues)&#13;
-# What's new&#13;
-## Granular "Qilin Skip" logic&#13;
-Previously if you turned this on, it expected you to know a skip which _could_ require no gear ("Bubble skip"), now there is a few pre-sets. This is _logic_ only, if you can bubble skip, go for it!&#13;
-## YAML-creation categories&#13;
-Not much to scream about but, things are finally grouped up! Yay?&#13;
-&#13;
-_**Note:**_ Deathlink messages still refer to a "WIP message", these felt like important fixes to not hold back.&#13;
-&#13;
-## Bug Fixes!&#13;
-- Item-access logic _(Yes, again. I 'half' fixed it last time. Checked the wrong list... D'oh...)_&#13;
-- Instant-Death handling _(Ghosts/Jelly/Ghist. Old way used a bad detection method. Found the flaws with one that definitely worked, finally)_&#13;
-- Amnesia trap killing you _(I forgot to check your on the right layer, oops!)_&#13;
-- Ironman mode including Cosmic checkpoints&#13;
-&#13;
-# Huge thanks and respect to [Eszenn](https://github.com/Eszenn/) for piloting the original implementation, best of wishes to them.&#13;
-## Big thanks still goes to @cloiss + (discord) ``activegalacticnucleus`` for their contributions to 0.3.0&#13;
-&#13;
-# [Installation Steps here](https://github.com/DDR-Khat/Spelunky2-Archipelago?tab=readme-ov-file#installation-instructions)</content>
-    <link href="https://github.com/DDR-Khat/Spelunky2-Archipelago/releases/tag/0.5.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DQIX/ArchipelagoDQIX/releases/tag/0.3.0</id>
-    <title>Dragon Quest IX v0.3.0</title>
-    <updated>2026-11-11T13:17:11+00:00</updated>
-    <author>
-      <name>kid2407</name>
-    </author>
-    <content># Dragon Quest IX - Release (Version 0.3.0)&#13;
-&#13;
-*This requires Archipelago **0.6.7 or newer!***&#13;
-*This **is not** compatible with seeds generated on an earlier version*&#13;
-&#13;
-New to the game? Check out the [FAQ](https://discord.com/channels/731205301247803413/1427594624389742716/1491731616068800543)&#13;
-## Bugs fixed&#13;
-&#13;
-* Fixed possible option problem when choosing to modify shop prices, but not shops themselves&#13;
-* Shop Rando: Instead of failing gen if a shop can't be filled, it now just has fewer items&#13;
-* Shop Prices: If the maximum for shop price is lower , this now prints a warning and fixes the value automatically&#13;
-&#13;
-## New Feature: Randomized Skill Trees&#13;
-&#13;
-After a lot of trial and error, Skill Tree Randomization is here! You can choose from the following options:&#13;
-* "Vanilla" =&gt; Do not randomize Skill Trees&#13;
-* "Fully Random" =&gt; All skills randomized across all skill trees</content>
-    <link href="https://github.com/DQIX/ArchipelagoDQIX/releases/tag/0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLiloji/FTLArchipelago/releases/tag/v0.6.0</id>
-    <title>FTL: Faster Than Light v0.6.0</title>
-    <updated>2026-11-11T13:33:23+00:00</updated>
-    <author>
-      <name>TheLiloji</name>
-    </author>
-    <content>Every seed gets its own save, fights and events send checks, four new traps, two new events, new options to change how a run feels, and a dashboard that knows the logic. Plus a lot of fixes from your reports during the betas.
-
-## Updating from 0.5
-
-1. In ftlman, replace `ArchipelagoFTL.ftl` with the one from this page and click Apply.
-2. **Copy the Hyperspace library from this page into the FTL folder again**, after Apply: `Hyperspace.dll` (Windows), `Hyperspace.1.6.13.amd64.so` (Linux, Steam) or `Hyperspace.1.6.12.amd64.so` (Linux, GOG/Humble). 0.6 needs this new one.
-3. Replace `ftl.apworld` too, and make a new seed: the new options only exist in a seed made with 0.6. Archipelago 0.6.7 is needed.
-
-On Epic, FTL has to be downgraded to 1.6.9 by hand first, see the setup page.
-
-## Saves
-
-- **Every seed has its own FTL save**, one per slot. When you join a new seed the mod asks first, and the old save stays exactly as it was. Your normal FTL save is never touched.
-- A **Saves** button on the main menu lists them all, with their checks and when you last played. Load one, run in progress included, or archive it.
-
-## New checks
-
-- **Fights per sector** (`combat_checks_mode: per_sector`): the first fights you win in each sector send their own checks, 1 to 5 per sector.
-- **Archipelago Event checks** (`event_checks`, 5 by default): the relay and pirate events hand out their own checks. Every sector gets one of them for sure.
-- **Reactor checks** (`reactor_checks`): reactor power 10, 15, 20 and 25.
-- Accepting a surrender counts as a fight won, an enemy that jumps away does not.
-
-## New options
-
-- **Sector Skip**: a layout that already reached the next sector can skip sectors 1 to 4. Their first beacon is an exit, and jumping right away gives 60 scrap and one more pick in the start-of-run menu.
-- **Sector Locks**: each layout needs two Sector Passes, to leave sector 4 and sector 7.
-- **Flagship Sabotage** (0 to 5): each Flagship phase arrives weakened, less hull, shields or weapons.
-- **Archipelago Shop Deal Scrap** (0 to 200%): what the deals pay, 0 turns them off.
-- **Kestrel Needs Its Key**: when you don't start with the Kestrel, it needs its key like any other ship. Until it comes, the hangar marks it NO KEY and START refuses it.
-- **Progressive Unlocks the System**: the first upgrade of a system also unlocks it, so systems come sooner.
-- **Layout Unlocks**: `independent` (a Type B or C can come without the A) and `progressive` (one key per layout, A then B then C).
-- **Early Ship Keys** (1 by default): a second ship comes early, in your own first checks.
-- **Event Beacons**: which beacons say ARCHIPELAGO on the map.
-- **Crew Names**: crew who join take the other players' names, or the team's, or FTL's.
-- **Archipelago Shop Hints**: what you see at an AP STORE becomes a hint for its owner (on by default).
-- **Sector Logic** `relaxed` is now called `none` (old YAMLs still work).
-- A new **`solo_game` preset**: about 7 hours, made for one player alone.
-- Options are sorted in groups in the Options Creator.
-
-## Traps
-
-- **Hazard Trap**: your next fight's beacon gets a nebula, ion storm, asteroids, a sun or a pulsar.
-- **Anti-Ship Battery Trap**: your next fight has a battery shooting at you.
-- **Power Surge Trap**: your next enemy gets a Flagship power surge, again every 25 seconds (lighter in sectors 1 and 2).
-- **O2 Drain Trap**: every room loses its air at once, never enough to kill a badly hurt crew member.
-- Hull Breach Trap makes one real breach in a random room.
-- With Trap Link on, a deal's trap goes to another FTL player only when someone is really on the link. Alone it always hits you.
-
-## Events
-
-- **Engi overclock**: an Engi tech bets he can push your reactor further (Engi and civilian sectors).
-- **Arms dealer**: rare, in pirate sectors.
-- The pirates' package gives a vague word on what it is worth.
-- The Zoltan checkpoint costs 15 scrap for 3 fuel.
-
-## Dashboard and menus
-
-- **In logic marker**: a blue line on the checks you can already do with what you received.
-- The hangar refuses START on a ship that would not count (out of the seed or not received yet) and says why, and RANDOM SHIP only draws among the ships you have.
-- The dashboard opens in the hangar too, on the ships page, sorted by checks left with an "Unlocked only" filter.
-- The start-of-run menu shows each weapon and drone's power and stats, lets you pick which systems come aboard when they don't all fit, offers Oxygen for free to a ship that has none, and a Medbay or Clone Bay swap.
-- Energy Link shows the shared reserve in fuel and tells you when others put fuel in.
-- A crew member received with a full crew waits for a free seat.
-- The connect panel has a real cursor: arrows, Home, End, Delete, Ctrl+A, Ctrl+V at the cursor.
-- **Universal Tracker** works, without your YAML.
-
-## Fixes
-
-- Locked items and systems really stay out of stores, even with a store opened by an event or Multiverse's store button.
-- Death Link: holograms, temporary crew and crew taken away by an event are not deaths, and Death Link can be switched off in game.
-- Fights won offline before a crash are sent on the next connection.
-- A continued run sends the fights it had counted.
-- Run start scrap is given once, even when the run started before connecting.
-- Shop packages count spheres from 1, like Archipelago.
-- Systemsanity no longer has Install checks for Engines, Oxygen, Piloting and Weapon Control, every ship starts with them.
-- Random YAMLs always generate.
-- Ships are named by their class in every menu (Federation Cruiser B).
-
-Thanks to Trapper444 and Yunus for the Spanish and German reviews, and to everyone who tested the betas and reported bugs on the Discord.
-
-## How to install
-
-| | |
-|---|---|
-| **Windows** | [English](https://github.com/TheLiloji/FTLArchipelago/blob/main/docs/wiki/Setup-Windows.md) · [Français](https://github.com/TheLiloji/FTLArchipelago/blob/main/docs/wiki/Setup-Windows.fr.md) · [Deutsch](https://github.com/TheLiloji/FTLArchipelago/blob/main/docs/wiki/Setup-Windows.de.md) · [Español](https://github.com/TheLiloji/FTLArchipelago/blob/main/docs/wiki/Setup-Windows.es.md) · [Italiano](https://github.com/TheLiloji/FTLArchipelago/blob/main/docs/wiki/Setup-Windows.it.md) · [Português](https://github.com/TheLiloji/FTLArchipelago/blob/main/docs/wiki/Setup-Windows.pt.md) |
-| **Linux** | [English](https://github.com/TheLiloji/FTLArchipelago/blob/main/docs/wiki/Setup-Linux.md) · [Français](https://github.com/TheLiloji/FTLArchipelago/blob/main/docs/wiki/Setup-Linux.fr.md) · [Deutsch](https://github.com/TheLiloji/FTLArchipelago/blob/main/docs/wiki/Setup-Linux.de.md) · [Español](https://github.com/TheLiloji/FTLArchipelago/blob/main/docs/wiki/Setup-Linux.es.md) · [Italiano](https://github.com/TheLiloji/FTLArchipelago/blob/main/docs/wiki/Setup-Linux.it.md) · [Português](https://github.com/TheLiloji/FTLArchipelago/blob/main/docs/wiki/Setup-Linux.pt.md) |
-</content>
-    <link href="https://github.com/TheLiloji/FTLArchipelago/releases/tag/v0.6.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.14</id>
-    <title>Stardew Valley v8.1.14</title>
-    <updated>2026-11-11T14:15:07+00:00</updated>
-    <author>
-      <name>Kaito Kid</name>
-    </author>
-    <author>
-      <name>Jouramie</name>
-    </author>
-    <author>
-      <name>Witchybun (Mod Support)</name>
-    </author>
-    <author>
-      <name>Noa (Entrance Randomizer)</name>
-    </author>
-    <content>## Apworld&#13;
-- Fixed a logic issue where grabbing special orders didn't require access to town&#13;
-- Fixed a logic issue where prize tickets grinding didn't appropriately check for the new shuffled help wanted quest conditions&#13;
-- Fixed a logic issue where the "Meet Leah" and "Meet Elliott" locations where placed inside their houses, which cannot be accessed before meeting them.&#13;
-&#13;
-## Mod&#13;
-- Added Sleep Until... Green Rain (only available in summer)&#13;
-- Fixed an issue where autopetting an homeless character (ex: invisible cow) could cause internal crashes&#13;
-</content>
-    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.14"/>
-  </entry>
-  <entry>
-    <id>https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.11.11</id>
-    <title>Northgard v2026.11.11</title>
-    <updated>2026-11-11T14:22:32+00:00</updated>
-    <author>
-      <name>Chakraa</name>
-    </author>
-    <content>&gt; Thanks to everyone who played the alpha and reported bugs. If you're coming from 2026.10.25, this release also includes everything from the Bifrost alpha and the slot switching fixes, summed up below.&#13;
-&#13;
-### Added&#13;
-- **Bifrost mode!** Set `game_mode: bifrost` in your YAML to play the roguelite instead of Conquest. Your progress carries over between runs, won or lost. Realms are items, objectives and some perk cards are checks, and new bonus items give you random perks or buildings that fit your clan. Co-op works too. See the [2026.11.02 notes](https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.11.02) for the full rundown.&#13;
-&#13;
-### Fixed&#13;
-- Bonus items you got during a realm no longer vanish if you lose or retry that realm. They come back as the exact same perk when the realm starts again. (Thanks Aeros Valos for the report!)&#13;
-- If you already lost some bonuses to this, just update and keep playing your run. They come back on their own at the start of your next realm. Since the old version didn't remember the exact perk, you get a fresh one from the same category. No files to delete.&#13;
-- Finishing your goal on one slot and then connecting to another slot in the same client window no longer goals the new slot too.&#13;
-- Bifrost progress made while the client was closed now only gets sent to the slot it belongs to.&#13;
-- Conquest chapters you beat while the client was disconnected now get sent when you reconnect.&#13;
-&#13;
-### Changed&#13;
-- Checks and items now go through in about a second instead of up to 5, in both modes.&#13;
-- Conquest-only options are now labeled "(Conquest)" so it's clear which mode they're for.&#13;
-&#13;
-**Full Changelog**: https://github.com/ChakraaThePanda/Archipelago-Northgard/compare/2026.10.25...2026.11.11&#13;
-</content>
-    <link href="https://github.com/ChakraaThePanda/Archipelago-Northgard/releases/tag/2026.11.11"/>
-  </entry>
   <entry>
     <id>https://github.com/Arrcival/ArchipelagoDK/releases/tag/v2.1.1</id>
     <title>Dome Keeper v2.1.1</title>
@@ -391,7 +122,7 @@ The Steam copy needs a downgrade to 1.0 first: see the README's *Steam version* 
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release12</id>
-    <title>Ocarina of Time v9.1.0r5</title>
+    <title>Ocarina of Time v9.1.0r2</title>
     <updated>2026-11-11T19:48:02+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -502,7 +233,7 @@ Compatible with APWorld 0.1.7 and newer</content>
   </entry>
   <entry>
     <id>https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.1.4</id>
-    <title>Mario Sports Mix v3.1.4</title>
+    <title>Mario Sports Mix v3.1.4.post2</title>
     <updated>2026-11-12T03:30:00+00:00</updated>
     <author>
       <name>ElectroStarz</name>
@@ -510,7 +241,9 @@ Compatible with APWorld 0.1.7 and newer</content>
     <author>
       <name>Puffy</name>
     </author>
-    <content>## What's Changed&#13;
+    <content>Update: Fixed a small bug regarding an error message popping up with no alt paths. Very minor, so not making a whole new version.&#13;
+&#13;
+## What's Changed&#13;
 * Fixed a couple of paths not showing up while on an alt path.&#13;
 * Fixed the storage system, filler/traps/music/tints no longer re-randomize/send upon reopening client.&#13;
 * Harmony Hustle now sends Courtsanity checks as intended by logic&#13;
@@ -575,13 +308,24 @@ This is a pre-release testing version! New features have not been thoroughly tes
     </author>
     <content>Update 1.3.0 of Puzzle Bobble 4 for Archipelago!&#13;
 &#13;
-PuzzleBobble4ArchipelagoClient.exe – The client application that connects Puzzle Bobble 4 to an Archipelago server and handles in-game interactions.&#13;
+### Archipelago Client (v1.3.0)&#13;
 &#13;
-puzzlebobble4.apworld – The Archipelago world file. Required to generate and host a Puzzle Bobble 4 game.&#13;
+#### Bug Fixes&#13;
+- Fixed an issue where receiving the **Pointer Guide** item under certain conditions could disrupt bubble positioning logic.&#13;
 &#13;
-PuzzleBobble4.yaml – The YAML configuration file containing the available game options and settings.&#13;
+#### Puzzle Mode Improvements&#13;
+- In **Puzzle/Arcade**, only worlds that have not yet been completed are selectable.&#13;
 &#13;
-PuzzleBobble4PopTracker.zip – The PopTracker package for tracking your progression and locations. (Still 1.0.0)</content>
+#### VS Improvements&#13;
+- Changed **Level Skip** behavior in VS modes: using a Level Skip now wins the match directly instead of dealing massive damage to the opponent.&#13;
+&#13;
+#### Commands&#13;
+- Added more detailed information to the `/arcade` and `/tarot` commands, including unlocked, completed, and not completed worlds and Tarot cards.&#13;
+&#13;
+### APWorld (v1.3.0)&#13;
+&#13;
+#### General&#13;
+- Updated the APWorld to reflect the latest Archipelago Client changes.</content>
     <link href="https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/tag/v1.3.0"/>
   </entry>
   <entry>
@@ -1567,7 +1311,9 @@ Only the North American ROM is supported. AP notifications are English; mGBA not
 ### Fixes&#13;
 * Fully rewrote/Changed method of flag polling/location checking - Drastically reducing number of memory reads in DSR process and improving performance by up to 160x.&#13;
 * Removed network delay on item popups for others &amp; self&#13;
-* Refactored boss tracking - when bosses are killed, it will sync that they were killed between all saves.</content>
+* Refactored boss tracking - when bosses are killed, it will sync that they were killed between all saves.&#13;
+* Fix Typo on "Kalameet" in location name "RW: Gough's Great Arrow - Kalemeet's Arena"&#13;
+* Adjust firekeeper soul location in BT so it doesn't trigger Lautrec killing Anastacia</content>
     <link href="https://github.com/tathxo/DSAP/releases/tag/v0.3.0"/>
   </entry>
   <entry>
@@ -1618,5 +1364,189 @@ Only the North American ROM is supported. AP notifications are English; mGBA not
 &#13;
 **Full Changelog**: https://github.com/lepideble/factorio-apworld/compare/platformer-0.5.1...platformer-0.5.2</content>
     <link href="https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.5.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.6</id>
+    <title>Chrono Trigger Rando-Dalton Imperial v0.0.6</title>
+    <updated>2026-11-14T21:18:01+00:00</updated>
+    <author>
+      <name>Pseudoarc</name>
+    </author>
+    <author>
+      <name>Anguirel</name>
+    </author>
+    <content>Fixed a bug where RDI patches were not showing up when hosting on the AP website&#13;
+Updated the ctrando lib to pick up some additional fixes to generation</content>
+    <link href="https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/tag/v1.4.0</id>
+    <title>Puzzle Bobble 4 v1.4.0</title>
+    <updated>2026-11-14T22:36:27+00:00</updated>
+    <author>
+      <name>Hish</name>
+    </author>
+    <content>Update 1.4.0 of Puzzle Bobble 4 for Archipelago!&#13;
+&#13;
+### Archipelago Client (v1.4.0)&#13;
+&#13;
+#### Progression Item Sound&#13;
+- Added a sound effect that plays when receiving a **Progression Item**, making it easier to notice received items while **BK**.&#13;
+- Added the `/soundtest` command to play the progression-item sound to adjust the client's volume through the Windows Volume Mixer.&#13;
+&#13;
+### APWorld (v1.4.0)&#13;
+&#13;
+#### General&#13;
+- Fixed a typo.&#13;
+- Updated the APWorld to reflect the latest Archipelago Client changes.&#13;
+&#13;
+### PopTracker (v1.4.0)&#13;
+&#13;
+#### Tracker Improvements&#13;
+- Updated **VS/Story Complete** and **VS/Contest Complete** trackers to display only the characters selected in the YAML, hiding characters that cannot be unlocked or played in the current setup.</content>
+    <link href="https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/tag/v1.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.17.0</id>
+    <title>Slime Rancher 2 v0.17.0</title>
+    <updated>2026-11-14T22:38:14+00:00</updated>
+    <author>
+      <name>Rhelys</name>
+    </author>
+    <content>## New Features&#13;
+- The mod now supports automatic reconnection&#13;
+  - Mod attempts to reconnect after 2, 5, 10, 20, and then every 30 seconds while disconnected&#13;
+  - Check locations still work while disconnected&#13;
+  - Retries stop on Save/Quit, connection to a server with a different seed, or refused login (password added/removed while disconnected)&#13;
+- New Setting: `treasure_pod_keys` - Enabling this setting will either add a global unlock key or one per-region which blocks opening Treasure Pods until obtained.&#13;
+- New Setting: `drone_access_key` - Enabling this setting will add a new item which blocks opening Research Drones until obtained.&#13;
+*These two settings will hopefully provide a good option to break up the potentially large Sphere 1 that SR2 can have*&#13;
+- New Setting: `prisma_shards_exact` - Forces game generation to include the number of Prisma Shards you want rather than culling based on the location count of the game. &#13;
+  - Most useful in solo games or games with very few filler locations available. &#13;
+  - Generation will throw an error telling you how many locations are missing if all shards cannot be placed&#13;
+&#13;
+## Quality of Life Updates&#13;
+- Added information on the number of checks that are influenced by each setting in the apworld&#13;
+- Updated how locked location popups were formatted to make them easier to read/understand&#13;
+- Updated the error message thrown when a game fails to generate due to too few locations&#13;
+&#13;
+## Performance Improvements&#13;
+- Updated how the Vacpack Spew Trap works to reduce game impact when lots of items are ejected&#13;
+- Updated how the mod scans for available Research Drones and Plort Doors to reduce the number of calls made&#13;
+- Fixed how the pause menu goal display checks for whether or not it should display&#13;
+*These should help improve performance in areas like the Grey Labyrinth which pull in a large amount of things to check all at once* &#13;
+&#13;
+## Logic Fixes&#13;
+- Updated Jetpack logic for Dash Boots II and Pulse Wave craft locations&#13;
+- Explicitly added Jetpack requirements for all Powderfall Bluffs locations to account for the `bundled` region access mode&#13;
+  - *Logic is not yet in place for the aurora bridges in Powderfall Bluffs. This means that more locations are technically available sooner than the logic expects. This will be updated in a future release*&#13;
+- Golden Sureshot III now correctly requires access to either Ember Valley or Starlight Strand&#13;
+&#13;
+## Bug Fixes&#13;
+- Fixed the location detection for `Shadow Plort Door: Waterworks- Inside glass button puzzle in front of giant coral`&#13;
+- Fixed an issue where the in-save Archipelago options menu wouldn't load correctly&#13;
+&#13;
+## Misc Updates&#13;
+- `Progressive Water Tank` has been renamed to `Water Tank` to match other single-level upgrades&#13;
+- The `item_notifications` setting now defaults to `progression` (was `progression_useful`)&#13;
+- The `randomize_slimepedia` setting has been renamed to `randomize_slimepedia_slimes` to better describe what it puts in logic&#13;
+- Minimum Archipelago Version has been updated from 0.6.4 to 0.6.6 in preparation for some experimenting with Rule Builder</content>
+    <link href="https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.17.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/UFO-50-Archipelago/Archipelago/releases/tag/0.4.0</id>
+    <title>UFO 50 v0.4.0</title>
+    <updated>2026-11-14T23:25:41+00:00</updated>
+    <author>
+      <name>Leonarth</name>
+    </author>
+    <author>
+      <name>ScipioWright</name>
+    </author>
+    <author>
+      <name>Stew</name>
+    </author>
+    <author>
+      <name>Emily Bunny</name>
+    </author>
+    <author>
+      <name>Rooby Roo</name>
+    </author>
+    <author>
+      <name>atomicpeace</name>
+    </author>
+    <content>@SSBStew has added both Grimstone and Golfaria now!&#13;
+&#13;
+## What's Changed&#13;
+* Golfaria, Grimstone, and Divers update by @SSBStew in https://github.com/UFO-50-Archipelago/Archipelago/pull/29&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/UFO-50-Archipelago/Archipelago/compare/0.3.0...0.4.0</content>
+    <link href="https://github.com/UFO-50-Archipelago/Archipelago/releases/tag/0.4.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha4</id>
+    <title>Crash Team Racing v0.3.0a4</title>
+    <updated>2026-11-15T00:04:28+00:00</updated>
+    <author>
+      <name>Dowlle</name>
+    </author>
+    <content>## Discord
+
+Come hang out on [Appie's Games Discord](https://discord.com/invite/HxXy4mKQ5E). Test builds, bug reports and YAML sharing all happen there.
+
+Alpha4 is out! Thanks to everyone who played alpha3 and sent reports, most of this release is fixes for stuff you found. There are also a few new things to play with: Wumpasanity, weapon crate checks and simpler pad colours. It's still an alpha, so 0.2.4 stays the stable release.
+
+[Full notes on AP-Pie](https://ap-pie.com/ctr/releases/0-3-0) · [Setup guide](https://ap-pie.com/guides/ctr)
+
+Want to see the new Play Solo options? Here's a short video: https://www.youtube.com/watch?v=E75AYB8IeH8
+
+## Before you try it
+- Use the alpha4 client and APWorld together. Your alpha3 YAML still works.
+- AP boxes are on by default now, 15 per track. Don't want them? Add `item_box_count: 0`.
+- The in-game track downloads only show tracks whose authors said yes. Tracks you already have keep working.
+
+## Fixed
+- The game crashed in the credits after beating Oxide. That one's gone, and so is the crash when you leave the title screen running.
+- Papu's Pyramid had CPUs that never finished their laps, so your place was way off. Fixed.
+- Races always have a full field now, no more empty spot at the start.
+- The save box could follow you into a race and crash on EXIT. Fixed.
+- Custom tracks show their own name everywhere instead of a retail one.
+- Time Trial and Arcade don't send checks anymore, only Adventure does.
+- A bunch of crashes on imported tracks (Motor Sports Land, the Coco Team Racing tracks, Time Trial retry) are fixed.
+
+## New
+- Wumpasanity: Wumpa crates and loose fruit can be checks. Weapon crates too. Both are off by default.
+- Pick how many AP boxes each track gets with Item Boxes per Track.
+- Pads are green, red or grey now, same as PopTracker.
+- The Wumpa counter stops at 10 like the original. With the Wumpa Shop on, the rest goes into your bank.
+- You can change the AI difficulty between races from the hub pause menu.
+- Pads with a second stage show what it needs right under the name.
+- Three track authors got their own cup, and it races their tracks first.
+- A random hub shows up behind the name entry when the seed picks your racer.
+
+## Known issues
+- North Pole can have broken trees as the third race of a cup.
+- Lots of Saphi tracks are Time Trial only, so they can't be used in a seed yet.
+- The in-game tracker doesn't show every check yet.
+- Some unusual YAMLs still fail to generate. Send me the YAML if it keeps happening.
+
+## Found a problem?
+[Open an issue](https://github.com/dowlle/ctr-native-ap/issues/new/choose) or post it on the Discord. Add your YAML and the support bundle (`support-bundle.bat` or `support-bundle.sh`) if you can.
+
+## Thanks
+Big thanks to Boxic, Lolothesamurai, PanchoPew and Lockheart for letting me offer their tracks in the game, and to FrostedWombat for the Coco Team Racing import.
+
+## Downloads
+Windows: `ctr-archipelago-v0.3.0-alpha4-windows-x86.zip`. Linux or Steam Deck: `ctr-archipelago-v0.3.0-alpha4-linux-x86.tar.gz`. Both include the client, the matching `ctr.apworld` and Play Solo. You need your own NTSC-U copy of the game. The client is GPL-3.0; the source is the `v0.3.0-alpha4` tag.
+
+| File | SHA-256 |
+|---|---|
+| `ctr-archipelago-v0.3.0-alpha4-windows-x86.zip` | `c2ded8f0eaafb7d9195c7cfc1029fa6b3b1563489a2ed80f1ddce827003dab03` |
+| `ctr-archipelago-v0.3.0-alpha4-linux-x86.tar.gz` | `7d2cbdf3f4d9418107738d11c06a0b2447833ecc204639edfa193711a1159d45` |
+| `ctr.apworld` | `5c0e88b2f12f8ad477a14ebc2cf51b3b911051c58e5859a168a9854cebfb3e3d` |
+
+</content>
+    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha4"/>
   </entry>
 </feed>

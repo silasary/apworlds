@@ -38,19 +38,21 @@
 ## Configuring Your YAML
 
 Download a template YAML from the [Archipelago settings page](https://archipelago.gg) and
-edit it to your liking.  Key options:
+edit it to your liking. Every option, with its description, is on the
+[Options Page](/games/Slime%20Rancher%202/player-options). Key options:
 
 | Option | Description |
 |---|---|
-| `goal` | Win condition — `labyrinth_open`, `newbucks`, `prismacore`, or `slimepedia` |
+| `goal` | `labyrinth_open`, `newbucks`, `prismacore`, `slimepedia`, `plort_seller` or `prisma_shard_hunt` |
 | `randomize_pods` | Include Treasure Pods as location checks (default: on) |
 | `randomize_gordos` | Include Gordo Slimes as location checks (default: on) |
 | `randomize_map_nodes` | Include Map Data Nodes (default: on) |
-| `randomize_slimepedia` | Include Slimepedia Slimes entries as location checks (default: off) |
+| `randomize_slimepedia_slimes` | Include Slimepedia Slimes entries as location checks (default: on; forced on by the `slimepedia` goal) |
 | `randomize_slimepedia_resources` | Include Slimepedia Resources entries as location checks (default: off) |
-| `randomize_research_drones` | Include Research Drones and their archive pages (default: off). Requires the Drone Archive Key item for archive checks. |
+| `randomize_research_drones` | Research Drones and archives (default: off; archives need the Drone Archive Key) |
+| `drone_access_key` | Lock every Research Drone, archives included, behind one Drone Access Key (default: off) |
 | `randomize_ghostly_drones` | Include Ghostly Drones (default: off) |
-| `region_access_mode` | `vanilla` — gates work as normal (default); `locations` — gates are blocked until Region Access item received; `bundled` — same as locations, also grants zone teleporter blueprint on access |
+| `region_access_mode` | `vanilla` (default), `locations` (gates need an access item), `bundled` (plus teleporter) |
 | `conversation_checks` | Which rancher conversation gifts become location checks (`none` / `conditional` / `all`) |
 | `death_link` | Dying sends a death to all DeathLink players (default: off) |
 

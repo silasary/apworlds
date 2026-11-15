@@ -17,7 +17,7 @@
   "versions": {
     "v0.2.0": {
       "created_at": "2026-10-30T01:10:57Z",
-      "description": "First public beta of the Archipelago World for Alundra (PlayStation).\r\n\r\nThe apworld handles contains both the patcher and the bizhawk client. You only need your own USA Rev 1 (1.1) disc image.\r\n\r\n## Features\r\n- Generate an Alundra slot with the usual options (crests, progressive items, split boots, starting kit, and more)\r\n- Remote items from other games appear in Alundra chests and one-time shops, labeled with the other player's name and the item name\r\n- BizHawk Lua client (Nymashock) sends checks and receives items\r\n- Goal is Melzas; the client reports completion when the ending loads\r\n- Launcher \"Alundra Patch\" button turns an `.apalundra` file plus your disc into a playable BIN/CUE\r\n- Full healing stacks received from another game pay out as gilder when inventory is full\r\n- Restocking shop shelves can be set to vanilla, randomized, or full variety (they are not checks)\r\n- Progression items are kept off non-check locations (including the Fairy Pond)\r\n\r\n## Not implemented in this beta\r\n- Fairy Pond chests (pond closes after the reward)\r\n- Dreams\r\n- In-game Archipelago hints registering on AP server (hints are baked into dialogue at patch time)\r\n\r\n## Setup\r\nSee [docs/setup_en.md](https://github.com/Lunesar/alundra-apworld/blob/master/docs/setup_en.md): Archipelago 0.6.7+, install `alundra.apworld`, generate, patch, then BizHawk + the included Lua connector.\r\n\r\n## Downloads\r\n`alundra.apworld` is the only file players need and supports both Windows and Linux. Drop it in Archipelago's `custom_worlds` or use Install APWorld.",
+      "description": "First public beta of the Archipelago World for Alundra (PlayStation).\r\n\r\nThe apworld contains both the patcher and the bizhawk client. You only need your own USA Rev 1 (1.1) disc image.\r\n\r\n## Features\r\n- Generate an Alundra slot with the usual options (crests, progressive items, split boots, starting kit, and more)\r\n- Remote items from other games appear in Alundra chests and one-time shops, labeled with the other player's name and the item name\r\n- BizHawk Lua client (Nymashock) sends checks and receives items\r\n- Goal is Melzas; the client reports completion when the ending loads\r\n- Launcher \"Alundra Patch\" button turns an `.apalundra` file plus your disc into a playable BIN/CUE\r\n- Full healing stacks received from another game pay out as gilder when inventory is full\r\n- Restocking shop shelves can be set to vanilla, randomized, or full variety (they are not checks)\r\n- Progression items are kept off non-check locations (including the Fairy Pond)\r\n\r\n## Not implemented in this beta\r\n- Fairy Pond chests (pond closes after the reward)\r\n- Dreams\r\n- In-game Archipelago hints registering on AP server (hints are baked into dialogue at patch time)\r\n\r\n## Setup\r\nSee [docs/setup_en.md](https://github.com/Lunesar/alundra-apworld/blob/master/docs/setup_en.md): Archipelago 0.6.7+, install `alundra.apworld`, generate, patch, then BizHawk + the included Lua connector.\r\n\r\n## Downloads\r\n`alundra.apworld` is the only file players need and supports both Windows and Linux. Drop it in Archipelago's `custom_worlds` or use Install APWorld.",
       "download_url": "https://github.com/Lunesar/alundra-apworld/releases/download/v0.2.0/alundra.apworld",
       "has_manifest": true,
       "hash_sha256": "8ac81a4012f17ece2fae4de8b199edf5ee08a0f05b802d97f6b7787e7ebbf61e",
@@ -29,6 +29,21 @@
       "title": "Alundra APWorld 0.2.0 (beta)",
       "version_simple": "0.2.0",
       "world_version": "0.2.0"
+    },
+    "v0.2.3": {
+      "created_at": "2026-11-14T01:49:56Z",
+      "description": "The apworld contains both the patcher and the bizhawk client. You only need your own USA Rev 1 (1.1) disc image.\r\n\r\n## Bug fixes\r\n- Fixed progressive boots logic that required more upgrades than intended\r\n- Fixed game freezing when opening chests in seeds with a large number of Archipelago items\r\n\r\n## Checks and locations\r\n- Tarn's Manor table item (Book of Elna) is now a collected check\r\n- Fairy Pond chests are now checks\r\n- Fairy Pond reward chest can now be tracked as a check\r\n- Fairy Pond stays open after the reward and can hold required items\r\n\r\n## Quality of life\r\n- Skip the Tarn Manor ambush scene (D3)\r\n\r\n## Setup\r\nSee [docs/setup_en.md](https://github.com/Lunesar/alundra-apworld/blob/master/docs/setup_en.md): Archipelago 0.6.7+, install `alundra.apworld`, generate, patch, then BizHawk + the included Lua connector.\r\n\r\n## Downloads\r\n`alundra.apworld` is the only file players need. The patcher is included.",
+      "download_url": "https://github.com/Lunesar/alundra-apworld/releases/download/v0.2.3/alundra.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f7ef9d8f77006a2600757b3ce3f5826cc2294707b0342c6439eefdcb5deb45cd",
+      "html_url": "https://github.com/Lunesar/alundra-apworld/releases/tag/v0.2.3",
+      "minimum_ap_version": "0.6.7",
+      "size": 2189100,
+      "source_url": "https://api.github.com/repos/Lunesar/alundra-apworld",
+      "tag": "v0.2.3",
+      "title": "Alundra APWorld 0.2.3 (beta)",
+      "version_simple": "0.2.3",
+      "world_version": "0.2.3"
     }
   }
 }

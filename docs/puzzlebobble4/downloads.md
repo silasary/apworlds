@@ -1,9 +1,12 @@
 # Puzzle Bobble 4
 
 ## Latest
-- <a href="https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/download/v1.3.0/puzzlebobble4.apworld">Latest Version (1.3.0)</a>
+- <a href="https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/download/v1.4.0/puzzlebobble4.apworld">Latest Version (1.4.0)</a>
 
 ## All Versions
+
+#### v1.4.0
+- <a href="https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/download/v1.4.0/puzzlebobble4.apworld">https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/download/v1.4.0/puzzlebobble4.apworld</a>
 
 #### v1.3.0
 - <a href="https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/download/v1.3.0/puzzlebobble4.apworld">https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/download/v1.3.0/puzzlebobble4.apworld</a>

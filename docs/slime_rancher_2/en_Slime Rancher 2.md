@@ -3,6 +3,7 @@
 ## Quick Links
 
 - [Setup](/tutorial/Slime%20Rancher%202/setup/en)
+- [Conversation Checks Guide](/tutorial/Slime%20Rancher%202/conversations/en)
 - [Options Page](/games/Slime%20Rancher%202/player-options)
 - [SlimeRancher2-AP Github](https://github.com/Rhelys/SlimeRancher2-AP)
 

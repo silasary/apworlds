@@ -66,7 +66,7 @@
 - <a href="https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.0.11/vagrantstory.apworld">https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.0.11/vagrantstory.apworld</a>
 
 #### v0.0.1r3
-- <a href="https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.2.5/vagrantstory.apworld">https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.2.5/vagrantstory.apworld</a>
+- <a href="https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.1.3/vagrantstory.apworld">https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.1.3/vagrantstory.apworld</a>
 
 #### v0.0.1r2
 - <a href="https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.0.10/vagrantstory.apworld">https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.0.10/vagrantstory.apworld</a>
@@ -75,7 +75,7 @@
 - <a href="https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.1.2/vagrantstory.apworld">https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.1.2/vagrantstory.apworld</a>
 
 #### v0.0.1r2
-- <a href="https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.1.3/vagrantstory.apworld">https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.1.3/vagrantstory.apworld</a>
+- <a href="https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.2.5/vagrantstory.apworld">https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.2.5/vagrantstory.apworld</a>
 
 #### v0.0.1
 - <a href="https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.0.1/vagrantstory.apworld">https://github.com/riezahughes/VagrantStoryAPWorld/releases/download/v0.0.1/vagrantstory.apworld</a>

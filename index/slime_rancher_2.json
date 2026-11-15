@@ -213,6 +213,21 @@
       "version_simple": "0.15.0",
       "world_version": "0.15.0r2"
     },
+    "v0.17.0": {
+      "created_at": "2026-11-14T22:38:14Z",
+      "description": "## New Features\r\n- The mod now supports automatic reconnection\r\n  - Mod attempts to reconnect after 2, 5, 10, 20, and then every 30 seconds while disconnected\r\n  - Check locations still work while disconnected\r\n  - Retries stop on Save/Quit, connection to a server with a different seed, or refused login (password added/removed while disconnected)\r\n- New Setting: `treasure_pod_keys` - Enabling this setting will either add a global unlock key or one per-region which blocks opening Treasure Pods until obtained.\r\n- New Setting: `drone_access_key` - Enabling this setting will add a new item which blocks opening Research Drones until obtained.\r\n*These two settings will hopefully provide a good option to break up the potentially large Sphere 1 that SR2 can have*\r\n- New Setting: `prisma_shards_exact` - Forces game generation to include the number of Prisma Shards you want rather than culling based on the location count of the game. \r\n  - Most useful in solo games or games with very few filler locations available. \r\n  - Generation will throw an error telling you how many locations are missing if all shards cannot be placed\r\n\r\n## Quality of Life Updates\r\n- Added information on the number of checks that are influenced by each setting in the apworld\r\n- Updated how locked location popups were formatted to make them easier to read/understand\r\n- Updated the error message thrown when a game fails to generate due to too few locations\r\n\r\n## Performance Improvements\r\n- Updated how the Vacpack Spew Trap works to reduce game impact when lots of items are ejected\r\n- Updated how the mod scans for available Research Drones and Plort Doors to reduce the number of calls made\r\n- Fixed how the pause menu goal display checks for whether or not it should display\r\n*These should help improve performance in areas like the Grey Labyrinth which pull in a large amount of things to check all at once* \r\n\r\n## Logic Fixes\r\n- Updated Jetpack logic for Dash Boots II and Pulse Wave craft locations\r\n- Explicitly added Jetpack requirements for all Powderfall Bluffs locations to account for the `bundled` region access mode\r\n  - *Logic is not yet in place for the aurora bridges in Powderfall Bluffs. This means that more locations are technically available sooner than the logic expects. This will be updated in a future release*\r\n- Golden Sureshot III now correctly requires access to either Ember Valley or Starlight Strand\r\n\r\n## Bug Fixes\r\n- Fixed the location detection for `Shadow Plort Door: Waterworks- Inside glass button puzzle in front of giant coral`\r\n- Fixed an issue where the in-save Archipelago options menu wouldn't load correctly\r\n\r\n## Misc Updates\r\n- `Progressive Water Tank` has been renamed to `Water Tank` to match other single-level upgrades\r\n- The `item_notifications` setting now defaults to `progression` (was `progression_useful`)\r\n- The `randomize_slimepedia` setting has been renamed to `randomize_slimepedia_slimes` to better describe what it puts in logic\r\n- Minimum Archipelago Version has been updated from 0.6.4 to 0.6.6 in preparation for some experimenting with Rule Builder",
+      "download_url": "https://github.com/Rhelys/SlimeRancher2-AP/releases/download/v0.17.0/slime_rancher_2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "46a6d9b647dc64b516fba82002eacdeb04754f956d2ff38c8d16be84673394e6",
+      "html_url": "https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.17.0",
+      "minimum_ap_version": "0.6.6",
+      "size": 85981,
+      "source_url": "https://api.github.com/repos/Rhelys/SlimeRancher2-AP",
+      "tag": "v0.17.0",
+      "title": "v0.17.0 - Sphere 1 Redux",
+      "version_simple": "0.17.0",
+      "world_version": "0.17.0"
+    },
     "v0.2.0": {
       "created_at": "2026-04-17T19:03:35Z",
       "description": "Initial fixes for the Slime Rancher 2 v1.2 release - Radiant Slime Sanctuary\r\n\r\nNo new content in this release, just getting the mod working with the new game version. Updates to include the new features will be in a later update",

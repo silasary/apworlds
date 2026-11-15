@@ -19,8 +19,6 @@ Chests, one-time shop purchases, and Merrick's trades are checks. The client rep
 Archipelago leaves the following out of the check list. Each one still receives an item. That item is never progression, and never from another slot.
 
 - The eight shelves that restock at Lurvy's and Naomi's. Restocking Shop Items chooses what they sell. A useful item such as a ring can still land on a shelf the fill chooses. A full stack of Herbs, Strength Tonic, Strength Elixyr, Magic Elixyr, or Wonder Essence, sent from another game, is paid out as that item's shop price in gilder: 5, 20, 50, 30, or 200. These shelves are where you can buy the item again. At 9999 gilder the payout is still counted and the purse stays full.
-- The item on the table in Tarn's Manor.
-- The Fairy Pond chests. The pond seals after its reward, so a chest left there would be missed.
 
 Hints in the game are written when the disc is patched. Archipelago hint points are not used in the game.
 

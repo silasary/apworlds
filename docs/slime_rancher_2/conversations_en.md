@@ -18,8 +18,11 @@ visit, while others require in-game time to pass or specific events to occur fir
 
 ### `none` (default)
 
-No conversations are location checks.  All ranchers give their vanilla gifts directly and
-no CommStation calls appear in the tracker.
+No conversations are location checks.  Ranchers give their vanilla gifts directly and
+no CommStation calls appear in the tracker — except three gifts that are Archipelago items in
+every seed, so the mod suppresses them in every mode: the Radiant Projector Blueprint
+(`ViktorStoryCipher4`), the Archive Key Component (`MochiStoryDrones3`) and the Refinery Link
+(`MochiIntroCall`).
 
 ### `conditional`
 
@@ -31,11 +34,11 @@ gates, so they are safe for synchronous (real-time) multiworld games.
 |---|---|---|
 | Viktor: Intro Call | `ViktorIntroCall` | Any Research Drone activated **or** 2+ in-game days in the Conservatory — gives Home Teleporter Yellow |
 | Viktor: Radiant Projector Blueprint | `ViktorStoryCipher4` | Either the Flutter Gordo **or** the Boom Gordo has been burst |
-| Mochi: Intro Call | `MochiIntroCall` | 1 in-game day after `ViktorIntroCall` fires |
-| Ogden: Intro Call | `OgdenIntroCall` | 2 in-game days after `MochiIntroCall` fires |
-| Thora: Intro Call | `ThoraIntroCall` | 3 in-game days after `OgdenIntroCall` fires |
+| Mochi: Intro Call | `MochiIntroCall` | 1 in-game day after `ViktorIntroCall` fires — gives Refinery Link |
+| Ogden: Intro Call | `OgdenIntroCall` | 2 in-game days after `MochiIntroCall` fires — gives Portable Water Tap |
+| Thora: Intro Call | `ThoraIntroCall` | 3 in-game days after `OgdenIntroCall` fires — gives Taming Bell |
 | Thora: Gordo Snare Advanced | `ThoraGift2` | Available via Thora's gift sequence after her intro call |
-| BOb: Intro Call | `BObGift1Intro` | Visited Ember Valley (2+ days ago) **and** Starlight Strand (2+ days ago) **and** `ThoraIntroCall` fired (1+ day ago) — no gift |
+| BOb: Intro Call | `BObGift1Intro` | Visited Ember Valley (2+ days ago) **and** Starlight Strand (2+ days ago) **and** `ThoraIntroCall` fired (1+ day ago) — gives Rainbow Mound |
 | BOb: Rainbow Lumps Blueprint | `BObGift2` | 1 in-game day after `BOb: Intro Call` fires |
 | BOb: Yolky 1 | `BObYolky1` | 1 in-game day after `BOb: Rainbow Lumps Blueprint` fires |
 | Mochi: Archive Key | `MochiStoryDrones3` | `MochiStoryDrones2` completed **and** both Grey Labyrinth gate Research Drones activated |
@@ -58,14 +61,14 @@ a Home Teleporter Yellow; in AP mode this becomes an AP check at that location.
 > ⚠️ **Recommended for async (asynchronous) games only.**
 >
 > Many conversations are gated behind real-world time delays of 1–3 in-game days each.
-> The full chain of all ~120 conversations can take many play sessions to complete.
+> The full chain of all 121 conversations can take many play sessions to complete.
 > In a synchronous game where other players are waiting on your checks, this mode is
 > likely to become a bottleneck.  Use `conditional` for synchronous play.
 
-Every CommStation conversation becomes a location check, roughly **120 locations** in
-total across all ranchers.  This includes:
+Every CommStation conversation becomes a location check — **121 locations** in total
+across all ranchers.  This includes:
 
-- All 8 conversations from the `conditional` tier (above)
+- All 10 conversations from the `conditional` tier (above)
 - All functional gift conversations not gated by a specific condition
 - All decoration blueprint gifts
 - All story / lore / cipher conversations
@@ -113,7 +116,7 @@ The full list is organised by rancher below.
 
 | Location Name | Debug Name | Gift / Notes |
 |---|---|---|
-| Mochi: Intro Call `*` | `MochiIntroCall` | No gift — story beat; 1 day after ViktorIntroCall |
+| Mochi: Intro Call `*` | `MochiIntroCall` | Blueprint: Refinery Link (an AP item in every mode) — 1 day after ViktorIntroCall |
 | Mochi: Market Link | `MochiGift1` | Blueprint: Market Link |
 | Mochi: Archive Key `*` | `MochiStoryDrones3` | Upgrade component: Archive Key Component — requires both labyrinth gate drones |
 | Mochi: Root Arches Blueprint | `MochiGift3` | Blueprint: Root Arches (decoration) |
@@ -137,7 +140,7 @@ The full list is organised by rancher below.
 
 | Location Name | Debug Name | Gift / Notes |
 |---|---|---|
-| Ogden: Intro Call `*` | `OgdenIntroCall` | No gift — story beat; 2 days after MochiIntroCall |
+| Ogden: Intro Call `*` | `OgdenIntroCall` | Blueprint: Portable Water Tap — 2 days after MochiIntroCall |
 | Ogden: Super Hydro Turret | `OgdenGift1` | Blueprint: Super Hydro Turret |
 | Ogden: Portable Scare Slime | `OgdenGift3` | Blueprint: Portable Scare Slime |
 | Ogden: Tall Emerald Cypress Blueprint | `OgdenGift4` | Blueprint: Tall Emerald Cypress (decoration) |
@@ -160,7 +163,7 @@ The full list is organised by rancher below.
 
 | Location Name | Debug Name | Gift / Notes |
 |---|---|---|
-| Thora: Intro Call `*` | `ThoraIntroCall` | No gift — story beat; 3 days after OgdenIntroCall |
+| Thora: Intro Call `*` | `ThoraIntroCall` | Blueprint: Taming Bell — 3 days after OgdenIntroCall |
 | Thora: Gordo Snare Advanced `*` | `ThoraGift2` | Blueprint: Gordo Snare Advanced |
 | Thora: Pink Mangrove Blueprint | `ThoraGift1` | Blueprint: Pink Mangrove (decoration) |
 | Thora: Rainbow Grass Blueprint | `ThoraGift3` | Blueprint: Rainbow Grass (decoration) |
@@ -251,8 +254,9 @@ conversations will eventually fire normally as part of the gift sequence.
 
 ## In-Game Day Reference
 
-In-game days in Slime Rancher 2 correspond roughly to real-world time spent playing.
-Each in-game day is approximately the same as one continuous play session.
-Most time-delayed conversations unlock after 1–3 in-game days, so the intro chain
-(Mochi → Ogden → Thora) takes a minimum of **6 in-game days** from the time
-`ViktorIntroCall` fires.
+Delays are counted on the in-game clock, which only runs while you are playing — not while
+paused or at the menus.  An in-game day is much shorter than a typical play session, so several
+pass in one sitting.  Most time-delayed conversations unlock 1–3 in-game days after the call
+before them, so the intro chain (Mochi → Ogden → Thora) takes at least **6 in-game days** from
+the time `ViktorIntroCall` fires, and BOb's first call needs at least one more day after
+Thora's.
