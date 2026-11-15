@@ -2,127 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-15T00:16:54.039516+00:00</updated>
+  <updated>2026-11-15T06:14:42.835563+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <entry>
-    <id>https://github.com/Arrcival/ArchipelagoDK/releases/tag/v2.1.1</id>
-    <title>Dome Keeper v2.1.1</title>
-    <updated>2026-11-11T16:19:41+00:00</updated>
-    <author>
-      <name>Arrcival</name>
-    </author>
-    <content/>
-    <link href="https://github.com/Arrcival/ArchipelagoDK/releases/tag/v2.1.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.3.1</id>
-    <title>Xenoblade X v0.3.1</title>
-    <updated>2026-11-11T17:28:15+00:00</updated>
-    <author>
-      <name>Maragon</name>
-    </author>
-    <author>
-      <name>Nina</name>
-    </author>
-    <content>- Fixed a crash in the shop if the new item contains "[" or "]".</content>
-    <link href="https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.3.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/NikolajDanger/APSly2/releases/tag/v1.2.0</id>
-    <title>Sly 2: Band of Thieves v1.2.0</title>
-    <updated>2026-11-11T18:28:46+00:00</updated>
-    <author>
-      <name>NikolajDanger</name>
-    </author>
-    <content>Sly 2 Archipelago implementation. For setup instructions, check out the [README](https://github.com/NikolajDanger/APSly2/blob/main/README.md).&#13;
-&#13;
-## Changes&#13;
-### Features&#13;
-- Job skipping! The new `skip_jobs` yaml option allows you to list jobs to skip: they have no checks (or any task checks with `tasksanity`), and the client completes each of them in-game as soon as they become available. You can also skip a job during play with the new `/skip_job &lt;job name&gt;` command, which sends its checks. Running `/skip_job` without a job name lists the jobs you can skip right now.&#13;
-- New pickpocketing modes with the `pickpocket_check_mode` yaml option: `lootsanity` (the old behavior, one check per loot type), `unique` (a check for every new type of loot you pickpocket) and `total` (a check every `pickpocket_check_step` pieces of loot). `pickpocket_check_max` sets how many there are.&#13;
-- Three new traps:&#13;
-  - Debt Trap: takes a percentage of your coins, set with the new `debt_trap_percentage` option.&#13;
-  - Bottle Sound Trap: plays the clink of a nearby bottle that isn't there.&#13;
-  - Hypnosis Trap: hypnotizes the current character.&#13;
-- Trap durations can now be set per trap with the new `trap_duration` option.&#13;
-- The new `ring_link_behavior` option decides whether coins from received items and Debt Traps are shared over ring link.&#13;
-- `scout_thiefnet` now has three options: `show_and_scout` (the old `true`), `show_only` (the old `false`) and the new `hide`, where ThiefNet only shows whose item each one is until it is hinted.&#13;
-- ThiefNet costs can now go up to 99,999 coins, and 5-digit prices display properly in ThiefNet. Please don't actually do this.&#13;
-- The ThiefNet icon theme and text color can now be set in the yaml with the new `thiefnet_icon_theme` and `thiefnet_text_color` options (the `/thiefnet_theme` and `/thiefnet_text` commands still override them in-game).&#13;
-- The `skip_intro` option is back, and skips the Cairo intro straight to the episode select when starting a new game.&#13;
-- The release now includes `sly2_essentials.yaml`, a cut-down template with just the most important options, next to the full template.&#13;
-&#13;
-### Bug fixes and improvements&#13;
-- Added a "Traps" item group.&#13;
-- Skipping the intro with `/menu` no longer breaks autosaving.&#13;
-- A Sly 1 or Energy Drain Trap received while pickpocketing is no longer lost.&#13;
-- Some client and generation optimizations (faster item/location lookups, loot model install and read cache).&#13;
-</content>
-    <link href="https://github.com/NikolajDanger/APSly2/releases/tag/v1.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Leiqart/gta3-archipelago/releases/tag/v0.3.0</id>
-    <title>Grand Theft Auto III v0.3.0</title>
-    <updated>2026-11-11T19:46:39+00:00</updated>
-    <author>
-      <name>Leiqart</name>
-    </author>
-    <content>The game plugin and the APWorld are written again from scratch: this release replaces 0.3.0-alpha.1 entirely. Generate a new room for it.&#13;
-&#13;
-## What's new&#13;
-&#13;
-- **Every story mission is a location** (65), plus 8 side missions open from the start on their island: the four RC Toyz missions, the three 4x4 challenges and Multistorey Mayhem.&#13;
-- **Two mission orders** (`mission_order`):&#13;
-  - `ordered`: each contact gives a progressive item, and their missions come in story order.&#13;
-  - `free`: every mission has its own unlock and can be played in any order.&#13;
-- **Mission markers follow the items**: a locked mission's marker is hidden; once unlocked, its marker shows on the radar and on the ground. Out of the story's order, the mod starts an unlocked mission's marker itself and gives its contact a blip, with one mission per marker at a time.&#13;
-- **Islands open as in the game**: Staunton Island with Last Requests, Shoreside Vale with A Drop in the Ocean.&#13;
-- **Story locks taken off**: two of the game's locks only hold for one order of the missions, and the mod takes both off:&#13;
-  - the pause of Pump-Action Pimp, The Fuzz Ball, Dead Skunk in the Trunk and The Getaway between Salvatore's Called a Meeting and Chaperone;&#13;
-  - Salvatore's lock between his missions.&#13;
-- **Missions the story closes are checked**: once Last Requests, Waka-Gashira Wipeout! or Grand Theft Aero is passed, the missions it closes for good send their checks with it.&#13;
-- **`need_money` option** (off by default): with it off, Bomb Da Base: Act II and The Exchange start without their $100000 and $500000.&#13;
-- **DeathLink** (`death_link`), with `arrest_is_death` (on by default) to count being busted as a death too.&#13;
-- **Goal**: pass The Exchange.&#13;
-- The game shows each item received. Passed missions are sent again after a reconnection.&#13;
-&#13;
-## Installation&#13;
-&#13;
-You need GTA III for PC **version 1.0**, Archipelago **0.6.7** or newer, and the ASI loader [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/latest/download/Ultimate-ASI-Loader.zip) (32-bit, `Ultimate-ASI-Loader.zip`, not the `_x64` one).&#13;
-&#13;
-1. Download [Ultimate-ASI-Loader.zip](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/latest/download/Ultimate-ASI-Loader.zip) and put the `dinput8.dll` it contains next to `gta3.exe`.&#13;
-2. Put `GTA3Archipelago.asi` in the `scripts` folder next to `gta3.exe` (create it if needed).&#13;
-3. Double-click `gta3.apworld` to install it in Archipelago, or copy it into Archipelago's `custom_worlds` folder.&#13;
-4. Write your YAML (`game: Grand Theft Auto III`, with the options above) and generate or join a room.&#13;
-5. Open **GTA3 Client** from the Archipelago Launcher and connect to the room.&#13;
-6. Start GTA III and choose **Run Archipelago** in the main menu. Keep GTA3 Client open while you play.&#13;
-&#13;
-The Steam copy needs a downgrade to 1.0 first: see the README's *Steam version* section.&#13;
-&#13;
-## Known limitations&#13;
-&#13;
-- Saving and loading a game is not supported yet: play a run in one session for now.&#13;
-- Only `gta3.exe` 1.0 is supported. (No Steam Version)&#13;
-- With `need_money` on, the logic counts no money: you may have to earn it in the game.&#13;
-- Played far out of the story's order, a mission may still rely on something an earlier one sets up. Please report the ones that break.&#13;
-&#13;
-## Files&#13;
-&#13;
-| File | Use |&#13;
-| --- | --- |&#13;
-| `GTA3Archipelago.asi` | The game plugin, for the `scripts` folder. |&#13;
-| `gta3.apworld` | The GTA III world and GTA3 Client, for Archipelago. |&#13;
-| `README.md` | How it plays, the options, and the full installation guide. |&#13;
-| `LICENSE-MinHook.txt` | The license of MinHook, which the plugin contains. |&#13;
-</content>
-    <link href="https://github.com/Leiqart/gta3-archipelago/releases/tag/v0.3.0"/>
-  </entry>
-  <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release12</id>
-    <title>Ocarina of Time v9.1.0r2</title>
+    <title>Ocarina of Time v9.1.0r5</title>
     <updated>2026-11-11T19:48:02+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1366,6 +1253,36 @@ Only the North American ROM is supported. AP notifications are English; mGBA not
     <link href="https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.5.2"/>
   </entry>
   <entry>
+    <id>https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.7.0-beta</id>
+    <title>Dicey Dungeons v0.7.0b0</title>
+    <updated>2026-11-14T21:16:59+00:00</updated>
+    <author>
+      <name>Fylcoast</name>
+    </author>
+    <content>## What's Changed&#13;
+* Play as the Witch!&#13;
+* New option: Witch - Start with Harvest Scythe&#13;
+  * Start with the Harvest Scythe in most Witch episodes. This gives a use for AP checks that are not removed when sent (option "Remove Checks When Sent" is toggled off)&#13;
+  * Works in Episodes 1, 2, 4, and 5&#13;
+* Updated option: Upgrade Equipment&#13;
+  * When playing as the Witch, all spell slots will be both prepared and upgraded when the episodes load&#13;
+  * In Witch Episode 6, since you do not "start" the episode with any equipment, the preparation/upgrading does not take place until you start the first combat&#13;
+* Updated option: Use equipment from any character&#13;
+  * Now includes Witch spells&#13;
+* Updated option: Dice shards&#13;
+  * For the Witch, gaining sufficient dice shards will enable you to choose Spell preparation and Spell upgrade rewards at level ups&#13;
+&#13;
+* Documentation update&#13;
+  * Some Options have had their descriptions updated to be more user-friendly&#13;
+    * The attached Dicey.Dungeons.yaml has all option descriptions included&#13;
+  * The "check-lover" preset now selects all playable characters (works as a template if you want to see how multiple characters must look in the .yaml file)&#13;
+  * The game info page has been updated with recommended Witch equipment exclusions if playing with "Use equipment from any character"&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/Fylcoast/AP_diceydungeons/compare/v0.6.0-beta...v0.7.0-beta</content>
+    <link href="https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.7.0-beta"/>
+  </entry>
+  <entry>
     <id>https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.6</id>
     <title>Chrono Trigger Rando-Dalton Imperial v0.0.6</title>
     <updated>2026-11-14T21:18:01+00:00</updated>
@@ -1403,7 +1320,10 @@ Updated the ctrando lib to pick up some additional fixes to generation</content>
 ### PopTracker (v1.4.0)&#13;
 &#13;
 #### Tracker Improvements&#13;
-- Updated **VS/Story Complete** and **VS/Contest Complete** trackers to display only the characters selected in the YAML, hiding characters that cannot be unlocked or played in the current setup.</content>
+- Updated **VS/Story Complete** and **VS/Contest Complete** trackers to display only the characters selected in the YAML, hiding characters that cannot be unlocked or played in the current setup.&#13;
+&#13;
+### PopTracker (v1.4.1)&#13;
+- Fixed a logic error with Bub.</content>
     <link href="https://github.com/HishLeo/PuzzleBobble4forArchipelago/releases/tag/v1.4.0"/>
   </entry>
   <entry>
@@ -1548,5 +1468,79 @@ Windows: `ctr-archipelago-v0.3.0-alpha4-windows-x86.zip`. Linux or Steam Deck: `
 
 </content>
     <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/captpurpleheart/opuc1-archipelago/releases/tag/v1.0.3</id>
+    <title>One Piece Unlimited Cruise 1 v1.0.3</title>
+    <updated>2026-11-15T01:41:48+00:00</updated>
+    <author>
+      <name>CaptPurpleHeart</name>
+    </author>
+    <content>A small hotfix for 1.0.0. No new YAML options: 1.0.0 seeds and YAMLs work as they are, but generate again to get the logic fix.&#13;
+&#13;
+- **FIX** - The Wherever Cannon's unlock scene played twice when "The Wherever Cannon" was received before reaching the Thousand Sunny for the first time. It now plays once, and starts sooner once things are quiet.&#13;
+- **LOGIC UPDATE** - Gorge Isle Part 1 is no longer a Wood source. Its dead trees share a one-time group with the nearby rock path and grass: breaking anything there and leaving the island removes the whole group for good. Crafting recipes that need Wood now count Gorge Isle Part 3 (after Kuro / Krieg, by the Build Site to Part 4), where the trees grow back, or the Cave Isle. "Got Wood" (Materialsanity) follows the same rule, since touching the grass there without breaking a tree loses the trees too.</content>
+    <link href="https://github.com/captpurpleheart/opuc1-archipelago/releases/tag/v1.0.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/tag/V3.0.0</id>
+    <title>Hunie Pop v3.0.0</title>
+    <updated>2026-11-15T03:17:59+00:00</updated>
+    <author>
+      <name>Dotsofdarkness</name>
+    </author>
+    <content>- (Client) Swapped networking from DotsWebsocket/CursedArchipelagoClient to Archipelago.MultiClient.Net/c-wspp-websocket-sharp&#13;
+- - playing on Linux should now work through wine/proton (will work on trying to get native Linux to work later)&#13;
+- (Apworld/Client) added option/logic for disabling girl questions&#13;
+- (Apworld/Client) added option/logic for disabling girl gifts&#13;
+- (Apworld/Client) added option/logic for locking shop slots behind getting "Shop Pass" items&#13;
+- (APWorld) moved logic over to Rule Builder&#13;
+- (Client) Save file is now stored server side through datastorage&#13;
+- (Client) added the ability to convert hunie to money through the shop the ratio can be changed through YMAL option&#13;
+- (Client) when talking to a girl you have a &gt;50% change to be asked a question if you haven't learned all their details&#13;
+- (Client) Added code "$toggledeathlink" to toggle deathlink off/on&#13;
+&#13;
+&lt;br&gt;&lt;/br&gt;&#13;
+CLIENT INSTALLATION INSTRUCTIONS:&#13;
+- Have Hunie Pop Installed&#13;
+- Download Hunie Pop Archipelago plugin (See Releases for latest version)&#13;
+- Extract and copy the contents of "Hunie Pop Archipelago plugin.zip" to the directory where "HuniePop.exe" is if it asks you to overwrite files click yes&#13;
+- NOTE if you get a game crash when starting the game make sure that in "{huniepop game directory}/BepInEx/config/BepInEx.cfg" the 2nd last option is "type = MonoBehaviour" not "type = Application"&#13;
+&#13;
+&#13;
+&#13;
+APWORLD INSTALLATION INSTRUCTIONS:&#13;
+- Have Archipelago Launcher Installed (latest release found here: https://github.com/ArchipelagoMW/Archipelago/releases/latest )&#13;
+- Download Huniepop APWorld (See Releases for latest version)&#13;
+- Select "Install APWorld" in launcher and select Huniepop APWorld you downloaded&#13;
+- Restart launcher for APWorld to properly install&#13;
+- (Optional but Recomended)Select "Generate Template Options" to generate default Huniepop YMAL&#13;
+&#13;
+&#13;
+&#13;
+POPTRACKER INSTALLATION INSTRUCTIONS:&#13;
+- copy "Hunie Pop Archipelago poptracker.zip" to your poptracker "packs" folder</content>
+    <link href="https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/tag/V3.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Joshark/archipelago-sms/releases/tag/0.6.3</id>
+    <title>Super Mario Sunshine v0.6.3</title>
+    <updated>2026-11-15T04:30:01+00:00</updated>
+    <author>
+      <name>MrsMarinaRose</name>
+    </author>
+    <author>
+      <name>Joshark</name>
+    </author>
+    <content># SMS V0.6.3 - The Client Update&#13;
+&#13;
+## Fixes&#13;
+* Fixes Memory Leaks that were in the client, updated several of the existing functionality of the client to feel smoother / handle a few bugs that were otherwise being ignored quietly behind the scenes.&#13;
+* Fixes some DeathLinks issues that were raised in certain scenarios.&#13;
+* Several Logic issues that were raised in the chat over the last 4 months.&#13;
+&#13;
+[Setup Guide](&lt;https://github.com/Joshark/archipelago-sms/blob/main/worlds/sms/docs/setup_en.md&gt;)&#13;
+[Dolphin GC/Wii Emulator](&lt;https://dolphin-emu.org/download/&gt;)</content>
+    <link href="https://github.com/Joshark/archipelago-sms/releases/tag/0.6.3"/>
   </entry>
 </feed>

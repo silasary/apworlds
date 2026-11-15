@@ -83,6 +83,11 @@ These items are listed below, grouped by the character that they are for (if not
 - Grindstone
 - Screwdriver
 
+### Witch
+- Harvest Scythe
+- Lunasa
+- Spring Equinox
+
 
 ## Special Thanks
 - krunk - For creation of the Archipelago logo featuring the characters from Dicey Dungeons, featured on the mod's title screen
