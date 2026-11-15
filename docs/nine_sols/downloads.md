@@ -1,9 +1,12 @@
 # Nine Sols
 
 ## Latest
-- <a href="https://github.com/IxrecsRandomizers/NineSolsArchipelagoRandomizer/releases/download/0.6.5/nine_sols.apworld">Latest Version (0.6.5)</a>
+- <a href="https://github.com/IxrecsRandomizers/NineSolsArchipelagoRandomizer/releases/download/0.7.0/nine_sols.apworld">Latest Version (0.7.0)</a>
 
 ## All Versions
+
+#### v0.7.0
+- <a href="https://github.com/IxrecsRandomizers/NineSolsArchipelagoRandomizer/releases/download/0.7.0/nine_sols.apworld">https://github.com/IxrecsRandomizers/NineSolsArchipelagoRandomizer/releases/download/0.7.0/nine_sols.apworld</a>
 
 #### v0.6.5
 - <a href="https://github.com/IxrecsRandomizers/NineSolsArchipelagoRandomizer/releases/download/0.6.5/nine_sols.apworld">https://github.com/IxrecsRandomizers/NineSolsArchipelagoRandomizer/releases/download/0.6.5/nine_sols.apworld</a>

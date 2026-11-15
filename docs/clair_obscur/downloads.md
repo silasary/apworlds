@@ -1,9 +1,12 @@
 # Clair Obscur Expedition 33
 
 ## Latest
-- <a href="https://github.com/Demorck/ClairObscur_APWorld/releases/download/v0.4.3/clair_obscur.apworld">Latest Version (0.4.3)</a>
+- <a href="https://github.com/Demorck/ClairObscur_APWorld/releases/download/v0.5.0/clair_obscur.apworld">Latest Version (0.5.0)</a>
 
 ## All Versions
+
+#### v0.5.0
+- <a href="https://github.com/Demorck/ClairObscur_APWorld/releases/download/v0.5.0/clair_obscur.apworld">https://github.com/Demorck/ClairObscur_APWorld/releases/download/v0.5.0/clair_obscur.apworld</a>
 
 #### v0.4.3
 - <a href="https://github.com/Demorck/ClairObscur_APWorld/releases/download/v0.4.3/clair_obscur.apworld">https://github.com/Demorck/ClairObscur_APWorld/releases/download/v0.4.3/clair_obscur.apworld</a>
