@@ -1,9 +1,12 @@
 # MathQuest
 
 ## Latest
-- <a href="https://github.com/rsa17826/mqap/releases/download/15/mathquest.apworld">Latest Version (15.0.0)</a>
+- <a href="https://github.com/rsa17826/mqap/releases/download/16/mathquest.apworld">Latest Version (16.0.0)</a>
 
 ## All Versions
+
+#### v16.0.0
+- <a href="https://github.com/rsa17826/mqap/releases/download/16/mathquest.apworld">https://github.com/rsa17826/mqap/releases/download/16/mathquest.apworld</a>
 
 #### v15.0.0
 - <a href="https://github.com/rsa17826/mqap/releases/download/15/mathquest.apworld">https://github.com/rsa17826/mqap/releases/download/15/mathquest.apworld</a>

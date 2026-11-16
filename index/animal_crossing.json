@@ -196,6 +196,22 @@
       "title": "Animal Crossing AP 0.5.5",
       "version_simple": "0.5.5",
       "world_version": "0.5.5"
+    },
+    "v0.6.0-rc1": {
+      "created_at": "2026-11-16T01:06:33Z",
+      "description": "This is a RELEASE CANDIDATE for 0.6.0, which means don't play this version unless you're OK with potential crashes and graphical issues and want to report them to help me get the release ready!\r\n\r\nIf you do want to help, **set your graphics to Vulkan in the Video settings menu**. Then, open an issue or send a message in the Archipelago discord if you run into issues. Include your OS and your graphics card, and ofc what happened.\r\n\r\n- **Update to SDL3:** you shouldn't notice any difference, but this is a newer backend library and may bring more compatibility with newer setups (old setups should not change; if they do let me know).\r\n  - If you are on Linux + Wayland, it will now use the native Wayland output instead of X11 through a translation layer\r\n  - With the update to SDL3, **button positions are now used instead of face label**. In practice, this means that you will get the Nintendo layout regardless of controller. It is easy to restore with the controller setup; just part of SDL3 (sorry).\r\n- **New Vulkan Renderer:** alternative to OpenGL if you find OpenGL buggy (or laggy? they should be roughly the same speed though)\r\n- **Easier Critters Upgrade:** bugs can now spawn on ANY flower (old AC they can't spawn on tulips) and will spawn on the outer 2 rows/columns of an acre (they couldn't in the original).\r\n- **Fossil tracker:** new fossil tracker like bugs, fish, and shells in the AP pause menu\r\n- **Crash fix outdoors:** crash from outdoor furniture fixed (random)\r\n- **Missing critter fix:** under rare circumstances, the last bug in a spawn table may never spawn. it should now\r\n- **Fix may windsocks:** they properly spawn and despawn now\r\n- **Fix birthday + starsign:** showed as 'iiiiiiiii' if you had instant text on\r\n- **Timesanity forces bugs cleanly into time slots:** before, you could catch some bugs \"out of logic\" for 1 hour, which might've been confusing\r\n- **Mini tracker shows shells + more consistent found/available output**\r\n- **More lenient generation:** if random is selected for pools where the final result could be beyond the allowed amount, the random value is rerolled to fit into the proper range. Also, goal: random doesn't choose goals that can't work with the current settings\r\n- **Pushing or pulling furniture no longer carries you across an acre:** sorry, it was very broken\r\n- **Precompiled shaders option**\r\n- **Show graphics error if OpenGL 3.3 not found**\r\n- **More information when a ROM doesn't match or is not found**",
+      "download_url": "https://github.com/randomouscrap98/AP_ACGC_PC/releases/download/v0.6.0-rc1/animal_crossing.apworld",
+      "has_manifest": true,
+      "hash_sha256": "250a4ce3212ad513640dd205b590c4089eeabd0272bf3da483a2b5e028aff8d5",
+      "html_url": "https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.6.0-rc1",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 69891,
+      "source_url": "https://api.github.com/repos/randomouscrap98/AP_ACGC_PC",
+      "tag": "v0.6.0-rc1",
+      "title": "Animal Crossing AP 0.6.0-rc1",
+      "version_simple": "0.6.0",
+      "world_version": "0.6.0rc1"
     }
   }
 }
