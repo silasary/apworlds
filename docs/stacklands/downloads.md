@@ -1,9 +1,12 @@
 # Stacklands
 
 ## Latest
-- <a href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.2.6/stacklands.apworld">Latest Version (0.2.6)</a>
+- <a href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.2.7/stacklands.apworld">Latest Version (0.2.6r2)</a>
 
 ## All Versions
+
+#### v0.2.6r2
+- <a href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.2.7/stacklands.apworld">https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.2.7/stacklands.apworld</a>
 
 #### v0.2.6
 - <a href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.2.6/stacklands.apworld">https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.2.6/stacklands.apworld</a>

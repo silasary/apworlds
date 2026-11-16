@@ -1,9 +1,12 @@
 # Metroid Fusion
 
 ## Latest
-- <a href="https://github.com/StalledStorm/ArchipelagoMine/releases/download/v1.22.7/metroidfusion.apworld">Latest Version (1.22.7)</a>
+- <a href="https://github.com/StalledStorm/ArchipelagoMine/releases/download/v1.23.0/metroidfusion.apworld">Latest Version (1.23.0)</a>
 
 ## All Versions
+
+#### v1.23.0
+- <a href="https://github.com/StalledStorm/ArchipelagoMine/releases/download/v1.23.0/metroidfusion.apworld">https://github.com/StalledStorm/ArchipelagoMine/releases/download/v1.23.0/metroidfusion.apworld</a>
 
 #### v1.22.7
 - <a href="https://github.com/StalledStorm/ArchipelagoMine/releases/download/v1.22.7/metroidfusion.apworld">https://github.com/StalledStorm/ArchipelagoMine/releases/download/v1.22.7/metroidfusion.apworld</a>

@@ -2,108 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-15T18:16:57.070976+00:00</updated>
+  <updated>2026-11-16T00:23:01.267901+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Kryen112/HP2PC_AP/releases/tag/v3.0.0</id>
-    <title>Harry Potter 2 PC v3.0.0.post5</title>
-    <updated>2026-11-12T13:48:20+00:00</updated>
-    <author>
-      <name>Kryen112</name>
-    </author>
-    <content># HP2PC_AP v3.0.0
-
-The randomizer now runs on the original PC release of the game with SafeDiscShim, instead of the separate install that v2.12.0 and earlier needed. Everyone needs to set up again: follow the attached `PLAYER_SETUP.md`.
-
-### Upgrading from v2.12.0 or earlier
-
-- **Clean your host.yaml first.** Delete the whole `harry_potter_2_pc_options` block from `host.yaml` in your Archipelago folder before you start the new client. The old block points at the old install, and the client would carry that path over. With the block gone, the client asks for your new install on the first connect and writes fresh settings.
-- **Replace the apworld.** Swap the old `harry_potter_2_pc.apworld` in `custom_worlds` for this one.
-- **Start new seeds and saves.** Seeds and saves from the old setup do not carry over. You can leave the old install alone or remove it.
-
-### New
-
-- **Plays on the original game.** Install the game and add SafeDiscShim (free, open source), which lets the game's copy protection run on Windows 10 and 11. No game files ship with this project.
-- **One install for both game modes.** Vanilla and open castle seeds play on the same install. The client tells the mod which mode the seed uses.
-- **Borderless window.** The game opens at your monitor's size without a window frame.
-- **60 fps cap.** The game is held at the speed its physics and timers are tuned for.
-- **Widescreen view.** The view widens on wide screens, and the menus draw in a centered 4:3 area with black bars at the sides.
-- **Non-English installs.** The dialogue randomizer works on the game's own language.
-- **Linux (experimental).** The client finds the game's Wine or Proton prefix and launches the game through Wine. Nobody has confirmed the disc check under Wine yet.
-
-All three display settings are on by default and can be turned off in `host.yaml`.
-
-### Changed
-
-- **Quieter client window.** On connect, the client only says when the mod was updated. Routine details go to the log file.
-- **Player names with accents** show with the nearest plain letters, since the game cannot draw them.
-- **Ghost players** wear a pair of grey-blue glasses that stays visible on their see-through face.
-- **Ghost players use far less network traffic.** Positions only go to players on the same map, once a second, and a player standing still sends none. Everyone else only gets a small "I'm on this map" note every few seconds. Ghosts trail their player by about a second.
-- **Open castle seeds with nothing to do at the start** are rejected at generation with a hint (add starting spells or turn on secrets), instead of failing to fill.
-
-### Fixed
-
-- **See-through textures** (torch cages, fences, Harry's glasses) no longer draw solid, also after Alt+Tab.
-- **Trader menus** take clicks again on wide screens.
-- **Ghost players** carry their wand again.
-- **A force-closed game** no longer comes back fullscreen at 640x480 on the next launch.
-- **First start of the game** no longer crashes with `BeginScene failed (DDERR_SURFACELOST)`. The setup guide has you switch the game to windowed before you start it for the first time.
-- **Freestanding cards** (the Grand Staircase card, the Castle Exterior ledge cards and others) no longer vanish after your first visit to their area. Saves where one already went missing get it back on the next visit.
-- **Traps and items for other worlds** show their Archipelago logo again instead of being invisible.
-- **Chests and containers** open again on your next visit when you left their item lying uncollected, so an item that bounced out of reach is never lost. The Entry Hall wooden chest no longer turns into an unopenable box after leaving and returning.
-- **Cauldron items** drop next to the cauldron instead of landing somewhere out of reach.
-- **Cards bought from a vendor** stay where they dropped until you pick them up.
-</content>
-    <link href="https://github.com/Kryen112/HP2PC_AP/releases/tag/v3.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.15</id>
-    <title>Stardew Valley v8.1.14r2</title>
-    <updated>2026-11-12T14:16:45+00:00</updated>
-    <author>
-      <name>Kaito Kid</name>
-    </author>
-    <author>
-      <name>Jouramie</name>
-    </author>
-    <author>
-      <name>Witchybun (Mod Support)</name>
-    </author>
-    <author>
-      <name>Noa (Entrance Randomizer)</name>
-    </author>
-    <content>- Increased unlimited money amount from 9M to 99M so that the gold clock can be purchased easily&#13;
-- Fixed an issue where unlimited money refills were not working</content>
-    <link href="https://github.com/agilbert1412/StardewArchipelago/releases/tag/8.1.15"/>
-  </entry>
-  <entry>
-    <id>https://github.com/mariokirby1703/Lumas-Archipelago/releases/tag/sonic_colours_v0.2.2</id>
-    <title>Sonic Colours (Wii) v0.2.2</title>
-    <updated>2026-11-12T15:16:00+00:00</updated>
-    <author>
-      <name>Luma</name>
-    </author>
-    <content># Sonic Colours (Wii) AP v0.2.2&#13;
-## Fixes and improvements&#13;
-- Improved client responsiveness, item synchronization and check delivery&#13;
-- Improved Dolphin reconnection after restarting the game&#13;
-- Fixed checks and item delivery stopping after interrupted saving&#13;
-- Improved DeathLink detection around pauses and rapid deaths&#13;
-- **Dead Weight Trap** now only lasts 10 seconds&#13;
-- Reworked **Score Reset Trap** to reset points through the native game thread&#13;
-- Fixed new Red Ring pickups being lost when previously collected rings are restored after dying&#13;
-- Added Sliding to Tropical Resort Act 4 S-rank requirement and raised remaining Aquarium Park Act 1 breathing requirements to Level 2&#13;
-- Prevented completing all Game Land stages from automatically unlocking **Super Sonic**&#13;
-- Moved uncertain filler-delivery messages into diagnostics for less confusion for players&#13;
-- Fixed continuous spring bouncing while using the 60 FPS patch&#13;
-- Updated PopTracker Logic&#13;
-## Known issues&#13;
-- **60 FPS can cause physics issues**, including falling out of loops or frenzy jumping way too high</content>
-    <link href="https://github.com/mariokirby1703/Lumas-Archipelago/releases/tag/sonic_colours_v0.2.2"/>
-  </entry>
   <entry>
     <id>https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-26.2.0</id>
     <title>The Legend of Zelda - Oracle of Seasons v26.2.0</title>
@@ -1608,10 +1511,10 @@ Coming from 0.3.0: replace both files with this release's, and generate a new ro
 - Added a rod of seasons item group&#13;
 &#13;
 ## 🧠 Logic&#13;
-- Added the jump between market and forge with just a feather and pegs in hard&#13;
-- Added the use of bombchus to destroy bushes and flower in a few different places&#13;
+- Added the jump between market and forge in subrosia with just a feather and pegs in hard&#13;
+- Added the use of bombchus to destroy bushes and flowers in a few different places&#13;
 - Added the need to progress a bit in the game before getting gasha rewards, shop items and maple trade&#13;
-- Added a logical encounter at mt cucco, which includes having bananas&#13;
+- Added a logical maple encounter at mt cucco, which includes having bananas&#13;
 - Made suburb fountain → eastern suburb with switch hook a medium logic trick&#13;
 - Added leaving d1 entrance to the logic while gnarled key isn't obtained&#13;
 - Fixed golden moblin logically being located at the d2 entrance, which could make some seeds unbeatable if the player didn't have any bush breaker and had the rod of autumn&#13;
@@ -1688,5 +1591,97 @@ Coming from 0.3.0: replace both files with this release's, and generate a new ro
 - See the [README](https://github.com/Arcadia64/sotn-recomp-archipelago#setup).&#13;
 </content>
     <link href="https://github.com/Arcadia64/sotn-recomp-archipelago/releases/tag/0.5.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.9</id>
+    <title>Donkey Kong 64 v2.0.9</title>
+    <updated>2026-11-15T19:34:51+00:00</updated>
+    <author>
+      <name>2dos</name>
+    </author>
+    <author>
+      <name>AlmostSeagull</name>
+    </author>
+    <author>
+      <name>Ballaam</name>
+    </author>
+    <author>
+      <name>Green Bean</name>
+    </author>
+    <author>
+      <name>Killklli</name>
+    </author>
+    <author>
+      <name>Lrauq</name>
+    </author>
+    <author>
+      <name>PoryGone</name>
+    </author>
+    <author>
+      <name>Umed</name>
+    </author>
+    <content>DK64 Randomizer APWorld file for Archipelago version 2.0.9
+
+This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
+    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.9"/>
+  </entry>
+  <entry>
+    <id>https://github.com/StalledStorm/ArchipelagoMine/releases/tag/v1.23.0</id>
+    <title>Metroid Fusion v1.23.0</title>
+    <updated>2026-11-15T23:07:50+00:00</updated>
+    <author>
+      <name>StalledStorm</name>
+    </author>
+    <content>## New&#13;
+Following on from the previous mars patcher update, the following options are now available for use:&#13;
+* Music Rando: shuffle the different music tracks around in the game!&#13;
+* Instant Morph: pressing select will instantly morph/unmorph you! Helpful for morphing in midair.&#13;
+* Alternate Health HUD: this alternate HUD layout shows energy as a number and what the max is, rather than using the bars for tanks.&#13;
+&lt;img width="169" height="45" alt="image" src="https://github.com/user-attachments/assets/a5eca568-e02e-4fee-bc16-3e5dadad62b2" /&gt;&#13;
+&#13;
+* Secondary Weapon Toggle: this option allows you to toggle your missile launcher on and off, rather than needing to hold it!&#13;
+* Added an option to disable major item jingles!&#13;
+&#13;
+## Changed&#13;
+* Specify some sprites to use if items from Metroid Prime are in the fusion world (@UltiNaruto)&#13;
+&#13;
+## Fixed&#13;
+* Elevator Randomiser is now working again&#13;
+* Several logic bugs in Sectors 1, 4, 5 and 6 have been patched (@MarieNobody and @NPCPotPie)&#13;
+* Fixed a regression involving hint and item texts that used unmapped characters (@snowflav-goob and Rosalie)&#13;
+&#13;
+## Known bugs&#13;
+* If you have a missile count of a multiple of 256 (256, 512, 768) you are unable to use missiles. An update will be pushed out once this has been fixed.&#13;
+&#13;
+Setup guide link: [here](https://github.com/StalledStorm/ArchipelagoMine/wiki/Metroid-Fusion-Setup-Guide)</content>
+    <link href="https://github.com/StalledStorm/ArchipelagoMine/releases/tag/v1.23.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/JammyGeeza/Stacklands-Randomizer/releases/tag/v0.2.7</id>
+    <title>Stacklands v0.2.6r2</title>
+    <updated>2026-11-15T23:20:48+00:00</updated>
+    <author>
+      <name>chandler05</name>
+    </author>
+    <author>
+      <name>JammyGeeza</name>
+    </author>
+    <content># Information&#13;
+This mod is still in development, so it is possible that it may contain bugs or issues - please familiarise yourself with the [known issues list](https://github.com/JammyGeeza/Stacklands-Randomizer/issues?q=is%3Aissue%20state%3Aopen) before using this mod to see how your experience may be affected.&#13;
+&#13;
+If you experience a bug/issue that is _not_ in the list, please raise a new github issue or post it in the [Stacklands Forum in the Archipelago Discord Server](https://discord.com/channels/731205301247803413/1151149079238299719)&#13;
+&#13;
+**PLEASE NOTE:** This mod version is compatible with apworld `v0.2.5 / v0.2.6`.&#13;
+&#13;
+## How to Install / Use the Mod&#13;
+All instructions for how to install and use the mod are in the [README.md](https://github.com/JammyGeeza/Stacklands-Randomizer?tab=readme-ov-file#how-to-install-the-mod-to-stacklands)&#13;
+&#13;
+# Patch Notes&#13;
+## APWorld&#13;
+- None&#13;
+&#13;
+## Mod Client&#13;
+- Included more details in UI and Logs for login failures</content>
+    <link href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/tag/v0.2.7"/>
   </entry>
 </feed>

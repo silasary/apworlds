@@ -372,6 +372,20 @@
       "version_simple": "1.22.7",
       "world_version": "1.22.7"
     },
+    "v1.23.0": {
+      "created_at": "2026-11-15T23:07:50Z",
+      "description": "## New\r\nFollowing on from the previous mars patcher update, the following options are now available for use:\r\n* Music Rando: shuffle the different music tracks around in the game!\r\n* Instant Morph: pressing select will instantly morph/unmorph you! Helpful for morphing in midair.\r\n* Alternate Health HUD: this alternate HUD layout shows energy as a number and what the max is, rather than using the bars for tanks.\r\n<img width=\"169\" height=\"45\" alt=\"image\" src=\"https://github.com/user-attachments/assets/a5eca568-e02e-4fee-bc16-3e5dadad62b2\" />\r\n\r\n* Secondary Weapon Toggle: this option allows you to toggle your missile launcher on and off, rather than needing to hold it!\r\n* Added an option to disable major item jingles!\r\n\r\n## Changed\r\n* Specify some sprites to use if items from Metroid Prime are in the fusion world (@UltiNaruto)\r\n\r\n## Fixed\r\n* Elevator Randomiser is now working again\r\n* Several logic bugs in Sectors 1, 4, 5 and 6 have been patched (@MarieNobody and @NPCPotPie)\r\n* Fixed a regression involving hint and item texts that used unmapped characters (@snowflav-goob and Rosalie)\r\n\r\n## Known bugs\r\n* If you have a missile count of a multiple of 256 (256, 512, 768) you are unable to use missiles. An update will be pushed out once this has been fixed.\r\n\r\nSetup guide link: [here](https://github.com/StalledStorm/ArchipelagoMine/wiki/Metroid-Fusion-Setup-Guide)",
+      "download_url": "https://github.com/StalledStorm/ArchipelagoMine/releases/download/v1.23.0/metroidfusion.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1853d2e6717f052161a9b5466bb9ec02a96dae6268270f27d9c07d27210030f3",
+      "html_url": "https://github.com/StalledStorm/ArchipelagoMine/releases/tag/v1.23.0",
+      "size": 443448,
+      "source_url": "https://api.github.com/repos/StalledStorm/ArchipelagoMine",
+      "tag": "v1.23.0",
+      "title": "Metroid Fusion APWorld v1.23.0",
+      "version_simple": "1.23.0",
+      "world_version": "1.23.0"
+    },
     "v18": {
       "created_at": "2026-03-17T20:17:11Z",
       "description": "## New\r\nAdded a new option 'Nerf Geron Weaknesses'. This option is set to false by default. When this option is enabled:\r\n- Stabilisers can only be defeated with Missiles, Charge Beam, or Speed Booster\r\n- Small Gerons can only be defeated with Missiles or Speed Booster\r\n- Medium Gerons can only be defeated with Super Missiles or Speed Booster\r\n- Large Gerons can only be defeated with Power Bombs or Speed Booster\r\n- All Gerons are immune to screw attack, and all except for Large are immune to power bombs.\r\n\r\n## Changes\r\n- Implemented various minor updates to logic, courtesy of JaggerG\r\n- Fixed a bug causing the game to be unpatchable, courtesy of Snowflav_\r\n- - This was caused by items from other worlds containing certain characters, such as square brackets [] (one common world for this was Peggle)\r\n- Updated logic to account for 'Nerf Geron Weaknesses' being enabled/disabled\r\n- Updated mars_patcher to 0.12.0, courtesy of miepee. This brings various room renames, the relevant ones are:\r\n- - Sector 1 (SRX) Ridley Arena -> Sector 1 Neo-Ridley Arena\r\n- - Sector 2 (TRO) Zoro Zig-Zag -> Sector 2 (TRO) Zig-Zag-Zone\r\n- - Sector 3 (PYR) Glass Tube to Sector 5 (ARC) -> Sector 3 (PYR) Westbound Glass Tube\r\n- - Sector 4 (AQA) Cargo Hold to Sector 5 (ARC) -> Sector 4 (AQA) Cargo Hold\r\n- - Sector 5 (ARC) Flooded Airlock to Sector 4 (AQA) -> Sector 5 (ARC) Flooded Airlock\r\n- The new mars_patcher version has also changed the hatch graphics, in order to be more accessible to color blind people. \r\n\r\nSetup guide link: [here](https://github.com/StalledStorm/ArchipelagoMine/wiki/Metroid-Fusion-Setup-Guide)",
