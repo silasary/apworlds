@@ -1,0 +1,30 @@
+{
+  "authors": [
+    "Str8UpWHITE64"
+  ],
+  "flags": [],
+  "game": "TimeSplitters Future Perfect",
+  "github": "https://github.com/Str8UpWHITE64/TSFP-AP",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "1.0.4": {
+      "created_at": "2026-10-14T15:19:42Z",
+      "description": "# TimeSplitters: Future Perfect Archipelago 1.0.4\r\n\r\nFixes for missed checks, a black screen after some missions, and generation, plus two logic changes.\r\n\r\n## Fixes\r\n\r\n- **No more black screen after Machine Wars, Mansion of Madness or The Russian Connection.** Missions without an ending cutscene returned to an invisible menu, and pressing a button restarted the mission. The menu now comes back normally.\r\n- **Container and safe health/armour checks send again.** Packs that drop out of a container or safe (such as the safe in The Khallos Express) were never counted. Any pack taken that isn't a check is now noted in the client log.\r\n- **Level clears have a backup.** If the game's own clear is missed, finishing a level's last objective now sends the clear for the difficulty you played (and the easier ones). Mansion of Madness, You Take the High Road and Future Perfect still rely on the game's own clear.\r\n- **Spent harpoons and darts refill the gun that fired them.** With the Harpoon Gun or Injector shuffled into another gun's place, bolts picked up from walls now give that gun its ammo instead of nothing.\r\n- **Challenges and Arcade stay locked when the client isn't connected.** Playing without the client used to unlock matches the normal way, and those medals were sent as checks once the client connected. The patched game now keeps every match locked until the client opens what your seed has granted.\r\n- **Story-only seeds with Weapon Gating generate reliably.** About half of them used to fail, because the random starting mission could leave almost nothing to check. Generation now redraws the starting missions until at least 5 checks are open.\r\n\r\n## Logic\r\n\r\n- **Protect Harry Tipper** (The Russian Connection) and everything after it need a ranged gun: not an explosive, flamethrower, shotgun-style gun, Flare Gun, Injector or Harpoon Gun.\r\n- **Machine Wars** needs the same kind of ranged gun for everything after Health 3.\r\n- **Scotland the Brave:** Infiltrate the castle and everything after it need the TNT to blow the castle's blast door.\r\n\r\n## Upgrading\r\n\r\nReplace `timesplittersfp.apworld` in your Archipelago `custom_worlds` folder and restart the Launcher. The client updates your patched disc copy the next time it starts. Your original disc is never changed.\r\n\r\nGames already in progress can update and keep playing. The logic changes only apply to newly generated seeds.\r\n",
+      "download_url": "https://github.com/Str8UpWHITE64/TSFP-AP/releases/download/1.0.4/timesplittersfp.apworld",
+      "has_manifest": true,
+      "hash_sha256": "0027969715bf9fd3148ab9a9e3aee6190b66cf2931a7895ea1995e55602a604c",
+      "html_url": "https://github.com/Str8UpWHITE64/TSFP-AP/releases/tag/1.0.4",
+      "minimum_ap_version": "0.6.4",
+      "size": 273575,
+      "source_url": "https://api.github.com/repos/Str8UpWHITE64/TSFP-AP",
+      "tag": "1.0.4",
+      "title": "TSFP-AP v1.0.4",
+      "version_simple": "1.0.4",
+      "world_version": "1.0.4"
+    }
+  }
+}
