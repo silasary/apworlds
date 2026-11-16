@@ -18,7 +18,7 @@ to a fresh full-playthrough acceptance; unsupported sources stay filler-only.
 
 
 ## Downloads
-- <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.30.1/scrc.apworld">Latest Version (0.30.0r2)</a>
+- <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.30.2/scrc.apworld">Latest Version (0.30.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

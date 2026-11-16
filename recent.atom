@@ -2,183 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-16T12:19:46.109651+00:00</updated>
+  <updated>2026-11-16T18:22:15.759201+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.8</id>
-    <title>Team Fortress 2 Mann vs Machine v1.18.8r2</title>
-    <updated>2026-11-13T17:53:01+00:00</updated>
-    <author>
-      <name>mathis</name>
-    </author>
-    <content>&lt;p align="center"&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
-    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
-    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
-
-## Changes
-
-### Fixed
-
-- **The debug bundle no longer tells Windows players to press Repair when
-  Repair cannot help.** SigMod already checks the game files it reads, and when
-  it finds them right the summary now says so, says the crash comes from SigMod
-  on Windows, and explains how to play without it until a fix ships.
-- **The debug bundle sees a Linux server that crashes on `replay_srv.so`.** It
-  used to report "nothing matched" while the server restarted every few
-  seconds. It now names the error and gives the command that finds the missing
-  32-bit system library.
-
-
-## Windows
-
-Download **`tf2ap.exe`** above. Run it. It installs everything else.
-
-Windows will warn you, and it is a false positive. The exe unpacks archives and
-starts a game server without a code signature, which looks like a virus to a
-scanner. Click **More info**, then **Run anyway**, or check it below first.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
-
-## Linux
-
-Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
-
-```sh
-chmod +x tf2ap-linux-amd64
-./tf2ap-linux-amd64
-```
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
-
-## Docker
-
-Download **`compose.yaml`** and **`env.example`**:
-
-```sh
-mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
-base=https://github.com/m-this/tf2-archipelago/releases/latest/download
-curl -fsSLO "$base/compose.yaml"
-curl -fsSL -o .env "$base/env.example"
-```
-
-Set `SRCDS_RCONPW` in `.env`, then:
-
-```sh
-docker compose --profile seed run --rm seed   # writes ./seed
-docker compose up -d
-```
-
-Upload the file from `seed/` at
-[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
-port into `AP_PORT`.
-
-[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
-
-## Other assets
-
-| File | For |
-| --- | --- |
-| `tf2_mvm.apworld` | The official Archipelago app. |
-| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
-| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
-| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
-
-## Checking what you downloaded
-
-**`SHA256SUMS`** is attached to this release. It holds the hash of every file
-here, computed by the workflow that built them.
-
-```powershell
-Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
-```
-
-```sh
-sha256sum -c SHA256SUMS --ignore-missing    # Linux
-```
-
-Each binary carries a signed record of the commit and the workflow that built
-it:
-
-```sh
-gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
-```
-
-The binaries are scanned on VirusTotal, and the reports are linked at the end of
-these notes. Expect a few heuristic detections and no named malware family. The
-source is all in the repository, and `make launcher` rebuilds the exe on your
-own machine.
-
-## Code signing policy
-
-Free code signing for open source projects, provided by
-[SignPath.org](https://signpath.org), with a certificate from the
-[SignPath Foundation](https://signpath.org).
-
-&gt; [!WARNING]
-&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
-&gt; unsigned, and Windows warns about it until that changes.
-
-
-## What's Changed
-* feat(stability): known-failure list for the daily report by @m-this in https://github.com/m-this/tf2-archipelago/pull/259
-
-
-**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.18.7...v1.18.8
-
-## VirusTotal
-
-- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/ZDc0MmUwOTljODE3Mzk3NDlmMDMwZTUwMTY1NDZhZjI6MTc5NDU5Mjg0OA==/detection)
-- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/NTZiMGIxMTBhYThlMTczYWY4NTFmYjExOTJlZjQwMzg6MTc5NDU5Mjg1MQ==/detection)
-</content>
-    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.8"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.49</id>
-    <title>Mental Omega v1.49.0</title>
-    <updated>2026-11-13T22:30:41+00:00</updated>
-    <author>
-      <name>Mental Omega Randomizer contributors</name>
-    </author>
-    <content>- Fix Archipelago error&#13;
-- Fix header in shopmode not being fixed&#13;
-- Add new UI for Mode selection&#13;
-- Improve fail detection for shopmode so that crashes/fails are not counted as a lost run&#13;
-- Fix unit availability for skirmish maps&#13;
-- Fix Victory detection for skirmish maps in general&#13;
-- Add all Skirmish maps for more variety (Not more AI, as I need to think how to handle this yet)&#13;
-- Improve performance of the Randomizer&#13;
-- Add bulk buy button in shopmode (for those with alot of gems)&#13;
-- Add new Conquest mode (Similiar to Kanes Wrath conquest mode or Star wars Battlefronts 2 Conquest mode)</content>
-    <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.49"/>
-  </entry>
-  <entry>
-    <id>https://github.com/StalledStorm/ArchipelagoMine/releases/tag/v1.22.6</id>
-    <title>Metroid Fusion v1.22.6</title>
-    <updated>2026-11-13T22:53:41+00:00</updated>
-    <author>
-      <name>StalledStorm</name>
-    </author>
-    <content>## Changes&#13;
-* Just about all of the problems from last patch's mess should be fixed now (thank you @snowflav-goob)&#13;
-* A separate gen version check has been added before opening a patch (@snowflav-goob)&#13;
-&#13;
-I apologise for the poor state of release of the previous version v1.22.5.&#13;
-&#13;
-## Currently Known Bugs&#13;
-* ElevatorRando is broken. If you wish to play ElevatorRando, please use patch 1.22.4&#13;
-* If you have a missile count of a multiple of 256 (256, 512, 784) you are unable to use missiles&#13;
-&#13;
-Setup guide link: [here](https://github.com/StalledStorm/ArchipelagoMine/wiki/Metroid-Fusion-Setup-Guide)</content>
-    <link href="https://github.com/StalledStorm/ArchipelagoMine/releases/tag/v1.22.6"/>
-  </entry>
   <entry>
     <id>https://github.com/gjgfuj/SlotLock/releases/tag/slotlockv0.11.5</id>
     <title>SlotLock v0.11.5</title>
@@ -1460,18 +1288,77 @@ If you do want to help, **set your graphics to Vulkan in the Video settings menu
     <author>
       <name>247Tossing</name>
     </author>
-    <content>## APWorld bugfix
+    <content>**Cyberpunk Archipelago v0.7.6 (APWorld bugfix)**
 
-- Removed the three "Little China Melee Vendor (2)" checks (`Vendors.wat_lch_melee_02`). The vendor record exists in the game files, but no NPC is placed in Watson, so those checks could never be collected and would block a full clear or auto-release. Coach Fred is the only Little China melee vendor.
-- Include Melee Vendors is now 18 checks (was 21).
+• Removed the three "Little China Melee Vendor (2)" checks that appear to be for cut content
 
-## Compatibility
-
-- APWorld-only update. The game mod is unchanged, so mod 0.7.4 keeps working. The mod ZIP attached here is a rebuild of the same mod.
-- All other location IDs are unchanged. The three removed IDs (2077412-2077414) are reserved and will not be reused.
-- Seeds generated on an older APWorld still contain those 3 checks. They only ever hold filler, so it's safe to skip them.
-- Minimum Archipelago version is still 0.6.6.
+**Compatibility**
+• APWorld-only update. The game mod is unchanged, so current runs do not need to be updated. If your current run is stuck behind any of the unreachable checks I recommend releasing them.
 </content>
     <link href="https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/v0.7.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.30.2</id>
+    <title>Super Crazy Rhythm Castle v0.30.1</title>
+    <updated>2026-11-16T15:44:51+00:00</updated>
+    <author>
+      <name>Jack</name>
+    </author>
+    <author>
+      <name>OpenAI</name>
+    </author>
+    <content># v0.30.2 — School Trip tracking and item delivery
+
+Game client **0.77.2** · APWorld **0.30.1**
+
+- Universal Tracker waits for Boring Room completion and Important Letters delivery before showing School Trip on seeds with the open Lobby doors. School Trip still needs Lobby Access and its generated Star count. Demolition Training can be skipped.
+- Received cassettes can reach the active save during play and persist after deposit. Plant Pipes, Hip Glasses and Chicken Bucket grants now recognize the newer route settings.
+- Earned checks survive disconnects and restarts. The client validates the room and save before applying pending deliveries. Temporary outages retry automatically, and login errors that need attention appear in the log.
+- The client does less repeated work during songs and handles reloading the plugin more reliably.
+
+## Updating
+
+Close the game and install **RhythmCastleAP-v0.77.2.zip**. Replace **scrc.apworld** on the computer running Universal Tracker or generating seeds, then restart Archipelago. Reconnect to your existing room and use its associated save. School Trip's live status uses Universal Tracker's default deferred-entrance setting.
+
+The School Trip route was checked in game at four and five Stars with Demolition Training unfinished. The corrected availability was checked separately in Universal Tracker v0.2.32 using that seed. The Gecko variant still needs a separate in-game test.
+
+[Installation guide](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.2/docs/INSTALL.md) · [Full changelog](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.2/CHANGELOG.md) · [Known issues](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.2/docs/KNOWN_ISSUES.md)
+</content>
+    <link href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.30.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.3.2</id>
+    <title>Xenoblade X v0.3.2</title>
+    <updated>2026-11-16T16:18:00+00:00</updated>
+    <author>
+      <name>Maragon</name>
+    </author>
+    <author>
+      <name>Nina</name>
+    </author>
+    <content>- Added logic for shop armor/weapons.&#13;
+- Added manufacturer names/level to shop locations.&#13;
+- Removed party include/exclude/size requirements for affinity quests</content>
+    <link href="https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.8.2</id>
+    <title>The Legend of Zelda: A Link to the Past v1.8.2</title>
+    <updated>2026-11-16T17:08:50+00:00</updated>
+    <author>
+      <name>aurabot</name>
+    </author>
+    <content>### The Legend of Zelda: A Link to the Past OWR v1.8.2&#13;
+&#13;
+* Universal Tracker now works with logical enemy shuffle&#13;
+* Universal Tracker now correctly tracks pendants and crystals&#13;
+* Fixed more enemy drop checks sometimes not being sent&#13;
+* Fixed Lynels and Ganon being in logic with Fighter Sword&#13;
+* karafruit made a few fixes and improvements for the features from her fork&#13;
+  * The sped-up fanfare for items now applies to Maps, Compasses, and Heart Containers&#13;
+  * Useful AP items are now prioritized above Maps and Compasses when displaying the value of items in the HUD or map&#13;
+  * Fixed the in-game map combining two dungeons if the current dungeon contained a specific PoD warp tile&#13;
+  * Fixed a display error with the Ganons Tower Compass Room map tile</content>
+    <link href="https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.8.2"/>
   </entry>
 </feed>

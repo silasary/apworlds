@@ -1,4 +1,6 @@
-# AP Stars candidate logic (schema 19)
+# Historical AP Stars design for APWorld 0.28.0 (schema 19)
+
+This document records the original 0.28.0 design and its fill regression case. Later releases changed the Lobby, Cell Tower and Bunker routes and added cassette bundles. The [player guide](en_Super%20Crazy%20Rhythm%20Castle.md) covers the current APWorld.
 
 APWorld 0.28.0 generates exactly 66 individual Star items. The existing 71
 non-Star instances remain: 69 progression inputs and two useful character rewards.
