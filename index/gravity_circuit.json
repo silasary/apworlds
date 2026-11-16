@@ -1,0 +1,74 @@
+{
+  "authors": [
+    "Murat Kaan Tekeli"
+  ],
+  "game": "Gravity Circuit (MuratDev's Implementation)",
+  "github": "https://github.com/MuratDev41/gravity-circuit-ap",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "v0.10.0": {
+      "created_at": "2026-10-03T16:57:20Z",
+      "description": "### New\r\n- **Fortress Access Items** (`fortress_access`, off by default): Fortress 1 and Fortress 2 are opened by\r\n  \"Fortress 1 Access\" and \"Fortress 2 Access\" items found in the multiworld, instead of by bosses. Only\r\n  Fortress 3 (the final boss) still needs `bosses_required`, which shortens go mode.\r\n  - Only the 8 Circuit stage bosses count toward `bosses_required`. Fortress 1 and 2 are never needed for the goal.\r\n  - The stage select shows all three Fortress stages and locks each one separately.\r\n- The PopTracker pack tracks the two new items and the new setting automatically.\r\n\r\n### Logic\r\n- These checks now require the **Air Jumper** chip on Normal logic:\r\n  - Fortress 2 - Small Cache 11\r\n  - Fortress 2 - Small Cache 12\r\n\r\n### Fixes\r\n- Fixed generation failing when `money_caches` or `small_money_caches` is off. This affected 0.9.1.\r\n",
+      "download_url": "https://github.com/MuratDev41/gravity-circuit-ap/releases/download/v0.10.0/gravity_circuit.apworld",
+      "has_manifest": true,
+      "hash_sha256": "455c003661920dd4cc54c8058bbe1e47d9a98448b4e2dd4d7f7c287ae4451e0d",
+      "html_url": "https://github.com/MuratDev41/gravity-circuit-ap/releases/tag/v0.10.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 17058,
+      "source_url": "https://api.github.com/repos/MuratDev41/gravity-circuit-ap",
+      "tag": "v0.10.0",
+      "title": "Gravity Circuit v0.10.0",
+      "version_simple": "0.10.0",
+      "world_version": "0.10.0"
+    },
+    "v0.10.1": {
+      "created_at": "2026-10-03T17:58:00Z",
+      "description": "### Changes\r\n- **Rescue Tokens are progression** when shopsanity is on. The Nurse's Shop logic counts them on top of the\r\n  tokens you get from rescue bots, so her chips can come into logic earlier. With shopsanity off they stay filler.\r\n\r\n### PopTracker\r\n- The pack (now 0.6.0) tracks how many Rescue Tokens you've received and counts them in the Nurse's Shop logic.",
+      "download_url": "https://github.com/MuratDev41/gravity-circuit-ap/releases/download/v0.10.1/gravity_circuit.apworld",
+      "has_manifest": true,
+      "hash_sha256": "67da84f12b1f3b2506e9eed0a70ba189337c9aba4d96f81791eabb7e7e97f7e5",
+      "html_url": "https://github.com/MuratDev41/gravity-circuit-ap/releases/tag/v0.10.1",
+      "minimum_ap_version": "0.6.4",
+      "size": 17119,
+      "source_url": "https://api.github.com/repos/MuratDev41/gravity-circuit-ap",
+      "tag": "v0.10.1",
+      "title": "Gravity Circuit v0.10.1",
+      "version_simple": "0.10.1",
+      "world_version": "0.10.1"
+    },
+    "v0.9.0": {
+      "created_at": "2026-10-02T21:17:59Z",
+      "description": "The first public release",
+      "download_url": "https://github.com/MuratDev41/gravity-circuit-ap/releases/download/v0.9.0/gravity_circuit.apworld",
+      "has_manifest": true,
+      "hash_sha256": "bed53a48ce83683aae47a9b189887ca7d2574b545eadaa40b10d12c81e21cb6b",
+      "html_url": "https://github.com/MuratDev41/gravity-circuit-ap/releases/tag/v0.9.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 16280,
+      "source_url": "https://api.github.com/repos/MuratDev41/gravity-circuit-ap",
+      "tag": "v0.9.0",
+      "title": "Gravity Circuit v0.9.0",
+      "version_simple": "0.9.0",
+      "world_version": "0.9.0"
+    },
+    "v0.9.1": {
+      "created_at": "2026-10-03T01:41:17Z",
+      "description": "Fixed a logic hole of a check named \"Highway - Money Cache 1\" in Highway not requiring Air Jumper chip on normal logic",
+      "download_url": "https://github.com/MuratDev41/gravity-circuit-ap/releases/download/v0.9.1/gravity_circuit.apworld",
+      "has_manifest": true,
+      "hash_sha256": "1740d36ecbc321b6e3d70ae7a64d362fee0819bcb5a95a5ee4bfeea05c0a37ac",
+      "html_url": "https://github.com/MuratDev41/gravity-circuit-ap/releases/tag/v0.9.1",
+      "minimum_ap_version": "0.6.4",
+      "size": 16309,
+      "source_url": "https://api.github.com/repos/MuratDev41/gravity-circuit-ap",
+      "tag": "v0.9.1",
+      "title": "Gravity Circuit v0.9.1",
+      "version_simple": "0.9.1",
+      "world_version": "0.9.1"
+    }
+  }
+}
