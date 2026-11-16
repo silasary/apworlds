@@ -1,0 +1,32 @@
+{
+  "authors": [
+    "effkyoo"
+  ],
+  "flags": [
+    "unready"
+  ],
+  "game": "Guitar Hero II",
+  "github": "https://github.com/jvlandon/Archipelago",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "0.1.0": {
+      "created_at": "2026-10-05T23:59:20Z",
+      "description": "# Guitar Hero II (PS2) AP World\r\n\r\nArchipelago implementation for Guitar Hero II for the PS2. This AP world uses PCSX2's PINE interface to facilitate communication between the client and the emulator.\r\n\r\n## Goal\r\n\r\nComplete Free Bird at Stonehenge in Career mode on the difficulty chosen in the player's settings.\r\n\r\n## What's Randomized\r\n\r\nAll songs and venues are shuffled into the item pools. Checks are awarded based on song performance (3, 4, and 5 Stars, plus 100% of notes). All of these apart from\r\nthree stars can be toggled in the player's settings.\r\n\r\nFiller items consist solely of cash at this time. Bonus songs may be purchased in the shop but they are also in the item pool, so purchasing them is considered\r\nout of logic, and may not persist over game reloads. Do so at your own risk. This is admittedly an odd quirk, but should not exist long term.\r\n\r\n## Setup and Warnings\r\n\r\nA full setup guide can be found in this repo, but two things require emphasis:\r\n\r\n1. **Start each seed with a fresh save.** Not creating a new save file may cause issues, including checks being sent out before they are meant to.\r\n\r\n2. **Calibrate your lag.** Guitar Hero II was designed for CRTs, and modern screens create significant lag for the games (to say nothing of emulator lag).\r\nAlways calibrate your lag after initializing a new file.\r\n\r\n## Known issues\r\n\r\n- There have been a few locking issues with the client. I think this is fixed, but generally disconnecting/reconnecting is enough to get it to behave\r\n- Encores sometimes occur for tiers if the criteria are met. This could give access to songs out of logic, though I believe it would just be limited to the\r\nencore song itself. I have to do more testing/research to fully stymie this. For now, I recommend not playing an encore if it comes up.\r\n- Of note to the above issue: Free Bird *will* trigger an encore (by design), but playing it as an encore at a venue other than Stonehenge will crash the game, and you will neither\r\ncomplete the seed, Free Bird, or the song you played prior.\r\n- The Blackout Bar venue is always available. This doesn't affect the item pool or randomization, it's just the default venue in case you play \r\nQuick Play and don't have anything unlocked.\r\n- Unlocking later tier songs will push the song list lower than the screen, meaning some of the bonus tracks may not be viewable. \r\n\r\n## To-Do list\r\n\r\n- Shop shuffle\r\n- alternate goal(s)\r\n- Rocks the 80s",
+      "download_url": "https://github.com/jvlandon/Archipelago/releases/download/0.1.0/gh2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "df4b54ff6979060606a95a4e9aef2ad4ce194ae9a1148037200ee10addd1bbe5",
+      "html_url": "https://github.com/jvlandon/Archipelago/releases/tag/0.1.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 13837,
+      "source_url": "https://api.github.com/repos/jvlandon/Archipelago",
+      "tag": "0.1.0",
+      "title": "Guitar Hero II AP World 0.1.0",
+      "version_simple": "0.1.0",
+      "world_version": "0.1.0"
+    }
+  }
+}
