@@ -278,6 +278,21 @@
       "version_simple": "1.0.15",
       "world_version": "1.0.15"
     },
+    "1.0.15r2": {
+      "created_at": "2026-11-17T13:20:00Z",
+      "description": "## Big Walk Archipelago 1.0.15\r\n\r\nA logic fix, thanks caitlin. **Only the apworld changed**: the 1.0.14 mod plays 1.0.15 seeds, and your YAMLs work as they are. Regenerate to get the fix.\r\n\r\n### Fixed\r\n- **Three lamps past the purple hole were in logic without it**: the 1.0.7 fix only covered the seven purple puzzles. Lamp and Pedestal Lamp (South Peak 1) and Pedestal Lamp (near Cabin Fever Long) now need the Tunnels (the Purple Tunnel with `tunnel_sanity`).\r\n- **Lamp (near Cabin Fever Long)** asked for the chairlift, though it can be reached along the coast. It no longer does.",
+      "download_url": "https://github.com/Grizfreak/BigWalk-archipelago/releases/download/1.0.15/bigwalk.apworld",
+      "has_manifest": true,
+      "hash_sha256": "392fbd9dd9a1f15a2b423e53e97670a303ab28591d3f05fdf298d68896569b5c",
+      "html_url": "https://github.com/Grizfreak/BigWalk-archipelago/releases/tag/1.0.15",
+      "minimum_ap_version": "0.6.7",
+      "size": 182713,
+      "source_url": "https://api.github.com/repos/Grizfreak/BigWalk-archipelago",
+      "tag": "1.0.15r2",
+      "title": "1.0.15",
+      "version_simple": "1.0.15",
+      "world_version": "1.0.15.post2"
+    },
     "1.0.2": {
       "created_at": "2026-10-20T19:03:59Z",
       "description": "## Big Walk Archipelago 1.0.2\r\n\r\nFixes from the first 1.0 sessions, two new objectives and a few options. **Update the mod zip for every player of a session**: the gadgets the multiworld sends are built differently, and the host's channel to its guests changed (protocol v23). A 1.0.1 YAML generates as it did; with `open_black_tower` off, the Black Tower's button and monument now wait in logic for its door, so such a seed may place things differently.\r\n\r\n### Fixed\r\n- **Gadgets received with `object_sanity` could break between players**: a scanner nobody else could pick up, then stuck on a guest's face, a torch that stayed on, a walkie-talkie that gave a guest their own voice back.\r\n- **Opening the door of a light puzzle sent a DeathLink** (Pointer's Paradise and the others whose lights are pressed in order). Only a wrong press counts now.\r\n- **Peg tiles were shuffled across puzzles** (Green Tower, Ring Room, Silent Gauntlet...): doubled in one puzzle, missing in another, invisible ink in a plain puzzle. They now swap within their own rack and their own kind, a few seconds after the world loads, the same way every load.\r\n- **A key's cutting flags on the map followed the key around**; they stay on the key's own trail.\r\n- **With `open_black_tower` off, the Black Tower's button and monument were in logic behind a shut door**; and with `tower_mode`, the door now opens at the Black Tower's turn.\r\n- Generation is much faster in large multiworlds (the world's pre-fill no longer walks every other world: 27 s down to under a tenth of a second per Big Walk among 150 slots).\r\n\r\n### Added\r\n- **`mirrored_poses`**: the pose panels drawn among the game's poses and the mirrors of the four that are not symmetric, a pose and its mirror possibly side by side. 0 (off) to 100.\r\n- **`big_doof`** (the Doof Chamber's five lights on and its smoke machine's button held for ten seconds) and **`big_makeover`** (painted at the Secret Salon), both in the tunnels. With `everyone_gathers`, every player.\r\n- Big Climb's, Big Fiesta's and Big Doof's ten seconds tick (Cabin Fever's sound), for every player.\r\n- With `random_colors`, each laser takes its own colour, its beam included.\r\n- With `tower_mode: by_item`, the towers' line says which Progressive Monument it waits for.\r\n- Linux and the Steam Deck: the setup guide gives the Proton launch option.\r\n- The session journal notes what each player holds, for reports of a gourd that cannot be picked up.",
