@@ -84,7 +84,7 @@ client's log file). If those can't open on your PC, the messages show in the cli
   already holding a locked card has to be conceded (no DeathLink is sent for it).
 - **DeathLink** (in the notices): time to concede your run. A DeathLink you survive (by default the first one in
   a run) shows a **DEATHLINK SURVIVED** pop-up instead, and you keep playing.
-- **Header (top left):** during a run, your hero, day, goal progress and Lock Bypasses, with the Shop Guide and
+- **Header (top left):** during a run, your hero, day, goal progress and Lock Bypasses, with the Item Guide and
   Tracker buttons. It turns red while the client isn't connected to the multiworld.
 - **Hero panel (main menu, centre):** every hero in your multiworld with their checks and cards unlocked, locked
   heroes padlocked, and a warning if the hero you picked - or Random - can land on one you can't play. It steps
@@ -101,17 +101,16 @@ Short pop-ups (about 6 seconds each), as many as fit: **FOUND** for anything fro
 see it) or Lock Bypass, **LOCK BYPASS USED** naming the card it let you keep, **SELL IT NOW** (or **SELL OR USE
 BYPASS**) if you buy or get a locked card, and a note when the game was updated since the apworld was made. A red **CHECK NOT SENT** pop-up names any check the moment it's blocked.
 
-### Shop Guide
+### Item Guide
 
 A window with pictures (courtesy of [Bazaar DB](https://bazaardb.gg)) of every card, each at its in-game size
 (small = 1 slot wide, medium = 2, large = 3), with the locked ones greyed out behind a red X.
 
-- **On offer now** comes first, framed in gold: the cards on screen right now, in a shop, a level-up, loot or an
-  event. A card you buy stays in the list.
-- Below it, everything the chosen merchant could stock for your hero.
+- Everything the chosen merchant could stock for your hero, in each card's rarity frame like in the game. The cards
+  on screen right now (a shop, a level-up, loot or an event) are always in the list, and a card you buy stays there.
 - **Search**, **Size**, **Rarity** and **Merchant** filters at the top; **Locked only** shows just the cards you may
   not buy - a great way to learn what they look like.
-- Open it any time with the **Shop Guide** button in the header (top left), not just in a shop; the same button or
+- Open it any time with the **Item Guide** button in the header (top left), not just in a shop; the same button or
   its **X** closes it. It fills the column left of the board, and it's a real window: drag it anywhere, even onto
   another monitor.
 - The pictures come inside the apworld, so nothing is downloaded. The first time, they take a moment to get ready;
@@ -122,7 +121,8 @@ Start the client with `--no-shop-guide` to turn it off completely.
 ### Tracker
 
 Press **Tracker** in the header (top left) or type `/tracker`. You get a card for every hero, each with four squares:
-**1** reach day N, **2** PvP win on day N, **3** monster checks, **4** 10 wins.
+reach day N (a sunrise), PvP win on day N (clashing swords), monster checks (a snake's head) and 10 wins (a
+trophy). Under each hero's card: how many of its checks you've done, and how many of its cards you've unlocked.
 
 - **Green:** something in it is in logic.
 - **Yellow:** what's left is out of logic - doable, but logic expects more of that hero's cards first.

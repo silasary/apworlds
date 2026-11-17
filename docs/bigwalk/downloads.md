@@ -1,9 +1,12 @@
 # Big Walk
 
 ## Latest
-- <a href="https://github.com/Grizfreak/BigWalk-archipelago/releases/download/1.0.14/bigwalk.apworld">Latest Version (1.0.14)</a>
+- <a href="https://github.com/Grizfreak/BigWalk-archipelago/releases/download/1.0.15/bigwalk.apworld">Latest Version (1.0.15)</a>
 
 ## All Versions
+
+#### v1.0.15
+- <a href="https://github.com/Grizfreak/BigWalk-archipelago/releases/download/1.0.15/bigwalk.apworld">https://github.com/Grizfreak/BigWalk-archipelago/releases/download/1.0.15/bigwalk.apworld</a>
 
 #### v1.0.14
 - <a href="https://github.com/Grizfreak/BigWalk-archipelago/releases/download/1.0.14/bigwalk.apworld">https://github.com/Grizfreak/BigWalk-archipelago/releases/download/1.0.14/bigwalk.apworld</a>

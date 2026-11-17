@@ -1,9 +1,12 @@
 # Geoguessr
 
 ## Latest
-- <a href="https://github.com/remigranotier/geoguessr-archipelago/releases/download/v0.2.0/geoguessr.apworld">Latest Version (0.2.0)</a>
+- <a href="https://github.com/remigranotier/geoguessr-archipelago/releases/download/v0.2.1/geoguessr.apworld">Latest Version (0.2.0r2)</a>
 
 ## All Versions
+
+#### v0.2.0r2
+- <a href="https://github.com/remigranotier/geoguessr-archipelago/releases/download/v0.2.1/geoguessr.apworld">https://github.com/remigranotier/geoguessr-archipelago/releases/download/v0.2.1/geoguessr.apworld</a>
 
 #### v0.2.0
 - <a href="https://github.com/remigranotier/geoguessr-archipelago/releases/download/v0.2.0/geoguessr.apworld">https://github.com/remigranotier/geoguessr-archipelago/releases/download/v0.2.0/geoguessr.apworld</a>

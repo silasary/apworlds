@@ -320,6 +320,21 @@
       "version_simple": "1.3.10",
       "world_version": "1.3.10.post2"
     },
+    "waffles-v1.3.11": {
+      "created_at": "2026-11-16T00:36:23Z",
+      "description": "if someone tells me they've softlocked themselves in CI2 I'm gonna yell\r\n## Info \r\n* [Information](https://thelx5.github.io/smw/)\r\n* [Setup](https://thelx5.github.io/smw/setup.html)\r\n## Changes\r\n* A ton of [logic updates and tricks](https://github.com/TheLX5/Archipelago/pull/33) courtesy of Frieze\r\n* Enemy shuffle updates\r\n\t* Guarantees a colored koopa (or a shell) in several levels\r\n\t\t* YI1, DP4, VD1, VD4, VS1, BB2, COM, FI1, SW5\r\n\t* DP4 no longer has undefeatable enemies with a kicked shell where the goomba conga line is\r\n\t* COM no longer has undefeatable enemies with a kicked shell where the monty mole zig zag is\r\n\t* Larry's fight no longer has a boo block as a valid option to roll into the arena\r\n* Moved last dragon coin on CI2 to be _after_ the goal so people don't softlock themselves\r\n* Removed tile destruction on the overworld, that way Switch Palaces can be entered again even if the location was collected\r\n* Too lazy to update the credits version number",
+      "download_url": "https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.3.11/waffles.apworld",
+      "has_manifest": true,
+      "hash_sha256": "aa021e4ecbe2604dcf9edf92ff4b5a13e9ffe6dd18bd66acafc66daa02312aba",
+      "html_url": "https://github.com/TheLX5/Archipelago/releases/tag/waffles-v1.3.11",
+      "minimum_ap_version": "0.6.7",
+      "size": 268419,
+      "source_url": "https://api.github.com/repos/TheLX5/Archipelago",
+      "tag": "waffles-v1.3.11",
+      "title": "Spicy Mycena Waffles v1.3.11",
+      "version_simple": "1.3.11",
+      "world_version": "1.3.11"
+    },
     "waffles-v1.3.2": {
       "created_at": "2026-04-21T00:32:44Z",
       "description": "### Woohoo! Just what I needed!\r\n## Info \r\n* [Information](https://thelx5.github.io/smw/)\r\n* [Full Changelog](https://thelx5.github.io/smw/changelog/#1.3.2)\r\n* Probably not compatible with ongoing games\r\n## Changes\r\n* Implemented DeathLink\r\n\t* Stars can nullify one death signal at a time\r\n\t* Hearts can also nullify one death signal if desired\r\n* DeathLink, EnergyLink and TrapLink can now be toggled in the Manager at any time\r\n* Potentially fixes Yoshi House's goal forcing a ton of eggs being panic swap targeted\r\n* Fixes alternate logic being all messed up in Universal Tracker\r\n* Fixes some unusual cases where exits will be reported as reachable out of logic in UT \r\n* Fixes boos hurting Mario while ducking or when having an active star and riding Yoshi\r\n* Fixes locations other than exits having wrong classifications on levels with swapped exits\r\n* Run no longer displays an A in the in-game tracker\r\n* Goal location is now an event\r\n* Removed `swap_level_exits` option, it stopped mattering a long time ago\r\n* Alternate Logic no longer has every setting on by default\r\n* Enemy Shuffle updates:\r\n\t* FoI4 now guarantees a bouncing koopa after the midway point\r\n\t* VoB2 no longer has Dino Rhinos on the first room\r\n\t* VoB2 no longer has bouncing american footballs in the third room\r\n\t* DS1 now has fishes after exiting the secondary room\r\n* Several logic updates I forgot to document",

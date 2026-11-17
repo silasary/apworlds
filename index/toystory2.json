@@ -385,6 +385,21 @@
       "title": "Toy Story 2 AP 3.1.4",
       "version_simple": "3.1.4",
       "world_version": "3.1.4"
+    },
+    "3.2.0": {
+      "created_at": "2026-11-09T08:27:44Z",
+      "description": "# New Rexsanity Hide 'n Seek Mode\r\n- Each level\u2019s Rex hides in one of five spots, picked at random per seed. He\u2019s never in his usual spot.\r\n- Each spot has its own logic.\r\n- His yell is muted so he can\u2019t give himself away.\r\n- With moves shuffled, a starting level\u2019s Rex only hides somewhere that needs nothing. Alleys and Gullies is never the only starting level in that case.\r\n- Rexsanity is now Off / On / Hide \u2018n Seek. Old `true`/`false` yamls still work.\r\n\r\n# New QOL\r\n- Remembered Shortcuts are finally here! If you make a shortcut and leave and come back, the shortcut will still be activated\r\n  - Andy\u2019s Neighborhood: the rope.\r\n  - Construction Yard: the three elevator switches.\r\n  - Elevator Hop: the halfway switch, the top switch and the elevator power.\r\n\r\n# New Traps and Filler\r\n- Eject Buzz (trap): Buzz flies out of the level. Never in boss levels. It waits if he\u2019s on a pole or in the air.\r\n- No Time to Lose (trap): Buzz says it on repeat for 10 seconds.\r\n- WHOA! (trap): 10 seconds of his falling yell.\r\n- Buzz Is Hearing Voices (trap): everyone in the level talks at once for 10 seconds.\r\n- Buzz Quip (filler): Buzz says one of his lines.\r\n\r\n**_Note: None of these new traps and filler queue, they will only fire if you are actively playing and in a level. If they queued, it would get really annoying really fast..._**\r\n\r\n# Music Randomizer Update\r\n- I found a new and improved way to handle music. Now the music randomizer covers the following in addition to the normal levels:\r\n  - Level Select\r\n  - Minigames\r\n  - Minibosses\r\n\r\n# Other Changes\r\n- **Star Command Missions:** Missing toy owners and Potato Head offer the item and a Mission Star when their reward is also a mission. With reward hints on, the Mission Star gets hinted too.\r\n- **Lives Carry More Weight:** In normal levels Buzz now leaves the way a token sends him off. Boss levels keep the old exit to prevent fall positives for victory.\r\n\r\n# Bug Fixes\r\n- Buzz now makes his death sound when dying from death link.\r\n- Batteries now heal properly if you're using the `Extra Battery Capacity` option\r\n- The Zurg Second Cutscene Trap has finally been fixed! _I think... report if not please._\r\n- Potato Head's part disappear properly if you've already collected them\r\n- A very long level load can no longer send all missing toy checks at once.\r\n- That same long load no longer leaves the boxes around gadgets you own.\r\n\r\n# Logic\r\n- 4 Coins in Andy's Neighborhood have had correct Hard Skip Logic\r\n\r\n# Debug\r\n- The debug log now notes slow frames, long frames, and runs where the game itself slowed down.\r\n- The freeze check is lighter.\r\n- An optional ts2_disable.txt file can turn parts of the script off for testing.",
+      "download_url": "https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/3.2.0/toystory2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "82d7ee3b86a853e0d1e883670228a495140153ef2c3cab6061ae1bf780f50208",
+      "html_url": "https://github.com/imklubb/Archipelago-Toy-Story-2/releases/tag/3.2.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 6543144,
+      "source_url": "https://api.github.com/repos/imklubb/Archipelago-Toy-Story-2",
+      "tag": "3.2.0",
+      "title": "Toy Story 2 AP 3.2.0",
+      "version_simple": "3.2.0",
+      "world_version": "3.2.0"
     }
   }
 }

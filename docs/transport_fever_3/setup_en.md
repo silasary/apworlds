@@ -22,11 +22,13 @@ Set `climate` to the climate of the map you will play, and keep at least one goa
 2. In the Archipelago Launcher open **Transport Fever 3 Client**, erase the default text of the address field, type the
    address of the server and connect with your slot name.
 3. The client says "Game connected" as soon as the mod answers. The open contracts are in the game's own contract
-   interface, and `/contracts` lists them in the client.
+   interface, and `/contracts` lists them in the client. You do not need to accept them: a check is reached on its own.
 
 ## Troubleshooting
 
 - "Waiting for the game mod": the mod is not enabled in the game, or the game is not running.
 - "user data not found": type `/folder <path of ...\3493540\local\towns_industries>` in the client.
-- Do not accept more than five Archipelago contracts at the same time: the game stops offering its own subsidies
-  while five are active.
+- No subsidy appears in the game (and the "N missions completed" checks cannot be reached): you probably have five
+  Archipelago contracts accepted, and the game stops offering its own subsidies while five are active. **Do not accept
+  the Archipelago contracts**: a check is reached without it. Finish or abandon some, or set `mission_checks: 0` in
+  your YAML to remove the checks that depend on the game's subsidies.
