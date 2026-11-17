@@ -2,76 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-17T00:22:05.780130+00:00</updated>
+  <updated>2026-11-17T06:18:21.852578+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3</id>
-    <title>Undertale Beta v2.0.0.post3</title>
-    <updated>2026-11-14T02:04:08+00:00</updated>
-    <author>
-      <name>Mewlif</name>
-    </author>
-    <content>### YOU NEED A NEW SAVE AND GENERATION FOR THIS VERSION, IT IS NOT BACKWARDS COMPATIBLE&#13;
-&#13;
-ADDED:&#13;
-&#13;
-- Asriel now unequips your spells after phase 1&#13;
-- There is now a KEYS menu inside your ITEM menu outside of battle, replaces the list in the STAT menu. Used keys will be removed from the menu. This also affects Mystery Key and Undyne Letter (Goal, Route, Killsanity, and Sparesanity are excluded from this change and are still in the STAT menu)&#13;
-- Shop item names now change to `(Bought)` and become free after buying on that save&#13;
-&#13;
-CHANGES:&#13;
-&#13;
-- Hub Shop price option now defaults to 50&#13;
-- Dog Salad/Residue now sells for 10 times the normal price&#13;
-- `Cowboy Hat` and `Empty Gun` are now after `Burnt Pan` and `Stained Apron` in Progressive Weapon/Armor order&#13;
-- The rocks that block some paths in Pacifist now only disappear after interacting with them after getting the corresponding item, which the rocks also now tell you&#13;
-- `Undyne Letter EX` has been renamed to `Undyne Letter`&#13;
-&#13;
-FIXES:&#13;
-&#13;
-- Receiving a Door Unlock as your first item no longer adds a glitched item to your box&#13;
-- Hapstablook doorlock location now requires Mystery Key&#13;
-- Genocide goal no longer adds the MTT Resort bedroom to doorlock&#13;
-- The room from failing the pillar lever puzzle in Ruins no longer thinks you can go there from the pre-solved room&#13;
-- Non-genocide route goals no longer think Worn Dagger and Heart Locket have the genocide stats</content>
-    <link href="https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.1-rc2</id>
-    <title>Kirby &amp; The Amazing Mirror v0.5.1rc2</title>
-    <updated>2026-11-14T07:03:53+00:00</updated>
-    <author>
-      <name>Harrison Sherwin</name>
-    </author>
-    <content>## v0.5.1-rc2
-
-Release candidate for v0.5.1, built from merged main commit `9b4aaa513d8aed325f4ecf32c2a39eb1bf018961`.
-
-### Changes since v0.5.0
-- Copy Ability Room access is now an AP item (Issue #1002).
-- Improved Logic for Item Placement and Accessible Locations (PR #1041, #1042, #1045, #1048, #1051, #1052).
-- Starting inventory: Ice added; Beam kept; Wheel, Mini, Cutter, Stone and Burning removed.
-- Fixed starting-inventory counts and native enemy behavior overwriting shuffled abilities, including Waddle Doo/Parasol resets.
-- **New in rc2:** Carrot and Radish chute-side barriers now require their corresponding Lever Wall items. Same-side returns and room visits remain available; all four lever chains were audited (Issue #1093, PR #1094).
-
-Regenerate seeds to use the corrected placement logic. Updating the APWorld does not rewrite existing generated seeds or spoilers.
-
-### Downloads
-- **kirbyam.apworld**: the installable Kirby &amp; the Amazing Mirror world package for Archipelago, including the committed ROM patch. This is the file players need; it does not contain a full game ROM.
-- **kirbyam.provenance.json**: build receipt identifying the source commit, workflow run and package checksum; useful for verification, not required for normal play.
-- **kirbyam.attestation.jsonl**: signed GitHub build-provenance bundle for verifying the package and receipt; not a game file.
-- **Source code (zip / tar.gz)**: GitHub-generated repository snapshots for developers, not substitutes for the installable APWorld.
-
-### Known limitations
-Only the North American ROM is supported. AP notifications are English; mGBA notifications require the visible Archipelago Connector scripting panel. Original chest/statue visuals remain. Ranged-attack logic still has coverage gaps. Testing covers selected scenarios, not a complete playthrough or every multiplayer setup; the Carrot barrier correction has static geometry/regression coverage but not a fresh native closed/open comparison.
-
-[Full v0.5.1 changelog](https://github.com/hasherwi/Archipelago-kirbyam/blob/kirbyam-v0.5.1-rc2/worlds/kirbyam/CHANGELOG.md)
-</content>
-    <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.1-rc2"/>
-  </entry>
   <entry>
     <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.5.1</id>
     <title>Kirby &amp; The Amazing Mirror v0.5.1</title>
@@ -1194,6 +1129,34 @@ If you do want to help, **set your graphics to Vulkan in the Video settings menu
     <link href="https://github.com/247Tossing/cyberpunk_archipelago/releases/tag/v0.7.6"/>
   </entry>
   <entry>
+    <id>https://github.com/DeltaSilver/Armored-Core-6-Archipelago/releases/tag/v0.2.2-Beta</id>
+    <title>Armored Core VI v0.2.2b0</title>
+    <updated>2026-11-16T13:28:29+00:00</updated>
+    <author>
+      <name>DeltaSilver</name>
+    </author>
+    <content># Armored Core 6 Archipelago — v0.2.2-Beta&#13;
+&#13;
+# Changes&#13;
+&#13;
+- **Added**: Logic so items will be properly placed across the game.&#13;
+- **Fixed**: AC6AP not working with DS3 AP&#13;
+&#13;
+## Known Issues&#13;
+&#13;
+- Must launch through ModEngine2, not Steam directly.&#13;
+- When closing, crashing, or returning to garage from a mission causes all items gained during that mission to vanish.&#13;
+&#13;
+## Compatibility&#13;
+&#13;
+Built and tested on **AC6 App Ver. 1.09.1** with **ModEngine 2.1.0**. Other&#13;
+versions may break.&#13;
+&#13;
+## Credits&#13;
+**easywsclient**, **ModEngine2**, and **Archipelago**.</content>
+    <link href="https://github.com/DeltaSilver/Armored-Core-6-Archipelago/releases/tag/v0.2.2-Beta"/>
+  </entry>
+  <entry>
     <id>https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.30.2</id>
     <title>Super Crazy Rhythm Castle v0.30.1</title>
     <updated>2026-11-16T15:44:51+00:00</updated>
@@ -1280,7 +1243,7 @@ The School Trip route was checked in game at four and five Stars with Demolition
   </entry>
   <entry>
     <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release13</id>
-    <title>Ocarina of Time v9.1.0r2</title>
+    <title>Ocarina of Time v9.1.0r6</title>
     <updated>2026-11-16T19:08:46+00:00</updated>
     <author>
       <name>espeon65536</name>
@@ -1369,5 +1332,28 @@ Install: download `bazaar.apworld` below and double-click it (or put it in Archi
 Tracker and Sell Trap icons from [game-icons.net](https://game-icons.net) (CC BY 3.0) - see the README's credits.
 </content>
     <link href="https://github.com/sfleming4587/BazaarArchipelago/releases/tag/v0.9.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tathxo/DSAP/releases/tag/v0.3.1</id>
+    <title>Dark Souls Remastered v0.3.1</title>
+    <updated>2026-11-17T02:44:33+00:00</updated>
+    <author>
+      <name>Noka</name>
+    </author>
+    <author>
+      <name>ArsonAssassin</name>
+    </author>
+    <content># Version 0.3.1 - Client Crash Fixes&#13;
+[Setup Guide](https://github.com/tathxo/DSAP/blob/main/apworld/dsr/docs/setup_en.md)&#13;
+[Game Info](https://github.com/tathxo/DSAP/blob/main/apworld/dsr/docs/en_Dark%20Souls%20Remastered.md)&#13;
+&#13;
+### Version update -&gt; 0.3.1. **Client is compatible with 0.3.x generated apworlds**. &#13;
+**Make sure your host generates with the v0.3.0 or v0.3.1 apworld**.&#13;
+&#13;
+### Fixes&#13;
+* Fix a crash that happens upon connecting with a client to a slot where yaml was defined with goal=O+S but dlc on (where it is forced off) or with goal=Manus and dlc off (where it is forced on). The different json element types in the slot data involved are now both handled and corrected.&#13;
+* Fix in client to stop parsing options if out-of-date apworld or client version detected&#13;
+* Throw error messages instead of crashing in options/slotdata handling</content>
+    <link href="https://github.com/tathxo/DSAP/releases/tag/v0.3.1"/>
   </entry>
 </feed>
