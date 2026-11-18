@@ -1,7 +1,7 @@
 -- ============================================================================
 -- Toy Story 2 (PS1) Archipelago - ALL-IN-ONE BizHawk script
 -- ----------------------------------------------------------------------------
--- CONNECTOR VERSION: 3.1.4   <-- must match the .apworld release.
+-- CONNECTOR VERSION: 3.2.0   <-- must match the .apworld release.
 --   If a player reports odd behaviour (e.g. checks sending early), have them
 --   confirm this line. It is also printed in the BizHawk Lua console on load and
 --   again when settings are received, so they can read it back without opening
@@ -28,7 +28,7 @@
 -- Single source of truth for the connector release version (see header). Bump this
 -- in lockstep with the .apworld release. Global so it stays in scope across the
 -- Part 1 / Part 2 do...end blocks without consuming a local slot.
-TS2_VERSION = "3.1.4"
+TS2_VERSION = "3.2.0"
 -- Free-text build tag, printed beside the version on load. NOT parsed anywhere:
 -- the client and the title screen only ever read TS2_VERSION, so a hotfix can
 -- be told apart in a player's console without tripping the version check.
@@ -126,6 +126,60 @@ function ts2_debug(msg)
     local h = ts2_dbg_open()
     if h then h:write(line); h:flush() end
 end
+-- Slow-frame log (3.2.0). A frame where this script takes longer than
+-- TS2_PROF.slow_ms is noted with where the time went, at most one line a
+-- second, plus a count once a minute. Two clocks: the script's own frame work
+-- (ts2_main) and the client's messages (the connector's tick). If the game
+-- hitches and neither shows up here, the hitch is not this script.
+TS2_PROF = { slow_ms = 8, last = -9999, n = 0, worst = 0, cn = 0, cworst = 0, t = 0,
+             x = 0, dbg = 0, lc = 0, s = {}, mark = 0, mem0 = 0 }
+-- Section clock: time since the last mark goes to `name`. A handful of these
+-- run through ts2_main every frame; os.clock and one table write each.
+function ts2_ps(name)
+    if TS2_OFF and TS2_OFF.profiler then return end
+    local P = TS2_PROF
+    local now = os.clock()
+    P.s[name] = (P.s[name] or 0) + (now - P.mark)
+    P.mark = now
+end
+function ts2_ps_top()
+    local t = {}
+    for k, v in pairs(TS2_PROF.s) do if v >= 0.0005 then t[#t + 1] = { k, v } end end
+    table.sort(t, function(a, b) return a[2] > b[2] end)
+    local out = {}
+    for i = 1, math.min(6, #t) do out[#out + 1] = string.format("%s %.1f", t[i][1], t[i][2] * 1000) end
+    return table.concat(out, ", ")
+end
+function ts2_prof_frame(kind, sec)
+    local ms = sec * 1000
+    local P = TS2_PROF
+    local f = (type(emu) == "table" and emu.framecount and emu.framecount()) or 0
+    if ms >= P.slow_ms then
+        if kind == "script" then
+            P.n = P.n + 1; if ms > P.worst then P.worst = ms end
+        else
+            P.cn = P.cn + 1; if ms > P.cworst then P.cworst = ms end
+        end
+        if f - P.last >= 60 then
+            P.last = f
+            if kind == "script" then
+                local mem = collectgarbage("count")
+                ts2_debug(string.format("slow frame: script %.1f ms in level %d -- %s -- Lua memory %.0f KB -> %.0f KB",
+                    ms, mainmemory.read_u8(0x0A16A8), ts2_ps_top(), P.mem0, mem))
+            else
+                ts2_debug(string.format("slow frame: client messages %.1f ms", ms))
+            end
+        end
+    end
+    if f - P.t >= 3600 then
+        if P.n + P.cn > 0 then
+            ts2_debug(string.format("slow frames this minute: script %d (worst %.1f ms), client messages %d (worst %.1f ms)",
+                P.n, P.worst, P.cn, P.cworst))
+        end
+        P.t, P.n, P.worst, P.cn, P.cworst = f, 0, 0, 0, 0
+    end
+end
+
 -- Settle "on" or "off" once per script session. Runs every frame until then.
 function ts2_debug_decide()
     if ts2_dbg_state ~= "pending" then return end
@@ -252,18 +306,121 @@ end
 -- (3.1.2 also asked BizHawk for the CPU registers here. Nymashock doesn't
 -- support that and prints an error to the Lua Console, pcall or not.)
 TS2_DEBUG_FREEZE_MAX = 3
+-- ── Performance test switches (3.2.0) ───────────────────────────────────────
+-- For tracking down a hitch: put a file named ts2_disable.txt next to ts2.lua
+-- (Archipelago\data\lua) with any of these words in it, then reload ts2.lua.
+-- Each word turns that part off for the session, and the debug log says so.
+--   rex          Rex Hide 'n Seek placement (Rex stays at his own spot)
+--   zone         only the "show Rex in any room" hook
+--   music        the music randomizer's code patches (music stays vanilla)
+--   shortcuts    Remembered Shortcuts
+--   sounds       the sound traps, Buzz Quip and Eject Buzz
+--   freezecheck  the debug log's freeze check
+--   profiler     the debug log's slow-frame timing
+--   all          every one of the above: ts2.lua then does per frame only
+--                what 3.1.4 did (plus the frame watch below)
+--   watch        the frame watch (long frames and lag-frame runs)
+-- Without the file (the normal case) nothing is off.
+-- Whether the file was found is printed to the Lua Console when ts2.lua
+-- loads, so a test that didn't take is easy to spot.
+TS2_OFF = {}
+TS2_OFF_FOUND = false
+do
+    local f = io.open("ts2_disable.txt", "r")
+    if f then
+        TS2_OFF_FOUND = true
+        local txt = (f:read("a") or ""):lower()
+        f:close()
+        for w in txt:gmatch("%a+") do TS2_OFF[w] = true end
+        if TS2_OFF.all then
+            for _, w in ipairs({ "rex", "zone", "music", "shortcuts", "sounds", "freezecheck", "profiler" }) do
+                TS2_OFF[w] = true
+            end
+        end
+    end
+end
+function ts2_off_line()
+    if not TS2_OFF_FOUND then return nil end
+    local t = {}
+    for k in pairs(TS2_OFF) do t[#t + 1] = k end
+    table.sort(t)
+    return "performance test: ts2_disable.txt found, turned off: " .. (#t > 0 and table.concat(t, ", ") or "(no known words)")
+end
+print(TS2_OFF_FOUND and ("[TS2] " .. ts2_off_line())
+    or "[TS2] ts2_disable.txt not found next to ts2.lua: everything is on.")
+
+-- Frame watch (3.2.0, for the hitch hunt). Two things the script's own timing
+-- can't see:
+--   * a long frame: real time between two frames well over the normal 16.7 ms,
+--     with how much of it was this script and the client's messages. A long
+--     frame that isn't ours is BizHawk itself (or Windows).
+--   * a run of lag frames: frames where the game didn't read the controller,
+--     i.e. the game itself slowing down (too much to do, e.g. drawing). That
+--     kind of hitch never shows as a long frame.
+-- Lines are rate-limited (one a second) and summed up once a minute.
+TS2_WATCH = { last = nil, script = 0, client = 0, lag_run = 0, lag_n = 0, frames = 0,
+              long_n = 0, long_worst = 0, run_n = 0, run_worst = 0, said = -9999, t = nil,
+              mem = 0 }
+function ts2_watch_frame()
+    if TS2_OFF.watch then return end
+    local W = TS2_WATCH
+    local now = os.clock()
+    local f = emu.framecount()
+    W.t = W.t or f
+    local function say(msg)
+        if f - W.said >= 60 then W.said = f; ts2_debug(msg) end
+    end
+    if W.last then
+        local gap = (now - W.last) * 1000
+        -- Over 2 s is BizHawk paused or a menu open, not a hitch.
+        if gap >= 50 and gap < 2000 then
+            W.long_n = W.long_n + 1
+            if gap > W.long_worst then W.long_worst = gap end
+            local mem = collectgarbage("count")
+            say(string.format("long frame: %.0f ms (script %.1f ms, client %.1f ms, rest is BizHawk) level %d, Lua memory %.0f KB -> %.0f KB",
+                gap, W.script * 1000, W.client * 1000, mainmemory.read_u8(0x0A16A8), W.mem, mem))
+        end
+    end
+    local ok, lagged = pcall(emu.islagged)
+    if ok and lagged then
+        W.lag_run = W.lag_run + 1; W.lag_n = W.lag_n + 1
+    else
+        if W.lag_run >= 4 then
+            W.run_n = W.run_n + 1
+            if W.lag_run > W.run_worst then W.run_worst = W.lag_run end
+            say(string.format("lag run: the game skipped %d frames in a row in level %d", W.lag_run, mainmemory.read_u8(0x0A16A8)))
+        end
+        W.lag_run = 0
+    end
+    W.frames = W.frames + 1
+    if f - W.t >= 3600 then
+        ts2_debug(string.format("frame watch this minute: %d lag frames of %d, %d lag runs of 4+ (longest %d), %d long frames (worst %.0f ms)",
+            W.lag_n, W.frames, W.run_n, W.run_worst, W.long_n, W.long_worst))
+        W.t, W.lag_n, W.frames, W.run_n, W.run_worst, W.long_n, W.long_worst = f, 0, 0, 0, 0, 0, 0
+    end
+    W.last, W.script, W.client, W.mem = now, 0, 0, collectgarbage("count")
+end
+
 function ts2_debug_freeze(level, live)
+    if TS2_OFF.freezecheck then return end
     local fz = ts2_dbg_freeze
-    if not live or mainmemory.read_u8(0x0A10F4) ~= 0 then fz.sig = nil; fz.same = 0; return end
-    if emu.framecount() % 30 ~= 0 then return end
-    local acc = 0
-    for i = 0, 127 do
-        acc = (acc * 31 + mainmemory.read_u32_le(0x180000 + i * 0x400)) % 4294967291
+    if not live or mainmemory.read_u8(0x0A10F4) ~= 0 then fz.sig = nil; fz.same = 0; fz.i = nil; return end
+    -- 3.2.0: the 384 samples are read 13 a frame, a full pass every 30 frames,
+    -- instead of all 384 on every 30th frame -- that one heavy frame showed up
+    -- as a small regular hitch.
+    if fz.i == nil then fz.i, fz.acc, fz.f0 = 0, 0, emu.framecount() end
+    local acc, i = fz.acc, fz.i
+    for _ = 1, 13 do
+        if i >= 384 then break end
+        local a = (i < 128) and (0x180000 + i * 0x400) or (0x0A0000 + (i - 128) * 0x200)
+        acc = (acc * 31 + mainmemory.read_u32_le(a)) % 4294967291
+        i = i + 1
     end
-    for i = 0, 255 do
-        acc = (acc * 31 + mainmemory.read_u32_le(0x0A0000 + i * 0x200)) % 4294967291
-    end
-    if acc == fz.sig then fz.same = fz.same + 30 else fz.sig = acc; fz.same = 0; fz.reported = false end
+    fz.acc, fz.i = acc, i
+    if i < 384 then return end
+    local spent = math.max(1, emu.framecount() - fz.f0)
+    fz.i = nil
+    if acc == fz.sig then fz.same = fz.same + spent else fz.sig = acc; fz.same = 0; fz.reported = false end
     if fz.same >= 600 and not fz.reported and (fz.count or 0) < TS2_DEBUG_FREEZE_MAX then
         fz.reported = true
         fz.count = (fz.count or 0) + 1
@@ -1273,6 +1430,17 @@ function build_normal_map()
     normal_map[17]=17; normal_map[20]=20; normal_map[21]=21
 end
 
+-- 3.2.0: what the music mode makes of a natural track (level songs, 15 miniboss,
+-- 16 minigame, 19 level select). Off: the track itself. Normal: the seed map
+-- (built on the first level entry, see on_level_change). Chaos: a fresh pick.
+function music_pick(t)
+    local mm_ = music_mode()
+    if mm_==1 then return normal_map[t] or t
+    elseif mm_==2 then return CHAOS_POOL[math.random(#CHAOS_POOL)]
+    elseif mm_==3 then return oops_track() end
+    return t
+end
+
 
 
 -- ============================================================
@@ -1555,7 +1723,9 @@ function toy_reward_label(level)
 end
 
 -- Shared by the missing toy and Potato Head offers: "owner|item" out of a
--- level-tagged buffer, or nil.
+-- level-tagged buffer, or nil. 3.2.0: "owner|item|M" when the check is also a
+-- Star Command Mission; the third value says so, and the offer then names the
+-- Mission Star too.
 function reward_label(lvl_addr, base, level)
     if mainmemory.read_u8(lvl_addr) ~= level then return nil end
     local b = {}
@@ -1568,15 +1738,22 @@ function reward_label(lvl_addr, base, level)
     if s == "" then return nil end
     local owner, item = s:match("^(.-)|(.*)$")
     if not owner or owner == "" or item == "" then return nil end
-    return owner, item
+    local base_item, flag = item:match("^(.*)|(%a)$")
+    if base_item and base_item ~= "" then return owner, base_item, flag == "M" end
+    return owner, item, false
+end
+
+-- "owner's ^item^", plus "and a ^mission star^" when the check is a mission.
+function reward_words(owner, item, star)
+    return owner .. "'s ^" .. item .. "^" .. (star and " and a ^mission star^" or "")
 end
 
 -- The whole rewritten line, or nil to leave the vanilla text in place.
 function toy_dialog_for(level)
     local prefix = TOY_PREFIX[level]; if not prefix then return nil end
-    local owner, item = toy_reward_label(level)
+    local owner, item, star = toy_reward_label(level)
     if not owner then return nil end
-    return toy_wrap(prefix .. owner .. "'s ^" .. item .. "^.")
+    return toy_wrap(prefix .. reward_words(owner, item, star) .. ".")
 end
 
 -- ============================================================
@@ -1593,9 +1770,9 @@ end
 -- "find my missing part" offer, or nil for the fixed line.
 function potato_offer_for(level)
     local part = POTATO_PART_WORD[level]; if not part then return nil end
-    local owner, item = potato_reward(level)
+    local owner, item, star = potato_reward(level)
     if not owner then return nil end
-    local r = owner .. "'s ^" .. item .. "^"
+    local r = reward_words(owner, item, star)
     if level == 13 then   -- no mouth yet: he can only mumble it
         return toy_wrap("mmm.. mumph! mmmmu mo mmmme " .. r .. " mmmm mub ^mouth^ mmum mi mo mmmump!")
     end
@@ -1604,10 +1781,10 @@ end
 -- "thanks for my part" line, or nil for the fixed line.
 function potato_thanks_for(level)
     local part = POTATO_PART_WORD[level]; if not part then return nil end
-    local owner, item = potato_reward(level)
+    local owner, item, star = potato_reward(level)
     if not owner then return nil end
     return toy_wrap("wow! thanks buzz! in return for finding my ^" .. part ..
-                    "^ i'll let you have " .. owner .. "'s ^" .. item .. "^!")
+                    "^ i'll let you have " .. reward_words(owner, item, star) .. "!")
 end
 
 local NEW_DIALOG = {
@@ -1836,6 +2013,15 @@ function write_gadget(gadget)
     for _,u in ipairs(gadget.usability)  do mainmemory.write_u8(u,0) end
 end
 
+-- The level has built this gadget's pickup: one of its hitboxes reads its
+-- "present" value (3.2.0, see update_potato).
+function gadget_present(gadget)
+    for _,h in ipairs(gadget.hitboxes) do
+        if mainmemory.read_u8(h.addr)==h.uncollected then return true end
+    end
+    return false
+end
+
 function unlock_gadget(gadget)
     for _,c in ipairs(gadget.containers) do mainmemory.write_u8(c.addr,c.collected or 0) end
     for _,h in ipairs(gadget.hitboxes)   do mainmemory.write_u8(h.addr,0) end
@@ -1872,11 +2058,20 @@ end
 -- Keep an ALREADY-COLLECTED part hidden. restore_part writes the "present in
 -- world" (uncollected) values which RE-SPAWNS the pickup; to hide a collected
 -- part we write the collected/gone state the game uses when you pick it up
--- (hitbox byte 0). Objects are left at their uncollected values (harmless; the
--- hitbox==0 is what makes the pickup non-interactable/gone).
+-- (hitbox byte 0).
+-- 3.2.0: the model bytes too. Giving Potato Head his part in the same visit
+-- makes the game set the gadget-unlock bit, update_potato clears it again, and
+-- the game re-spawns the pickup: with only the hitbox at 0 that left a "ghost"
+-- piece you could see but not collect. Gone is 0 for the model bytes as well
+-- (RAM dumps of Andy's House and Construction Yard after the piece is gone).
+-- Only a byte still holding its uncollected value is touched, since these
+-- addresses hold other data when the piece isn't spawned.
 function hide_part(level)
     local part=PARTS[level]; if not part then return end
     for _,h in ipairs(part.hitbox) do mainmemory.write_u8(h.addr,0) end
+    for _,o in ipairs(part.objects) do
+        if mainmemory.read_u8(o.addr)==o.uncollected then mainmemory.write_u8(o.addr,0) end
+    end
 end
 
 function is_part_collected(level)
@@ -2196,6 +2391,7 @@ ch_gen_quiet   = 0      -- frames after a (re)connect when increases are ignored
 
 function challenge_reset()
     ch_prev_anim, ch_dead, ch_dead_link, ch_boot_wait, ch_last_hp = 0, false, false, 0, 0
+    ch_hud, ch_lhud, ch_hud_rose, ch_lives_rose = 255, 255, false, false
     dl_kill_applied = false
 end
 
@@ -2246,27 +2442,48 @@ function challenge_tick(level)
     ch_prev_anim = anim
 
     -- Lives Carry More Weight: send Buzz to the Level Select half a second
-    -- after he respawns. Same exit the Never Game Over rescue uses; result 5 is
-    -- safe in every level type, bosses included.
+    -- after he respawns. 3.2.0: in a normal level he leaves the way a token
+    -- sends him off (zoom in, "To infinity and beyond", fly out). Boss levels
+    -- keep the old exit: forcing that one there counts as winning the fight.
+    -- Result 5 is the same exit the Never Game Over rescue uses.
     if ch_boot_wait > 0 then
         ch_boot_wait = ch_boot_wait - 1
         if ch_boot_wait == 0 and anim == 0 then
-            mainmemory.write_u8(0x0A135E, 1)
-            mainmemory.write_u8(0x0A136E, 5)
+            if not (TS2X and TS2X.zoom_exit(level)) then
+                mainmemory.write_u8(0x0A135E, 1)
+                mainmemory.write_u8(0x0A136E, 5)
+            end
         end
     end
 
+    -- The health and lives counters jumping up this frame (see the pickup
+    -- rule below). Read every frame so "rose" is about this frame only.
+    local hud, lhud = mainmemory.read_u8(A.HEALTH_UI), mainmemory.read_u8(A.LIVES_UI)
+    ch_hud_rose = hud > (ch_hud or 0) + 16
+    ch_lives_rose = lhud > (ch_lhud or 0) + 16
+    ch_hud, ch_lhud = hud, lhud
     if cap and not dying then
         local dl_incoming = is_death_link() and mainmemory.read_u8(SHARED_DEATH_LINK) > 0
         if hp > cap then
             mainmemory.write_u8(A.BUZZ_HP, cap); hp = cap
-        elseif cap > 14 and ch_last_hp > 14 and hp == 14
+        elseif cap > 14 and hp == 14 and ch_last_hp >= 10
                and mainmemory.read_u8(A.BUZZ_IFRAME) == 0 then
-            -- Above 14 the game's own battery pickup may clamp Buzz down to its
-            -- normal maximum. A drop to exactly 14 with no hit (no i-frames)
-            -- is that, not damage: put back what he had.
-            hp = math.min(ch_last_hp, cap)
-            mainmemory.write_u8(A.BUZZ_HP, hp)
+            -- The game's battery pickup gives 4 but never past its own 14. With
+            -- a higher cap (Extra Battery Capacity) that has to be finished here
+            -- (3.2.0: it used to only put back what he had):
+            --   10-13 -> the game says 14: a pickup, make it last + 4.
+            --   15+   -> the game says 14: a pickup clamped him down, make it
+            --            last + 4 if the health counter just popped up (the
+            --            game showing the pickup), else put back what he had.
+            --   14    -> nothing changes, so only the health counter popping
+            --            up (and not the lives one, which R1 shows too) says so.
+            local hud_up = ch_hud_rose and not ch_lives_rose
+            local want = hp
+            if ch_last_hp < 14 then want = ch_last_hp + 4
+            elseif ch_last_hp > 14 then want = hud_up and ch_last_hp + 4 or ch_last_hp
+            elseif hud_up then want = 18 end
+            want = math.min(want, cap)
+            if want ~= hp then hp = want; mainmemory.write_u8(A.BUZZ_HP, hp) end
         end
         -- Rechargeable: any damage is put straight back. Never against a
         -- death link (DEATH_PHASE / queued link are checked above and here).
@@ -3983,6 +4200,7 @@ function update_traps(level)
             mainmemory.write_u8(0x0B221E, 255)
             mainmemory.write_u8(0x0A155C, 255)
             mainmemory.write_u8(0x0A136E, 2)
+            if TS2X then TS2X.play(21) end   -- 3.2.0: Buzz's death cry
             dl_kill_applied = true   -- Lives Carry More Weight may spare this one
             DEATH_PHASE    = 1
             DEATH_A_FRAMES = 0
@@ -4227,7 +4445,14 @@ function update_potato(level)
         for shared_addr,gadget in pairs(GADGETS) do
             if gadget.level==level then
                 local owned = mainmemory.read_u8(shared_addr)==1 and 1 or 0
-                if buzz_spawn.gadget_applied[shared_addr] ~= owned then
+                -- 3.2.0: an owned gadget's boxes are only taken away once the
+                -- level has actually built the pickup (a hitbox reads its
+                -- "present" value), the same wait the luggage has. Done earlier
+                -- (a load that ran long), the level built the boxes again
+                -- afterwards and they stayed for the whole visit. Until then
+                -- this simply tries again next frame.
+                local ready = owned==0 or gadget_present(gadget)
+                if ready and buzz_spawn.gadget_applied[shared_addr] ~= owned then
                     buzz_spawn.gadget_applied[shared_addr] = owned
                     if owned==1 then unlock_gadget(gadget) else write_gadget(gadget) end
                 end
@@ -4327,14 +4552,21 @@ function update_potato(level)
         for i,toy in ipairs(TOYS[level]) do
             local bit=2^(i-1)
             local already=(toy_collected_masks[level]&bit)~=0
-            -- Logic Lab only: toys have no "seen present" guard in a seed (the
-            -- server's despawn seed covers re-entry), but the Lab loads
-            -- savestates where a toy is already gone. Require seeing it first.
-            local lab_ok = true
+            -- 3.2.0: a toy only counts as picked up once it has been seen in
+            -- the level this visit (non-zero), so a level that isn't fully
+            -- loaded yet (every toy reading 0) can't send them all.
+            TS2_TOY_SEEN = TS2_TOY_SEEN or {}
+            if TS2_TOY_SEEN.level ~= level or TS2_TOY_SEEN.gen ~= ts2_level_visit then
+                TS2_TOY_SEEN = { level = level, gen = ts2_level_visit }
+            end
+            if mainmemory.read_u8(toy.addr)~=0 then TS2_TOY_SEEN[i]=true end
+            local lab_ok = TS2_TOY_SEEN[i] == true
+            -- Logic Lab: it loads savestates where a toy is already gone, so
+            -- "seen" also carries across its loads.
             if TS2_LOGIC_LAB then
                 LAB_TOY_SEEN = LAB_TOY_SEEN or {}
                 if mainmemory.read_u8(toy.addr)~=0 then LAB_TOY_SEEN[level*16+i]=true end
-                lab_ok = LAB_TOY_SEEN[level*16+i] == true
+                lab_ok = lab_ok or LAB_TOY_SEEN[level*16+i] == true
             end
             if not already and lab_ok and mainmemory.read_u8(toy.addr)==0 then
                 toy_collected_masks[level]=toy_collected_masks[level]|bit
@@ -4708,6 +4940,14 @@ function update_auto_coins(level)
         autocoin_load_timer = autocoin_load_timer + 1
         return
     end
+
+    -- 3.2.0: every 3rd frame, not every frame. The block read below hands back a
+    -- 4,000-entry table each time; at 60 a second that was the biggest source of
+    -- the throwaway memory BizHawk stops to clean up (the ~0.1 s hitches). A coin
+    -- an enemy drops sits there for seconds, so collecting it up to two frames
+    -- later changes nothing -- and one Buzz touches first is the game's own pickup.
+    ac_frame = (ac_frame or 0) + 1
+    if ac_frame % 3 ~= 0 then return end
 
     -- PERF: snapshot the whole object block in ONE emulator call. The old loop
     -- made a mainmemory.read_u8 call per byte -- 4,000 NLua round trips EVERY
@@ -5086,13 +5326,13 @@ function update_music()
         if input==237 and skip_r2_was_up then
             skip_r2_was_up=false
             local nt=(music_current+1)%22
-            mainmemory.write_u8(A.MUSIC,nt); music_current=nt
+            if TS2X then pcall(TS2X.music_set_level, nt) end; music_current=nt
             music_display_timer=MUSIC_DISPLAY_FRAMES
         elseif input~=237 then skip_r2_was_up=true end
         if input==238 and skip_l2_was_up then
             skip_l2_was_up=false
             local pt=music_current-1; if pt<0 then pt=21 end
-            mainmemory.write_u8(A.MUSIC,pt); music_current=pt
+            if TS2X then pcall(TS2X.music_set_level, pt) end; music_current=pt
             music_display_timer=MUSIC_DISPLAY_FRAMES
         elseif input~=238 then skip_l2_was_up=true end
     end
@@ -5392,6 +5632,7 @@ function on_level_change(new_level, prev_level)
         mainmemory.write_u32_le(A.POLE, 0)
     end
     buzz_moved=false; last_buzz_x=-1; last_buzz_y=-1
+    ts2_level_visit = (ts2_level_visit or 0) + 1   -- a new visit: toys must be seen again
     buzz_baseline_set=false
     buzz_spawn.started=false; buzz_spawn.base=0; buzz_spawn.cand=-1; buzz_spawn.stable=0; buzz_spawn.disc=nil
     buzz_spawn.move_x=nil; buzz_spawn.move_y=nil; buzz_spawn.move_frames=0; buzz_spawn.lr_frames=0
@@ -5543,11 +5784,20 @@ function on_level_change(new_level, prev_level)
         -- truncates, giving a garbage track and a bogus music_current. In mm==1
         -- the same thing happens via normal_map[-1] being nil. The else-branch
         -- below already guarded for exactly this; this matches it.
-        if mapped and mapped>=0 then mainmemory.write_u8(A.MUSIC,mapped); music_current=mapped end
-    else
-        if music_natural~=-1 then
-            mainmemory.write_u8(A.MUSIC,music_natural); music_current=music_natural
+        -- 3.2.0: the stage number (A.MUSIC, 0x0A1530) is only read now. The
+        -- game also uses it for cutscenes, boss wins and saves, and writing it
+        -- was what stopped Zurg's post-fight cutscene. TS2X rewrites the one
+        -- instruction that loads the level's track instead, and randomizes the
+        -- miniboss / minigame songs the same way.
+        if mapped and mapped>=0 then
+            music_current=mapped
+            if TS2X then pcall(TS2X.music_enter_level, (mm~=0) and mapped or nil,
+                               (mm~=0) and music_pick(15) or 15, (mm~=0) and music_pick(16) or 16) end
         end
+    else
+        -- Back to the game's own music logic, and the level select song for the
+        -- seed (installed before the map screen opens and asks for it).
+        if TS2X then pcall(TS2X.music_leave_level, (music_mode()~=0) and music_pick(19) or 19) end
     end
 end
 
@@ -6154,6 +6404,839 @@ function ts2_lab_forget(level)
     LAB_TOY_SEEN = {}
 end
 
+-- Rex Hide 'n Seek data (3.2.0), generated by tools/gen_rex_spots.py from the
+-- master sheet and the mapping probes' rex_spots.txt / rex_originals.txt.
+-- Per level: Rex's actor slot and talk list, his own spot (actor x y z, y at
+-- +0x8C), idle facing, the clean talk list (list units), and the five hiding
+-- spots: dx dy dz (list units from his own spot), turn, Buzz's talk spot
+-- (relative to Rex, or nil for the default), and for a spot on a moving floor
+-- the floor mesh, Rex's position on it, and the floor yaw the turn belongs to.
+-- (Built inside a function: a table this size needs more registers than the
+-- main chunk has left next to its 200 locals.)
+REX_HIDE_DATA = (function() return {
+  [1] = { slot = 35, list = 39, count = 18, actor = { 561856, 60032, -354176, 60032 }, rot = { 2848, 2848 },
+    pts = { 16574, 1842, -11380, 17539, 1851, -11058, 16816, 1603, -10399, 16660, 1575, -10367, 16257, 1447, -10440, 15983, 1342, -10763, 16041, 1451, -11325, 16472, 1587, -11647, 16878, 1603, -11715, 17102, 1603, -11694, 17035, 1705, -11160, 17104, 1705, -11147, 17269, 1667, -11112, 17402, 1559, -11077, 17461, 1467, -11065, 17492, 1389, -11057, 17514, 1334, -11053, 17531, 1308, -11049 },
+    spots = {
+      { -7120, -712, 7024, turn = 3253, buzz = nil, ride = nil, zone = false },
+      { -580, -7531, -1550, turn = 1277, buzz = nil, ride = nil, zone = false },
+      { -44, 3500, 12005, turn = 2391, buzz = { 996, 0, -206 }, ride = nil, zone = false },
+      { 3058, 3587, 571, turn = 2945, buzz = { 411, -5, -724 }, ride = nil, zone = false },
+      { 4674, 12704, 7180, turn = 4006, buzz = nil, ride = nil, zone = false },
+    } },
+  [2] = { slot = 27, list = 11, count = 38, actor = { 270432, 4768, 446368, 4768 }, rot = { 2416, 2416 },
+    pts = { 7875, 148, 12621, 8311, 148, 13291, 8413, -74, 12146, 8567, -109, 11945, 8768, -169, 11754, 9018, -228, 11597, 9304, -287, 11504, 9639, -372, 11466, 9922, -429, 11514, 10135, -455, 11627, 10279, -466, 11776, 10333, -474, 11974, 10285, -470, 12192, 10199, -462, 12427, 10103, -445, 12651, 10012, -423, 12873, 9948, -382, 13111, 9874, -322, 13345, 9794, -264, 13548, 9719, -228, 13698, 7931, -84, 12690, 7957, -84, 12692, 8000, -84, 12702, 8045, -84, 12721, 8085, -84, 12753, 8116, -84, 12788, 8137, -84, 12824, 8146, -84, 12858, 8139, -84, 12887, 8130, -84, 12909, 8123, -84, 12927, 8122, -84, 12948, 8124, -84, 12960, 8127, -84, 12967, 8130, -84, 12973, 8133, -84, 12977, 8136, -84, 12982, 8140, -84, 12985 },
+    spots = {
+      { 5281, -148, -14451, turn = 2616, buzz = { 793, 0, 98 }, ride = nil, zone = false },
+      { 4823, -1421, -14396, turn = 3779, buzz = { -72, 0, -796 }, ride = nil, zone = false },
+      { -5790, -16760, -3936, turn = 3092, buzz = { 559, -5, -388 }, ride = nil, zone = false },
+      { -15682, 1500, -6420, turn = 584, buzz = { -796, 0, -78 }, ride = nil, zone = false },
+      { -12771, -1574, 757, turn = 3058, buzz = { 578, -5, -358 }, ride = nil, zone = false },
+    } },
+  [4] = { slot = 17, list = 35, count = 16, actor = { -281312, 32, 623904, 32 }, rot = { 1632, 1632 },
+    pts = { -8129, -11, 18997, -8901, -11, 18849, -8522, -634, 18124, -8867, -609, 18130, -9261, -591, 18261, -9561, -572, 18647, -9657, -584, 19105, -9462, -636, 19601, -9123, -703, 19929, -8680, -148, 19271, -8212, -138, 19442, -7680, -99, 19419, -7369, -68, 19151, -7266, -42, 18762, -7561, -62, 18372, -7980, -66, 18172 },
+    spots = {
+      { 21695, -7499, 415, turn = 1675, buzz = nil, ride = nil, zone = true },
+      { 3958, -2885, -19026, turn = 109, buzz = nil, ride = nil, zone = false },
+      { 4344, -19999, -38214, turn = 3196, buzz = { 1, 0, 786 }, ride = nil, zone = false },
+      { 11480, -15626, -33956, turn = 2142, buzz = nil, ride = nil, zone = false },
+      { -3757, 2, 1302, turn = 3175, buzz = { -24, 0, 786 }, ride = nil, zone = false },
+    } },
+  [5] = { slot = 34, list = 20, count = 30, actor = { 245312, 0, 438304, 0 }, rot = { 2528, 2528 },
+    pts = { 7306, -1, 13313, 7659, -1, 13693, 6644, -208, 12696, 6591, -225, 12560, 6579, -254, 12419, 6635, -289, 12289, 6741, -330, 12161, 6881, -376, 12039, 7053, -434, 11930, 7250, -475, 11843, 7456, -503, 11806, 7667, -521, 11841, 7835, -521, 11940, 7998, -503, 12090, 8145, -468, 12241, 8260, -434, 12378, 7163, -208, 13343, 7184, -208, 13311, 7212, -208, 13283, 7240, -208, 13262, 7269, -208, 13246, 7305, -208, 13235, 7355, -208, 13235, 7414, -208, 13244, 7499, -208, 13269, 7597, -208, 13310, 7692, -208, 13350, 7761, -208, 13386, 7819, -208, 13417, 7864, -208, 13444 },
+    spots = {
+      { -3731, -20074, -26981, turn = 1983, buzz = nil, ride = nil, zone = false },
+      { -997, -7495, -15633, turn = 1572, buzz = { 17, -34, 945 }, ride = nil, zone = false },
+      { -3130, 2173, 16867, turn = 3607, buzz = nil, ride = nil, zone = false },
+      { -26201, -2514, -10151, turn = 3007, buzz = nil, ride = nil, zone = false },
+      { -48465, 3000, -29844, turn = 4047, buzz = { -323, 0, -405 }, ride = nil, zone = false },
+    } },
+  [7] = { slot = 31, list = 11, count = 30, actor = { -431840, -95968, 547744, -95968 }, rot = { 1664, 1664 },
+    pts = { -13119, -3020, 16350, -13350, -3018, 16950, -12263, -3225, 16285, -12117, -3243, 16280, -11980, -3272, 16316, -11876, -3307, 16411, -11791, -3347, 16554, -11722, -3393, 16726, -11675, -3451, 16924, -11659, -3492, 17139, -11692, -3521, 17346, -11795, -3538, 17533, -11944, -3538, 17659, -12139, -3521, 17764, -12330, -3486, 17852, -12498, -3451, 17915, -13046, -3225, 16561, -13022, -3225, 16592, -13005, -3225, 16627, -12995, -3225, 16660, -12989, -3225, 16693, -12991, -3225, 16730, -13002, -3225, 16766, -13026, -3225, 16804, -13059, -3225, 16844, -13101, -3225, 16888, -13151, -3225, 16935, -13198, -3225, 16978, -13249, -3225, 17021, -13288, -3225, 17051 },
+    spots = {
+      { -3176, 3000, -10340, turn = 2201, buzz = { -131, -79, 972 }, ride = nil, zone = false },
+      { 23434, 2950, -29134, turn = 2708, buzz = { 386, 0, 514 }, ride = nil, zone = false },
+      { 6819, -1499, -5543, turn = 2655, buzz = { 343, 0, 544 }, ride = nil, zone = false },
+      { -1904, 1325, -16702, turn = 256, buzz = nil, ride = nil, zone = false },
+      { -3547, 3000, 1345, turn = 806, buzz = { -491, 0, -415 }, ride = nil, zone = false },
+    } },
+  [8] = { slot = 41, list = 5, count = 30, actor = { 398400, 0, 212960, 0 }, rot = { 928, 928 },
+    pts = { 13107, -1, 6749, 12440, -1, 6654, 13501, -208, 7478, 13554, -225, 7614, 13567, -254, 7755, 13512, -289, 7885, 13406, -330, 8013, 13266, -376, 8136, 13095, -434, 8246, 12898, -475, 8334, 12692, -503, 8371, 12482, -521, 8337, 12312, -521, 8238, 12149, -503, 8089, 12002, -468, 7939, 11886, -434, 7802, 12979, -208, 6833, 12959, -208, 6866, 12931, -208, 6894, 12903, -208, 6914, 12874, -208, 6931, 12839, -208, 6941, 12788, -208, 6942, 12729, -208, 6933, 12644, -208, 6908, 12546, -208, 6868, 12451, -208, 6828, 12381, -208, 6792, 12324, -208, 6762, 12278, -208, 6735 },
+    spots = {
+      { -19441, 1, -1241, turn = 2510, buzz = { -568, 0, 362 }, ride = nil, zone = false },
+      { 1824, -2001, 6419, turn = 1124, buzz = { -8, 4, -623 }, ride = nil, zone = false },
+      { -24902, 1, -4279, turn = 1692, buzz = { -521, 0, -427 }, ride = nil, zone = false },
+      { -7181, -3148, -9803, turn = 1107, buzz = nil, ride = nil, zone = false },
+      { -2139, -3148, -12826, turn = 1064, buzz = nil, ride = nil, zone = false },
+    } },
+  [10] = { slot = 23, list = 38, count = 18, actor = { -183840, -320032, -3680, -320032 }, rot = { 2944, 2944 },
+    pts = { -6609, -10002, -283, -5746, -10002, -113, -5863, -10528, 397, -6137, -10441, 385, -6498, -10352, 319, -6872, -10298, 14, -6923, -10311, -336, -6731, -10367, -677, -6389, -10417, -785, -6118, -10453, -805, -6077, -10302, 81, -6276, -10277, 67, -6450, -10264, -21, -6577, -10264, -140, -6614, -10264, -298, -6497, -10270, -436, -6365, -10277, -452, -6171, -10295, -421 },
+    spots = {
+      { -9728, 9952, -2854, turn = 1598, buzz = { 557, 0, 681 }, ride = nil, zone = false },
+      { -7208, 7899, -2877, turn = 1140, buzz = { -15, 0, 879 }, ride = nil, zone = false },
+      { -2340, -15237, 5811, turn = 2156, buzz = { 1882, 240, 54 }, ride = nil, zone = false },
+      { 11562, -326, 10776, turn = 3490, buzz = { -526, 5327, -1098 }, ride = nil, zone = true },
+      { 8820, -1423, -1789, turn = 142, buzz = nil, ride = { mesh = 20, rel = { 825, 1999, -1904 }, yaw = 0.0 }, zone = true },
+    } },
+  [11] = { slot = 12, list = 20, count = 18, actor = { 66592, 192032, 46112, 192032 }, rot = { 2848, 2848 },
+    pts = { 1110, 5974, 1127, 2074, 5983, 1449, 1351, 5735, 2108, 1195, 5707, 2140, 792, 5579, 2067, 518, 5474, 1744, 576, 5583, 1182, 1007, 5719, 860, 1413, 5735, 792, 1637, 5735, 813, 1570, 5837, 1347, 1639, 5837, 1360, 1804, 5799, 1395, 1937, 5691, 1430, 1996, 5599, 1442, 2027, 5521, 1450, 2049, 5466, 1454, 2066, 5440, 1458 },
+    spots = {
+      { 476, -446, -3922, turn = 218, buzz = { -1159, 447, 14 }, ride = nil, zone = false },
+      { 4863, -3499, -2688, turn = 497, buzz = { -919, 0, 433 }, ride = nil, zone = false },
+      { -22077, -3902, 13721, turn = 3283, buzz = { -1, 1219, -1224 }, ride = nil, zone = false },
+      { -24680, 0, -3116, turn = 2284, buzz = { 1016, 0, -41 }, ride = nil, zone = false },
+      { -24131, -3999, -2416, turn = 3297, buzz = nil, ride = nil, zone = false },
+    } },
+  [13] = { slot = 33, list = 34, count = 18, actor = { 346048, 0, 728448, 0 }, rot = { 2752, 2752 },
+    pts = { 10064, -1, 22373, 10798, 0, 22747, 10494, -565, 23272, 10209, -589, 23295, 9775, -613, 23301, 9271, -661, 23246, 8770, -738, 23061, 8404, -789, 22685, 8174, -866, 22217, 8093, -916, 21782, 10513, -220, 22792, 10413, -220, 22766, 10313, -220, 22732, 10221, -220, 22686, 10121, -220, 22628, 10022, -220, 22544, 9957, -220, 22447, 9931, -220, 22333 },
+    spots = {
+      { -15545, 1, -12721, turn = 2339, buzz = { 824, 0, 20 }, ride = nil, zone = false },
+      { -3381, -4250, -26729, turn = 1385, buzz = { 68, 0, 821 }, ride = nil, zone = true },
+      { -5657, -15898, -12922, turn = 2845, buzz = { 429, 0, -401 }, ride = nil, zone = false },
+      { -4220, -2033, -41718, turn = 2398, buzz = { 822, 0, -54 }, ride = nil, zone = false },
+      { 980, -9248, -35399, turn = 3360, buzz = nil, ride = nil, zone = false },
+    } },
+  [14] = { slot = 47, list = 10, count = 30, actor = { -1026464, -28768, -200416, -28768 }, rot = { 2064, 2064 },
+    pts = { -32102, -916, -7077, -32081, -916, -6260, -31569, -1123, -7653, -31451, -1140, -7739, -31318, -1169, -7786, -31178, -1204, -7765, -31027, -1245, -7695, -30874, -1291, -7590, -30724, -1349, -7452, -30591, -1390, -7283, -30503, -1418, -7093, -30483, -1436, -6880, -30536, -1436, -6692, -30640, -1418, -6497, -30748, -1383, -6317, -30853, -1349, -6170, -32064, -1123, -6987, -32027, -1123, -6975, -31993, -1123, -6955, -31966, -1123, -6934, -31943, -1123, -6909, -31924, -1123, -6878, -31911, -1123, -6829, -31904, -1123, -6769, -31908, -1123, -6681, -31921, -1123, -6576, -31937, -1123, -6474, -31954, -1123, -6397, -31969, -1123, -6334, -31984, -1123, -6284 },
+    spots = {
+      { 32240, 751, 942, turn = 3472, buzz = nil, ride = nil, zone = false },
+      { 10088, 900, -27762, turn = 3672, buzz = { 478, 0, -663 }, ride = nil, zone = false },
+      { -678, -2173, 3618, turn = 3451, buzz = nil, ride = nil, zone = false },
+      { 34890, -2265, -16288, turn = 2135, buzz = nil, ride = { mesh = 8, rel = { -4306, 431, -7483 }, yaw = -4866.5 }, zone = true },
+      { 59056, -1601, -16611, turn = 4093, buzz = { -18, 0, -817 }, ride = nil, zone = false },
+    } },
+} end)()
+
+-- ============================================================================
+-- 3.2.0 ADDITIONS (TS2X): Rex Hide 'n Seek, Remembered Shortcuts, sound
+-- filler/traps, Eject Buzz, and the music randomizer on the new method.
+-- Built inside one function so its locals don't count against the main chunk
+-- (which is at the 200-local ceiling); everything outside reaches it through
+-- the global table TS2X. Every patch below is checked and rewritten each frame
+-- where it matters: a savestate can take any of them back out.
+-- All of it was worked out and tested in game with the 2026-11-14/15 probes:
+-- npc_probe12 (Rex), shortcut_test, sfx_trap_test, exit_trap_test,
+-- music_system_test and map_music_test2.
+-- ============================================================================
+TS2X = (function()
+    local mm = mainmemory
+    local M = {}
+    local LEVEL_ADDR = 0x0A16A8
+    local BUZZ_POS   = 0x0B2188
+    local BUZZ_ROT   = 0x0B2196
+    local BOSS_FLAG  = 0x0A1664          -- s32, 1 in a boss level (and while an exit is forced)
+    local EXIT_STATE = 0x0A1544          -- s32, the pickup / exit state machine
+    local RESULT     = 0x0A136E          -- s16, death / exit word
+    local LEVEL_IDX  = { [1] = 0, [2] = 1, [4] = 2, [5] = 3, [7] = 4, [8] = 5, [10] = 6, [11] = 7, [13] = 8, [14] = 9 }
+    local BOSS_LEVEL = { [3] = true, [6] = true, [9] = true, [12] = true, [15] = true }
+    local function in_level(l) return l >= 1 and l <= 15 end
+    local function dbg(s) if ts2_debug then pcall(ts2_debug, s) end end
+
+    -- ── shared bytes (client <-> lua) ─────────────────────────────────────
+    local REX_SPOT_BASE = 0x1FE954       -- 10 bytes, 0xE0 | spot (1-5) per level index
+    local FEATURE2      = 0x1FE95E       -- 0x50 | bit0 Remembered Shortcuts
+    local SHORTCUTS     = 0x1FEC2C       -- remembered shortcut bits, both ways
+    local Q_EJECT, Q_NTTL, Q_WHOA, Q_VOICES, Q_QUIP = 0x1FEC2D, 0x1FEC2E, 0x1FEC2F, 0x1FEC30, 0x1FEC31
+    local CONN_GEN      = 0x1FE96A
+
+    local function feature2(bit)
+        local v = mm.read_u8(FEATURE2)
+        return (v & 0xF0) == 0x50 and (v & bit) ~= 0
+    end
+
+    -- ======================================================================
+    -- SOUND: play any sound id through the game's delayed-sound queue
+    -- ======================================================================
+    local SFX_TABLE, LEVEL_LIST, PITCH_TABLE = 0x09C70C, 0x09C6A4, 0x0C5DA0
+    local QUEUE, QUEUE_SLOTS, QUEUE_NEXT = 0x0B2278, 7, 0x0A164C
+    -- Four 16-byte scratch scripts at 0x1FED40-0x1FED7F (NOT 0x1FEC40, where the
+    -- probes had them: that is the Potato Head reward buffer).
+    local SCRIPTS, BANK = 0x1FED40, 0x0BB8D8
+    local REX_YELL, YELL_VOL = 170, 128
+    local yell_muted = false                         -- Rex Hide 'n Seek has 170 silenced
+    local function sample_size(tone)
+        if mm.read_u32_le(BANK) ~= 0x56414270 then return 0 end
+        local programs = mm.read_u16_le(BANK + 0x12)
+        if tone < 1 or tone > programs * 16 then return 0 end
+        local tones = BANK + 32 + 128 * 16
+        local vag = mm.read_u16_le(tones + (tone - 1) * 32 + 22)
+        if vag < 1 or vag > 255 then return 0 end
+        return mm.read_u16_le(tones + programs * 16 * 32 + vag * 2) * 8
+    end
+    local function resolve(i)
+        local e = SFX_TABLE + i * 16
+        local tone, pitch, vol = mm.read_u16_le(e), mm.read_s16_le(e + 2), mm.read_s16_le(e + 4)
+        if i == REX_YELL and yell_muted and vol == 0 then vol = YELL_VOL end   -- the trap still plays it
+        if tone & 0x4000 ~= 0 then
+            local level = mm.read_u8(LEVEL_ADDR)
+            local p = LEVEL_LIST + (tone & 0x3FFF) * 2
+            tone = 0
+            for _ = 1, 32 do
+                if mm.read_s16_le(p) == level then tone = mm.read_u16_le(p + 2); break end
+                p = p + 4
+            end
+        end
+        tone = tone & 0x7FFF
+        if pitch <= 0 then pitch = mm.read_s16_le(PITCH_TABLE + (-pitch) * 2) end
+        local ok = tone >= 1 and tone <= 0x7F
+        return { tone = tone, pitch = pitch, vol = vol, size = ok and sample_size(tone) or 0 }
+    end
+    local script_i = 0
+    function M.play(i)
+        local ok, r = pcall(function()
+            local s = resolve(i)
+            if s.size < 48 then return false end
+            local nxt = mm.read_u32_le(QUEUE_NEXT)
+            local slot = nil
+            for n = QUEUE_SLOTS - 1, 0, -1 do
+                if n ~= nxt and mm.read_u32_le(QUEUE + n * 20 + 0x0C) == 0 then slot = n; break end
+            end
+            if not slot then return false end
+            local sc = SCRIPTS + script_i * 16
+            script_i = (script_i + 1) % 4
+            mm.write_s16_le(sc, s.tone); mm.write_s16_le(sc + 2, s.pitch); mm.write_s16_le(sc + 4, s.vol)
+            mm.write_u16_le(sc + 6, 0); mm.write_s16_le(sc + 8, -1)
+            local base = QUEUE + slot * 20
+            for k = 0, 8, 4 do mm.write_s32_le(base + k, mm.read_s32_le(BUZZ_POS + k)) end
+            mm.write_u16_le(base + 0x10, 0)
+            mm.write_u32_le(base + 0x0C, 0x80000000 + sc)
+            return true
+        end)
+        return ok and r
+    end
+    local function present(ids)
+        local out = {}
+        for _, i in ipairs(ids) do if resolve(i).size >= 3000 then out[#out + 1] = i end end
+        return out
+    end
+
+    -- ── the sound traps and the Buzz Quip filler (none of them are kept for later) ──
+    local strap = nil                     -- { name, ids, gap, left, next }
+    local function start_strap(name, ids, gap)
+        if #ids == 0 then dbg(name .. ": nothing to play in this level"); return end
+        strap = { name = name, ids = ids, gap = gap, left = 600, next = 0 }
+        dbg(name .. " trap started")
+    end
+    local function take(addr)
+        local q = mm.read_u8(addr)
+        if q > 0 then mm.write_u8(addr, q - 1); return true end
+        return false
+    end
+    local function sound_tick(level, live)
+        if not (in_level(level) and live) then
+            -- not in a level: these are dropped, not saved up
+            for _, a in ipairs({ Q_NTTL, Q_WHOA, Q_VOICES, Q_QUIP }) do
+                if mm.read_u8(a) ~= 0 then mm.write_u8(a, 0) end
+            end
+            strap = nil
+            return
+        end
+        if take(Q_QUIP) then
+            local ids = present({ 169, 206, 207 })
+            if #ids > 0 then M.play(ids[math.random(#ids)]) end
+        end
+        if take(Q_NTTL) then
+            local i = nil
+            for _, c in ipairs({ 206, 207 }) do if resolve(c).size == 7856 then i = c; break end end
+            start_strap("No Time to Lose", i and { i } or {}, 36)
+        end
+        if take(Q_WHOA) then start_strap("WHOA!", { 22 }, 60) end
+        if take(Q_VOICES) then
+            local ids = {}
+            for v = 170, 183 do ids[#ids + 1] = v end
+            start_strap("Buzz Is Hearing Voices", present(ids), 48)
+        end
+        if strap then
+            if strap.next <= 0 then
+                if M.play(strap.ids[math.random(#strap.ids)]) then strap.next = strap.gap end
+            end
+            strap.next = strap.next - 1
+            strap.left = strap.left - 1
+            if strap.left <= 0 then strap = nil end
+        end
+    end
+
+    -- ======================================================================
+    -- EJECT BUZZ: the zoom-out exit a token uses, forced (exit_trap_test)
+    -- ======================================================================
+    -- Starts the game's own exit sequence: it waits until Buzz is standing still,
+    -- zooms in, plays "To infinity and beyond" and flies him out. Never in a boss
+    -- level, where the game would count it as winning the fight. Returns whether
+    -- it started.
+    function M.zoom_exit(level)
+        if not in_level(level) or BOSS_LEVEL[level] then return false end
+        if mm.read_s32_le(BOSS_FLAG) ~= 0 then return false end
+        if mm.read_s32_le(EXIT_STATE) ~= 0 or mm.read_s16_le(RESULT) ~= 0 then return false end
+        mm.write_s32_le(BOSS_FLAG, 1)
+        mm.write_s32_le(EXIT_STATE, 1)
+        dbg("zoom exit started in level " .. level)
+        return true
+    end
+    local function eject_tick(level, live)
+        if mm.read_u8(Q_EJECT) == 0 then return end
+        if not in_level(level) or BOSS_LEVEL[level] then mm.write_u8(Q_EJECT, 0); return end
+        if not live or (CS_PLAYING) then return end
+        if M.zoom_exit(level) then mm.write_u8(Q_EJECT, 0) end   -- several at once still eject once
+    end
+
+    -- ======================================================================
+    -- REMEMBERED SHORTCUTS (shortcut_test)
+    -- ======================================================================
+    local MOVER_ID, MOVER_ROT, MOVER_FLAG = 0x0C56D0, 0x0C56AC, 0x0C56D2
+    local INST_TYPE, MODEL_TBL = 0x0C953C, 0x0A1274
+    local MARKER_LIST, MARKER_BASE, EFFECTS, HIDDEN = 0x0BB3B8, 0x0A144C, 0x0CE1B8, 0x80000000
+    -- shift: where the level's bits sit in the shared byte
+    local SC = {
+        [4] = { shift = 1, mask = 0x0D53D4,
+            sig = { { 0x0D479C, 0x8C4253D4 }, { 0x0D47A4, 0x34420001 } },
+            parts = {
+                { bit = 1, mover = 0x16, rot = { -0x600, 0, 0 }, model = 0x41, angle = { { 0, -0x180 } },
+                  matrix = { { 0x08, 0x0D4D }, { 0x0A, 0x08E4 }, { 0x0E, 0xF71C }, { 0x10, 0x0D4D } }, markers = { 4 } },
+                { bit = 2, mover = 0x17, rot = { -0x600, 0, 0 }, model = 0x42, angle = { { 0, -0x180 } },
+                  matrix = { { 0x08, 0x0D4D }, { 0x0A, 0x08E4 }, { 0x0E, 0xF71C }, { 0x10, 0x0D4D } }, markers = { 5 } },
+                { bit = 4, mover = 0x18, rot = { -0x600, 0, 0 }, model = 0x43, angle = { { 0, -0x180 } },
+                  matrix = { { 0x08, 0x0D4D }, { 0x0A, 0x08E4 }, { 0x0E, 0xF71C }, { 0x10, 0x0D4D } }, markers = { 6 } },
+            } },
+        [10] = { shift = 4, mask = 0x0D5A78,
+            sig = { { 0x0D44D0, 0x8C425A78 }, { 0x0D44D8, 0x34420001 } },
+            parts = {
+                { bit = 1, mover = 4, rot = { 0x600, 0, 0 }, model = 0x11, angle = { { 0, 0x180 } },
+                  matrix = { { 0x06, 0x08E3 }, { 0x08, 0x0D4D }, { 0x0C, 0xF2B3 }, { 0x0E, 0x08E3 } }, markers = { 0 } },
+                { bit = 2, mover = 5, rot = { 0, 0, 0x600 }, model = 0x10, angle = { { 4, 0x180 } },
+                  matrix = { { 0x00, 0x0D4D }, { 0x02, 0xF71D }, { 0x06, 0x08E3 }, { 0x08, 0x0D4D } }, markers = { 4 } },
+                { bit = 4, markers = { 1, 2, 3 },
+                  words = { { 0x0D5A40, 1 }, { 0x0D5A80, 1 }, { 0x0D5A64, 1 } }, no_collision = 0x13 },
+            } },
+        [2] = { shift = 0, rope = 0x0D5C38, rope_obj = 0x0BB3C4,
+            sig = { { 0x0D5518, 0xAC305C38 }, { 0x0D552C, 0x8CA55C38 } },
+            parts = { { bit = 1 } } },
+    }
+    local sc_bits, sc_gen, sc_frame = 0, nil, 0
+    local function ram_ptr(v)
+        if v >= 0x80010000 and v < 0x80200000 then return v - 0x80000000 end
+        return nil
+    end
+    local function sc_loaded(L)
+        for _, s in ipairs(L.sig) do if mm.read_u32_le(s[1]) ~= s[2] then return false end end
+        return true
+    end
+    -- 3.2.0 fix: the game sets the list up while the level loads -- it finds
+    -- the offset (MARKER_BASE) and scales every coordinate up (<< 5). Hiding a
+    -- marker before that wrote 0x80000000 into the raw list, which the scaling
+    -- then turned into 0: the marker came back at ground level (the green
+    -- arrows under Construction Yard's bulldozer). So shortcuts_tick only runs
+    -- once the level is live, and a record past the list's end is never touched.
+    local function hide_marker(n)
+        local list = ram_ptr(mm.read_u32_le(MARKER_LIST))
+        if not list then return end
+        local idx = n + mm.read_s32_le(MARKER_BASE)
+        if idx < 0 or idx >= mm.read_u16_le(list) then return end
+        local rec = list + idx * 12
+        local x, y, z = mm.read_s32_le(rec + 4), mm.read_u32_le(rec + 8), mm.read_s32_le(rec + 12)
+        if y == HIDDEN then return end
+        for i = 0, 63 do
+            local e = EFFECTS + i * 0x3C
+            if mm.read_s16_le(e + 0x24) > 0 and mm.read_u8(e + 0x2D) == 0x73 and mm.read_s32_le(e) == x
+               and mm.read_u32_le(e + 4) == y and mm.read_s32_le(e + 8) == z then
+                mm.write_s16_le(e + 0x24, 1)
+            end
+        end
+        mm.write_u32_le(rec + 8, HIDDEN)
+    end
+    local function dress(p)
+        if p.mover then
+            for k = 1, 3 do if p.rot[k] ~= 0 then mm.write_s16_le(MOVER_ROT + p.mover * 0x34 + (k - 1) * 2, p.rot[k]) end end
+            local fa = MOVER_FLAG + p.mover * 0x34
+            mm.write_u16_le(fa, mm.read_u16_le(fa) | 0x08)
+        end
+        if p.model then
+            local tbl = ram_ptr(mm.read_u32_le(MODEL_TBL))
+            local inst = tbl and ram_ptr(mm.read_u32_le(tbl + 4 + 4 * p.model))
+            local mat = inst and ram_ptr(mm.read_u32_le(inst + 0x10))
+            local ang = mat and ram_ptr(mm.read_u32_le(mat + 0x14))
+            if ang then
+                for _, a in ipairs(p.angle) do mm.write_s16_le(ang + 0x0C + a[1], a[2]) end
+                for _, m in ipairs(p.matrix) do mm.write_u16_le(mat + m[1], m[2]) end
+            end
+        end
+        for _, n in ipairs(p.markers or {}) do hide_marker(n) end
+        for _, w in ipairs(p.words or {}) do mm.write_u32_le(w[1], w[2]) end
+        if p.no_collision then
+            local inst = mm.read_s16_le(MOVER_ID + p.no_collision * 0x34)
+            if inst > 0 then mm.write_s16_le(INST_TYPE + inst * 0x34, 0) end
+        end
+    end
+    local function sc_game_bits(L)
+        if L.rope then return mm.read_s32_le(L.rope) ~= 0 and 1 or 0 end
+        return mm.read_u32_le(L.mask) & 7
+    end
+    local function shortcuts_tick(level, live)
+        if not feature2(1) then return end
+        local gen = mm.read_u8(CONN_GEN)
+        if sc_gen == nil then sc_gen = gen
+        elseif gen ~= sc_gen then                     -- a (new) connection: the client restores the seed's set
+            sc_gen = gen; sc_bits = 0; mm.write_u8(SHORTCUTS, 0)
+        end
+        sc_bits = sc_bits | (mm.read_u8(SHORTCUTS) & 0x7F)
+        local L = SC[level]
+        if L and live and mm.read_u8(LEVEL_ADDR) == level and sc_loaded(L) then
+            local have = sc_game_bits(L)
+            local want = (sc_bits >> L.shift) & 7
+            if L.rope then want = want & 1 end
+            if have & ~want ~= 0 then                 -- opened one in the game: remember it
+                sc_bits = sc_bits | ((have & ~want) << L.shift)
+                dbg(string.format("shortcut opened in level %d (bits 0x%X)", level, have))
+                want = want | have
+            end
+            local missing = want & ~have
+            if missing ~= 0 then
+                if L.rope then
+                    local obj = ram_ptr(mm.read_u32_le(L.rope_obj))
+                    if obj then mm.write_s32_le(obj + 0x10, 2); mm.write_s32_le(L.rope, 2); dbg("shortcut restored: rope") end
+                else
+                    mm.write_u32_le(L.mask, mm.read_u32_le(L.mask) | missing)
+                    for _, p in ipairs(L.parts) do if missing & p.bit ~= 0 then dress(p) end end
+                    dbg(string.format("shortcut restored in level %d (bits 0x%X)", level, missing))
+                end
+            end
+            sc_frame = sc_frame + 1
+            if not L.rope and sc_frame % 30 == 0 then            -- keep the look in place
+                local h = sc_game_bits(L)
+                for _, p in ipairs(L.parts) do if want & h & p.bit ~= 0 then dress(p) end end
+            end
+        end
+        if mm.read_u8(SHORTCUTS) ~= sc_bits then mm.write_u8(SHORTCUTS, sc_bits) end
+    end
+
+    -- ======================================================================
+    -- REX HIDE 'N SEEK (npc_probe4-12, ENGINE_NOTES 2b-2n)
+    -- ======================================================================
+    local ACTORS, STRIDE, LIST_TABLE = 0x0C2EA0, 0x98, 0x0BB2D0
+    local HOOK_ADDR, HOOK_ORIG, HOOK_NEW, STUB_ADDR = 0x06516C, 0x0C015AD9, 0x0C07FB34, 0x1FECD0
+    local KEEP_PTR = 0x1FECF8
+    local STUB = { 0x3C018020, 0x8C21ECF8, 0x00000000, 0x10810003, 0x00000000,
+                   0x08015AD9, 0x00000000, 0x03E00008, 0x8C820004 }
+    local ZHOOK_ADDR, ZHOOK_ORIG, ZHOOK_NEXT, ZHOOK_NEW, ZSTUB_ADDR = 0x044230, 0x00000000, 0x8045006A, 0x0C07FB40, 0x1FED00
+    local ZSTUB = { 0x3C018020, 0x8C21ECF8, 0x00000000, 0x16010002, 0x00000000,
+                    0x00002821, 0x03E00008, 0x00000000 }
+    local PATCHES = {
+        { name = "Rex height hook", addr = HOOK_ADDR, orig = HOOK_ORIG, new = HOOK_NEW, stub_addr = STUB_ADDR, stub = STUB },
+        { name = "Rex zone hook", addr = ZHOOK_ADDR, orig = ZHOOK_ORIG, new = ZHOOK_NEW, next = ZHOOK_NEXT, stub_addr = ZSTUB_ADDR, stub = ZSTUB },
+    }
+    local MESH_TABLE, MESH_STRIDE = 0x0C9510, 0x34
+    local OBJ_TABLE, OBJ_STRIDE, OBJ_MAX = 0x0C56A0, 0x34, 57
+    local TALK_FLAG, CAM_A, CAM_B = 0x0A111C, 0x0B2234, 0x0B2240
+    local YELL_ADDR = SFX_TABLE + REX_YELL * 16 + 4
+
+    local function stub_state(p)
+        local ours, empty = true, true
+        for i, word in ipairs(p.stub) do
+            local w = mm.read_u32_le(p.stub_addr + (i - 1) * 4)
+            if w ~= word then ours = false end
+            if w ~= 0 then empty = false end
+        end
+        return ours and "ours" or (empty and "empty" or "other")
+    end
+    local function ensure_patch(p)
+        local w = mm.read_u32_le(p.addr)
+        if w == p.new and stub_state(p) == "ours" then return true end
+        if w ~= p.orig and w ~= p.new then return false end
+        if p.next and mm.read_u32_le(p.addr + 4) ~= p.next then return false end
+        if w == p.orig and stub_state(p) == "other" then return false end
+        for i, word in ipairs(p.stub) do mm.write_u32_le(p.stub_addr + (i - 1) * 4, word) end
+        mm.write_u32_le(p.addr, p.new)
+        return true
+    end
+    local function remove_patches()
+        for _, p in ipairs(PATCHES) do
+            if mm.read_u32_le(p.addr) == p.new then mm.write_u32_le(p.addr, p.orig) end
+            if stub_state(p) == "ours" then
+                for i = 1, #p.stub do mm.write_u32_le(p.stub_addr + (i - 1) * 4, 0) end
+            end
+        end
+        mm.write_u32_le(KEEP_PTR, 0)
+    end
+    local function mute_yell(on)
+        local v = mm.read_s16_le(YELL_ADDR)
+        if on then
+            if v ~= 0 then mm.write_s16_le(YELL_ADDR, 0) end
+            yell_muted = true
+        elseif yell_muted then
+            if v == 0 then mm.write_s16_le(YELL_ADDR, YELL_VOL) end
+            yell_muted = false
+        end
+    end
+
+    local function round(v) return math.floor(v + 0.5) end
+    local function spin(x, z, t)
+        local a = t * 2 * math.pi / 4096
+        local c, sn = math.cos(a), math.sin(a)
+        return round(x * c + z * sn), round(-x * sn + z * c)
+    end
+    local function xyz(a) return mm.read_s32_le(a), mm.read_s32_le(a + 4), mm.read_s32_le(a + 8) end
+    local function mesh_ok(n)
+        local p = mm.read_u32_le(MESH_TABLE + n * MESH_STRIDE + 0x10)
+        return p >= 0x80010000 and p < 0x80200000
+    end
+    local function mesh_ang(n)
+        local o = mm.read_u32_le(MESH_TABLE + n * MESH_STRIDE + 0x0C)
+        if o >= OBJ_MAX then return 0, 0, 0 end
+        local b = OBJ_TABLE + o * OBJ_STRIDE
+        if (mm.read_u16_le(b + 0x32) & 8) == 0 then return 0, 0, 0 end
+        return mm.read_s16_le(b + 0x0C) / 4, mm.read_s16_le(b + 0x0E) / 4, mm.read_s16_le(b + 0x10) / 4
+    end
+    local function rot(ax, ay, az)
+        local k = 2 * math.pi / 4096
+        local sx, cx, sy, cy, sz, cz = math.sin(ax * k), math.cos(ax * k), math.sin(ay * k), math.cos(ay * k), math.sin(az * k), math.cos(az * k)
+        return { cz * cy, -sz * cy, sy,
+                 cz * sx * sy + cx * sz, cx * cz - sz * sx * sy, -sx * cy,
+                 sx * sz - cz * cx * sy, sx * cz + sz * cx * sy, cx * cy }
+    end
+    local function to_local(m, d)
+        return { d[1] * m[1] + d[2] * m[4] + d[3] * m[7], d[1] * m[2] + d[2] * m[5] + d[3] * m[8], d[1] * m[3] + d[2] * m[6] + d[3] * m[9] }
+    end
+    local function to_world(m, l)
+        return { m[1] * l[1] + m[2] * l[2] + m[3] * l[3], m[4] * l[1] + m[5] * l[2] + m[6] * l[3], m[7] * l[1] + m[8] * l[2] + m[9] * l[3] }
+    end
+    local function wrap(a) return (a + 2048) % 4096 - 2048 end
+
+    local rex = nil           -- per level visit: { level, d (data), sp (spot), base, laddr, last (written key), ride }
+    local function rex_spot(level)
+        local i = LEVEL_IDX[level]
+        if not i then return 0 end
+        local v = mm.read_u8(REX_SPOT_BASE + i)
+        if (v & 0xF0) ~= 0xE0 then return 0 end
+        local n = v & 0x0F
+        return (n >= 1 and n <= 5) and n or 0
+    end
+    -- Write Rex and his talk list for placement (off = list units from his own
+    -- spot, turn, buzz = chosen Buzz spot or nil). 'facing' false: leave his
+    -- facing alone (riding, floor did not turn).
+    local function rex_apply(off, turn, buzz, facing)
+        local d, base, laddr = rex.d, rex.base, rex.laddr
+        local ox, oy, oz = d.actor[1] // 32, d.actor[2] // 32, d.actor[3] // 32
+        local rx, ry, rz = ox + off[1], oy + off[2], oz + off[3]
+        for _, o in ipairs({ 0x00, 0x50, 0x5C }) do
+            mm.write_s32_le(base + o, rx * 32); mm.write_s32_le(base + o + 4, ry * 32); mm.write_s32_le(base + o + 8, rz * 32)
+        end
+        mm.write_s32_le(base + 0x8C, d.actor[4] + off[2] * 32)
+        local P = d.pts
+        local p1x, p1z = P[4], P[6]
+        local b0x, b0z
+        for i = 0, d.count - 1 do
+            local px, py, pz = P[i * 3 + 1], P[i * 3 + 2], P[i * 3 + 3]
+            local x, z = spin(px - p1x, pz - p1z, turn)
+            local y = py + off[2]
+            if i == 1 then x, y, z = 0, ry, 0 end
+            if i == 0 then
+                if buzz then x, z = buzz[1], buzz[3]; y = ry + buzz[2] end
+                b0x, b0z = x, z
+            end
+            local a = laddr + 4 + i * 12
+            mm.write_s32_le(a, rx + x); mm.write_s32_le(a + 4, y); mm.write_s32_le(a + 8, rz + z)
+        end
+        if facing ~= false then
+            local face = round(math.atan(b0x, b0z) * 4096 / (2 * math.pi)) % 4096
+            mm.write_s16_le(base + 0x0E, face); mm.write_s16_le(base + 0x68, face)
+        end
+    end
+    -- riding a moving floor: where the spot is this frame (ENGINE_NOTES 2m / 2n)
+    local function ride_place(r)
+        local x, y, z = xyz(MESH_TABLE + r.mesh * MESH_STRIDE)
+        local ax, ay, az = mesh_ang(r.mesh)
+        -- the game moves the floor again before it draws: lead by the last step
+        -- until the floor has been still for 4 frames
+        if r.last then
+            local d = { x - r.last[1], y - r.last[2], z - r.last[3] }
+            local da = { wrap(ax - r.lang[1]), wrap(ay - r.lang[2]), wrap(az - r.lang[3]) }
+            r.prev = { r.last[1], r.last[2], r.last[3], r.lang[1], r.lang[2], r.lang[3] }
+            local big = math.max(math.abs(d[1]), math.abs(d[2]), math.abs(d[3]))
+            local any = big > 0 or da[1] ~= 0 or da[2] ~= 0 or da[3] ~= 0
+            r.moving = any and big <= 4096
+            if big > 4096 then r.still = 99
+            elseif any then r.vel, r.avel, r.still = d, da, 0
+            else r.still = r.still + 1 end
+        end
+        r.last, r.lang = { x, y, z }, { ax, ay, az }
+        local lp, la = { 0, 0, 0 }, { 0, 0, 0 }
+        if r.still < 4 then lp, la = r.vel, r.avel end
+        local w = to_world(rot(ax + la[1], ay + la[2], az + la[3]), r.rel)
+        local d = rex.d
+        local off = { round((x + lp[1]) / 32 + w[1]) - d.actor[1] // 32,
+                      round((y + lp[2]) / 32 + w[2]) - d.actor[2] // 32,
+                      round((z + lp[3]) / 32 + w[3]) - d.actor[3] // 32 }
+        local dyaw = (ay + la[2]) - r.yaw
+        local turn = (r.turn + round(dyaw)) % 4096
+        local buzz = nil
+        if r.buzz then
+            local a = dyaw * 2 * math.pi / 4096
+            local c, sn = math.cos(a), math.sin(a)
+            buzz = { round(r.buzz[1] * c + r.buzz[3] * sn), r.buzz[2], round(-r.buzz[1] * sn + r.buzz[3] * c) }
+        end
+        local yawed = round(ay) ~= round(r.yaw_used or ay)
+        r.yaw_used = ay
+        return off, turn, buzz, yawed
+    end
+    -- In Rex's own talk on a moving floor: carry the talk camera with the floor
+    -- on the frames the game left it where it was. Buzz is never touched: the
+    -- game keeps him on the floor itself (npc_probe11/12 logs). 3.2.0 fix: this
+    -- used to run during ANY talk -- another NPC's, or the camera of a level
+    -- exit -- and carried Buzz along with the Tarmac Trouble plane, off the edge.
+    -- Rex's talk is recognised by Buzz standing on point 0 of Rex's talk list,
+    -- where the talk puts him, a few frames in.
+    local function read3(a) return { mm.read_s32_le(a), mm.read_s32_le(a + 4), mm.read_s32_le(a + 8) } end
+    local function eq3(a, b) return a and b and a[1] == b[1] and a[2] == b[2] and a[3] == b[3] end
+    local function carry3(r, a, v)
+        local p, q, g = r.prev, r.last, r.lang
+        local l = to_local(rot(p[4], p[5], p[6]), { v[1] - p[1], v[2] - p[2], v[3] - p[3] })
+        local w = to_world(rot(g[1], g[2], g[3]), l)
+        mm.write_s32_le(a, round(q[1] + w[1])); mm.write_s32_le(a + 4, round(q[2] + w[2])); mm.write_s32_le(a + 8, round(q[3] + w[3]))
+    end
+    local function talk_carry(r)
+        if mm.read_s32_le(TALK_FLAG) == 0 then r.tf, r.rex_talk, r.pc = 0, false, nil; return end
+        r.tf = (r.tf or 0) + 1
+        if not r.rex_talk and r.tf >= 3 and r.tf <= 30 then
+            local p0 = rex.laddr + 4
+            if math.abs(mm.read_s32_le(BUZZ_POS) - mm.read_s32_le(p0) * 32) <= 4096
+               and math.abs(mm.read_s32_le(BUZZ_POS + 8) - mm.read_s32_le(p0 + 8) * 32) <= 4096 then
+                r.rex_talk = true
+            end
+        end
+        if not r.rex_talk then r.pc = nil; return end
+        local ca, cb = read3(CAM_A), read3(CAM_B)
+        if r.moving and r.prev and r.pc then
+            if eq3(ca, r.pc[1]) then carry3(r, CAM_A, ca) end
+            if eq3(cb, r.pc[2]) then carry3(r, CAM_B, cb) end
+            ca, cb = read3(CAM_A), read3(CAM_B)
+        end
+        r.pc = { ca, cb }
+    end
+
+    -- The zone hook (3.2.0 hitch fix). It makes the game count Rex as in an
+    -- always-on room, which shows him in a spot the game files under a room it
+    -- has switched off (the Construction Yard office roof, and a few others).
+    -- Left on everywhere, it also had the game keep drawing and updating Rex
+    -- from every other room, and that is what made the levels hitch. So it is
+    -- only in for the spots that need it (zone = true in REX_HIDE_DATA), and
+    -- only while Buzz is near enough to see him; otherwise the game's own code
+    -- is back exactly as it was.
+    -- Horizontal reach widened after testing: on the Construction Yard roof you
+    -- arrive from well off to the side and above, and saw him only on landing.
+    local ZONE_NEAR, ZONE_FAR, ZONE_HIGH = 160000, 176000, 260000
+    local zone_in = false
+    local function zone_hook(on, full)
+        if on then
+            if full or mm.read_u32_le(ZHOOK_ADDR) ~= ZHOOK_NEW then
+                if not ensure_patch(PATCHES[2]) and not M.zone_warned then
+                    M.zone_warned = true
+                    dbg("Rex zone hook NOT installed")
+                end
+            end
+        elseif mm.read_u32_le(ZHOOK_ADDR) == ZHOOK_NEW then
+            mm.write_u32_le(ZHOOK_ADDR, ZHOOK_ORIG)
+        end
+        zone_in = on
+    end
+    local function zone_tick(s, base, full)
+        if not s.zone or (TS2_OFF and TS2_OFF.zone) then zone_hook(false); return end
+        local bx, by, bz = xyz(BUZZ_POS)
+        local r = zone_in and ZONE_FAR or ZONE_NEAR
+        local near = math.abs(bx - mm.read_s32_le(base)) <= r and math.abs(bz - mm.read_s32_le(base + 8)) <= r
+                     and math.abs(by - mm.read_s32_le(base + 4)) <= ZONE_HIGH
+        zone_hook(near, full)
+    end
+
+    local function rex_release()
+        if rex then mm.write_u32_le(KEEP_PTR, 0) end
+        rex = nil
+        mute_yell(false)
+        zone_hook(false)
+    end
+    local function rex_tick(level)
+        local d = REX_HIDE_DATA[level]
+        local n = d and rex_spot(level) or 0
+        if n == 0 or not in_level(level) then
+            if rex or yell_muted then rex_release() end
+            zone_hook(false)
+            if mm.read_u32_le(KEEP_PTR) ~= 0 and mm.read_u32_le(HOOK_ADDR) == HOOK_NEW then mm.write_u32_le(KEEP_PTR, 0) end
+            return
+        end
+        -- the two hooks, every frame (a savestate can take them out)
+        -- Every frame: the hook word itself (one read each). Every 30 frames, or
+        -- whenever a word is not ours: the full check of the stub too.
+        M.fr = (M.fr or 0) + 1
+        local full = (M.fr % 30 == 0)
+        local ok1 = (not full and mm.read_u32_le(HOOK_ADDR) == HOOK_NEW) or ensure_patch(PATCHES[1])
+        if not ok1 and not M.patch_warned then
+            M.patch_warned = true
+            dbg("Rex height hook NOT installed")
+        end
+        mute_yell(true)
+        -- Rex must be the actor and the talk list the clean copy says
+        local base = ACTORS + d.slot * STRIDE
+        local lp = mm.read_u32_le(LIST_TABLE + d.list * 4)
+        local laddr = (lp >= 0x80100000 and lp < 0x801FFF00) and (lp - 0x80000000) or nil
+        if mm.read_u16_le(base + 0x14) ~= 0x3E or mm.read_u16_le(base + 0x40) == 0
+           or not laddr or mm.read_u16_le(laddr) ~= d.count then
+            if rex then mm.write_u32_le(KEEP_PTR, 0) end
+            zone_hook(false)
+            rex = nil
+            return
+        end
+        if not (rex and rex.level == level and rex.sp == n and rex.base == base and rex.laddr == laddr) then
+            local s = d.spots[n]
+            rex = { level = level, d = d, sp = n, base = base, laddr = laddr }
+            if s.ride then
+                rex.ride = { mesh = s.ride.mesh, rel = s.ride.rel, yaw = s.ride.yaw, turn = s.turn,
+                             buzz = s.buzz, still = 99, vel = { 0, 0, 0 }, avel = { 0, 0, 0 } }
+            end
+            dbg(string.format("Rex hidden: level %d spot %d%s", level, n, s.ride and " (riding)" or ""))
+        end
+        mm.write_u32_le(KEEP_PTR, 0x80000000 + base)
+        local s = d.spots[n]
+        zone_tick(s, base, full)
+        if rex.ride then
+            local r = rex.ride
+            if not mesh_ok(r.mesh) then return end
+            local off, turn, buzz, yawed = ride_place(r)
+            local key = off[1] .. "," .. off[2] .. "," .. off[3] .. "," .. turn
+            if key ~= r.key or yawed or not rex.faced or mm.read_s32_le(laddr + 16) ~= (d.actor[1] // 32 + off[1]) then
+                rex_apply(off, turn, buzz, yawed or not rex.faced)
+                rex.faced = true
+                r.key = key
+            end
+            talk_carry(r)
+            return
+        end
+        -- standing spot: rewrite only when something put him back
+        local tx = (d.actor[1] // 32 + s[1]) * 32
+        local p1 = laddr + 4 + 12
+        if mm.read_s32_le(base) ~= tx or mm.read_s32_le(p1) ~= (d.actor[1] // 32 + s[1])
+           or mm.read_s32_le(base + 0x5C) ~= tx then
+            rex_apply({ s[1], s[2], s[3] }, s.turn, s.buzz, true)
+        end
+    end
+
+    -- ======================================================================
+    -- MUSIC on the new method (music_system_test, map_music_test2)
+    -- ======================================================================
+    -- The stage number (0x0A1530) is only ever READ now. The level track comes
+    -- from rewriting the one instruction that loads it; miniboss (15) and
+    -- minigame (16) from four immediate bytes; the level select / menu song (19)
+    -- from a redirect in the play routine that only touches requests made by the
+    -- front end's own code.
+    local LEVEL_SITE, LEVEL_ORIG, LEVEL_SET = 0x0733D8, 0x84841530, 0x24040000
+    local SITES = {
+        boss = { { 0x073378, 0x24020000 }, { 0x073380, 0x24040000 } },
+        mini = { { 0x0733B4, 0x24020000 }, { 0x0733C8, 0x24040000 } },
+    }
+    local MHOOK, MHOOK_ORIG, MHOOK_NEW = 0x082D34, 0x0C020AF7, 0x0C07FB28
+    local MTABLE, MSTUB = 0x1FEC80, 0x1FECA0
+    local MCODE = { 0x8FA10010, 0x3C02800D, 0x0022082B, 0x14200005, 0x2C820016, 0x10400003,
+                    0x3C018020, 0x00240821, 0x9024EC80, 0x08020AF7, 0x00000000 }
+    local want = { level = nil, boss = 15, mini = 16, menu = 19 }
+    local function write_level_site(track)
+        local w = mm.read_u32_le(LEVEL_SITE)
+        if w ~= LEVEL_ORIG and (w & 0xFFFFFF00) ~= LEVEL_SET then return false end
+        local new = track and (LEVEL_SET | track) or LEVEL_ORIG
+        if w ~= new then mm.write_u32_le(LEVEL_SITE, new) end
+        return true
+    end
+    local function write_site(kind, track)
+        for _, p in ipairs(SITES[kind]) do
+            if mm.read_u32_le(p[1]) & 0xFFFFFF00 ~= p[2] then return false end
+        end
+        for _, p in ipairs(SITES[kind]) do if mm.read_u8(p[1]) ~= track then mm.write_u8(p[1], track) end end
+        return true
+    end
+    local function mstub_ok()
+        for i, w in ipairs(MCODE) do if mm.read_u32_le(MSTUB + (i - 1) * 4) ~= w then return false end end
+        return true
+    end
+    local function mscratch_free()
+        for a = MTABLE, MSTUB + #MCODE * 4 - 1, 4 do if mm.read_u32_le(a) ~= 0 then return false end end
+        return true
+    end
+    local function menu_install(track)
+        local w = mm.read_u32_le(MHOOK)
+        if w == MHOOK_NEW and mstub_ok() then
+            if mm.read_u8(MTABLE + 19) ~= track then mm.write_u8(MTABLE + 19, track) end
+            return
+        end
+        if w ~= MHOOK_ORIG and w ~= MHOOK_NEW then return end
+        if mm.read_u32_le(MHOOK + 4) ~= 0 then return end
+        if w == MHOOK_ORIG and not mscratch_free() and not mstub_ok() then return end
+        for t = 0, 21 do mm.write_u8(MTABLE + t, t) end
+        mm.write_u8(MTABLE + 19, track)
+        for i, c in ipairs(MCODE) do mm.write_u32_le(MSTUB + (i - 1) * 4, c) end
+        if not mstub_ok() then return end
+        mm.write_u32_le(MHOOK, MHOOK_NEW)            -- last: only once the code is in place
+    end
+    local function menu_remove()
+        if mm.read_u32_le(MHOOK) == MHOOK_NEW then mm.write_u32_le(MHOOK, MHOOK_ORIG) end   -- first
+        if mstub_ok() then for a = MTABLE, MSTUB + #MCODE * 4 - 1, 4 do mm.write_u32_le(a, 0) end end
+    end
+    -- what the mode makes of a track. pick(nat) is supplied by ts2.lua's music code.
+    function M.music_enter_level(level_track, boss, mini)
+        want.level, want.boss, want.mini = level_track, boss or 15, mini or 16
+        M.music_assert()
+    end
+    function M.music_set_level(track) want.level = track; M.music_assert() end
+    function M.music_leave_level(menu)
+        want.level, want.boss, want.mini = nil, 15, 16
+        want.menu = menu
+        M.music_assert()
+    end
+    function M.music_assert()
+        if TS2_OFF and TS2_OFF.music then
+            if not M.music_off_done then M.music_off_done = true; M.music_restore() end
+            return
+        end
+        local level = mm.read_u8(LEVEL_ADDR)
+        if in_level(level) then
+            write_level_site(want.level); write_site("boss", want.boss); write_site("mini", want.mini)
+        else
+            write_level_site(nil); write_site("boss", 15); write_site("mini", 16)
+        end
+        -- The level select redirect: one read a frame, the full check every 30.
+        M.mfr = (M.mfr or 0) + 1
+        if want.menu and want.menu ~= 19 then
+            if mm.read_u32_le(MHOOK) ~= MHOOK_NEW or mm.read_u8(MTABLE + 19) ~= want.menu or M.mfr % 30 == 0 then
+                menu_install(want.menu)
+            end
+        elseif mm.read_u32_le(MHOOK) == MHOOK_NEW or M.mfr % 30 == 0 then
+            menu_remove()
+        end
+    end
+    function M.music_restore()
+        want = { level = nil, boss = 15, mini = 16, menu = 19 }
+        write_level_site(nil); write_site("boss", 15); write_site("mini", 16); menu_remove()
+    end
+
+    -- ======================================================================
+    function M.tick(level, live)
+        if not M.off_logged then
+            M.off_logged = true
+            local l = ts2_off_line and ts2_off_line()
+            if l then dbg(l); print("[TS2] " .. l) end
+        end
+        local OFF = TS2_OFF or {}
+        if not OFF.sounds then sound_tick(level, live); eject_tick(level, live) end
+        if not OFF.shortcuts then shortcuts_tick(level, live) end
+        if OFF.rex then
+            if not M.rex_off_done then M.rex_off_done = true; pcall(remove_patches); rex_release() end
+        else
+            rex_tick(level)
+        end
+    end
+    function M.on_exit()
+        pcall(remove_patches); pcall(mute_yell, false); pcall(M.music_restore)
+    end
+    if event and event.onexit then
+        event.onexit(function() M.on_exit() end, "ts2_320")
+    end
+    return M
+end)()
+
 function ts2_main()
     -- No ROM loaded yet (script started before a game booted): do nothing. The
     -- bundled connector below waits for a ROM; touching mainmemory here would error.
@@ -6170,12 +7253,12 @@ function ts2_main()
     -- makes validation reliable regardless of when the player connects.
     mainmemory.write_u8(0x1FFFD0, 0xAB)
     -- Re-assert boss defeats this session detected (see BOSS DEFEAT LATCH).
-    boss_latch_tick()
+    boss_latch_tick(); ts2_ps("boss latch")
     -- Progressive Battery Capacity found mid-level fills health (3.1.0). Every
     -- frame, map included, so the count is always current.
-    battery_cap_pickup(mainmemory.read_u8(A.LEVEL))
+    battery_cap_pickup(mainmemory.read_u8(A.LEVEL)); ts2_ps("battery cap")
     -- Spin meter mirror (3.1.2), every frame so it is never stale anywhere.
-    spin_meter_tick()
+    spin_meter_tick(); ts2_ps("spin meter")
     -- Logic Lab only (nil in a normal session): stands in for the client.
     if TS2_LAB_HOOK then TS2_LAB_HOOK() end
     -- One-time positive confirmation that the client wrote settings (game-mode
@@ -6199,6 +7282,7 @@ function ts2_main()
     -- The watchers run under pcall: a bug in the LOG must never stop the
     -- randomizer, and an error anywhere in ts2_main skips the rest of the frame.
     pcall(ts2_debug_decide)
+    local t_dbg = os.clock()
     if TS2_DEBUG and ts2_dbg_state ~= "off" then
         if not ts2_dbg_watch_broken then
             local okw, errw = pcall(ts2_debug_watch, level)
@@ -6224,27 +7308,47 @@ function ts2_main()
         end
     end
 
+    TS2_PROF.dbg = os.clock() - t_dbg; ts2_ps("debug log")
+
     -- ── LEVEL CHANGE ─────────────────────────────────────
     if level~=last_level then
+        local t_lc = os.clock()
         on_level_change(level, last_level)
         last_level=level
+        TS2_PROF.lc = os.clock() - t_lc; ts2_ps("level change")
     end
 
     -- Quick loads: before the cutscene machine, so a cutscene that starts on this
     -- frame finds the player's own speed back in place, not 6400%.
-    qs_update(level)
+    qs_update(level); ts2_ps("quick loads")
 
     -- Cutscene trap state machine: run EVERY frame regardless of level. It must
     -- keep ticking on the map (16) and boss-defeat screens (35/38/41/44) to track
     -- the 64->0 cutscene-state cycles, the post-cutscene timer, and Zurg's
     -- two-phase sequence. (Only fires when a cutscene trap is queued/active.)
-    update_cutscene(level)
+    update_cutscene(level); ts2_ps("cutscene")
 
     -- Hamm's Shop code patches: EVERY frame, everywhere, never one-shot. A
     -- savestate reverts game RAM but not Lua state, so a restore that only ever
     -- fires once leaves a hole in the game's code and freezes it later with no
     -- error printed. Cheap and idempotent, so it runs outside the level branch.
-    shop_assert_patches()
+    shop_assert_patches(); ts2_ps("shop patches")
+
+    -- 3.2.0 (TS2X): Rex Hide 'n Seek, Remembered Shortcuts, the sound traps,
+    -- Buzz Quip, Eject Buzz and the music patches. Every frame, everywhere: a
+    -- savestate can undo any of it. Under pcall so a fault here never stops
+    -- the rest of the randomizer; the first error is logged.
+    if TS2X then
+        local t_x = os.clock()
+        local ok_x, err_x = pcall(TS2X.tick, level, buzz_moved and level>=1 and level<=15 and not CS_PLAYING)
+        if ok_x then ok_x, err_x = pcall(TS2X.music_assert) end
+        TS2_PROF.x = os.clock() - t_x; ts2_ps("3.2.0 features")
+        if not ok_x and not TS2X_ERR then
+            TS2X_ERR = true
+            print("[TS2] 3.2.0 feature error: " .. tostring(err_x))
+            ts2_debug("3.2.0 feature error: " .. tostring(err_x))
+        end
+    end
 
     -- Re-arm the map autosave whenever we are NOT on the map. This guarantees
     -- the save fires on every map entry, not just the first: relying on
@@ -6253,11 +7357,11 @@ function ts2_main()
     -- 16, and intermediate bounces could leave map_saved stuck true).
     if level~=MAP_LEVEL_ID then map_saved=false; map_was_on=false end
 
-    update_item_feed()
+    update_item_feed(); ts2_ps("item feed")
 
     -- Menu branding. Self-gating: only writes when the vanilla string is
     -- actually present, so it costs one block read per frame and nothing else.
-    update_title_text()
+    update_title_text(); ts2_ps("title text")
 
     -- Rex: write the rex bytes authoritatively EVERY frame, regardless of which
     -- level value we are in. The game corrupts 0x1FE9C4/C5 during the load hitch
@@ -6341,8 +7445,13 @@ function ts2_main()
         end
 
         -- TIMEOUT safety: count frames since entry (wall clock, not the counter).
+        -- 3.2.0: and only once Buzz has moved at least once and the game isn't
+        -- in its load/exit state (0x0A136E, 1 while a level loads). A Tarmac
+        -- Trouble load that took 25 s (quick load gave up) armed it mid-load,
+        -- the luggage read as 0 = "picked up", and all of it was sent.
         buzz_spawn.lr_frames = buzz_spawn.lr_frames + 1
-        if buzz_spawn.lr_frames >= 600 then  -- ~10s
+        if buzz_spawn.lr_frames >= 600 and buzz_spawn.move_frames >= 1
+           and mainmemory.read_u8(0x0A136E) == 0 then  -- ~10s
             buzz_moved = true
         end
     end
@@ -6357,8 +7466,9 @@ function ts2_main()
     -- ══════════════════════════════════════════════════════
     -- MAP SCREEN
     -- ══════════════════════════════════════════════════════
+    ts2_ps("level gate / rex bytes")
     if level==MAP_LEVEL_ID then
-        update_map(input, hovered)
+        update_map(input, hovered); ts2_ps("map")
         return
 
     -- ══════════════════════════════════════════════════════
@@ -6466,26 +7576,26 @@ function ts2_main()
             end
         end
 
+        ts2_ps("level checks")
         -- ── SUBSYSTEMS ────────────────────────────────────
-        -- ── SUBSYSTEMS ────────────────────────────────────
-        update_moves()
-        update_traps(level)
-        update_boss(level)
+        update_moves(); ts2_ps("moves")
+        update_traps(level); ts2_ps("traps")
+        update_boss(level); ts2_ps("boss")
         -- Collectible DETECTION subsystems are skipped while a cutscene is actively
         -- playing: the forced cutscene corrupts collectible/token RAM, which would
         -- otherwise fire phantom checks. (Moves/traps/boss still run so the cutscene
         -- and traps behave correctly.)
         if not CS_PLAYING then
-            update_potato(level)
-            update_sanity(level)
-            update_auto_coins(level)
-            update_coins(level)
-            update_rex(level)
-            update_hints(level)
-            update_coin_wallet(level)
-            update_hamm_shop(level)
+            update_potato(level); ts2_ps("potato")
+            update_sanity(level); ts2_ps("sanity")
+            update_auto_coins(level); ts2_ps("auto coins")
+            update_coins(level); ts2_ps("coins")
+            update_rex(level); ts2_ps("rex")
+            update_hints(level); ts2_ps("hints")
+            update_coin_wallet(level); ts2_ps("coin wallet")
+            update_hamm_shop(level); ts2_ps("hamm shop")
         end
-        update_music()
+        update_music(); ts2_ps("music")
 
     end -- end level 1-15
 end
@@ -6623,7 +7733,21 @@ ts2_err_seen    = false
 ts2_err_count   = 0
 
 event.onframestart(function()
+    pcall(ts2_watch_frame)
+    local prof = not TS2_OFF.profiler
+    local tw = os.clock()
+    local t0 = prof and tw or 0
+    if prof then
+        TS2_PROF.x, TS2_PROF.dbg, TS2_PROF.lc = 0, 0, 0
+        for k in pairs(TS2_PROF.s) do TS2_PROF.s[k] = nil end
+        TS2_PROF.mark, TS2_PROF.mem0 = t0, collectgarbage("count")
+    end
     local ok, err = pcall(ts2_main)
+    TS2_WATCH.script = os.clock() - tw
+    if prof then
+        ts2_ps("end of frame")
+        if TS2_DEBUG and ts2_dbg_state == "on" then pcall(ts2_prof_frame, "script", os.clock() - t0) end
+    end
     if not ok then
         ts2_err_count = ts2_err_count + 1
         if not ts2_err_seen then          -- report once, not 60x/second
@@ -6679,6 +7803,7 @@ end, "ts2")
 -- from the restored RAM exactly as if the script had just attached.
 if event and event.onloadstate then
     event.onloadstate(function()
+        ts2_level_visit = (ts2_level_visit or 0) + 1   -- toys must be seen again (3.2.0)
         -- A savestate can land mid-load or mid-level: never leave it fast.
         qs_restore("savestate"); qs.last = mainmemory.read_u8(A.LEVEL)
         -- Fix (runs regardless of debug): a savestate is a photograph of RAM and
@@ -7909,7 +9034,10 @@ else
 
         local co = coroutine.create(main)
         function tick ()
+            local t_c = os.clock()
             local status, err = coroutine.resume(co)
+            if TS2_WATCH then TS2_WATCH.client = TS2_WATCH.client + (os.clock() - t_c) end
+            if TS2_DEBUG and ts2_dbg_state == "on" then pcall(ts2_prof_frame, "client", os.clock() - t_c) end
 
             if not status and err ~= "cannot resume dead coroutine" then
                 print("\nERROR: "..err)

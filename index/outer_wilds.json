@@ -684,6 +684,21 @@
       "title": "v1.4.1",
       "version_simple": "1.4.1",
       "world_version": "1.4.1"
+    },
+    "v1.4.2": {
+      "created_at": "2026-11-16T18:46:15Z",
+      "description": "For installation instructions [see the README](https://github.com/Ixrec/OuterWildsArchipelagoRandomizer#installation).\r\n\r\n- Fixed a bug where our attempt at backwards compatibility for Deep Bramble Coordinates would incorrectly delete your Interstellar Warp Drive\r\n- `upgrade_counts` now supports `0`s, and the vanilla stat will remain at 100% when `0` is chosen instead of starting at 50%\r\n\t- If you're still using the Capacity/Duration mod settings, please switch to the new yaml options soon and tell us if there's something you can't accomplish with them.\r\n\t- This is a reminder that I want to **remove the mod settings** in a future version. In fact, there are already some minor bugs visible because of trying to support too many different options/settings around these stats.\r\n- All of the timeouts for network operations have been increased, most from 2 seconds to 5 seconds. You should see far fewer scary orange messages now, and when you do see one it's more likely to indicate a real problem.\r\n- `early_key_item` can now be `interstellar_warp_drive` or (for FC spawns) `signalscope`\r\n- Tweaked the in-game tracker's logic display to stop adding more region explanations at \"Timber Hearth\" instead of \"Timber Hearth Village\". This was an odd inconsistency with the other vanilla planets that probably predates alternate spawns.\r\n- Updated `randomize_dark_bramble_layout` description to be clearer about the potential challenges\r\n- 1.4.1 fixed `required_friends: 10`, but 1.4.1's example yaml did not include this fix, which confused at least one player. Now the example yaml does include this fix.\r\n",
+      "download_url": "https://github.com/IxrecsRandomizers/OuterWildsArchipelagoRandomizer/releases/download/v1.4.2/outer_wilds.apworld",
+      "has_manifest": true,
+      "hash_sha256": "65aeac88f77fa54c4250ed7d3abd0d92501ba5e1a0eed3b5b983c441e4c48a2a",
+      "html_url": "https://github.com/IxrecsRandomizers/OuterWildsArchipelagoRandomizer/releases/tag/v1.4.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 97462,
+      "source_url": "https://api.github.com/repos/IxrecsRandomizers/OuterWildsArchipelagoRandomizer",
+      "tag": "v1.4.2",
+      "title": "v1.4.2",
+      "version_simple": "1.4.2",
+      "world_version": "1.4.2"
     }
   }
 }

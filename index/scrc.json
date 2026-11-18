@@ -337,6 +337,21 @@
       "title": "v0.30.1 \u2014 Network security fixes",
       "version_simple": "0.30.0",
       "world_version": "0.30.0r2"
+    },
+    "v0.30.2": {
+      "created_at": "2026-11-16T15:44:51Z",
+      "description": "# v0.30.2 \u2014 School Trip tracking and item delivery\n\nGame client **0.77.2** \u00b7 APWorld **0.30.1**\n\n- Universal Tracker waits for Boring Room completion and Important Letters delivery before showing School Trip on seeds with the open Lobby doors. School Trip still needs Lobby Access and its generated Star count. Demolition Training can be skipped.\n- Received cassettes can reach the active save during play and persist after deposit. Plant Pipes, Hip Glasses and Chicken Bucket grants now recognize the newer route settings.\n- Earned checks survive disconnects and restarts. The client validates the room and save before applying pending deliveries. Temporary outages retry automatically, and login errors that need attention appear in the log.\n- The client does less repeated work during songs and handles reloading the plugin more reliably.\n\n## Updating\n\nClose the game and install **RhythmCastleAP-v0.77.2.zip**. Replace **scrc.apworld** on the computer running Universal Tracker or generating seeds, then restart Archipelago. Reconnect to your existing room and use its associated save. School Trip's live status uses Universal Tracker's default deferred-entrance setting.\n\nThe School Trip route was checked in game at four and five Stars with Demolition Training unfinished. The corrected availability was checked separately in Universal Tracker v0.2.32 using that seed. The Gecko variant still needs a separate in-game test.\n\n[Installation guide](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.2/docs/INSTALL.md) \u00b7 [Full changelog](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.2/CHANGELOG.md) \u00b7 [Known issues](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.2/docs/KNOWN_ISSUES.md)\n",
+      "download_url": "https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.30.2/scrc.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ff4b1d0751d10665d2bb17227d1e21488a65423f2274468dfcf7b61f6a984b3b",
+      "html_url": "https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.30.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 68937,
+      "source_url": "https://api.github.com/repos/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago",
+      "tag": "v0.30.2",
+      "title": "v0.30.2 \u2014 School Trip tracking and item delivery",
+      "version_simple": "0.30.1",
+      "world_version": "0.30.1"
     }
   }
 }

@@ -2,9 +2,15 @@
   "authors": [
     "Grizfreak"
   ],
+  "description": "Big Walk is a co-op walking game: two or more players wander a large\nopen island, solve puzzles together for gourds, carry those gourds to the\ntowers' monuments, and unlock the big keys that open up the map.",
   "game": "Big Walk",
   "github": "https://github.com/Grizfreak/BigWalk-archipelago",
-  "manifest_fields": [],
+  "license": null,
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "0.1.0": {
       "created_at": "2026-09-25T08:53:21Z",
@@ -258,6 +264,36 @@
       "title": "1.0.14",
       "version_simple": "1.0.14",
       "world_version": "1.0.14"
+    },
+    "1.0.15": {
+      "created_at": "2026-11-16T22:35:45Z",
+      "description": "## Big Walk Archipelago 1.0.15\r\n\r\nA logic fix, thanks caitlin. **Only the apworld changed**: the 1.0.14 mod plays 1.0.15 seeds, and your YAMLs work as they are. Regenerate to get the fix.\r\n\r\n### Fixed\r\n- **Three lamps past the purple hole were in logic without it**: the 1.0.7 fix only covered the seven purple puzzles. Lamp and Pedestal Lamp (South Peak 1) and Pedestal Lamp (near Cabin Fever Long) now need the Tunnels (the Purple Tunnel with `tunnel_sanity`).\r\n- **Lamp (near Cabin Fever Long)** asked for the chairlift, though it can be reached along the coast. It no longer does.",
+      "download_url": "https://github.com/Grizfreak/BigWalk-archipelago/releases/download/1.0.15/bigwalk.apworld",
+      "has_manifest": true,
+      "hash_sha256": "30e2be50425d1250789b2ca9ca32c6d9644c62b82cbef3939ceaefde3cea9282",
+      "html_url": "https://github.com/Grizfreak/BigWalk-archipelago/releases/tag/1.0.15",
+      "minimum_ap_version": "0.6.7",
+      "size": 182286,
+      "source_url": "https://api.github.com/repos/Grizfreak/BigWalk-archipelago",
+      "tag": "1.0.15",
+      "title": "1.0.15",
+      "version_simple": "1.0.15",
+      "world_version": "1.0.15"
+    },
+    "1.0.15r2": {
+      "created_at": "2026-11-17T13:20:00Z",
+      "description": "## Big Walk Archipelago 1.0.15\r\n\r\nA logic fix, thanks caitlin. **Only the apworld changed**: the 1.0.14 mod plays 1.0.15 seeds, and your YAMLs work as they are. Regenerate to get the fix.\r\n\r\n### Fixed\r\n- **Three lamps past the purple hole were in logic without it**: the 1.0.7 fix only covered the seven purple puzzles. Lamp and Pedestal Lamp (South Peak 1) and Pedestal Lamp (near Cabin Fever Long) now need the Tunnels (the Purple Tunnel with `tunnel_sanity`).\r\n- **Lamp (near Cabin Fever Long)** asked for the chairlift, though it can be reached along the coast. It no longer does.",
+      "download_url": "https://github.com/Grizfreak/BigWalk-archipelago/releases/download/1.0.15/bigwalk.apworld",
+      "has_manifest": true,
+      "hash_sha256": "392fbd9dd9a1f15a2b423e53e97670a303ab28591d3f05fdf298d68896569b5c",
+      "html_url": "https://github.com/Grizfreak/BigWalk-archipelago/releases/tag/1.0.15",
+      "minimum_ap_version": "0.6.7",
+      "size": 182713,
+      "source_url": "https://api.github.com/repos/Grizfreak/BigWalk-archipelago",
+      "tag": "1.0.15r2",
+      "title": "1.0.15",
+      "version_simple": "1.0.15",
+      "world_version": "1.0.15.post2"
     },
     "1.0.2": {
       "created_at": "2026-10-20T19:03:59Z",

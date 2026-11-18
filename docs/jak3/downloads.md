@@ -1,9 +1,12 @@
 # Jak 3
 
 ## Latest
-- <a href="https://github.com/Blake645/Archipelago/releases/download/3.1.1/jak3.apworld">Latest Version (3.1.1)</a>
+- <a href="https://github.com/Blake645/Archipelago/releases/download/3.1.2/jak3.apworld">Latest Version (3.1.2)</a>
 
 ## All Versions
+
+#### v3.1.2
+- <a href="https://github.com/Blake645/Archipelago/releases/download/3.1.2/jak3.apworld">https://github.com/Blake645/Archipelago/releases/download/3.1.2/jak3.apworld</a>
 
 #### v3.1.1
 - <a href="https://github.com/Blake645/Archipelago/releases/download/3.1.1/jak3.apworld">https://github.com/Blake645/Archipelago/releases/download/3.1.1/jak3.apworld</a>

@@ -10,10 +10,12 @@ their specific randomization settings and generated world state.
 
 
 ## Downloads
-- <a href="https://github.com/247Tossing/cyberpunk_archipelago/releases/download/v0.7.5/cyberpunk2077.apworld">Latest Version (0.7.5)</a>
+- <a href="https://github.com/247Tossing/cyberpunk_archipelago/releases/download/v0.7.6/cyberpunk2077.apworld">Latest Version (0.7.6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_Cyberpunk 2077">English</a>
 
 ## Setup Guide
+- <a href="setup_en">English</a>
 

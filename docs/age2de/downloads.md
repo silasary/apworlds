@@ -1,9 +1,12 @@
 # Age Of Empires II: Definitive Edition
 
 ## Latest
-- <a href="https://github.com/dmwever/Ageipelago/releases/download/0.2.1/age2de.apworld">Latest Version (0.0.1r8)</a>
+- <a href="https://github.com/dmwever/Ageipelago/releases/download/v0.3.0-beta/age2de.apworld">Latest Version (0.3.0b0)</a>
 
 ## All Versions
+
+#### v0.3.0b0
+- <a href="https://github.com/dmwever/Ageipelago/releases/download/v0.3.0-beta/age2de.apworld">https://github.com/dmwever/Ageipelago/releases/download/v0.3.0-beta/age2de.apworld</a>
 
 #### v0.0.1r8
 - <a href="https://github.com/dmwever/Ageipelago/releases/download/0.2.1/age2de.apworld">https://github.com/dmwever/Ageipelago/releases/download/0.2.1/age2de.apworld</a>

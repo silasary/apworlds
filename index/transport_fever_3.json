@@ -1,9 +1,11 @@
 {
+  "description": "Transport Fever 3: build road, rail, tram, water and air networks.\nUnlocks and checks are driven by a game mod.",
   "flags": [
     "unready"
   ],
   "game": "Transport Fever 3",
   "github": "https://github.com/SytHamMer/archipelago-transport-fever-3",
+  "license": "MIT",
   "manifest_fields": [
     "minimum_ap_version",
     "world_version"
@@ -24,6 +26,22 @@
       "title": "0.1.0 - first public test version",
       "version_simple": "0.1.0",
       "world_version": "0.1.0"
+    },
+    "v0.1.1": {
+      "created_at": "2026-11-16T21:52:21Z",
+      "description": "# Transport Fever 3 x Archipelago 0.1.1\r\n\r\nSecond public test version of the unofficial Archipelago world for Transport Fever 3 (PC, Steam). It fixes a gap found by\r\ntesters and makes the documentation clearer about the game's own subsidies. It is still not part of the official\r\nArchipelago repository.\r\n\r\n## Files\r\n\r\n- `transport_fever_3.apworld`: the world (Launcher, **Install APWorld**).\r\n- `archipelago_tf3_1.zip`: the mod; extract it into `...\\3493540\\local\\mods\\` with the game closed (or\r\n  `python scripts/install_mod.py --update` from a clone).\r\n\r\nUpdate both files: the world only changes its version number, the mod carries the fix. The installation guide is\r\n[guide-installation.md](guide-installation.md). Needs Archipelago 0.6.x (tested with 0.6.8).\r\n\r\n## What changed\r\n\r\n- **Items received while the game was closed are now announced** when you load the save\r\n  ([issue #1](https://github.com/SytHamMer/archipelago_tf3/issues/1)). Before, they were applied but never shown. Up to\r\n  5 items are announced one by one; beyond that, one \"Archipelago: items received\" notification lists the item names\r\n  with their count (the first four, then \"and N more\"). These notifications stay on screen 30 seconds. Nothing already\r\n  announced is announced again. Type `/received` in the client to list every item received.\r\n- **Documentation: do NOT accept the Archipelago contracts.** You never need to: a check is reached without it. The game\r\n  only proposes its own subsidies while fewer than 5 contracts are active, and ours count, so accepting them can stop the\r\n  subsidies from appearing and make the \"N missions completed\" checks unreachable. If no subsidy appears, check this\r\n  first, or set `mission_checks: 0` in your YAML to remove those checks (the default stays 3).\r\n\r\n## Known limits\r\n\r\n- The \"and N more\" of the summary cannot be expanded in the game; an in-game history window is an idea for 0.2.0.\r\n- The mod could keep at most four Archipelago contracts active so a place always stays free for the game's subsidies;\r\n  this is not done yet and needs to be confirmed in game first.\r\n- Everything listed as not verified in the 0.1.0 notes still applies (tram, water and air menus, the first line and\r\n  delivery checks of each mode, the rail tiers).\r\n\r\n## Verified for this version\r\n\r\nIn game, with a one-player multiworld: one item received while the game was closed is announced, a batch of items\r\nreceived while the game was closed gives one grouped summary, and reloading does not announce anything twice.\r\n",
+      "download_url": "https://github.com/SytHamMer/archipelago-transport-fever-3/releases/download/v0.1.1/transport_fever_3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "d6649542b0fa84dd33b6e527ddfaa0bcba3536012615bc8d7d9f3099af227c6c",
+      "html_url": "https://github.com/SytHamMer/archipelago-transport-fever-3/releases/tag/v0.1.1",
+      "minimum_ap_version": "0.6.0",
+      "prerelease": true,
+      "size": 30725,
+      "source_url": "https://api.github.com/repos/SytHamMer/archipelago-transport-fever-3",
+      "tag": "v0.1.1",
+      "title": "0.1.1 - items received while away, clearer contract advice",
+      "version_simple": "0.1.1",
+      "world_version": "0.1.1"
     }
   }
 }

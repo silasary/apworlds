@@ -1,6 +1,7 @@
-# None
+# Craftmine
 
-
+Craftmine is Minecraft&#x27;s April Fools snapshot from 2025, where you build mines out of ingredients and then
+clear them. Mine ingredients and skill-tree upgrades are shuffled into the multiworld.
 
 
 ## Downloads

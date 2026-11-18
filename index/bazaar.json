@@ -2,8 +2,10 @@
   "authors": [
     "Sulldog"
   ],
+  "description": "The Bazaar is an asynchronous PvP roguelike deckbuilder. Pick a hero, spend each day\nshopping and fighting, and try to reach 10 wins before your prestige runs out.",
   "game": "The Bazaar",
   "github": "https://github.com/sfleming4587/BazaarArchipelago",
+  "license": null,
   "manifest_fields": [
     "authors",
     "minimum_ap_version",
@@ -249,6 +251,21 @@
       "title": "The Bazaar for Archipelago v0.9.4",
       "version_simple": "0.9.4",
       "world_version": "0.9.4"
+    },
+    "v0.9.5": {
+      "created_at": "2026-11-16T23:45:09Z",
+      "description": "Prettier pictures, a smarter Item Guide, a Tracker you can read at a glance, and padlocks that keep up with the game.\n\n**Seeds made with v0.9.4 keep working** - just swap in the new apworld and reconnect.\n\n## New\n- **Sharper card pictures** in the right shape (Small and Large items are no longer cropped), shown in the game's own rarity frames in pop-ups and the Item Guide.\n- **The Shop Guide is now the Item Guide**, with a **Hero filter** (starts on the hero you're playing), merchant pools that match what each merchant really sells, \"You can buy\" listed above \"Locked\", and walking into a shop picks that merchant for you.\n- **Tracker**: each square has an icon (sunrise = reach the day, clashing swords = PvP win, snake = monsters, trophy = 10 wins), and every hero shows a check progress bar plus how many of its checks and cards you have - the same as the main menu's hero panel.\n- **AP markers** on monster and PvP fight cards that still have a check for you.\n- **The padlock goes on the copy you have to sell** - holding two copies of a card, only the one that blocks checks gets it. A card hit by a **Sell Trap** shows a burning skull instead.\n- **Selling a card that gives you something** (packages, Shipment, Pinata, Safe, Raffle Ticket...) no longer blocks checks with what it gives you, under Created Items = Special Cases.\n- **Redesigned pop-ups**: one at a time over your hero, with every picture, and they wait while a menu or loading screen covers them.\n\n## Fixed\n- Padlocks follow the cards smoothly at the game's frame rate, and the client uses less CPU.\n- Padlocks and markers fade under every game tooltip now - a monster's rewards, the PvP opponent, level-ups, sell prices.\n- The Esc menu and loading screens only hide the parts of the overlay that sit on the game: a Tracker or Item Guide on another monitor stays put.\n- The Use Bypass button no longer hides under the game's settings gear.\n- A previous pop-up no longer flashes for a frame before the new one.\n\nInstall: download `bazaar.apworld` below and double-click it (or put it in Archipelago's `custom_worlds` folder).\n\nTracker and Sell Trap icons from [game-icons.net](https://game-icons.net) (CC BY 3.0) - see the README's credits.\n",
+      "download_url": "https://github.com/sfleming4587/BazaarArchipelago/releases/download/v0.9.5/bazaar.apworld",
+      "has_manifest": true,
+      "hash_sha256": "482148fe330fabfce218dd2cecf140e1e6c608ac1f7e267053c604c97164721d",
+      "html_url": "https://github.com/sfleming4587/BazaarArchipelago/releases/tag/v0.9.5",
+      "minimum_ap_version": "0.6.4",
+      "size": 12118324,
+      "source_url": "https://api.github.com/repos/sfleming4587/BazaarArchipelago",
+      "tag": "v0.9.5",
+      "title": "The Bazaar for Archipelago v0.9.5",
+      "version_simple": "0.9.5",
+      "world_version": "0.9.5"
     }
   }
 }

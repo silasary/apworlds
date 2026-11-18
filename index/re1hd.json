@@ -2,18 +2,36 @@
   "authors": [
     "TessarionAM"
   ],
+  "description": "Resident Evil HD Remaster: survive the Spencer Mansion as Jill Valentine.\nEvery item pickup is shuffled into the multiworld.",
   "flags": [
     "after_dark",
     "unready"
   ],
   "game": "Resident Evil HD Remaster",
   "github": "https://github.com/TessarionAM/ResidentEvilHD-Archipelago",
+  "license": "GPL-3.0",
   "manifest_fields": [
     "authors",
     "minimum_ap_version",
     "world_version"
   ],
   "versions": {
+    "0.9.33": {
+      "created_at": "2026-11-15T19:41:52Z",
+      "description": "Resident Evil HD Remaster (Steam) for Archipelago. Jill, Normal difficulty.\r\n\r\n**Install:** put `re1hd.apworld` in Archipelago's `custom_worlds` folder (Archipelago 0.6.7 or newer), copy `Resident.Evil.HD.Remaster.yaml` into `Players`, then set `name` and your options. Full guide: `worlds/re1hd/docs/setup_en.md`.\r\n\r\n## New since 0.9.15\r\n- **Random start room**: start in a random save room, either in the Mansion only or anywhere.\r\n- **Boss Rush**: the Signal Rockets only come once seven bosses are dead. The Tracker lists the bosses still left, and the Key Map shows a skull on each one's room.\r\n- **Autoload after a death**: the autosave is loaded for you.\r\n- **Instant shortcuts** to typewriter rooms you've visited: the screen fades out and you're there.\r\n- On-screen messages colour item names the same way the Archipelago client does.\r\n- Logic fixes:\r\n  - the Broken Flamethrower is always placed below Barry's lift;\r\n  - the Greenhouse herbs need the Herbicide;\r\n  - the Cerberus Collar check is always junk.\r\n- Fixes for the Stone & Metal gate, the Courtyard lifts, the doorknob, Death Link and the door randomiser.\r\n\r\nThe full list is in `CHANGELOG.md`.\r\n\r\n## Credits\r\neleval (BhdTool), Benn Powell, FluffyQuack, Evil Resource and the Archipelago community. See `THIRD_PARTY.md`.\r\n",
+      "download_url": "https://github.com/TessarionAM/ResidentEvilHD-Archipelago/releases/download/0.9.33/re1hd.apworld",
+      "has_manifest": true,
+      "hash_sha256": "64affdb3241b3303e024e00e6b483d18709549bdd1e706e6a7852327e8ae655b",
+      "html_url": "https://github.com/TessarionAM/ResidentEvilHD-Archipelago/releases/tag/0.9.33",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 288139,
+      "source_url": "https://api.github.com/repos/TessarionAM/ResidentEvilHD-Archipelago",
+      "tag": "0.9.33",
+      "title": "0.9.33",
+      "version_simple": "0.9.33",
+      "world_version": "0.9.33"
+    },
     "v0.9.15": {
       "created_at": "2026-11-13T17:47:56Z",
       "description": "## Resident Evil HD Remaster for Archipelago \u2013 first public release\r\n\r\nAn Archipelago multiworld randomiser for **Resident Evil HD Remaster** (Steam, Windows).\r\nEvery item pickup in the game is shuffled across the multiworld, and items other players find\r\nfor you are delivered straight into the game while you play. No other tools or mods needed.\r\n\r\nSupports **Jill on Normal**, for the whole game.\r\n\r\n### Highlights\r\n- Every item pickup is a location; optionally also maps, files and first visits to all 112 rooms.\r\n- Goals: escape on the helicopter, or a shorter game ending in the Courtyard.\r\n- Door lock randomiser: which key opens which door (Mansion only, per area, or whole game).\r\n- Door randomiser (**experimental**): where doors, ladders and lifts lead, coupled or decoupled.\r\n- Traps, harmless \"fun traps\", special items and Death Link.\r\n- Quality of life: received items go to the item box, open the box anywhere, autosave,\r\n  door-animation skip, and a Key Map and Tracker in the client.\r\n- Every seed is checked to be beatable.\r\n\r\n### Install\r\n1. Install [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) 0.6.7 or newer.\r\n2. Put `re1hd.apworld` (below) in Archipelago's `custom_worlds` folder.\r\n3. Put `Resident Evil HD Remaster.yaml` (below) in Archipelago's `Players` folder, set your\r\n   `name` and options.\r\n\r\nFull setup guide: [setup_en.md](worlds/re1hd/docs/setup_en.md)\r\n\r\n### Known issues\r\n- The door randomiser is still being tested. A story event that doesn't expect a changed door\r\n  can trap Jill, so keep a spare save when using it.\r\n- Only Jill on Normal is supported.\r\n\r\n### Reporting problems\r\nOpen an issue with your client log (Archipelago's `logs` folder), your YAML and, for logic\r\nproblems, the seed.\r\n\r\n### Credits\r\nBenn Powell (whose RE HD randomiser inspired this project), eleval (BhdTool), Evil Resource,\r\nand the Archipelago team and community. Full details in [THIRD_PARTY.md](THIRD_PARTY.md).",

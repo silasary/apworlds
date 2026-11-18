@@ -1,5 +1,5 @@
-# Current setup: APWorld 0.30.0 / Client 0.77.0
+# Super Crazy Rhythm Castle setup
 
-Use the [installation guide](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.0/docs/INSTALL.md). Bunker progression uses schema21 and requires client0.77.0; legacy schemas19/20 remain supported. Restart Universal Tracker after updating the APWorld and retain its normal player YAML setup.
+Install the Rhythm Castle client on the computer running the game and APWorld 0.30.1 on the computer generating the seed or running Universal Tracker. The release guide covers BepInEx, APWorld installation, and connecting to your room. [Installation guide](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.2/docs/INSTALL.md)
 
-See [release notes and validation limits](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.0/docs/releases/v0.30.0.md).
+Bunker progression uses schema 21 and requires Client 0.77.0 or later. With Bunker progression disabled, individual cassettes use schema 19 and pairs or triples use schema 20. When updating Universal Tracker, restart it after installing the APWorld and keep your player YAML in its usual location.

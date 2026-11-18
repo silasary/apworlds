@@ -1,4 +1,4 @@
-# None
+# Mario &amp; Luigi: Paper Jam
 
 ## Latest
 - <a href="https://github.com/MarioGamer9871/M-L_Paper-Jam-Archipelago/releases/download/A3/mlpj.apworld">Latest Version (3)</a>

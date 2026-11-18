@@ -1,6 +1,6 @@
-# None
+# Puyo Puyo Tetris
 
-
+Puyo Puyo Tetris is a puzzle game combination of the Puyo Puyo and Tetris series by SEGA.
 
 
 ## Downloads

@@ -1,9 +1,12 @@
 # Chants of Sennaar
 
 ## Latest
-- <a href="https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/download/0.3.0/chants_of_sennaar.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/download/0.3.1/chants_of_sennaar.apworld">Latest Version (0.3.1)</a>
 
 ## All Versions
+
+#### v0.3.1
+- <a href="https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/download/0.3.1/chants_of_sennaar.apworld">https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/download/0.3.1/chants_of_sennaar.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/download/0.3.0/chants_of_sennaar.apworld">https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/download/0.3.0/chants_of_sennaar.apworld</a>

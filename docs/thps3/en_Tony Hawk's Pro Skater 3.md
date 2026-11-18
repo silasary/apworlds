@@ -29,8 +29,6 @@ they cannot accidentally send checks.
 ## What items can be received?
 
 Progression items unlock levels, trick categories, and individual objectives.
-Wallrides has its own item, unlocking both frontside and backside wallrides
-independently of Grind Tricks and Lip Tricks.
 Stat Point items provide points for the skater's stats. Filler items grant a
 score bonus or one additional second.
 
@@ -55,11 +53,10 @@ provide.
 
 ## Does this game support DeathLink?
 
-Enable `death_link` in your YAML to share bails with other DeathLink players.
-Incoming DeathLinks make your skater bail and are deferred until gameplay
-resumes if you are in a menu. The console command `/deathlink_amnesty X` sends
-one DeathLink per X local bails. It defaults to 1 and is saved in `partymod.ini`.
-Bails caused by incoming DeathLinks are never sent back.
+Enable `death_link` in your YAML to share bails with other DeathLink players.  
+Incoming DeathLinks make your skater bail and are deferred until gameplay resumes if you are in a menu.  
+The console command `/deathlink_amnesty X` sends one DeathLink per X local bails.  
+It defaults to 1 and is saved in `partymod.ini`.
 
 ## Is a separate Archipelago client required?
 
