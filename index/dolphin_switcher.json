@@ -1,0 +1,30 @@
+{
+  "authors": [
+    "Mysteryem"
+  ],
+  "flags": [],
+  "game": "Dolphin Switcher",
+  "github": "https://github.com/Mysteryem/Archipelago-ahit",
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "versions": {
+    "dolphin_switcher_v1.0.0": {
+      "created_at": "2026-11-11T21:55:56Z",
+      "description": "<img width=\"627\" height=\"83\" alt=\"image\" src=\"https://github.com/user-attachments/assets/7014e608-40d5-4e9e-86ca-8dc0998de210\" />\r\n<img width=\"308\" height=\"254\" alt=\"image\" src=\"https://github.com/user-attachments/assets/89af88df-0c4d-46be-8442-12628844674e\" />\r\n\r\n\r\nThis is a tool intended to assist in playing Archipelago randomizers with multiple Dolphin instances open simultaneously. You will still need to perform the usual setup of creating portable Dolphin installations with renamed `Dolphin.exe` executables, but this tool allows you to change the process name, that DME checks, for within the Archipelago Launcher itself.\r\n\r\nDolphin Memory Engine (what most AP clients for games requiring Dolphin use to connect to the game) finds the Dolphin process to connect to by name. This means that if you try to run two instances of Dolphin, then these AP clients will only connect to the first Dolphin instance.\r\n\r\nHowever, Dolphin Memory Engine allows you to override the process name it should search for, by setting the `DME_DOLPHIN_PROCESS_NAME` environment variable to the desired process name. This means that by creating portable installations (so you can have different settings and save files) of Dolphin, and renaming the `Dolphin.exe` executable within these portable installations, these AP clients can be told to connect to a renamed Dolphin executable instead of the default.\r\n\r\nBeforehand, you would need to run scripts to set the `DME_DOLPHIN_PROCESS_NAME` environment variable before starting the Launcher/Client. This tool allows you to change the `DME_DOLPHIN_PROCESS_NAME` environment variable from within the Launcher itself, as well as check what the override is currently set to.\r\n\r\nThis has only been tested in Windows, but I think it should work on Linux/Mac (because the Archipelago Launcher changes the default `multiprocessing` start method to `\"spawn\"` (the default may be `\"fork\"` on Linux/Mac, which might not work due to how Dolphin Memory Engine caches the value of `DME_DOLPHIN_PROCESS_NAME`)).\r\n\r\nNote: Some AP clients have some support for changing `DME_DOLPHIN_PROCESS_NAME` itself, e.g. the AP client for Luigis's Mansion. These clients may have unexpected behaviour with this tool.",
+      "download_url": "https://github.com/Mysteryem/Archipelago-ahit/releases/download/dolphin_switcher_v1.0.0/dolphin_switcher.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f89d8329a25133b89bdd25a1afd21f16d1de11e2423cfe6b9a0a235bfca00b3d",
+      "html_url": "https://github.com/Mysteryem/Archipelago-ahit/releases/tag/dolphin_switcher_v1.0.0",
+      "minimum_ap_version": "0.6.2",
+      "size": 2548,
+      "source_url": "https://api.github.com/repos/Mysteryem/Archipelago-ahit",
+      "tag": "dolphin_switcher_v1.0.0",
+      "title": "Archipelago DME Dolphin Switcher",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
+    }
+  }
+}
