@@ -2,108 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-17T18:25:05.078700+00:00</updated>
+  <updated>2026-11-18T00:18:07.742758+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/tathxo/DSAP/releases/tag/v0.3.0</id>
-    <title>Dark Souls Remastered v0.3.0</title>
-    <updated>2026-11-14T12:30:28+00:00</updated>
-    <author>
-      <name>Noka</name>
-    </author>
-    <author>
-      <name>ArsonAssassin</name>
-    </author>
-    <content># Version 0.3.0 - AP Icon, Regional and Categorical Shuffle options, New Weapon Upgrade System&#13;
-### Version update -&gt; 0.3.0. **Client is _NOT_ compatible with 0.2.x generated apworlds**. &#13;
-**Make sure your host generates with the v0.3.0 apworld**.&#13;
-&#13;
-### Features&#13;
-* Add **AP icon via optional patch** `APIconPatch.apdsr` - see Setup Guide for more details. Huge thanks to Nave for this!&#13;
-* Yaml options: **Optional Region selection** - explicit selection for DLC, Painted Work, and Great Hollow+Ash Lake. Unshuffled regions will not have their bosses removed for the `all_bosses` goal.&#13;
-* Yaml options: Toggleable **shuffling by location category** (subcategories of Corpse items/One-time Enemy drops, etc). For categories without prog items, includes an option for Local-only Randomization. `/lrspoiler` command added to check where local items are randomized from and to.&#13;
-  * By customizing these options, you can both decrease filler item bloat in the multiworld _and_ lower your check count, which can play better with other worlds/significantly reduce how long a run takes.&#13;
-* Yaml option: `lord_soul_shuffle`, to **allow lord souls to be unshuffled**.&#13;
-* **Location Groups** added for locations by category (see updated list in Game Info page).&#13;
-* If `ornstein_and_smough` is chosen as goal, all locations considered "post o+s" (the lordvessel and any locations requiring the lordvessel) will not be shuffled. If catacombs is put behind o+s in logic, it will also not be shuffled.&#13;
-* Yaml Options: **Weapon upgrade system Updated**! Now `Progressive Incoming Weapon Upgrade`s - in the same style as the Soul and Weight Multiplier options. Defaults on with 5 steps, going from +0 to +15. Only affects items received via AP once the relevant progressive items are received. Does not affect items from unrandomized or local_only-randomized locations.&#13;
-* "Collect" Support included from experimental v0.2.6.2 below.&#13;
-&#13;
-### Fixes&#13;
-* Fully rewrote/Changed method of flag polling/location checking - Drastically reducing number of memory reads in DSR process and improving performance by up to 160x.&#13;
-* Removed network delay on item popups for others &amp; self&#13;
-* Refactored boss tracking - when bosses are killed, it will sync that they were killed between all saves.&#13;
-* Fix Typo on "Kalameet" in location name "RW: Gough's Great Arrow - Kalemeet's Arena"&#13;
-* Adjust firekeeper soul location in BT so it doesn't trigger Lautrec killing Anastacia</content>
-    <link href="https://github.com/tathxo/DSAP/releases/tag/v0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Panda291/Archipelago/releases/tag/v0.3.1</id>
-    <title>Ratchet &amp; Clank v0.3.1</title>
-    <updated>2026-11-14T12:43:29+00:00</updated>
-    <author>
-      <name>Panad</name>
-    </author>
-    <author>
-      <name>Myth197</name>
-    </author>
-    <author>
-      <name>Amondo</name>
-    </author>
-    <content>General bugfixes to skillpoint logic and some typos</content>
-    <link href="https://github.com/Panda291/Archipelago/releases/tag/v0.3.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.5.1</id>
-    <title>Factorio: Platformer v0.5.1</title>
-    <updated>2026-11-14T13:08:30+00:00</updated>
-    <author>
-      <name>lepideble</name>
-    </author>
-    <content>## New features&#13;
-* Add fluid free samples (https://github.com/lepideble/factorio-apworld/pull/88)&#13;
-&#13;
-## Improvements&#13;
-* Reveal items and locations hinted with start hint option in tech tree (https://github.com/lepideble/factorio-apworld/pull/87)&#13;
-* Make combinators non progressive in split technology mode (https://github.com/lepideble/factorio-apworld/pull/90)&#13;
-&#13;
-## Fixes&#13;
-* Fix dummy pack name and icon (https://github.com/lepideble/factorio-apworld/pull/89)&#13;
-&#13;
-**Full Changelog**: https://github.com/lepideble/factorio-apworld/compare/platformer-0.5.0...platformer-0.5.1</content>
-    <link href="https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.5.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.5.2</id>
-    <title>Factorio: Platformer v0.5.2</title>
-    <updated>2026-11-14T14:37:34+00:00</updated>
-    <author>
-      <name>lepideble</name>
-    </author>
-    <content>## Fixes&#13;
-* Fix an error message showing when unlocking recipes for fluid that can't be barreled (https://github.com/lepideble/factorio-apworld/pull/91)&#13;
-&#13;
-**Full Changelog**: https://github.com/lepideble/factorio-apworld/compare/platformer-0.5.1...platformer-0.5.2</content>
-    <link href="https://github.com/lepideble/factorio-apworld/releases/tag/platformer-0.5.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Grizfreak/BigWalk-archipelago/releases/tag/1.0.13</id>
-    <title>Big Walk v1.0.13</title>
-    <updated>2026-11-14T18:43:02+00:00</updated>
-    <author>
-      <name>Grizfreak</name>
-    </author>
-    <content>## Big Walk Archipelago 1.0.13&#13;
-&#13;
-For tracker makers. **Only the apworld changed**: the 1.0.12 mod plays 1.0.13 seeds, and your YAMLs work as they are.&#13;
-&#13;
-### Changed&#13;
-- **The logic travels with every seed**: slot_data's `logic` (regions, exits and every rule, as data) used to be sent only with `tracker_board` or `map_tracker`. It is now always there, so an outside tracker such as a PopTracker pack can evaluate the apworld's own rules instead of porting them by hand. The format is in `apworld/README.md`.</content>
-    <link href="https://github.com/Grizfreak/BigWalk-archipelago/releases/tag/1.0.13"/>
-  </entry>
   <entry>
     <id>https://github.com/Fylcoast/AP_diceydungeons/releases/tag/v0.7.0-beta</id>
     <title>Dicey Dungeons v0.7.0b0</title>
@@ -1276,6 +1179,9 @@ Tracker and Sell Trap icons from [game-icons.net](https://game-icons.net) (CC BY
 [Setup Guide](https://github.com/tathxo/DSAP/blob/main/apworld/dsr/docs/setup_en.md)&#13;
 [Game Info](https://github.com/tathxo/DSAP/blob/main/apworld/dsr/docs/en_Dark%20Souls%20Remastered.md)&#13;
 &#13;
+### 2026-11-17 Hotfix - client updated -&gt; 0.3.1.1 (compatible with all 0.3.x worlds)&#13;
+* Fix "no spell/weapon/miracle requirements" options not working&#13;
+&#13;
 ### Version update -&gt; 0.3.1. **Client is compatible with 0.3.x generated apworlds**. &#13;
 **Make sure your host generates with the v0.3.0 or v0.3.1 apworld**.&#13;
 &#13;
@@ -1364,5 +1270,120 @@ Windows: `ctr-archipelago-v0.3.0-alpha5-windows-x86.zip`. Linux or Steam Deck: `
 | `ctr.apworld` | `5d10cbf7ebc78afde724a0e0b962370d589d7ff597cdd5634d9ece6a46192b7d` |
 </content>
     <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.13.1</id>
+    <title>Casualties: Unknown v0.13.1</title>
+    <updated>2026-11-17T18:57:49+00:00</updated>
+    <author>
+      <name>Nichologeam</name>
+    </author>
+    <content>### Casualties: Unknown Archipelago v0.13.1&#13;
+This update is compatible with worlds generated on versions 0.13.0-pre3 and above!&#13;
+&#13;
+For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
+Development on the Itch.io version of Casualties: Unknown has stopped. To play this mod on the Itch.io version, use CUAP v0.8.0.&#13;
+Development on the Steam Demo version of Casualties: Unknown has stopped. To play this mod on the Steam Demo version, use CUAP v0.12.3.&#13;
+&#13;
+# Additions&#13;
+- Grabber-shrooms and Ice Stalactites now drop Archipelago items&#13;
+- Chat messages from other Archipelago players now appear as in-world text around the Sawian&#13;
+	- This does not include other players using ! commands&#13;
+# Fixes&#13;
+- Fixed completing the M.E.R.C. ending not counting for the Complete the Ascent goal&#13;
+- Fixed DeathLinks not working after returning to the main menu&#13;
+- Fixed the mod acting as if Craftsanity was disabled when it was set to Exclude M.E.R.C. scarf&#13;
+- Fixed the crafting recipe for Climbing rope not logically requiring Nails [APWorld Change]&#13;
+- Broken and Dulled claws now logically require a living Left or Right Hand [APWorld Change]&#13;
+# Known Issues&#13;
+- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators&#13;
+- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game&#13;
+- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game&#13;
+&#13;
+**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.13.0...v0.13.1</content>
+    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.13.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Cynichill/APBingo/releases/tag/1.2.0</id>
+    <title>APBingo v1.2.0</title>
+    <updated>2026-11-17T20:42:02+00:00</updated>
+    <author>
+      <name>Cynichill</name>
+    </author>
+    <content># AP Bingo 1.2.0!&#13;
+&#13;
+## Added new YAML option! Minigames!&#13;
+&#13;
+If minigames are on, every 10 minutes, playing a minigame from the minigame tab and beating the goal score will reward a random bingo square! &#13;
+&#13;
+*This does NOT change logic, these are treated as 'useful' items and are always local.</content>
+    <link href="https://github.com/Cynichill/APBingo/releases/tag/1.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/AAces17/EquilinoxAPClient/releases/tag/0.2.1</id>
+    <title>Equilinox v0.2.0r2</title>
+    <updated>2026-11-17T22:33:42+00:00</updated>
+    <author>
+      <name>AAces</name>
+    </author>
+    <content>## Changelog&#13;
+&#13;
+### Client&#13;
+- Fixed bug where client wouldn't send size checks for Camel if the goal was set to Evolve Species.&#13;
+&#13;
+### .apworld&#13;
+- None&#13;
+&#13;
+## Updating the Mod&#13;
+&#13;
+View the [Setup Guide](https://github.com/AAces17/EquilinoxAPClient#setup-instructions) on the Github repository.&#13;
+&#13;
+This updated client should be compatible with worlds generated on any prior version. However, updating the client mid-run for multiworlds generated before 0.2.0 is not necessary unless you really want the new QOL features introduced by 0.2.0. </content>
+    <link href="https://github.com/AAces17/EquilinoxAPClient/releases/tag/0.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/captpurpleheart/tsfp-archipelago/releases/tag/v1.5.0</id>
+    <title>TimeSplitters Future Perfect v1.5.0</title>
+    <updated>2026-11-17T23:14:07+00:00</updated>
+    <author>
+      <name>CaptPurpleHeart</name>
+    </author>
+    <content>## New Features&#13;
+- **Archipelago Shop** - A Shop has been added in-game! The "View Movies" menu in Extras has been turned into a Shop where you can spend points on Archipelago Items! Extras has been renamed to "Extras &amp; Shop", and "View Movies" has been renamed to "Archipelago Shop". The Shop holds 15 items, and items are priced based on their item type (Progression/Useful/Filler/Trap). Depending on how many Shop Locations (Max 75) you've chosen in your YAML, "Progressive Shop Restock" items are added to into the Item Pool. When you purchase an item, it gets sent to the player, and replaces that line with "Purchased". If you have a Shop Restock item, any "Purchased" line gets replaced with the next in-line item to buy. You can earn points by the following methods:&#13;
+&gt; 1. Getting Kills in any mode, counted as you make them, 1 Kill = 1 Point.&#13;
+&gt; 2. Earning Trophies in Arcade/Challenges, worth 10/20/30/40, counting the lower grades&#13;
+&gt; 3. Completing Story Levels based on difficulty 15/35/50, counting the easier difficulties&#13;
+&gt; 4. New Bronze/Silver/Gold/Platinum Trophy Filler Items.&#13;
+- **Progressive Damage Resistances** - 5 Resistance types, Bullet, Explosive, Fire, Plasma and Melee. 6 of each, adding 10% Resistance of that type.&#13;
+- **Familiarity with TimeSplitters 2** - Items for TimeSplitters 2 are recognised by TimeSplitters: Future Perfect, and will have shortened names in the Awards Screen &amp; Shop. So instead of "Challenge - Behead the Undead - Sergio's Last Stand", it will show as "Sergio's Last Stand" in the Awards Screen &amp; Shop.&#13;
+&gt; *Must be TimeSplitters 2 (PurpleHeart's Version)*&#13;
+- **Inventory Tab** - Weapon Buffs tab has been renamed to "Inventory Tab", which shows a Read-Only view of all items in the Shop and how many Points you have. It shows all your Resistances, Damage Buffs, Score Multipliers and Progressive Starting Armour.&#13;
+- **Award Screen Changes** - New Headers such as "RESERVE AMMO BUFF FOUND!", "CLIP SIZE BUFF FOUND!", "SCORE MULTIPLIER FOUND!", "DAMAGE RESISTANCE FOUND!" to reduce the amount of text on the awards screen. Story Levels now include their Year in their name.</content>
+    <link href="https://github.com/captpurpleheart/tsfp-archipelago/releases/tag/v1.5.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/captpurpleheart/ts2-archipelago/releases/tag/v1.2.0</id>
+    <title>TimeSplitters 2 v1.2.0</title>
+    <updated>2026-11-17T23:28:18+00:00</updated>
+    <author>
+      <name>CaptPurpleHeart</name>
+    </author>
+    <content>## New Features&#13;
+- **Archipelago Shop** - A Shop has been added in-game! The "View Cutscenes" menu in Options has been turned into a Shop where you can spend points on Archipelago Items! Options has been renamed to "Options &amp; Shop", and "View Cutscenes" has been renamed to "Archipelago Shop". The Shop holds 13 items, and items are priced based on their item type (Progression/Useful/Filler/Trap). Depending on how many Shop Locations (Max 65) you've chosen in your YAML, "Progressive Shop Restock" items are added to into the Item Pool. When you purchase an item, it gets sent to the player, and replaces that line with "Purchased". If you have a Shop Restock item, any "Purchased" line gets replaced with the next in-line item to buy. You can earn points by the following methods:&#13;
+&gt; 1. Getting Kills in any mode, counted as you make them, 1 Kill = 1 Point.&#13;
+&gt; 2. Earning Trophies in Arcade/Challenges, worth 10/20/30/40, counting the lower grades&#13;
+&gt; 3. Completing Story Levels based on difficulty 15/35/50, counting the easier difficulties&#13;
+&gt; 4. New Bronze/Silver/Gold/Platinum Trophy Filler Items.&#13;
+- **Progressive Damage Resistances** - 5 Resistance types, Bullet, Explosive, Fire, Plasma and Melee. 6 of each, adding 10% Resistance of that type.&#13;
+- **Death Link Changes** - Death Link now kills the player instead of force ending the Mission.&#13;
+&gt; *(Story Levels/Challenges still get "Failed" as the player is killed. Arcade League matches continue as Normal, you just die. :headstone: )*&#13;
+- **Death Link Amnesty** - Death Link Amnesty has been added for Arcade League. You can choose how many times you must die in Arcade League in order to trigger a Death Link.&#13;
+- **Award Screen** - The Award Screen after a Story Level/Arcade League/Challenge Mission now displays Archipelago items for both yourself and other players!&#13;
+- **In-Game Text Announcements** - You will have in-game text announcements about items you send or receive, as well as large Trap activation announcement text.&#13;
+&gt; *(You can turn this is off in the Archipelago Client)*&#13;
+- **Familiarity with TimeSplitters: Future Perfect** - Items for TimeSplitters: Future Perfect are recognised by TimeSplitters 2, and will have shortened names in the Awards Screen &amp; Shop. So instead of "Challenge - Behead the Undead - Brain Drain", it will show as "Brain Drain" in the Awards Screen &amp; Shop.&#13;
+&gt; *Must be TimeSplitters: Future Perfect (PurpleHeart's Version)*&#13;
+- **Inventory Tab** - Weapon Buffs tab has been renamed to "Inventory Tab", which shows a Read-Only view of all items in the Shop and how many Points you have. It shows all your Resistances, Weapon Buffs, Score Multipliers and Progressive Starting Armour.</content>
+    <link href="https://github.com/captpurpleheart/ts2-archipelago/releases/tag/v1.2.0"/>
   </entry>
 </feed>

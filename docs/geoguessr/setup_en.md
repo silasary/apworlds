@@ -5,6 +5,7 @@
 - [Requirements](#requirements)
 - [Setup](#setup)
     - [For players of a session](#for-players-of-a-session)
+        - [Installing the client extension](#installing-the-client-extension)
     - [For hosts only](#for-hosts-only)
         - [Install Archipelago Launcher](#install-archipelago-launcher)
         - [Install Geoguessr's `.apworld`](#install-geoguessrs-apworld)
@@ -31,9 +32,7 @@ Here are the installation steps for players. For the person hosting (the one whi
 
 You only have **two things to do** if you are not the host:
 
-- First, install the **client extension** using one of the following links, depending of your browser
-    - Firefox: https://addons.mozilla.org/firefox/addon/geoguessr-archipelago-client/
-    - Chrome (and variants): https://chromewebstore.google.com/detail/geoguessr-archipelago-cli/hemokppgpfdnfbjkjgifogekkbphkhgg
+- First, install the **client extension**, see the [Install the client extension](#installing-the-client-extension) section
 
 - Then, you'll have to generate your game's **configuration file** (aka **YAML file**) which will setup your own settings for the game. See [here](#generating-a-yaml-file) for instructions. Send that file to your host for the multi-game generation.
 
@@ -44,6 +43,18 @@ This tab will be your main hub for playing an Archipelago game on Geoguessr.
 We advise you to also put the extension's icon *pinned* into your toolbar.
 
 You may read the **`How to play`** section at the bottom of the tab to see the basics and explanations on how to play, especially if you're not familiar with randomizers or Archipelago.
+
+### Installing the client extension
+
+**IMPORTANT:** The extension is hosted on both Firefox's add-on store and Chrome Web Store. But installing it using these stores will expose you to possible trouble if you start playing a game on an extension version and the extension gets updated before you finish it.
+
+To prevent that:
+- on **Chrome and variants**, you can download the unpacked extension (the file ending in `-chrome.zip` on the [releases page](https://github.com/remigranotier/geoguessr-archipelago/releases)). Unzip it, then, go on `chrome://extensions/`, enable Developer mode if not already done (top-right corner), click `Load unpacked`, and select the unzipped folder. It should install your extension on a stable state. For further updates, you will need to uninstall this version and re-do these steps to install the newest one.
+- on **Firefox**, you can install it normally using the link below. Then, go on `about:addons`, click on the extension, and set `Allow automatic updates` to Off. You will then need to click `Check for Updates` manually whenever you want to update the extension, later.
+
+Here are the links to the store pages:
+- **Chrome (and variants)**: https://chromewebstore.google.com/detail/geoguessr-archipelago-cli/hemokppgpfdnfbjkjgifogekkbphkhgg
+- **Firefox**: https://addons.mozilla.org/firefox/addon/geoguessr-archipelago-client/
 
 ## For hosts only
 

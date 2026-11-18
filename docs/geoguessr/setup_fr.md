@@ -5,6 +5,7 @@
 - [Besoins](#besoins)
 - [Mise en place](#mise-en-place)
     - [Pour les joueurs d'une session](#pour-les-joueurs-dune-session)
+        - [Installer l'extension de jeu](#installer-lextension-de-jeu)
     - [Pour l'hôte seulement](#pour-lhôte-seulement)
         - [Installer le Launcher Archipelago](#installer-le-launcher-archipelago)
         - [Installer l'`.apworld` Geoguessr](#installer-lapworld-geoguessr)
@@ -30,9 +31,7 @@ Voici les étapes d'installation pour les joueurs. Pour l'hôte (la personne qui
 ## Pour les joueurs d'une session
 
 Seules **deux étapes** sont nécessaires si vous n'hébergez pas la partie :
-- D'abord, installez l'**extension de jeu** en utilisant un des liens suivants, en fonction de votre navigateur internet :
-    - Firefox : https://addons.mozilla.org/firefox/addon/geoguessr-archipelago-client/
-    - Chrome (et dérivés) : https://chromewebstore.google.com/detail/geoguessr-archipelago-cli/hemokppgpfdnfbjkjgifogekkbphkhgg
+- D'abord, installez l'**extension de jeu**, cf la section [Installer l'extension de jeu](#installer-lextension-de-jeu)
 
 - Ensuite, vous devrez générer votre **fichier de configuration** (ou **fichier YAML**) qui permettra de choisir vos paramètres personnes pour la partie.
 Voir [ici](#generer-un-fichier-yaml) pour les instructions. Envoyez ce fichier à l'hôte de la partie, pour qu'iel crée la partie multi-jeux.
@@ -44,6 +43,18 @@ Cet onglet sera votre quartier général pour jouer à une session Archipelago s
 Nous vous conseillons d'**épingler** cette icône d'extension sur votre barres d'outils.
 
 Vous pouvez ensuite lire la section **`Comment jouer`** en bas de l'onglet, pour découvrir les bases du fonctionnement et les explications concernant cet onglet, **surtout** si vous n'êtes pas familiers avec les randomizers ou Archipelago.
+
+### Installer l'extension de jeu
+
+**IMPORTANT :** L'extension est hébergée sur les stores Firefox et Chrome. Mais l'installer à travers ces stores peut poser des soucis si vous commencez une partie et que l'extension est mise à jour automatiquement en plein milieu.
+
+Pour empêcher cela :
+- sur **Chrome et dérivés**, vous pouvez télécharger l'extension désempaquetée (le fichier qui termine en `-chrome.zip` sur la [page de release](https://github.com/remigranotier/geoguessr-archipelago/releases)). Dézippez le fichier, puis allez sur `chrome://extensions/`, activez le mode Développeur si ce n'est pas déja fait (en haut à droite), cliquez sur `Charger l'extension non empaquetée`, et sélectionnez le dossier dézippé. Cela devrait installer l'extension de manière stable. Pour les prochaines mises à jour, quand vous les voudrez, il vous faudra supprimer cette version de l'extension et réeffectuer toutes ces étapes avec la nouvelle version.
+- sur **Firefox**, vous pouvez installer l'extension normalement en utilisant le lien ci-dessous. Ensuite, allez sur `about:addons`, cliquez sur le nom de l'extension, et placez `Autoriser les mises à jour automatiques` sur Désactivées. Vous devrez ensuite cliquer sur `Rechercher des mises à jour` manuellement dès que vous voudrez mettre à jour l'extension, plus tard.
+
+Voici les liens du store pour les extensions :
+- **Chrome (et dérivés)**: https://chromewebstore.google.com/detail/geoguessr-archipelago-cli/hemokppgpfdnfbjkjgifogekkbphkhgg
+- **Firefox**: https://addons.mozilla.org/firefox/addon/geoguessr-archipelago-client/
 
 ## Pour l'hôte seulement
 
