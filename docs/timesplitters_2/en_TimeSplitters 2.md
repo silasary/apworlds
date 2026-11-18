@@ -85,6 +85,9 @@ Only the North American GameCube version (game ID `GTSE4F`) is supported.
   moment the game marks it complete. Optional objectives count the same as main ones (for
   example "Burn All Evidence in the Filing Cabinets", optional on Easy and Normal, main on Hard).
   69 in all.
+  "Skip Easy Mode Exclusive Story Objectives" (off by default, under Difficulty Settings): 2019
+  NeoTokyo's "Eliminate the Gang Leader before She Escapes" only exists on Easy; with this on, it
+  is checked when you complete 2019 NeoTokyo on Normal or Hard instead.
 * Temporal Uplink cartridges: picking up the Anaconda cartridge in 1990 Siberia, the RetroRacer
   cartridge in 2315 Robot Factory (Hard only; excluded with Exclude Hard Story) and the
   AstroLander cartridge in 2019 NeoTokyo. The games themselves are unlocked by the items
