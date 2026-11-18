@@ -1,6 +1,8 @@
 # Undertale Beta
 
-
+Undertale is an RPG where every choice you make matters. You could choose to hurt all the enemies, eventually
+causing genocide of the monster species. Or you can spare all the enemies, befriending them and freeing them
+from their underground prison.
 
 
 ## Downloads

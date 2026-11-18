@@ -1,6 +1,6 @@
-# None
+# LET IT DIE
 
-
+Archipelago implementation for LET IT DIE Offline Edition.
 
 
 ## Downloads
@@ -8,10 +8,10 @@
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
+- <a href="en_LET IT DIE">English</a>
 
 ## Setup Guide
 - <a href="setup_en">English</a>
 
 ## Other Documentation files
-- <a href="en_LET IT DIE">en_LET IT DIE</a>
 - <a href="universal_tracker">universal_tracker</a>

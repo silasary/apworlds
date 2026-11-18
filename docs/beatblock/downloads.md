@@ -1,4 +1,4 @@
-# None
+# Beatblockapelago
 
 ## Latest
 - <a href="https://github.com/frostzzone/Beatblockapelago/releases/download/v0.2.0/beatblock.apworld">Latest Version (0.2.0)</a>
