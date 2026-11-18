@@ -2,58 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-18T12:19:15.742422+00:00</updated>
+  <updated>2026-11-18T18:17:28.835792+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.17.0</id>
-    <title>Slime Rancher 2 v0.17.0</title>
-    <updated>2026-11-14T22:38:14+00:00</updated>
-    <author>
-      <name>Rhelys</name>
-    </author>
-    <content>## New Features&#13;
-- The mod now supports automatic reconnection&#13;
-  - Mod attempts to reconnect after 2, 5, 10, 20, and then every 30 seconds while disconnected&#13;
-  - Check locations still work while disconnected&#13;
-  - Retries stop on Save/Quit, connection to a server with a different seed, or refused login (password added/removed while disconnected)&#13;
-- New Setting: `treasure_pod_keys` - Enabling this setting will either add a global unlock key or one per-region which blocks opening Treasure Pods until obtained.&#13;
-- New Setting: `drone_access_key` - Enabling this setting will add a new item which blocks opening Research Drones until obtained.&#13;
-*These two settings will hopefully provide a good option to break up the potentially large Sphere 1 that SR2 can have*&#13;
-- New Setting: `prisma_shards_exact` - Forces game generation to include the number of Prisma Shards you want rather than culling based on the location count of the game. &#13;
-  - Most useful in solo games or games with very few filler locations available. &#13;
-  - Generation will throw an error telling you how many locations are missing if all shards cannot be placed&#13;
-&#13;
-## Quality of Life Updates&#13;
-- Added information on the number of checks that are influenced by each setting in the apworld&#13;
-- Updated how locked location popups were formatted to make them easier to read/understand&#13;
-- Updated the error message thrown when a game fails to generate due to too few locations&#13;
-&#13;
-## Performance Improvements&#13;
-- Updated how the Vacpack Spew Trap works to reduce game impact when lots of items are ejected&#13;
-- Updated how the mod scans for available Research Drones and Plort Doors to reduce the number of calls made&#13;
-- Fixed how the pause menu goal display checks for whether or not it should display&#13;
-*These should help improve performance in areas like the Grey Labyrinth which pull in a large amount of things to check all at once* &#13;
-&#13;
-## Logic Fixes&#13;
-- Updated Jetpack logic for Dash Boots II and Pulse Wave craft locations&#13;
-- Explicitly added Jetpack requirements for all Powderfall Bluffs locations to account for the `bundled` region access mode&#13;
-  - *Logic is not yet in place for the aurora bridges in Powderfall Bluffs. This means that more locations are technically available sooner than the logic expects. This will be updated in a future release*&#13;
-- Golden Sureshot III now correctly requires access to either Ember Valley or Starlight Strand&#13;
-&#13;
-## Bug Fixes&#13;
-- Fixed the location detection for `Shadow Plort Door: Waterworks- Inside glass button puzzle in front of giant coral`&#13;
-- Fixed an issue where the in-save Archipelago options menu wouldn't load correctly&#13;
-&#13;
-## Misc Updates&#13;
-- `Progressive Water Tank` has been renamed to `Water Tank` to match other single-level upgrades&#13;
-- The `item_notifications` setting now defaults to `progression` (was `progression_useful`)&#13;
-- The `randomize_slimepedia` setting has been renamed to `randomize_slimepedia_slimes` to better describe what it puts in logic&#13;
-- Minimum Archipelago Version has been updated from 0.6.4 to 0.6.6 in preparation for some experimenting with Rule Builder</content>
-    <link href="https://github.com/Rhelys/SlimeRancher2-AP/releases/tag/v0.17.0"/>
-  </entry>
   <entry>
     <id>https://github.com/UFO-50-Archipelago/Archipelago/releases/tag/0.4.0</id>
     <title>UFO 50 v0.4.0</title>
@@ -1381,5 +1334,40 @@ Any feedback or ideas are welcome in the "UNBEATABLE (PC)" thread in `#custom-ga
 &#13;
 Get Both Files</content>
     <link href="https://github.com/adeko69/Clone_Drone_AP/releases/tag/v2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Sim10XXX/C2AP/releases/tag/v0.5.0-pre2</id>
+    <title>Crash2 v0.5.0rc2</title>
+    <updated>2026-11-18T17:25:22+00:00</updated>
+    <author>
+      <name>Sim10XXX</name>
+    </author>
+    <author>
+      <name>alexdass</name>
+    </author>
+    <content>## New Stuff:&#13;
+- Added the "Dig" ability to ability lock&#13;
+- Fixed being able to break boxes with the slide when slide is disabled&#13;
+- Changed some wording in the yaml and disabled life count checks by default&#13;
+- Updated the Archipelago version of the Apworld to make use of rule builder&#13;
+  - I tested it on AP 0.6.8, older versions may not work&#13;
+### Finished Ability Lock Logic:&#13;
+- Every check in the game now has logic for ability lock&#13;
+- Two logic levels:&#13;
+  - Normal: what I reasonably expect is doable for a player that is capable of beating the game casually&#13;
+  - Lunatic: defines the absolute minimum abilities required for each check&#13;
+    - Not recommended to play on this setting (you may be required to do some insane tech)&#13;
+    - Playing on Normal will show Lunatic level checks as yellow in Universal Tracker, so that you know what is possible to do when you're BKed&#13;
+      - Other logic settings do not have glitched logic support in UT. For example if you have jetpack lock logic set to basic, all the checks in Rock It and Pack Attack will be out of logic instead of showing what is possible in yellow&#13;
+    - Using gameover abuse to collect crystals is not considered as in logic&#13;
+    - There is one edge case that I have not covered yet in Lunatic logic (there's like a "one in a million" chance that it could create an impossible seed when using Lunatic logic and some other specific settings)&#13;
+- Collecting a check outside of logic can be considered a bug, unless it's with gameover abuse or there's a different logic option that puts that check out of logic&#13;
+  - Likewise, it can be a bug if a check in normal or glitched logic isn't obtainable, although it could just be that you don't know how to get it&#13;
+&#13;
+## Bugs &amp; To-Do&#13;
+- Life count checks sometimes don't collect (for some unknown reason)&#13;
+- Crash is able to slide and spin on ice when slide / ground spin are locked&#13;
+- The [Issues](https://github.com/Sim10XXX/C2AP/issues) page is updated with everything that's on my radar</content>
+    <link href="https://github.com/Sim10XXX/C2AP/releases/tag/v0.5.0-pre2"/>
   </entry>
 </feed>

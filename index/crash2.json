@@ -230,6 +230,22 @@
       "title": "v0.5.0 Pre Release 1-1",
       "version_simple": "0.5.0",
       "world_version": "0.5.0rc1.post1"
+    },
+    "v0.5.0-pre2": {
+      "created_at": "2026-11-18T17:25:22Z",
+      "description": "## New Stuff:\r\n- Added the \"Dig\" ability to ability lock\r\n- Fixed being able to break boxes with the slide when slide is disabled\r\n- Changed some wording in the yaml and disabled life count checks by default\r\n- Updated the Archipelago version of the Apworld to make use of rule builder\r\n  - I tested it on AP 0.6.8, older versions may not work\r\n### Finished Ability Lock Logic:\r\n- Every check in the game now has logic for ability lock\r\n- Two logic levels:\r\n  - Normal: what I reasonably expect is doable for a player that is capable of beating the game casually\r\n  - Lunatic: defines the absolute minimum abilities required for each check\r\n    - Not recommended to play on this setting (you may be required to do some insane tech)\r\n    - Playing on Normal will show Lunatic level checks as yellow in Universal Tracker, so that you know what is possible to do when you're BKed\r\n      - Other logic settings do not have glitched logic support in UT. For example if you have jetpack lock logic set to basic, all the checks in Rock It and Pack Attack will be out of logic instead of showing what is possible in yellow\r\n    - Using gameover abuse to collect crystals is not considered as in logic\r\n    - There is one edge case that I have not covered yet in Lunatic logic (there's like a \"one in a million\" chance that it could create an impossible seed when using Lunatic logic and some other specific settings)\r\n- Collecting a check outside of logic can be considered a bug, unless it's with gameover abuse or there's a different logic option that puts that check out of logic\r\n  - Likewise, it can be a bug if a check in normal or glitched logic isn't obtainable, although it could just be that you don't know how to get it\r\n\r\n## Bugs & To-Do\r\n- Life count checks sometimes don't collect (for some unknown reason)\r\n- Crash is able to slide and spin on ice when slide / ground spin are locked\r\n- The [Issues](https://github.com/Sim10XXX/C2AP/issues) page is updated with everything that's on my radar",
+      "download_url": "https://github.com/Sim10XXX/C2AP/releases/download/v0.5.0-pre2/crash2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e379493f262fbfd5264a769166eb521c30cfb5cb81e67e8e5f884f3413a11572",
+      "html_url": "https://github.com/Sim10XXX/C2AP/releases/tag/v0.5.0-pre2",
+      "minimum_ap_version": "0.6.8",
+      "prerelease": true,
+      "size": 55001,
+      "source_url": "https://api.github.com/repos/Sim10XXX/C2AP",
+      "tag": "v0.5.0-pre2",
+      "title": "v0.5.0 Pre Release 2",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0rc2"
     }
   }
 }
