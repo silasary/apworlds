@@ -7,7 +7,8 @@
   ],
   "license": "MIT",
   "manifest_fields": [
-    "minimum_ap_version"
+    "minimum_ap_version",
+    "world_version"
   ],
   "tracker": "https://github.com/boiscljo/pmr-tracker/releases",
   "versions": {
@@ -83,6 +84,21 @@
       "title": "v0.6.8-beta - Migrate logic to RuleBuilder system",
       "version_simple": "0.6.8",
       "world_version": "0.6.8b0"
+    },
+    "0.6.9": {
+      "created_at": "2026-11-18T21:59:21Z",
+      "description": "## Bugfixes/Corrections\r\n\r\n* Logic\r\n  * Toad Town\r\n    * Fix `Open Blue House: True` not actually doing anything logically, and still expecting finding the `OddKey` to open the house from the outside.\r\n  * Toad Town Tunnels\r\n    * Fix logic erroneously requiring `SuperBoots` for building the chapter 7 block bridge if `Chapter 7 bridge visible` was turned on. This fix will now put chapter 7 in logic much earlier if the bridge is always visible.\r\n  * Shooting Star Summit\r\n    * Fix reaching the top of the summit being in logic while jumpless with Parakarry. Logic now expects the `Boots`.\r\n  * Mt. Rugged\r\n    * Fix the train station bushes logically requiring `Boots` to reach.\r\n  * Bowser's Castle\r\n    * Fix the basement jail / lava channels area being logically reachable without `Watt`.\r\n    * Fix `BC Lava Channel 3 On Island 1` being considered reachable without the boots while the lava is still active.\r\n    * Fix `BC Lava Channel 3 On Island 2` only being considered reachable with the boots, even though Parakarry suffices.\r\n  * Misc\r\n    * Minor fixes and adjustments to logic all over the place. These include removing redundant progress checks (which may speed up seed generation), and proper fixes that will only matter once glitch options or entrance shuffle are available.\r\n* Automated AP Tests\r\n  * Fix several test fails this apworld caused during the `general` set of automated AP tests.\r\n\r\n## Other\r\n\r\n* Map Names\r\n  * Fix typo: Rename `Koopa Bros.' Fortress` map `Right Starway` to `Right Stairway`.\r\n* YAML options\r\n  * `Cutscene Mode` now defaults to `Minimal`.\r\n  * `Chet Rippo Available` now defaults to `True`.\r\n",
+      "download_url": "https://github.com/icebound777/PMR_APWorld/releases/download/0.6.9/papermario.apworld",
+      "has_manifest": true,
+      "hash_sha256": "a76dcab54cc4f6c9505a6a68efdbdca42e12586e5808a22374088b69597bb741",
+      "html_url": "https://github.com/icebound777/PMR_APWorld/releases/tag/0.6.9",
+      "minimum_ap_version": "0.6.7",
+      "size": 1523048,
+      "source_url": "https://api.github.com/repos/icebound777/PMR_APWorld",
+      "tag": "0.6.9",
+      "title": "v0.6.9 - Fixes to logic, automated tests",
+      "version_simple": "0.6.9",
+      "world_version": "0.6.9"
     },
     "v0.1.5": {
       "created_at": "2024-04-03T23:02:45Z",

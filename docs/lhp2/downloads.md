@@ -20,6 +20,9 @@
 #### v1.2.0
 - <a href="https://github.com/jradcode23/LHP2-APWorld/releases/download/v1.2.0/lhp2.apworld">https://github.com/jradcode23/LHP2-APWorld/releases/download/v1.2.0/lhp2.apworld</a>
 
+#### v1.2.0a2
+- <a href="https://github.com/jradcode23/LHP2-APWorld/releases/download/v1.2.0_alpha_2/lhp2.apworld">https://github.com/jradcode23/LHP2-APWorld/releases/download/v1.2.0_alpha_2/lhp2.apworld</a>
+
 #### v1.1.1
 - <a href="https://github.com/jradcode23/LHP2-APWorld/releases/download/v1.1.1/lhp2.apworld">https://github.com/jradcode23/LHP2-APWorld/releases/download/v1.1.1/lhp2.apworld</a>
 

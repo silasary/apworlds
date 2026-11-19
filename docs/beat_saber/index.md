@@ -4,7 +4,7 @@ bloks
 
 
 ## Downloads
-- <a href="https://github.com/CurrentlyPending/BeatSaberAP/releases/download/v0.1.1/beat_saber.apworld">Latest Version (0.1.1)</a>
+- <a href="https://github.com/CurrentlyPending/BeatSaberAP/releases/download/v0.1.2/beat_saber.apworld">Latest Version (0.1.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

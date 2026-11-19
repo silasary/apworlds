@@ -2100,5 +2100,56 @@ the key100 final-action omission, source-derived finite classes over50–500,
 and source-only mode1. Historical clear/Hub doors are imported prerequisites.
 Real local client initialization includes RNG mailbox initialization and actual
 acknowledged receipt rows; it is not a full watcher, external-server, reconnect
-or native BizHawk portability proof. Current coverage is 145 witnesses/five
-conditional-policy fallback targets and PR1052 remains partial.
+or native BizHawk portability proof. At that historical checkpoint, coverage
+was 145 witnesses/five conditional-policy fallback targets. The current catalog
+has 146 witnesses and four declared conditional-policy fallback targets; these
+counts do not establish complete physical traversal coverage.
+
+## Standard and advanced traversal
+
+The **Advanced Logic** toggle appears under the existing **Make the game harder**
+option group. It is **off by default**. Set the game-level YAML option
+`advanced_logic: true` to opt in, or leave it at `false`; the option group is not
+a nested YAML key. Enabling it additionally allows the
+reviewed Crash witnesses for Rainbow Route room 126's fuse, Mustard Mountain
+room 533's switch, and room 310's map chest. These routes still require their
+actual physical source, independent entry, carry, one-use consumption, and
+reviewed timing. Owning Crash alone is not a route or a source. No helper combat
+or unreviewed Crash routes are assumed.
+
+With Advanced Logic off, logic excludes those three witnesses, not Crash from
+the game's random ability pool. Source selection, resampling, installed access rules, and Crash
+progression classification all use this toggle. For an applicable
+reviewed target, an assignment whose eligible witnesses require excluded Crash
+must fail validation or be resampled; it cannot regain a legacy fallback merely
+because advanced logic is disabled. The four declared partial-policy fallback
+targets still retain older rules for source policies outside their qualified
+applicability, including relevant mixed or non-guaranteed assignments. Historical
+physical-evidence graphs remain available for inspection;
+the target-level `advanced_graphs` list controls their inclusion in world logic.
+
+
+### Crash-route classification audit
+
+The complete compiled traversal catalog contains 57 targets and 146 witnesses
+(292 graph variants with Area Keys both off and on). Its only Crash-capable
+witnesses are the three advanced witnesses above. This is a source/catalog audit,
+not proof that every possible in-game Crash trick has been discovered or played.
+The regression enumerates the whole catalog, including non-extra target kinds,
+so an additional Crash-capable witness cannot silently enter standard logic.
+
+Three other cannon-fuse candidates explicitly exclude Crash: `fuse_323`
+(Mustard Mountain 4-13 left to 4-14 left), `fuse_827` (Olive Ocean 6-07 to 6-05),
+and `fuse_502` (Radish Ruins 8-16 to 8-17). Their entries in
+[`rooms.json`](../data/regions/rooms.json) record possible ignition but unreviewed
+light-to-board timing. They remain excluded even in advanced logic until a
+complete source/carry/consumption/boarding witness is supported. They are not
+additional currently enabled routes that need moving to advanced.
+
+
+The provisional, unreleased `traversal_logic` choice has been replaced by this
+boolean option. If using a YAML prepared from an earlier revision of PR #1092,
+replace `traversal_logic: standard` with `advanced_logic: false`, or
+`traversal_logic: advanced` with `advanced_logic: true`. There is no second legacy
+option or alias; remove the old key. Released versions never exposed that
+provisional option. Slot data now reports `advanced_logic` as 0 (off) or 1 (on).

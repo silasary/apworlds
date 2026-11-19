@@ -202,3 +202,28 @@ unlock ownership. Generation validates every enabled check after placement,
 including with minimal accessibility, and refuses unsafe placements before
 creating an output archive. Such a refusal is not a playable seed or a guarantee
 that every possible option/seed combination will generate successfully.
+
+## Phone a Friend
+
+Every new seed includes one **Phone a Friend** progression item; there is no
+Phone option. Receiving it unlocks new local single-player **R** calls. **L**
+return/escape and tutorial calls are not locked. Ownership persists with the
+authenticated native save. Cell Phone Batteries remain ordinary consumables.
+Before you receive Phone, its battery display is empty but charges are retained.
+You start with three charges and can receive more than three; the display has
+only three segments, so extra charges have no additional visual indicator.
+Calls spend charges normally. Reloading or game-over still refills to three
+rather than preserving a surplus, and the Battery Drain Trap still empties it.
+Reconnecting does not replay already received batteries.
+
+The Moonlight Mansion Room 18 lower-right route requires Phone ownership.
+With native enemy abilities, ability gating off, 6 starting/10 maximum health,
+and 100% enemy health, the reviewed route additionally requires independently
+reachable Rainbow Route East Hub access, native Sir Kibble Cutter and the
+Moonlight Mansion Area Key when enabled. Either Room Sanity setting is supported.
+
+Other valid settings still generate normally. Their Room 18 rule adds only
+Phone ownership to the existing constraints, not a verified helper-route claim.
+Helper cooperation and broader route coverage remain incomplete across option
+combinations; this is not proof that every physical route or seed is safe.
+See the [current admission scope](../dev-docs/phone-progression-admission.md).
