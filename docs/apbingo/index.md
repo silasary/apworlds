@@ -4,7 +4,7 @@ Randomized Bingo!
 
 
 ## Downloads
-- <a href="https://github.com/Cynichill/APBingo/releases/download/1.2.1/APBingo.apworld">Latest Version (1.2.1)</a>
+- <a href="https://github.com/Cynichill/APBingo/releases/download/1.2.3/APBingo.apworld">Latest Version (1.2.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

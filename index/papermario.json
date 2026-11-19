@@ -12,6 +12,21 @@
   ],
   "tracker": "https://github.com/boiscljo/pmr-tracker/releases",
   "versions": {
+    "0.6.10": {
+      "created_at": "2026-11-19T17:13:42Z",
+      "description": "## Bugfixes/Corrections\r\n\r\n* `Open Forever Forest` option\r\n  * Fix broken seed generation when this option was turned on.\r\n  * Fix this option being off by default.\r\n* `Damage Trap` items counting as being part of the `Consumables` item group\r\n  * This caused issues when plando'ing consumables into shop locations, as shops cannot hold item traps. So `Damage Trap`s now have no associated item group at all.",
+      "download_url": "https://github.com/icebound777/PMR_APWorld/releases/download/0.6.10/papermario.apworld",
+      "has_manifest": true,
+      "hash_sha256": "2a50b4f6b42af3e795e03f23578a820fe8f370e990d26bd8ff6f209ee70f4cf5",
+      "html_url": "https://github.com/icebound777/PMR_APWorld/releases/tag/0.6.10",
+      "minimum_ap_version": "0.6.7",
+      "size": 1523186,
+      "source_url": "https://api.github.com/repos/icebound777/PMR_APWorld",
+      "tag": "0.6.10",
+      "title": "v0.6.10 - Fixing generation issues",
+      "version_simple": "0.6.10",
+      "world_version": "0.6.10"
+    },
     "0.6.5": {
       "created_at": "2026-05-27T20:20:23Z",
       "description": "## Bugfixes/Corrections\r\n\r\n* Fix logic bug that could assume possible access to chapter 8 even though the required spirits were not obtained yet during `Required Spirits: Specific` and `Required Spirits: Specific_And_Limit_Chapter_Logic`. This could lead to impossible seeds.\r\n\r\n## Other\r\n\r\n* Implemented Archipelago procedure patching. From now on hosts generating a multiworld seed will no longer need to provide their own Paper Mario ROM.\r\n* Added `archipelago.json` file for AP version 0.7.0 compatability.",

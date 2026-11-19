@@ -22,14 +22,19 @@ a config file.
 There are a lot of options, so the page has presets that set many of them at once. Pick one, then change anything you
 like:
 
-- **Beginner:** one cycle per dungeon, the dungeon shortcuts opened, no traps, Free Cure Magicite and enemy health on
-  screen.
+- **Beginner:** one cycle per dungeon (the later cycles aren't in the seed), the dungeon shortcuts opened, Skip
+  Miasma Streams, no traps, Free Cure Magicite and enemy health on screen.
 - **Full Randomizer:** stage keys, shuffled loading zones and Miasma Streams, progressive artifacts and equipment,
-  cycle, year and shop checks, randomized shops and bonus pools, and the extra spell rings.
+  per-dungeon Cycle Locks, the enemy types as checks next to the chests, cycle, year and shop checks, randomized
+  shops and bonus pools, and the extra spell rings.
 - **Chaos:** Full Randomizer, plus shuffled hotspots, a random artifact order, reshuffled tribe stats and lots of
   traps.
-- **Monster Hunter:** defeating each enemy type is a check, and defeating them all wins.
-- **Speedrun:** reach and beat the final boss, with the speedrun timer on screen, the shortcuts opened and no traps.
+- **Monster Hunter:** defeating each enemy type is a check (the chests aren't), enemies still to check glow, and
+  defeating them all wins.
+- **Speedrun:** reach and beat the final boss on one cycle per dungeon, with the speedrun timer on screen, the
+  shortcuts opened, Skip Miasma Streams and no traps.
+- **Completionist:** every goal at once (Victory Goal: Multiple), with the chests, the enemy types, the shops and
+  every cycle and year as checks.
 - **Stamp Collector:** collect all 23 Mog Stamps to win.
 - **Mog Grooming Only:** no dungeons. Find the grooming tools, then dye and trim Mog.
 
@@ -53,6 +58,20 @@ The Victory Goal option picks one of these:
   River, Leuda and Mag Mell, so the logic expects all of them to be reachable before the goal. The client shows
   your stamp count each time you get one.
 - **Mog Grooming:** dye or trim a Moogle's fur in any Moogle Nest (see Mog Grooming below).
+
+- **Multiple:** several of the goals above, picked in Multiple Goals. It starts with all five, so remove the
+  ones you don't want. The seed is won once every goal left is done, in any order. The client remembers each
+  goal as it's finished (it says "Goal done" with a count), so beating the final boss before the other goals
+  still counts after the credits.
+
+## Cycle Select and Cycle Locks
+
+With **Cycle Select** (on by default), entering a dungeon that has reached Cycle 2 or 3 asks "Which cycle?", so an
+earlier cycle's chests can be gone back for. Changing element at a world-map stop works as before: the question
+only comes after "Enter". 
+
+With **Cycle Locks**, a dungeon's Cycle 2 and 3 come from items instead of years: Global adds 2 Progressive Cycle
+items that unlock the next cycle everywhere, Per Dungeon adds 2 for each dungeon (e.g. Progressive Tida Cycle).
 
 ## What items and locations get shuffled?
 
@@ -170,6 +189,37 @@ having cleared the stage first: walk to a stage such as Selepation Cave, press A
 and pick "Change element". So the element a Miasma Stream asks for this year
 can always be picked up on your side of it, whichever keys you have.
 
+## Monster Hunt Tint
+
+With Monster Hunt Checks and Monster Hunt Tint (on by default), enemies whose check isn't done yet glow in a
+color that shows what kind of item the check holds: gold for progression, blue for useful and white for
+anything else, unless you pick other colors with Progression Tint, Useful Tint, Filler Tint and Trap Tint.
+Once an enemy's check is done it looks normal and not colored. The client does the coloring, so it needs to be connected.
+
+## All-in-One GBA Radar
+
+The game shows its radar on a Game Boy Advance. In single player, connect a GBA to
+controller port 2: in Dolphin, set Port 2 to **GBA (Integrated)** and give Dolphin a GBA BIOS. Normally the
+game hands out one kind of radar (map, monsters, enemy details or treasure, and in single player it depends on
+how you brushed the Moogle). With **All-in-One GBA Radar**, the radar shows the area map, its exits, enemies and
+treasure chests together. In multiplayer every player's GBA shows it.
+
+With **GBA Bonus Pool Pages** or **GBA Enemy Drops Pages** (single player), press **A** on the GBA radar to open
+pages. **A** turns the page and **B** goes back to the radar:
+
+- **Bonus pool:** one page per bonus tier, with the 4 items the end-of-stage bonus offers from that tier on the
+  dungeon's current cycle, and the points the tier needs. In single player your points count 1.35 times, so you
+  need a little less than shown.
+- **Enemy drops:** the artifacts the area's living enemies carry, each with the kind of enemy carrying it. The 
+  list is generated when the area is loaded.
+
+## Skip Miasma Streams
+
+With Skip Miasma Streams, entering a Miasma Stream takes the caravan straight to the stop on the
+other side, whatever element the chalice holds, after a loading screen. No area needs an element in the logic,
+and a wrong element can never leave you stuck behind a stream. The Mystery Miasma Stream to the Abyss
+still needs Unknown. This does make a 20ish second black screen show up everytime you enter a stream.
+
 ## Hotspot Elements
 
 The elemental pools (hotspots) inside dungeons set the chalice's element,
@@ -200,7 +250,7 @@ so the element for the streams around you is always on offer at the stops
 on your side.
 
 The element icons in a dungeon's name bubble on the world map follow the
-year's elements. The pools themselves keep their usual colour, so check the
+year's elements. The pools themselves keep their usual color, so check the
 chalice after touching one. Lynari Desert's Unknown pool always gives
 Unknown. The pack's hotspot map icons show the usual elements.
 
@@ -241,10 +291,17 @@ Stage Keys, the boatmen won't take you without the Mount Kilanda Key.
 
 Each dungeon has three cycles: the first visit is Cycle 1, and every visit
 after you clear it is Cycle 2 and then Cycle 3. With **Progression Cycles**
-set to 1 or 2, only those cycles can hold progression and useful items.
-Chests in later cycles are still checks but only hold filler, so you never
-need to play them. You still revisit dungeons for Myrrh each year, but the
-later-cycle chests can be skipped.
+set to 1 or 2, only those cycles can hold progression and useful items, so
+you never need to play the later ones. You still revisit dungeons for Myrrh
+each year. **Later Cycles** decides what happens to the later cycles' checks:
+
+- **Filler** (default) - they stay in the seed but only hold filler, so
+  collecting them is optional.
+- **Removed** - they aren't in the seed at all. There are no chests, enemies
+  or "Cycle N Reached" checks from those cycles, their chests are empty, and
+  the Monster Hunt goal leaves out enemy types found only there. With Cycle
+  Locks, only the unlocks for the cycles still in the seed are added (none
+  with Progression Cycles 1). The PopTracker pack marks those cycles done.
 
 ## Progressive Artifact Order
 
@@ -291,16 +348,19 @@ count as that enemy, so an Orc defeated in the Orc King fight counts as an Orc.
 
 - **Victory Goal: Monster Hunt** - defeat at least one of every enemy type.
 - **Monster Hunt Checks: Enemy Types** - defeating the first enemy of each
-  type is a check ("Monster Hunt - Goblin (Sword)"). The enemies replace the
-  chests: chests aren't checks, and they don't appear in the dungeons. With
-  about 100 checks instead of about 450, the item pool is smaller: every
-  progression item is kept, then progressive equipment, then as many other
-  useful items (artifacts and such) as fit.
+  type is a check ("Monster Hunt - Goblin (Sword)"), about 100 of them.
 - **Monster Hunt Checks: Every Enemy** - defeating each enemy in each dungeon
   is a check, about 960 of them ("River Belle Path - Goblin (Sword) 3", and a
   boss is "River Belle Path - Giant Crab"). An enemy that comes back in
-  later cycles is one check, in the first cycle it appears in. As with Enemy
-  Types, chests aren't checks and don't appear.
+  later cycles is one check, in the first cycle it appears in.
+- **Chest Checks** (on by default) - the chests are checks too, so a seed has
+  both the chests and the enemies. Your own items still appear in their
+  chests, and an enemy's item comes through the client. Turn it off to make
+  the enemies the only checks: the chests are then emptied and don't appear
+  in the dungeons. With Enemy Types alone there are about 100 checks instead
+  of about 450, so the item pool is smaller: every progression item is kept,
+  then progressive equipment, then as many other useful items (artifacts and
+  such) as fit.
 - The Lamia Queen in Moschet Manor never dies: at 1 HP she flees across the
   room. That counts as defeating her.
 - **Monster Hunt Bosses** (on by default) - the bosses are part of the hunt.
@@ -308,7 +368,8 @@ count as that enemy, so an Orc defeated in the Orc King fight counts as an Orc.
 
 Some enemies only appear in a dungeon's second or third cycle, and the logic
 knows which. With **Progression Cycles** below 3, an enemy type only found in
-later cycles only holds filler.
+later cycles only holds filler, or isn't in the seed with Later Cycles:
+Removed.
 
 The client sees an enemy die while it's connected, so keep it connected while
 playing. `/hunt` in the client lists how many types are defeated and the ones
@@ -319,7 +380,7 @@ has a green border when the logic says you can reach it, and a red one when
 you can't yet. Hover over one to see every dungeon and cycle it appears in.
 
 With either kind of Monster Hunt check, the pack's dungeon maps show a pin
-for every enemy where it spawns (instead of the chests), and one "Boss
+for every enemy where it spawns (next to the chests with Chest Checks), and one "Boss
 Fight" pin per dungeon for the enemies of its boss room. With Enemy Types,
 every pin of a type you've already defeated is cleared, so the pins left are
 the enemies still worth hunting. With Every Enemy, each pin is cleared when
@@ -400,23 +461,23 @@ Tipa has a nest from the start.
 
 - **Victory Goal: Mog Grooming** - win by grooming the Moogle enough.
   **Mog Grooming Goal** picks what counts: **dye** (that much of its fur dyed,
-  in any colours), **trim** (that much of it cut) or **both**.
+  in any colors), **trim** (that much of it cut) or **both**.
   **Mog Grooming Percent** sets how much, from 10 to 95 (default 50). A few
-  spots on the Moogle can't be reached or is very hard to get, so it never asks for more than 95.
+  spots on the Moogle can't be reached or are very hard to get, so it never asks for more than 95.
 - **Grooming Tools** - the five tools are items: **Red Dye**, **Blue Dye**,
   **Green Dye**, **Mog Soap** (the Wash tool) and **Mog Scissors** (the Trim
   tool). A tool does nothing until you've found it. It's **with_goal** by
   default (only with the Mog Grooming goal), and can be **off** or **always**.
 - **Mog Grooming Checks** - **radars**, **milestones** or **all**:
-  - **Radars:** in this game, the colour the Moogle's fur shows most sets the
+  - **Radars:** in this game, the color the Moogle's fur shows most sets the
     GBA radar. Each one is a check: **Mog Radar - Red (Monster Radar)**,
     **Mog Radar - Green (Score Radar)** and **Mog Radar - Blue (Treasure
-    Radar)**. A colour only wins if it clearly beats the other two, and big
+    Radar)**. A color only wins if it clearly beats the other two, and big
     rings around the body and lines out from the centre count much more
     than scattered dabs.
-  - **Milestones:** **Mog Grooming - Dyed 25% / 50% / 75%** (in any colours)
+  - **Milestones:** **Mog Grooming - Dyed 25% / 50% / 75%** (in any colors)
     and **Mog Grooming - Cut 25% / 50% / 75%**.
-  - With Grooming Tools on, a radar check needs its colour's dye, the dye
+  - With Grooming Tools on, a radar check needs its color's dye, the dye
     milestones need any dye, and the cut milestones need the scissors.
 - **Mog Grooming Only** - a seed of only the Moogle. This world has no
   chests or other checks, just the 9 grooming checks and the Mog Grooming
@@ -424,10 +485,10 @@ Tipa has a nest from the start.
   seed to play on its own, or to join a multiworld with.
 
 While you're in a Moogle Nest, the top of the screen shows how far you've
-got ("Dyed 54%/50%  Cut 0%/50%") and how much of each colour there is. If you
+got ("Dyed 54%/50%  Cut 0%/50%") and how much of each color there is. If you
 pick a tool you haven't found, it says which item you need. Cut fur can
 still be dyed. If you cut too much, `/regrow` in the client grows the fur
-back to full length and keeps its colours. It shows on your next stroke.
+back to full length and keeps its colors. It shows on your next stroke.
 
 Keep the client connected: it checks the Moogle's fur while you're in a nest.
 The radar checks also count from anywhere, since your save keeps the radar.
