@@ -13,3 +13,6 @@ If you don&#x27;t, it will be the end of the world.
 
 ## Setup Guide
 
+## Other Documentation files
+- <a href="en_SlayThePrincess">en_SlayThePrincess</a>
+- <a href="guide_en">guide_en</a>

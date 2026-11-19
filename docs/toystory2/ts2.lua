@@ -1,7 +1,7 @@
 -- ============================================================================
 -- Toy Story 2 (PS1) Archipelago - ALL-IN-ONE BizHawk script
 -- ----------------------------------------------------------------------------
--- CONNECTOR VERSION: 3.2.0   <-- must match the .apworld release.
+-- CONNECTOR VERSION: 3.2.2   <-- must match the .apworld release.
 --   If a player reports odd behaviour (e.g. checks sending early), have them
 --   confirm this line. It is also printed in the BizHawk Lua console on load and
 --   again when settings are received, so they can read it back without opening
@@ -28,7 +28,7 @@
 -- Single source of truth for the connector release version (see header). Bump this
 -- in lockstep with the .apworld release. Global so it stays in scope across the
 -- Part 1 / Part 2 do...end blocks without consuming a local slot.
-TS2_VERSION = "3.2.0"
+TS2_VERSION = "3.2.2"
 -- Free-text build tag, printed beside the version on load. NOT parsed anywhere:
 -- the client and the title screen only ever read TS2_VERSION, so a hotfix can
 -- be told apart in a player's console without tripping the version check.
@@ -6675,7 +6675,21 @@ TS2X = (function()
         if mm.read_u8(Q_EJECT) == 0 then return end
         if not in_level(level) or BOSS_LEVEL[level] then mm.write_u8(Q_EJECT, 0); return end
         if not live or (CS_PLAYING) then return end
-        if M.zoom_exit(level) then mm.write_u8(Q_EJECT, 0) end   -- several at once still eject once
+        -- Not while Buzz is on a pole, and not until he has landed (3.2.0
+        -- fix): the exit locks his movement until he's done, and on a pole
+        -- only the player can finish, so he was stuck there for good. Firing
+        -- the moment he jumped off was too soon -- he grabbed the pole again
+        -- on the way down. So wait for 6 frames in a row on the ground (the
+        -- jump state 0x0B2214 reads 0; it can flick to 0 for a frame on a
+        -- slope, hence the run) and off any pole. 0x0A1244 is the game's own
+        -- "attached to a pole" state (0xFFFFFFFF is a stale value very old
+        -- versions left behind). A rope slide ends by itself, so that's fine.
+        local pole = mm.read_u32_le(0x0A1244)
+        local on_pole = pole ~= 0 and pole ~= 0xFFFFFFFF
+        if on_pole or mm.read_u16_le(0x0B2214) ~= 0 then M.ej_ground = 0; return end   -- stays queued
+        M.ej_ground = (M.ej_ground or 0) + 1
+        if M.ej_ground < 6 then return end
+        if M.zoom_exit(level) then mm.write_u8(Q_EJECT, 0); M.ej_ground = 0 end   -- several at once still eject once
     end
 
     -- ======================================================================
