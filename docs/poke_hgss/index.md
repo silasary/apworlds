@@ -15,7 +15,4 @@ two worlds with the same game name).
 ## Game Information
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="en_Pokemon HeartGold">en_Pokemon HeartGold</a>

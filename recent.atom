@@ -2,158 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-19T00:20:16.438932+00:00</updated>
+  <updated>2026-11-19T06:19:06.703296+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.13.0</id>
-    <title>Casualties: Unknown v0.13.0</title>
-    <updated>2026-11-15T06:06:14+00:00</updated>
-    <author>
-      <name>Nichologeam</name>
-    </author>
-    <content>### Casualties: Unknown Archipelago v0.13.0&#13;
-This update is compatible with worlds generated on versions 0.13.0-pre3 and above!&#13;
-&#13;
-For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
-Development on the Itch.io version of Casualties: Unknown has stopped. To play this mod on the Itch.io version, use CUAP v0.8.0.&#13;
-Development on the Steam Demo version of Casualties: Unknown has stopped. To play this mod on the Steam Demo version, use CUAP v0.12.3.&#13;
-&#13;
-# Additions&#13;
-- Support Casualties: Unknown 1.0.2 [APWorld Change]&#13;
-- Craftsanity now gives you the option to exclude the new Merc Scarf [APWorld Change]&#13;
-- New goals for getting each ending [APWorld Change]&#13;
-- Sawian Unlocks YAML option [APWorld Change]&#13;
-- Goal Requires All Sawians YAML option [APWorld Change]&#13;
-	- New `apchecksawians` command to check your progress&#13;
-- Unlock Brainchip YAML option [APWorld Change]&#13;
-- Minigame Randomization now includes the Prosthesis Repair and Hand-Crank minigames [APWorld Change]&#13;
-- Certain hardware setups cause BepInEx to load before the game does. Instructions to fix this now print to the log&#13;
-- Limb Unlocks have had a complete rework [APWorld Change]&#13;
-	- Now all limbs start as wood prosthesis and must be upgraded through items&#13;
-- Sawblades, Pistons, Guards, Lava lamps, both types of Ceiling turrets, Cryo-drones, and Pus sacks now drop Archipelago Items&#13;
-# Changes&#13;
-- Proguseful (Progression + Useful) items now appear gold inside the console, similar to how other games handle it&#13;
-- The window title now shows the mod version&#13;
-- Reworded option descriptions to use correct terminology regarding locations and checks [APWorld Change]&#13;
-- The Defeat Elder Thornback goal removes all locations after Overgrown Depths [APWorld Change]&#13;
-- The default depth for a Reach Depth goal is now 2700 [APWorld Change]&#13;
-- Critical barotrauma has been added to the Deadly Moodlesanity exclusions preset [APWorld Change]&#13;
-- Barotrauma, Critical barotrauma, and Bent prosthesis have been added to the Difficult Moodlesanity exclusions preset [APWorld Change]&#13;
-- Changed some of the option groups around [APWorld Change]&#13;
-- The mod now disables Steam Achievements on startup&#13;
-- You can now remove the Cargo without the Minigames item when Minigame Randomization is set to As One&#13;
-- Replaced all instances of "Experiment" with "the Sawian" in option descriptions [APWorld Change]&#13;
-- Colored instances of the word "Archipelago" now visually cycle colors from left -&gt; right instead of right -&gt; left&#13;
-- Updated KaitoKid.ArchipelagoUtilities.Net to 3.1.16&#13;
-- Internal bleeding and Hemothorax no longer logically require a living limb, as you can get both from impact damage and traps [APWorld Change]&#13;
-	- This is technically true for the bleeding moodles themselves as well, but that sounds unfun&#13;
-- Dislocations now logically require a living limb [APWorld Change]&#13;
-	- Specifically "Moodlesanity - Dislocated limb". Specific moodles like "Dislocated spine" do work with prosthesis&#13;
-- The automatic starting layer reselection when selecting an invalid layer now includes layers after Overgrown Depths [APWorld Change]&#13;
-# Fixes&#13;
-- Fixed Craftsanity - Riot helmet not requiring any INT with Skillsanity enabled [APWorld Change]&#13;
-- Fixed Craftsanity location logic requirements leaking between generations [APWorld Change]&#13;
-	- This could only be seen when the Python instance was not terminated between generations, such as with a fuzzer or a generate until successful script&#13;
-- Fixed the "Deadly and Difficult" Moodlesanity Exclusions preset making generation fail [APWorld Change]&#13;
-- Tweaked EnergyLink to hopefully fix it not working sometimes&#13;
-- Fixed not being able to receive Skills in a run after saving and reloading it&#13;
-- Fixed Sawian Unlocks not locking Sawians after exiting to the main menu after a run/tutorial&#13;
-- Fixed Sawian Unlocks always being enabled modside&#13;
-# Known Issues&#13;
-- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators&#13;
-- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game&#13;
-- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game&#13;
-&#13;
-**Full Changelog (from last pre-release)**: https://github.com/Nichologeam/CUAP/compare/v0.13.0-pre4...v0.13.0&#13;
-**Full Changelog (from last stable)**: https://github.com/Nichologeam/CUAP/compare/v0.12.3...v0.13.0</content>
-    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.13.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/tag/0.3.0</id>
-    <title>Chants of Sennaar v0.3.0</title>
-    <updated>2026-11-15T07:51:33+00:00</updated>
-    <author>
-      <name>synaesthesis</name>
-    </author>
-    <content>Floor 2 has now been added to ChantsOfSennaarAP!&#13;
-All Warrior runes and journal pages are now included as AP items and locations.&#13;
-&#13;
-Additionally, Terminals can now be unlocked through the multiworld!&#13;
-This increases the possibility of non-linear game progression beyond the vanilla sequence of events and unlocks.&#13;
-&#13;
-**IMPORTANT:**&#13;
-This update is **not** backwards-compatible with 0.2.x components.&#13;
-Please update both the mod and the apworld before playing this update.&#13;
-&#13;
-## Added&#13;
-- 33 new runes as AP items and location checks&#13;
-- 11 new pages as AP location checks&#13;
-- 3 new key items as AP items&#13;
-- 4 new terminals as AP items&#13;
-&#13;
-## Changed&#13;
-- Increased maximum page count for journal hunt goal to 21&#13;
-- Journal page names now contain a descriptor referencing their means of acquisition&#13;
-- Mod now prevents backwards access from Abbey Great Door to Abbey Underground 1 until Lens is received&#13;
-- Moved text client from the top-center of the screen to the top-right third of the screen&#13;
-&#13;
-## Fixed&#13;
-- Updated several logic connections between scenes and runes in Floor 1&#13;
-- Fixed item ID assignment for filler-class key items&#13;
-- Mod now suppresses repeated display of specific tutorial messages when no journal pages have been completed</content>
-    <link href="https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/tag/0.3.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Leiqart/gta3-archipelago/releases/tag/v0.4.0</id>
-    <title>Grand Theft Auto III v0.4.0</title>
-    <updated>2026-11-15T09:07:44+00:00</updated>
-    <author>
-      <name>Leiqart</name>
-    </author>
-    <content>Weapon licenses, a save file between sessions, and $10000 to fill the pool. Use the plugin and the APWorld of this release together, and generate a new room for it.
-
-## What's new
-
-- **Weapon licenses**: nine weapons the shops sell are items (Uzi, shotgun, AK-47, M-16, sniper rifle, rocket launcher, flamethrower, Molotov cocktail, grenade). A shop shows the weapon out of stock until you receive its license; the pistol and the body armour are sold as in the game.
-- **$10000**: the only extra item, which fills the rest of the pool.
-- **Excluded locations** (`exclude_locations`): each one takes the place of a license, from the grenade's back, and gets a $10000; that weapon is then sold as in the game. A room of GTA III alone can fill 9 at most.
-- **`start_inventory_from_pool`**: start with items taken out of the pool, like `Uzi License: 1`; each one leaves a $10000 in its place.
-- **Between sessions**: GTA3 Client keeps your money, health, armour and weapons in a save file of its own, one per room (`gta3_saves` in Archipelago's folder). A new game started with **Run Archipelago** gets them back, with the items received in the meantime, and never gives an item twice.
-- **Received items**: items that arrive together show in one message, for 3 seconds; a new message takes the place of the previous one.
-
-## Known limitations
-
-- The missions passed do not come back between sessions: a new game starts the story again. Play a run in one session for now.
-- Saving and loading a game is not supported yet.
-- Only `gta3.exe` 1.0 is supported: downgrade the Steam copy first (see the README's *Steam version* section).
-- With `need_money` on, the logic counts no money: you may have to earn it in the game.
-- Played far out of the story's order, a mission may still rely on something an earlier one sets up. Please report the ones that break.
-
-## Installation
-
-You need GTA III for PC **version 1.0**, Archipelago **0.6.7** or newer, and the ASI loader [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/latest/download/Ultimate-ASI-Loader.zip) (32-bit, `Ultimate-ASI-Loader.zip`, not the `_x64` one).
-
-1. Put the `dinput8.dll` of `Ultimate-ASI-Loader.zip` next to `gta3.exe`.
-2. Put `GTA3Archipelago.asi` in the `scripts` folder next to `gta3.exe` (create it if needed).
-3. Double-click `gta3.apworld` to install it in Archipelago, or copy it into Archipelago's `custom_worlds` folder.
-4. Write your YAML (`game: Grand Theft Auto III`, with the options of the README) and generate or join a room.
-5. Open **GTA3 Client** from the Archipelago Launcher and connect to the room.
-6. Start GTA III and choose **Run Archipelago** in the main menu. Keep GTA3 Client open while you play.
-
-Coming from 0.3.0: replace both files with this release's, and generate a new room.
-
-## Files
-
-- `GTA3Archipelago.asi`: the game plugin, for the `scripts` folder.
-- `gta3.apworld`: the GTA III world and GTA3 Client, for Archipelago.
-- `README.md`: how it plays, the options, and the full installation guide.
-- `LICENSE-MinHook.txt`: the license of MinHook, which the plugin contains.
-</content>
-    <link href="https://github.com/Leiqart/gta3-archipelago/releases/tag/v0.4.0"/>
-  </entry>
   <entry>
     <id>https://github.com/captpurpleheart/tsfp-archipelago/releases/tag/v1.3.1</id>
     <title>TimeSplitters Future Perfect v1.3.1</title>
@@ -1152,7 +1005,7 @@ Get Both Files</content>
   </entry>
   <entry>
     <id>https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.5.0</id>
-    <title>Medievil v0.3.0r3</title>
+    <title>Medievil v0.3.0r2</title>
     <updated>2026-11-18T13:48:13+00:00</updated>
     <author>
       <name>RiezaHughes</name>
@@ -1462,5 +1315,149 @@ Remaining physical-acquisition and encounter coverage is tracked in [v1.0.0 foll
     <content>* Added Deep Dungeon checks.
 * Assorted bug fixes related to restrictive starts.</content>
     <link href="https://github.com/silasary/APxiv/releases/tag/0.32.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Mysteryem/Archipelago-TCS/releases/tag/v2.0.0</id>
+    <title>Lego Star Wars: The Complete Saga v2.0.0</title>
+    <updated>2026-11-19T01:49:18+00:00</updated>
+    <author>
+      <name>Mysteryem</name>
+    </author>
+    <content>Almost a full rewrite of the APWorld's logic (just True Jedi logic that is unchanged).&#13;
+- Each Minikit location has its own logic now, instead of before, where all Minikits in a chapter would only enter logic when you could reach all 10 in a chapter.&#13;
+- Logic Difficulty options for different levels of skill/knowledge&#13;
+  - None: Tries to match developer intended strategies, for players new to the game&#13;
+  - Normal: No glitches expected, and Extras in logic, for players that have played most of the vanilla content&#13;
+  - Moderate: Simpler glitches expected, for players that play the Archipelago randomizer often and are willing to learn simpler tricks&#13;
+  - Hard: More difficult jumps and tricks, for players starting to learn speedrun tricks (installing *BrickBench* to assist in learning tricks is recommended)&#13;
+  - Expert/Super Expert logic difficulties are planned, but are not being worked on at this time&#13;
+- Exactly what tricks are expected by each Logic Difficulty are highly subject to change based on player feedback. Some tricks may be more difficult to understand while there are no videos explaining the tricks, so please take into consideration that videos of tricks are planned.&#13;
+&#13;
+Minikit location names are highly subject to change (maybe a google form can be put together for the discord channel to suggest better names).&#13;
+&#13;
+There is currently no PopTracker pack, and the client's Universal Tracker support does not include maps. The PopTracker pack is being worked on to support the v2.x.x APWorlds.&#13;
+&#13;
+There is currently no document/videos detailing all the logic tricks in each difficulty. Most tricks have comments in the logic data for the corresponding Chapter/Bonus level https://github.com/Mysteryem/Archipelago-TCS/tree/main/lego_star_wars_tcs/data/logic (note that the `None` logic difficulty is referred to as the `base` logic internally and `er_rule`s are not used currently, but may contain relevant trick comments). If you would like to contribute videos of tricks, please upload them to YouTube.&#13;
+&#13;
+# Known Issues&#13;
+The pause screen text for showing goal progress does not get reset properly when closing the client, so the text can stack up if you open and close the client repeatedly&#13;
+&#13;
+# Logic Rewrite&#13;
+- Logic is rewritten to use Rule Builder and logical regions&#13;
+- Minikits now have individual logic&#13;
+- Four Logic Difficulty options for different player skill/knowledge&#13;
+- Uncap OT High Jump option considered by logic&#13;
+&#13;
+# Client&#13;
+- /toggle_windowed command allows for playing in a window without DxWnd&#13;
+- Debug commands to peek at game memory&#13;
+- APWorld version now shown in the client description and window title&#13;
+- Customised Death Link death messages&#13;
+- Active Extras are written into save data and restored by the client&#13;
+- Replaced some of the fake items names with even faker sounding names&#13;
+&#13;
+# New Options&#13;
+- Logic Difficulty&#13;
+- Logic option for whether 2-1 expects progressing with pod racers&#13;
+- Non-vehicle Max Health&#13;
+- Vehicle Max Health&#13;
+- Random options for Goal Chapter&#13;
+&#13;
+# Universal Tracker support&#13;
+- `/explain` support for rules&#13;
+- Deferred events support&#13;
+- Glitched logic shows +1 logic difficulty by default&#13;
+- `/ut_toggle_all_glitches` shows the highest logic difficulty. If using the standalone Universal Tracker client, this command is not available, but you can `/manually_collect UT_GLITCHED_ALL` instead&#13;
+&#13;
+# Changes&#13;
+- Anakin's Flight and A New Hope are now played in Free Play mode&#13;
+- Attempting to play a level in Story mode that should be played in Free Play kicks the player back to the Cantina now, instead of just warning them&#13;
+- No Minikit items in the item pool if the minikit goal is disabled&#13;
+- Removed Luke Skywalker (Dagobah) being able to complete Dagobah (logic accounts for this now)&#13;
+- Removed Yoda/Yoda (Ghost) getting a speed increase at the start of 3-6 (logic accounts for this now)&#13;
+&#13;
+# Fixes&#13;
+- Fix Yoda/Yoda (Ghost) being able to perform glitchy wall jumps&#13;
+- Fix Yoda logically being able to wear hats&#13;
+- Fix the client thinking you're not playing when shadows are off&#13;
+- Fix slot name/seed name clobbering Challenge mode timer data&#13;
+&#13;
+# Internal&#13;
+- Slot data handling entirely rewritten and much easier to update now&#13;
+- Most use of string literals replaced with StrEnum/IntEnum&#13;
+- Added some generation tests&#13;
+- Add future-proofing check that the seed name is not too long&#13;
+- Add check that the slot name does not encode to too many bytes&#13;
+- Refactored __init__.py to be smaller, extract code elsewhere&#13;
+- Bumped minimum AP version to 0.6.8</content>
+    <link href="https://github.com/Mysteryem/Archipelago-TCS/releases/tag/v2.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3.1</id>
+    <title>Undertale Beta v2.0.0r2</title>
+    <updated>2026-11-19T03:45:56+00:00</updated>
+    <author>
+      <name>Mewlif</name>
+    </author>
+    <content>ADDED:&#13;
+- Procedural Spell Generation option: Randomly generates up to 20 additional spells and attempts to balance it using TP Cost. &#13;
+  - **BE WARNED. THIS FEATURE MAY BE UNSTABLE AND/OR CONFUSING**&#13;
+- Advanced Logic option: Includes some knowledge-based paths to the logic (For now: having patience in the Core, and knowing when the Hotland elevator options unlock)&#13;
+&#13;
+CHANGED:&#13;
+- Hub doors now start out closed and require interacting to unlock with the key (also has dialogue telling you what key you need)</content>
+    <link href="https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.3.1</id>
+    <title>Deltarune v2.3.1</title>
+    <updated>2026-11-19T04:35:45+00:00</updated>
+    <author>
+      <name>Mewlif</name>
+    </author>
+    <author>
+      <name>theemeraldsword85</name>
+    </author>
+    <author>
+      <name>Tenebrosful</name>
+    </author>
+    <author>
+      <name>Vintagix</name>
+    </author>
+    <author>
+      <name>Deadzi</name>
+    </author>
+    <author>
+      <name>Charaster</name>
+    </author>
+    <author>
+      <name>Potato</name>
+    </author>
+    <author>
+      <name>TerraFail457</name>
+    </author>
+    <content>[Setup Guide](https://github.com/theemeraldsword85/DELTARUNEAP/blob/v2.2.0/worlds/deltarune/docs/setup_en.md) - [Q&amp;A](https://github.com/theemeraldsword85/DELTARUNEAP/blob/v2.2.0/worlds/deltarune/docs/en_DELTARUNE.md) - [Credits](https://github.com/theemeraldsword85/DELTARUNEAP/blob/main/worlds/deltarune/docs/DELTARUNEAP%20CREDITS.md)&#13;
+&#13;
+[Game Mod Releases](https://github.com/Tenebrosful/DeltaruneAP-mod/releases)&#13;
+Or, alternatively,&#13;
+[GameBanana Page](https://gamebanana.com/mods/699556)&#13;
+&#13;
+Report bugs either on the [Discord Channel](https://discord.com/channels/731205301247803413/1481971897024516250) or the [GitHub Issues Tab](https://github.com/theemeraldsword85/DELTARUNEAP/issues)!&#13;
+&#13;
+### **INCOMPATIBLE WITH ALL PREVIOUS VERSIONS.**&#13;
+&#13;
+## Client&#13;
+&#13;
+- Connecting with Universal Tracker installed now properly shows the "Tracker" tag&#13;
+- Removed "/chosen_route" because you can just see it in-game now&#13;
+&#13;
+## All Chapters&#13;
+&#13;
+- Flavigne's name is now correctly spelled instead of "Flavinge"&#13;
+- **New Option:** Progressive Area Unlocks: Get the unlocks in order instead of individually.&#13;
+- **Changed Option:** No-hit Logic now has tiers, Easy, Hard, and Extreme. Also none but if you choose that you're a wimp&#13;
+- All occurences of Weird Route are now replaced with Side B (For datastorage, "-wr" is now just "b", so 2-wr is now 2b)&#13;
+- Removed Rocky</content>
+    <link href="https://github.com/theemeraldsword85/DELTARUNEAP/releases/tag/v2.3.1"/>
   </entry>
 </feed>

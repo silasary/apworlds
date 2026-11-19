@@ -1,1 +1,0 @@
-# LoR Randomizer Setup
