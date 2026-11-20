@@ -2,60 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-20T00:20:56.496126+00:00</updated>
+  <updated>2026-11-20T06:16:35.722889+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/tag/0.3.1</id>
-    <title>Chants of Sennaar v0.3.1</title>
-    <updated>2026-11-16T00:37:30+00:00</updated>
-    <author>
-      <name>synaesthesis</name>
-    </author>
-    <content>Day-one patch for Version 0.3.&#13;
-Fixes a major apworld issue wherein a large portion of the map is incorrectly marked as in-logic at the start of the game.&#13;
-&#13;
-Players on active games generated through the v0.3.0 apworld should request server-sending of the following items for correct Sphere 1 access: `Terminal 1`, `Terminal 3`.&#13;
-&#13;
-All other players and hosts should update to the v0.3.1 apworld as soon as possible.&#13;
-The v0.3.1 mod is unchanged from the previous release.&#13;
-&#13;
-### Fixed&#13;
-- The Abbey Great Door is now marked as passable only if the Terminal 3 puzzle can be solved.</content>
-    <link href="https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/tag/0.3.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.6.0-rc1</id>
-    <title>Animal Crossing v0.6.0rc1</title>
-    <updated>2026-11-16T01:06:33+00:00</updated>
-    <author>
-      <name>haloopdy</name>
-    </author>
-    <content>This is a RELEASE CANDIDATE for 0.6.0, which means don't play this version unless you're OK with potential crashes and graphical issues and want to report them to help me get the release ready!&#13;
-&#13;
-If you do want to help, **set your graphics to Vulkan in the Video settings menu**. Then, open an issue or send a message in the Archipelago discord if you run into issues. Include your OS and your graphics card, and ofc what happened.&#13;
-&#13;
-- **Update to SDL3:** you shouldn't notice any difference, but this is a newer backend library and may bring more compatibility with newer setups (old setups should not change; if they do let me know).&#13;
-  - If you are on Linux + Wayland, it will now use the native Wayland output instead of X11 through a translation layer&#13;
-  - With the update to SDL3, **button positions are now used instead of face label**. In practice, this means that you will get the Nintendo layout regardless of controller. It is easy to restore with the controller setup; just part of SDL3 (sorry).&#13;
-- **New Vulkan Renderer:** alternative to OpenGL if you find OpenGL buggy (or laggy? they should be roughly the same speed though)&#13;
-- **Easier Critters Upgrade:** bugs can now spawn on ANY flower (old AC they can't spawn on tulips) and will spawn on the outer 2 rows/columns of an acre (they couldn't in the original).&#13;
-- **Fossil tracker:** new fossil tracker like bugs, fish, and shells in the AP pause menu&#13;
-- **Crash fix outdoors:** crash from outdoor furniture fixed (random)&#13;
-- **Missing critter fix:** under rare circumstances, the last bug in a spawn table may never spawn. it should now&#13;
-- **Fix may windsocks:** they properly spawn and despawn now&#13;
-- **Fix birthday + starsign:** showed as 'iiiiiiiii' if you had instant text on&#13;
-- **Timesanity forces bugs cleanly into time slots:** before, you could catch some bugs "out of logic" for 1 hour, which might've been confusing&#13;
-- **Mini tracker shows shells + more consistent found/available output**&#13;
-- **More lenient generation:** if random is selected for pools where the final result could be beyond the allowed amount, the random value is rerolled to fit into the proper range. Also, goal: random doesn't choose goals that can't work with the current settings&#13;
-- **Pushing or pulling furniture no longer carries you across an acre:** sorry, it was very broken&#13;
-- **Precompiled shaders option**&#13;
-- **Show graphics error if OpenGL 3.3 not found**&#13;
-- **More information when a ROM doesn't match or is not found**</content>
-    <link href="https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.6.0-rc1"/>
-  </entry>
   <entry>
     <id>https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.10.2</id>
     <title>CrossCode v0.10.2</title>
@@ -513,6 +464,23 @@ This updated client should be compatible with worlds generated on any prior vers
     <link href="https://github.com/captpurpleheart/ts2-archipelago/releases/tag/v1.2.0"/>
   </entry>
   <entry>
+    <id>https://github.com/TwinklePillar/Unleashed-Archipelago/releases/tag/v0.1.0-alpha</id>
+    <title>Sonic Unleashed v0.1.0a0</title>
+    <updated>2026-11-17T23:55:18+00:00</updated>
+    <author>
+      <name>TwinklePillar</name>
+    </author>
+    <content># The public release of Sonic Unleashed AP&#13;
+- Level completions are locations by default&#13;
+- Option for medal and media locations (with options to disable shop and mission locations)&#13;
+- Option to disable day/night locations&#13;
+- Reverse, Slow, and Fast Traps&#13;
+- Find each hub (and optionally act) to progress&#13;
+- Find the Eggmanland Hub, Level 7 Sun, Level 6 Moon, and the 7 Chaos Emeralds (and the Dark Gaia act if enabled)  to defeat Dark Gaia and goal&#13;
+- Optionally randomize medal requirements for acts</content>
+    <link href="https://github.com/TwinklePillar/Unleashed-Archipelago/releases/tag/v0.1.0-alpha"/>
+  </entry>
+  <entry>
     <id>https://github.com/LimeDreaming/C3AP/releases/tag/v0.2.5-pre-alpha</id>
     <title>Crash Bandicoot 3: Warped v0.1.0r2</title>
     <updated>2026-11-18T00:44:17+00:00</updated>
@@ -644,7 +612,7 @@ Get Both Files</content>
   </entry>
   <entry>
     <id>https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.5.0</id>
-    <title>Medievil v0.3.0r3</title>
+    <title>Medievil v0.3.0r2</title>
     <updated>2026-11-18T13:48:13+00:00</updated>
     <author>
       <name>RiezaHughes</name>
@@ -1034,7 +1002,7 @@ There is currently no document/videos detailing all the logic tricks in each dif
   </entry>
   <entry>
     <id>https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3.1</id>
-    <title>Undertale Beta v2.0.0r4</title>
+    <title>Undertale Beta v2.0.0r2</title>
     <updated>2026-11-19T03:45:56+00:00</updated>
     <author>
       <name>Mewlif</name>
@@ -1235,7 +1203,7 @@ This project is developed with the help of an LLM. Every change is reviewed, the
   </entry>
   <entry>
     <id>https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.5.1</id>
-    <title>Medievil v0.3.0r2</title>
+    <title>Medievil v0.3.0r3</title>
     <updated>2026-11-19T11:49:23+00:00</updated>
     <author>
       <name>RiezaHughes</name>
@@ -1286,7 +1254,7 @@ Changelog:&#13;
   </entry>
   <entry>
     <id>https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.5.2</id>
-    <title>Medievil v0.3.0r2</title>
+    <title>Medievil v0.3.0r4</title>
     <updated>2026-11-19T21:04:38+00:00</updated>
     <author>
       <name>RiezaHughes</name>
@@ -1515,5 +1483,16 @@ Go to the server console (locally or via the Archipelago room page) and run:
 `/send_location &lt;player_name&gt; &lt;location&gt;` Example: `/send_location TaoshiRaC3 "Crash Site: Infobot: Aridia"`
 </content>
     <link href="https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.7.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Cynichill/APBingo/releases/tag/1.2.4</id>
+    <title>APBingo v1.2.3r2</title>
+    <updated>2026-11-19T23:48:42+00:00</updated>
+    <author>
+      <name>Cynichill</name>
+    </author>
+    <content>- Updated Docs&#13;
+- Removed leftover extra location code</content>
+    <link href="https://github.com/Cynichill/APBingo/releases/tag/1.2.4"/>
   </entry>
 </feed>

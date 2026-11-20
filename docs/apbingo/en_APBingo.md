@@ -18,6 +18,23 @@ The APWorld itself, and one of the available Web Clients.
 - Install the APWorld
 - Open one of the available Web Clients
 
+## What are special bingos?
+
+- Blackout is all squares
+- Corners is all four Corners
+- Pictureframe is all edge squares
+- Checkerboard is every second square, starting from the first
+- Reverse Checkerboard is every second square, starting from the second
+
+## What do minigames do?
+
+If the user has turned minigames on in the yaml options, when the timer at the top is finished, completing any of the minigames with the goal score/time will award a free hint scout! 
+Revealing one of the items that are behind bingo's.
+
+## What does death link in Bingo do?
+
+If the user has minigames on, dying while the timer is ready will send a death link. Receiving a death link will cause a death within the minigames.
+
 ### Installing the APWorld
 
 - Download and install the latest archipelago release from the archipelago releases page.

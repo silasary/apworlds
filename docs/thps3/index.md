@@ -5,7 +5,7 @@ levels, career goals, trick categories, gaps, and the selected pro skater.
 
 
 ## Downloads
-- <a href="https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.7/thps3.apworld">Latest Version (1.0.7)</a>
+- <a href="https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.7/thps3.apworld">Latest Version (1.0.7.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

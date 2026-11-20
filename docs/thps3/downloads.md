@@ -1,9 +1,12 @@
 # Tony Hawk&#x27;s Pro Skater 3
 
 ## Latest
-- <a href="https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.7/thps3.apworld">Latest Version (1.0.7)</a>
+- <a href="https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.7/thps3.apworld">Latest Version (1.0.7.post2)</a>
 
 ## All Versions
+
+#### v1.0.7.post2
+- <a href="https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.7/thps3.apworld">https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.7/thps3.apworld</a>
 
 #### v1.0.7
 - <a href="https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.7/thps3.apworld">https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.7/thps3.apworld</a>
