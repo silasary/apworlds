@@ -15,8 +15,9 @@ This bites hardest on a repeat play or a later scenario, where a technology the 
 hours ago looks identical to one they have never touched, and a technology they hold the item for
 looks identical to one they do not. The player ends up guessing, or alt-tabbing to the tracker, or
 researching things for no benefit because Must Research behaviour is silently waiting on something.
-Villager professions are worse again: there are twenty-four of them, they are checked by accident
-as often as on purpose, and nothing in the game names them at all.
+Villager professions are worse again: nothing in the game names them at all, and a villager whose
+profession has not arrived simply refuses the work — the player right-clicks a sheep, nothing
+happens, and no part of the interface says which professions they hold.
 
 ## Solution
 
@@ -30,8 +31,8 @@ The item is never named, and a trap wears one of those same three colours so it 
 a genuine item of that class.
 
 Villager professions appear as a row of twelve icons on the Villager's own description, each in
-colour once that job is checked and greyscale until then, so the player can see at a glance which
-professions are left.
+colour once the profession item has arrived and greyscale until then, so the player can see at a
+glance which jobs their villagers can take up.
 
 ## User Stories
 
@@ -71,13 +72,13 @@ professions are left.
     to carry no status line, so that the decoration matches the seed rather than the game's internal
     registration.
 18. As a player, I want the twelve villager professions shown as icons on the Villager, so that I
-    can see what is left without memorising a list of job names.
-19. As a player, I want a profession icon in colour once checked and greyscale until then, so that
-    the row reads at a glance.
-20. As a player, I want a profession to count as checked only when both the male and female
-    locations are checked, so that the row does not claim a job is finished when half of it is not.
+    know which jobs exist without memorising a list of job names.
+19. As a player, I want a profession icon in colour once its item has arrived and greyscale until
+    then, so that I can tell at a glance which work my villagers will actually take up.
+20. As a player, I want a profession icon to turn colour the moment the item lands, so that I do
+    not have to leave the scenario to find out whether a job opened up.
 21. As a player, I want the profession row to show only the jobs this seed uses, so that a job the
-    seed never generated is not shown as permanently outstanding.
+    seed never generated is not shown as permanently locked.
 22. As a player who advances an age, I want the status lines to still be there afterwards, so that
     the feature does not quietly stop working mid-game.
 23. As a player who saves and reloads, I want the status lines to still be there, so that I can
@@ -118,7 +119,11 @@ folder is set, a sync method is handed what it needs, and it writes a flat file 
 channel is a second method on `LocationHandler` (09), which owns everything the client sends the
 game about locations. It shares that class with the checked-locations writer but neither its file
 nor its cadence: a scout-once table does not belong in a writer that runs every tick, and that
-file's layout is already pinned by tests.
+file's layout is already pinned by tests. `classification.xsdat` holds a pair of ints per scouted
+location, the id and then its class, ordered by id. It carries no per-scenario state, so a
+mid-session flush leaves it where it is and only a disconnect clears it; nothing else would rewrite
+it, and a scenario switch would otherwise take the colour off every unchecked line for the rest of
+the session.
 
 **The trap disguise colour is derived, never rolled.** It is a pure function of the seed and the
 location id, yielding one of the three non-trap colours. Any implementation that reaches for a
@@ -167,8 +172,15 @@ currently the engine's own checkbox materials, standing in for an Age-styled Arc
 
 **Professions hang off the Villager.** Job variants are not trainable and have no description of
 their own, so the row of twelve goes on the Villager's description. Each job shows a vanilla
-material when checked and a mod-supplied greyscale material when not; the greyscale set ships in the
-Ageipelago UI mod. A missing material renders as nothing, which is what keeps the mod optional.
+material once its profession item is held and a mod-supplied greyscale material until then; the
+greyscale set ships in the Ageipelago UI mod. A missing material renders as nothing, which is what
+keeps the mod optional. The install generates the row as a function, beside the baked string ids and
+for the same reason: the game derives neither the names nor which jobs the seed has.
+
+**The row reads items, not locations.** A job's unit row carries exactly one item, its profession,
+so the row is the twelve items rather than the twenty-four locations and `hasAllItems` on the row
+already answers it. Nothing in the row consults the checked set, and the redraw hangs off item
+arrival, which `RefreshProfessions` is already called on.
 
 **Ages keep the first segment only.** Their unlock state is driven by different machinery and their
 effect state is something the resource bar already shouts.
@@ -223,7 +235,9 @@ full world suite is the maintainer's to run.
   and the feature degrades to text.
 - **Changing what the hint system does.** This feature exposes classification deliberately; it does
   not alter hints, hint costs, or hint display.
-- **Per-sex profession display.** A job is one icon covering both its locations.
+- **Per-sex profession display.** A job is one icon, because it is one item; both sexes share it.
+- **Reporting a profession's checked state.** The row carries the item only. Whether the player has
+  owned that job is not shown anywhere in game.
 
 ## Further Notes
 

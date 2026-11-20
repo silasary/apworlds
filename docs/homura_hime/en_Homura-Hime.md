@@ -109,6 +109,16 @@ of them is placed early, in your world or in another player's world. With `advan
 for no dash skill at all: that gap can be crossed by parrying the laser of the enemy shooting across it, and the dash
 skills become ordinary useful items.
 
+## What does "Skip Early Macguffin Checks" do?
+
+The first thing Chapter 1 asks of you is the Pretty Little Flower, which the story hands over at the very start of
+Level 1 Area 1. With `skip_early_macguffin_checks` on (the default) and Chapter 1 as the first world you play, the
+Flower is left to the story: it is not an item of the multiworld, its hand-over is not a location, and you simply
+get it the way the base game gives it. The logic counts on it from the start of the chapter. If another world comes
+first (a randomized order, or a freeform key setup that starts elsewhere) the option does nothing and the Flower is
+shuffled like the other key items. Turn it off to shuffle the Flower and make its hand-over a check even when
+Chapter 1 is first.
+
 ## What are the Soul Cores?
 
 Each boss of Levels 1-5 leaves a Soul Core, and Chapters 6-8 are fights against the same five bosses again. The five

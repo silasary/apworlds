@@ -1,9 +1,12 @@
 # Animal Crossing
 
 ## Latest
-- <a href="https://github.com/randomouscrap98/AP_ACGC_PC/releases/download/v0.6.0-rc1/animal_crossing.apworld">Latest Version (0.6.0rc1)</a>
+- <a href="https://github.com/randomouscrap98/AP_ACGC_PC/releases/download/v0.6.0/animal_crossing.apworld">Latest Version (0.6.0)</a>
 
 ## All Versions
+
+#### v0.6.0
+- <a href="https://github.com/randomouscrap98/AP_ACGC_PC/releases/download/v0.6.0/animal_crossing.apworld">https://github.com/randomouscrap98/AP_ACGC_PC/releases/download/v0.6.0/animal_crossing.apworld</a>
 
 #### v0.6.0rc1
 - <a href="https://github.com/randomouscrap98/AP_ACGC_PC/releases/download/v0.6.0-rc1/animal_crossing.apworld">https://github.com/randomouscrap98/AP_ACGC_PC/releases/download/v0.6.0-rc1/animal_crossing.apworld</a>

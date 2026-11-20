@@ -2,174 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-19T18:23:05.431673+00:00</updated>
+  <updated>2026-11-20T00:20:56.496126+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Arcadia64/sotn-recomp-archipelago/releases/tag/0.5.4</id>
-    <title>Symphony of the Night (Recomp) v0.5.4</title>
-    <updated>2026-11-15T18:00:50+00:00</updated>
-    <author>
-      <name>Arcadia64</name>
-    </author>
-    <author>
-      <name>fdelduque</name>
-    </author>
-    <content>- Fixed to work with SymphonyRecomp v1.2.0p&#13;
-  - Changes to the recomp's UI library broke things, should be working now.&#13;
-&#13;
-**Downloads**&#13;
-- [sotn-archipelago-mod.zip](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.4/sotn-archipelago-mod.zip): goes in recomp's `/mods/` folder&#13;
-- [sotn_recomp.apworld](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.4/sotn_recomp.apworld)&#13;
-- [Symphony-of-the-Night-Recomp.yaml](https://github.com/Arcadia64/sotn-recomp-archipelago/releases/download/0.5.4/Symphony-of-the-Night-Recomp.yaml): default options&#13;
-&#13;
-**Setup**: &#13;
-- See the [README](https://github.com/Arcadia64/sotn-recomp-archipelago#setup).&#13;
-</content>
-    <link href="https://github.com/Arcadia64/sotn-recomp-archipelago/releases/tag/0.5.4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.9</id>
-    <title>Donkey Kong 64 v2.0.9</title>
-    <updated>2026-11-15T19:34:51+00:00</updated>
-    <author>
-      <name>2dos</name>
-    </author>
-    <author>
-      <name>AlmostSeagull</name>
-    </author>
-    <author>
-      <name>Ballaam</name>
-    </author>
-    <author>
-      <name>Green Bean</name>
-    </author>
-    <author>
-      <name>Killklli</name>
-    </author>
-    <author>
-      <name>Lrauq</name>
-    </author>
-    <author>
-      <name>PoryGone</name>
-    </author>
-    <author>
-      <name>Umed</name>
-    </author>
-    <content>DK64 Randomizer APWorld file for Archipelago version 2.0.9
-
-This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
-    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.9"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Grizfreak/BigWalk-archipelago/releases/tag/1.0.14</id>
-    <title>Big Walk v1.0.14</title>
-    <updated>2026-11-15T21:48:48+00:00</updated>
-    <author>
-      <name>Grizfreak</name>
-    </author>
-    <content>## Big Walk Archipelago 1.0.14&#13;
-&#13;
-Two small things from Tyrope. 1.0.13 seeds and YAMLs work as they are; update the mod to see its version in game.&#13;
-&#13;
-### Added&#13;
-- **The mod's version in game**: it showed bottom-right on the title and loading screens only; it now also shows there while the pause or settings menu is open.&#13;
-&#13;
-### Changed&#13;
-- **The train light switches are named after their trains**: there are three separate trains, red, green and yellow, each with a headlight switch on its engine's dashboard, right of the horn and bell. "Light Switch (Train, Front / Middle / Back Car)" become "Light Switch (Red / Green / Yellow Train)". Their ids do not change.&#13;
-&#13;
-### Docs&#13;
-- **The format of `slot_data["logic"]`** is now in the apworld README, for tracker makers.</content>
-    <link href="https://github.com/Grizfreak/BigWalk-archipelago/releases/tag/1.0.14"/>
-  </entry>
-  <entry>
-    <id>https://github.com/StalledStorm/ArchipelagoMine/releases/tag/v1.23.0</id>
-    <title>Metroid Fusion v1.23.0</title>
-    <updated>2026-11-15T23:07:50+00:00</updated>
-    <author>
-      <name>StalledStorm</name>
-    </author>
-    <content>## New&#13;
-Following on from the previous mars patcher update, the following options are now available for use:&#13;
-* Music Rando: shuffle the different music tracks around in the game!&#13;
-* Instant Morph: pressing select will instantly morph/unmorph you! Helpful for morphing in midair.&#13;
-* Alternate Health HUD: this alternate HUD layout shows energy as a number and what the max is, rather than using the bars for tanks.&#13;
-&lt;img width="169" height="45" alt="image" src="https://github.com/user-attachments/assets/a5eca568-e02e-4fee-bc16-3e5dadad62b2" /&gt;&#13;
-&#13;
-* Secondary Weapon Toggle: this option allows you to toggle your missile launcher on and off, rather than needing to hold it!&#13;
-* Added an option to disable major item jingles!&#13;
-&#13;
-## Changed&#13;
-* Specify some sprites to use if items from Metroid Prime are in the fusion world (@UltiNaruto)&#13;
-&#13;
-## Fixed&#13;
-* Elevator Randomiser is now working again&#13;
-* Several logic bugs in Sectors 1, 4, 5 and 6 have been patched (@MarieNobody and @NPCPotPie)&#13;
-* Fixed a regression involving hint and item texts that used unmapped characters (@snowflav-goob and Rosalie)&#13;
-&#13;
-## Known bugs&#13;
-* If you have a missile count of a multiple of 256 (256, 512, 768) you are unable to use missiles. An update will be pushed out once this has been fixed.&#13;
-&#13;
-Setup guide link: [here](https://github.com/StalledStorm/ArchipelagoMine/wiki/Metroid-Fusion-Setup-Guide)</content>
-    <link href="https://github.com/StalledStorm/ArchipelagoMine/releases/tag/v1.23.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/JammyGeeza/Stacklands-Randomizer/releases/tag/v0.2.7</id>
-    <title>Stacklands v0.2.6r2</title>
-    <updated>2026-11-15T23:20:48+00:00</updated>
-    <author>
-      <name>chandler05</name>
-    </author>
-    <author>
-      <name>JammyGeeza</name>
-    </author>
-    <content># Information&#13;
-This mod is still in development, so it is possible that it may contain bugs or issues - please familiarise yourself with the [known issues list](https://github.com/JammyGeeza/Stacklands-Randomizer/issues?q=is%3Aissue%20state%3Aopen) before using this mod to see how your experience may be affected.&#13;
-&#13;
-If you experience a bug/issue that is _not_ in the list, please raise a new github issue or post it in the [Stacklands Forum in the Archipelago Discord Server](https://discord.com/channels/731205301247803413/1151149079238299719)&#13;
-&#13;
-**PLEASE NOTE:** This mod version is compatible with apworld `v0.2.5 / v0.2.6`.&#13;
-&#13;
-## How to Install / Use the Mod&#13;
-All instructions for how to install and use the mod are in the [README.md](https://github.com/JammyGeeza/Stacklands-Randomizer?tab=readme-ov-file#how-to-install-the-mod-to-stacklands)&#13;
-&#13;
-# Patch Notes&#13;
-## APWorld&#13;
-- None&#13;
-&#13;
-## Mod Client&#13;
-- Included more details in UI and Logs for login failures</content>
-    <link href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/tag/v0.2.7"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/waffles-v1.3.11</id>
-    <title>SMW: Spicy Mycena Waffles v1.3.11</title>
-    <updated>2026-11-16T00:36:23+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <author>
-      <name>PoryGone</name>
-    </author>
-    <content>if someone tells me they've softlocked themselves in CI2 I'm gonna yell&#13;
-## Info &#13;
-* [Information](https://thelx5.github.io/smw/)&#13;
-* [Setup](https://thelx5.github.io/smw/setup.html)&#13;
-## Changes&#13;
-* A ton of [logic updates and tricks](https://github.com/TheLX5/Archipelago/pull/33) courtesy of Frieze&#13;
-* Enemy shuffle updates&#13;
-	* Guarantees a colored koopa (or a shell) in several levels&#13;
-		* YI1, DP4, VD1, VD4, VS1, BB2, COM, FI1, SW5&#13;
-	* DP4 no longer has undefeatable enemies with a kicked shell where the goomba conga line is&#13;
-	* COM no longer has undefeatable enemies with a kicked shell where the monty mole zig zag is&#13;
-	* Larry's fight no longer has a boo block as a valid option to roll into the arena&#13;
-* Moved last dragon coin on CI2 to be _after_ the goal so people don't softlock themselves&#13;
-* Removed tile destruction on the overworld, that way Switch Palaces can be entered again even if the location was collected&#13;
-* Too lazy to update the credits version number</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/waffles-v1.3.11"/>
-  </entry>
   <entry>
     <id>https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/tag/0.3.1</id>
     <title>Chants of Sennaar v0.3.1</title>
@@ -807,7 +644,7 @@ Get Both Files</content>
   </entry>
   <entry>
     <id>https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.5.0</id>
-    <title>Medievil v0.3.0r2</title>
+    <title>Medievil v0.3.0r3</title>
     <updated>2026-11-18T13:48:13+00:00</updated>
     <author>
       <name>RiezaHughes</name>
@@ -1142,7 +979,8 @@ There is currently no PopTracker pack, and the client's Universal Tracker suppor
 There is currently no document/videos detailing all the logic tricks in each difficulty. Most tricks have comments in the logic data for the corresponding Chapter/Bonus level https://github.com/Mysteryem/Archipelago-TCS/tree/main/lego_star_wars_tcs/data/logic (note that the `None` logic difficulty is referred to as the `base` logic internally and `er_rule`s are not used currently, but may contain relevant trick comments). If you would like to contribute videos of tricks, please upload them to YouTube.&#13;
 &#13;
 # Known Issues&#13;
-The pause screen text for showing goal progress does not get reset properly when closing the client, so the text can stack up if you open and close the client repeatedly&#13;
+- The pause screen text for showing goal progress does not get reset properly when closing the client, so the text can stack up if you open and close the client repeatedly&#13;
+- Boss-related options have erroneously included `Darth Vader (3-6)` in the allowed bosses and maximum number of bosses that can be enabled. Yamls intending to enable the 3-6 boss should use `Anakin Skywalker (3-6)`.&#13;
 &#13;
 # Logic Rewrite&#13;
 - Logic is rewritten to use Rule Builder and logical regions&#13;
@@ -1196,7 +1034,7 @@ The pause screen text for showing goal progress does not get reset properly when
   </entry>
   <entry>
     <id>https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3.1</id>
-    <title>Undertale Beta v2.0.0r2</title>
+    <title>Undertale Beta v2.0.0r4</title>
     <updated>2026-11-19T03:45:56+00:00</updated>
     <author>
       <name>Mewlif</name>
@@ -1397,7 +1235,7 @@ This project is developed with the help of an LLM. Every change is reviewed, the
   </entry>
   <entry>
     <id>https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.5.1</id>
-    <title>Medievil v0.3.0r3</title>
+    <title>Medievil v0.3.0r2</title>
     <updated>2026-11-19T11:49:23+00:00</updated>
     <author>
       <name>RiezaHughes</name>
@@ -1445,5 +1283,237 @@ Changelog:&#13;
 * `Damage Trap` items counting as being part of the `Consumables` item group&#13;
   * This caused issues when plando'ing consumables into shop locations, as shops cannot hold item traps. So `Damage Trap`s now have no associated item group at all.</content>
     <link href="https://github.com/icebound777/PMR_APWorld/releases/tag/0.6.10"/>
+  </entry>
+  <entry>
+    <id>https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.5.2</id>
+    <title>Medievil v0.3.0r2</title>
+    <updated>2026-11-19T21:04:38+00:00</updated>
+    <author>
+      <name>RiezaHughes</name>
+    </author>
+    <content/>
+    <link href="https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.5.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.5.3</id>
+    <title>Medievil v0.3.0r3</title>
+    <updated>2026-11-19T21:06:20+00:00</updated>
+    <author>
+      <name>RiezaHughes</name>
+    </author>
+    <content/>
+    <link href="https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.5.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Kevanderson97/homura-hime-archipelago/releases/tag/v0.4.4</id>
+    <title>Homura-Hime v0.4.4</title>
+    <updated>2026-11-19T22:23:41+00:00</updated>
+    <author>
+      <name>Kevin Anderson</name>
+    </author>
+    <content>Gameplay release: large batches of items and traps are spread out to avoid frame hitches, key items and Soul Cores that go missing are given back, and a new option leaves the first Pretty Little Flower to the story. See README for installation instructions.
+
+**Update the plugin and the .apworld together.** Seeds from 0.4.x still play with this plugin (the new option only applies to seeds generated with this world; an older seed keeps the Flower as an item), and saves and server records are not touched.
+
+### New:
+
+**Skip Early Macguffin Checks (`skip_early_macguffin_checks`, on by default):**
+
+- When Chapter 1 is the first world you play, the Pretty Little Flower is left to the story. It is not an item of the multiworld, its hand-over in Level 1 Area 1 is not a location, and you get the Flower the way the base game gives it. The logic counts on it from the start of the chapter.
+- It does nothing when another world comes first (a randomized order, or a freeform key setup that starts elsewhere), or when you turn it off: then the Flower is shuffled like the other key items and its hand-over is a check.
+- It is part of the Standard preset and of the sample YAML.
+
+**Large batches of items and traps are spread over several frames:**
+
+- Received items are handed to the game 5 per frame, in the order you received them, instead of in one long frame. Reconnecting after a long time away, or a `!release`, no longer freezes the game.
+- Traps are all read in at once, but go off at a limited pace: at most 2 traps in any 5 frames, and at most 6 traps out at once. A trap counts until every enemy it spawned has been defeated (or left behind when you change scene); only then does the next one go off.
+- A Hexed Doll Trio Trap waits while a Blue Hexed Doll (Aoi) is alive. The Blue doll shields the enemies near it, so two of them in one fight shield each other and cannot be killed.
+- Defeated trap enemies are removed from the scene. The game only switches a dead enemy off, so hundreds of them used to pile up (over 250 in one scene) and cost frame rate.
+
+**Soul Core gates and NPC item checks count what the multiworld has sent:**
+
+- A Soul Core door, trigger or teleport, and an NPC that asks you for an item (Nurikabe, the elevator, the Level 1 house), no longer refuse you for an item the multiworld says you have but that is missing from your inventory. The item is given at that moment and the quest goes on.
+- It can be switched off with the config setting `Progress` / `CountReceivedItems`.
+
+### Fixes:
+
+- **Key items and Soul Cores that went missing are given back.** Equipment already was; now the seven key items (Pretty Little Flower, Elevator Lever, Nurikabe's Shoe, Hat and Gloves, Fresh Fish, Inugami Certificate) and the five Soul Cores are too. The check runs when a save loads and a few seconds after a batch of items has been handed over. This fixes a player whose Flower was missing after many items arrived at once.
+- **Finishing the Level 1 Area 1 doll and flower quest checks the Flower's location** if the hand-over was skipped (for example by finishing the quest with a Flower that was sent to you), so the check is not lost.
+
+### Changes:
+
+- The Standard preset, the sample YAML and the world's guide describe the new option.
+- New tests: the pacing of items and traps, the trap limits, the Blue doll rule, the repair of key items (replaying the batch from a player's log), and the world option with and without Chapter 1 first. The game tests' seed keeps the Flower location, because they expect every location of the catalog.
+
+### Known issues:
+
+- A key item that a quest uses up (the Pretty Little Flower is taken by the house NPC) is given back by the repair after the next reload or batch of items. It does no harm, but is not vanilla behavior.
+</content>
+    <link href="https://github.com/Kevanderson97/homura-hime-archipelago/releases/tag/v0.4.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.1.5</id>
+    <title>Mario Sports Mix v3.1.5</title>
+    <updated>2026-11-19T22:31:52+00:00</updated>
+    <author>
+      <name>ElectroStarz</name>
+    </author>
+    <author>
+      <name>Puffy</name>
+    </author>
+    <content>## What's Changed&#13;
+* Fixed errors showing up on Behemoth Fight&#13;
+* Fixed goaling on Behemoth Fight</content>
+    <link href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.1.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.6.0</id>
+    <title>Animal Crossing v0.6.0</title>
+    <updated>2026-11-19T22:33:36+00:00</updated>
+    <author>
+      <name>haloopdy</name>
+    </author>
+    <content>Setup instructions: https://github.com/randomouscrap98/AP_ACGC_PC/blob/master/docs/setup_en.md&#13;
+Game info: https://github.com/randomouscrap98/AP_ACGC_PC/blob/master/docs/game_info_en.md&#13;
+&#13;
+This version is backwards compatible back to 0.5.0.&#13;
+&#13;
+- **Update to SDL3:** you shouldn't notice any difference, but this is a newer backend library and may bring more compatibility with newer setups (old setups should not change; if they do let me know).&#13;
+  - If you are on Linux + Wayland, it will now use the native Wayland output instead of X11 through a translation layer&#13;
+  - With the update to SDL3, **button positions are now used instead of face label**. In practice, this means that you will get the Nintendo layout regardless of controller. It is easy to restore with the controller setup; just part of SDL3 (sorry).&#13;
+- **New Vulkan Renderer:** alternative to OpenGL if you find OpenGL buggy (or laggy? they should be roughly the same speed though)&#13;
+- **Easier Critters Upgrade:** bugs can now spawn on ANY flower (old AC they can't spawn on tulips) and will spawn on the outer 2 rows/columns of an acre (they couldn't in the original).&#13;
+- **Goal Tracker:** show goals and completion in separate section on mini tracker for easy checking&#13;
+- **Fossil tracker:** new fossil tracker like bugs, fish, and shells in the AP pause menu&#13;
+- **Crash fix outdoors:** crash from outdoor furniture fixed (random)&#13;
+- **Missing critter fix:** under rare circumstances, the last bug in a spawn table may never spawn. it should now&#13;
+- **Fix may windsocks:** they properly spawn and despawn now&#13;
+- **Fix birthday + starsign:** showed as 'iiiiiiiii' if you had instant text on&#13;
+- **Timesanity forces bugs cleanly into time slots:** before, you could catch some bugs "out of logic" for 1 hour, which might've been confusing&#13;
+- **Mini tracker shows shells + more consistent found/available output**&#13;
+- **More lenient generation:** if random is selected for pools where the final result could be beyond the allowed amount, the random value is rerolled to fit into the proper range. Also, goal: random doesn't choose goals that can't work with the current settings&#13;
+- **Pushing or pulling furniture no longer carries you across an acre:** sorry, it was very broken&#13;
+- **Precompiled shaders option**&#13;
+- **Show graphics error if OpenGL 3.3 not found**&#13;
+- **More information when a ROM doesn't match or is not found**&#13;
+- **Show % done in AP Client**&#13;
+- **Fix tree bugs spawning but not working in non-plain trees (OG gamecube bug)**&#13;
+- **Fix(?) favorsanity desync issues**&#13;
+- **Fix menu keybindings ignoring your custom bindings**</content>
+    <link href="https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.7.5</id>
+    <title>Ratchet &amp; Clank 3 v0.7.5</title>
+    <updated>2026-11-19T23:39:02+00:00</updated>
+    <author>
+      <name>Taoshi</name>
+    </author>
+    <author>
+      <name>1theory</name>
+    </author>
+    <author>
+      <name>AmondoVagyok</name>
+    </author>
+    <author>
+      <name>Myth197</name>
+    </author>
+    <author>
+      <name>Yuxia228</name>
+    </author>
+    <content>## RaC3 APWorld v0.7.5
+
+**Branch:** staging  
+**Date:** 2026-11-19 23:44 UTC
+
+&lt;details&gt;
+&lt;summary&gt;&lt;strong&gt;📜 Summary (427 changes since v0.7.0)&lt;/strong&gt;&lt;/summary&gt;
+
+- RAC3: Move no veldin skip option error handling to pre_fill to fix fuzzing errors (a546a2af5)
+- RAC3: Fix duplicate grant of the first pending item on file load (4a6d68b2a)
+- RAC3: Isolate server side saves by team and slot to prevent clashes when connecting to a different slot (54f09fea5)
+- RAC3: Move progress resetting out of remove all items function (b10faf9a9)
+- RAC3: Simplify version validation (a63e9f049)
+- RAC3: Fixed starting with clank pack in start inventory breaking if you have set clank options to shuffled progressive (0762d20de)
+- RAC3: Fixed reversed NG+ item caps for progressive weapons (743dba238)
+- RAC3: Fix /load_level being able to load planets that crash the game (aa773f5ae)
+- RAC3: Fix rounding error in goal status (cd9d61dea)
+- RAC3: Inform the user that tyhrraguise puzzles do not auto skip without the tyhrraguise (9d73ee8db)
+- RAC3: Make the titanium bolt goal not use the archipelago item if titanium bolts are disabled. Instead make it use the vanilla picked up t bolts (58aba8d94)
+- RAC3: Clarify command center lock yaml option description (ae2224847)
+- RAC3: Move comments around (2829e065d)
+- RAC3: Add type hint (701ba2bf4)
+- RAC3: Lists are prettier (c0e190785)
+- RAC3: Fix collect breaking things (66c342ffd)
+- RAC3: Make JP leave beta (450c7f00f)
+- RAC3: Don't auto equip packs if you start with clank (5118fd8ff)
+- RAC3: Fix incorrect text widths (131a6610f)
+- RAC3: Make galactic map text addresses be adaptive to the code cave (5a05930d8)
+- RAC3: Defeat the 80 byte limit by hijacking the UI manager (4ce82b695)
+- RAC3: reclaim some bytes (a112b90cb)
+- RAC3: Categorize the last uncategorized locations and rename General to Other since it is now for for fallback (6fa6fe037)
+- RAC3: Exclude goals from galactic map tracker (e7abb3e17)
+- RAC3: Only change the color if the completion status changes (d8457a029)
+- RAC3: Run Ruff Formatter (cd9470ee5)
+- RAC3: Make location categories in ship be consistent across the board (f41af49b7)
+- RAC3: Improve formatting again (b3d3672e3)
+- RAC3: Add More categories + compacting longer categories if a lot of them are there (d7703b0ac)
+- RAC3: Add Location count to galactic map (9b683c28c)
+- RAC3: Add Nefarious and Biobliterator to the description system (b81013b53)
+- RAC3: Add a description to Qwarktastic Battle if it is enabled to inform the user about why it is disabled (75796450c)
+- RAC3: Add patches for the rest of the game versions (b2c55b45e)
+- RAC3: Add T bolt from VR gadget training to VR gadget training description (29ee7018c)
+- RAC3: Add t bolt from nerves of titanium to the VR challenge (f37d1b613)
+- RAC3: Fix some challenges not getting overwritten (b6fe1a369)
+- RAC3: Make the insufficient PDA vendor string also get overwritten (5046d7534)
+- RAC3: Make PDA vendor popup show item (8e32f2e6c)
+- RAC3: Fix "Practice Challenge" (ef16aab85)
+- RAC3: Fix meet courtney string ids (fde9f7993)
+- RAC3: Fix Death course challenge string id (286c3a107)
+- RAC3: Reformat challenge description strings (16a484207)
+- RAC3: Add rewards stringsto challenges (d2ae62c06)
+- RAC3: Refactor string table stuff to use string ids and add find string by id function (4ada155aa)
+- RAC3: Fix being able to fight Klunk again if dropship shortcut is enabled (c1391aa46)
+- RAC3: Fix Museum Goal (cfa73d2a9)
+- RAC3: Mark off talos goal if skip clank section (4cdf2629d)
+- RAC3: Fix infecto bomb V7 -&gt; V8 cumulative exp value (50873522e)
+- RAC3: Change connection level requirement for goal status command (29583d498)
+- RAC3: Restore invalid weapons (a2929106e)
+- RAC3: Address convert the level address in error logging such that it matches (a45c907dc)
+- RAC3: Cleanup Unstable removal (0aa1ca0a2)
+- RAC3: Ship respawn rework (d239867f9)
+- RAC3: Formatting (9097d579f)
+- RAC3: Skip invalid weapon ids in weapon exp cycler (524e645cc)
+- RAC3: Fix VR Gadget Training teleporter not working (12f662212)
+- RAC3: Fix potentially latching jackpots (05cafefa3)
+- RAC3: Add vid comic health upgrades to the save data (2d02ad01b)
+- RAC3: Rewrite find moby by id to use batching and make it know when to terminate (91121554b)
+- RAC3: Rewrite clank cycler to focus on removing the thruster pack and add pack auto equip (5994bbd4f)
+- RAC3: Make Qwarktastic a location only when it's a goal requirement (02a5124f7)
+- RAC3: Add back some old locations (fbb60798a)
+- RAC3: Add goal status command (b99e4b02a)
+- RAC3: Comment out Unstable set, turn weapon level location option keys into a list (a49c44b6a)
+- RAC3: Revert Weapon Levels back to frozenset (b6a119018)
+- RAC3: Make ship teleport work on Phoenix now that transporter has been fixed (54035e6f3)
+- RAC3: The end of unstable locations o7 (4221aa9d6)
+- Change progressive wrench to a toggle (b9767b92b)
+- Fix percentage goal thresholds and location counts (cf9b109cf)
+- RAC3: Progressive omniwrench support in puzzle cycler (9602e0732)\n- ...and 227 more commits.
+
+&lt;/details&gt;
+
+**Full changelog and compare**: https://github.com/Taoshix/Archipelago-RaC3/compare/v0.7.0...v0.7.5
+
+### [Setup Guide](https://github.com/Taoshix/Archipelago-RaC3/blob/staging/worlds/rac3/docs/setup_en.md)
+
+### Notes
+This release was automatically generated from the **staging** branch.  
+Latest (main) releases are recommended, as pre-releases (staging) may contain experimental or in-progress changes.
+
+### If a location is broken and does not get sent out
+Go to the server console (locally or via the Archipelago room page) and run:  
+`/send_location &lt;player_name&gt; &lt;location&gt;` Example: `/send_location TaoshiRaC3 "Crash Site: Infobot: Aridia"`
+</content>
+    <link href="https://github.com/Taoshix/Archipelago-RaC3/releases/tag/v0.7.5"/>
   </entry>
 </feed>
