@@ -1,9 +1,12 @@
 # Hexcells Infinite
 
 ## Latest
-- <a href="https://github.com/Chainsawkitten/HexcellsInfiniteAP/releases/download/1.3.4/hexcells_infinite.apworld">Latest Version (1.3.4)</a>
+- <a href="https://github.com/Chainsawkitten/HexcellsInfiniteAP/releases/download/1.3.5/hexcells_infinite.apworld">Latest Version (1.3.5)</a>
 
 ## All Versions
+
+#### v1.3.5
+- <a href="https://github.com/Chainsawkitten/HexcellsInfiniteAP/releases/download/1.3.5/hexcells_infinite.apworld">https://github.com/Chainsawkitten/HexcellsInfiniteAP/releases/download/1.3.5/hexcells_infinite.apworld</a>
 
 #### v1.3.4
 - <a href="https://github.com/Chainsawkitten/HexcellsInfiniteAP/releases/download/1.3.4/hexcells_infinite.apworld">https://github.com/Chainsawkitten/HexcellsInfiniteAP/releases/download/1.3.4/hexcells_infinite.apworld</a>
