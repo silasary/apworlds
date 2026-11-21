@@ -8,6 +8,9 @@
 #### v0.6.3r2
 - <a href="https://github.com/Joshark/archipelago-sms/releases/download/0.6.4/sms.apworld">https://github.com/Joshark/archipelago-sms/releases/download/0.6.4/sms.apworld</a>
 
+#### v0.6.3r2
+- <a href="https://github.com/Joshark/archipelago-sms/releases/download/0.6.5/sms.apworld">https://github.com/Joshark/archipelago-sms/releases/download/0.6.5/sms.apworld</a>
+
 #### v0.6.3
 - <a href="https://github.com/Joshark/archipelago-sms/releases/download/0.6.3/sms.apworld">https://github.com/Joshark/archipelago-sms/releases/download/0.6.3/sms.apworld</a>
 

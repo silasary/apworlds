@@ -5,7 +5,7 @@ Gather the 8 Instruments of the Sirens to wake the Wind Fish, so that Link can g
 
 
 ## Downloads
-- <a href="https://github.com/threeandthreee/Archipelago/releases/download/13.6.6/ladx_beta.apworld">Latest Version (13.6.6)</a>
+- <a href="https://github.com/threeandthreee/Archipelago/releases/download/14.0.1/ladx_beta.apworld">Latest Version (14.0.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -14,3 +14,6 @@ Gather the 8 Instruments of the Sirens to wake the Wind Fish, so that Link can g
 ## Setup Guide
 - <a href="setup_en">English</a>
 
+## Other Documentation files
+- <a href="location_counts_en">location_counts_en</a>
+- <a href="plando_en">plando_en</a>

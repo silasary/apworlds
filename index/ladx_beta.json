@@ -466,6 +466,36 @@
       "version_simple": "13.6.6",
       "world_version": "13.6.6"
     },
+    "14.0.0": {
+      "created_at": "2026-11-21T01:54:20Z",
+      "description": "Big update! Most of these are ports or remixes of [LADXR](https://ladxr.daid.eu) features. (Thank you!)\r\n\r\n## New/Changed Options\r\n- `condense_dungeons`: The upstream `nodungeons` overworld setting, but applied to individual dungeons. A condensed dungeon is shrunk to a tiny three room experience.\r\n  - This can be combined with `dungeon_dive` overworld for a 26 location boss rush! Be warned that this specific case required extreme item pool trimming, so no heart containers.\r\n  - This also makes it easier to exclude dungeons! If you set `exclude_locations: [ Tail Cave ]` it will automatically condense the dungeon and remove its instrument (unless instruments are shuffled outside the dungeon), and exclude its few remaining locations.\r\n- `specific_optional_dungeons`: Allows you to condense or exclude any dungeons that aren't necessary for the specific instruments goal.\r\n- `owlsanity`: Change owl statues from hints to locations. This adds up to 33 locations.\r\n- `in_game_hint_item_groups`: (replaces `other in_game_hint_*` settings) Specify item groups to make in-game hints for. It will try to make a hint for each of these until it runs out of items or books/statues.\r\n- `boss_shuffle`/`boss_plando`\r\n- `miniboss_shuffle`/`miniboss_plando`\r\n- `enemizer`: Randomize a lot of overworld enemies.\r\n- `overworld: open_beach`: New overworld setting, similar to `open_mabe` but lets you go from Toronbo Shores to Martha's Bay without power bracelet. Still gets you out of Mabe but not quite as fast.\r\n- `filler_pool`: Control the filler item generator.\r\n  - Added some new powerups/traps that will only show up if added to `filler_pool`: Guardian Acorn, Piece of Power, Recovery Heart, Fairy, Death, Slime Storm, Bomb Drop, Cucco Party, Anti-Heart Container.\r\n- `reserve_filler`: (replaces `more_filler`) Similar, but you can specify how much filler, and it can go to pretty extreme levels.\r\n\r\n## Other Changes/Fixes\r\n- New Archipelago item icon for `foreign_item_icons: indicate_progression` (icon by AceBreaker)\r\n- Seashell mansion 5 and 10 seashell locations are back!\r\n- Fixed Tunic Fairy giving the wrong item text.\r\n- Evil Eagle now only requires L1 shield in normal logic. I was down to needing one more cuttable item to make boss rush possible, so I made the change so I could cut a shield there. (L1 and L2 shield function the exact same for Evil Eagle fyi).\r\n- Shortened some texts, cut some text boxes.\r\n- Skips text on most non-progression items (and rupees) when received.\r\n- Extend hint info for items in dungeons.\r\n- Dungeon items have a `start_inventory` option that is a shortcut to putting them in `start_inventory_from_pool`.\r\n- Start inventory items come in with no text boxes after talking to tarin (even offline!).\r\n- Fix Zol Attacks not working locally sometimes.\r\n- Disabling trade quest now removes the locations.\r\n- yaml-less universal tracker support\r\n\r\n<img width=\"314\" height=\"250\" alt=\"Screencast_20261119_161221\" src=\"https://github.com/user-attachments/assets/7b4c93d3-7b74-4a93-b01a-01c6cf3cbb07\" />\r\n<img width=\"315\" height=\"251\" alt=\"Screenshot_20261119_161428\" src=\"https://github.com/user-attachments/assets/fff9ebbc-65c1-4dfa-a082-8ce9be0e8450\" />\r\n",
+      "download_url": "https://github.com/threeandthreee/Archipelago/releases/download/14.0.0/ladx_beta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "083a14c7e324ca7d4dc1d1e02a1401f09a62b09fa06b9a3b9b6cae22aa5ade9c",
+      "html_url": "https://github.com/threeandthreee/Archipelago/releases/tag/14.0.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 386566,
+      "source_url": "https://api.github.com/repos/threeandthreee/Archipelago",
+      "tag": "14.0.0",
+      "title": "AP LADX Beta 14.0.0",
+      "version_simple": "14.0.0",
+      "world_version": "14.0.0"
+    },
+    "14.0.1": {
+      "created_at": "2026-11-21T04:58:25Z",
+      "description": "- A bit more resilience for high exclusion counts\r\n- Always get item message for things sent from the server (they're never marked as progression)\r\n- Tweak an option name that was bugging me",
+      "download_url": "https://github.com/threeandthreee/Archipelago/releases/download/14.0.1/ladx_beta.apworld",
+      "has_manifest": true,
+      "hash_sha256": "85488a873167030243d0265ff97e82e3d93236cf981311955e8251c64f33413b",
+      "html_url": "https://github.com/threeandthreee/Archipelago/releases/tag/14.0.1",
+      "minimum_ap_version": "0.6.4",
+      "size": 386641,
+      "source_url": "https://api.github.com/repos/threeandthreee/Archipelago",
+      "tag": "14.0.1",
+      "title": "AP LADX Beta 14.0.1",
+      "version_simple": "14.0.1",
+      "world_version": "14.0.1"
+    },
     "v10.0": {
       "created_at": "2024-12-12T15:23:44Z",
       "download_url": "https://github.com/threeandthreee/Archipelago/releases/download/v10.0/ladx_beta.apworld",
