@@ -7,7 +7,7 @@ Interactive.
 
 
 ## Downloads
-- <a href="https://github.com/Panda291/Archipelago/releases/download/v0.3.1/rac1.apworld">Latest Version (0.3.1)</a>
+- <a href="https://github.com/Panda291/Archipelago/releases/download/v0.3.2/rac1.apworld">Latest Version (0.3.2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

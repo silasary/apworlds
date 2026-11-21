@@ -352,6 +352,21 @@
       "title": "v0.30.2 \u2014 School Trip tracking and item delivery",
       "version_simple": "0.30.1",
       "world_version": "0.30.1"
+    },
+    "v0.30.3": {
+      "created_at": "2026-11-21T10:06:01Z",
+      "description": "# v0.30.3 \u2014 Super Nectar logic correction\n\nAPWorld **0.30.2** \u00b7 unchanged game client **0.77.2**\n\n`Cell Tower - Deliver Super Nectar` now requires Hypno Pan in generation and Universal Tracker. The old rule checked the base campaign routes but omitted the ability required by their Bee Mode nectar routes, so the tracker could show the delivery too early.\n\nAll other prerequisites, Star gates, item/location IDs and slot-data schemas are unchanged. Existing rooms keep their item placements.\n\n## Updating\n\nReplace `scrc.apworld` on the computer generating seeds or running Universal Tracker, then restart Archipelago/Tracker. The corrected tracker rule works with supported existing seeds. Client 0.77.2 does not need reinstalling; its ZIP is the unchanged download from v0.30.2.\n\n[Validation](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.3/docs/testing/2026-11-21-super-nectar.md) \u00b7 [Installation](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.3/docs/INSTALL.md) \u00b7 [Known issues](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.3/docs/KNOWN_ISSUES.md)\n\nValidation: 202 APWorld tests and 19 packaging/tool tests passed, plus mixed-game generation on Archipelago 0.6.8 and Universal Tracker 0.2.32 regression checks.\n",
+      "download_url": "https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.30.3/scrc.apworld",
+      "has_manifest": true,
+      "hash_sha256": "37c939312090f2ca5dd61c9449fcdd0443a4f5616069c7dccf50b6b87696dc66",
+      "html_url": "https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.30.3",
+      "minimum_ap_version": "0.6.7",
+      "size": 68908,
+      "source_url": "https://api.github.com/repos/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago",
+      "tag": "v0.30.3",
+      "title": "v0.30.3 \u2014 Super Nectar logic correction",
+      "version_simple": "0.30.2",
+      "world_version": "0.30.2"
     }
   }
 }

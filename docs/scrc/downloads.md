@@ -1,9 +1,12 @@
 # Super Crazy Rhythm Castle
 
 ## Latest
-- <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.30.2/scrc.apworld">Latest Version (0.30.1)</a>
+- <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.30.3/scrc.apworld">Latest Version (0.30.2)</a>
 
 ## All Versions
+
+#### v0.30.2
+- <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.30.3/scrc.apworld">https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.30.3/scrc.apworld</a>
 
 #### v0.30.1
 - <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.30.2/scrc.apworld">https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.30.2/scrc.apworld</a>

@@ -33,4 +33,4 @@ In Roots, Weed Killer lets you enter Level 3 and reach Frog and Hippo's Plant Pi
 
 The Old Game Data and Car Battery hand-ins each require their matching item. Their character rewards can arrive separately through the multiworld.
 
-[Installation guide](setup_en.md) · [Progression and route details](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.2/docs/PROGRESSION.md)
+[Installation guide](setup_en.md) · [Progression and route details](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.3/docs/PROGRESSION.md)

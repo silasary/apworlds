@@ -1,7 +1,7 @@
 -- ============================================================================
 -- Toy Story 2 (PS1) Archipelago - ALL-IN-ONE BizHawk script
 -- ----------------------------------------------------------------------------
--- CONNECTOR VERSION: 3.2.2   <-- must match the .apworld release.
+-- CONNECTOR VERSION: 3.3.0   <-- must match the .apworld release.
 --   If a player reports odd behaviour (e.g. checks sending early), have them
 --   confirm this line. It is also printed in the BizHawk Lua console on load and
 --   again when settings are received, so they can read it back without opening
@@ -28,7 +28,7 @@
 -- Single source of truth for the connector release version (see header). Bump this
 -- in lockstep with the .apworld release. Global so it stays in scope across the
 -- Part 1 / Part 2 do...end blocks without consuming a local slot.
-TS2_VERSION = "3.2.2"
+TS2_VERSION = "3.3.0"
 -- Free-text build tag, printed beside the version on load. NOT parsed anywhere:
 -- the client and the title screen only ever read TS2_VERSION, so a hotfix can
 -- be told apart in a player's console without tripping the version check.
@@ -2085,6 +2085,26 @@ function update_model(level)
     for _,e in ipairs(addrs) do mainmemory.write_u8(e.addr,e.val) end
 end
 
+-- 3.3.0: the "all 5 missing toys" jingle. It isn't one of the 218 sound ids:
+-- the HUD (0x80075A6C) queues multi-sound -5 when the toy count 0x0A11F8 reads
+-- 5 and its own copy from last frame (gp+0x454 = 0x0A112C) doesn't. The count
+-- is the toys AP has sent (write_toys), so picking up the 5th toy LOCATION with
+-- 4 received made it 5 for a frame and played the jingle for a check. Holding
+-- the HUD's copy at 5 while fewer than 5 have been received silences that; when
+-- the 5th really arrives in the level, its copy is set to 4 once so the jingle
+-- plays for it.
+TOY_HUD_LAST = 0x0A112C
+toy_jingle_rc = {}            -- level -> received count last frame (this visit)
+function toy_jingle(level, rc)
+    local prev = toy_jingle_rc[level]
+    if rc < 5 or prev == nil then          -- (nor on entering a level you already have all 5 of)
+        if mainmemory.read_s32_le(TOY_HUD_LAST) ~= 5 then mainmemory.write_s32_le(TOY_HUD_LAST, 5) end
+    elseif prev < 5 then
+        mainmemory.write_s32_le(TOY_HUD_LAST, 4)      -- the real 5th: let it play
+    end
+    toy_jingle_rc[level] = rc
+end
+
 function write_toys(level)
     local toys=TOYS[level]; if not toys then return end
     local count=toy_received_counts[level] or 0
@@ -3861,6 +3881,23 @@ function cs_complete()
     -- Dequeue the next pending cutscene trap (if any) so they chain.
     local q=mainmemory.read_u8(SHARED_TRAP_CUTSCENE)
     if q>0 then mainmemory.write_u8(SHARED_TRAP_CUTSCENE,q-1); CS.pending=true end
+    -- 3.3.0: a Cutscene Trap plays as you enter a level, BEFORE the level loads,
+    -- so the quick load (which never starts while a cutscene is up) missed the
+    -- load entirely. Start it now if that's where we are: in a quick-load level
+    -- and Buzz not in control yet. (A boss win's cutscene comes after Buzz has
+    -- been playing, so it doesn't start one.)
+    -- During a coin level's cutscene the level id is held at 0 (cs_force_level),
+    -- so the level usually only reads as the real one again once the load after
+    -- the cutscene starts: qs_update picks that up (qs.after_cs).
+    if not CS.pending and qs_start and qs_enabled() and not qs.phase then
+        local lv = mainmemory.read_u8(A.LEVEL)
+        if (QS_COIN[lv] or QS_BOSS[lv]) and not buzz_moved then
+            qs_start("enter"); qs.late = true; qs.last = lv
+            ts2_debug("quick load: started after a cutscene")
+        else
+            qs.after_cs = true
+        end
+    end
 end
 
 function cs_trigger()
@@ -4158,6 +4195,8 @@ function update_traps(level)
             mainmemory.write_u8(A.BUZZ_HP,math.max(1,health-3))
             mainmemory.write_u8(A.BUZZ_IFRAME,0)
             mainmemory.write_u8(A.HEALTH_UI,88)
+            -- 3.3.0: and it sounds like a hit (sfx 26, Buzz taking damage).
+            if TS2X then pcall(TS2X.play, 26) end
         end
     end
 
@@ -4585,6 +4624,7 @@ function update_potato(level)
         toy_received_counts[level]=rc
         if not toys_written then toys_written=true end
         write_toys(level)
+        toy_jingle(level, rc)
     end
 
     if part_watched and buzz_moved and PARTS[level] and not potato_collected_latch[level]
@@ -5034,6 +5074,16 @@ function coin_ui_show_received()
     coin_ui_cap = COIN_UI_VALUE       -- counts down from here, whatever a pickup does
 end
 
+-- 3.3.0: the "50 coins" jingle (sfx 79). The game plays it when a coin PICKUP
+-- takes the counter to exactly 50 (0x8006DE00 / 0x80076DC4). With Coinsanity
+-- the counter is the coins AP has sent, so at 49 every coin picked up (a check,
+-- not money) played it before we put the counter back. TS2X holds 79 silent
+-- with Coinsanity on, and this plays it when a Coin Bundle really brings the
+-- level to 50.
+function coin_fifty_jingle(old, new)
+    if old < 50 and new >= 50 and TS2X then pcall(TS2X.play, 79) end
+end
+
 function update_coins(level)
     if not is_coinsanity() or not COIN_LEVEL_IDS[level] then return end
     coin_load_timer=coin_load_timer+1
@@ -5139,7 +5189,10 @@ function update_coins(level)
         mainmemory.write_u8(A.COIN, ap_coins)
         -- A Coin Bundle received in this level also lands here (it raises ap
         -- above the counter), and is the one case where ap itself went up.
-        if ap_coins > (last_ap_coins[level] or 0) then coin_ui_show_received() end
+        if ap_coins > (last_ap_coins[level] or 0) then
+            coin_ui_show_received()
+            coin_fifty_jingle(last_ap_coins[level] or 0, ap_coins)
+        end
         last_ap_coins[level]=ap_coins
         return
     end
@@ -5150,6 +5203,7 @@ function update_coins(level)
     -- player actually receives spendable coins. We do NOT suppress the UI here.
     if ap_coins > (last_ap_coins[level] or 0) then
         mainmemory.write_u8(A.COIN, ap_coins)
+        coin_fifty_jingle(last_ap_coins[level] or 0, ap_coins)
         last_ap_coins[level]=ap_coins
         coin_ui_show_received()
         return
@@ -5320,25 +5374,46 @@ function update_hints(level)
     was_hint_dialog_open = dialog_open
 end
 
+-- 3.3.0: which song the game is choosing right now (0x8007335C): the
+-- miniboss theme while a miniboss fight is on, the minigame theme in a
+-- minigame, else the level's own. Skip Song changes the one that's playing.
+function music_kind()
+    if mainmemory.read_s16_le(0x0CD40E) ~= 0 then return "boss" end
+    if mainmemory.read_s16_le(0x0CD40C) ~= 0 and mainmemory.read_s32_le(0x0A10C8) >= 2 then return "mini" end
+    return "level"
+end
+music_shown = nil   -- the track the "Now Playing" line names
+
+function music_skip(step)
+    local kind = music_kind()
+    if kind == "level" then
+        local nt = (music_current + step) % 22
+        if TS2X then pcall(TS2X.music_set_level, nt) end; music_current = nt; music_shown = nt
+    else
+        -- the track playing now (0x0A1040) is where the miniboss / minigame song is
+        local cur = mainmemory.read_s32_le(0x0A1040)
+        if cur < 0 or cur > 21 then cur = (kind == "boss") and 15 or 16 end
+        local nt = (cur + step) % 22
+        if TS2X then pcall(TS2X.music_set_special, kind, nt) end; music_shown = nt
+    end
+    music_display_timer = MUSIC_DISPLAY_FRAMES
+end
+
 function update_music()
     local input=mainmemory.read_u8(A.INPUT)
     if skip_song_enabled() and music_mode()~=3 then
         if input==237 and skip_r2_was_up then
             skip_r2_was_up=false
-            local nt=(music_current+1)%22
-            if TS2X then pcall(TS2X.music_set_level, nt) end; music_current=nt
-            music_display_timer=MUSIC_DISPLAY_FRAMES
+            music_skip(1)
         elseif input~=237 then skip_r2_was_up=true end
         if input==238 and skip_l2_was_up then
             skip_l2_was_up=false
-            local pt=music_current-1; if pt<0 then pt=21 end
-            if TS2X then pcall(TS2X.music_set_level, pt) end; music_current=pt
-            music_display_timer=MUSIC_DISPLAY_FRAMES
+            music_skip(-1)
         elseif input~=238 then skip_l2_was_up=true end
     end
     if music_display_timer>0 then
         music_display_timer=music_display_timer-1
-        gui.text(10,20,"Now Playing: "..(TRACK_NAMES[music_current] or "?"),"white","black")
+        gui.text(10,20,"Now Playing: "..(TRACK_NAMES[music_shown or music_current] or "?"),"white","black")
     end
 end
 
@@ -5633,6 +5708,7 @@ function on_level_change(new_level, prev_level)
     end
     buzz_moved=false; last_buzz_x=-1; last_buzz_y=-1
     ts2_level_visit = (ts2_level_visit or 0) + 1   -- a new visit: toys must be seen again
+    toy_jingle_rc = {}                              -- and the 5-toy jingle starts over
     buzz_baseline_set=false
     buzz_spawn.started=false; buzz_spawn.base=0; buzz_spawn.cand=-1; buzz_spawn.stable=0; buzz_spawn.disc=nil
     buzz_spawn.move_x=nil; buzz_spawn.move_y=nil; buzz_spawn.move_frames=0; buzz_spawn.lr_frames=0
@@ -5790,7 +5866,7 @@ function on_level_change(new_level, prev_level)
         -- instruction that loads the level's track instead, and randomizes the
         -- miniboss / minigame songs the same way.
         if mapped and mapped>=0 then
-            music_current=mapped
+            music_current=mapped; music_shown=nil
             if TS2X then pcall(TS2X.music_enter_level, (mm~=0) and mapped or nil,
                                (mm~=0) and music_pick(15) or 15, (mm~=0) and music_pick(16) or 16) end
         end
@@ -6104,6 +6180,12 @@ end
 QS_ADDR       = 0x1FEC20   -- client -> lua: 0xC0 = off, 0xC1 = on. Anything else = on
 QS_SPEED      = 6400
 QS_MAX_FRAMES = 1800       -- 30 s of game time, worst case, before giving up
+-- 3.3.0: the way INTO a level waits longer. Some loads are just slow (a
+-- Tarmac Trouble entry sat on its load for ~25 s), and giving up handed the
+-- player 100% speed in the middle of a load that then looked like a freeze.
+-- It still ends the moment Buzz is in control, a cutscene starts, or the
+-- player turns quick loads off.
+QS_ENTER_MAX_FRAMES = 7200 -- 2 minutes of game time
 QS_COIN       = {[1]=true,[2]=true,[4]=true,[5]=true,[7]=true,[8]=true,
                  [10]=true,[11]=true,[13]=true,[14]=true}
 QS_BOSS       = {[3]=true,[6]=true,[9]=true,[12]=true,[15]=true}   -- entry only
@@ -6193,6 +6275,7 @@ function qs_start(phase)
     qs.a0, qs.b0 = nil, nil
     qs.ctr, qs.still = qs.snap, 0
     qs.prompt_seen, qs.save_x, qs.t, qs.rf, qs.xf, qs.wait = false, false, 0, 0, 0, 0
+    qs.late, qs.bxy, qs.moved = false, nil, 0
     if not qs.sped then
         qs.prev = cs_read_speed()          -- the player's own speed, to put back
         for _, v in ipairs(QS_SPEED_TRIES) do if qs.prev == v then qs.prev = 100 end end
@@ -6264,7 +6347,8 @@ function qs_update(level)
         qs.frames = qs.frames + 1
         if qs_cutscene_busy() then qs_restore("cutscene"); return end
         if not qs_enabled() then qs_restore("turned off"); return end
-        if qs.frames > QS_MAX_FRAMES then qs_restore("timed out"); return end
+        local cap = (qs.phase == "enter") and QS_ENTER_MAX_FRAMES or QS_MAX_FRAMES
+        if qs.frames > cap then qs_restore("timed out"); return end
     end
     if level ~= prev then
         if qs.phase == "leave" and level == MAP_LEVEL_ID then
@@ -6275,8 +6359,14 @@ function qs_update(level)
         elseif qs.phase then
             qs_restore("unexpected level "..level)
         end
+        if level == MAP_LEVEL_ID then qs.after_cs = nil end
         if not qs.phase and qs_enabled() and not qs_cutscene_busy() then
-            if prev == MAP_LEVEL_ID and (QS_COIN[level] or QS_BOSS[level]) then qs_start("enter")
+            if qs.after_cs and (QS_COIN[level] or QS_BOSS[level]) then
+                -- the load that follows a Cutscene Trap's cutscene (see cs_complete)
+                qs.after_cs = nil
+                qs_start("enter"); qs.late = true
+                ts2_debug("quick load: started after a cutscene")
+            elseif prev == MAP_LEVEL_ID and (QS_COIN[level] or QS_BOSS[level]) then qs_start("enter")
             elseif QS_COIN[prev] and level == 0 then qs_start("leave")
             elseif QS_WIN_BOSS[prev] and QS_VICTORY[level] then qs_start("victory")
             elseif QS_WIN_BOSS[prev] and level == MAP_LEVEL_ID then qs_start("boss_menu") end
@@ -6287,15 +6377,39 @@ function qs_update(level)
     local climbed = (ctr - qs.snap) % 256
     if ctr ~= qs.ctr then qs.ctr, qs.still = ctr, 0 else qs.still = qs.still + 1 end
     if qs.phase == "enter" then
-        -- (and if the counter never moves at all, give up waiting for it after
-        -- 10 s of game time -- every load measured so far is under that)
-        local done = climbed >= 6 or (qs.still >= QS_STILL and (climbed >= 1 or qs.frames >= 600))
-        if not done then return end
         local a, b = mainmemory.read_u8(QS_TOOK_A), mainmemory.read_u8(QS_TOOK_B)
+        -- (and if the counter never moves at all, give up waiting for it after
+        -- 10 s of game time -- every load measured so far is under that). A
+        -- quick load started after a cutscene (qs.late) can find the counter
+        -- already climbed, so there the prompt being up is enough.
+        local done = climbed >= 6 or (qs.still >= QS_STILL and (climbed >= 1 or qs.frames >= 600))
+            or (qs.late and a == 128 and qs.frames >= 30)
+        if not done then return end
+        -- Buzz moving for half a second means the load is over, whatever took
+        -- the X (the player may have pressed it first): never leave a level
+        -- running at quick-load speed. Counted only once the load is done:
+        -- Buzz's position is junk before that.
+        local bxy = mainmemory.read_u8(A.BUZZ_X) * 256 + mainmemory.read_u8(A.BUZZ_Y)
+        if qs.bxy ~= nil and bxy ~= qs.bxy then qs.moved = (qs.moved or 0) + 1 end
+        qs.bxy = bxy
+        if (qs.moved or 0) >= 30 then qs_restore("Buzz is moving"); return end
         if qs.a0 == nil then qs.a0, qs.b0 = a, b end
         if (qs.a0 ~= 0 and a == 0) or (qs.b0 ~= 0 and b == 0) then qs_restore("X taken"); return end
-        if qs.pulses >= 10 and qs.pulse == 0 then qs_restore("10 presses, no sign"); return end
-        qs_press()
+        -- 3.3.0: press only while the game is actually waiting on its prompt
+        -- (QS_TOOK_A reads 128 then), and keep at it -- no more giving up after
+        -- 10 presses. A press made while the load is still going is ignored by
+        -- the game, which is how the old 10 were spent on a slow load and the
+        -- player was left on it at normal speed. If the prompt never shows,
+        -- fall back to a press every second, until QS_ENTER_MAX_FRAMES.
+        if a == 128 then
+            if qs.a0 ~= 128 then qs.a0 = 128 end   -- now "taken" is 128 -> 0
+            qs_press()
+        elseif qs.pulse ~= 0 then
+            qs_press()                             -- finish a press already started
+        else
+            qs.wait = (qs.wait or 0) + 1
+            if qs.wait >= 600 and qs.wait % 60 == 0 then qs_press() end
+        end
     elseif qs.phase == "leave" then
         -- the level change to the map is the proof this press was taken
         if climbed >= 4 and qs.pulses < 40 then qs_press() end
@@ -6490,7 +6604,7 @@ REX_HIDE_DATA = (function() return {
     pts = { 10064, -1, 22373, 10798, 0, 22747, 10494, -565, 23272, 10209, -589, 23295, 9775, -613, 23301, 9271, -661, 23246, 8770, -738, 23061, 8404, -789, 22685, 8174, -866, 22217, 8093, -916, 21782, 10513, -220, 22792, 10413, -220, 22766, 10313, -220, 22732, 10221, -220, 22686, 10121, -220, 22628, 10022, -220, 22544, 9957, -220, 22447, 9931, -220, 22333 },
     spots = {
       { -15545, 1, -12721, turn = 2339, buzz = { 824, 0, 20 }, ride = nil, zone = false },
-      { -3381, -4250, -26729, turn = 1385, buzz = { 68, 0, 821 }, ride = nil, zone = true },
+      { -4001, -4180, -25042, turn = 3859, buzz = { -370, -70, -408 }, ride = nil, zone = false },
       { -5657, -15898, -12922, turn = 2845, buzz = { 429, 0, -401 }, ride = nil, zone = false },
       { -4220, -2033, -41718, turn = 2398, buzz = { 822, 0, -54 }, ride = nil, zone = false },
       { 980, -9248, -35399, turn = 3360, buzz = nil, ride = nil, zone = false },
@@ -6533,9 +6647,10 @@ TS2X = (function()
 
     -- ── shared bytes (client <-> lua) ─────────────────────────────────────
     local REX_SPOT_BASE = 0x1FE954       -- 10 bytes, 0xE0 | spot (1-5) per level index
-    local FEATURE2      = 0x1FE95E       -- 0x50 | bit0 Remembered Shortcuts
+    local FEATURE2      = 0x1FE95E       -- 0x50 | bit0 Remembered Shortcuts, bit1 Jump Scare quiet, bit2 Jump Scare off
     local SHORTCUTS     = 0x1FEC2C       -- remembered shortcut bits, both ways
     local Q_EJECT, Q_NTTL, Q_WHOA, Q_VOICES, Q_QUIP = 0x1FEC2D, 0x1FEC2E, 0x1FEC2F, 0x1FEC30, 0x1FEC31
+    local Q_JUMP        = 0x1FEC32       -- 3.3.0 Jump Scare queue
     local CONN_GEN      = 0x1FE96A
 
     local function feature2(bit)
@@ -6553,6 +6668,10 @@ TS2X = (function()
     local SCRIPTS, BANK = 0x1FED40, 0x0BB8D8
     local REX_YELL, YELL_VOL = 170, 128
     local yell_muted = false                         -- Rex Hide 'n Seek has 170 silenced
+    -- 3.3.0: the 50-coins jingle, held silent with Coinsanity (see
+    -- coin_fifty_jingle). Its normal volume, for when we play it ourselves.
+    local COIN50, COIN50_VOL = 79, 96
+    local coin50_muted = false
     local function sample_size(tone)
         if mm.read_u32_le(BANK) ~= 0x56414270 then return 0 end
         local programs = mm.read_u16_le(BANK + 0x12)
@@ -6566,6 +6685,7 @@ TS2X = (function()
         local e = SFX_TABLE + i * 16
         local tone, pitch, vol = mm.read_u16_le(e), mm.read_s16_le(e + 2), mm.read_s16_le(e + 4)
         if i == REX_YELL and yell_muted and vol == 0 then vol = YELL_VOL end   -- the trap still plays it
+        if i == COIN50 and coin50_muted and vol == 0 then vol = COIN50_VOL end
         if tone & 0x4000 ~= 0 then
             local level = mm.read_u8(LEVEL_ADDR)
             local p = LEVEL_LIST + (tone & 0x3FFF) * 2
@@ -6581,7 +6701,7 @@ TS2X = (function()
         return { tone = tone, pitch = pitch, vol = vol, size = ok and sample_size(tone) or 0 }
     end
     local script_i = 0
-    function M.play(i)
+    function M.play(i, vol_override)
         local ok, r = pcall(function()
             local s = resolve(i)
             if s.size < 48 then return false end
@@ -6593,7 +6713,7 @@ TS2X = (function()
             if not slot then return false end
             local sc = SCRIPTS + script_i * 16
             script_i = (script_i + 1) % 4
-            mm.write_s16_le(sc, s.tone); mm.write_s16_le(sc + 2, s.pitch); mm.write_s16_le(sc + 4, s.vol)
+            mm.write_s16_le(sc, s.tone); mm.write_s16_le(sc + 2, s.pitch); mm.write_s16_le(sc + 4, vol_override or s.vol)
             mm.write_u16_le(sc + 6, 0); mm.write_s16_le(sc + 8, -1)
             local base = QUEUE + slot * 20
             for k = 0, 8, 4 do mm.write_s32_le(base + k, mm.read_s32_le(BUZZ_POS + k)) end
@@ -6656,6 +6776,134 @@ TS2X = (function()
     end
 
     -- ======================================================================
+    -- JUMP SCARE (3.3.0, ts2_jumpscare_test): Buzz's visor face over the whole
+    -- screen for 45 frames, shaking, while "No Time to Lose" plays three times
+    -- at once at volume 200 (Quieter Jump Scare or /jumpscare quiet: once, at
+    -- 160; /jumpscare off: dropped).
+    -- ======================================================================
+    -- The face is the 64x64 picture model 45 (the visor) uses, in the level's
+    -- Buzz texture page. A small stub at 0x1FE000 adds one full-screen textured
+    -- quad (copied from the template at 0x1FE7C0) to the HUD's ordering-table
+    -- entry, then carries on into the HUD routine (0x80074F80), so the face is
+    -- drawn after the level and on top of the HUD. The game's two calls of the
+    -- HUD routine are pointed at the stub only while a scare is on screen, and
+    -- put back right after. The picture is looked up in video memory (row 31 is
+    -- unique there; a hash checks all 64 rows) once per level load.
+    local JS_STUB, JS_SHOW, JS_TEMPLATE = 0x1FE000, 0x1FE7BC, 0x1FE7C0
+    local JS_CODE = {
+        0x3C088020, 0x8D09E7BC, 0x3C0A800A, 0x1120001D, 0x8D4B1608, 0x8D4C1438, 0x256D0028,
+        0x01AC702B, 0x11C00018, 0x250EE7C0, 0x256F0004, 0x25D80024, 0x8DD90000, 0x25CE0004,
+        0xADF90000, 0x15D8FFFC, 0x25EF0004, 0x8D4E1468, 0x00000000, 0x25CE02BC, 0x8DCF0000,
+        0x3C1800FF, 0x3718FFFF, 0x01F8C824, 0x3C090900, 0x0329C825, 0xAD790000, 0x0178C824,
+        0x3C09FF00, 0x01E97824, 0x01F97825, 0xADCF0000, 0xAD4D1608, 0x0801D3E0, 0x00000000,
+    }
+    local JS_CALLS, JS_JAL_HUD, JS_JAL_STUB = { 0x07B820, 0x07BC3C }, 0x0C01D3E0, 0x0C07F800
+    local JS_FRAMES, JS_W, JS_H = 45, 512, 240
+    local function js_hexs(h) return (h:gsub("..", function(c) return string.char(tonumber(c, 16)) end)) end
+    local JS_ROW31 = js_hexs("88c8abcbccddddddddcd2c00c2ccbcbb7a5544444475a9bacbccccccbb9ab988")
+    local JS_HASH = 422007304
+    local JS_CLUT = js_hexs("fffb29e1d6da7fc33fbfdeb6bdb29bb2caac59aa15a6d3a16f992c9586880180")
+    local js = { face = nil, key = nil, left = 0, frame = 0, hooked = false }
+    local function js_locate()
+        local ok, v = pcall(memory.read_bytes_as_binary_string, 0, 0x100000, "GPURAM")
+        if not ok or type(v) ~= "string" or #v ~= 0x100000 then dbg("jump scare: can't read video memory"); return nil end
+        local p = 1
+        while true do
+            local st = v:find(JS_ROW31, p, true)
+            if not st then break end
+            p = st + 1
+            local off = st - 1
+            if off % 2 == 0 then
+                local hx, y = (off // 2) % 1024, (off // 2) // 1024 - 31
+                if y >= 0 and y + 63 < 512 then
+                    local h = 0
+                    for r = 0, 63 do
+                        local o = ((y + r) * 1024 + hx) * 2
+                        for k = o + 1, o + 32 do h = (h * 31 + v:byte(k)) % 1000000007 end
+                    end
+                    local tpx, tpy = (hx // 64) * 64, (y // 256) * 256
+                    local u, vv = (hx - tpx) * 4, y - tpy
+                    if h == JS_HASH and u + 63 <= 255 and vv + 63 <= 255 then
+                        local c = v:find(JS_CLUT, 1, true)
+                        while c and (c - 1) % 32 ~= 0 do c = v:find(JS_CLUT, c + 1, true) end
+                        if not c then dbg("jump scare: face found but not its colours"); return nil end
+                        local cx, cy = ((c - 1) // 2) % 1024, ((c - 1) // 2) // 1024
+                        return { tpage = (tpx // 64) | ((tpy // 256) << 4), clut = (cy << 6) | (cx // 16), u = u, v = vv }
+                    end
+                end
+            end
+        end
+        dbg("jump scare: the face isn't in video memory in this level")
+        return nil
+    end
+    local function js_hook(on)
+        if on then
+            for i, w in ipairs(JS_CODE) do
+                local a = JS_STUB + (i - 1) * 4
+                if mm.read_u32_le(a) ~= w then mm.write_u32_le(a, w) end
+            end
+            for _, a in ipairs(JS_CALLS) do
+                if mm.read_u32_le(a) == JS_JAL_HUD then mm.write_u32_le(a, JS_JAL_STUB) end
+            end
+        else
+            mm.write_u32_le(JS_SHOW, 0)
+            for _, a in ipairs(JS_CALLS) do
+                if mm.read_u32_le(a) == JS_JAL_STUB then mm.write_u32_le(a, JS_JAL_HUD) end
+            end
+        end
+        js.hooked = on
+    end
+    local function js_picture(f, frame)
+        local function xy(x, y) return ((y & 0xFFFF) << 16) | (x & 0xFFFF) end
+        -- the 4:3 crop of the picture (rows 8-55), a bit oversized and shaking
+        local u0, u1, v0, v1 = f.u, f.u + 63, f.v + 8, f.v + 55
+        local jx, jy = math.random(-10, 10), math.random(-6, 6)
+        local x0, y0, x1, y1 = -16 + jx, -8 + jy, JS_W + 16 + jx, JS_H + 8 + jy
+        local b = frame < 3 and 0xC0 or 0x80              -- a flash on the first frames
+        local words = {
+            0x2C000000 | (b << 16) | (b << 8) | b,
+            xy(x0, y0), u0 | (v0 << 8) | (f.clut << 16),
+            xy(x1, y0), u1 | (v0 << 8) | (f.tpage << 16),
+            xy(x0, y1), u0 | (v1 << 8),
+            xy(x1, y1), u1 | (v1 << 8),
+        }
+        for i, w in ipairs(words) do mm.write_u32_le(JS_TEMPLATE + (i - 1) * 4, w) end
+    end
+    local function jumpscare_tick(level, live)
+        if js.left > 0 then
+            if not (in_level(level) and live) or CS_PLAYING then js.left = 0
+            else
+                js_picture(js.face, js.frame)
+                mm.write_u32_le(JS_SHOW, 1)
+                js.frame = js.frame + 1
+                js.left = js.left - 1
+                return
+            end
+        end
+        if js.hooked then js_hook(false) end
+        if mm.read_u8(Q_JUMP) == 0 then return end
+        if not in_level(level) then mm.write_u8(Q_JUMP, 0); return end      -- dropped, like the other traps
+        if feature2(4) then                                                  -- /jumpscare off
+            mm.write_u8(Q_JUMP, 0); dbg("jump scare: off (/jumpscare), dropped"); return
+        end
+        if not live or CS_PLAYING then return end                           -- waits for the level
+        mm.write_u8(Q_JUMP, mm.read_u8(Q_JUMP) - 1)
+        local key = level * 65536 + mm.read_u16_le(0x0A1044)
+        if js.key ~= key then js.face = js_locate(); js.key = key end
+        if not js.face then return end
+        local id = nil
+        for _, c in ipairs({ 206, 207 }) do if resolve(c).size == 7856 then id = c; break end end
+        local quiet = feature2(2)
+        local layers, vol = quiet and 1 or 3, quiet and 160 or 200
+        if id then for _ = 1, layers do M.play(id, vol) end end
+        js_hook(true)
+        js.left, js.frame = JS_FRAMES - 1, 1             -- this frame is the first of the 45
+        js_picture(js.face, 0)
+        mm.write_u32_le(JS_SHOW, 1)
+        dbg(string.format("jump scare in level %d%s", level, quiet and " (quieter)" or ""))
+    end
+
+    -- ======================================================================
     -- EJECT BUZZ: the zoom-out exit a token uses, forced (exit_trap_test)
     -- ======================================================================
     -- Starts the game's own exit sequence: it waits until Buzz is standing still,
@@ -6670,6 +6918,46 @@ TS2X = (function()
         mm.write_s32_le(EXIT_STATE, 1)
         dbg("zoom exit started in level " .. level)
         return true
+    end
+    local function coin50_tick()
+        local a = SFX_TABLE + COIN50 * 16 + 4
+        local want = is_coinsanity and is_coinsanity()
+        if want then
+            if mm.read_s16_le(a) ~= 0 then mm.write_s16_le(a, 0) end
+            coin50_muted = true
+        elseif coin50_muted then
+            if mm.read_s16_le(a) == 0 then mm.write_s16_le(a, COIN50_VOL) end
+            coin50_muted = false
+        end
+    end
+    M.coin50_tick = coin50_tick
+
+    -- 3.3.0: checked planes and Zurg Boats, kept despawned on EVERY frame. The
+    -- client's own write lands twice a second, and in between a boat could
+    -- surface and hurt Buzz and a plane sat in its spawn animation (a plane
+    -- box keeps relaunching its planes). The client lists them at 0x1FE840:
+    -- tag 0xA5, level id, count, then 3-byte health addresses. Only for the
+    -- level the list is for, only while the level is live, and only addresses
+    -- inside the actor records.
+    local KEEP_GONE, KEEP_GONE_TAG = 0x1FE840, 0xA5
+    local ACT_LO, ACT_HI = 0x0C2EA0, 0x0C56A0
+    local keep_gone_seen = nil
+    local function keep_gone_tick(level, live)
+        if not live or mm.read_u8(KEEP_GONE) ~= KEEP_GONE_TAG or mm.read_u8(KEEP_GONE + 1) ~= level then return end
+        local n = mm.read_u8(KEEP_GONE + 2)
+        if n > 30 then return end
+        -- one debug line each time the client's list changes size, to see
+        -- that it arrives
+        local seen = level * 256 + n
+        if seen ~= keep_gone_seen then
+            keep_gone_seen = seen
+            dbg(string.format("keep gone: client lists %d plane/boat%s for level %d", n, n == 1 and "" or "s", level))
+        end
+        for i = 0, n - 1 do
+            local p = KEEP_GONE + 3 + i * 3
+            local a = mm.read_u8(p) | (mm.read_u8(p + 1) << 8) | (mm.read_u8(p + 2) << 16)
+            if a >= ACT_LO and a < ACT_HI and mm.read_u8(a) ~= 0 then mm.write_u8(a, 0) end
+        end
     end
     local function eject_tick(level, live)
         if mm.read_u8(Q_EJECT) == 0 then return end
@@ -7195,6 +7483,10 @@ TS2X = (function()
         M.music_assert()
     end
     function M.music_set_level(track) want.level = track; M.music_assert() end
+    -- 3.3.0: Skip Song during a miniboss fight or a minigame
+    function M.music_set_special(kind, track)
+        if kind == "boss" or kind == "mini" then want[kind] = track; M.music_assert() end
+    end
     function M.music_leave_level(menu)
         want.level, want.boss, want.mini = nil, 15, 16
         want.menu = menu
@@ -7234,8 +7526,9 @@ TS2X = (function()
             if l then dbg(l); print("[TS2] " .. l) end
         end
         local OFF = TS2_OFF or {}
-        if not OFF.sounds then sound_tick(level, live); eject_tick(level, live) end
+        if not OFF.sounds then sound_tick(level, live); eject_tick(level, live); coin50_tick(); jumpscare_tick(level, live) end
         if not OFF.shortcuts then shortcuts_tick(level, live) end
+        keep_gone_tick(level, live)
         if OFF.rex then
             if not M.rex_off_done then M.rex_off_done = true; pcall(remove_patches); rex_release() end
         else
@@ -7243,7 +7536,8 @@ TS2X = (function()
         end
     end
     function M.on_exit()
-        pcall(remove_patches); pcall(mute_yell, false); pcall(M.music_restore)
+        pcall(remove_patches); pcall(mute_yell, false); pcall(M.music_restore); pcall(js_hook, false)
+        if coin50_muted then pcall(mm.write_s16_le, SFX_TABLE + COIN50 * 16 + 4, COIN50_VOL) end
     end
     if event and event.onexit then
         event.onexit(function() M.on_exit() end, "ts2_320")
