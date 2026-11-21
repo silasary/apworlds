@@ -8,12 +8,13 @@
 - [APWorld Repository](https://github.com/SergeAzel/Archipelago_PDTB/releases)
 - [Client Mod - Thunderstore](https://thunderstore.io/c/paquerette-down-the-bunburrows/p/BNYSmod/Bunject_Archipelago/)
 - [Client Repository](https://github.com/SergeAzel/Bunject/releases/)
+- [AI Usage Disclosure](https://github.com/SergeAzel/Archipelago_PDTB/blob/main/worlds/paquerette_down_the_bunburrows/ai.md)
 
 
 ## Compatibility
 
 This version of the APWorld targets **Paquerette Down The Bunburrows v1.1.4** and the
-**Bunject Archipelago client mod v1.3.0**. See the [Setup Guide](../../../tutorial/Paquerette%20Down%20The%20Bunburrows/setup_en) for details.
+**Bunject Archipelago client mod v1.3.1**. See the [Setup Guide](../../../tutorial/Paquerette%20Down%20The%20Bunburrows/setup_en) for details.
 
 
 ## What kind of game is this?

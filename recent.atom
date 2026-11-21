@@ -2,139 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-20T18:23:00.855073+00:00</updated>
+  <updated>2026-11-21T00:23:29.051698+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.30.2</id>
-    <title>Super Crazy Rhythm Castle v0.30.1</title>
-    <updated>2026-11-16T15:44:51+00:00</updated>
-    <author>
-      <name>Jack</name>
-    </author>
-    <author>
-      <name>OpenAI</name>
-    </author>
-    <content># v0.30.2 — School Trip tracking and item delivery
-
-Game client **0.77.2** · APWorld **0.30.1**
-
-- Universal Tracker waits for Boring Room completion and Important Letters delivery before showing School Trip on seeds with the open Lobby doors. School Trip still needs Lobby Access and its generated Star count. Demolition Training can be skipped.
-- Received cassettes can reach the active save during play and persist after deposit. Plant Pipes, Hip Glasses and Chicken Bucket grants now recognize the newer route settings.
-- Earned checks survive disconnects and restarts. The client validates the room and save before applying pending deliveries. Temporary outages retry automatically, and login errors that need attention appear in the log.
-- The client does less repeated work during songs and handles reloading the plugin more reliably.
-
-## Updating
-
-Close the game and install **RhythmCastleAP-v0.77.2.zip**. Replace **scrc.apworld** on the computer running Universal Tracker or generating seeds, then restart Archipelago. Reconnect to your existing room and use its associated save. School Trip's live status uses Universal Tracker's default deferred-entrance setting.
-
-The School Trip route was checked in game at four and five Stars with Demolition Training unfinished. The corrected availability was checked separately in Universal Tracker v0.2.32 using that seed. The Gecko variant still needs a separate in-game test.
-
-[Installation guide](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.2/docs/INSTALL.md) · [Full changelog](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.2/CHANGELOG.md) · [Known issues](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.2/docs/KNOWN_ISSUES.md)
-</content>
-    <link href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.30.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.3.2</id>
-    <title>Xenoblade X v0.3.2</title>
-    <updated>2026-11-16T16:18:00+00:00</updated>
-    <author>
-      <name>Maragon</name>
-    </author>
-    <author>
-      <name>Nina</name>
-    </author>
-    <content>- Added logic for shop armor/weapons.&#13;
-- Added manufacturer names/level to shop locations.&#13;
-- Removed party include/exclude/size requirements for affinity quests</content>
-    <link href="https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.3.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.8.2</id>
-    <title>The Legend of Zelda: A Link to the Past v1.8.2</title>
-    <updated>2026-11-16T17:08:50+00:00</updated>
-    <author>
-      <name>aurabot</name>
-    </author>
-    <content>### The Legend of Zelda: A Link to the Past OWR v1.8.2&#13;
-&#13;
-* Universal Tracker now works with logical enemy shuffle&#13;
-* Universal Tracker now correctly tracks pendants and crystals&#13;
-* Fixed more enemy drop checks sometimes not being sent&#13;
-* Fixed Lynels and Ganon being in logic with Fighter Sword&#13;
-* karafruit made a few fixes and improvements for the features from her fork&#13;
-  * The sped-up fanfare for items now applies to Maps, Compasses, and Heart Containers&#13;
-  * Useful AP items are now prioritized above Maps and Compasses when displaying the value of items in the HUD or map&#13;
-  * Fixed the in-game map combining two dungeons if the current dungeon contained a specific PoD warp tile&#13;
-  * Fixed a display error with the Ganons Tower Compass Room map tile</content>
-    <link href="https://github.com/aurabot24/Archipelago-ALttPR/releases/tag/v1.8.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/IxrecsRandomizers/OuterWildsArchipelagoRandomizer/releases/tag/v1.4.2</id>
-    <title>Outer Wilds v1.4.2</title>
-    <updated>2026-11-16T18:46:15+00:00</updated>
-    <author>
-      <name>IxrecsRandomizers</name>
-    </author>
-    <content>For installation instructions [see the README](https://github.com/Ixrec/OuterWildsArchipelagoRandomizer#installation).&#13;
-&#13;
-- Fixed a bug where our attempt at backwards compatibility for Deep Bramble Coordinates would incorrectly delete your Interstellar Warp Drive&#13;
-- `upgrade_counts` now supports `0`s, and the vanilla stat will remain at 100% when `0` is chosen instead of starting at 50%&#13;
-	- If you're still using the Capacity/Duration mod settings, please switch to the new yaml options soon and tell us if there's something you can't accomplish with them.&#13;
-	- This is a reminder that I want to **remove the mod settings** in a future version. In fact, there are already some minor bugs visible because of trying to support too many different options/settings around these stats.&#13;
-- All of the timeouts for network operations have been increased, most from 2 seconds to 5 seconds. You should see far fewer scary orange messages now, and when you do see one it's more likely to indicate a real problem.&#13;
-- `early_key_item` can now be `interstellar_warp_drive` or (for FC spawns) `signalscope`&#13;
-- Tweaked the in-game tracker's logic display to stop adding more region explanations at "Timber Hearth" instead of "Timber Hearth Village". This was an odd inconsistency with the other vanilla planets that probably predates alternate spawns.&#13;
-- Updated `randomize_dark_bramble_layout` description to be clearer about the potential challenges&#13;
-- 1.4.1 fixed `required_friends: 10`, but 1.4.1's example yaml did not include this fix, which confused at least one player. Now the example yaml does include this fix.&#13;
-</content>
-    <link href="https://github.com/IxrecsRandomizers/OuterWildsArchipelagoRandomizer/releases/tag/v1.4.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release13</id>
-    <title>Ocarina of Time v9.1.0r6</title>
-    <updated>2026-11-16T19:08:46+00:00</updated>
-    <author>
-      <name>espeon65536</name>
-    </author>
-    <author>
-      <name>TreZ</name>
-    </author>
-    <content># OoT Randomizer APWorld v9.1.0 Full Release 13&#13;
-&#13;
-## NOT compatible with old seeds. Please make sure to only run this with freshly generated seeds (ASM was rebuilt)&#13;
-&#13;
-## Changes:&#13;
-- Fix: UT not handling blue warps well as soon as entrances were shuffled&#13;
-- Fix: Ice Trap message for other OoT worlds started with "You"&#13;
-- Feat: Junked Remote World items do no longer show the pickup textbox&#13;
-- Docs: Update Loach Shuffle Setting Description&#13;
-&#13;
-Please note: Since OoT is currently not shipped as a bundled .apworld file, but unpacked by the core AP releases, you will have to delete the lib/worlds/oot folder first before adding this custom apworld.</content>
-    <link href="https://github.com/TreZc0/OoTR-APWorld/releases/tag/v9.1.0-release13"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-26.2.3</id>
-    <title>The Legend of Zelda - Oracle of Seasons v26.2.3</title>
-    <updated>2026-11-16T21:29:46+00:00</updated>
-    <author>
-      <name>Dinopony</name>
-    </author>
-    <author>
-      <name>Ishigh</name>
-    </author>
-    <content># Useful links&#13;
-[Setup Guide](https://github.com/Ishigh1/Oracle-of-Seasons-apworld/blob/master/docs/oos_setup_en.md)&#13;
-[FAQ](https://github.com/Ishigh1/Oracle-of-Seasons-apworld/blob/master/docs/en_The%20Legend%20of%20Zelda%20-%20Oracle%20of%20Seasons.md)&#13;
-[Poptracker Pack](https://github.com/OmegaZeron/Oracle-of-Seasons-AP-Poptracker-Pack/releases/latest)&#13;
-[Poptracker Pack Guide](https://github.com/OmegaZeron/Oracle-of-Seasons-AP-Poptracker-Pack/blob/main/README.md)&#13;
-&#13;
-## 🛠️ Bugfixes&#13;
-- Fixed the rod of season item group causing Archipelago to fail generating</content>
-    <link href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/tag/oos-26.2.3"/>
-  </entry>
   <entry>
     <id>https://github.com/sfleming4587/BazaarArchipelago/releases/tag/v0.9.5</id>
     <title>The Bazaar v0.9.5</title>
@@ -538,7 +410,7 @@ Get Both Files</content>
   </entry>
   <entry>
     <id>https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.5.0</id>
-    <title>Medievil v0.3.0r2</title>
+    <title>Medievil v0.3.0r3</title>
     <updated>2026-11-18T13:48:13+00:00</updated>
     <author>
       <name>RiezaHughes</name>
@@ -979,7 +851,7 @@ There is currently no document/videos detailing all the logic tricks in each dif
   </entry>
   <entry>
     <id>https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3.1</id>
-    <title>Undertale Beta v2.0.0r2</title>
+    <title>Undertale Beta v2.0.0r4</title>
     <updated>2026-11-19T03:45:56+00:00</updated>
     <author>
       <name>Mewlif</name>
@@ -1180,7 +1052,7 @@ This project is developed with the help of an LLM. Every change is reviewed, the
   </entry>
   <entry>
     <id>https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.5.1</id>
-    <title>Medievil v0.3.0r3</title>
+    <title>Medievil v0.3.0r2</title>
     <updated>2026-11-19T11:49:23+00:00</updated>
     <author>
       <name>RiezaHughes</name>
@@ -1298,7 +1170,7 @@ Changelog:&#13;
   </entry>
   <entry>
     <id>https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.1.5</id>
-    <title>Mario Sports Mix v3.1.5</title>
+    <title>Mario Sports Mix v3.1.5.post2</title>
     <updated>2026-11-19T22:31:52+00:00</updated>
     <author>
       <name>ElectroStarz</name>
@@ -1537,5 +1409,193 @@ Remaining physical-acquisition and encounter coverage is tracked in [v1.0.0 foll
 - Persist physical lever pulls alongside seed-bound Hub checks without granting wall ownership or changing the native save layout.
 </content>
     <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.6.0-rc2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SergeAzel/Archipelago_PDTB/releases/tag/paquerette_down_the_bunburrows-0.2.1</id>
+    <title>Paquerette Down The Bunburrows v0.2.1</title>
+    <updated>2026-11-20T19:25:30+00:00</updated>
+    <author>
+      <name>SergeAzel</name>
+    </author>
+    <author>
+      <name>Sportsballs</name>
+    </author>
+    <content/>
+    <link href="https://github.com/SergeAzel/Archipelago_PDTB/releases/tag/paquerette_down_the_bunburrows-0.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/2.2.1</id>
+    <title>Slay the Spire II v1.4.1</title>
+    <updated>2026-11-20T20:24:41+00:00</updated>
+    <author>
+      <name>Kirbyfanner</name>
+    </author>
+    <author>
+      <name>Platano Bailando</name>
+    </author>
+    <author>
+      <name>Lyxn</name>
+    </author>
+    <author>
+      <name>MartyredG</name>
+    </author>
+    <author>
+      <name>Terairk</name>
+    </author>
+    <content>&gt; [!WARNING]
+&gt; Both Slay the Spire II and this Archipelago Mod are in active development. As such, while this _is_ playable, expect there to be bugs and limited features. We appreciate your playtesting!
+
+&gt; [!IMPORTANT]
+&gt; **Play on the game's beta branch.** Main-branch support is on thin ice but supported none the less: the mod still runs there, but it's largely untested and new game features might not be supported on it.
+
+## Setup
+
+For installation, YAML configuration, generation and connection instructions, see
+[the Slay the Spire II setup guide](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/blob/setup-docs-do-not-delete/world/spire2/docs/setup_en.md).
+
+Archipelago **Launcher v0.6.7+** is required for generation. Install **STS2-RitsuLib 0.6.11+** separately.
+
+The newest YAML Builder is at [sts2ap.terairk.dev](https://sts2ap.terairk.dev/#/builder), and the mod's **Mod Website &amp; YAML Builder** button opens it. [sts2ap.net](https://sts2ap.net/#/builder) gets the new options later.
+
+# Version Information
+
+- **Archipelago Mod:** 2.2.1
+- **APWorld:** 1.4.1
+- **Slay the Spire II main branch:** v0.111.1
+- **Slay the Spire II beta branch:** v0.113.1
+
+# Changelist
+
+A small release on top of 2.2.0.
+
+1) Bonus Relics get more flexibility - Allow Ancient Relics, Name more Relics.
+2) Bonus Items are randomised per slot per world so 1 YAML is more random.
+3) the Pile Sight bonus gets a relic so you can actually tell you have it
+4) Bug fix for Loyalty Customer Modifier not updating prices.
+5) Blitz Merchant is now shown in Scouting (beta-only) when you have 2 Map Sight's.
+
+### Version compatibility
+
+Works on previous multiworld versions. Seeds generated with APWorld 1.4.0 work with mod 2.2.1.
+
+Use the updated APWorld and mod together. With an older mod, a named pickup-effect relic or one of the relics that used to be refused shows up as an unavailable reward. The random order comes from the 1.4.1 APWorld.
+
+Everyone in a multiplayer lobby should use the same mod version and game branch.
+
+Tested in singleplayer on the beta branch.
+
+## Known Issues/Limitations
+
+- **Main branch:** largely untested and gets no new features. Main-branch multiplayer might not be supported in a future release.
+- In multiplayer, AP menu rewards can only be claimed outside combat; Death Fragments are disabled. **Anytime** Ancient rewards are recommended.
+</content>
+    <link href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/2.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/2.2.2</id>
+    <title>Slay the Spire II v1.4.1r2</title>
+    <updated>2026-11-20T21:50:47+00:00</updated>
+    <author>
+      <name>Kirbyfanner</name>
+    </author>
+    <author>
+      <name>Platano Bailando</name>
+    </author>
+    <author>
+      <name>Lyxn</name>
+    </author>
+    <author>
+      <name>MartyredG</name>
+    </author>
+    <author>
+      <name>Terairk</name>
+    </author>
+    <content>&gt; [!WARNING]
+&gt; Both Slay the Spire II and this Archipelago Mod are in active development. As such, while this _is_ playable, expect there to be bugs and limited features. We appreciate your playtesting!
+
+&gt; [!IMPORTANT]
+&gt; **Play on the game's beta branch.** Main-branch support is on thin ice but supported none the less: the mod still runs there, but it's largely untested and new game features might not be supported on it.
+
+## Setup
+
+For installation, YAML configuration, generation and connection instructions, see
+[the Slay the Spire II setup guide](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/blob/setup-docs-do-not-delete/world/spire2/docs/setup_en.md).
+
+Archipelago **Launcher v0.6.7+** is required for generation. Install **STS2-RitsuLib 0.6.11+** separately.
+
+The newest YAML Builder is at [sts2ap.terairk.dev](https://sts2ap.terairk.dev/#/builder), and the mod's **Mod Website &amp; YAML Builder** button opens it. [sts2ap.net](https://sts2ap.net/#/builder) gets the new options later.
+
+# Version Information
+
+- **Archipelago Mod:** 2.2.2
+- **APWorld:** 1.4.1
+- **Slay the Spire II main branch:** v0.111.1
+- **Slay the Spire II beta branch:** v0.113.1
+
+# Changelist
+
+A hotfix on top of 2.2.1.
+
+1) Dusty Tome, Sea Glass, Archaic Tooth and Touch of Orobas now work as Bonus Relics. Dusty Tome used to be given without its card.
+
+Everything from [2.2.1](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/2.2.1) is included.
+
+### Version compatibility
+
+Only the mod changed. The APWorld is still 1.4.1 and is the same as the one in 2.2.1, so there is nothing to regenerate.
+
+Works on previous multiworld versions. Seeds generated with APWorld 1.4.0 work with mod 2.2.2.
+
+Everyone in a multiplayer lobby should use the same mod version and game branch.
+
+Tested in singleplayer on the beta branch.
+
+## Known Issues/Limitations
+
+- **Main branch:** largely untested and gets no new features. Main-branch multiplayer might not be supported in a future release.
+- In multiplayer, AP menu rewards can only be claimed outside combat; Death Fragments are disabled. **Anytime** Ancient rewards are recommended.
+</content>
+    <link href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/2.2.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Joshark/archipelago-sms/releases/tag/0.6.4</id>
+    <title>Super Mario Sunshine v0.6.3r2</title>
+    <updated>2026-11-20T22:42:50+00:00</updated>
+    <author>
+      <name>MrsMarinaRose</name>
+    </author>
+    <author>
+      <name>Joshark</name>
+    </author>
+    <content># SMS V0.6.4 - The Client Update # 2&#13;
+ &#13;
+## Fixes&#13;
+* Extra shines should now count when received in the client and now towards goal.&#13;
+* Fixed an issue were 4 locations were incorrectly being marked as checked at the same time as a different location (in other words, checking one location would grant 2 instead)&#13;
+* Fix a logic issue with Sirena Beach's White Painting Blue Coin&#13;
+&#13;
+(including 0.6.3's because its still relevant and hasnt been that long)&#13;
+* Fixes Memory Leaks that were in the client, updated several of the existing functionality of the client to feel smoother / handle a few bugs that were otherwise being ignored quietly behind the scenes.&#13;
+* Fixes some DeathLinks issues that were raised in certain scenarios.&#13;
+* Several Logic issues that were raised in the chat over the last 4 months.&#13;
+&#13;
+[Setup Guide](&lt;https://github.com/Joshark/archipelago-sms/blob/main/worlds/sms/docs/setup_en.md&gt;)&#13;
+[Dolphin GC/Wii Emulator](&lt;https://dolphin-emu.org/download/&gt;)</content>
+    <link href="https://github.com/Joshark/archipelago-sms/releases/tag/0.6.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.7</id>
+    <title>Chrono Trigger Rando-Dalton Imperial v0.0.7</title>
+    <updated>2026-11-20T22:48:03+00:00</updated>
+    <author>
+      <name>Pseudoarc</name>
+    </author>
+    <author>
+      <name>Anguirel</name>
+    </author>
+    <content>Updated to latest ctrando version&#13;
+&#13;
+Fixes a potential crash on certain random tech configurations.</content>
+    <link href="https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.7"/>
   </entry>
 </feed>

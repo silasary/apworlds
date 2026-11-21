@@ -1,9 +1,15 @@
 # Slay the Spire II
 
 ## Latest
-- <a href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/download/2.2.0/spire2.apworld">Latest Version (1.4.0)</a>
+- <a href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/download/2.2.2/spire2.apworld">Latest Version (1.4.1r2)</a>
 
 ## All Versions
+
+#### v1.4.1r2
+- <a href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/download/2.2.2/spire2.apworld">https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/download/2.2.2/spire2.apworld</a>
+
+#### v1.4.1
+- <a href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/download/2.2.1/spire2.apworld">https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/download/2.2.1/spire2.apworld</a>
 
 #### v1.4.0
 - <a href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/download/2.2.0/spire2.apworld">https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/download/2.2.0/spire2.apworld</a>
