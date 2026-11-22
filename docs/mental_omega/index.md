@@ -4,7 +4,7 @@ Full catalogue; each seed&#x27;s shape comes from one signed manifest.
 
 
 ## Downloads
-- <a href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.50/mental_omega.apworld">Latest Version (1.50.0)</a>
+- <a href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/download/V1.51/mental_omega.apworld">Latest Version (1.51.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

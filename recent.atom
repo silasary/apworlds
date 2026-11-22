@@ -2,102 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-22T12:15:00.389701+00:00</updated>
+  <updated>2026-11-22T18:18:52.730109+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <entry>
-    <id>https://github.com/silasary/APxiv/releases/tag/0.32.0</id>
-    <title>Final Fantasy XIV v0.32.0</title>
-    <updated>2026-11-19T00:07:32+00:00</updated>
-    <author>
-      <name>silasary</name>
-    </author>
-    <content>* Added Deep Dungeon checks.
-* Assorted bug fixes related to restrictive starts.</content>
-    <link href="https://github.com/silasary/APxiv/releases/tag/0.32.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Mysteryem/Archipelago-TCS/releases/tag/v2.0.0</id>
-    <title>Lego Star Wars: The Complete Saga v2.0.0</title>
-    <updated>2026-11-19T01:49:18+00:00</updated>
-    <author>
-      <name>Mysteryem</name>
-    </author>
-    <content>Almost a full rewrite of the APWorld's logic (just True Jedi logic that is unchanged).&#13;
-- Each Minikit location has its own logic now, instead of before, where all Minikits in a chapter would only enter logic when you could reach all 10 in a chapter.&#13;
-- Logic Difficulty options for different levels of skill/knowledge&#13;
-  - None: Tries to match developer intended strategies, for players new to the game&#13;
-  - Normal: No glitches expected, and Extras in logic, for players that have played most of the vanilla content&#13;
-  - Moderate: Simpler glitches expected, for players that play the Archipelago randomizer often and are willing to learn simpler tricks&#13;
-  - Hard: More difficult jumps and tricks, for players starting to learn speedrun tricks (installing *BrickBench* to assist in learning tricks is recommended)&#13;
-  - Expert/Super Expert logic difficulties are planned, but are not being worked on at this time&#13;
-- Exactly what tricks are expected by each Logic Difficulty are highly subject to change based on player feedback. Some tricks may be more difficult to understand while there are no videos explaining the tricks, so please take into consideration that videos of tricks are planned.&#13;
-&#13;
-Minikit location names are highly subject to change (maybe a google form can be put together for the discord channel to suggest better names).&#13;
-&#13;
-There is currently no PopTracker pack, and the client's Universal Tracker support does not include maps. The PopTracker pack is being worked on to support the v2.x.x APWorlds.&#13;
-&#13;
-There is currently no document/videos detailing all the logic tricks in each difficulty. Most tricks have comments in the logic data for the corresponding Chapter/Bonus level https://github.com/Mysteryem/Archipelago-TCS/tree/main/lego_star_wars_tcs/data/logic (note that the `None` logic difficulty is referred to as the `base` logic internally and `er_rule`s are not used currently, but may contain relevant trick comments). If you would like to contribute videos of tricks, please upload them to YouTube.&#13;
-&#13;
-# Known Issues&#13;
-- The pause screen text for showing goal progress does not get reset properly when closing the client, so the text can stack up if you open and close the client repeatedly&#13;
-- Boss-related options have erroneously included `Darth Vader (3-6)` in the allowed bosses and maximum number of bosses that can be enabled. Yamls intending to enable the 3-6 boss should use `Anakin Skywalker (3-6)`.&#13;
-&#13;
-# Logic Rewrite&#13;
-- Logic is rewritten to use Rule Builder and logical regions&#13;
-- Minikits now have individual logic&#13;
-- Four Logic Difficulty options for different player skill/knowledge&#13;
-- Uncap OT High Jump option considered by logic&#13;
-&#13;
-# Client&#13;
-- /toggle_windowed command allows for playing in a window without DxWnd&#13;
-- Debug commands to peek at game memory&#13;
-- APWorld version now shown in the client description and window title&#13;
-- Customised Death Link death messages&#13;
-- Active Extras are written into save data and restored by the client&#13;
-- Replaced some of the fake items names with even faker sounding names&#13;
-&#13;
-# New Options&#13;
-- Logic Difficulty&#13;
-- Logic option for whether 2-1 expects progressing with pod racers&#13;
-- Non-vehicle Max Health&#13;
-- Vehicle Max Health&#13;
-- Random options for Goal Chapter&#13;
-&#13;
-# Universal Tracker support&#13;
-- `/explain` support for rules&#13;
-- Deferred events support&#13;
-- Glitched logic shows +1 logic difficulty by default&#13;
-- `/ut_toggle_all_glitches` shows the highest logic difficulty. If using the standalone Universal Tracker client, this command is not available, but you can `/manually_collect UT_GLITCHED_ALL` instead&#13;
-&#13;
-# Changes&#13;
-- Anakin's Flight and A New Hope are now played in Free Play mode&#13;
-- Attempting to play a level in Story mode that should be played in Free Play kicks the player back to the Cantina now, instead of just warning them&#13;
-- No Minikit items in the item pool if the minikit goal is disabled&#13;
-- Removed Luke Skywalker (Dagobah) being able to complete Dagobah (logic accounts for this now)&#13;
-- Removed Yoda/Yoda (Ghost) getting a speed increase at the start of 3-6 (logic accounts for this now)&#13;
-&#13;
-# Fixes&#13;
-- Fix Yoda/Yoda (Ghost) being able to perform glitchy wall jumps&#13;
-- Fix Yoda logically being able to wear hats&#13;
-- Fix the client thinking you're not playing when shadows are off&#13;
-- Fix slot name/seed name clobbering Challenge mode timer data&#13;
-&#13;
-# Internal&#13;
-- Slot data handling entirely rewritten and much easier to update now&#13;
-- Most use of string literals replaced with StrEnum/IntEnum&#13;
-- Added some generation tests&#13;
-- Add future-proofing check that the seed name is not too long&#13;
-- Add check that the slot name does not encode to too many bytes&#13;
-- Refactored __init__.py to be smaller, extract code elsewhere&#13;
-- Bumped minimum AP version to 0.6.8</content>
-    <link href="https://github.com/Mysteryem/Archipelago-TCS/releases/tag/v2.0.0"/>
-  </entry>
-  <entry>
     <id>https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3.1</id>
-    <title>Undertale Beta v2.0.0r4</title>
+    <title>Undertale Beta v2.0.0r2</title>
     <updated>2026-11-19T03:45:56+00:00</updated>
     <author>
       <name>Mewlif</name>
@@ -298,7 +210,7 @@ This project is developed with the help of an LLM. Every change is reviewed, the
   </entry>
   <entry>
     <id>https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.5.1</id>
-    <title>Medievil v0.3.0r2</title>
+    <title>Medievil v0.3.0r3</title>
     <updated>2026-11-19T11:49:23+00:00</updated>
     <author>
       <name>RiezaHughes</name>
@@ -323,7 +235,7 @@ Changelog:&#13;
   </entry>
   <entry>
     <id>https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.3.4</id>
-    <title>ARK Survival Evolved v1.0.0r2</title>
+    <title>ARK Survival Evolved v1.0.0r6</title>
     <updated>2026-11-19T13:09:22+00:00</updated>
     <author>
       <name>Jbaker16163</name>
@@ -1580,5 +1492,38 @@ Please see the setup instructions at the top of this release for more informatio
 &#13;
 No game assets are distributed in any of these releases.</content>
     <link href="https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.7.0-rc2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.51</id>
+    <title>Mental Omega v1.51.0</title>
+    <updated>2026-11-22T14:35:20+00:00</updated>
+    <author>
+      <name>Mental Omega Randomizer contributors</name>
+    </author>
+    <content>- Fix error message with coop missions&#13;
+- Fix Gharial prototype watermodel&#13;
+- Fix Mastodon reload buff&#13;
+- Fix Bison repair&#13;
+- Adjust Conquest Mode&#13;
+- Fix Advance filter error&#13;
+- Fix Archipelago Keymode (checks gave 100 keys instead of a single key)&#13;
+- Add Victory Modal in Gridmode&#13;
+- Fix Nanofibre sync mutation</content>
+    <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.51"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.8</id>
+    <title>Chrono Trigger Rando-Dalton Imperial v0.0.8</title>
+    <updated>2026-11-22T17:01:16+00:00</updated>
+    <author>
+      <name>Pseudoarc</name>
+    </author>
+    <author>
+      <name>Anguirel</name>
+    </author>
+    <content>Updated to latest ctrando version&#13;
+&#13;
+Picks up a fix for the Nu in Keeper's Dome not properly granting access to certain eras when Epoch was already obtained.</content>
+    <link href="https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.8"/>
   </entry>
 </feed>

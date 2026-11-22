@@ -7,7 +7,7 @@ to allow the player to tailor their play experience however they want.
 
 
 ## Downloads
-- <a href="https://github.com/Anguirel86/ap_ctrdi/releases/download/v0.0.7/ctrdi.apworld">Latest Version (0.0.7)</a>
+- <a href="https://github.com/Anguirel86/ap_ctrdi/releases/download/v0.0.8/ctrdi.apworld">Latest Version (0.0.8)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
