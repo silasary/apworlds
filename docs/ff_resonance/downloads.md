@@ -1,9 +1,12 @@
 # Final Fantasy Resonance
 
 ## Latest
-- <a href="https://github.com/wrjones104/ffresonance-archipelago/releases/download/0.30.0/ff_resonance.apworld">Latest Version (0.30.0)</a>
+- <a href="https://github.com/wrjones104/ffresonance-archipelago/releases/download/0.31.0/ff_resonance.apworld">Latest Version (0.31.0)</a>
 
 ## All Versions
+
+#### v0.31.0
+- <a href="https://github.com/wrjones104/ffresonance-archipelago/releases/download/0.31.0/ff_resonance.apworld">https://github.com/wrjones104/ffresonance-archipelago/releases/download/0.31.0/ff_resonance.apworld</a>
 
 #### v0.30.0
 - <a href="https://github.com/wrjones104/ffresonance-archipelago/releases/download/0.30.0/ff_resonance.apworld">https://github.com/wrjones104/ffresonance-archipelago/releases/download/0.30.0/ff_resonance.apworld</a>

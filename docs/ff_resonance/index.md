@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/wrjones104/ffresonance-archipelago/releases/download/0.30.0/ff_resonance.apworld">Latest Version (0.30.0)</a>
+- <a href="https://github.com/wrjones104/ffresonance-archipelago/releases/download/0.31.0/ff_resonance.apworld">Latest Version (0.31.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

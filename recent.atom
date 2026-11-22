@@ -2,58 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-22T00:20:50.148904+00:00</updated>
+  <updated>2026-11-22T06:20:03.778807+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/icebound777/PMR_APWorld/releases/tag/0.6.9</id>
-    <title>Paper Mario v0.6.9</title>
-    <updated>2026-11-18T21:59:21+00:00</updated>
-    <author>
-      <name>icebound777</name>
-    </author>
-    <content>## Bugfixes/Corrections&#13;
-&#13;
-* Logic&#13;
-  * Toad Town&#13;
-    * Fix `Open Blue House: True` not actually doing anything logically, and still expecting finding the `OddKey` to open the house from the outside.&#13;
-  * Toad Town Tunnels&#13;
-    * Fix logic erroneously requiring `SuperBoots` for building the chapter 7 block bridge if `Chapter 7 bridge visible` was turned on. This fix will now put chapter 7 in logic much earlier if the bridge is always visible.&#13;
-  * Shooting Star Summit&#13;
-    * Fix reaching the top of the summit being in logic while jumpless with Parakarry. Logic now expects the `Boots`.&#13;
-  * Mt. Rugged&#13;
-    * Fix the train station bushes logically requiring `Boots` to reach.&#13;
-  * Bowser's Castle&#13;
-    * Fix the basement jail / lava channels area being logically reachable without `Watt`.&#13;
-    * Fix `BC Lava Channel 3 On Island 1` being considered reachable without the boots while the lava is still active.&#13;
-    * Fix `BC Lava Channel 3 On Island 2` only being considered reachable with the boots, even though Parakarry suffices.&#13;
-  * Misc&#13;
-    * Minor fixes and adjustments to logic all over the place. These include removing redundant progress checks (which may speed up seed generation), and proper fixes that will only matter once glitch options or entrance shuffle are available.&#13;
-* Automated AP Tests&#13;
-  * Fix several test fails this apworld caused during the `general` set of automated AP tests.&#13;
-&#13;
-## Other&#13;
-&#13;
-* Map Names&#13;
-  * Fix typo: Rename `Koopa Bros.' Fortress` map `Right Starway` to `Right Stairway`.&#13;
-* YAML options&#13;
-  * `Cutscene Mode` now defaults to `Minimal`.&#13;
-  * `Chet Rippo Available` now defaults to `True`.&#13;
-</content>
-    <link href="https://github.com/icebound777/PMR_APWorld/releases/tag/0.6.9"/>
-  </entry>
-  <entry>
-    <id>https://github.com/CurrentlyPending/BeatSaberAP/releases/tag/v0.1.2</id>
-    <title>Beat Saber v0.1.2</title>
-    <updated>2026-11-18T23:03:04+00:00</updated>
-    <author>
-      <name>CurrentlyPending</name>
-    </author>
-    <content>buncha bug fixes. checks sending correctly and preset mode fixed hopefully</content>
-    <link href="https://github.com/CurrentlyPending/BeatSaberAP/releases/tag/v0.1.2"/>
-  </entry>
   <entry>
     <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.6.0-rc1</id>
     <title>Kirby &amp; The Amazing Mirror v0.6.0rc1</title>
@@ -246,7 +199,7 @@ There is currently no document/videos detailing all the logic tricks in each dif
   </entry>
   <entry>
     <id>https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3.1</id>
-    <title>Undertale Beta v2.0.0r4</title>
+    <title>Undertale Beta v2.0.0r2</title>
     <updated>2026-11-19T03:45:56+00:00</updated>
     <author>
       <name>Mewlif</name>
@@ -447,7 +400,7 @@ This project is developed with the help of an LLM. Every change is reviewed, the
   </entry>
   <entry>
     <id>https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.5.1</id>
-    <title>Medievil v0.3.0r2</title>
+    <title>Medievil v0.3.0r3</title>
     <updated>2026-11-19T11:49:23+00:00</updated>
     <author>
       <name>RiezaHughes</name>
@@ -472,7 +425,7 @@ Changelog:&#13;
   </entry>
   <entry>
     <id>https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.3.4</id>
-    <title>ARK Survival Evolved v1.0.0r2</title>
+    <title>ARK Survival Evolved v1.0.0r6</title>
     <updated>2026-11-19T13:09:22+00:00</updated>
     <author>
       <name>Jbaker16163</name>
@@ -1543,5 +1496,150 @@ Selecting any of the new trap/powerup items as filler (other than Slime Storm) s
   the rescue that brings that NPC to HQ is checked, and follows the new Nega logic.
 </content>
     <link href="https://github.com/MuratDev41/gravity-circuit-ap/releases/tag/v0.11.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/wrjones104/ffresonance-archipelago/releases/tag/0.31.0</id>
+    <title>Final Fantasy Resonance v0.31.0</title>
+    <updated>2026-11-22T00:20:25+00:00</updated>
+    <author>
+      <name>wrjones104</name>
+    </author>
+    <content># v0.31.0 (apworld 0.31.0, mod 0.62.0): public playtest, fourth build&#13;
+&#13;
+This one is mostly about enemy scaling. After a lot of AP runs I played some vanilla, and the enemies there are much softer than our Normal. Hallway fights in an AP run were long, and later bosses were too hard. So I've toned scaling down across the board. There's also a new option to hide quest rewards, and a few bug fixes. Please send feedback with the template in the [Playtester guide](https://github.com/wrjones104/ffresonance-archipelago/blob/main/docs/playtester_guide.md).&#13;
+&#13;
+### Downloads&#13;
+&#13;
+| File | Description |&#13;
+|---|---|&#13;
+| `FFRArchipelago.zip` | UE4SS Lua game mod (v0.62.0, build `7b90595e`) |&#13;
+| `ff_resonance.apworld` | Archipelago world and Final Fantasy Resonance Client (v0.31.0, build `66073f7e`) |&#13;
+| `Final Fantasy Resonance.yaml` | Template player YAML with default options |&#13;
+&#13;
+### Install and upgrade&#13;
+&#13;
+- Use the mod and the apworld from the same release. The mod logs `version 0.62.0 (build 7b90595e)` to `UE4SS.log` when it loads, and the client prints `world version 0.31.0 (build 66073f7e)` when it starts.&#13;
+- Replace the whole `FFRArchipelago` folder in `ue4ss\Mods`, and put the new apworld in `custom_worlds`. Close the Launcher and every client window first.&#13;
+- Generate a new seed. Seeds from v0.30.0 have a gift location and four items this build no longer has, and the template yaml now asks for world 0.31.0.&#13;
+- Install steps are in the [README](https://github.com/wrjones104/ffresonance-archipelago#installation).&#13;
+&#13;
+### What's changed since v0.30.0&#13;
+&#13;
+**Scaling is softer.** Every **AP: Scaling strength** moved down a step:&#13;
+&#13;
+| Strength | Enemy level | Enemy HP | Enemy Attack | Boss level | Boss power |&#13;
+|---|---|---|---|---|---|&#13;
+| Casual | 80% to 88% of yours | 60% to 75% | 75% to 90% | 95% to 100% | 90% to 100% |&#13;
+| Normal | 85% to 92% | 70% to 85% | 85% to 100% | 100% to 103% | 100% to 105% |&#13;
+| Expert | 90% to 100% | 80% to 105% | 90% to 115% | 105% to 110% | 105% to 110% |&#13;
+&#13;
+Each range ramps from party level 5 to 25.&#13;
+&#13;
+- On Normal, enemies now sit a bit under your level. They lose more HP than Attack, so fights end sooner but can still hurt if you're careless.&#13;
+- Enemies from areas ahead of you used to be 3 levels over the band's middle on Normal, which is where the spongy fights came from. Now they're 1 over.&#13;
+- Bosses on Normal sit at about your level.&#13;
+- Expert is roughly the old Normal with a bit less HP. If you want a real challenge, try Expert scaling with the game on Expert too.&#13;
+- Above party level 30, enemy levels grow 3 levels for every 4 you gain. The game's own enemy stats grow much faster than the party's in the late game, so enemies held at your level kept pulling ahead. At level 60 on Normal, the final boss now meets you at 54 instead of 66.&#13;
+&#13;
+**MRP per fight stays the same.** Normally, lower enemy levels would mean less MRP per battle. Now MRP is paid as if the enemies were at your level, so the vision grind gets shorter, not longer, now that fights end sooner. If you want even less grind, the **AP: MRP rate** slider is still there.&#13;
+&#13;
+**Hide quest rewards.** There's a new yaml option, `hide_quest_rewards` (off by default). With it on, every reward on the Quests screen shows `???` instead of the item it holds. You still see what you got when you finish the quest. It only matters with `include_side_quests` on.&#13;
+&#13;
+**Items:** White Jade Stone, Black Jade Stone, Magic Tome and Tunnel Key aren't in the pool anymore. They don't open anything in an open world seed.&#13;
+&#13;
+**Archipelago page:**&#13;
+&#13;
+- The Seed tab now has the monitor icon instead of the speaker.&#13;
+- The rows on both tabs keep the same order every time you open the page. They used to shuffle around.&#13;
+&#13;
+**The log** now gets a `battle: won` line after each win, with how long you were off the field. If you send your `UE4SS.log`, I can see how long fights really take.&#13;
+&#13;
+**Fixes:**&#13;
+&#13;
+- Some chests read as opened as soon as you arrived on a map and got sent before you touched them. The mod now waits until the game's save says the chest was really opened.&#13;
+- If you play the same save on two computers, chests you'd already opened on the other one get sent again with no pop-up, so they don't steal the next chest's pop-up anymore.&#13;
+- The coloured item line no longer sticks around on a quest's later messages (the stat bonus and "You can now summon..." lines).&#13;
+- Starting a plain **New Game**, or loading one of your own non-AP saves, no longer gets any of the seed's changes. A plain New Game used to start Rain at level 55. If you load the seed's save and then one of your own in the same session, the mod tells you to restart the game first.&#13;
+&#13;
+**Gifts:**&#13;
+&#13;
+- NPC gift locations are now named for where the NPC stands (like "Grandshelt - Colosseum - Upper East Terrace Gift") instead of the item they give in the base game.&#13;
+- I removed the Zoldaad Dungeon gift because it can't be reached from the open world start.&#13;
+&#13;
+### Please test&#13;
+&#13;
+Scaling is the big one. Note your **AP: Scaling strength** and the game's own difficulty when you report, and send `UE4SS.log` if you can.&#13;
+&#13;
+- How long a normal fight takes on Normal, both in areas around your level and in areas ahead of you. They should be quick but not free.&#13;
+- Whether MRP per fight feels the same as before, and whether the vision grind feels better.&#13;
+- Bosses at party level 30 and up. Are they fair with what the seed has given you?&#13;
+- Levels 40 to 60, and the final boss at about level 60. If it's too easy up there now, tell me. The softer strengths and the late-game slowdown stack, and I'd rather tune the slowdown than the strengths.&#13;
+- Expert scaling with the game on Expert, if that's your thing. Hard but winnable is the goal.&#13;
+- `hide_quest_rewards`: every reward on the Quests screen should read `???` in white.&#13;
+&#13;
+Bug fixes to check:&#13;
+&#13;
+- On arrival in a new map, look for `never seen closed` lines in `UE4SS.log`. If a chest from one of those lines looks open in the game and you can never open it, send me its key (like `chest:3100:3`).&#13;
+- If you play one save on two computers, open a new chest on the second one and check that its pop-up shows its own item.&#13;
+- Finish a quest with a stat bonus or an esper, like Nichol's Duty in Olderion. The coloured item line should only be on the first message.&#13;
+- Start a plain **New Game** with the client connected. Rain should stay at level 1, and the log should say `Archipelago is paused`.&#13;
+&#13;
+### Known issues&#13;
+&#13;
+- When two checks come at once (a chest right after a boss win), the second pop-up can show the game's own item. The check is still sent.&#13;
+- Three NPC gifts aren't locations: the Ether NPC in the Commercial District, the Mist Potion NPC in Grandshelt Castle, and the Zoldaad Dungeon NPC. They give their normal items if you find them.&#13;
+- Character quests' stat bonuses (like "Attribute Bonus: Fina") aren't items. The quest gives them as in the base game.&#13;
+- I've had one crash about 6 hours in, a few seconds after landing the airship, with FFR_MapMarkers and FFRBestiary on. It doesn't look like this mod's loop, but I'm not sure yet. If you crash, send `Mods/FFRArchipelago/ap_trace.txt`, the crash folder in `%LOCALAPPDATA%\FFRS\Saved\Crashes`, and `UE4SS.log` before you start the game again.&#13;
+- The `ModSettings` Lua mod (from FFR Modding Tools) can crash the game a second or two after a map change, with or without this mod. To avoid it, turn off **Hint on map load** in its panel (F10), or set `ModSettings : 0` in `Mods\mods.txt`.&#13;
+- Mt. Thunderclap's shortcut ladder is invisible. You can still let it down from the top and climb it.&#13;
+- Not done yet: espers other than Siren come the vanilla way, and the Chamber of Arms and the Arena are untouched.&#13;
+&#13;
+Most of this project's code and docs were written with Claude and tested by hand; see [DISCLOSURE.md](https://github.com/wrjones104/ffresonance-archipelago/blob/main/DISCLOSURE.md) for details.</content>
+    <link href="https://github.com/wrjones104/ffresonance-archipelago/releases/tag/0.31.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_4</id>
+    <title>Civilization IV v0.0.1r2</title>
+    <updated>2026-11-22T05:31:08+00:00</updated>
+    <author>
+      <name>VincentSIFTD</name>
+    </author>
+    <content>A mix of bug fixes, quality of life, and one new feature in this release. The main additions are new locations from Resourcesanity (but note a bug that needs to be worked around in this release!) and the ability to peek what items will be sent when you spend a Great Person (with other types of peeks coming soon).&#13;
+&#13;
+### Changelog:&#13;
+- Resourcesanity is available in an initial form. A check is sent when you have at least one instance of a resource available in your capital, either by connecting it naturally or getting it via trade. The logic makes sure you have the techs needed to reveal and connect the given resource (or make a corporation for it in the case of Aluminum and Oil), and additionally requires Iron Working to connect Calendar resources (as the majority of them are placed in jungle on "normal" maps). You also aren't guaranteed to have every resource on every map and may need to generate another game to get all checks.&#13;
+- If Peekable Locations is set to either "Great People" or "All" in the YAML, the option to "bulb" a location will show the name of the item you're sending. In this initial implementation GPs are the only location that's peekable, it doesn't say who the item is for, or what type the item is (Progression/Useful/Filler/Trap), all of which are planned for later updates.&#13;
+- Fixed Archipelago Communism being named Archipelago Utopia, causing the location not to send.&#13;
+- Did lots of refactoring and code cleanup that's not interesting to users&#13;
+&#13;
+### Installation Instructions:&#13;
+1. Unzip Civ4-Archipelago-Mod into your Beyond the Sword mod folder (I've been testing it in the My Games one, but theoretically it should also work in the installation folder one; let me know if one or both work or don't work!), make sure the structure is Beyond the Sword/Mods/Civ4-Archipelago-Mod and that there isn't an extra folder in that structure.&#13;
+2. Install the APWorld as normal.&#13;
+&#13;
+### Play Instructions:&#13;
+1. Run the Civilization IV client from Archipelago, but **do not connect from the client**; you'll do so in-game (and eventually I want to remove the ability to connect from the client)&#13;
+2. Start a new Civ4 Beyond the Sword game as normal--**I highly recommend playing in windowed mode**, since this is an alpha and if the game freezes it can be difficult/impossible to close out of it if it's in full screen mode.&#13;
+3. When you load in you'll get a popup saying to connect to the Archipelago Server: you do this by opening up the BUG options (the little dragon in the upper-right corner), entering in your information, then clicking "Save and Connect." If the connection is successful you'll get a popup that says "Successfully Connected," and you can play as normal. If you get an error, try connecting again, it most often means you don't have the client open or you're already connected in the client. Occasionally however the connection will be slow and you connect in the client but get an error in-game; in that case disconnect in the client and try again. **If this happens a lot to you let me know!**&#13;
+&#13;
+### Gameplay Issues:&#13;
+1. If a resource is made obsolete (Fur, Whale, and Ivory from Plastics, Combustion, and Industrialism respectively) it will not send! The easiest way to fix this is removing the tech in World Builder for a turn, sending the check, then re-adding the tech.&#13;
+2. You can still receive techs in Techsanity from some ways that aren't traditional research: starting techs from your leader and tech trading, and this could lead to duplicates. These are planned to be removed in future updates. Let me know if things break because of them--they shouldn't, but I'm not 100% certain.&#13;
+3. The settings aren't balanced at all, and it may make you do things like get 9 Great Scientists when all you have is the library or research Satellites before you have any economic techs. The Techsanity Era Gates setting should help the latter, and I'd highly recommend against large GPsanity numbers unless you have a lot of time to kill (though the added Great People in the pool will help).&#13;
+4. There are a lot of debugging messages left in the mod. I removed some of them, but don't expect a clean feed.&#13;
+5. When you're trying to select an "obsolete" wonder to build in the city screen, the building options will jump to the top of the building list due to the hacky way I've implemented that ability. I want to fix it eventually, but for now the easiest way to mitigate it is to use the wonder filter on the right side of the city list (the star), which will have it jump back to the start of the wonders, which hopefully won't make it jump. You can also use the "choose what to build next" dialog, or just select it without moving your mouse (use the scroll wheel).&#13;
+6. The "AP" Unique Units can't be upgraded into, though they can be upgraded themselves. This is planned to be fixed in an upcoming update.&#13;
+7. AP Unique Buildings are programmed assuming you don't have a "natural" Unique Building for your Civilization for purposes like avoiding duplicates of the same class of building, so if you use a Civilization other than AP World things could break.&#13;
+8. If a building has a requirement to be built (such as the University), and you build an AP Unique Building version of it (such as the Seowon), you aren't able to build the original version anymore. There's no reason why you'd need to do this (the only vanilla building that's not strictly worse than the UB alternatives is the Theatre/Hippodrome, and that doesn't suffer the bug), but it's weird behavior.&#13;
+&#13;
+### Technical Issues:&#13;
+1. I had generation errors when creating solo/near-solo multiworlds with high Techsanity Era Gates values--I never tested with higher values with locations other than Techsanity enabled but keep that in mind if you're having trouble generating.&#13;
+2. Whenever you close and reopen the game/a save file, you need to disconnect the client, and you should close and reopen the client to avoid missing checks. I plan to try and automate this in future updates.&#13;
+3. There have been bug reports of items received/obtained while offline not properly appearing in-game and/or being sent to the multiworld when reconnecting. I think this is related to mismatching either mod or APworld versions, but I haven't fully found the root cause yet.&#13;
+4. If you add Unique Buildings to the itempool, it causes a noticeable amount of lag when entering the city screen in some cases (due to the coding I need to make them work how I want them to). I think it scales with the amount of cities you have, but it also might be just a memory leak. If you experience this lag (or don't and think you would), let me know!&#13;
+&#13;
+If you have any questions, bug reports, or things I forgot to mention, let me know in [the Civilization IV thread in the Archipelago Discord server](https://discord.com/channels/731205301247803413/1326231506682904576).&#13;
+&#13;
+Github for the APWorld: https://github.com/VincentBorchardt/Archipelago/blob/main/worlds/civ_4/</content>
+    <link href="https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_4"/>
   </entry>
 </feed>
