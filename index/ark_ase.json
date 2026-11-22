@@ -122,7 +122,7 @@
       "tag": "v0.1.6-alpha",
       "title": "v0.1.6-alpha",
       "version_simple": "1.0.0",
-      "world_version": "1.0.0r3"
+      "world_version": "1.0.0r2"
     },
     "v0.2-alpha": {
       "created_at": "2026-08-12T20:15:24Z",
@@ -138,7 +138,7 @@
       "tag": "v0.2-alpha",
       "title": "v0.2-alpha",
       "version_simple": "1.0.0",
-      "world_version": "1.0.0r4"
+      "world_version": "1.0.0r2"
     },
     "v0.2.5-alpha": {
       "created_at": "2026-08-22T23:21:11Z",
@@ -154,7 +154,7 @@
       "tag": "v0.2.5-alpha",
       "title": "v0.2.5-alpha",
       "version_simple": "1.0.0",
-      "world_version": "1.0.0r2"
+      "world_version": "1.0.0r3"
     },
     "v0.3": {
       "created_at": "2026-09-10T03:23:40Z",
@@ -170,7 +170,7 @@
       "tag": "v0.3",
       "title": "v0.3",
       "version_simple": "1.0.0",
-      "world_version": "1.0.0r5"
+      "world_version": "1.0.0r2"
     },
     "v0.3.1": {
       "created_at": "2026-09-10T03:23:40Z",
@@ -186,7 +186,7 @@
       "tag": "v0.3.1",
       "title": "v0.3.1",
       "version_simple": "1.0.0",
-      "world_version": "1.0.0r2"
+      "world_version": "1.0.0r4"
     },
     "v0.3.2": {
       "created_at": "2026-09-26T00:38:48Z",
@@ -202,7 +202,7 @@
       "tag": "v0.3.2",
       "title": "v0.3.2",
       "version_simple": "1.0.0",
-      "world_version": "1.0.0r2"
+      "world_version": "1.0.0r5"
     },
     "v0.3.3": {
       "created_at": "2026-10-28T18:26:57Z",
@@ -219,6 +219,22 @@
       "title": "v0.3.3",
       "version_simple": "1.0.0",
       "world_version": "1.0.0r6"
+    },
+    "v0.3.4": {
+      "created_at": "2026-11-19T13:09:22Z",
+      "description": "# ARK-Ipelago Evolved v0.3.4\r\n\r\nThis release introduces a new **Cave Trail Recorder** that I was using to map caves for PopTracker, improved DeathLink messages, support for building mods added mid-game, and several important logic, plugin, and tracker fixes.\r\n\r\n## New Features\r\n\r\n### DeathLink Improvements\r\n- **Custom Death Messages:** DeathLink messages now describe what killed you, including messages such as:\r\n  > \"Ghios tried feeding a Raptor, but the Raptor ate Ghios instead.\"\r\n- **Shared Slot Support:** DeathLinks received from other games now kill every survivor connected to the same slot instead of just one.\r\n\r\n### Mid-Game Building Mod Support\r\n- Added `/aplatemod <mod id>` to support building mods installed after seed generation.\r\n- Supports **Structures Plus (S+)**, **Super Structures (SS)**, and the **Note Tracker** mod.\r\n- Only unlocks modded versions of structures you've already unlocked, preserving progression.\r\n\r\n### Cave Trail Recorder (`/aptrail`)\r\nA new tool for recording cave exploration paths and generating cave maps.\r\n\r\n**Commands:**\r\n- `/aptrail start <cave>` \u2014 Start recording a cave route.\r\n- `/aptrail mark <label>` \u2014 Mark a specific location.\r\n- `/aptrail stop` \u2014 Stop recording.\r\n- `/aptrail pause` and `/aptrail resume` \u2014 Pause or resume recording.\r\n\r\n**Additional Mapping Features:**\r\n- **Movement Types:** `swim`, `fly`, `walk`, `wire`, and `lava` identify how you're traveling.\r\n- **Room Mapping:** `room` and `fillroom` allow you to map rooms by walking their boundaries.\r\n- **Environmental Mapping:** `fillroom lava` and `fillroom water` allow you to designate lava-filled and water-filled areas.\r\n\r\n### New Talon Checks\r\n\r\n**Ragnarok**\r\n- Fire Talon \u00d72 and \u00d710\r\n- Lightning Talon \u00d72 and \u00d710\r\n- Poison Talon \u00d72 and \u00d710\r\n\r\n**Valguero**\r\n- Fire Talon \u00d72 and \u00d710\r\n\r\n### Valguero Guardian's Sanctuary\r\n- Dragon, Manticore, and Megapithecus are now treated as one combined boss encounter.\r\n- Each difficulty uses its actual in-game tribute requirements.\r\n- Progression logic is based on the **Gamma** recipe.\r\n\r\n## Logic Changes\r\n- Removed Prime Fish checks from Scorched Earth.\r\n\r\n## Bug Fixes\r\n- Fixed Tek engrams remaining locked after completing the goal.\r\n- Fixed boss kills not being marked as completed in PopTracker.\r\n- Fixed item delivery messages displaying \"sent X to Y\" without identifying which check sent the item.\r\n- Fixed the Ragnarok Blue Obelisk visit failing to send its check.\r\n- Fixed numerous other Ragnarok visit checks that were not triggering correctly.\r\n\r\n## Additional Downloads\r\nThe following community tools are also included as attachments in this release:\r\n\r\n[Lurch's PopTracker](https://github.com/lurch9229/Arkipelago-Poptracker/releases)\r\n[Avocado's Launcher](https://github.com/aSoberAvocado/ARK-Ipelago-Evolved-Launcher/releases)",
+      "download_url": "https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/download/v0.3.4/ark_ase.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f7cdb6cd5e3fdbc7ea9b34b513d30ad5242571e78e85dc60da50e7ea20643209",
+      "html_url": "https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.3.4",
+      "maximum_ap_version": "0.9.99",
+      "minimum_ap_version": "0.6.0",
+      "size": 178469,
+      "source_url": "https://api.github.com/repos/Jbaker16163/Ark-Survival-Archipelago",
+      "tag": "v0.3.4",
+      "title": "ARK-Ipelago Evolved v0.3.4",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0r2"
     }
   }
 }

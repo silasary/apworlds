@@ -14,7 +14,7 @@ Stage Access items, the 16 boss Burst Techniques, booster chips 2–20 (Air Jump
 Upgrades, armor paints and credit bundles.
 
 ## What does another world's item look like in Gravity Circuit?
-The pickup behaves normally on screen, and the overlay in the top-left says what was sent and to whom.
+The pickup behaves normally on screen, and the overlay in the bottom-left says what was sent and to whom.
 
 ## When the player receives an item, what happens?
 It is applied right away and announced in the overlay. Stage Access shows up when you open the stage select.

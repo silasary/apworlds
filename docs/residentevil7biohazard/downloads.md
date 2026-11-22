@@ -11,6 +11,9 @@
 #### v1.0.0
 - <a href="https://github.com/ElGrenier/RE7_AP_World/releases/download/0.3.1/residentevil7biohazard.apworld">https://github.com/ElGrenier/RE7_AP_World/releases/download/0.3.1/residentevil7biohazard.apworld</a>
 
+#### v0.5.0
+- <a href="https://github.com/ElGrenier/RE7_AP_World/releases/download/0.5.0/residentevil7biohazard.apworld">https://github.com/ElGrenier/RE7_AP_World/releases/download/0.5.0/residentevil7biohazard.apworld</a>
+
 #### v0.4.0
 - <a href="https://github.com/ElGrenier/RE7_AP_World/releases/download/0.4.0/residentevil7biohazard.apworld">https://github.com/ElGrenier/RE7_AP_World/releases/download/0.4.0/residentevil7biohazard.apworld</a>
 

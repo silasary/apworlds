@@ -42,6 +42,21 @@
       "version_simple": "0.10.1",
       "world_version": "0.10.1"
     },
+    "v0.11.0": {
+      "created_at": "2026-11-21T23:53:58Z",
+      "description": "### New\n- **Linux / Steam Deck support (Proton).** When WinHTTP's websockets aren't available, the client connects through\n  L\u00d6VE's LuaSocket instead (`ws://` only; archipelago.gg and self-hosted servers accept it). Run `sh install.sh`\n  to install the mod into the game's Proton prefix.\n- **Shopsanity info in the shop itself.** The shop's description box shows what the selected slot sends and to\n  whom, with the item name coloured by class (progression, useful, filler, trap).\n\n### Changes\n- **New overlay.** Messages use the game's font, coloured like the Archipelago text client, and sit in the bottom\n  left so they no longer cover the health bar. The AP status line moved to the top; it hides a few seconds after\n  connecting and comes back when disconnected, paused or with F9 open.\n- Money cache pickups and applied refills no longer print a message.\n- **Clearer connection errors.** The client says what went wrong (unknown host, nothing on that port, timeout,\n  not an Archipelago server, wrong slot or password) and what to check. Pasted addresses are cleaned up, and a\n  bad address or a refused connection no longer retries forever.\n- Fewer hitches: server messages are decoded off the main thread, data packages are cached between connections,\n  and the log is written in batches.\n\n### Logic\n- **\"Data Chip - Nega\"** now requires all 8 stage Access items. The chip is inside the HQ healing tube, which only\n  opens after all 64 rescues.\n\n### Fixes\n- Fixed checkpoint refills not filling the new segment after receiving a Burst Booster.\n\n### PopTracker\n- The pack (now 0.7.0) shows hub NPC data chips (Fix, Shock, Yuki, K.I.D, Amadeus, Mighty, Tech) as Inspect until\n  the rescue that brings that NPC to HQ is checked, and follows the new Nega logic.\n",
+      "download_url": "https://github.com/MuratDev41/gravity-circuit-ap/releases/download/v0.11.0/gravity_circuit.apworld",
+      "has_manifest": true,
+      "hash_sha256": "de15876f73f16ff743c17b4ab904ae38fc15336b330758d58d8b629f178e8abb",
+      "html_url": "https://github.com/MuratDev41/gravity-circuit-ap/releases/tag/v0.11.0",
+      "minimum_ap_version": "0.6.4",
+      "size": 17243,
+      "source_url": "https://api.github.com/repos/MuratDev41/gravity-circuit-ap",
+      "tag": "v0.11.0",
+      "title": "Gravity Circuit v0.11.0",
+      "version_simple": "0.11.0",
+      "world_version": "0.11.0"
+    },
     "v0.9.0": {
       "created_at": "2026-10-02T21:17:59Z",
       "description": "The first public release",

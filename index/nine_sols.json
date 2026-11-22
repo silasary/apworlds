@@ -592,6 +592,21 @@
       "title": "0.7.0",
       "version_simple": "0.7.0",
       "world_version": "0.7.0"
+    },
+    "0.7.1": {
+      "created_at": "2026-11-21T18:40:12Z",
+      "description": "For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).\r\n\r\n- Visiting the Boundless Repository Gauntlet after Yanlao's death will now pretend Yanlao is still alive. In vanilla, the Gauntlet removes several boxes on revisits so you don't need Yanlao to snipe boxes, but several of those box removals would completely change randomizer logic. This has technically been broken since day one, but we only noticed this problem after ER created unbeatable seeds that forced players to do the Claw fight before the Gauntlet.\r\n- In 0.7.0 ER it was possible to softlock yourself by arriving at an elevator that normally requires hacking to unlock, then immediately hacking the hack point next to it. Now the randomizer mod will set the flags to permanently unlock these elevators on arrival, so the hack point becomes a no-op instead.\r\n- The lower GoS (East) -> GoS (West) connection is blocked by pillars until you trigger a spike ball in GoS (East) to destroy them. The logic surrounding this was incorrect in a way that did not matter before, but causes unbeatable seeds in ER. Now this logic correctly requires that you can trigger the GoS (East) spike ball before assuming you can access these entrances.\r\n- Previously, most shop locations were not in logic until you gained access to enough parts of the map. Due to an oversight, Kuafu's shop was an exception, so unlocking his shop early could still lead to an early required jin grind (which became a much bigger problem when ER produced a layout with no early enemies). The Kuafu shop logic has been reworked, so even his \"low cost\" shop locations now also require some \"map access.\"\r\n- `vanilla` logic:\r\n\t- W&OS now has logic for starting from the Left Exit, which we realized is important in ER.\r\n- `ledge_storage` logic:\r\n\t- \"Factory (PA) - Lower Left Elevator\" to \"Root Node\" now allows wall slide with CL setup.\r\n\t- \"Yinglong Canal - Egg Cave & Left Exit\" to \"Above Egg Cave\" using multiple LS vaults with AD setup and a bow hover.\r\n",
+      "download_url": "https://github.com/IxrecsRandomizers/NineSolsArchipelagoRandomizer/releases/download/0.7.1/nine_sols.apworld",
+      "has_manifest": true,
+      "hash_sha256": "2d63336d03c176adbb8c8bd2277a443191b2d1618d94d862080d7c8d49cdc43f",
+      "html_url": "https://github.com/IxrecsRandomizers/NineSolsArchipelagoRandomizer/releases/tag/0.7.1",
+      "minimum_ap_version": "0.6.7",
+      "size": 3665092,
+      "source_url": "https://api.github.com/repos/IxrecsRandomizers/NineSolsArchipelagoRandomizer",
+      "tag": "0.7.1",
+      "title": "0.7.1",
+      "version_simple": "0.7.1",
+      "world_version": "0.7.1"
     }
   }
 }
