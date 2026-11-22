@@ -2,113 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-22T06:20:03.778807+00:00</updated>
+  <updated>2026-11-22T12:15:00.389701+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.6.0-rc1</id>
-    <title>Kirby &amp; The Amazing Mirror v0.6.0rc1</title>
-    <updated>2026-11-18T23:53:31+00:00</updated>
-    <author>
-      <name>Harrison Sherwin</name>
-    </author>
-    <content>Release candidate **v0.6.0-rc1**, built from merged main commit `46a64fd64e4bab238f9f6c4755eb5f4050c0e6f5` (PR #1116). This is a prerelease for testing, not the stable release.
-
-Install **kirbyam.apworld**; it contains the committed patch, not a full game ROM. The provenance receipt and signed attestation bundle are verification files. Regenerate seeds to use the new placement logic; updating the APWorld does not rewrite existing seeds.
-
-Remaining physical-acquisition and encounter coverage is tracked in [v1.0.0 follow-up #1122](https://github.com/hasherwi/Archipelago-kirbyam/issues/1122). The changes below do not claim complete route coverage or a completed full playthrough.
-
-## v0.6.0
-
-### New Features
-- Add 100% Game Completion Goal: all rooms, chests, levers, Big Switches, and Dark Mind clear. Health upgrades do not add completion requirements since there can be a variable amount (Issue #204).
-- Added "Phone a Friend" as a standard progression item (PR #1086). This gates Kirby's ability to call other Kirbys to the player, but not to return to Central Circle.
-- All sixteen Goal Games award a check when completed, including runs with no prizes (PR #1026).
-- Add the default-off `Advanced Logic` toggle under `Make the game harder`; enabling it allows reviewed Crash and Magic traversal routes (PR #1092).
-
-### Improvements
-- Support YAML-less Universal Tracker tracking for newly generated seeds by restoring their resolved settings, enemy ability assignments, starting inventory and excluded locations (PR #1102).
-- Improve in-game wooden boards over locked area transition mirrors, preserving their original frames (Issue #1027, PR #1105).
-- Improved Logic for Item Placement and Accessible Locations (PR #1092, PR #1103, Issue #1099).
-
-### Known Limitations
-- Phone charges can exceed three, but the battery display does not show the extra charges (PR #1086).
-- Ranged-attack coverage remains incomplete. Three targets retain older rules outside reviewed source assignments; broader physical outcomes still need review. See the [detailed coverage ledger](dev-docs/ranged-coverage-ledger.md) (PR #1052).
-- Only the North American ROM is supported; AP notifications are English.
-- Chests retain their original item sprites and collection animations; statues retain their original ability appearance.
-- mGBA notifications require the visible **Archipelago Connector** scripting panel; they are plain text, not game-image overlays.
-- Testing covers selected gameplay scenarios, not a complete playthrough or every multiplayer setup.
-
-### Bug Fixes
-- Logic previously only cared if you unlocked an ability, not if it was actually obtainable from an enemy or statue. This is fixed. Miniboss and area boss spawns are also considered but only under the new Advanced Logic option (PR #1116).
-- Corrected the Chalk chest compartment (PR #1086).
-- Keep the Mustard Mountain Room 15 timed exit out of logic when no reviewed source-backed route is available, including mixed/failable source policies (Issue #1099). The ordinary Room 17 bypass remains available.
-
-### Internal Changes
-- Detailed Phone source and historical validation records remain in the [Phone documentation](dev-docs/phone-progression-admission.md) (PR #1086).
-- Record bounded Rainbow Route East Map Chest acquisition, independent native cold persistence and real-server delivery evidence; full-goal acceptance remains pending.
-- Validate receipt-first Carrot Castle physical save/cold-load in all three native files using real starting-item delivery; full-goal acceptance remains pending.
-- Extend bounded Moonlight physical-first real-server reconnect validation to all three native files; this is not full-completion acceptance.
-- Persist physical lever pulls alongside seed-bound Hub checks without granting wall ownership or changing the native save layout.
-</content>
-    <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.6.0-rc1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/3.0.3</id>
-    <title>Librarian Tidy Up the Arcane Library v3.0.3</title>
-    <updated>2026-11-19T00:03:03+00:00</updated>
-    <author>
-      <name>Str8UpWHITE64</name>
-    </author>
-    <content># Librarian-AP 3.0.3&#13;
-&#13;
-A fix release. Locked books stay hidden more reliably, several connection and save edge cases no longer lose checks, the end door behaves in every case, and the run log is much easier to read.&#13;
-&#13;
-**Seeds:** seeds made with 3.0.2 keep working with 3.0.3, so there is no need to restart a run in progress. The apworld fixes below only apply to new seeds, so regenerate any seed you have not started yet.&#13;
-&#13;
-## Install / upgrade&#13;
-&#13;
-Download `Librarian-AP_v3.0.3.zip` and `librarian.apworld`. Merge the zip's `Librarian/` folder over the game folder, and replace `librarian.apworld` in `custom_worlds/`.&#13;
-&#13;
-The zip carries a blank `ap_config.json`, so merging replaces your saved server and slot. Back up `Librarian/Binaries/Win64/Mods/Librarian-AP/Scripts/ap_config.json` first if you want them back, or just type them in again.&#13;
-&#13;
-## New&#13;
-&#13;
-- **Hand a run to another player.** If you can't finish a run, `Librarian-AP_SaveShare.bat` exports your save to a zip on your Desktop, and the new player imports it with the same tool. It goes into a free AP save slot and never overwrites one of their saves, and it never holds your password. They connect as your slot and the mod loads the save by itself. Close the game first. Full steps: [Handing a run to another player](docs/TROUBLESHOOTING.md#handing-a-run-to-another-player).  Windows only for now.&#13;
-&#13;
-&#13;
-- **Shelf trap notices name the spot.** Scramble Shelf and Shelf Spill now say which bookcase and row they hit, for example "Scramble Shelf: 2 books on bookcase 2J, row 1 are out of order". A shelf trap that cannot run (you are carrying books, or nothing is shelved) says it was skipped.&#13;
-- **A readable run log.** The mod writes one log per launch to `Mods/Librarian-AP/logs/` (`AP_&lt;date&gt;_&lt;time&gt;.log`, the newest ten are kept). Items and checks are written by name, and a short status snapshot is written after connecting and every five minutes. For a hard-to-pin-down bug, add `"debug": true` to `ap_config.json` to keep the detailed lines too. The log is also much quieter than before.&#13;
-- **Shorter README.** Full option, logic and troubleshooting docs now live in the `docs/` folder. The mod is MIT licensed.&#13;
-&#13;
-## Fixes (in the game)&#13;
-&#13;
-- **Locked books stay hidden.** Locked books are now hidden through the game's own book piles, which fixes locked books that could still be seen on their shelves.&#13;
-- A book whose item has arrived but whose bookcase is still shut stays hidden until the bookcase opens. Before, it could show up when you walked up to it.&#13;
-- Your starting series are revealed straight away. Before, they could stay hidden until your first item arrived.&#13;
-- Books that a stack put-down left buried in the floor or stuck inside a wall or bookcase are laid back on open floor, where you can pick them up.&#13;
-- Floor Shuffle right after a Shelf Spill no longer snaps the spilled books back. Scramble Shelf never leaves a book outside every slot.&#13;
-- A check sent just as the connection dropped is sent again after you reconnect. Before, its item was lost until you restarted the game.&#13;
-- Section, floor, level and chest checks made while your save was still being verified are now sent once it is verified (or accepted with F7). Before, they could be lost for the session.&#13;
-- Auto New Game no longer starts over a run whose save is missing (for example on a new PC). Restore the save and reconnect to get the run back.&#13;
-- Closing the Archipelago window at the title and then connecting anyway no longer switches off auto New Game and the start-up pause.&#13;
-- After Back to Title, Continue holds you in the pause menu until the locked books are hidden again, the same as a fresh start.&#13;
-- The end door works normally again when you play without Archipelago (mod installed, not connected).&#13;
-- Insight and Assemble no longer stop recharging after you try the end door before your goal.&#13;
-&#13;
-## Fixes (generation, for new seeds)&#13;
-&#13;
-- `local_filler` in multiworlds: your filler no longer piles up at the end of your seed, and multiplayer seeds with count checks generate much faster.&#13;
-- `random_book_bundle` with `bookcase_unlocks: unlocked`: bundles now draw from the whole library instead of the two starting sections.&#13;
-- Small custom goals (25 to 45 rows) with series or book bundles now generate. Before, some seeds were refused or left items unplaced.&#13;
-- Faster generation with the big item pools (individual books and book bundles). Same placements as before.&#13;
-&#13;
-No YAML options were added or changed.&#13;
-</content>
-    <link href="https://github.com/Str8UpWHITE64/Librarian-AP/releases/tag/3.0.3"/>
-  </entry>
   <entry>
     <id>https://github.com/silasary/APxiv/releases/tag/0.32.0</id>
     <title>Final Fantasy XIV v0.32.0</title>
@@ -199,7 +97,7 @@ There is currently no document/videos detailing all the logic tricks in each dif
   </entry>
   <entry>
     <id>https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3.1</id>
-    <title>Undertale Beta v2.0.0r2</title>
+    <title>Undertale Beta v2.0.0r4</title>
     <updated>2026-11-19T03:45:56+00:00</updated>
     <author>
       <name>Mewlif</name>
@@ -400,7 +298,7 @@ This project is developed with the help of an LLM. Every change is reviewed, the
   </entry>
   <entry>
     <id>https://github.com/riezahughes/MedievilAPWorld/releases/tag/v0.5.1</id>
-    <title>Medievil v0.3.0r3</title>
+    <title>Medievil v0.3.0r2</title>
     <updated>2026-11-19T11:49:23+00:00</updated>
     <author>
       <name>RiezaHughes</name>
@@ -425,7 +323,7 @@ Changelog:&#13;
   </entry>
   <entry>
     <id>https://github.com/Jbaker16163/Ark-Survival-Archipelago/releases/tag/v0.3.4</id>
-    <title>ARK Survival Evolved v1.0.0r6</title>
+    <title>ARK Survival Evolved v1.0.0r2</title>
     <updated>2026-11-19T13:09:22+00:00</updated>
     <author>
       <name>Jbaker16163</name>
@@ -1599,7 +1497,7 @@ Most of this project's code and docs were written with Claude and tested by hand
   </entry>
   <entry>
     <id>https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_4</id>
-    <title>Civilization IV v0.0.1r2</title>
+    <title>Civilization IV v0.0.1r4</title>
     <updated>2026-11-22T05:31:08+00:00</updated>
     <author>
       <name>VincentSIFTD</name>
@@ -1641,5 +1539,46 @@ If you have any questions, bug reports, or things I forgot to mention, let me kn
 &#13;
 Github for the APWorld: https://github.com/VincentBorchardt/Archipelago/blob/main/worlds/civ_4/</content>
     <link href="https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/WolfBoi008/One-More-Night/releases/tag/3.2.1</id>
+    <title>Manual_OneMoreNight_WolfBoi008 v3.2.1</title>
+    <updated>2026-11-22T06:44:44+00:00</updated>
+    <author>
+      <name>WolfBoi008</name>
+    </author>
+    <content># Known Issues&#13;
+Same as before.&#13;
+# Changelog&#13;
+- Added 3 new Filler Items that can randomly appear. I'm sorry for the dumb things my friends and I come up with.&#13;
+  - You can see what they are through [this link](https://github.com/WolfBoi008/One-More-Night/commit/e5e7d45bee53c840eee778ea15e83bd9bb85bac9) or you can find them yourself. Your choice, not mine.</content>
+    <link href="https://github.com/WolfBoi008/One-More-Night/releases/tag/3.2.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.7.0-rc2</id>
+    <title>Animal Crossing v0.7.0rc2</title>
+    <updated>2026-11-22T08:32:23+00:00</updated>
+    <author>
+      <name>haloopdy</name>
+    </author>
+    <content>Setup instructions: https://github.com/randomouscrap98/AP_ACGC_PC/blob/master/docs/setup_en.md&#13;
+Game info: https://github.com/randomouscrap98/AP_ACGC_PC/blob/master/docs/game_info_en.md&#13;
+&#13;
+This is a **RELEASE CANDIDATE** for a new "GameCube" version of the ap world, including a way to play on your modded Wii! The PC port has no visible changes but has been almost entirely refactored, so if you want to help test by playing the PC port, you still can!&#13;
+&#13;
+I recommend not updating to this version unless you want to help test! There are no new features beyond the GameCube version.&#13;
+&#13;
+The game has received MASSIVE changes to make this work. Some features are unavailable on Gamecube (outdoor furniture, etc) but should otherwise be fully playable and compatible with all apworld options.&#13;
+&#13;
+This ships a new `Animal Crossing Gamecube Client` in the launcher (only used for Dolphin and Wii) and an `Animal Crossing Gamecube Patcher` for patching your rom, which you only need to do once per version. If you had RC1, you **NEED** to patch again!! You do not need to use the Animal Crossing client for the PC Port, it's builtin!&#13;
+&#13;
+Please see the setup instructions at the top of this release for more information. To summarize:&#13;
+- When playing on Wii, you must install a homebrew app, which is a modified version of Nintendont&#13;
+- The new client is REQUIRED for Dolphin/Wii, but otherwise does nothing for the PC Port&#13;
+- You must patch your iso just once per apworld version.&#13;
+- The patch lives in the **apworld**, you do not need to download it separately.&#13;
+&#13;
+No game assets are distributed in any of these releases.</content>
+    <link href="https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.7.0-rc2"/>
   </entry>
 </feed>

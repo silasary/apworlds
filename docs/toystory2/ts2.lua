@@ -1,7 +1,7 @@
 -- ============================================================================
 -- Toy Story 2 (PS1) Archipelago - ALL-IN-ONE BizHawk script
 -- ----------------------------------------------------------------------------
--- CONNECTOR VERSION: 3.3.0   <-- must match the .apworld release.
+-- CONNECTOR VERSION: 3.3.1   <-- must match the .apworld release.
 --   If a player reports odd behaviour (e.g. checks sending early), have them
 --   confirm this line. It is also printed in the BizHawk Lua console on load and
 --   again when settings are received, so they can read it back without opening
@@ -28,7 +28,7 @@
 -- Single source of truth for the connector release version (see header). Bump this
 -- in lockstep with the .apworld release. Global so it stays in scope across the
 -- Part 1 / Part 2 do...end blocks without consuming a local slot.
-TS2_VERSION = "3.3.0"
+TS2_VERSION = "3.3.1"
 -- Free-text build tag, printed beside the version on load. NOT parsed anywhere:
 -- the client and the title screen only ever read TS2_VERSION, so a hotfix can
 -- be told apart in a player's console without tripping the version check.
@@ -426,7 +426,7 @@ function ts2_debug_freeze(level, live)
         fz.count = (fz.count or 0) + 1
         ts2_debug(string.format(
             "FREEZE? nothing in the game has changed for 10s in level %d (hp=%d lives=%d)",
-            level, mainmemory.read_u8(0x0B221E), mainmemory.read_u8(0x0B2222)))
+            level, mainmemory.read_s16_le(0x0B221E), mainmemory.read_u8(0x0B2222)))
         if not fz.dumped then
             fz.dumped = true
             local okd, err = pcall(function()
@@ -2398,6 +2398,35 @@ end
 -- Over rescue and respawns.
 function full_hp() return battery_cap() or 14 end
 
+-- 3.3.1: Buzz's health (0x0B221E) is a SIGNED 16-bit number, so it is read and
+-- written as one. Everything here used to use its low byte only.
+function hp_read() return mainmemory.read_s16_le(A.BUZZ_HP) end
+function hp_write(v) mainmemory.write_s16_le(A.BUZZ_HP, v) end
+
+-- 3.3.1: the "dead Buzz" fix. When Buzz dies his health goes to -1 and the
+-- respawn puts it back. Quitting from the pause menu DURING the death skips the
+-- respawn, so -1 was carried into every later level (health carries between
+-- levels), and while it is below zero the game skips Buzz's collision routine
+-- (0x8006B2BC): no talking to anyone, no enemies, no pickups, quitting costs a
+-- life, and the HUD shows a huge number. Only an emulator reset cleared it.
+-- The low-byte writes made it stick even harder: writing 3 into -1 gave -253.
+-- So: in a level, with no death going on, health that stays below 0 (or above
+-- 255) for half a second is put back to full.
+hp_bad_frames = 0
+function hp_repair(level)
+    if level < 1 or level > 15 or not buzz_moved or DEATH_PHASE ~= 0
+       or mainmemory.read_s16_le(0x0A136E) ~= 0 then hp_bad_frames = 0; return end
+    local hp = hp_read()
+    if hp >= 0 and hp <= 255 then hp_bad_frames = 0; return end
+    hp_bad_frames = hp_bad_frames + 1
+    if hp_bad_frames < 30 then return end
+    hp_bad_frames = 0
+    hp_write(full_hp())
+    mainmemory.write_u8(A.HEALTH_UI, 88)
+    ts2_debug(string.format("Buzz's health was %d with no death going on (quit during a death?): put back to %d in level %d",
+        hp, full_hp(), level))
+end
+
 ch_prev_anim   = 0      -- last frame's 0x0A136E (2 = death animation)
 ch_dead        = false  -- Buzz died in this level and hasn't been booted yet
 ch_dead_link   = false  -- ...and that death came from a received death link
@@ -2430,9 +2459,9 @@ function battery_cap_pickup(level)
     if not grew or level < 1 or level > 15 then return end
     local cap = battery_cap()
     if not cap or DEATH_PHASE ~= 0 or mainmemory.read_u8(0x0A136E) == 2 then return end
-    local hp = mainmemory.read_u8(A.BUZZ_HP)
+    local hp = hp_read()
     if hp > 0 and hp < cap then
-        mainmemory.write_u8(A.BUZZ_HP, cap)
+        hp_write(cap)
         mainmemory.write_u8(A.HEALTH_UI, 88)
     end
 end
@@ -2441,9 +2470,9 @@ function challenge_tick(level)
     if level ~= ch_level then ch_level = level; challenge_reset() end
     if level < 1 or level > 15 then return end
     local anim  = mainmemory.read_u8(0x0A136E)
-    local hp    = mainmemory.read_u8(A.BUZZ_HP)
+    local hp    = hp_read()
     local cap   = battery_cap()
-    local dying = DEATH_PHASE ~= 0 or anim == 2 or hp == 0 or hp == 255
+    local dying = DEATH_PHASE ~= 0 or anim == 2 or hp <= 0 or hp == 255
 
     -- A death starts: remember it, and whether a received death link did it.
     if anim == 2 and ch_prev_anim ~= 2 then
@@ -2453,7 +2482,7 @@ function challenge_tick(level)
     end
     -- Respawn: back to full (the cap), and arm the Lives Carry More Weight boot.
     if ch_prev_anim == 2 and anim == 0 then
-        if cap then mainmemory.write_u8(A.BUZZ_HP, cap); hp = cap; dying = false end
+        if cap then hp_write(cap); hp = cap; dying = false end
         if ch_dead and challenge_flag(3) and not (ch_dead_link and challenge_flag(4)) then
             ch_boot_wait = 30
         end
@@ -2485,7 +2514,7 @@ function challenge_tick(level)
     if cap and not dying then
         local dl_incoming = is_death_link() and mainmemory.read_u8(SHARED_DEATH_LINK) > 0
         if hp > cap then
-            mainmemory.write_u8(A.BUZZ_HP, cap); hp = cap
+            hp_write(cap); hp = cap
         elseif cap > 14 and hp == 14 and ch_last_hp >= 10
                and mainmemory.read_u8(A.BUZZ_IFRAME) == 0 then
             -- The game's battery pickup gives 4 but never past its own 14. With
@@ -2503,12 +2532,12 @@ function challenge_tick(level)
             elseif ch_last_hp > 14 then want = hud_up and ch_last_hp + 4 or ch_last_hp
             elseif hud_up then want = 18 end
             want = math.min(want, cap)
-            if want ~= hp then hp = want; mainmemory.write_u8(A.BUZZ_HP, hp) end
+            if want ~= hp then hp = want; hp_write(hp) end
         end
         -- Rechargeable: any damage is put straight back. Never against a
         -- death link (DEATH_PHASE / queued link are checked above and here).
         if battery_invincible() and hp < cap and not dl_incoming then
-            mainmemory.write_u8(A.BUZZ_HP, cap); hp = cap
+            hp_write(cap); hp = cap
         end
     end
     ch_last_hp = dying and 0 or hp
@@ -4190,9 +4219,9 @@ function update_traps(level)
     local damage_q=mainmemory.read_u8(SHARED_TRAP_DAMAGE)
     if damage_q>0 then
         mainmemory.write_u8(SHARED_TRAP_DAMAGE,damage_q-1)
-        local health=mainmemory.read_u8(A.BUZZ_HP)
+        local health=hp_read()
         if health>1 then
-            mainmemory.write_u8(A.BUZZ_HP,math.max(1,health-3))
+            hp_write(math.max(1,health-3))
             mainmemory.write_u8(A.BUZZ_IFRAME,0)
             mainmemory.write_u8(A.HEALTH_UI,88)
             -- 3.3.0: and it sounds like a hit (sfx 26, Buzz taking damage).
@@ -4234,9 +4263,9 @@ function update_traps(level)
             mainmemory.write_u8(0x0A135E, 1)
             mainmemory.write_u8(0x0A136E, 5)
             mainmemory.write_u8(A.BUZZ_LIVES, 5)
-            mainmemory.write_u8(A.BUZZ_HP, full_hp())
+            hp_write(full_hp())
         else
-            mainmemory.write_u8(0x0B221E, 255)
+            hp_write(255)
             mainmemory.write_u8(0x0A155C, 255)
             mainmemory.write_u8(0x0A136E, 2)
             if TS2X then TS2X.play(21) end   -- 3.2.0: Buzz's death cry
@@ -4305,7 +4334,7 @@ function update_traps(level)
         if level>=1 and level<=15 then
             full_health_frames = full_health_frames - 1
             if is_start_full_health() and DEATH_PHASE==0 then
-                mainmemory.write_u8(A.BUZZ_HP, full_hp())
+                hp_write(full_hp())
             end
         else
             full_health_frames = 0
@@ -4317,7 +4346,7 @@ function update_traps(level)
     -- health instead of a game over. One-shot per drain (re-armed when HP>0).
     if is_never_game_over() and level>=1 and level<=15 then
         local ngo_lives  = mainmemory.read_u8(A.BUZZ_LIVES)
-        local ngo_health = mainmemory.read_u8(A.BUZZ_HP)
+        local ngo_health = hp_read()
         if ngo_lives==0 and ngo_health==0 then
             if ngo_armed then
                 ngo_armed = false
@@ -4327,7 +4356,7 @@ function update_traps(level)
                 -- register as WON.
                 mainmemory.write_u8(0x0A136E, 5)
                 mainmemory.write_u8(A.BUZZ_LIVES, 5)
-                mainmemory.write_u8(A.BUZZ_HP, full_hp())
+                hp_write(full_hp())
             end
         else
             ngo_armed = true
@@ -4351,10 +4380,10 @@ function update_traps(level)
     local hp_q=mainmemory.read_u8(SHARED_HEALTH_UP)
     if hp_q>0 then
         mainmemory.write_u8(SHARED_HEALTH_UP,hp_q-1)
-        local health=mainmemory.read_u8(A.BUZZ_HP)
+        local health=hp_read()
         local full=full_hp()
-        if health<full then
-            mainmemory.write_u8(A.BUZZ_HP,math.min(full,health+4))
+        if health>0 and health<full then
+            hp_write(math.min(full,health+4))
             mainmemory.write_u8(A.BUZZ_IFRAME,30)
             mainmemory.write_u8(A.HEALTH_UI,88)
         end
@@ -7611,7 +7640,7 @@ function ts2_main()
             ts2_debug(string.format(
                 "heartbeat: level=%d hover=%d buzz=(%d,%d) buzz_moved=%s hp=%d lives=%d coins=%d",
                 level, hovered, buzz_x, buzz_y, tostring(buzz_moved),
-                mainmemory.read_u8(A.BUZZ_HP), mainmemory.read_u8(A.BUZZ_LIVES),
+                hp_read(), mainmemory.read_u8(A.BUZZ_LIVES),
                 mainmemory.read_u8(A.COIN)))
         end
     end
@@ -7888,6 +7917,7 @@ function ts2_main()
         -- ── SUBSYSTEMS ────────────────────────────────────
         update_moves(); ts2_ps("moves")
         update_traps(level); ts2_ps("traps")
+        hp_repair(level)
         update_boss(level); ts2_ps("boss")
         -- Collectible DETECTION subsystems are skipped while a cutscene is actively
         -- playing: the forced cutscene corrupts collectible/token RAM, which would
