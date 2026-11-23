@@ -224,12 +224,14 @@ random_without_4_keys refuses a rule of 4 Keys.
 
 ### Custom Tracks
 
-`custom_tracks` is a list of track packages. Copy each entry from the track's
-download rather than writing it. The game checks the track's files against the
+`custom_tracks` is a list of track packages. Use **Export YAML** in Options >
+Custom Tracks for one track, or **Save YAML for a room** on the Play Solo >
+Custom Tracks page for your selections. Entries use `track_key`; older YAMLs
+can still use `content_id`. The game checks the track's files against the
 entry when you connect. A custom track joins the pool with the original tracks,
 so a seed with more tracks than pads may leave it out; list its track key in
 `required_entries` to keep it. Cups take custom tracks up to Custom Races Per Cup.
-A pad needs the track installed, and the Custom Content page shows what a seed
+A pad needs the track installed, and the Custom Tracks page shows what a seed
 asks for.
 
 ## Which items can be in another player's world?

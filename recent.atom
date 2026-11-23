@@ -2,115 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-23T06:17:50.435811+00:00</updated>
+  <updated>2026-11-23T12:21:01.090954+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/tag/v1.0a</id>
-    <title>Jet Set Radio Future v1.0.0</title>
-    <updated>2026-11-20T02:18:04+00:00</updated>
-    <author>
-      <name>rvanmatre50</name>
-    </author>
-    <content>This is the first alpha of the Jet Set Radio Future world for Archipelago.&#13;
-&#13;
-It's for early testing: making sure seeds generate, the client connects to JSRF Unleashed, and both goals (Defeat Gouji and Jet Ranks) can be played start to finish. Expect rough edges, and things may change before the beta.&#13;
-&#13;
-**Requirements:** Archipelago 0.6.8 or newer, and JSRF Unleashed 0.6.10 on Windows with your own copy of the game.&#13;
-&#13;
-**To install:** download `jsrf.apworld` below and put it in your Archipelago `custom_worlds` folder. The setup guide is in `jsrf/docs/setup_en.md`.&#13;
-&#13;
-**Found a problem?** Open an issue and attach the newest `JSRFClient_*.txt` from Archipelago's `logs` folder and `last-run.log` from your JSRF Unleashed folder.</content>
-    <link href="https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/tag/v1.0a"/>
-  </entry>
-  <entry>
-    <id>https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/tag/v1.1a</id>
-    <title>Jet Set Radio Future v1.0.0r2</title>
-    <updated>2026-11-20T03:35:52+00:00</updated>
-    <author>
-      <name>rvanmatre50</name>
-    </author>
-    <content>## Bug fixes&#13;
-&#13;
-- **Game over or losing a rival fight no longer breaks your game.** If you went back to the main menu and started a New Game, Corn's talk didn't send you to the free-skate Garage, so you were stuck in the Garage. Now a New Game works the same every time.&#13;
-- **Progress you lost is put back.** If a game over or an old save loses progress the server already has, the client puts it back when you reach the free-skate Garage. That covers Graffiti Souls, Street Challenges, Mystery Tapes, rival gang wins, Jet ranks and graffiti tags.&#13;
-- **Restored tags stay sprayed.** Some areas cleared certain tags the first time you entered them after a New Game, even after the client had put them back. They now stay sprayed.&#13;
-- **The pause screen's Graffiti Soul total is correct.** It now shows the Graffiti Soul items you've received from Archipelago, not the souls you've picked up in the game.&#13;
-- **Item notices stay with the game window.** Another window placed over the game now covers them, and they hide while the game is minimized.&#13;
-&#13;
-To update, replace `jsrf.apworld` in your `custom_worlds` folder. Seeds made with the earlier v1.0a still work.&#13;
-&#13;
-**Full Changelog**: https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/compare/v1.0a...v1.1a</content>
-    <link href="https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/tag/v1.1a"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Chainsawkitten/HexcellsInfiniteAP/releases/tag/1.3.5</id>
-    <title>Hexcells Infinite v1.3.5</title>
-    <updated>2026-11-20T14:26:08+00:00</updated>
-    <author>
-      <name>Heaxeus</name>
-    </author>
-    <content># Changelog&#13;
-- When rebooting after a disconnect, resend any levels that were completed while disconnected.&#13;
-- Move the shield info box to reduce the risk of overlap with level elements.&#13;
-- Fix unsecured connections.</content>
-    <link href="https://github.com/Chainsawkitten/HexcellsInfiniteAP/releases/tag/1.3.5"/>
-  </entry>
-  <entry>
-    <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.6.0-rc2</id>
-    <title>Kirby &amp; The Amazing Mirror v0.6.0rc2</title>
-    <updated>2026-11-20T15:21:18+00:00</updated>
-    <author>
-      <name>Harrison Sherwin</name>
-    </author>
-    <content>Release candidate **v0.6.0-rc2**, built from merged main commit `06f398912b0e5cedbef892807ddbc60de1f303df` (PR #1125). This is a prerelease for testing, not the stable release.
-
-### Changes since RC1
-- Validate the Room 4-16 source route whenever RoomSanity or 100% Game Completion requires it, under both Full and Minimal accessibility. The Room 4-17 bypass does not visit Room 4-16.
-- Shuffled now selects the first qualifying policy through the existing deterministic search. Logic, slot data and ROM patching use that same policy; Off retains native Foley Bomb.
-- Completely Random and an ineligible Shuffled 100% no-ability policy are refused before fill with setting-specific guidance. Disabling RoomSanity alone does not bypass the 100% goal's physical room-visit requirement. Outside either option, this optional exit is not a source-preflight requirement.
-
-Install **kirbyam.apworld**; it contains the committed patch, not a full game ROM. The provenance receipt and signed attestation bundle are verification files. Regenerate seeds to use the corrected generation logic; updating the APWorld does not rewrite existing seeds.
-
-Remaining physical-acquisition and encounter coverage is tracked in [v1.0.0 follow-up #1122](https://github.com/hasherwi/Archipelago-kirbyam/issues/1122). This RC does not claim complete route coverage or a completed full playthrough.
-
-## v0.6.0
-
-### New Features
-- Add 100% Game Completion Goal: all rooms, chests, levers, Big Switches, and Dark Mind clear. Health upgrades do not add completion requirements since there can be a variable amount (Issue #204).
-- Added "Phone a Friend" as a standard progression item (PR #1086). This gates Kirby's ability to call other Kirbys to the player, but not to return to Central Circle.
-- All sixteen Goal Games award a check when completed, including runs with no prizes (PR #1026).
-- Add the default-off `Advanced Logic` toggle under `Make the game harder`; enabling it allows reviewed Crash and Magic traversal routes (PR #1092).
-
-### Improvements
-- Support YAML-less Universal Tracker tracking for newly generated seeds by restoring their resolved settings, enemy ability assignments, starting inventory and excluded locations (PR #1102).
-- Improve in-game wooden boards over locked area transition mirrors, preserving their original frames (Issue #1027, PR #1105).
-- Improved Logic for Item Placement and Accessible Locations (PR #1092, PR #1103, Issue #1099).
-
-### Known Limitations
-- Phone charges can exceed three, but the battery display does not show the extra charges (PR #1086).
-- Ranged-attack coverage remains incomplete. Three targets retain older rules outside reviewed source assignments; broader physical outcomes still need review. See the [detailed coverage ledger](dev-docs/ranged-coverage-ledger.md) (PR #1052).
-- Only the North American ROM is supported; AP notifications are English.
-- Chests retain their original item sprites and collection animations; statues retain their original ability appearance.
-- mGBA notifications require the visible **Archipelago Connector** scripting panel; they are plain text, not game-image overlays.
-- Testing covers selected gameplay scenarios, not a complete playthrough or every multiplayer setup.
-
-### Bug Fixes
-- Logic previously only cared if you unlocked an ability, not if it was actually obtainable from an enemy or statue. This is fixed. Miniboss and area boss spawns are also considered but only under the new Advanced Logic option (PR #1116).
-- Corrected the Chalk chest compartment (PR #1086).
-- Keep the Mustard Mountain Room 15 timed exit out of logic when no reviewed source-backed route is available, including mixed/failable source policies (Issue #1099). The ordinary Room 17 bypass remains available.
-
-### Internal Changes
-- Detailed Phone source and historical validation records remain in the [Phone documentation](dev-docs/phone-progression-admission.md) (PR #1086).
-- Record bounded Rainbow Route East Map Chest acquisition, independent native cold persistence and real-server delivery evidence; full-goal acceptance remains pending.
-- Validate receipt-first Carrot Castle physical save/cold-load in all three native files using real starting-item delivery; full-goal acceptance remains pending.
-- Extend bounded Moonlight physical-first real-server reconnect validation to all three native files; this is not full-completion acceptance.
-- Persist physical lever pulls alongside seed-bound Hub checks without granting wall ownership or changing the native save layout.
-</content>
-    <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.6.0-rc2"/>
-  </entry>
   <entry>
     <id>https://github.com/SergeAzel/Archipelago_PDTB/releases/tag/paquerette_down_the_bunburrows-0.2.1</id>
     <title>Paquerette Down The Bunburrows v0.2.1</title>
@@ -1467,5 +1363,222 @@ Link to the [randomizer repo](https://github.com/chikakoo/Turok-2-Randomizer) fo
 - Fixed chip-shop sprites showing dimmed before the chip was bought.
 </content>
     <link href="https://github.com/MuratDev41/gravity-circuit-ap/releases/tag/v1.0.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/2.2.3</id>
+    <title>Slay the Spire II v1.4.2</title>
+    <updated>2026-11-23T06:27:53+00:00</updated>
+    <author>
+      <name>Kirbyfanner</name>
+    </author>
+    <author>
+      <name>Platano Bailando</name>
+    </author>
+    <author>
+      <name>Lyxn</name>
+    </author>
+    <author>
+      <name>MartyredG</name>
+    </author>
+    <author>
+      <name>Terairk</name>
+    </author>
+    <content>&gt; [!WARNING]
+&gt; Both Slay the Spire II and this Archipelago Mod are in active development. As such, while this _is_ playable, expect there to be bugs and limited features. We appreciate your playtesting!
+
+&gt; [!IMPORTANT]
+&gt; **Play on the game's beta branch.** Main-branch support is on thin ice but supported none the less: the mod still runs there, but it's largely untested and new game features might not be supported on it.
+
+## Setup
+
+For installation, YAML configuration, generation and connection instructions, see
+[the Slay the Spire II setup guide](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/blob/setup-docs-do-not-delete/world/spire2/docs/setup_en.md).
+
+Archipelago **Launcher v0.6.7+** is required for generation. Install **STS2-RitsuLib 0.6.11+** separately.
+
+The newest YAML Builder is at [sts2ap.terairk.dev](https://sts2ap.terairk.dev/#/builder), and the mod's **Mod Website &amp; YAML Builder** button opens it. [sts2ap.net](https://sts2ap.net/#/builder) gets the new options later.
+
+# Version Information
+
+- **Archipelago Mod:** 2.2.3
+- **APWorld:** 1.4.2
+- **Slay the Spire II main branch:** v0.111.1
+- **Slay the Spire II beta branch:** v0.113.1
+
+# Changelist
+
+A small release on top of 2.2.2.
+
+1) New sight challenge: **Hidden Relics**. Your relics are unknown (locked icon, "?" counters) until a Relic Sight arrives, but they still flash, so you can work them out. A second Relic Sight makes relic rewards offer 2 to choose from. Doesn't work on ancients cus its annoying and i said so.
+2) Eight new Boons: Ink Bottle, Medical Kit, Blue Candle, Preserved Insect, Torii and Turnip from the first game, plus Amphorae and Cursed Kettle which are my own fancy relics that i made up cus why not.
+    - Could debate on these being 'Bonus items' but for now they're in the boons section. 
+3) Some Boon nerfs: Wayfinder is 3 free moves per run and shares them with Winged Boots, Second Wind works once per run and heals 35%, and Spring Cleaning gives one of its rewards at random.
+4) Sight bonuses buffs: a second Map Sight also gives a free move once per act, and a second Pile Sight also draws 1 more card next turn the first time your draw pile is shuffled each turn. Rationale: buff the less cool ones
+5) YAML Builder: a new Items &amp; Hints section (starting items, starting hints, local and non-local items), and importing a YAML keeps the settings the builder doesn't ask about.
+6) The mod's local files now live in one folder per AP slot under `mod_data/Archipelago`. Old files move there by themselves, and Local Save Management can forget old seeds. Hopefully this doesn't break stuff but the files/logs/saves were in like 4 different folders all nested weirdly so this will be easier to give advice to people in the future.
+7) Fixes: Inky and Exposing only go on cards that target enemies (Inky used to crash on the others), Exposing shows its Vulnerable line on the card.
+
+### Version compatibility
+
+Use the updated APWorld and mod together. An older APWorld ignores Hidden Relics and the new Boons.
+
+Everyone in a multiplayer lobby should use the same mod version and game branch.
+
+Tested in singleplayer on the beta branch.
+
+## Known Issues/Limitations
+
+- **Main branch:** largely untested and gets no new features. Main-branch multiplayer might not be supported in a future release.
+- In multiplayer, AP menu rewards can only be claimed outside combat; Death Fragments are disabled. **Anytime** Ancient rewards are recommended.
+</content>
+    <link href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/2.2.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TheLX5/Archipelago/releases/tag/wariotwisted-v1.1.0</id>
+    <title>WarioWare: Twisted! v1.1.0</title>
+    <updated>2026-11-23T07:07:59+00:00</updated>
+    <author>
+      <name>lx5</name>
+    </author>
+    <content>pointers&#13;
+# Info&#13;
+* [Info](&lt;https://thelx5.github.io/wario_twisted/index.html&gt;)&#13;
+* [Setup](&lt;https://thelx5.github.io/wario_twisted/setup.html&gt;)&#13;
+# Changes&#13;
+* Regular stages now tell in their description which locations are available and what they hold&#13;
+* Cutscenes are automatically skipped</content>
+    <link href="https://github.com/TheLX5/Archipelago/releases/tag/wariotwisted-v1.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/tag/V3.0.2</id>
+    <title>Hunie Pop v3.0.2</title>
+    <updated>2026-11-23T09:23:46+00:00</updated>
+    <author>
+      <name>Dotsofdarkness</name>
+    </author>
+    <content>- (Client) Fixed locations checked in main menu not correctly showing&#13;
+- (Client) Fixed shop items reappearing after save/quit&#13;
+- (Client) Fixes issue with save game not saving at correct time resulting in missing locations/items in game&#13;
+&#13;
+V3.0.1 Changelog&#13;
+- (APWorld) Fixed Issue with connecting with Universal Tracker&#13;
+- (APWorld) fixed typos in hunie_to_muney YMAL option&#13;
+- (Client) Fixed Errors if save file was not present after connecting to a slot&#13;
+- (Client) Added Connecting screen while trying to connect to a server&#13;
+- (Client) fixed sending locations causing game freezing&#13;
+- (Client) properly send goal location in case server has auto release disabled&#13;
+&#13;
+V3.0.0 Changelog&#13;
+- (Client) Swapped networking from DotsWebsocket/CursedArchipelagoClient to Archipelago.MultiClient.Net/c-wspp-websocket-sharp&#13;
+- - playing on Linux should now work through wine/proton (will work on trying to get native Linux to work later)&#13;
+- (Apworld/Client) added option/logic for disabling girl questions&#13;
+- (Apworld/Client) added option/logic for disabling girl gifts&#13;
+- (Apworld/Client) added option/logic for locking shop slots behind getting "Shop Pass" items&#13;
+- (APWorld) moved logic over to Rule Builder&#13;
+- (Client) Save file is now stored server side through datastorage&#13;
+- (Client) added the ability to convert hunie to money through the shop the ratio can be changed through YMAL option&#13;
+- (Client) when talking to a girl you have a &gt;50% change to be asked a question if you haven't learned all their details&#13;
+- (Client) Added code "$toggledeathlink" to toggle deathlink off/on&#13;
+HOTFIX&#13;
+- disable cheats used in dev&#13;
+&#13;
+&lt;br&gt;&lt;/br&gt;&#13;
+CLIENT INSTALLATION INSTRUCTIONS:&#13;
+- Have Hunie Pop Installed&#13;
+- Download Hunie Pop Archipelago plugin (See Releases for latest version)&#13;
+- Extract and copy the contents of "Hunie Pop Archipelago plugin.zip" to the directory where "HuniePop.exe" is if it asks you to overwrite files click yes&#13;
+- NOTE if you get a game crash when starting the game make sure that in "{huniepop game directory}/BepInEx/config/BepInEx.cfg" the 2nd last option is "type = MonoBehaviour" not "type = Application"&#13;
+&#13;
+&#13;
+&#13;
+APWORLD INSTALLATION INSTRUCTIONS:&#13;
+- Have Archipelago Launcher Installed (latest release found here: https://github.com/ArchipelagoMW/Archipelago/releases/latest )&#13;
+- Download Huniepop APWorld (See Releases for latest version)&#13;
+- Select "Install APWorld" in launcher and select Huniepop APWorld you downloaded&#13;
+- Restart launcher for APWorld to properly install&#13;
+- (Optional but Recomended)Select "Generate Template Options" to generate default Huniepop YMAL&#13;
+&#13;
+&#13;
+&#13;
+POPTRACKER INSTALLATION INSTRUCTIONS:&#13;
+- copy "Hunie Pop Archipelago poptracker.zip" to your poptracker "packs" folder</content>
+    <link href="https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/tag/V3.0.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha6</id>
+    <title>Crash Team Racing v0.3.0a6</title>
+    <updated>2026-11-23T11:23:00+00:00</updated>
+    <author>
+      <name>Dowlle</name>
+    </author>
+    <content>## Discord
+
+Come hang out on [Appie's Games Discord](https://discord.com/invite/HxXy4mKQ5E). Test builds, bug reports and YAML sharing all happen there.
+
+Alpha6 is out! Thanks for all the alpha5 reports. This one fixes the Oxide Station softlock, a pile of custom track problems (unreachable crates, missing music, Relic-only tracks that wouldn't start) and quick savestates that mixed up races. It also adds Kart Setup in the pause menu during a race, race and cup rewards in the tracker, CNK letters on Inferno Island and author credits on custom tracks. The hub pause menu is reordered, pads and the tracker count shared checks, and Citadel City travel and cup win text are fixed. It's still an alpha, so 0.2.4 stays the stable release.
+
+[Full notes on AP-Pie](https://beta.ap-pie.com/ctr/releases) · [Setup guide](https://ap-pie.com/guides/ctr)
+
+## Before you try it
+- Use the alpha6 client and APWorld together. Your alpha5 YAML usually still works. Rooms made with alpha5 usually connect, but that is best effort: if one is refused, keep using the alpha5 client for it. Rooms made with alpha6 need the alpha6 client. Rooms from 0.2.x still need 0.2.4.
+- Quick saves (F5) made with alpha5 won't load. Make a new one.
+
+## Fixed
+- Oxide Station pickups don't depend on a one-time race anymore. In new rooms each pickup either has a repeatable route or is left out, so a missed crate can't block you. Thanks Dex!
+- Custom track crates that can't be reached (Matsuri's first item box, one crate in Lockbox Adventure track 4) are out of the pool in new rooms, and crate logic is corrected on Sewer Speedway, Cortex Vortex, Country Speedway, Toasty Terrace, Royal Raceway and Green Hill Raceway.
+- Relic-only custom tracks start from their pad now. Before, a track with relics and a lap but no AI lines refused to start.
+- Seed downloads fetch a custom track's current music, Custom Tracks downloads music an installed track is missing, and a failed song start is tried again. A track that has no music of its own plays a random retail song instead of always Roo's Tubes.
+- Quick savestates stay with the race they were made in. Loading one from a different track, mode or room is refused instead of mixing things up.
+- When you walk up to a pad, the hint now covers weapon crates, Wumpa crates and Wumpa, also on cup tracks and boss garages. The "crates checked" count popups are gone. Thanks Dex and Em!
+- In new rooms, a track that is only used for the final Oxide race doesn't get lap, crate or Wumpa checks anymore, and `oxide_goal: none` works with boss garages off. Thanks MarioSpore and Bethany!
+- Boss beakers, TNT and Nitro break after the boss drives half a lap past them on shuffled venues, which should stop N. Tropy driving through his own beakers. Thanks Em!
+- Pad unlock notices wait until you have the Keys to reach them, and the "all letters" message works again.
+- Shared checks, like Itemsanity weapon uses that more than one race of a pad can earn, show on pads and in the tracker. Before, a pad could stay green and its CTR Challenge stay on Start while the tracker showed nothing left. Now the tracker counts them, and the pad turns grey with Replay once they are all done.
+- The tracker card only shows the 10W mark when that track (or the room) has a Reach 10 Wumpa check.
+- Travel to Citadel City drops you on the upper landing beside the save screen. Before, you landed on the ramp in front of it and rolled back.
+- Winning a Gem Cup in an AP seed shows CUP WON and, when the cup has one, the item for its win check, not the Trophy text and voice.
+- Older rooms keep working after the track list gets an update. In Universal Tracker, alpha6 rooms restore fully and older rooms restore when their track picks and logic still match.
+- Imported patched tracks get the right names, and five left-over tracks from Lockbox Adventure and 30th Anniversary Adventure are hidden.
+- In new rooms, hints work with both "Custom Track N" and the track's own name for custom tracks that aren't registered, so a hint for one of those letters no longer ends in "Too many close matches".
+
+## New
+- Custom tracks credit their authors on the pad, the race intro and the results, also in cup races. The track author and the music author show separately when they differ. If no author is known, it shows where the track came from, such as the patch file name. Retail tracks show nothing.
+- Kart Setup in the pause menu during Adventure races and cups, with the same stats as the hub picker.
+- The hub pause menu is Resume, Tracker, Travel, Select Character, Options, Quit. AI Difficulty and the Aku Aku or Uka Uka hints moved into Options, which now opens the same pages as the main menu. The goal shows one part per line on the pause Relics page and in the tracker.
+- The in-game tracker shows race and cup rewards by name: Trophy, CTR and relic rewards, podium places, perfect runs and laps, plus cup wins and sweeps.
+- CNK letters on the full-mode Inferno Island. Track Origin Letters is a new YAML option, on by default.
+- Item Feed has three settings now: All, Important and Off. Important skips filler and Wumpa Shop stock lines.
+- Random pad requirements can ask for up to the whole pool now, growing from the first hub to the last. Still up to 99, and Keys stop at 4.
+- Missing custom tracks: the hub banner counts them, the pad tells you where to install them, and Custom Tracks opens on Install missing.
+- Export YAML for any installed custom track that has a public source, and Save YAML for a room in Play Solo. YAMLs use `track_key` now, `content_id` still works.
+- AP boxes on Arabian Heights Day and Sunset Vista.
+- With Save AI Lap Recordings on, your clean laps are saved from Time Trial on custom tracks and from seed races. Turn on Only My Recordings (with Use Recorded AI Laps) in OPTIONS &gt; Authoring to race just your own laps.
+
+## Known issues
+- Custom tracks that aren't registered yet, like Nina's Nightmare and Acropolis, get no crate or Wumpa fruit checks. That comes after alpha6.
+- Tizi Madness: with shortcut knowledge on hard the track can end up in a seed, but its road is closed off, so the checks on it can't be reached. Leave it out of your YAML for now.
+- Lots of Saphi tracks are Time Trial only, so they can't be used in a seed yet.
+- Time Trial only tracks can't be raced in Arcade with recorded AI laps yet.
+- The tracker's CHECKS page doesn't give AP boxes, letters, crystals or shop slots their own rows yet.
+- Sunset Vista can run slowly on Steam Deck.
+- Baby T Park's CTR Challenge may still play Roo's Tubes instead of its own music. That report is still open.
+- Some unusual YAMLs still fail to generate. Send me the YAML if it keeps happening.
+
+## Found a problem?
+[Open an issue](https://github.com/dowlle/ctr-native-ap/issues/new/choose) or post it on the Discord. Add your YAML and the support bundle (`support-bundle.bat` or `support-bundle.sh`) if you can.
+
+## Thanks
+Thanks to Dex, MarioSpore, Em and Bethany for the reports and ideas behind this one.
+
+## Downloads
+Windows: `ctr-archipelago-v0.3.0-alpha6-windows-x86.zip`. Linux or Steam Deck: `ctr-archipelago-v0.3.0-alpha6-linux-x86.tar.gz`. Both include the client, the matching `ctr.apworld` and Play Solo. You need your own NTSC-U copy of the game. The client is GPL-3.0; the source is the `v0.3.0-alpha6` tag.
+
+| File | SHA-256 |
+|---|---|
+| `ctr-archipelago-v0.3.0-alpha6-windows-x86.zip` | `ed256302ac50a2c0c0f7cd3ee8edcc99bc2e51a5b08bc229c39de4840e8c1549` |
+| `ctr-archipelago-v0.3.0-alpha6-linux-x86.tar.gz` | `6f7b68278be45c428f440ee2a0bc1ef03a31390d313d5c57e0a263665b9446a5` |
+| `ctr.apworld` | `4ca048c4a64f7540c1106d70865d19386c7390b3528d6f3b2bfd661427499fc5` |
+</content>
+    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha6"/>
   </entry>
 </feed>

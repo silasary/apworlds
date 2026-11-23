@@ -1,5 +1,5 @@
 # A custom track seed. Requires a client built with custom tracks.
-# Any complete package descriptor is accepted: track key (content_id), file pins,
+# Any complete package descriptor is accepted: track_key, file pins,
 # authored laps and measured capability flags. relic: true also needs
 # relic_targets {sapphire, gold, platinum} in ticks (960 per second).
 # Optional measured weapon_crates: with box_locations on, a track on a named block
@@ -20,7 +20,7 @@ Crash Team Racing:
     default: [trophy]
   custom_tracks:
     - id: package/baby-t-park/1.0.2
-      content_id: baby-t-park
+      track_key: baby-t-park
       uuid: 2c7c7846-2ead-5b8f-a218-beca5792106e
       revision: "1.0.2"
       display_name: Baby T Park
