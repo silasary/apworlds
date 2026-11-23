@@ -1,9 +1,12 @@
 # Normal Golf Game
 
 ## Latest
-- <a href="https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.32hotfix/normalgolfgame.apworld">Latest Version (0.0.2r2)</a>
+- <a href="https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.40/normalgolfgame.apworld">Latest Version (1.4.0)</a>
 
 ## All Versions
+
+#### v1.4.0
+- <a href="https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.40/normalgolfgame.apworld">https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.40/normalgolfgame.apworld</a>
 
 #### v0.0.2r2
 - <a href="https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.32hotfix/normalgolfgame.apworld">https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.32hotfix/normalgolfgame.apworld</a>

@@ -8,6 +8,9 @@
 #### v2.post0
 - <a href="https://github.com/CaptainBoscar/Archipelago-DOTA2/releases/download/Dota_2_Release/dota_2.apworld">https://github.com/CaptainBoscar/Archipelago-DOTA2/releases/download/Dota_2_Release/dota_2.apworld</a>
 
+#### v0.2.0
+- <a href="https://github.com/CaptainBoscar/Archipelago-DOTA2/releases/download/v.0.2.0/dota_2.apworld">https://github.com/CaptainBoscar/Archipelago-DOTA2/releases/download/v.0.2.0/dota_2.apworld</a>
+
 #### v0.1.0
 - <a href="https://github.com/CaptainBoscar/Archipelago-DOTA2/releases/download/v0.1.0/dota_2.apworld">https://github.com/CaptainBoscar/Archipelago-DOTA2/releases/download/v0.1.0/dota_2.apworld</a>
 

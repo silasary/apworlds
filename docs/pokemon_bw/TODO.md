@@ -5,6 +5,10 @@ apworld
 - correlate mods in move data rando not working? => Special unit test cases
 - Keep levels and amount still broken, see unittests
 - route 17 trainer apparently vanilla levels despite distance and sphere scaling
+- black city map id needs to be changed for tracker, because 0 is bad
+- ranger/breeder location group
+- post badge gates location group
+- progressive power modifier "resets" halfway through
 
 rom
 - trainer flags setzen lassen wo es in den scripts fehlt und dann besiegte trainer IDs ins datastorage
@@ -15,6 +19,8 @@ rom
 - remove time requirement of tubeline bridge bikers
 - remove once-per-day access to the riches
 - remove victini shiny lock
+- apphone seasons lady freezes the game in varying ways
+- ap menu only adds one master ball to bag when free, text box closes without button press and takes weirdly long
 
 both
 - fill more funny dialog
