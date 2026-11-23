@@ -1,9 +1,12 @@
 # Turok 2
 
 ## Latest
-- <a href="https://github.com/chikakoo/Turok-2-AP-World/releases/download/v0.6.0/turok2.apworld">Latest Version (0.6.0)</a>
+- <a href="https://github.com/chikakoo/Turok-2-AP-World/releases/download/v0.6.1/turok2.apworld">Latest Version (0.6.1)</a>
 
 ## All Versions
+
+#### v0.6.1
+- <a href="https://github.com/chikakoo/Turok-2-AP-World/releases/download/v0.6.1/turok2.apworld">https://github.com/chikakoo/Turok-2-AP-World/releases/download/v0.6.1/turok2.apworld</a>
 
 #### v0.6.0
 - <a href="https://github.com/chikakoo/Turok-2-AP-World/releases/download/v0.6.0/turok2.apworld">https://github.com/chikakoo/Turok-2-AP-World/releases/download/v0.6.0/turok2.apworld</a>

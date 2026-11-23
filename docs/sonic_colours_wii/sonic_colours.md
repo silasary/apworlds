@@ -1,6 +1,6 @@
 # Sonic Colours (Wii) Archipelago World
 
-Sonic Colours is a Wii platformer in which Sonic explores Eggman's interstellar amusement park and uses the powers of the Wisps. This Archipelago world supports the PAL `SNCP8P` revision 0 release in Dolphin. See the [Setup Guide](setup.md) to get started.
+Sonic Colours is a Wii platformer in which Sonic explores Eggman's interstellar amusement park and uses the powers of the Wisps. This Archipelago world supports the PAL `SNCP8P` and NTSC-U `SNCE8P` Rev0 releases in Dolphin. See the [Setup Guide](setup.md) to get started.
 
 ## Goals
 
@@ -33,12 +33,12 @@ Sonic Colours is a Wii platformer in which Sonic explores Eggman's interstellar 
 - **World Progression:** unlock Acts in order, or open all Acts instantly except the boss
 - **White Boost Wisp Lock:** require the White Boost Wisp for ordinary Boost gains; given Boost Refills remain usable
 - **Ability Locks:** lock various movement abilities
-- **Super Sonic:** add seven Chaos Emerald items to the item pool, which allows you to use Super Sonic when all are obtained (Logic for this isnt implemented yet)
+- **Super Sonic:** add the seven Chaos Emerald items to unlock Super Sonic. The logic for this feature is not fully implemented, so you may be able to collect red rings out of logic
 
 ## Check Options
 
 - **Red Ring Checks:** individual rings or all five rings per Act
-- **Rank Checks:** choose which ranks gives a check
+- **Rank Checks:** select any combination of C, B, A and S. Better results also satisfy selected lower ranks. An empty selection disables rank checks. YAML example: `rank_checks: [C, A]`.
 - **1-Up Sanity:** add checks for 31 1-Up objects
 - **Wisp Discovery Checks:** add checks for discovering coloured Wisps
 - **Game Land Checks:** add stage-clear checks and enable AP Red Ring currency
@@ -52,12 +52,22 @@ Sonic Colours is a Wii platformer in which Sonic explores Eggman's interstellar 
 - **Trap Weights:** adjust Ring Loss, Score Reset and Dead Weight frequency
 - **Music Randomization:** shuffle music
 - **DeathLink:** share deaths with other DeathLink players
+- **60 FPS:** Optional frame-rate override baked into the ISO. There are known physics issues that you may experience with this option enabled
+
+## Red Ring Colors
+
+- **Red Ring Item Colors:** color rings purple for progression, blue for useful and light blue for filler
+- **Colorblind Mode:** use gold, blue, gray and orange for both ring colors and the item HUD
+- **Own Item Red Ring Colors:** keep your own rewards red, keep only your own AP Red Ring currency red, or color all your rewards by item type
+- **Trap Red Ring Colors:** show traps in their category color or disguise them with a fixed random item color
 
 ## Notes
 
 The New Game introduction still begins in Tropical Resort before save selection. Connect **before** starting it so the client can observe checks during the opening Acts.
 
 Physical Red Ring checks are separate from AP Red Ring items used to unlock Game Land stages. Wisp discovery checks do not grant their corresponding Wisp items, and Chaos Emerald checks do not grant the matching Emerald items.
+
+Completing all Game Land stages does not unlock Super Sonic. It requires the Super Sonic option and all seven different AP Chaos Emerald items.
 
 Disabling Game Land Checks also disables its Eggman Heart and Chaos Emerald checks and removes its associated items from the pool.
 With Ability Locks enabled, Drill, Hover and Spikes use progressive unlocks; otherwise each has one complete unlock.

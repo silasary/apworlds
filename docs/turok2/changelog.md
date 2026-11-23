@@ -3,6 +3,9 @@ This includes changes in both the mod and AP world, in reverse order of releases
 
 ## v0.6.X
 
+### v0.6.1
+- Fixed the 4-V2 vent mission objective not logically requiring the Satchel Charge
+
 ### v0.6.0
 - Background changes to support the poptracker and auto tabbing
 - Support yamless for Universal Tracker

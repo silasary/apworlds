@@ -7,7 +7,7 @@ and restore peace by reuniting the shattered Dimension Mirror.
 
 
 ## Downloads
-- <a href="https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.6.0-rc3/kirbyam.apworld">Latest Version (0.6.0rc3)</a>
+- <a href="https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.6.0/kirbyam.apworld">Latest Version (0.6.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

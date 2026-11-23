@@ -422,6 +422,22 @@
       "title": "v0.9.0",
       "version_simple": "0.9.0",
       "world_version": "0.9.0"
+    },
+    "v1.0.0-beta": {
+      "created_at": "2026-11-23T01:58:12Z",
+      "description": "**Note**: This release will only work on the `publicbetatesting` beta branch currently.  You can enable that branch by going to Properties -> Game Versions & Betas and toggling the `publicbetatesting` branch in the list.\r\n**Note 2**: [Rift of the NecroManager](https://github.com/96-LB/RiftOfTheNecroManager/releases/tag/v1.2.0-beta) is now required to run the mod.  The setup guide has been update to account for this.\r\n\r\n# Additions\r\n- [APWorld + Client] Added new goal options to instead allow for goal to be behind song clears, or to require both song clears and diamonds.\r\n- [APWorld + Client] Added new `starting_health` option and `max health increase` items.\r\n   - Max health increase item count determined by `maximum_health` option.  Can set if max health increases are logically required for higher intensity songs.  All max health items are always logically required for goal.\r\n   - Locations not logically expected due to health will show as glitched logic in Universal Tracker\r\n- [APWorld + Client] Added trap items\r\n   - Currently only works with Rhythm Rifts\r\n   - Trap items only trigger once even after reconnection\r\n- [Client] Added traplink support\r\n- [Client] Added deathlink support, with the option to set \"nonlethal\" which will set you to 1 HP.\r\n- [Client] Added ingame config settings utilizing NecoManager to toggle the aforementioned features, changing trap behavior, and enabling debug features.\r\n- [Client] Added an ingame item popup on song clear to show what items you sent\r\n- [Client] Food item filler now heals you if sent while in a song\r\n   - Currently only works with Rhythm Rifts\r\n   - Removed Vibe Power filler for now\r\n\r\n# Changes\r\n- [Client] Mod and World version now are displayed in the connection window\r\n- [Client] Added a button when on the custom tracks menu to dump all favorited custom songs for the `rotn_song_data` option.\r\n- [Client] Added extra diamond/song clear count to the connection ui depending on set goal condition.\r\n- [APWorld] Updated logic to use rule builder\r\n\r\n# Bug Fixes\r\n- [Client] Color code tags in song titles are now properly cleansed when dumping custom songs\r\n- [Client] Dumped custom songs no longer have ids that exceed the 32bit integer limit\r\n- [Client] The \"unplayed song\" filter now properly works with custom songs\r\n- [Client] Disconnecting and reconnecting without rebooting *should* work better\r\n- [Client] DLC songs should be properly unlocked again when disconnecting or in freeplay mode\r\n- [Client] Removed the connect/disconnect and freeplay buttons when playing a song.",
+      "download_url": "https://github.com/studkid/RiftArchipelago/releases/download/v1.0.0-beta/rotn.apworld",
+      "has_manifest": true,
+      "hash_sha256": "e6dd6f21a027701ca2dfa25f8c165d4bc2929a9e4b2e7c4dec64a248bb8df6eb",
+      "html_url": "https://github.com/studkid/RiftArchipelago/releases/tag/v1.0.0-beta",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 19661,
+      "source_url": "https://api.github.com/repos/studkid/RiftArchipelago",
+      "tag": "v1.0.0-beta",
+      "title": "v1.0.0-beta",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0b0"
     }
   }
 }

@@ -1,9 +1,12 @@
 # Kirby &amp; The Amazing Mirror
 
 ## Latest
-- <a href="https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.6.0-rc3/kirbyam.apworld">Latest Version (0.6.0rc3)</a>
+- <a href="https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.6.0/kirbyam.apworld">Latest Version (0.6.0)</a>
 
 ## All Versions
+
+#### v0.6.0
+- <a href="https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.6.0/kirbyam.apworld">https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.6.0/kirbyam.apworld</a>
 
 #### v0.6.0rc3
 - <a href="https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.6.0-rc3/kirbyam.apworld">https://github.com/hasherwi/Archipelago-kirbyam/releases/download/kirbyam-v0.6.0-rc3/kirbyam.apworld</a>
