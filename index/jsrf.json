@@ -1,0 +1,63 @@
+{
+  "game": "Jet Set Radio Future",
+  "github": "https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer",
+  "manifest_fields": [
+    "minimum_ap_version",
+    "world_version"
+  ],
+  "setup_guide_url": "https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/blob/main/jsrf/docs/setup_en.md",
+  "sheet_disclosure": [
+    "Extensive",
+    "https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/blob/main/README.md"
+  ],
+  "sheet_stability": "Unstable",
+  "versions": {
+    "v1.0a": {
+      "created_at": "2026-11-20T02:18:04Z",
+      "description": "This is the first alpha of the Jet Set Radio Future world for Archipelago.\r\n\r\nIt's for early testing: making sure seeds generate, the client connects to JSRF Unleashed, and both goals (Defeat Gouji and Jet Ranks) can be played start to finish. Expect rough edges, and things may change before the beta.\r\n\r\n**Requirements:** Archipelago 0.6.8 or newer, and JSRF Unleashed 0.6.10 on Windows with your own copy of the game.\r\n\r\n**To install:** download `jsrf.apworld` below and put it in your Archipelago `custom_worlds` folder. The setup guide is in `jsrf/docs/setup_en.md`.\r\n\r\n**Found a problem?** Open an issue and attach the newest `JSRFClient_*.txt` from Archipelago's `logs` folder and `last-run.log` from your JSRF Unleashed folder.",
+      "download_url": "https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/download/v1.0a/jsrf.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3e82efe62700e2cd0fada63d4a1a43f2fa5e69ec56d6426eb9e53eefb21394ee",
+      "html_url": "https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/tag/v1.0a",
+      "minimum_ap_version": "0.6.8",
+      "prerelease": true,
+      "size": 114850,
+      "source_url": "https://api.github.com/repos/rvanmatre50/JSRF-Archipelago-Randomizer",
+      "tag": "v1.0a",
+      "title": "v1.0a",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0"
+    },
+    "v1.1a": {
+      "created_at": "2026-11-20T03:35:52Z",
+      "description": "## Bug fixes\r\n\r\n- **Game over or losing a rival fight no longer breaks your game.** If you went back to the main menu and started a New Game, Corn's talk didn't send you to the free-skate Garage, so you were stuck in the Garage. Now a New Game works the same every time.\r\n- **Progress you lost is put back.** If a game over or an old save loses progress the server already has, the client puts it back when you reach the free-skate Garage. That covers Graffiti Souls, Street Challenges, Mystery Tapes, rival gang wins, Jet ranks and graffiti tags.\r\n- **Restored tags stay sprayed.** Some areas cleared certain tags the first time you entered them after a New Game, even after the client had put them back. They now stay sprayed.\r\n- **The pause screen's Graffiti Soul total is correct.** It now shows the Graffiti Soul items you've received from Archipelago, not the souls you've picked up in the game.\r\n- **Item notices stay with the game window.** Another window placed over the game now covers them, and they hide while the game is minimized.\r\n\r\nTo update, replace `jsrf.apworld` in your `custom_worlds` folder. Seeds made with the earlier v1.0a still work.\r\n\r\n**Full Changelog**: https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/compare/v1.0a...v1.1a",
+      "download_url": "https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/download/v1.1a/jsrf.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c0d4c072b24982dac51d3d1d9d2ba61da8a62ee57a02b0e32ff8080fa6f1b293",
+      "html_url": "https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/tag/v1.1a",
+      "minimum_ap_version": "0.6.8",
+      "prerelease": true,
+      "size": 119376,
+      "source_url": "https://api.github.com/repos/rvanmatre50/JSRF-Archipelago-Randomizer",
+      "tag": "v1.1a",
+      "title": "v1.1a",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0r2"
+    },
+    "v1.2a": {
+      "created_at": "2026-11-22T00:16:00Z",
+      "description": "**Another game's collect or release no longer counts as your progress.** When another world finished with collect on, the client wrote that world's checks into your save as cleared Street Challenges, Jet ranks and tags, which could open Gouji's Tower early. Now only what you actually did in your game is ever put back.",
+      "download_url": "https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/download/v1.2a/jsrf.apworld",
+      "has_manifest": true,
+      "hash_sha256": "c21a4d3ec4a3d0ca68b6f3fd9f800b2116bfa6c6cccc24440a8b32aabdd5db6a",
+      "html_url": "https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/tag/v1.2a",
+      "minimum_ap_version": "0.6.8",
+      "size": 120060,
+      "source_url": "https://api.github.com/repos/rvanmatre50/JSRF-Archipelago-Randomizer",
+      "tag": "v1.2a",
+      "title": "v1.2a",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0r3"
+    }
+  }
+}
