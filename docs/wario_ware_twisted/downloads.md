@@ -1,9 +1,12 @@
 # WarioWare: Twisted!
 
 ## Latest
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/wariotwisted-v1.1.0/wario_ware_twisted.apworld">Latest Version (1.1.0)</a>
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/wariotwisted-v1.1.1/wario_ware_twisted.apworld">Latest Version (1.1.1)</a>
 
 ## All Versions
+
+#### v1.1.1
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/wariotwisted-v1.1.1/wario_ware_twisted.apworld">https://github.com/TheLX5/Archipelago/releases/download/wariotwisted-v1.1.1/wario_ware_twisted.apworld</a>
 
 #### v1.1.0
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/wariotwisted-v1.1.0/wario_ware_twisted.apworld">https://github.com/TheLX5/Archipelago/releases/download/wariotwisted-v1.1.0/wario_ware_twisted.apworld</a>

@@ -6,7 +6,7 @@ a
 
 
 ## Downloads
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/wariotwisted-v1.1.0/wario_ware_twisted.apworld">Latest Version (1.1.0)</a>
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/wariotwisted-v1.1.1/wario_ware_twisted.apworld">Latest Version (1.1.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
