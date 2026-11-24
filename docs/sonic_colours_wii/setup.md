@@ -38,3 +38,5 @@ Host your game on `archipelago.gg` and create a room. When the port appears, dow
 7. Wait for the client to connect to Dolphin and enjoy playing! Keep using the same patch, patched ISO and save for the seed. 
 
 No manual Gecko codes or Riivolution setup is required. Keep the generated ISO and its accompanying `.iso.sonic.json` file; the generated ISO contains game data and should not be redistributed.
+
+If your YAML enables 60 FPS, `/sonicfps off` in the Sonic client disables the override and restores native frame timing while playing. `/sonicfps on` restores 60 FPS. The selection is temporary and does not change your YAML. This requires an ISO patched with the current APWorld; older generated ISOs need to be patched again first.

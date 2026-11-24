@@ -2,64 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-24T06:25:10.775720+00:00</updated>
+  <updated>2026-11-24T12:19:07.298653+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.30.3</id>
-    <title>Super Crazy Rhythm Castle v0.30.2</title>
-    <updated>2026-11-21T10:06:01+00:00</updated>
-    <author>
-      <name>Jack</name>
-    </author>
-    <author>
-      <name>OpenAI</name>
-    </author>
-    <content># v0.30.3 — Super Nectar logic correction
-
-APWorld **0.30.2** · unchanged game client **0.77.2**
-
-`Cell Tower - Deliver Super Nectar` now requires Hypno Pan in generation and Universal Tracker. The old rule checked the base campaign routes but omitted the ability required by their Bee Mode nectar routes, so the tracker could show the delivery too early.
-
-All other prerequisites, Star gates, item/location IDs and slot-data schemas are unchanged. Existing rooms keep their item placements.
-
-## Updating
-
-Replace `scrc.apworld` on the computer generating seeds or running Universal Tracker, then restart Archipelago/Tracker. The corrected tracker rule works with supported existing seeds. Client 0.77.2 does not need reinstalling; its ZIP is the unchanged download from v0.30.2.
-
-[Validation](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.3/docs/testing/2026-11-21-super-nectar.md) · [Installation](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.3/docs/INSTALL.md) · [Known issues](https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/blob/v0.30.3/docs/KNOWN_ISSUES.md)
-
-Validation: 202 APWorld tests and 19 packaging/tool tests passed, plus mixed-game generation on Archipelago 0.6.8 and Universal Tracker 0.2.32 regression checks.
-</content>
-    <link href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.30.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.7.0-rc1</id>
-    <title>Animal Crossing v0.7.0rc1</title>
-    <updated>2026-11-21T10:42:47+00:00</updated>
-    <author>
-      <name>haloopdy</name>
-    </author>
-    <content>This is a release candidate for a new "GameCube" (dolphin only for now) version of the ap world! The PC port has **no visible changes** but has been almost entirely refactored, so if you want to help test by playing the PC port, you still can!&#13;
-&#13;
-I recommend **not updating** to this version unless you want to help test! There are no new features beyond the GameCube version.&#13;
-&#13;
-## How to play the new GameCube version:&#13;
-- You will need a copy of Dolphin with the "dolphin memory engine". If you've ever played other gamecube AP worlds, you already have this. Otherwise, just get the latest version&#13;
-- You will need the usual Animal Crossing US ISO&#13;
-- Install the new apworld, then open the launcher and select **Animal Crossing Gamecube Patcher**&#13;
-- Select your iso, then select the output location. You only need to patch once per version, not once per seed.&#13;
-- There is a new **Animal Crossing Gamecube Client** in the launcher, which you use to connect to Dolphin. You can load the client or Dolphin in any order.&#13;
-- Connect to archipelago in the client, selecting your slot name&#13;
-- In game, you should see the menu state show connected. You can now play as usual.&#13;
-&#13;
-**Open the AP menu in-game with Z+Start**&#13;
-&#13;
-Some features are currently disabled in the GameCube version, but none are related to playing the seed (just stuff like outdoor furniture etc).</content>
-    <link href="https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.7.0-rc1"/>
-  </entry>
   <entry>
     <id>https://github.com/NyanMC/build-a-jetpack/releases/tag/0.3.0c</id>
     <title>Build a Jetpack v0.3.0rc0</title>
@@ -1482,5 +1429,67 @@ What to download&#13;
 - **EldenRingArchipelagoRandomizer.zip** includes the client, and also includes eldenring.apworld and pre-generated yaml files.&#13;
 - **ERMaps.zip** can be used with Universal Tracker (at least version 0.3.8) and is derived from in-game map assets.</content>
     <link href="https://github.com/thefifthmatt/SoulsRandomizers/releases/tag/eldenring-ap-0.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.7.0-rc3</id>
+    <title>Animal Crossing v0.7.0rc3</title>
+    <updated>2026-11-24T06:55:07+00:00</updated>
+    <author>
+      <name>haloopdy</name>
+    </author>
+    <content>Setup instructions: https://github.com/randomouscrap98/AP_ACGC_PC/blob/0.7.0/docs/setup_en.md&#13;
+Game info: https://github.com/randomouscrap98/AP_ACGC_PC/blob/master/docs/game_info_en.md&#13;
+&#13;
+This is a **RELEASE CANDIDATE** for a new "GameCube" version of the ap world, including a way to play on your modded Wii! The PC port has also been almost entirely refactored, so if you want to help test by playing the PC port, you still can!&#13;
+&#13;
+I recommend not updating to this version unless you want to help test!&#13;
+&#13;
+- New **Beach Hints:** letters(?) wash up on shore and picking them up gives you hint. Optional, default on&#13;
+- **Shuffle hourly music:** default off&#13;
+- **Music + Sound effects volume**&#13;
+- **Screen margins:** mostly only needed for CRTs&#13;
+- **Better crash reports**&#13;
+&#13;
+The game has received MASSIVE changes to make this work. Some features are unavailable on Gamecube (outdoor furniture, etc) but should otherwise be fully playable and compatible with all apworld options.&#13;
+&#13;
+This ships a new `Animal Crossing Gamecube Client` in the launcher (only used for Dolphin and Wii) and an `Animal Crossing Gamecube Patcher` for patching your rom, which you only need to do once per version. If you had RC1, you **NEED** to patch again!! You do not need to use the Animal Crossing client for the PC Port, it's builtin!&#13;
+&#13;
+Please see the setup instructions at the top of this release for more information. To summarize:&#13;
+- When playing on Wii, you must install a homebrew app, which is a modified version of Nintendont&#13;
+- The new client is REQUIRED for Dolphin/Wii, but otherwise does nothing for the PC Port&#13;
+- You must patch your iso just once per apworld version.&#13;
+- The patch lives in the **apworld**, you do not need to download it separately.&#13;
+&#13;
+No game assets are distributed in any of these releases.</content>
+    <link href="https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.7.0-rc3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/mariokirby1703/Lumas-Archipelago/releases/tag/sonic_colours_v0.2.3</id>
+    <title>Sonic Colours (Wii) v0.2.3</title>
+    <updated>2026-11-24T10:31:53+00:00</updated>
+    <author>
+      <name>Luma</name>
+    </author>
+    <content># Sonic Colours (Wii) AP v0.2.3&#13;
+[GitHub Release](https://github.com/mariokirby1703/Lumas-Archipelago/releases/tag/sonic_colours_v0.2.3)&#13;
+&#13;
+## New features&#13;
+&#13;
+- Added `/sonicfps off` to disable the 60 FPS patch while playing, and `/sonicfps on` to enable it again&#13;
+&#13;
+## Fixes and improvements&#13;
+&#13;
+- Fixed unreliable **Quick Step** inputs&#13;
+- Added further **Super Sonic** protection against automatic unlock from Game Land completion&#13;
+- **Chaos Emerald checks** now correctly require completing all three stages in their Game Land world&#13;
+- Improved **1-Up pickup detection**&#13;
+- Fixed patching from paths containing Unicode characters&#13;
+- Updated logic for several Locations&#13;
+- Updated PopTracker logic and corrected swapped locations&#13;
+&#13;
+## Known issues&#13;
+&#13;
+- **60 FPS can cause physics issues**, including falling out of loops, Frenzy jumping too high or not easily making it up a ramp in Asteroid Coaster Act 2</content>
+    <link href="https://github.com/mariokirby1703/Lumas-Archipelago/releases/tag/sonic_colours_v0.2.3"/>
   </entry>
 </feed>

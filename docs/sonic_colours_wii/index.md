@@ -4,7 +4,7 @@ Sonic Colours Wii PAL and NTSC-U Archipelago integration.
 
 
 ## Downloads
-- <a href="https://github.com/mariokirby1703/Lumas-Archipelago/releases/download/sonic_colours_v0.2.2/sonic_colours_wii.apworld">Latest Version (0.2.2)</a>
+- <a href="https://github.com/mariokirby1703/Lumas-Archipelago/releases/download/sonic_colours_v0.2.3/sonic_colours_wii.apworld">Latest Version (0.2.3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

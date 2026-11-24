@@ -1,9 +1,12 @@
 # Sonic Colours (Wii)
 
 ## Latest
-- <a href="https://github.com/mariokirby1703/Lumas-Archipelago/releases/download/sonic_colours_v0.2.2/sonic_colours_wii.apworld">Latest Version (0.2.2)</a>
+- <a href="https://github.com/mariokirby1703/Lumas-Archipelago/releases/download/sonic_colours_v0.2.3/sonic_colours_wii.apworld">Latest Version (0.2.3)</a>
 
 ## All Versions
+
+#### v0.2.3
+- <a href="https://github.com/mariokirby1703/Lumas-Archipelago/releases/download/sonic_colours_v0.2.3/sonic_colours_wii.apworld">https://github.com/mariokirby1703/Lumas-Archipelago/releases/download/sonic_colours_v0.2.3/sonic_colours_wii.apworld</a>
 
 #### v0.2.2
 - <a href="https://github.com/mariokirby1703/Lumas-Archipelago/releases/download/sonic_colours_v0.2.2/sonic_colours_wii.apworld">https://github.com/mariokirby1703/Lumas-Archipelago/releases/download/sonic_colours_v0.2.2/sonic_colours_wii.apworld</a>
