@@ -1,11 +1,40 @@
 # Changelog
 Versions are sorted in ascending order, i.e. the most recent changes are at the top.
 
+## 1.1.0
+
+- A lot of internal reworking
+- Updated names of buildings, space platforms, displayed research credits amount, and other features to official 1.0.0+ names
+- Overhauled many options for better design
+  - Old yamls will be fixed by the apworld and do thereby **not** break
+- Added `Unlock pipes with pumps` to `Item Pool Modifiers`
+- Added `Jobs` to `Operator Lines Shapes` (formerly `Shape Generation Modifiers`)
+- Fixed the two final shapes of a milestone potentially being randomized to the same shape
+- Fixed milestones sometimes containing the same shape twice
+- Tweaked RNG handling to reduce the risk of updates breaking UT accuracy
+- Fixed platform capacity items giving only half of the amount mentioned in their name
+- Lessened restrictions for minimum amount of locations
+- Added nested randomness to list-based options
+- Merged multiple trains-related space platform items into `Shape Trains` and `Fluid Trains`
+  - This also fixes the former `Rails` item not actually unlocking the rails
+- Fixed job lines and operator lines being considered accessible in sphere 1 even if locked
+- Added some missing building variants
+- Fixed shapes sometimes generating with floating parts that might even be impossible to produce
+- Fixed generation failures when generating with a game that has "Proguseful" items while the classification is enabled to be written into the scenario file
+- Fixed the "Surprise out-of-logic item" in the shop sometimes containing items that are useless to your slot
+- Turned output zip into a patch file, that automatically installs the scenario and preset files
+- Added a `save_data_folder` setting for patch files to know where to put the output files
+- Added a `overwrite_scenario` setting that determines, whether an already installed scenario+preset should be overwritten
+- Fixed the crystal generator's logic missing `2nd Machine Level`
+
+### Is this version compatible with older multiworld slots and save files?
+No
+
 ## 1.0.1
 
 - Fixed UT rejecting any slot
 
-## Is this version compatible with older multiworld slots?
+### Is this version compatible with older multiworld slots?
 Manual-like client yes, back to 0.99.0 (will be deprecated soon though)
 <br>UT will probably be inaccurate for worlds generated prior to 1.0.0
 
@@ -18,7 +47,7 @@ Client:
 - First public version
 - Will be updated independently
 
-## Is this version compatible with older multiworld slots?
+### Is this version compatible with older multiworld slots?
 Manual-like client yes, back to 0.99.0 (will be deprecated soon though)
 <br>First release of the client mod, so no backwards compatibility with that
 <br>UT will probably be inaccurate for worlds generated prior to 1.0.0
@@ -27,7 +56,7 @@ Manual-like client yes, back to 0.99.0 (will be deprecated soon though)
 
 - Fixed generation failures on AP 0.6.7
 
-## Is this version compatible with older multiworld slots?
+### Is this version compatible with older multiworld slots?
 Manual-like client yes, back to 0.99.0
 <br>UT will probably be inaccurate for worlds generated prior to 0.99.5
 

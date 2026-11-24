@@ -5,7 +5,7 @@ take back the Guardian Corps HQ from the Virus Army, one Circuit stage at a time
 
 
 ## Downloads
-- <a href="https://github.com/MuratDev41/gravity-circuit-ap/releases/download/v1.0.0/gravity_circuit.apworld">Latest Version (1.0.0)</a>
+- <a href="https://github.com/MuratDev41/gravity-circuit-ap/releases/download/v1.1.0/gravity_circuit.apworld">Latest Version (1.1.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

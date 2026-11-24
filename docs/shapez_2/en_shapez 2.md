@@ -44,7 +44,7 @@ The amounts of milestones and operator level checks in your world can be adjuste
       Discord server for more information.
   <br>Other than that, follow the [setup guide for this game.](setup_en.md)
 - ***Where is the options page?***
-  <br>As this game is not (yet) merged into main, type `&template` into the `#aginahbot-spam` channel on the 
+  <br>As this game is not (yet) merged into main, type `&options` into the `#aginahbot-spam` channel on the 
       Discord server for more information.
 - ***What about feature XY?***
   <br>This apworld uses custom scenarios, which are a feature already built into the vanilla game, and can thereby be 

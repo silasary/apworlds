@@ -94,6 +94,21 @@
       "title": "v0.2.2-alpha",
       "version_simple": "0.2.2",
       "world_version": "0.2.2a0"
+    },
+    "v0.2.3-alpha": {
+      "created_at": "2026-11-23T23:06:28Z",
+      "description": "# Release notes\r\n\r\n## v0.2.3-alpha\r\nAPWorld 0.2.3 + game mod 0.1.13. **Update both** (`well_dweller.apworld` and `WellDwellerAP.dll`) and start a new save\r\nfor a new seed. **New YAML template:** `currency_item_amount` is replaced by `currency_item_total`. Older YAMLs still\r\ngenerate, but their `currency_item_amount` is ignored (with a warning).\r\n\r\n### Currency and shop\r\n- New option `currency_item_total` (0-500, default 150): all Currency items from the multiworld together give this\r\n  percentage of what the whole Looter's shop costs at your seed's prices (the six trinkets, the Oil Vial, both Flaming\r\n  Vessel upgrades and all 100 Trinket Points). The amount stays the same whichever checks you turn on.\r\n- `currency_multiplier` now only multiplies the currency you pick up in the game (enemies and vessels).\r\n- Shop checks come into logic much earlier: each purchase only needs its own price (the second Flaming Vessel upgrade\r\n  and later Trinket Points also count the earlier ones), all currency in the areas you can reach counts, and the shop\r\n  opens up after 5% of the map (plus 2 movement abilities). Currency items are never counted by the logic.\r\n\r\n### In the game\r\n- The HUD counter also shows how many checks are in logic right now (\"Checks: found / total   In logic: n\").\r\n  Needs both the new mod and the new apworld.\r\n\r\n### Locations\r\n- New: Desiccated Castle Combat Room (AC_14). Up to 621 locations.\r\n\r\n### Logic\r\nMore fixes from player reports:\r\n- Time trials need the right abilities on top of reaching them: Night Garden Climb + Slingshot/Wall Sling or\r\n  Soar + Hover; Gravenvalley Climb + Slingshot/Wall Sling; Hunter's Cabin Climb + Slingshot/Wall Sling/Hover;\r\n  Autumn Forest Hover.\r\n- Hunter's Cabin: the upper part needs Soar or Climb + Hover; AH_05 trinket from the lower part.\r\n- The Docks to the Depths: Water Vessel + Climb + Hover (the barge leaves from the right side).\r\n- Lookout Tower AG_13, AG_15, AG_17 and AG_28 checks, and the Autumn Forest area around the Forest King, need Hover.\r\n- Drains AP_28 checks: Wind Ride + Hover + (Climb + Slingshot, or Soar).\r\n- Smaller fixes: AN_11 page (Climb is enough), castle AC_03/AC_05 levers (Drains elevator side), AF_34 page (behind\r\n  the Forest King), Burial Vault AT_InsideTomb_after slot (Climb + Wall Sling or Soar).\r\n\r\n### Setup guide\r\n- The Aurie Installer links point straight to the Aurie v2.0.0b release.\r\n\r\n### Game mod (0.1.13)\r\n- HUD shows the in-logic count from the client.\r\n\r\n### Known issues\r\n- The game's own Spirit Nest counts the Spirit Fragments you picked up in the world, not the ones you received, so\r\n  you may need to collect all 5 in the world yourself before the nest turn-in works. The `final_flock` goal only\r\n  completes once you have received them too.\r\n",
+      "download_url": "https://github.com/OSoffocles/Well-Dweller-APWorld/releases/download/v0.2.3-alpha/well_dweller.apworld",
+      "has_manifest": false,
+      "hash_sha256": "e5e435c7f1bd871bd122b6b4d2cd2f8652e23df5f57701e9341542be5e850c35",
+      "html_url": "https://github.com/OSoffocles/Well-Dweller-APWorld/releases/tag/v0.2.3-alpha",
+      "prerelease": true,
+      "size": 62019,
+      "source_url": "https://api.github.com/repos/OSoffocles/Well-Dweller-APWorld",
+      "tag": "v0.2.3-alpha",
+      "title": "Well Dweller AP Randomizer v0.2.3-alpha",
+      "version_simple": "0.2.3",
+      "world_version": "0.2.3a0"
     }
   }
 }

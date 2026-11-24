@@ -4,12 +4,12 @@
 - Well Dweller (Windows; Steam or GOG).
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) 0.6.4 or newer.
 - [Aurie](https://github.com/AurieFramework/Aurie) and [YYToolkit](https://github.com/AurieFramework/YYToolkit),
-  installed with the [Aurie Installer](https://github.com/AurieFramework/Aurie/releases).
+  installed with the [Aurie Installer](https://github.com/AurieFramework/Aurie/releases/tag/v2.0.0b).
 - From this project's release page: `well_dweller.apworld`, `WellDwellerAP.dll` (the game mod) and
   `Well Dweller.yaml` (options template).
 
 ## Installation
-1. Download and run the [Aurie Installer](https://github.com/AurieFramework/Aurie/releases) and install
+1. Download and run the [Aurie Installer](https://github.com/AurieFramework/Aurie/releases/tag/v2.0.0b) and install
    Aurie/YYToolkit for `Well Dweller.exe`.
 2. Copy `WellDwellerAP.dll` to `<Well Dweller>\mods\aurie\`.
 3. Install [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases), then double-click
@@ -89,9 +89,12 @@ Flags the game sets that are not mapped to locations yet are listed in `unknown.
   Queen's Castle tents always stay vanilla.
 - The Looter's shop, the trinket workshop and Ilda's map station are available in the tents from the start.
 - Ability tutorial rooms are skipped: picking up an ability egg returns you to the room you found it in.
-- Shop checks come into logic once the areas you can reach give enough currency for that purchase and every
-  cheaper one (estimated at 1x, divided by the Currency Multiplier). The multiplier applies to all currency,
-  Currency items from the multiworld included. Option `shop_prices: randomized` gives every shop entry its own
+- Shop checks come into logic once the areas you can reach give enough currency for that purchase (estimated at
+  1x, divided by the Currency Multiplier; the second Flaming Vessel upgrade and later Trinket Points also count the
+  earlier ones). The multiplier applies to the currency you
+  pick up in the game. Currency items from the multiworld are sized by `currency_item_total`: all of them together
+  give that percentage (default 150) of what the whole shop costs at your seed's prices, however many Currency
+  items your seed has. The logic doesn't count on Currency items. Option `shop_prices: randomized` gives every shop entry its own
   price between `shop_price_minimum` and `shop_price_maximum` (percent of vanilla). A purchase that would need
   more currency than the whole map gives (very high prices, low multiplier) only holds filler. Shop checks also
   wait for 2 movement abilities (Climb and Endless Climb count as two) and some of the map. Option `shop_progression` (affordable / all / none): by

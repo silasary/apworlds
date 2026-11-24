@@ -253,6 +253,21 @@
       "version_simple": "0.13.1",
       "world_version": "0.13.1"
     },
+    "v0.13.2": {
+      "created_at": "2026-11-23T22:52:26Z",
+      "description": "### Casualties: Unknown Archipelago v0.13.2\r\nThis update is compatible with worlds generated on versions 0.13.0-pre3 and above!\r\n\r\nFor instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).\r\nDevelopment on the Itch.io version of Casualties: Unknown has stopped. To play this mod on the Itch.io version, use CUAP v0.8.0.\r\nDevelopment on the Steam Demo version of Casualties: Unknown has stopped. To play this mod on the Steam Demo version, use CUAP v0.12.3.\r\n\r\n# Additions\r\n- Faulty Chip Trap [APWorld Change]\r\n- Moodlesanity locations that can only exist in one layer now have entrance information inside hints [APWorld Change]\r\n- New locations for completing the four training courses, enabled by the new Trainingsanity YAML option [APWorld Change]\r\n# Changes\r\n- Hint popups now contain entrance information\r\n# Fixes\r\n- Fixed Hearing loss related Moodlesanity locations not being put in logic when receiving WHERE WE MUST REACH access when Randomize Crafting was disabled [APWorld Change]\r\n- Fixed Limb Unlocks not properly upgrading limbs past the first upgrade when the YAML option was set to By Stats\r\n# Known Issues\r\n- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators\r\n- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game\r\n- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game\r\n\r\n**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.13.1...v0.13.2",
+      "download_url": "https://github.com/Nichologeam/CUAP/releases/download/v0.13.2/casualtiesunknown.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f9b0ebc81215818bc96d2b5015deb3a44af2dfe0d3f1d09678944025530536ae",
+      "html_url": "https://github.com/Nichologeam/CUAP/releases/tag/v0.13.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 111005,
+      "source_url": "https://api.github.com/repos/Nichologeam/CUAP",
+      "tag": "v0.13.2",
+      "title": "",
+      "version_simple": "0.13.2",
+      "world_version": "0.13.2"
+    },
     "v0.2.0": {
       "created_at": "2025-08-28T13:40:33Z",
       "description": "### Casualties: Unknown/Scav Prototype Archipelago v0.2.0\r\n\r\nThis release updated the APWorld. Make sure you get the new version!\r\n\r\nFor instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).\r\n\r\n# Changes\r\nLogic! Going deeper now requires Depth Extender items, which are obtained through the multiworld (#1) [APWorld change]\r\nMoodlesanity also has some logic now, with Hearing Loss requiring either Wasteland or access to repairing Drill Pods if Recipe Randomization is on (#1) [APWorld change]\r\nNew yaml option that lets you specify custom goal depth, up to 5000m (#2) [APWorld change]\r\nDying with Deathlink disabled no longer sends a stray Deathlink\r\nRecipe Randomization no longer spams the log when loading a new game\r\nThree new traps have been added: Earthquake Trap, Reversed Controls Trap, and Sleep Trap [APWorld change]\r\nActually remembered to increase the version number this time\r\n\r\nI rewrote basically half the APWorld with this update, so things might break. Let me know if they do.\r\n\r\n**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.1.2...v0.2.0",
