@@ -87,6 +87,21 @@
       "title": "Elden Ring Archipelago Randomizer v0.1.4",
       "version_simple": "0.1.4",
       "world_version": "0.1.4"
+    },
+    "eldenring-ap-0.2.0": {
+      "created_at": "2026-11-24T02:54:24Z",
+      "description": "[Setup guide](<https://github.com/fswap/Archipelago/blob/er/worlds/eldenring/docs/en_setup_guide.md>)\r\n[Game info](<https://github.com/fswap/Archipelago/blob/er/worlds/eldenring/docs/en_Elden_Ring.md>)\r\n\r\nThis version can be considered **semi-stable**. It's still pretty new and is undergoing active development, but has been used for syncs and asyncs without issues.\r\n\r\n- v0.1.5 apworld changes\r\n  - Early items option\r\n  - No filler at priority option\r\n  - Upgrade smoothing is now fuzzier\r\n  - Split the `Dungeon` group into cave, tunnel, grave, etc\r\n  - Multiple paths to a region now work, deeproot and volcano\r\n  - Add item groups `Great Rune`, `Region Lock` so you can hint the next great rune/region lock in logic\r\n  - Rework how adding dlc items to base game and vice versa works, new options and presets\r\n- Add more priority groups and local_item_only groups\r\n- priority_locations now works as ER priority locations\r\n- Options for deathless routing, final boss order, and adding farmable weapons drops as guaranteed item pickups\r\n- Sentry\u2019s torch now places before invis assassin, and UT shows glitched logic for bosses that require an item\r\n\r\nFixes\r\n- v0.1.5 apworld fixes\r\n  - Region soft logic now shows up as yellow/glitched logic in UT\r\n  - The `Drop` group didn\u2019t work and now does\r\n  - Excluded locations with progression could still have progression if important_at_priority_only was off\r\n  - \"misplaced prog\" error is now only on solo gens for compatibility with Stardew and others\r\n- Fix priority location markers not always loading, by loading them earlier\r\n- Fix some Ranni quest softlocks and accidental access to Mt. Gelmir from Rya invitation\r\n- Fix Abductor Virgin positions in some DLC arenas which made fights uncompletable\r\n- Prevent Bayle in Sellia Evergaol\r\n- Make great_runes_required_mountain work properly when set to -1 or 0\r\n- Fix some logic rules\r\n- Fix extra items conflicting with unused lots resulting in error generating mod files\r\n\r\nWhat to download\r\n- **EldenRingArchipelagoRandomizer.zip** includes the client, and also includes eldenring.apworld and pre-generated yaml files.\r\n- **ERMaps.zip** can be used with Universal Tracker (at least version 0.3.8) and is derived from in-game map assets.",
+      "download_url": "https://github.com/thefifthmatt/SoulsRandomizers/releases/download/eldenring-ap-0.2.0/eldenring.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ef0dc1586d6e0a9be717005d3987ada9408822208d97a6d1373b290a4e9e253b",
+      "html_url": "https://github.com/thefifthmatt/SoulsRandomizers/releases/tag/eldenring-ap-0.2.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 408437,
+      "source_url": "https://api.github.com/repos/thefifthmatt/SoulsRandomizers",
+      "tag": "eldenring-ap-0.2.0",
+      "title": "Elden Ring Archipelago Randomizer v0.2.0",
+      "version_simple": "0.2.0",
+      "world_version": "0.2.0"
     }
   }
 }

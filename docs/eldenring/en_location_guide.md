@@ -12,15 +12,17 @@
 Look up acronyms in the [Region Guide](./en_region_guide.md).
 
 ### Examples
-* **CD/AFCHN: Lifesteal Fist - scarab to NW**
-<br> from grace AFCHN head in compass direction to find scarab
+* **CL/ACHN: Ash of War: Lifesteal Fist - scarab to N**
+<br> from grace ACHN head north to find scarab
 * **LG/WR: Golden Rune [1] - graveyard S of WR**
-<br> from landmark WR (because acronym is in the description) head in compass direction to find graveyard
+<br> from landmark WR *(because acronym is in the description)* head south to find graveyard
 * **LG/(CE): Smithing Stone [1] - on anvil**
 <br> within landmark CE the item is on an anvil
 
-#### Some Useful Terminology
+### Some Useful Terminology
 
 `hostile npc drop`: the rare hostile npcs that aren't red
 <br>`invader drop`: invaders / red npcs
 <br>`enemy drop / balloon drop`: non boss enemies with a guaranteed drop
+<br>`boss drop / night boss drop`: all locations dropped by a boss
+<br>`mainboss drop`: all locations dropped by a mainboss in vanilla

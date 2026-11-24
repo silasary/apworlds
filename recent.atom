@@ -2,152 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-24T00:22:04.549378+00:00</updated>
+  <updated>2026-11-24T06:25:10.775720+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/WolfBoi008/One-More-Night/releases/tag/3.2.0</id>
-    <title>Manual_OneMoreNight_WolfBoi008 v3.2.0</title>
-    <updated>2026-11-21T03:28:42+00:00</updated>
-    <author>
-      <name>WolfBoi008</name>
-    </author>
-    <content># Known Issues&#13;
-Same as before.&#13;
-# Changelog&#13;
-- **Added two new Goals: All Endings and All Themed Endings.**&#13;
-- Added some new Custom Presets.&#13;
-- **Removed a majority of the Custom Presets due to them not working on the latest version. If your username is any of the following, please reach out to me to have your Presets re-added with their updated strings:**&#13;
-  - Kayo&#13;
-  - Dry&#13;
-  - PixDev&#13;
-  - uleczal&#13;
-    - On the note of you, I can't even find a link to The Trio (Kinda Hard), so I would appreciate you definitely messaging me.&#13;
-  - Korvenn/One More hi&#13;
-- **Added a zipped folder that has .txt files containing the Custom Preset strings for all of the Custom Presets currently in the Manual.**</content>
-    <link href="https://github.com/WolfBoi008/One-More-Night/releases/tag/3.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/threeandthreee/Archipelago/releases/tag/14.0.1</id>
-    <title>Links Awakening DX Beta v14.0.1</title>
-    <updated>2026-11-21T04:58:25+00:00</updated>
-    <author>
-      <name>zig</name>
-    </author>
-    <author>
-      <name>threeandthree</name>
-    </author>
-    <content>- A bit more resilience for high exclusion counts&#13;
-- Always get item message for things sent from the server (they're never marked as progression)&#13;
-- Tweak an option name that was bugging me</content>
-    <link href="https://github.com/threeandthreee/Archipelago/releases/tag/14.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.6.0-rc3</id>
-    <title>Kirby &amp; The Amazing Mirror v0.6.0rc3</title>
-    <updated>2026-11-21T05:00:24+00:00</updated>
-    <author>
-      <name>Harrison Sherwin</name>
-    </author>
-    <content>Release candidate **v0.6.0-rc3**, built from merged main commit `cc8b35e0021c5ecc3f718ab424ad9a1d56a8fe46` ([PR #1129](https://github.com/hasherwi/Archipelago-kirbyam/pull/1129)). This is a prerelease for testing, not the stable release.
-
-### Changes since RC2
-- Newly generated Completely Random seeds explicitly extend the Mustard Mountain Room 4-15 switch release delay to 600 frames, enabling the verified Normal crossing into Room 4-16. Foley's random grants and no-ability outcomes are unchanged. Off, Shuffled and historical slots retain their existing timing and source-aware rules; full completion validation remains enabled.
-- Add the verified Fire breath route to the Olive Ocean Sound Effects chest as an **Advanced Logic-only** alternative. Fire must be physically obtainable from the independently reachable Hot Head and carried through the encounter. Existing Ice and UFO routes remain. Observed Fire attack waits are not a guaranteed RNG time bound.
-- Improve the existing deterministic Shuffled source-assignment search when RoomSanity or 100% completion requires Room 4-16: test its prerequisite first and allow up to 16,384 source-policy candidates. The reproduced failing seed now passes the unchanged all-check audit. No ability roll is forced and no unsafe output is accepted.
-- Refresh catalog and regression evidence for both routes. **No whole-generation rerolls or retry launcher are included.**
-
-Install **kirbyam.apworld**; it contains the committed patch, not a full game ROM. `kirbyam.provenance.json` and `kirbyam.attestation.jsonl` provide build provenance and signed verification. Regenerate seeds to receive the new logic and explicit room patch; updating an APWorld does not rewrite existing seeds.
-
-Remaining physical-acquisition coverage is tracked in [v1.0.0 follow-up #1122](https://github.com/hasherwi/Archipelago-kirbyam/issues/1122). This RC does not claim complete route coverage or a completed full playthrough.
-
-## v0.6.0
-
-### New Features
-- Add 100% Game Completion Goal: all rooms, chests, levers, Big Switches, and Dark Mind clear. Health upgrades do not add completion requirements since there can be a variable amount (Issue #204).
-- Added "Phone a Friend" as a standard progression item (PR #1086). This gates Kirby's ability to call other Kirbys to the player, but not to return to Central Circle.
-- All sixteen Goal Games award a check when completed, including runs with no prizes (PR #1026).
-- Add the default-off `Advanced Logic` toggle under `Make the game harder`; enabling it allows reviewed Crash and Magic traversal routes (PR #1092).
-
-### Improvements
-- Support YAML-less Universal Tracker tracking for newly generated seeds by restoring their resolved settings, enemy ability assignments, starting inventory and excluded locations (PR #1102).
-- Improve in-game wooden boards over locked area transition mirrors, preserving their original frames (Issue #1027, PR #1105).
-- Improved Logic for Item Placement and Accessible Locations (PR #1092, PR #1103, Issue #1099).
-
-### Known Limitations
-- Phone charges can exceed three, but the battery display does not show the extra charges (PR #1086).
-- Ranged-attack coverage remains incomplete. Three targets retain older rules outside reviewed source assignments; broader physical outcomes still need review. See the [detailed coverage ledger](dev-docs/ranged-coverage-ledger.md) (PR #1052).
-- Only the North American ROM is supported; AP notifications are English.
-- Chests retain their original item sprites and collection animations; statues retain their original ability appearance.
-- mGBA notifications require the visible **Archipelago Connector** scripting panel; they are plain text, not game-image overlays.
-- Testing covers selected gameplay scenarios, not a complete playthrough or every multiplayer setup.
-
-### Bug Fixes
-- Logic previously only cared if you unlocked an ability, not if it was actually obtainable from an enemy or statue. This is fixed. Miniboss and area boss spawns are also considered but only under the new Advanced Logic option (PR #1116).
-- Corrected the Chalk chest compartment (PR #1086).
-- Keep the Mustard Mountain Room 15 timed exit out of logic when no reviewed source-backed route is available, including mixed/failable source policies (Issue #1099). The ordinary Room 17 bypass remains available.
-
-### Internal Changes
-- Detailed Phone source and historical validation records remain in the [Phone documentation](dev-docs/phone-progression-admission.md) (PR #1086).
-- Record bounded Rainbow Route East Map Chest acquisition, independent native cold persistence and real-server delivery evidence; full-goal acceptance remains pending.
-- Validate receipt-first Carrot Castle physical save/cold-load in all three native files using real starting-item delivery; full-goal acceptance remains pending.
-- Extend bounded Moonlight physical-first real-server reconnect validation to all three native files; this is not full-completion acceptance.
-- Persist physical lever pulls alongside seed-bound Hub checks without granting wall ownership or changing the native save layout.
-</content>
-    <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.6.0-rc3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.6.0</id>
-    <title>Kirby &amp; The Amazing Mirror v0.6.0</title>
-    <updated>2026-11-21T05:00:24+00:00</updated>
-    <author>
-      <name>Harrison Sherwin</name>
-    </author>
-    <content>Kirby &amp;amp; the Amazing Mirror v0.6.0 gives you new ways to play in Archipelago. Try the 100% Completion goal, earn a check from each of the 16 Goal Games, or turn on Advanced Logic to open up trickier routes. Seed generation now checks whether you can actually get the copy abilities you need, not just whether you’ve unlocked them.
-
-### Downloads and compatibility
-- **kirbyam.apworld** is the installable world package and includes the committed patch, not a full game ROM.
-- Requires Archipelago **0.6.8**. Only the **North American (USA) ROM** is supported.
-- **kirbyam.provenance.json** records the source, official workflow run and package checksum. **kirbyam.attestation.jsonl** supplies signed verification for the package and receipt; neither is needed for ordinary play.
-- GitHub's source-code archives are repository snapshots, not replacements for the APWorld.
-
-## v0.6.0
-
-### New Features
-- Add 100% Game Completion Goal: all rooms, chests, levers, Big Switches, and Dark Mind clear. Health upgrades do not add completion requirements since there can be a variable amount (Issue #204).
-- Added "Phone a Friend" as a standard progression item (PR #1086). This gates Kirby's ability to call other Kirbys to the player, but not to return to Central Circle.
-- All sixteen Goal Games award a check when completed, including runs with no prizes (PR #1026).
-- Add the default-off `Advanced Logic` toggle under `Make the game harder`; enabling it allows reviewed Crash and Magic traversal routes (PR #1092).
-
-### Improvements
-- Support YAML-less Universal Tracker tracking for newly generated seeds by restoring their resolved settings, enemy ability assignments, starting inventory and excluded locations (PR #1102).
-- Improve in-game wooden boards over locked area transition mirrors, preserving their original frames (Issue #1027, PR #1105).
-- Improved Logic for Item Placement and Accessible Locations (PR #1092, PR #1103, Issue #1099).
-
-### Known Limitations
-- Phone charges can exceed three, but the battery display does not show the extra charges (PR #1086).
-- Ranged-attack coverage remains incomplete. Three targets retain older rules outside reviewed source assignments; broader physical outcomes still need review. See the [detailed coverage ledger](dev-docs/ranged-coverage-ledger.md) (PR #1052).
-- Only the North American ROM is supported; AP notifications are English.
-- Chests retain their original item sprites and collection animations; statues retain their original ability appearance.
-- mGBA notifications require the visible **Archipelago Connector** scripting panel; they are plain text, not game-image overlays.
-- Testing covers selected gameplay scenarios, not a complete playthrough or every multiplayer setup.
-
-### Bug Fixes
-- Logic previously only cared if you unlocked an ability, not if it was actually obtainable from an enemy or statue. This is fixed. Miniboss and area boss spawns are also considered but only under the new Advanced Logic option (PR #1116).
-- Corrected the Chalk chest compartment (PR #1086).
-- Keep the Mustard Mountain Room 15 timed exit out of logic when no reviewed source-backed route is available, including mixed/failable source policies (Issue #1099). The ordinary Room 17 bypass remains available.
-
-### Internal Changes
-- Detailed Phone source and historical validation records remain in the [Phone documentation](dev-docs/phone-progression-admission.md) (PR #1086).
-- Record bounded Rainbow Route East Map Chest acquisition, independent native cold persistence and real-server delivery evidence; full-goal acceptance remains pending.
-- Validate receipt-first Carrot Castle physical save/cold-load in all three native files using real starting-item delivery; full-goal acceptance remains pending.
-- Extend bounded Moonlight physical-first real-server reconnect validation to all three native files; this is not full-completion acceptance.
-- Persist physical lever pulls alongside seed-bound Hub checks without granting wall ownership or changing the native save layout.
-</content>
-    <link href="https://github.com/hasherwi/Archipelago-kirbyam/releases/tag/kirbyam-v0.6.0"/>
-  </entry>
   <entry>
     <id>https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/tag/v0.30.3</id>
     <title>Super Crazy Rhythm Castle v0.30.2</title>
@@ -1495,5 +1354,133 @@ More fixes from player reports:&#13;
 &#13;
 **Full Changelog**: https://github.com/gjgfuj/SlotLock/compare/slotlockv0.11.5...slotlockv0.11.6</content>
     <link href="https://github.com/gjgfuj/SlotLock/releases/tag/slotlockv0.11.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.3.1</id>
+    <title>Kirby Air Ride v1.3.1</title>
+    <updated>2026-11-24T01:11:00+00:00</updated>
+    <author>
+      <name>DeDeDK</name>
+    </author>
+    <content>- Fix nebula belt crash&#13;
+&#13;
+## What's Changed&#13;
+* Bump version to v1.3.1 by @DeDeDeK in https://github.com/DeDeDeK/KARchipelago/pull/59&#13;
+&#13;
+&#13;
+**Full Changelog**: https://github.com/DeDeDeK/KARchipelago/compare/v1.3.0...v1.3.1</content>
+    <link href="https://github.com/DeDeDeK/KARchipelago/releases/tag/v1.3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/studkid/RiftArchipelago/releases/tag/v1.0.1-beta</id>
+    <title>Rift of the Necrodancer v1.0.1b0</title>
+    <updated>2026-11-24T01:18:09+00:00</updated>
+    <author>
+      <name>studkid</name>
+    </author>
+    <content># Additions&#13;
+- [Client] Added a button to dump all installed custom songs&#13;
+&#13;
+# Changes&#13;
+- [Client + APWorld] Removed the song_id field from the custom song json&#13;
+&#13;
+# Bug Fixes&#13;
+- [Client] Custom songs with color html tags should send locations properly&#13;
+- [APWorld] Properly removed Vibe Power from the filler_weights option</content>
+    <link href="https://github.com/studkid/RiftArchipelago/releases/tag/v1.0.1-beta"/>
+  </entry>
+  <entry>
+    <id>https://github.com/nicopop/linklink/releases/tag/1.3.0</id>
+    <title>Manual_LinkLink_Nicopopxd v1.3.0</title>
+    <updated>2026-11-24T02:10:02+00:00</updated>
+    <author>
+      <name>nicopop</name>
+    </author>
+    <content>## What's Changed&#13;
+&#13;
+I got inspired to rewrite anything I didnt like and/or fully understood in this manual and thus this Release is born&#13;
+### Main Changes:&#13;
+I Got Inspired Second Edition by @nicopop in https://github.com/nicopop/linklink/pull/9&#13;
+- Made use of `hooks/Helpers.py` to remove unneeded locations/items/events before the magic even happen&#13;
+  - This shorten the time it take for a magic a lot since it remove all the unused player if you didnt modify `hooks/data.py:MAX_PLAYERS`&#13;
+- converted the "extra" keys to be the same as normal keys so they count as progression/whatever classification "normal" keys are&#13;
+  - extras are now removed at the same rate as normal keys:&#13;
+  - if linklink Item A has 40 keys and 20 extras and it can only actually use 30 of them that is 75% so only 75% of extra are created aka 15&#13;
+- added 1 event per level of a linklink that will now be used to track completion percent&#13;
+  - aka all of `sword 1` has 1 event, `sword 2` has another&#13;
+- Reworked the goal to use a OptionCountPercent of these events and a new `keys_required` option&#13;
+- Made magic respect multiple options&#13;
+  - if magic is not done in pre_fill, &#13;
+    - It now scan `plando` for every item it could use and remove them from linklink&#13;
+      - if your plando block could use 1 of either 2 items both get 1 removed from linklink&#13;
+    - any item:count in `start_inventory_from_pool` is also removed from linklink&#13;
+  - Other options also respected:&#13;
+    - items listed in `local_items` are all removed from linklink&#13;
+    - `item_links` are scanned so any item listed in `item_pool`/`local_items`/`non_local_items` of a item_link are removed from linklink&#13;
+- Made the regions be linked together instead of all being `"starting": true`&#13;
+  - Now only the first level of each linklink item's region is marked as starting and now each region "connects_to" the next level&#13;
+  - This organize the region graph per item instead of having all the region being next to each other on the same line&#13;
+- Included my "custom" version of the manual client that include all of my [open PRs](https://github.com/ManualForArchipelago/Manual/pulls/nicopop)&#13;
+  - The goal shows how many events is required before you can goal thru the alias system added in one of the PR&#13;
+- Made it easier to add linklink keys (items)&#13;
+  - You no longer need to add "progression": true, and "category": ["linklink"] to them its now done for you&#13;
+    - you can still specify other item classification but ll keys are now allways at least progression&#13;
+    - you can also specify custom categories and an appropriate linklink category will get added to it (changes if its in other items.json files&#13;
+- Non linklink items and location should now be fully supported&#13;
+  - for those that wants to add some custom items/locations to their gimmic async or even some free hints&#13;
+- Updated the Sorting script to actually count the characters before each values instead of starting at the first value of each lines&#13;
+  - lines are now wrapped if a value would go over 120 characters from the start of each line&#13;
+- Updated the README to include feature that are only in this fork of linklink&#13;
+&#13;
+**Full Changelog**: https://github.com/nicopop/linklink/compare/1.2.1...1.3.0&#13;
+&#13;
+Do report any bugs/issues either on [Github](https://github.com/nicopop/linklink/issues) or on Discord&#13;
+&#13;
+Based on Silasary's [linklink](https://github.com/silasary/linklink)</content>
+    <link href="https://github.com/nicopop/linklink/releases/tag/1.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/thefifthmatt/SoulsRandomizers/releases/tag/eldenring-ap-0.2.0</id>
+    <title>EldenRing v0.2.0</title>
+    <updated>2026-11-24T02:54:24+00:00</updated>
+    <author>
+      <name>Bedrock</name>
+    </author>
+    <content>[Setup guide](&lt;https://github.com/fswap/Archipelago/blob/er/worlds/eldenring/docs/en_setup_guide.md&gt;)&#13;
+[Game info](&lt;https://github.com/fswap/Archipelago/blob/er/worlds/eldenring/docs/en_Elden_Ring.md&gt;)&#13;
+&#13;
+This version can be considered **semi-stable**. It's still pretty new and is undergoing active development, but has been used for syncs and asyncs without issues.&#13;
+&#13;
+- v0.1.5 apworld changes&#13;
+  - Early items option&#13;
+  - No filler at priority option&#13;
+  - Upgrade smoothing is now fuzzier&#13;
+  - Split the `Dungeon` group into cave, tunnel, grave, etc&#13;
+  - Multiple paths to a region now work, deeproot and volcano&#13;
+  - Add item groups `Great Rune`, `Region Lock` so you can hint the next great rune/region lock in logic&#13;
+  - Rework how adding dlc items to base game and vice versa works, new options and presets&#13;
+- Add more priority groups and local_item_only groups&#13;
+- priority_locations now works as ER priority locations&#13;
+- Options for deathless routing, final boss order, and adding farmable weapons drops as guaranteed item pickups&#13;
+- Sentry’s torch now places before invis assassin, and UT shows glitched logic for bosses that require an item&#13;
+&#13;
+Fixes&#13;
+- v0.1.5 apworld fixes&#13;
+  - Region soft logic now shows up as yellow/glitched logic in UT&#13;
+  - The `Drop` group didn’t work and now does&#13;
+  - Excluded locations with progression could still have progression if important_at_priority_only was off&#13;
+  - "misplaced prog" error is now only on solo gens for compatibility with Stardew and others&#13;
+- Fix priority location markers not always loading, by loading them earlier&#13;
+- Fix some Ranni quest softlocks and accidental access to Mt. Gelmir from Rya invitation&#13;
+- Fix Abductor Virgin positions in some DLC arenas which made fights uncompletable&#13;
+- Prevent Bayle in Sellia Evergaol&#13;
+- Make great_runes_required_mountain work properly when set to -1 or 0&#13;
+- Fix some logic rules&#13;
+- Fix extra items conflicting with unused lots resulting in error generating mod files&#13;
+&#13;
+What to download&#13;
+- **EldenRingArchipelagoRandomizer.zip** includes the client, and also includes eldenring.apworld and pre-generated yaml files.&#13;
+- **ERMaps.zip** can be used with Universal Tracker (at least version 0.3.8) and is derived from in-game map assets.</content>
+    <link href="https://github.com/thefifthmatt/SoulsRandomizers/releases/tag/eldenring-ap-0.2.0"/>
   </entry>
 </feed>

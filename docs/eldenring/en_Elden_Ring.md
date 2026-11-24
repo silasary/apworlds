@@ -18,6 +18,6 @@ Additional key items may appear that are not part of vanilla Elden Ring. By defa
 
 ## Enemy randomizer customization
 
-Custom enemy placement allows extensive customization of enemy randomizer. It is commonly used to merge all bosses in the game across different boss categories, which can be accomplished by clicking "Merge all bosses" in merge presets. You can also prevent a boss or enemy from appearing anywhere by adding it to "Excluded everywhere", and there is limited support for enemy plando under "Manual Placement".
+Custom enemy placement allows extensive customization of enemy randomizer. It is commonly used to merge all bosses in the game across different boss categories, which can be accomplished by clicking "Merge all bosses" in merge presets or using the option `merge_bosses`. You can also prevent a boss or enemy from appearing anywhere by adding it to "Excluded everywhere", and there is limited support for enemy plando under "Manual Placement".
 
 Note if `rykard_encounter` is disabled, called "Give Serpent-Hunter upon encountering Rykard" in the randomizer program, the locations of Rykard and God-Devouring Serpent are set by the apworld and cannot be overridden in custom enemy placement.

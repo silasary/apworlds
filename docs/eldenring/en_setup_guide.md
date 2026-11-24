@@ -115,4 +115,10 @@ If the launcher button shows the me3 console but doesn't actually start the game
 
 If you see an error message pop up in-game followed by the game closing, this is likely a client error. Further information may be logged in the `dll\log` directory. Note the client dll is currently a debug build because the release build crashes, which will be addressed in the future.
 
+If you get an `Failed to load save data. Save data is corrupted.` error this is most likely due to windows anti-virus deleting `er_archipelago.dll` in `randomizer/dll`, you can restore the file or just extract it again and it'll work.
+
 Otherwise, if the game stutters and crashes while using enemy randomizer, make sure you're launching the game with `RandomizerCrashFix.dll`. Also, verify integrity of installed files in Steam, because they can get accidentally corrupted surprisingly often.
+
+If you encouter `Exception: No world found to handle game Elden Ring. Did you mean 'EldenRing'` while generating a game this means you are using the yaml for the other implimention, either use one from `randomizer/yamls` or use generate template option in the laucher and find the yamls in `players/templates`
+
+If you get `Failed to log in: InvalidGame` when trying to connect with the randomizer it means you are using the other implimentions apworld and yaml, uninstall both and use the apworld that came with the randomizer, see above for replacing the yaml.

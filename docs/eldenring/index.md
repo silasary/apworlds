@@ -1,10 +1,10 @@
 # EldenRing
 
-
+Elden Ring Archipeligo.
 
 
 ## Downloads
-- <a href="https://github.com/thefifthmatt/SoulsRandomizers/releases/download/eldenring-ap-0.1.4/eldenring.apworld">Latest Version (0.1.4)</a>
+- <a href="https://github.com/thefifthmatt/SoulsRandomizers/releases/download/eldenring-ap-0.2.0/eldenring.apworld">Latest Version (0.2.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

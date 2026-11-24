@@ -1,9 +1,12 @@
 # Equilinox
 
 ## Latest
-- <a href="https://github.com/AAces17/EquilinoxAPClient/releases/download/0.2.1/equilinox.apworld">Latest Version (0.2.0r2)</a>
+- <a href="https://github.com/AAces17/EquilinoxAPClient/releases/download/0.2.2/equilinox.apworld">Latest Version (0.2.2)</a>
 
 ## All Versions
+
+#### v0.2.2
+- <a href="https://github.com/AAces17/EquilinoxAPClient/releases/download/0.2.2/equilinox.apworld">https://github.com/AAces17/EquilinoxAPClient/releases/download/0.2.2/equilinox.apworld</a>
 
 #### v0.2.0r2
 - <a href="https://github.com/AAces17/EquilinoxAPClient/releases/download/0.2.1/equilinox.apworld">https://github.com/AAces17/EquilinoxAPClient/releases/download/0.2.1/equilinox.apworld</a>

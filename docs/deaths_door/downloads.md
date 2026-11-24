@@ -1,9 +1,12 @@
 # Death&#x27;s Door
 
 ## Latest
-- <a href="https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/download/v0.5.0/deaths_door.apworld">Latest Version (0.5.0)</a>
+- <a href="https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/download/v0.5.0/deaths_door.apworld">Latest Version (0.5.0.post2)</a>
 
 ## All Versions
+
+#### v0.5.0.post2
+- <a href="https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/download/v0.5.0/deaths_door.apworld">https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/download/v0.5.0/deaths_door.apworld</a>
 
 #### v0.5.0
 - <a href="https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/download/v0.5.0/deaths_door.apworld">https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/download/v0.5.0/deaths_door.apworld</a>
