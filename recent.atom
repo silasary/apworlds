@@ -2,76 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-24T12:19:07.298653+00:00</updated>
+  <updated>2026-11-24T18:25:35.394602+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/NyanMC/build-a-jetpack/releases/tag/0.3.0c</id>
-    <title>Build a Jetpack v0.3.0rc0</title>
-    <updated>2026-11-21T10:57:39+00:00</updated>
-    <author>
-      <name>ChromaNyan</name>
-    </author>
-    <content>The client now remembers checked shop locations and won't make you buy them a second time&#13;
-Nerfed Money filler considerably (50 -&gt; 10) to account for this. It may be removed completely in a future update.&#13;
-&#13;
-The apworld has not changed since 0.3.0.</content>
-    <link href="https://github.com/NyanMC/build-a-jetpack/releases/tag/0.3.0c"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Panda291/Archipelago/releases/tag/v0.3.2</id>
-    <title>Ratchet &amp; Clank v0.3.2</title>
-    <updated>2026-11-21T12:01:09+00:00</updated>
-    <author>
-      <name>Panad</name>
-    </author>
-    <author>
-      <name>Myth197</name>
-    </author>
-    <author>
-      <name>Amondo</name>
-    </author>
-    <content>Fixed a bug where any progressive option besides "normal" for weapons would cause generation to fail.&#13;
-&#13;
-Fixed the logic to complete the `Tricky` Skillpoint.</content>
-    <link href="https://github.com/Panda291/Archipelago/releases/tag/v0.3.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/threeandthreee/Archipelago/releases/tag/14.0.2</id>
-    <title>Links Awakening DX Beta v14.0.2</title>
-    <updated>2026-11-21T16:06:59+00:00</updated>
-    <author>
-      <name>zig</name>
-    </author>
-    <author>
-      <name>threeandthree</name>
-    </author>
-    <content>Fixes patching issue for certain foreign icons.</content>
-    <link href="https://github.com/threeandthreee/Archipelago/releases/tag/14.0.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/IxrecsRandomizers/NineSolsArchipelagoRandomizer/releases/tag/0.7.1</id>
-    <title>Nine Sols v0.7.1</title>
-    <updated>2026-11-21T18:40:12+00:00</updated>
-    <author>
-      <name>IxrecsRandomizers</name>
-    </author>
-    <content>For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).&#13;
-&#13;
-- Visiting the Boundless Repository Gauntlet after Yanlao's death will now pretend Yanlao is still alive. In vanilla, the Gauntlet removes several boxes on revisits so you don't need Yanlao to snipe boxes, but several of those box removals would completely change randomizer logic. This has technically been broken since day one, but we only noticed this problem after ER created unbeatable seeds that forced players to do the Claw fight before the Gauntlet.&#13;
-- In 0.7.0 ER it was possible to softlock yourself by arriving at an elevator that normally requires hacking to unlock, then immediately hacking the hack point next to it. Now the randomizer mod will set the flags to permanently unlock these elevators on arrival, so the hack point becomes a no-op instead.&#13;
-- The lower GoS (East) -&gt; GoS (West) connection is blocked by pillars until you trigger a spike ball in GoS (East) to destroy them. The logic surrounding this was incorrect in a way that did not matter before, but causes unbeatable seeds in ER. Now this logic correctly requires that you can trigger the GoS (East) spike ball before assuming you can access these entrances.&#13;
-- Previously, most shop locations were not in logic until you gained access to enough parts of the map. Due to an oversight, Kuafu's shop was an exception, so unlocking his shop early could still lead to an early required jin grind (which became a much bigger problem when ER produced a layout with no early enemies). The Kuafu shop logic has been reworked, so even his "low cost" shop locations now also require some "map access."&#13;
-- `vanilla` logic:&#13;
-	- W&amp;OS now has logic for starting from the Left Exit, which we realized is important in ER.&#13;
-- `ledge_storage` logic:&#13;
-	- "Factory (PA) - Lower Left Elevator" to "Root Node" now allows wall slide with CL setup.&#13;
-	- "Yinglong Canal - Egg Cave &amp; Left Exit" to "Above Egg Cave" using multiple LS vaults with AD setup and a bow hover.&#13;
-</content>
-    <link href="https://github.com/IxrecsRandomizers/NineSolsArchipelagoRandomizer/releases/tag/0.7.1"/>
-  </entry>
   <entry>
     <id>https://github.com/ElGrenier/RE7_AP_World/releases/tag/0.5.0</id>
     <title>Resident Evil 7 v0.5.0</title>
@@ -150,7 +85,14 @@ Selecting any of the new trap/powerup items as filler (other than Slime Storm) s
     <author>
       <name>rvanmatre50</name>
     </author>
-    <content>**Another game's collect or release no longer counts as your progress.** When another world finished with collect on, the client wrote that world's checks into your save as cleared Street Challenges, Jet ranks and tags, which could open Gouji's Tower early. Now only what you actually did in your game is ever put back.</content>
+    <content>## Bug fixes&#13;
+&#13;
+- **Another game's collect or release no longer counts as your progress.** When another world in your multiworld reached its goal with collect on, or someone used `!collect` or `!release`, the client treated JSRF's newly marked checks as progress you'd lost. It wrote them into your save as cleared Street Challenges, picked-up Graffiti Souls, Jet ranks and sprayed tags. That could open Gouji's Tower, or complete the Jet Ranks goal, before you'd done the work yourself.&#13;
+- **Only your own progress is put back after a game over.** The client now keeps a record on the Archipelago server of what you've actually done in your game. After a game over or a New Game it puts back only what's in that record.&#13;
+- **Collected checks you do yourself still count.** If another world collected a Street Challenge or tag spot and you clear or spray it later anyway, it counts toward Gouji's Tower as usual.&#13;
+- **Collected Graffiti Souls stay in the level.** Picking one up doesn't send anything new, because the server already has that check. This matches how other Archipelago games handle collected locations.&#13;
+&#13;
+To update, replace `jsrf.apworld` in your `custom_worlds` folder. Seeds made with the earlier v1.0a still work. For a seed you started before this update, the client begins its record with whatever your save shows done the first time the new client connects.</content>
     <link href="https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/tag/v1.2a"/>
   </entry>
   <entry>
@@ -1491,5 +1433,70 @@ No game assets are distributed in any of these releases.</content>
 &#13;
 - **60 FPS can cause physics issues**, including falling out of loops, Frenzy jumping too high or not easily making it up a ramp in Asteroid Coaster Act 2</content>
     <link href="https://github.com/mariokirby1703/Lumas-Archipelago/releases/tag/sonic_colours_v0.2.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/LittleLudroth/MHRise-APWorld/releases/tag/v0.5.5</id>
+    <title>Monster Hunter Rise v0.5.5</title>
+    <updated>2026-11-24T16:17:48+00:00</updated>
+    <author>
+      <name>SolomonW</name>
+    </author>
+    <author>
+      <name>LittleLudroth</name>
+    </author>
+    <content>**Full Changelog**: https://github.com/LittleLudroth/MHRise-APWorld/compare/v0.5.4...v0.5.5</content>
+    <link href="https://github.com/LittleLudroth/MHRise-APWorld/releases/tag/v0.5.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-1.0.5</id>
+    <title>SM64: Spicy Mycena 64 v1.0.5</title>
+    <updated>2026-11-24T16:40:03+00:00</updated>
+    <author>
+      <name>Alchav</name>
+    </author>
+    <content>## apworld&#13;
+&#13;
+- Universal Tracker: Signs can reveal shuffled entrance destinations without adding them to glitch logic. Traversing an entrance still marks it as discovered. Requires a client that reports hinted entrances separately.&#13;
+- Jolly Roger Bay: Logic fix for the highest coin in the Vertical Coin Line.&#13;
+- Hazy Maze Cave: The hangable ceiling leading to the Pit Islands now logically require Triple Jump or Signs in addition to their existing requirements. &#13;
+- Wet-Dry World: logic fix for Pedestal 10-Coin Block.&#13;
+- Tower of the Wing Cap: Wing Cap classification fix.&#13;
+- Removed `Hazy Maze Cave - Trigger 1-Ups` which did nothing.&#13;
+- Generation speed improvements, especially for seeds with many coin-count checks and enabled tricks.&#13;
+- Added description for the Accessibility option, which fixes WebHost option-page generation. #29 &#13;
+&#13;
+## sm64ex&#13;
+&#13;
+- Disabled attract-mode demos on the title and game-over screens.&#13;
+- The client now retries unconfirmed location checks, including after reconnecting. Loading saved coins also rechecks individual coin locations and per-course coin thresholds.&#13;
+- The client now retries saving your collected coins if the server doesn’t respond, reducing the chance that coins reappear uncollected after you restart.</content>
+    <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-1.0.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Alchav/Archipelago/releases/tag/spicy-1.0.6</id>
+    <title>SM64: Spicy Mycena 64 v1.0.6</title>
+    <updated>2026-11-24T17:25:45+00:00</updated>
+    <author>
+      <name>Alchav</name>
+    </author>
+    <content>Fixed the logic for the Igloo Ice Block 1-Up</content>
+    <link href="https://github.com/Alchav/Archipelago/releases/tag/spicy-1.0.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/MuratDev41/gravity-circuit-ap/releases/tag/v1.1.1</id>
+    <title>Gravity Circuit (MuratDev's Implementation) v1.1.1</title>
+    <updated>2026-11-24T17:39:44+00:00</updated>
+    <author>
+      <name>Murat Kaan Tekeli</name>
+    </author>
+    <content>### Fixes
+- Fixed a crash when Knockback Link or a Knockback Trap hit during a cutscene. Knockbacks no longer apply in
+  cutscenes, doors, warps or the walker; a Knockback Trap waits until it can.
+- Refills and traps wait until cutscenes end.
+- Fixed the Pixelate Trap doing nothing.
+
+Only the client changed, so seeds made with 1.1.0 keep working. Run the installer again to update.
+</content>
+    <link href="https://github.com/MuratDev41/gravity-circuit-ap/releases/tag/v1.1.1"/>
   </entry>
 </feed>

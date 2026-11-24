@@ -1,3 +1,10 @@
+# General build information
+| **Package**    | **Version** | **Metadata**         |
+|----------------|-------------|----------------------|
+| UE4SS          | V3.0.1      |                      |
+| lua-apclientpp | V0.6.6      | lua54-clang64-static |
+
+
 # Abbreviations in dev
 ## Locations / items
 | **Abbreviation** | **Meaning**         | **item ID code** |

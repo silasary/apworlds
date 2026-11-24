@@ -1,9 +1,15 @@
 # SM64: Spicy Mycena 64
 
 ## Latest
-- <a href="https://github.com/Alchav/Archipelago/releases/download/spicy-1.0.4/sm64ex_spicy.apworld">Latest Version (1.0.4)</a>
+- <a href="https://github.com/Alchav/Archipelago/releases/download/spicy-1.0.6/sm64ex_spicy.apworld">Latest Version (1.0.6)</a>
 
 ## All Versions
+
+#### v1.0.6
+- <a href="https://github.com/Alchav/Archipelago/releases/download/spicy-1.0.6/sm64ex_spicy.apworld">https://github.com/Alchav/Archipelago/releases/download/spicy-1.0.6/sm64ex_spicy.apworld</a>
+
+#### v1.0.5
+- <a href="https://github.com/Alchav/Archipelago/releases/download/spicy-1.0.5/sm64ex_spicy.apworld">https://github.com/Alchav/Archipelago/releases/download/spicy-1.0.5/sm64ex_spicy.apworld</a>
 
 #### v1.0.4
 - <a href="https://github.com/Alchav/Archipelago/releases/download/spicy-1.0.4/sm64ex_spicy.apworld">https://github.com/Alchav/Archipelago/releases/download/spicy-1.0.4/sm64ex_spicy.apworld</a>

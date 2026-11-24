@@ -1,9 +1,12 @@
 # Gravity Circuit (MuratDev&#x27;s Implementation)
 
 ## Latest
-- <a href="https://github.com/MuratDev41/gravity-circuit-ap/releases/download/v1.1.0/gravity_circuit.apworld">Latest Version (1.1.0)</a>
+- <a href="https://github.com/MuratDev41/gravity-circuit-ap/releases/download/v1.1.1/gravity_circuit.apworld">Latest Version (1.1.1)</a>
 
 ## All Versions
+
+#### v1.1.1
+- <a href="https://github.com/MuratDev41/gravity-circuit-ap/releases/download/v1.1.1/gravity_circuit.apworld">https://github.com/MuratDev41/gravity-circuit-ap/releases/download/v1.1.1/gravity_circuit.apworld</a>
 
 #### v1.1.0
 - <a href="https://github.com/MuratDev41/gravity-circuit-ap/releases/download/v1.1.0/gravity_circuit.apworld">https://github.com/MuratDev41/gravity-circuit-ap/releases/download/v1.1.0/gravity_circuit.apworld</a>
