@@ -40,6 +40,7 @@ To show an AP-style icon in game for AP-specific items, you can apply an optiona
 3. If prompted for the game executable location, find it and select `DarkSoulsRemastered.exe`.
 4. It should now be patched. When you next connect with the `DSAP.Desktop.exe` client, ap items will show with the new icon.
 5. If at any time you wish to _unpatch_ it, either use the "verify integrity of game files" option through steam, or open the Archipelago Launcher, and run the "Revert DSR Patch" component.
+* This patch process will only work if the `menu_0.tpf.dcx` file in your install is not modified. If it _is_ modified (such as by icon-, texture-, or UI-changing mods), but you still want the icon, you can manually replace the prism stone icon with the `dsr_ap_logo.png` file from the repository (using existing DS1 modding tools).
 
 ### Running and Connecting the Game
 
@@ -165,19 +166,33 @@ Right click game in library -> Properties -> Installed Files -> Verify integrity
 If disabling antivirus fixes it, you can reduce security risk by adding an exception for DSAP specifically, instead.
 4. Make sure you don't have conflicting mods installed. If you do, you may need to uninstall your game, completely remove all files from the game install folder, and reinstall the game, as Steam "verify" and uninstall/reinstall itself will not remove all mod files, so residual files can cause problems.
 
+### "Error: Incorrect item lots detected" red error message (and more) on connect.
+This is a sign that the  `[...]\DARK SOULS REMASTERED\param\GameParam\GameParam.parambnd.dcx` file was modified in a way that DSAP cannot safely manage, or that the effective game params being used for the item lots in game have been modified (e.g. if run through a mod engine).  
+It is possible that you ran HPR's item randomizer in the past, and are connecting DSAP to a game instance of DSR that it randomized, or you may be running other incompatible mods.  
+Steps to restore the original version of the file:
+1. In your game files, delete your `param\GameParam` folder.
+2. Verify Integrity of Game Files for _Dark Souls: Remastered_ via Steam.
+3. _If you are using Matt's DS1 Enemy Randomizer_, you must _also_ re-run the randomization (click `Run with set Seed`); otherwise, it will use the cached Game Params based on the Item Rando params!
+4. Relaunch DS:R and the client (`DSAP.Desktop.exe`), and reconnect.
+
+### Items don't send upon picking up item locations, or show the wrong location in DSAP Log, Text Client, or Server Log upon pickup. 
+Additionally, there may be more error messages and warnings on startup.
+Steps to fix: 
+Ensure your client is connected, and check the log for error messages.  
+This shouldn't happen anymore as of v0.3.2, so if it happens anyway (for checks that are valid in your settings), please report it in the `dark-souls-remastered` channel in the AP discord.
+
 ### Not receiving items, or receiving double items.
 Try running DSAP.Desktop.exe as Administrator.
 
 ### Save Corrupted (usually upon quitting to menu), and progress lost
 Because DSAP modifies DS:R memory and code directly, some antivirus software may see it or DS:R as malware when running in this mode. As a result, they restrict the ability of DS:R to make its save.
-Adding DSAP, DS:R, or the .sl2 save file extension type to the antivirus' exceptions list resolved the issue for at least one user who saw this issue. If this works for you, please let us know in the dark-souls-1 channel in the AP discord.
+Adding DSAP, DS:R, or the .sl2 save file extension type to the antivirus' exceptions list resolved the issue for at least one user who saw this issue. If this works for you, please let us know in the `dark-souls-remastered` channel in the AP discord.
 
 ### I can't walk through Fog Wall at the start of the Undead Burg!
 See the [Game Page topic on Fogwall Sanity](https://github.com/tathxo/DSAP/blob/main/apworld/dsr/docs/en_Dark%20Souls%20Remastered.md#isnt-the-game-extremely-open-from-the-start-what-is-fogwall-sanity). Likely, the game expects you to go into New Londo, through which there are multiple ways to the Valley of Drakes, which itself connects to multiple other regions.
-If you _do_ have the `Fog Wall Key - Undead Burg` (not `Undead Parish`!), then you may need to restart your game and client, and then reconnect.
 
 ### Placing Lord Souls at Firelink Altar does not open the door
 This seems to be due to not having received some number of the Lord Souls or Lordvessel. If you see this, please run the /lordvessel command, which will both provide diagnostic information & the missing items. To help us debug this issue, please provide a screenshot of the output with any additional context you can provide about the missing items to the dark-souls-1 channel in the AP discord. Additional context that would be useful includes: did the items come in while you were offline, was it with other items, etc.
 
 ### Issue not listed here
-Please let us know in the dark-souls-1 channel in the AP discord. Include any screenshots, including the output of the `/diag` command in the client.
+Please let us know in the dark-souls-remastered channel in the AP discord. Include any screenshots, including the output of the `/diag` command in the client.

@@ -2,29 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-25T06:16:46.595471+00:00</updated>
+  <updated>2026-11-25T12:19:44.493354+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.51</id>
-    <title>Mental Omega v1.51.0</title>
-    <updated>2026-11-22T14:35:20+00:00</updated>
-    <author>
-      <name>Mental Omega Randomizer contributors</name>
-    </author>
-    <content>- Fix error message with coop missions&#13;
-- Fix Gharial prototype watermodel&#13;
-- Fix Mastodon reload buff&#13;
-- Fix Bison repair&#13;
-- Adjust Conquest Mode&#13;
-- Fix Advance filter error&#13;
-- Fix Archipelago Keymode (checks gave 100 keys instead of a single key)&#13;
-- Add Victory Modal in Gridmode&#13;
-- Fix Nanofibre sync mutation</content>
-    <link href="https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.51"/>
-  </entry>
   <entry>
     <id>https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.8</id>
     <title>Chrono Trigger Rando-Dalton Imperial v0.0.8</title>
@@ -1433,47 +1415,79 @@ Compatible with v0.1.0-alpha</content>
     <author>
       <name>Terairk</name>
     </author>
-    <content>&gt; [!WARNING]&#13;
-&gt; Steam workshop's update process is down currently as of 25/11/2026 due to a malware wave. So this includes many many mods including RitsuLib and us, as such there is no current workshop release for our dependencies and our mod. So you must download RitsuLib and this mod manually.&#13;
-&#13;
-&gt; [!IMPORTANT]&#13;
-&gt; **Play on the game's beta branch.** Main-branch support is on thin ice but supported none the less: the mod still runs there, but it's largely untested and new game features might not be supported on it.&#13;
-&#13;
-## Setup&#13;
-&#13;
-For installation, YAML configuration, generation and connection instructions, see&#13;
-[the Slay the Spire II setup guide](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/blob/setup-docs-do-not-delete/world/spire2/docs/setup_en.md).&#13;
-&#13;
-Archipelago **Launcher v0.6.7+** is required for generation. Install **STS2-RitsuLib 0.6.16+** separately.&#13;
-&#13;
-The newest YAML Builder is at [sts2ap.terairk.dev](https://sts2ap.terairk.dev/#/builder), and the mod's **Mod Website &amp; YAML Builder** button opens it. [sts2ap.net](https://sts2ap.net/#/builder) gets the new options later.&#13;
-&#13;
-# Version Information&#13;
-&#13;
-- **Archipelago Mod:** 2.2.4&#13;
-- **APWorld:** 1.4.2&#13;
-- **Slay the Spire II main branch:** v0.111.1&#13;
-- **Slay the Spire II beta branch:** v0.114.0&#13;
-&#13;
-# Changelist&#13;
-&#13;
-1) Character relics can now spawn in treasure chests (bypassing base game behaviour for fun's sake).&#13;
-2) Support for v0.114.0 on the beta branch.&#13;
-3) Re-added the Back button to the character select screen.&#13;
-&#13;
-### Version compatibility&#13;
-&#13;
-The APWorld is still 1.4.2, so seeds generated for 2.2.3 work with this mod. This mod needs STS2-RitsuLib 0.6.16 or newer.&#13;
-&#13;
-Everyone in a multiplayer lobby should use the same mod version and game branch.&#13;
-&#13;
-Tested in singleplayer on the beta branch.&#13;
-&#13;
-## Known Issues/Limitations&#13;
-&#13;
-- **Main branch:** largely untested and gets no new features. Main-branch multiplayer might not be supported in a future release.&#13;
-- In multiplayer, AP menu rewards can only be claimed outside combat; Death Fragments are disabled. **Anytime** Ancient rewards are recommended.&#13;
+    <content>&gt; [!WARNING]
+&gt; Steam workshop's update process is down currently as of 25/11/2026 due to a malware wave. So this includes many many mods including RitsuLib and us, as such there is no current workshop release for our dependencies and our mod. So you must download RitsuLib and this mod manually.
+
+&gt; [!IMPORTANT]
+&gt; **Play on the game's beta branch.** Main-branch support is on thin ice but supported none the less: the mod still runs there, but it's largely untested and new game features might not be supported on it.
+
+## Setup
+
+For installation, YAML configuration, generation and connection instructions, see
+[the Slay the Spire II setup guide](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/blob/setup-docs-do-not-delete/world/spire2/docs/setup_en.md).
+
+Archipelago **Launcher v0.6.7+** is required for generation. Install **STS2-RitsuLib 0.6.16+** separately.
+
+The newest YAML Builder is at [sts2ap.terairk.dev](https://sts2ap.terairk.dev/#/builder), and the mod's **Mod Website &amp; YAML Builder** button opens it. [sts2ap.net](https://sts2ap.net/#/builder) gets the new options later.
+
+# Version Information
+
+- **Archipelago Mod:** 2.2.4
+- **APWorld:** 1.4.2
+- **Slay the Spire II main branch:** v0.111.1
+- **Slay the Spire II beta branch:** v0.114.0
+
+# Changelist
+
+1) Character relics can now spawn in treasure chests (bypassing base game behaviour for fun's sake).
+2) Support for v0.114.0 on the beta branch.
+3) Re-added the Back button to the character select screen.
+4) The Archipelago button on the top bar now shows its keybind in keyboard-only mode, like the Deck and Map buttons.
+
+### Version compatibility
+
+The APWorld is still 1.4.2, so seeds generated for 2.2.3 work with this mod. This mod needs STS2-RitsuLib 0.6.16 or newer.
+
+Everyone in a multiplayer lobby should use the same mod version and game branch.
+
+Tested in singleplayer on the beta branch.
+
+## Known Issues/Limitations
+
+- **Main branch:** largely untested and gets no new features. Main-branch multiplayer might not be supported in a future release.
+- In multiplayer, AP menu rewards can only be claimed outside combat; Death Fragments are disabled. **Anytime** Ancient rewards are recommended.
+
 </content>
     <link href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/2.2.4"/>
+  </entry>
+  <entry>
+    <id>https://github.com/tathxo/DSAP/releases/tag/v0.3.2</id>
+    <title>Dark Souls Remastered v0.3.2</title>
+    <updated>2026-11-25T10:26:10+00:00</updated>
+    <author>
+      <name>Noka</name>
+    </author>
+    <author>
+      <name>ArsonAssassin</name>
+    </author>
+    <content># Version 0.3.2 - Stability&#13;
+[Setup Guide](https://github.com/tathxo/DSAP/blob/main/apworld/dsr/docs/setup_en.md)&#13;
+[Game Info](https://github.com/tathxo/DSAP/blob/main/apworld/dsr/docs/en_Dark%20Souls%20Remastered.md)&#13;
+&#13;
+### Version update -&gt; 0.3.2. **Client is compatible with all 0.3.x generated apworlds**. &#13;
+* Client and Apworld updated.&#13;
+**Make sure your host generates with a v0.3.x apworld.**.&#13;
+&#13;
+### Features&#13;
+* NG+ / End Credits prevention - DSAP will now prevent you linking the flame or triggering the Dark Lord cutscene upon leaving the arena after killing Gwyn, if either 1) killing him does not complete your goal, or 2) Auto-Release is off &amp; you have checks left in your game. If you have goaled and your game is released (either automatically or through !release), or if all checks were completed, then you are allowed to finish your game. At that point, entering the Kiln outside of his arena will trigger the Dark Lord cutscene; if you are in his arena upon meeting the conditions, you can instead Link the Flame.&#13;
+* Key Item safety - Upon detection of being in-game, DSAP now scans player's inventory to ensure they have all key items they ought to have received, to recover from rare issues like items being lost due to crashes.&#13;
+&#13;
+### Fixes&#13;
+* Fog walls should now no longer fail to unlock - Event locking has been completely reworked&#13;
+* Maintenance/protection: Added monitoring to report on if the hooks DSAP places in the game get removed by the game's code-checking processes, and print a message and attempt to replace them when so.&#13;
+* Domhnall's Gwyndolin armor set locations were erroneously not being created for O+S goal when Catacombs (and Gwyndolin) locations were created.&#13;
+* Resolved UT hook errors and potential bugs with yamlless support&#13;
+* Fail harder and more explicitly in the invalid case of player running DSAP on top of HPR's item randomizer</content>
+    <link href="https://github.com/tathxo/DSAP/releases/tag/v0.3.2"/>
   </entry>
 </feed>

@@ -749,6 +749,21 @@
       "title": "v0.3.1",
       "version_simple": "0.3.1",
       "world_version": "0.3.1"
+    },
+    "v0.3.2": {
+      "created_at": "2026-11-25T10:26:10Z",
+      "description": "# Version 0.3.2 - Stability\r\n[Setup Guide](https://github.com/tathxo/DSAP/blob/main/apworld/dsr/docs/setup_en.md)\r\n[Game Info](https://github.com/tathxo/DSAP/blob/main/apworld/dsr/docs/en_Dark%20Souls%20Remastered.md)\r\n\r\n### Version update -> 0.3.2. **Client is compatible with all 0.3.x generated apworlds**. \r\n* Client and Apworld updated.\r\n**Make sure your host generates with a v0.3.x apworld.**.\r\n\r\n### Features\r\n* NG+ / End Credits prevention - DSAP will now prevent you linking the flame or triggering the Dark Lord cutscene upon leaving the arena after killing Gwyn, if either 1) killing him does not complete your goal, or 2) Auto-Release is off & you have checks left in your game. If you have goaled and your game is released (either automatically or through !release), or if all checks were completed, then you are allowed to finish your game. At that point, entering the Kiln outside of his arena will trigger the Dark Lord cutscene; if you are in his arena upon meeting the conditions, you can instead Link the Flame.\r\n* Key Item safety - Upon detection of being in-game, DSAP now scans player's inventory to ensure they have all key items they ought to have received, to recover from rare issues like items being lost due to crashes.\r\n\r\n### Fixes\r\n* Fog walls should now no longer fail to unlock - Event locking has been completely reworked\r\n* Maintenance/protection: Added monitoring to report on if the hooks DSAP places in the game get removed by the game's code-checking processes, and print a message and attempt to replace them when so.\r\n* Domhnall's Gwyndolin armor set locations were erroneously not being created for O+S goal when Catacombs (and Gwyndolin) locations were created.\r\n* Resolved UT hook errors and potential bugs with yamlless support\r\n* Fail harder and more explicitly in the invalid case of player running DSAP on top of HPR's item randomizer",
+      "download_url": "https://github.com/tathxo/DSAP/releases/download/v0.3.2/dsr.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ad0e9c69a7cafe24fd6b8b2bfea20609d7f906412784c71c1009e5bb43259cfa",
+      "html_url": "https://github.com/tathxo/DSAP/releases/tag/v0.3.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 76603,
+      "source_url": "https://api.github.com/repos/tathxo/DSAP",
+      "tag": "v0.3.2",
+      "title": "v0.3.2",
+      "version_simple": "0.3.2",
+      "world_version": "0.3.2"
     }
   }
 }
