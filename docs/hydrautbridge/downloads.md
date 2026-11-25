@@ -1,9 +1,12 @@
 # None
 
 ## Latest
-- <a href="https://github.com/SWCreeperKing/HydraTextClient_Rewrite/releases/download/v0.7.0-beta.10/HydraUTBridge.apworld">Latest Version (0.7.0b10)</a>
+- <a href="https://github.com/SWCreeperKing/HydraTextClient_Rewrite/releases/download/v0.7.0-beta.11/HydraUTBridge.apworld">Latest Version (0.7.0b11)</a>
 
 ## All Versions
+
+#### v0.7.0b11
+- <a href="https://github.com/SWCreeperKing/HydraTextClient_Rewrite/releases/download/v0.7.0-beta.11/HydraUTBridge.apworld">https://github.com/SWCreeperKing/HydraTextClient_Rewrite/releases/download/v0.7.0-beta.11/HydraUTBridge.apworld</a>
 
 #### v0.7.0b10
 - <a href="https://github.com/SWCreeperKing/HydraTextClient_Rewrite/releases/download/v0.7.0-beta.10/HydraUTBridge.apworld">https://github.com/SWCreeperKing/HydraTextClient_Rewrite/releases/download/v0.7.0-beta.10/HydraUTBridge.apworld</a>

@@ -2,97 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-25T00:18:42.457937+00:00</updated>
+  <updated>2026-11-25T06:16:46.595471+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_4</id>
-    <title>Civilization IV v0.0.1r4</title>
-    <updated>2026-11-22T05:31:08+00:00</updated>
-    <author>
-      <name>VincentSIFTD</name>
-    </author>
-    <content>A mix of bug fixes, quality of life, and one new feature in this release. The main additions are new locations from Resourcesanity (but note a bug that needs to be worked around in this release!) and the ability to peek what items will be sent when you spend a Great Person (with other types of peeks coming soon).&#13;
-&#13;
-### Changelog:&#13;
-- Resourcesanity is available in an initial form. A check is sent when you have at least one instance of a resource available in your capital, either by connecting it naturally or getting it via trade. The logic makes sure you have the techs needed to reveal and connect the given resource (or make a corporation for it in the case of Aluminum and Oil), and additionally requires Iron Working to connect Calendar resources (as the majority of them are placed in jungle on "normal" maps). You also aren't guaranteed to have every resource on every map and may need to generate another game to get all checks.&#13;
-- If Peekable Locations is set to either "Great People" or "All" in the YAML, the option to "bulb" a location will show the name of the item you're sending. In this initial implementation GPs are the only location that's peekable, it doesn't say who the item is for, or what type the item is (Progression/Useful/Filler/Trap), all of which are planned for later updates.&#13;
-- Fixed Archipelago Communism being named Archipelago Utopia, causing the location not to send.&#13;
-- Did lots of refactoring and code cleanup that's not interesting to users&#13;
-&#13;
-### Installation Instructions:&#13;
-1. Unzip Civ4-Archipelago-Mod into your Beyond the Sword mod folder (I've been testing it in the My Games one, but theoretically it should also work in the installation folder one; let me know if one or both work or don't work!), make sure the structure is Beyond the Sword/Mods/Civ4-Archipelago-Mod and that there isn't an extra folder in that structure.&#13;
-2. Install the APWorld as normal.&#13;
-&#13;
-### Play Instructions:&#13;
-1. Run the Civilization IV client from Archipelago, but **do not connect from the client**; you'll do so in-game (and eventually I want to remove the ability to connect from the client)&#13;
-2. Start a new Civ4 Beyond the Sword game as normal--**I highly recommend playing in windowed mode**, since this is an alpha and if the game freezes it can be difficult/impossible to close out of it if it's in full screen mode.&#13;
-3. When you load in you'll get a popup saying to connect to the Archipelago Server: you do this by opening up the BUG options (the little dragon in the upper-right corner), entering in your information, then clicking "Save and Connect." If the connection is successful you'll get a popup that says "Successfully Connected," and you can play as normal. If you get an error, try connecting again, it most often means you don't have the client open or you're already connected in the client. Occasionally however the connection will be slow and you connect in the client but get an error in-game; in that case disconnect in the client and try again. **If this happens a lot to you let me know!**&#13;
-&#13;
-### Gameplay Issues:&#13;
-1. If a resource is made obsolete (Fur, Whale, and Ivory from Plastics, Combustion, and Industrialism respectively) it will not send! The easiest way to fix this is removing the tech in World Builder for a turn, sending the check, then re-adding the tech.&#13;
-2. You can still receive techs in Techsanity from some ways that aren't traditional research: starting techs from your leader and tech trading, and this could lead to duplicates. These are planned to be removed in future updates. Let me know if things break because of them--they shouldn't, but I'm not 100% certain.&#13;
-3. The settings aren't balanced at all, and it may make you do things like get 9 Great Scientists when all you have is the library or research Satellites before you have any economic techs. The Techsanity Era Gates setting should help the latter, and I'd highly recommend against large GPsanity numbers unless you have a lot of time to kill (though the added Great People in the pool will help).&#13;
-4. There are a lot of debugging messages left in the mod. I removed some of them, but don't expect a clean feed.&#13;
-5. When you're trying to select an "obsolete" wonder to build in the city screen, the building options will jump to the top of the building list due to the hacky way I've implemented that ability. I want to fix it eventually, but for now the easiest way to mitigate it is to use the wonder filter on the right side of the city list (the star), which will have it jump back to the start of the wonders, which hopefully won't make it jump. You can also use the "choose what to build next" dialog, or just select it without moving your mouse (use the scroll wheel).&#13;
-6. The "AP" Unique Units can't be upgraded into, though they can be upgraded themselves. This is planned to be fixed in an upcoming update.&#13;
-7. AP Unique Buildings are programmed assuming you don't have a "natural" Unique Building for your Civilization for purposes like avoiding duplicates of the same class of building, so if you use a Civilization other than AP World things could break.&#13;
-8. If a building has a requirement to be built (such as the University), and you build an AP Unique Building version of it (such as the Seowon), you aren't able to build the original version anymore. There's no reason why you'd need to do this (the only vanilla building that's not strictly worse than the UB alternatives is the Theatre/Hippodrome, and that doesn't suffer the bug), but it's weird behavior.&#13;
-&#13;
-### Technical Issues:&#13;
-1. I had generation errors when creating solo/near-solo multiworlds with high Techsanity Era Gates values--I never tested with higher values with locations other than Techsanity enabled but keep that in mind if you're having trouble generating.&#13;
-2. Whenever you close and reopen the game/a save file, you need to disconnect the client, and you should close and reopen the client to avoid missing checks. I plan to try and automate this in future updates.&#13;
-3. There have been bug reports of items received/obtained while offline not properly appearing in-game and/or being sent to the multiworld when reconnecting. I think this is related to mismatching either mod or APworld versions, but I haven't fully found the root cause yet.&#13;
-4. If you add Unique Buildings to the itempool, it causes a noticeable amount of lag when entering the city screen in some cases (due to the coding I need to make them work how I want them to). I think it scales with the amount of cities you have, but it also might be just a memory leak. If you experience this lag (or don't and think you would), let me know!&#13;
-&#13;
-If you have any questions, bug reports, or things I forgot to mention, let me know in [the Civilization IV thread in the Archipelago Discord server](https://discord.com/channels/731205301247803413/1326231506682904576).&#13;
-&#13;
-Github for the APWorld: https://github.com/VincentBorchardt/Archipelago/blob/main/worlds/civ_4/</content>
-    <link href="https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_4"/>
-  </entry>
-  <entry>
-    <id>https://github.com/WolfBoi008/One-More-Night/releases/tag/3.2.1</id>
-    <title>Manual_OneMoreNight_WolfBoi008 v3.2.1</title>
-    <updated>2026-11-22T06:44:44+00:00</updated>
-    <author>
-      <name>WolfBoi008</name>
-    </author>
-    <content># Known Issues&#13;
-Same as before.&#13;
-# Changelog&#13;
-- Added 3 new Filler Items that can randomly appear. I'm sorry for the dumb things my friends and I come up with.&#13;
-  - You can see what they are through [this link](https://github.com/WolfBoi008/One-More-Night/commit/e5e7d45bee53c840eee778ea15e83bd9bb85bac9) or you can find them yourself. Your choice, not mine.</content>
-    <link href="https://github.com/WolfBoi008/One-More-Night/releases/tag/3.2.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.7.0-rc2</id>
-    <title>Animal Crossing v0.7.0rc2</title>
-    <updated>2026-11-22T08:32:23+00:00</updated>
-    <author>
-      <name>haloopdy</name>
-    </author>
-    <content>Setup instructions: https://github.com/randomouscrap98/AP_ACGC_PC/blob/0.7.0/docs/setup_en.md&#13;
-Game info: https://github.com/randomouscrap98/AP_ACGC_PC/blob/master/docs/game_info_en.md&#13;
-&#13;
-This is a **RELEASE CANDIDATE** for a new "GameCube" version of the ap world, including a way to play on your modded Wii! The PC port has no visible changes but has been almost entirely refactored, so if you want to help test by playing the PC port, you still can!&#13;
-&#13;
-I recommend not updating to this version unless you want to help test! There are no new features beyond the GameCube version.&#13;
-&#13;
-The game has received MASSIVE changes to make this work. Some features are unavailable on Gamecube (outdoor furniture, etc) but should otherwise be fully playable and compatible with all apworld options.&#13;
-&#13;
-This ships a new `Animal Crossing Gamecube Client` in the launcher (only used for Dolphin and Wii) and an `Animal Crossing Gamecube Patcher` for patching your rom, which you only need to do once per version. If you had RC1, you **NEED** to patch again!! You do not need to use the Animal Crossing client for the PC Port, it's builtin!&#13;
-&#13;
-Please see the setup instructions at the top of this release for more information. To summarize:&#13;
-- When playing on Wii, you must install a homebrew app, which is a modified version of Nintendont&#13;
-- The new client is REQUIRED for Dolphin/Wii, but otherwise does nothing for the PC Port&#13;
-- You must patch your iso just once per apworld version.&#13;
-- The patch lives in the **apworld**, you do not need to download it separately.&#13;
-&#13;
-No game assets are distributed in any of these releases.</content>
-    <link href="https://github.com/randomouscrap98/AP_ACGC_PC/releases/tag/v0.7.0-rc2"/>
-  </entry>
   <entry>
     <id>https://github.com/Heinki/Mental-Omega-Randomizer/releases/tag/V1.51</id>
     <title>Mental Omega v1.51.0</title>
@@ -1444,5 +1358,122 @@ Before this the only option available was blackout.&#13;
 - Fix Negotiations double force field room minikits expecting PROTOCOL_PANEL instead of SHORTIE&#13;
 - Add Normal+ logic for completing Dagobah with `Luke Skywalker (Dagobah)` and a custom character</content>
     <link href="https://github.com/Mysteryem/Archipelago-TCS/releases/tag/v2.0.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/SWCreeperKing/HydraTextClient_Rewrite/releases/tag/v0.7.0-beta.11</id>
+    <title>HydraUTBridge v0.7.0b11</title>
+    <updated>2026-11-25T01:16:16+00:00</updated>
+    <author>
+      <name>SWCreeperKing</name>
+    </author>
+    <content>## Reminder: Autoupdater only updates to beta when the `Use Beta Branches` setting in `Main Settings` is enabled&#13;
+&#13;
+Added:&#13;
+- Map Editor: All Locations visible while adding locations&#13;
+&#13;
+Changed:&#13;
+- Godot to 4.8 beta 5&#13;
+- Split hint copy messages into 2, making entrance its own copy&#13;
+&#13;
+Fixed:&#13;
+- (mostly) Custom Assets caching&#13;
+- Playerlist thinking every command is !status&#13;
+- Hint table player sorting (thanks Selene)&#13;
+- (actually this time) New Item popup&#13;
+&#13;
+-# Follow the [readme](&lt;https://github.com/SWCreeperKing/HydraTextClient_Rewrite/blob/master/README.md&gt;) for instructions and feature list&#13;
+-# [v0.7.0 Release blockers](&lt;https://github.com/SWCreeperKing/HydraTextClient_Rewrite/milestone/2&gt;)</content>
+    <link href="https://github.com/SWCreeperKing/HydraTextClient_Rewrite/releases/tag/v0.7.0-beta.11"/>
+  </entry>
+  <entry>
+    <id>https://github.com/TwinklePillar/Unleashed-Archipelago/releases/tag/v0.1.1-alpha</id>
+    <title>Sonic Unleashed v0.1.1a0</title>
+    <updated>2026-11-25T01:31:24+00:00</updated>
+    <author>
+      <name>TwinklePillar</name>
+    </author>
+    <content># Changelog&#13;
+- Changed medal texture to the Archipelago logo&#13;
+- Shoes now disappear after collecting their location&#13;
+- Added Death Link&#13;
+- Added Trap Link&#13;
+  - The only accepted traps at the moment are the 3 implemented traps&#13;
+- Added Ring Link&#13;
+- Added an option to make goal Eggmanland or Egg Dragoon&#13;
+- Massively expanded the amount of location groups&#13;
+&#13;
+## Bug Fixes&#13;
+- Fixed the black screen bug&#13;
+- `Tip Top Tea 7 - Videotape #24` now requires Stomp and Air Boost&#13;
+- Fixed UT erroneously saying shops were in logic if `include_day` was off (requires regen)&#13;
+- Fixed item count validation when changing `medal_items`&#13;
+- Fixed Eggmanland (Stage) logic requiring Stomp instead of Wall Jump&#13;
+- Wentos media are now considered Apotos Hub locations&#13;
+- Countries on the World Map no longer appear if you don't have access to them&#13;
+&#13;
+Compatible with v0.1.0-alpha</content>
+    <link href="https://github.com/TwinklePillar/Unleashed-Archipelago/releases/tag/v0.1.1-alpha"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/2.2.4</id>
+    <title>Slay the Spire II v1.4.2r2</title>
+    <updated>2026-11-25T04:10:58+00:00</updated>
+    <author>
+      <name>Kirbyfanner</name>
+    </author>
+    <author>
+      <name>Platano Bailando</name>
+    </author>
+    <author>
+      <name>Lyxn</name>
+    </author>
+    <author>
+      <name>MartyredG</name>
+    </author>
+    <author>
+      <name>Terairk</name>
+    </author>
+    <content>&gt; [!WARNING]&#13;
+&gt; Steam workshop's update process is down currently as of 25/11/2026 due to a malware wave. So this includes many many mods including RitsuLib and us, as such there is no current workshop release for our dependencies and our mod. So you must download RitsuLib and this mod manually.&#13;
+&#13;
+&gt; [!IMPORTANT]&#13;
+&gt; **Play on the game's beta branch.** Main-branch support is on thin ice but supported none the less: the mod still runs there, but it's largely untested and new game features might not be supported on it.&#13;
+&#13;
+## Setup&#13;
+&#13;
+For installation, YAML configuration, generation and connection instructions, see&#13;
+[the Slay the Spire II setup guide](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/blob/setup-docs-do-not-delete/world/spire2/docs/setup_en.md).&#13;
+&#13;
+Archipelago **Launcher v0.6.7+** is required for generation. Install **STS2-RitsuLib 0.6.16+** separately.&#13;
+&#13;
+The newest YAML Builder is at [sts2ap.terairk.dev](https://sts2ap.terairk.dev/#/builder), and the mod's **Mod Website &amp; YAML Builder** button opens it. [sts2ap.net](https://sts2ap.net/#/builder) gets the new options later.&#13;
+&#13;
+# Version Information&#13;
+&#13;
+- **Archipelago Mod:** 2.2.4&#13;
+- **APWorld:** 1.4.2&#13;
+- **Slay the Spire II main branch:** v0.111.1&#13;
+- **Slay the Spire II beta branch:** v0.114.0&#13;
+&#13;
+# Changelist&#13;
+&#13;
+1) Character relics can now spawn in treasure chests (bypassing base game behaviour for fun's sake).&#13;
+2) Support for v0.114.0 on the beta branch.&#13;
+3) Re-added the Back button to the character select screen.&#13;
+&#13;
+### Version compatibility&#13;
+&#13;
+The APWorld is still 1.4.2, so seeds generated for 2.2.3 work with this mod. This mod needs STS2-RitsuLib 0.6.16 or newer.&#13;
+&#13;
+Everyone in a multiplayer lobby should use the same mod version and game branch.&#13;
+&#13;
+Tested in singleplayer on the beta branch.&#13;
+&#13;
+## Known Issues/Limitations&#13;
+&#13;
+- **Main branch:** largely untested and gets no new features. Main-branch multiplayer might not be supported in a future release.&#13;
+- In multiplayer, AP menu rewards can only be claimed outside combat; Death Fragments are disabled. **Anytime** Ancient rewards are recommended.&#13;
+</content>
+    <link href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/2.2.4"/>
   </entry>
 </feed>

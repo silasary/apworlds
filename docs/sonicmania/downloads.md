@@ -1,4 +1,4 @@
-# None
+# Sonic Mania
 
 ## Latest
 - <a href="https://github.com/GraymonDgt/SonicManiaAP/releases/download/0.4.1/sonicmania.apworld">Latest Version (0.4.1)</a>
