@@ -4,7 +4,7 @@
 
 For Steam-based installation, subscribe to the following mod:
 
-- [Archipelago mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3148616716)
+- [Archipelago mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3817887179)
 
 ## Configuring your YAML file
 
@@ -22,5 +22,5 @@ the [Dome Keeper Settings Page](/games/Dome%20Keeper/player-options).
 
 ### Connect to the MultiServer
 
-Once you are in-game, you will be able to click the **Archipelago** menu category in the options menu and enter the ip and port (separated by
+Once you are in-game, you will be able to click the **Mod configuration** menu category in the main menu and enter the ip and port (separated by
 a colon) in the hostname field and your slot + password fields. Then click connect, and now you are ready to defend your dome!

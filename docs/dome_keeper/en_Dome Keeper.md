@@ -27,13 +27,13 @@ Oh and of course, if you complete an assignment in challenge mode while you only
 
 ## What items and locations get shuffled?
 
-For syncs:
- - Locations are Archipelago upgrades, switches and a new cave
- - Items are an upgrade unlock, extra cobalt or a layer unlock
+For relic hunts:
+ - Locations are Archipelago upgrades, switches, chest, treasures and a new cave
+ - Items are upgrade unlocks, extra ressources, keys or a layer unlock
 
 For asyncs:
- - Locations are GAs completion (regular and challenge)
- - Items are GAs unlocks, and extra ressources (iron/water/cobalt) to complete them
+ - Locations are GAs completion (regular and challenge) and treasures to find in each assignment
+ - Items are GAs unlocks, extra ressources (iron/water/cobalt) and mining/speed bonuses to complete them
 
 ## Which items can be in another player's world?
 

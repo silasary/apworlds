@@ -2,77 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-25T12:19:44.493354+00:00</updated>
+  <updated>2026-11-25T18:18:01.002311+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.8</id>
-    <title>Chrono Trigger Rando-Dalton Imperial v0.0.8</title>
-    <updated>2026-11-22T17:01:16+00:00</updated>
-    <author>
-      <name>Pseudoarc</name>
-    </author>
-    <author>
-      <name>Anguirel</name>
-    </author>
-    <content>Updated to latest ctrando version&#13;
-&#13;
-Picks up a fix for the Nu in Keeper's Dome not properly granting access to certain eras when Epoch was already obtained.</content>
-    <link href="https://github.com/Anguirel86/ap_ctrdi/releases/tag/v0.0.8"/>
-  </entry>
-  <entry>
-    <id>https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/tag/v0.1.40</id>
-    <title>Normal Golf Game v1.4.0</title>
-    <updated>2026-11-22T18:12:34+00:00</updated>
-    <author>
-      <name>owlyoop</name>
-    </author>
-    <content>Major changes:&#13;
-&#13;
-- Added some of the steam achievements as checks. These include:&#13;
-  - To The Moon (Arc the ball 200yd in the air)&#13;
-  - Skipper (Skip the ball on water)&#13;
-  - Parkour (Get on the roof of the green screen building)&#13;
-  - Lavatory Linksman (Get the ball in the pro shop toilet)&#13;
-  - What an Achievement (obtain all 5 clubs)&#13;
-  - MIA (obtain the lost ball)&#13;
-  - Putt Putt (obtain the putter)&#13;
-  - ???? (complete the mystery bounty)&#13;
-  - 3 Achievements for getting a Par, Birdie, and Eagle.&#13;
-  - Optional achievements for getting a Hole-in-One and the Hole 6 Albatross.&#13;
-- Added the breakable statue blocks as checks&#13;
-- Added the green-screen building closet as a location, and pressing the button inside as a check&#13;
-- Added text that appears during golf mode showing each active physics trap and its remaining duration&#13;
-- Made physics traps only decrement time while in golf mode&#13;
-&#13;
-&#13;
-New options:&#13;
-- Toggle breakable items as checks&#13;
-  - Toggle to add the statue block pieces for breakable objects checks&#13;
-  - Toggle to add destroying the statue blocks from the front yard with a driver into logic&#13;
-&#13;
-- Toggle achievements as checks&#13;
-  - Toggle to add the hole-in-one achievement&#13;
-  - Toggle to add the hole 6 albatross achievement&#13;
-- Toggle golf holes as checks&#13;
-  - Toggle to add the three "mini island" holes for golf hole checks&#13;
-  - Toggle to add the two "secret green" holes for golf hole checks&#13;
-- Option to require the putter in logic for the "Putting Drill" and "Pressure Drill" bounties&#13;
-- Duration of physics traps. Defaults to 60 seconds&#13;
-- Option to flag the four clubs and the LMUGC ticket shop locations as priority so that filler/trap items do not appear there&#13;
-- Option to allow the "Cross Country" (hole 2 fairway to hole 5 multi-hit) bounty to be considered in logic if the player's only club is a putter&#13;
-&#13;
-Fixes:&#13;
-&#13;
-- Hopefully fixed issues with some players games being initialized incorrectly&#13;
-- Fixed bonus sprint speed being lost on reconnect&#13;
-- Renamed "????" to "Mystery Bounty" as this was causing issues with trackers&#13;
-- Fixed floating padlocks after a gate opens&#13;
-- Fixed putt putt greens not being affected by physics traps</content>
-    <link href="https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/tag/v0.1.40"/>
-  </entry>
   <entry>
     <id>https://github.com/OnakuTV/SonicFrontiersAPWorld/releases/tag/v0.2.3</id>
     <title>Sonic Frontiers v0.2.3</title>
@@ -1415,48 +1349,48 @@ Compatible with v0.1.0-alpha</content>
     <author>
       <name>Terairk</name>
     </author>
-    <content>&gt; [!WARNING]
-&gt; Steam workshop's update process is down currently as of 25/11/2026 due to a malware wave. So this includes many many mods including RitsuLib and us, as such there is no current workshop release for our dependencies and our mod. So you must download RitsuLib and this mod manually.
-
-&gt; [!IMPORTANT]
-&gt; **Play on the game's beta branch.** Main-branch support is on thin ice but supported none the less: the mod still runs there, but it's largely untested and new game features might not be supported on it.
-
-## Setup
-
-For installation, YAML configuration, generation and connection instructions, see
-[the Slay the Spire II setup guide](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/blob/setup-docs-do-not-delete/world/spire2/docs/setup_en.md).
-
-Archipelago **Launcher v0.6.7+** is required for generation. Install **STS2-RitsuLib 0.6.16+** separately.
-
-The newest YAML Builder is at [sts2ap.terairk.dev](https://sts2ap.terairk.dev/#/builder), and the mod's **Mod Website &amp; YAML Builder** button opens it. [sts2ap.net](https://sts2ap.net/#/builder) gets the new options later.
-
-# Version Information
-
-- **Archipelago Mod:** 2.2.4
-- **APWorld:** 1.4.2
-- **Slay the Spire II main branch:** v0.111.1
-- **Slay the Spire II beta branch:** v0.114.0
-
-# Changelist
-
-1) Character relics can now spawn in treasure chests (bypassing base game behaviour for fun's sake).
-2) Support for v0.114.0 on the beta branch.
-3) Re-added the Back button to the character select screen.
-4) The Archipelago button on the top bar now shows its keybind in keyboard-only mode, like the Deck and Map buttons.
-
-### Version compatibility
-
-The APWorld is still 1.4.2, so seeds generated for 2.2.3 work with this mod. This mod needs STS2-RitsuLib 0.6.16 or newer.
-
-Everyone in a multiplayer lobby should use the same mod version and game branch.
-
-Tested in singleplayer on the beta branch.
-
-## Known Issues/Limitations
-
-- **Main branch:** largely untested and gets no new features. Main-branch multiplayer might not be supported in a future release.
-- In multiplayer, AP menu rewards can only be claimed outside combat; Death Fragments are disabled. **Anytime** Ancient rewards are recommended.
-
+    <content>&gt; [!WARNING]&#13;
+&gt; Steam workshop's update process is down currently as of 25/11/2026 due to a malware wave. So this includes many many mods including RitsuLib and us, as such there is no current workshop release for our dependencies and our mod. So you must download RitsuLib and this mod manually. https://github.com/BAKAOLC/STS2-RitsuLib/releases. Download the variant pack version and install it manually like you would this mod.&#13;
+&#13;
+&gt; [!IMPORTANT]&#13;
+&gt; **Play on the game's beta branch.** Main-branch support is on thin ice but supported none the less: the mod still runs there, but it's largely untested and new game features might not be supported on it.&#13;
+&#13;
+## Setup&#13;
+&#13;
+For installation, YAML configuration, generation and connection instructions, see&#13;
+[the Slay the Spire II setup guide](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/blob/setup-docs-do-not-delete/world/spire2/docs/setup_en.md).&#13;
+&#13;
+Archipelago **Launcher v0.6.7+** is required for generation. Install **STS2-RitsuLib 0.6.16+** separately. https://github.com/BAKAOLC/STS2-RitsuLib/releases. Download the variant pack version and install it manually like you would this mod.&#13;
+&#13;
+The newest YAML Builder is at [sts2ap.terairk.dev](https://sts2ap.terairk.dev/#/builder), and the mod's **Mod Website &amp; YAML Builder** button opens it. [sts2ap.net](https://sts2ap.net/#/builder) gets the new options later.&#13;
+&#13;
+# Version Information&#13;
+&#13;
+- **Archipelago Mod:** 2.2.4&#13;
+- **APWorld:** 1.4.2&#13;
+- **Slay the Spire II main branch:** v0.111.1&#13;
+- **Slay the Spire II beta branch:** v0.114.0&#13;
+&#13;
+# Changelist&#13;
+&#13;
+1) Character relics can now spawn in treasure chests (bypassing base game behaviour for fun's sake).&#13;
+2) Support for v0.114.0 on the beta branch.&#13;
+3) Re-added the Back button to the character select screen.&#13;
+4) The Archipelago button on the top bar now shows its keybind in keyboard-only mode, like the Deck and Map buttons.&#13;
+&#13;
+### Version compatibility&#13;
+&#13;
+The APWorld is still 1.4.2, so seeds generated for 2.2.3 work with this mod. This mod needs STS2-RitsuLib 0.6.16 or newer.&#13;
+&#13;
+Everyone in a multiplayer lobby should use the same mod version and game branch.&#13;
+&#13;
+Tested in singleplayer on the beta branch.&#13;
+&#13;
+## Known Issues/Limitations&#13;
+&#13;
+- **Main branch:** largely untested and gets no new features. Main-branch multiplayer might not be supported in a future release.&#13;
+- In multiplayer, AP menu rewards can only be claimed outside combat; Death Fragments are disabled. **Anytime** Ancient rewards are recommended.&#13;
+&#13;
 </content>
     <link href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/2.2.4"/>
   </entry>
@@ -1489,5 +1423,33 @@ Tested in singleplayer on the beta branch.
 * Resolved UT hook errors and potential bugs with yamlless support&#13;
 * Fail harder and more explicitly in the invalid case of player running DSAP on top of HPR's item randomizer</content>
     <link href="https://github.com/tathxo/DSAP/releases/tag/v0.3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/NyanMC/build-a-jetpack/releases/tag/0.3.1</id>
+    <title>Build a Jetpack v0.3.1</title>
+    <updated>2026-11-25T14:16:30+00:00</updated>
+    <author>
+      <name>ChromaNyan</name>
+    </author>
+    <content>Added Gold Statue option: The Gold Statue can now be set as a goal requirement, and be placed on its own location, changing a 3 item go mode to a 4 or 19 item one&#13;
+Added Nerf Sky Fish option: Nerfs the sell price of fish found in the sky, making the Jetpack less overpowered. Logic is rebalanced accordingly.&#13;
+Added option groups and presets&#13;
+&#13;
+Reworded the description for Harsh Pressure because I didn't like the old description&#13;
+Radar 2 and 3 now logically require access to depth 4 (3 diving suits and oxygen masks)&#13;
+Having one Jetpack now puts the level 3 upgrades in logic (previously it required two)&#13;
+&#13;
+Should be backwards compatible with 0.3.0 multiworlds, but if anything breaks, use the client from the previous release to connect to a multiworld generated on an older version.</content>
+    <link href="https://github.com/NyanMC/build-a-jetpack/releases/tag/0.3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Arrcival/ArchipelagoDK/releases/tag/v2.1.3</id>
+    <title>Dome Keeper v2.1.3</title>
+    <updated>2026-11-25T17:41:04+00:00</updated>
+    <author>
+      <name>Arrcival</name>
+    </author>
+    <content/>
+    <link href="https://github.com/Arrcival/ArchipelagoDK/releases/tag/v2.1.3"/>
   </entry>
 </feed>

@@ -7,7 +7,7 @@ contains all the options you need to configure and export a config file.
 
 ## What is the goal of Build a Jetpack when randomized?
 
-Reach the star high in the sky. This requires receiving three Jetpack items.
+Reach the star high in the sky. This requires receiving three Jetpack items. Depending on the chosen options, receiving the Gold Statue may also be required.
 
 ## Which items can be in another player's world?
 
