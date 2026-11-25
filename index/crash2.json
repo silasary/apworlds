@@ -246,6 +246,22 @@
       "title": "v0.5.0 Pre Release 2",
       "version_simple": "0.5.0",
       "world_version": "0.5.0rc2"
+    },
+    "v0.5.0-pre3": {
+      "created_at": "2026-11-24T20:47:23Z",
+      "description": "## Additions:\r\n- Unstuck button now does something (will cost you a life / deathlink if you are in an area where you can lose lives)\r\n\r\n## Bug Fixes:\r\n- Fixed incorrect ability lock logic in Hang Eight\r\n- Fixed generation error when ability lock is enabled and life sanity is disabled\r\n- Fixed no lives trap ending on the gameover screen removing all your reserved lives\r\n- Fixed size traps potentially sending Crash into the sky (and also it should drop you when hanging less often)\r\n- Made life count checks less likely to fail sending (probably, kinda hard to test)\r\n  - If they didn't send, restarting the client and reconnecting should send them for sure\r\n- Fixed deathlink in certain areas softlocking the game (where \"BONUS\" text suddenly appears on screen)\r\n- The client no longer sends a deathlink when receiving a deathlink that causes a gameover\r\n- Fixed receiving a deathlink at a certain timing during a level loading causing the game to crash\r\n- Fixed the demo sending deathlinks and life count checks",
+      "download_url": "https://github.com/Sim10XXX/C2AP/releases/download/v0.5.0-pre3/crash2.apworld",
+      "has_manifest": true,
+      "hash_sha256": "477f7abde05be72f47bd293ef595b9daddd2d6b924211253707f670abff264da",
+      "html_url": "https://github.com/Sim10XXX/C2AP/releases/tag/v0.5.0-pre3",
+      "minimum_ap_version": "0.6.8",
+      "prerelease": true,
+      "size": 55013,
+      "source_url": "https://api.github.com/repos/Sim10XXX/C2AP",
+      "tag": "v0.5.0-pre3",
+      "title": "v0.5.0 Pre Release 3",
+      "version_simple": "0.5.0",
+      "world_version": "0.5.0rc3"
     }
   }
 }

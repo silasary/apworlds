@@ -1,9 +1,12 @@
 # Crash2
 
 ## Latest
-- <a href="https://github.com/Sim10XXX/C2AP/releases/download/v0.5.0-pre2/crash2.apworld">Latest Version (0.5.0rc2)</a>
+- <a href="https://github.com/Sim10XXX/C2AP/releases/download/v0.5.0-pre3/crash2.apworld">Latest Version (0.5.0rc3)</a>
 
 ## All Versions
+
+#### v0.5.0rc3
+- <a href="https://github.com/Sim10XXX/C2AP/releases/download/v0.5.0-pre3/crash2.apworld">https://github.com/Sim10XXX/C2AP/releases/download/v0.5.0-pre3/crash2.apworld</a>
 
 #### v0.5.0rc2
 - <a href="https://github.com/Sim10XXX/C2AP/releases/download/v0.5.0-pre2/crash2.apworld">https://github.com/Sim10XXX/C2AP/releases/download/v0.5.0-pre2/crash2.apworld</a>

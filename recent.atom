@@ -2,199 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-24T18:25:35.394602+00:00</updated>
+  <updated>2026-11-25T00:18:42.457937+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/ElGrenier/RE7_AP_World/releases/tag/0.5.0</id>
-    <title>Resident Evil 7 v0.5.0</title>
-    <updated>2026-11-21T21:14:20+00:00</updated>
-    <author>
-      <name>ElGrenier</name>
-    </author>
-    <content>Hello !&#13;
-First of all, thank you for your support with this game, it has mean a lot for me, and the help i got was wonderous, but as you may have seen, I didn't work on the game as I did at the start, the game have been stronger than me, I must admit, its without regret that I launch the "0.5.0" of the randomizer, which un-randomize the keys items so no possible softlocks are possible, (if there is a bug or I forgot to un-randomize something let me know, i could still do a quick patch if necessary)&#13;
-&#13;
-It was an interesting journey to work on it, but I think I need to move on, and who know, maybe someone will have the knowledge and time to make a true randomizer of the game, as everyone wanted to play.&#13;
-&#13;
-I still hope that even with all the bugs there was and still is, you had a fun day playing it.&#13;
-</content>
-    <link href="https://github.com/ElGrenier/RE7_AP_World/releases/tag/0.5.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/threeandthreee/Archipelago/releases/tag/14.0.3</id>
-    <title>Links Awakening DX Beta v14.0.3</title>
-    <updated>2026-11-21T21:42:41+00:00</updated>
-    <author>
-      <name>zig</name>
-    </author>
-    <author>
-      <name>threeandthree</name>
-    </author>
-    <content>Some of the new trap/powerup items might cause issues if placed locally in particular locations.&#13;
-&#13;
-This fixes the *Slime Storm*, which was directly reported, but I'm not sure which other ones are broken and haven't had a chance to test for it yet.&#13;
-&#13;
-Selecting any of the new trap/powerup items as filler (other than Slime Storm) should be considered unstable for now, unless they are forced non-local.</content>
-    <link href="https://github.com/threeandthreee/Archipelago/releases/tag/14.0.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MuratDev41/gravity-circuit-ap/releases/tag/v0.11.0</id>
-    <title>Gravity Circuit (MuratDev's Implementation) v0.11.0</title>
-    <updated>2026-11-21T23:53:58+00:00</updated>
-    <author>
-      <name>Murat Kaan Tekeli</name>
-    </author>
-    <content>### New
-- **Linux / Steam Deck support (Proton).** When WinHTTP's websockets aren't available, the client connects through
-  LÖVE's LuaSocket instead (`ws://` only; archipelago.gg and self-hosted servers accept it). Run `sh install.sh`
-  to install the mod into the game's Proton prefix.
-- **Shopsanity info in the shop itself.** The shop's description box shows what the selected slot sends and to
-  whom, with the item name coloured by class (progression, useful, filler, trap).
-
-### Changes
-- **New overlay.** Messages use the game's font, coloured like the Archipelago text client, and sit in the bottom
-  left so they no longer cover the health bar. The AP status line moved to the top; it hides a few seconds after
-  connecting and comes back when disconnected, paused or with F9 open.
-- Money cache pickups and applied refills no longer print a message.
-- **Clearer connection errors.** The client says what went wrong (unknown host, nothing on that port, timeout,
-  not an Archipelago server, wrong slot or password) and what to check. Pasted addresses are cleaned up, and a
-  bad address or a refused connection no longer retries forever.
-- Fewer hitches: server messages are decoded off the main thread, data packages are cached between connections,
-  and the log is written in batches.
-
-### Logic
-- **"Data Chip - Nega"** now requires all 8 stage Access items. The chip is inside the HQ healing tube, which only
-  opens after all 64 rescues.
-
-### Fixes
-- Fixed checkpoint refills not filling the new segment after receiving a Burst Booster.
-
-### PopTracker
-- The pack (now 0.7.0) shows hub NPC data chips (Fix, Shock, Yuki, K.I.D, Amadeus, Mighty, Tech) as Inspect until
-  the rescue that brings that NPC to HQ is checked, and follows the new Nega logic.
-</content>
-    <link href="https://github.com/MuratDev41/gravity-circuit-ap/releases/tag/v0.11.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/tag/v1.2a</id>
-    <title>Jet Set Radio Future v1.0.0r3</title>
-    <updated>2026-11-22T00:16:00+00:00</updated>
-    <author>
-      <name>rvanmatre50</name>
-    </author>
-    <content>## Bug fixes&#13;
-&#13;
-- **Another game's collect or release no longer counts as your progress.** When another world in your multiworld reached its goal with collect on, or someone used `!collect` or `!release`, the client treated JSRF's newly marked checks as progress you'd lost. It wrote them into your save as cleared Street Challenges, picked-up Graffiti Souls, Jet ranks and sprayed tags. That could open Gouji's Tower, or complete the Jet Ranks goal, before you'd done the work yourself.&#13;
-- **Only your own progress is put back after a game over.** The client now keeps a record on the Archipelago server of what you've actually done in your game. After a game over or a New Game it puts back only what's in that record.&#13;
-- **Collected checks you do yourself still count.** If another world collected a Street Challenge or tag spot and you clear or spray it later anyway, it counts toward Gouji's Tower as usual.&#13;
-- **Collected Graffiti Souls stay in the level.** Picking one up doesn't send anything new, because the server already has that check. This matches how other Archipelago games handle collected locations.&#13;
-&#13;
-To update, replace `jsrf.apworld` in your `custom_worlds` folder. Seeds made with the earlier v1.0a still work. For a seed you started before this update, the client begins its record with whatever your save shows done the first time the new client connects.</content>
-    <link href="https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/tag/v1.2a"/>
-  </entry>
-  <entry>
-    <id>https://github.com/wrjones104/ffresonance-archipelago/releases/tag/0.31.0</id>
-    <title>Final Fantasy Resonance v0.31.0</title>
-    <updated>2026-11-22T00:20:25+00:00</updated>
-    <author>
-      <name>wrjones104</name>
-    </author>
-    <content># v0.31.0 (apworld 0.31.0, mod 0.62.0): public playtest, fourth build&#13;
-&#13;
-This one is mostly about enemy scaling. After a lot of AP runs I played some vanilla, and the enemies there are much softer than our Normal. Hallway fights in an AP run were long, and later bosses were too hard. So I've toned scaling down across the board. There's also a new option to hide quest rewards, and a few bug fixes. Please send feedback with the template in the [Playtester guide](https://github.com/wrjones104/ffresonance-archipelago/blob/main/docs/playtester_guide.md).&#13;
-&#13;
-### Downloads&#13;
-&#13;
-| File | Description |&#13;
-|---|---|&#13;
-| `FFRArchipelago.zip` | UE4SS Lua game mod (v0.62.0, build `7b90595e`) |&#13;
-| `ff_resonance.apworld` | Archipelago world and Final Fantasy Resonance Client (v0.31.0, build `66073f7e`) |&#13;
-| `Final Fantasy Resonance.yaml` | Template player YAML with default options |&#13;
-&#13;
-### Install and upgrade&#13;
-&#13;
-- Use the mod and the apworld from the same release. The mod logs `version 0.62.0 (build 7b90595e)` to `UE4SS.log` when it loads, and the client prints `world version 0.31.0 (build 66073f7e)` when it starts.&#13;
-- Replace the whole `FFRArchipelago` folder in `ue4ss\Mods`, and put the new apworld in `custom_worlds`. Close the Launcher and every client window first.&#13;
-- Generate a new seed. Seeds from v0.30.0 have a gift location and four items this build no longer has, and the template yaml now asks for world 0.31.0.&#13;
-- Install steps are in the [README](https://github.com/wrjones104/ffresonance-archipelago#installation).&#13;
-&#13;
-### What's changed since v0.30.0&#13;
-&#13;
-**Scaling is softer.** Every **AP: Scaling strength** moved down a step:&#13;
-&#13;
-| Strength | Enemy level | Enemy HP | Enemy Attack | Boss level | Boss power |&#13;
-|---|---|---|---|---|---|&#13;
-| Casual | 80% to 88% of yours | 60% to 75% | 75% to 90% | 95% to 100% | 90% to 100% |&#13;
-| Normal | 85% to 92% | 70% to 85% | 85% to 100% | 100% to 103% | 100% to 105% |&#13;
-| Expert | 90% to 100% | 80% to 105% | 90% to 115% | 105% to 110% | 105% to 110% |&#13;
-&#13;
-Each range ramps from party level 5 to 25.&#13;
-&#13;
-- On Normal, enemies now sit a bit under your level. They lose more HP than Attack, so fights end sooner but can still hurt if you're careless.&#13;
-- Enemies from areas ahead of you used to be 3 levels over the band's middle on Normal, which is where the spongy fights came from. Now they're 1 over.&#13;
-- Bosses on Normal sit at about your level.&#13;
-- Expert is roughly the old Normal with a bit less HP. If you want a real challenge, try Expert scaling with the game on Expert too.&#13;
-- Above party level 30, enemy levels grow 3 levels for every 4 you gain. The game's own enemy stats grow much faster than the party's in the late game, so enemies held at your level kept pulling ahead. At level 60 on Normal, the final boss now meets you at 54 instead of 66.&#13;
-&#13;
-**MRP per fight stays the same.** Normally, lower enemy levels would mean less MRP per battle. Now MRP is paid as if the enemies were at your level, so the vision grind gets shorter, not longer, now that fights end sooner. If you want even less grind, the **AP: MRP rate** slider is still there.&#13;
-&#13;
-**Hide quest rewards.** There's a new yaml option, `hide_quest_rewards` (off by default). With it on, every reward on the Quests screen shows `???` instead of the item it holds. You still see what you got when you finish the quest. It only matters with `include_side_quests` on.&#13;
-&#13;
-**Items:** White Jade Stone, Black Jade Stone, Magic Tome and Tunnel Key aren't in the pool anymore. They don't open anything in an open world seed.&#13;
-&#13;
-**Archipelago page:**&#13;
-&#13;
-- The Seed tab now has the monitor icon instead of the speaker.&#13;
-- The rows on both tabs keep the same order every time you open the page. They used to shuffle around.&#13;
-&#13;
-**The log** now gets a `battle: won` line after each win, with how long you were off the field. If you send your `UE4SS.log`, I can see how long fights really take.&#13;
-&#13;
-**Fixes:**&#13;
-&#13;
-- Some chests read as opened as soon as you arrived on a map and got sent before you touched them. The mod now waits until the game's save says the chest was really opened.&#13;
-- If you play the same save on two computers, chests you'd already opened on the other one get sent again with no pop-up, so they don't steal the next chest's pop-up anymore.&#13;
-- The coloured item line no longer sticks around on a quest's later messages (the stat bonus and "You can now summon..." lines).&#13;
-- Starting a plain **New Game**, or loading one of your own non-AP saves, no longer gets any of the seed's changes. A plain New Game used to start Rain at level 55. If you load the seed's save and then one of your own in the same session, the mod tells you to restart the game first.&#13;
-&#13;
-**Gifts:**&#13;
-&#13;
-- NPC gift locations are now named for where the NPC stands (like "Grandshelt - Colosseum - Upper East Terrace Gift") instead of the item they give in the base game.&#13;
-- I removed the Zoldaad Dungeon gift because it can't be reached from the open world start.&#13;
-&#13;
-### Please test&#13;
-&#13;
-Scaling is the big one. Note your **AP: Scaling strength** and the game's own difficulty when you report, and send `UE4SS.log` if you can.&#13;
-&#13;
-- How long a normal fight takes on Normal, both in areas around your level and in areas ahead of you. They should be quick but not free.&#13;
-- Whether MRP per fight feels the same as before, and whether the vision grind feels better.&#13;
-- Bosses at party level 30 and up. Are they fair with what the seed has given you?&#13;
-- Levels 40 to 60, and the final boss at about level 60. If it's too easy up there now, tell me. The softer strengths and the late-game slowdown stack, and I'd rather tune the slowdown than the strengths.&#13;
-- Expert scaling with the game on Expert, if that's your thing. Hard but winnable is the goal.&#13;
-- `hide_quest_rewards`: every reward on the Quests screen should read `???` in white.&#13;
-&#13;
-Bug fixes to check:&#13;
-&#13;
-- On arrival in a new map, look for `never seen closed` lines in `UE4SS.log`. If a chest from one of those lines looks open in the game and you can never open it, send me its key (like `chest:3100:3`).&#13;
-- If you play one save on two computers, open a new chest on the second one and check that its pop-up shows its own item.&#13;
-- Finish a quest with a stat bonus or an esper, like Nichol's Duty in Olderion. The coloured item line should only be on the first message.&#13;
-- Start a plain **New Game** with the client connected. Rain should stay at level 1, and the log should say `Archipelago is paused`.&#13;
-&#13;
-### Known issues&#13;
-&#13;
-- When two checks come at once (a chest right after a boss win), the second pop-up can show the game's own item. The check is still sent.&#13;
-- Three NPC gifts aren't locations: the Ether NPC in the Commercial District, the Mist Potion NPC in Grandshelt Castle, and the Zoldaad Dungeon NPC. They give their normal items if you find them.&#13;
-- Character quests' stat bonuses (like "Attribute Bonus: Fina") aren't items. The quest gives them as in the base game.&#13;
-- I've had one crash about 6 hours in, a few seconds after landing the airship, with FFR_MapMarkers and FFRBestiary on. It doesn't look like this mod's loop, but I'm not sure yet. If you crash, send `Mods/FFRArchipelago/ap_trace.txt`, the crash folder in `%LOCALAPPDATA%\FFRS\Saved\Crashes`, and `UE4SS.log` before you start the game again.&#13;
-- The `ModSettings` Lua mod (from FFR Modding Tools) can crash the game a second or two after a map change, with or without this mod. To avoid it, turn off **Hint on map load** in its panel (F10), or set `ModSettings : 0` in `Mods\mods.txt`.&#13;
-- Mt. Thunderclap's shortcut ladder is invisible. You can still let it down from the top and climb it.&#13;
-- Not done yet: espers other than Siren come the vanilla way, and the Chamber of Arms and the Arena are untouched.&#13;
-&#13;
-Most of this project's code and docs were written with Claude and tested by hand; see [DISCLOSURE.md](https://github.com/wrjones104/ffresonance-archipelago/blob/main/DISCLOSURE.md) for details.</content>
-    <link href="https://github.com/wrjones104/ffresonance-archipelago/releases/tag/0.31.0"/>
-  </entry>
   <entry>
     <id>https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_4</id>
     <title>Civilization IV v0.0.1r4</title>
@@ -673,7 +485,7 @@ Link to the [randomizer repo](https://github.com/chikakoo/Turok-2-Randomizer) fo
   </entry>
   <entry>
     <id>https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.1.6</id>
-    <title>Mario Sports Mix v3.1.6</title>
+    <title>Mario Sports Mix v3.1.6.post2</title>
     <updated>2026-11-23T01:08:44+00:00</updated>
     <author>
       <name>ElectroStarz</name>
@@ -685,6 +497,7 @@ Link to the [randomizer repo](https://github.com/chikakoo/Turok-2-Randomizer) fo
 * Actually fixed goaling for real this time (please)&#13;
 * Fixed some typos&#13;
 * Dolphin path name updated from `dolphin_exe_path` to just `dolphin_path` to be less confusing for non-Windows users.&#13;
+* Fixed Tutorial Skipping for NTSC-U&#13;
 &#13;
 **Note: If the client does not open, make sure to rename `dolphin_exe_path` to just `dolphin_path` in your `host.yaml`**</content>
     <link href="https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.1.6"/>
@@ -1498,5 +1311,138 @@ No game assets are distributed in any of these releases.</content>
 Only the client changed, so seeds made with 1.1.0 keep working. Run the installer again to update.
 </content>
     <link href="https://github.com/MuratDev41/gravity-circuit-ap/releases/tag/v1.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha7</id>
+    <title>Crash Team Racing v0.3.0a7</title>
+    <updated>2026-11-24T18:17:12+00:00</updated>
+    <author>
+      <name>Dowlle</name>
+    </author>
+    <content>## New here?&#13;
+CTR Archipelago turns Crash Team Racing into an Archipelago randomizer. Trophies, keys, gems, relics, characters and more get shuffled into a multiworld with other games, or you play on your own with Play Solo.&#13;
+&#13;
+- How to set it up and play your first seed with Play Solo: https://www.youtube.com/watch?v=E75AYB8IeH8&#13;
+- You need your own NTSC-U copy of the game. The client runs CTR natively on Windows, Linux and Steam Deck, no emulator.&#13;
+- Grab the zip (Windows) or tar.gz (Linux / Steam Deck) under Downloads, then follow the setup guide: https://ap-pie.com/guides/ctr&#13;
+- This is the newest test build. 0.2.4 is the last stable release if you'd rather play it safe.&#13;
+- Questions? Come say hi on the Discord: https://discord.com/invite/HxXy4mKQ5E&#13;
+&#13;
+## Discord&#13;
+&#13;
+Come hang out on [Appie's Games Discord](https://discord.com/invite/HxXy4mKQ5E). Test builds, bug reports and YAML sharing all happen there.&#13;
+&#13;
+Alpha7 is a quick one. It adds a lot more AP box spots to the retail race tracks, so Item Box Count up to 50 now gives real choice on most of them. It also lets a custom track use a separate build for Relic Races, and leaves Tizi Madness out of every seed. It's still an alpha, so 0.2.4 stays the stable release.&#13;
+&#13;
+[Full notes on AP-Pie](https://beta.ap-pie.com/ctr/releases) · [Setup guide](https://ap-pie.com/guides/ctr)&#13;
+&#13;
+## Before you try it&#13;
+- Use the alpha7 client and APWorld together. Your alpha6 YAML still works. Rooms made with alpha6 should still connect. Rooms from before alpha6 may be refused: keep the older client for them. Rooms made with alpha7 need the alpha7 client. Rooms from 0.2.x still need 0.2.4.&#13;
+- Quick saves (F5) made with alpha6 may not load. Make a new one if one is refused.&#13;
+&#13;
+## New&#13;
+- Many more AP box spots on the 18 retail race tracks: 787 spots instead of the 241 built-in ones, up to 50 per track. Item Box Count up to 50 now has real choice on most retail tracks. New spots need no boost. A few spots are still held back until they are tested by driving, so a few tracks have fewer than 50.&#13;
+- Custom tracks can have a separate build for Relic Races. A track with an Arcade build and a Relic build now offers both: Relic Races use the Relic build and every other mode uses the main one. Toasty Terrace is the first track to use it.&#13;
+- Box Author Mode holds 2048 placements instead of 512. This is for people who place boxes, players are not affected.&#13;
+&#13;
+## Fixed&#13;
+- Tizi Madness is left out of every seed. Part of its road is closed off, so its checks could not be reached.&#13;
+&#13;
+## Known issues&#13;
+- Custom tracks that aren't registered yet, like Nina's Nightmare and Acropolis, get no crate or Wumpa fruit checks.&#13;
+- Some retail box spots are held back until they are checked by driving, so a few tracks have fewer than 50.&#13;
+- Lots of Saphi tracks are Time Trial only, so they can't be used in a seed yet.&#13;
+- Time Trial only tracks can't be raced in Arcade with recorded AI laps yet.&#13;
+- The tracker's CHECKS page doesn't give AP boxes, letters, crystals or shop slots their own rows yet.&#13;
+- Sunset Vista can run slowly on Steam Deck.&#13;
+- Baby T Park's CTR Challenge may still play Roo's Tubes instead of its own music. That report is still open.&#13;
+- Some unusual YAMLs still fail to generate. Send me the YAML if it keeps happening.&#13;
+&#13;
+## Found a problem?&#13;
+[Open an issue](https://github.com/dowlle/ctr-native-ap/issues/new/choose) or post it on the Discord. Add your YAML and the support bundle (`support-bundle.bat` or `support-bundle.sh`) if you can.&#13;
+&#13;
+## Downloads&#13;
+Windows: `ctr-archipelago-v0.3.0-alpha7-windows-x86.zip`. Linux or Steam Deck: `ctr-archipelago-v0.3.0-alpha7-linux-x86.tar.gz`. Both include the client, the matching `ctr.apworld` and Play Solo. You need your own NTSC-U copy of the game. The client is GPL-3.0; the source is the `v0.3.0-alpha7` tag.&#13;
+&#13;
+| File | SHA-256 |&#13;
+|---|---|&#13;
+| `ctr-archipelago-v0.3.0-alpha7-windows-x86.zip` | `9e24dc278f9e56caf7929f816450c4cf53132c8e0054a84760e81c700a97e6e4` |&#13;
+| `ctr-archipelago-v0.3.0-alpha7-linux-x86.tar.gz` | `7533c2ab8217142465f13c4b5bc0dd1829ca8f0d894c962659c4479495a28aec` |&#13;
+| `ctr.apworld` | `2646192f9ff8877c0b1a86cde02061ec81ec602879dd28e29781df8205d6231b` |&#13;
+&#13;
+</content>
+    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha7"/>
+  </entry>
+  <entry>
+    <id>https://github.com/JBtheShadow/APManuals/releases/tag/v1.3.0</id>
+    <title>Manual_FantasyLife_JBtheShadow v1.3.0</title>
+    <updated>2026-11-24T18:29:55+00:00</updated>
+    <author>
+      <name>JBtheShadow</name>
+    </author>
+    <content>## New: Bingo Goal Line Count&#13;
+Added a new option that allows you to set how many lines you need to clear to achieve your bingo goal.&#13;
+Before this the only option available was blackout.&#13;
+&#13;
+## Changes:&#13;
+* Adjustments to bingo goal logic to account for the new option;&#13;
+&#13;
+## Fixes:&#13;
+* Found a bug in one of the rules adding an extra '|' to the skill level location requires;&#13;
+&#13;
+## TODO:&#13;
+- [ ] Same items as previous release;</content>
+    <link href="https://github.com/JBtheShadow/APManuals/releases/tag/v1.3.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Sim10XXX/C2AP/releases/tag/v0.5.0-pre3</id>
+    <title>Crash2 v0.5.0rc3</title>
+    <updated>2026-11-24T20:47:23+00:00</updated>
+    <author>
+      <name>Sim10XXX</name>
+    </author>
+    <author>
+      <name>alexdass</name>
+    </author>
+    <content>## Additions:&#13;
+- Unstuck button now does something (will cost you a life / deathlink if you are in an area where you can lose lives)&#13;
+&#13;
+## Bug Fixes:&#13;
+- Fixed incorrect ability lock logic in Hang Eight&#13;
+- Fixed generation error when ability lock is enabled and life sanity is disabled&#13;
+- Fixed no lives trap ending on the gameover screen removing all your reserved lives&#13;
+- Fixed size traps potentially sending Crash into the sky (and also it should drop you when hanging less often)&#13;
+- Made life count checks less likely to fail sending (probably, kinda hard to test)&#13;
+  - If they didn't send, restarting the client and reconnecting should send them for sure&#13;
+- Fixed deathlink in certain areas softlocking the game (where "BONUS" text suddenly appears on screen)&#13;
+- The client no longer sends a deathlink when receiving a deathlink that causes a gameover&#13;
+- Fixed receiving a deathlink at a certain timing during a level loading causing the game to crash&#13;
+- Fixed the demo sending deathlinks and life count checks</content>
+    <link href="https://github.com/Sim10XXX/C2AP/releases/tag/v0.5.0-pre3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Mysteryem/Archipelago-TCS/releases/tag/v2.0.1</id>
+    <title>Lego Star Wars: The Complete Saga v2.0.1</title>
+    <updated>2026-11-24T22:41:34+00:00</updated>
+    <author>
+      <name>Mysteryem</name>
+    </author>
+    <content># Known Issues&#13;
+- The pause screen text for showing goal progress does not get reset properly when closing the client, so the text can stack up if you open and close the client repeatedly&#13;
+&#13;
+# Changes&#13;
+- Locations within chapters now include the short {episode}-{chapter} in the location name in brackets, e.g. "Secret Plans (4-1)" instead of just "Secret Plans"&#13;
+- Locations within gold brick bonuses now include "Gold Brick Bonus" in the location name in brackets&#13;
+- Universal Tracker is now allowed to load even if the logic used in generation does not match the logic of your client, but a warning will be shown in the client that Universal Tracker may not be accurate. If the logic differs a lot, then Universal Tracker won't be allowed to run like before, but there are no two APWorld versions where this can currently happen.&#13;
+&#13;
+# Fixes&#13;
+- Fix UT Deferred Events only working for slot 1&#13;
+- Fix "Darth Vader (3-6)" showing as a possible boss and counting separately from "Anakin Skywalker (3-6)" in the bosses yaml options&#13;
+- The AllowedBosses option's docstring now correctly uses "The Emperor (6-5)" instead of the old "Darth Sidious (6-5)" name&#13;
+&#13;
+# Logic fixes&#13;
+- Fix Negotiations double force field room minikits expecting PROTOCOL_PANEL instead of SHORTIE&#13;
+- Add Normal+ logic for completing Dagobah with `Luke Skywalker (Dagobah)` and a custom character</content>
+    <link href="https://github.com/Mysteryem/Archipelago-TCS/releases/tag/v2.0.1"/>
   </entry>
 </feed>

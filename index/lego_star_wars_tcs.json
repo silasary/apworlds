@@ -260,6 +260,21 @@
       "title": "v2.0.0 Logic Rewrite - Individual minikits logic and more",
       "version_simple": "2.0.0",
       "world_version": "2.0.0"
+    },
+    "v2.0.1": {
+      "created_at": "2026-11-24T22:41:34Z",
+      "description": "# Known Issues\r\n- The pause screen text for showing goal progress does not get reset properly when closing the client, so the text can stack up if you open and close the client repeatedly\r\n\r\n# Changes\r\n- Locations within chapters now include the short {episode}-{chapter} in the location name in brackets, e.g. \"Secret Plans (4-1)\" instead of just \"Secret Plans\"\r\n- Locations within gold brick bonuses now include \"Gold Brick Bonus\" in the location name in brackets\r\n- Universal Tracker is now allowed to load even if the logic used in generation does not match the logic of your client, but a warning will be shown in the client that Universal Tracker may not be accurate. If the logic differs a lot, then Universal Tracker won't be allowed to run like before, but there are no two APWorld versions where this can currently happen.\r\n\r\n# Fixes\r\n- Fix UT Deferred Events only working for slot 1\r\n- Fix \"Darth Vader (3-6)\" showing as a possible boss and counting separately from \"Anakin Skywalker (3-6)\" in the bosses yaml options\r\n- The AllowedBosses option's docstring now correctly uses \"The Emperor (6-5)\" instead of the old \"Darth Sidious (6-5)\" name\r\n\r\n# Logic fixes\r\n- Fix Negotiations double force field room minikits expecting PROTOCOL_PANEL instead of SHORTIE\r\n- Add Normal+ logic for completing Dagobah with `Luke Skywalker (Dagobah)` and a custom character",
+      "download_url": "https://github.com/Mysteryem/Archipelago-TCS/releases/download/v2.0.1/lego_star_wars_tcs.apworld",
+      "has_manifest": true,
+      "hash_sha256": "3e3f2e897009ef10302375437f677b75fde93e8e42813426e7c27f1a6fc5b1ba",
+      "html_url": "https://github.com/Mysteryem/Archipelago-TCS/releases/tag/v2.0.1",
+      "minimum_ap_version": "0.6.8",
+      "size": 503035,
+      "source_url": "https://api.github.com/repos/Mysteryem/Archipelago-TCS",
+      "tag": "v2.0.1",
+      "title": "v2.0.1 Fix UT Deferred Events, AllowedBosses option, and a 1-1 minikits logic bug",
+      "version_simple": "2.0.1",
+      "world_version": "2.0.1"
     }
   }
 }

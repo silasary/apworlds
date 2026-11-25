@@ -1,9 +1,12 @@
 # Lego Star Wars: The Complete Saga
 
 ## Latest
-- <a href="https://github.com/Mysteryem/Archipelago-TCS/releases/download/v2.0.0/lego_star_wars_tcs.apworld">Latest Version (2.0.0)</a>
+- <a href="https://github.com/Mysteryem/Archipelago-TCS/releases/download/v2.0.1/lego_star_wars_tcs.apworld">Latest Version (2.0.1)</a>
 
 ## All Versions
+
+#### v2.0.1
+- <a href="https://github.com/Mysteryem/Archipelago-TCS/releases/download/v2.0.1/lego_star_wars_tcs.apworld">https://github.com/Mysteryem/Archipelago-TCS/releases/download/v2.0.1/lego_star_wars_tcs.apworld</a>
 
 #### v2.0.0
 - <a href="https://github.com/Mysteryem/Archipelago-TCS/releases/download/v2.0.0/lego_star_wars_tcs.apworld">https://github.com/Mysteryem/Archipelago-TCS/releases/download/v2.0.0/lego_star_wars_tcs.apworld</a>

@@ -2,6 +2,9 @@
 # Any complete package descriptor is accepted: track_key, file pins,
 # authored laps and measured capability flags. relic: true also needs
 # relic_targets {sapphire, gold, platinum} in ticks (960 per second).
+# Optional relic_files (a second LEV then VRM pin pair, plus relic_revision) is for a
+# track whose builds split the modes: the relic pair is used only for a Relic Race,
+# everything else stays on files. relic_targets must be the relic build's times.
 # Optional measured weapon_crates: with box_locations on, a track on a named block
 # gets Item Box 1 to min(weapon_crates, 15), seated on its own weapon crates; the
 # client counts them and refuses a wrong count.
