@@ -1,9 +1,12 @@
 # One Piece Unlimited Cruise 1
 
 ## Latest
-- <a href="https://github.com/captpurpleheart/opuc1-archipelago/releases/download/v1.0.3/opuc1.apworld">Latest Version (1.0.3)</a>
+- <a href="https://github.com/captpurpleheart/opuc1-archipelago/releases/download/v1.1.0/opuc1.apworld">Latest Version (1.1.0)</a>
 
 ## All Versions
+
+#### v1.1.0
+- <a href="https://github.com/captpurpleheart/opuc1-archipelago/releases/download/v1.1.0/opuc1.apworld">https://github.com/captpurpleheart/opuc1-archipelago/releases/download/v1.1.0/opuc1.apworld</a>
 
 #### v1.0.3
 - <a href="https://github.com/captpurpleheart/opuc1-archipelago/releases/download/v1.0.3/opuc1.apworld">https://github.com/captpurpleheart/opuc1-archipelago/releases/download/v1.0.3/opuc1.apworld</a>

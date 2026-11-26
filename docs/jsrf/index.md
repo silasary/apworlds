@@ -1,6 +1,6 @@
 # Jet Set Radio Future
 
-
+Jet Set Radio Future: area unlock randomizer.
 
 
 ## Downloads

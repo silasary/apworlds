@@ -54,12 +54,28 @@
       "hash_sha256": "c21a4d3ec4a3d0ca68b6f3fd9f800b2116bfa6c6cccc24440a8b32aabdd5db6a",
       "html_url": "https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/tag/v1.2a",
       "minimum_ap_version": "0.6.8",
+      "prerelease": true,
       "size": 120060,
       "source_url": "https://api.github.com/repos/rvanmatre50/JSRF-Archipelago-Randomizer",
       "tag": "v1.2a",
       "title": "v1.2a",
       "version_simple": "1.0.0",
       "world_version": "1.0.0r3"
+    },
+    "v1.3a": {
+      "created_at": "2026-11-22T12:23:04Z",
+      "description": "## Bug fixes\r\n\r\n- **Mystery Tapes can no longer trap you in the pickup animation.** Occasionally, picking up a Mystery Tape replayed the pickup animation over and over, and the tape could never be collected. This happened when the client wasn't watching the game at that moment, for example while its connection to the server dropped, right after it connected, or after it was closed or crashed.\r\n- **The game now handles the tape pickup itself.** Picking up a tape records the pickup in your save and removes the tape the same way the original game does. You get one pickup animation and the tape disappears, whether or not the client is watching.\r\n- **Tapes picked up while the client is away still count.** If you pick up a tape while the client is disconnected, it sends the check as soon as it reconnects.\r\n- **Street Challenges still follow the Mystery Tape items.** Picking up a tape doesn't open the area's Street Challenges. Receiving that area's Mystery Tape item does.\r\n\r\n## Changes\r\n\r\n- **The Future Site of Rokkaku Expo Stadium has its own name.** Jazz's recruit check is now \"The Future Site of Rokkaku Expo Stadium - Jazz Joins\".\r\n- **New check: the stadium's save point graffiti.** When graffiti tags are on, \"The Future Site of Rokkaku Expo Stadium - Save Point Tag\" is a check, which brings the total to 573 tag spots. If Gouji's Tower needs a share of tag spots, it now counts from 573 (50% is 287).\r\n- **Both stadium checks need the 99th Street Unlock.** The stadium still has no Unlock of its own. If you spray its graffiti or race Jazz before you have the 99th Street Unlock, the client holds the check until it arrives.\r\n\r\nTo update, replace `jsrf.apworld` in your `custom_worlds` folder and restart the client. Seeds made with the earlier v1.0a still work and get the Mystery Tape fix, but the stadium's new name and its tag check only appear in newly generated seeds. If you're already in an area when you update, leave it once so the area loads its tape with the fix.",
+      "download_url": "https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/download/v1.3a/jsrf.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ddaed6144cb53ba78abbc770242092d39a1ba774fd718bdd7e912fb44f7a29b0",
+      "html_url": "https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/tag/v1.3a",
+      "minimum_ap_version": "0.6.8",
+      "size": 121692,
+      "source_url": "https://api.github.com/repos/rvanmatre50/JSRF-Archipelago-Randomizer",
+      "tag": "v1.3a",
+      "title": "v1.3a",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0r2"
     }
   }
 }

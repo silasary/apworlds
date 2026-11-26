@@ -2,35 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-25T18:18:01.002311+00:00</updated>
+  <updated>2026-11-26T00:19:03.628506+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/OnakuTV/SonicFrontiersAPWorld/releases/tag/v0.2.3</id>
-    <title>Sonic Frontiers v0.2.3</title>
-    <updated>2026-11-22T19:05:34+00:00</updated>
-    <author>
-      <name>OnakuTV</name>
-    </author>
-    <content>Small fixes to logic and traps</content>
-    <link href="https://github.com/OnakuTV/SonicFrontiersAPWorld/releases/tag/v0.2.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/tag/Release-1.4</id>
-    <title>LEGO Star Wars III: The Clone Wars v1.4</title>
-    <updated>2026-11-22T19:13:41+00:00</updated>
-    <author>
-      <name>Newtboy</name>
-    </author>
-    <content>RELEASE MEEEEE&#13;
-RELEASE MEEEEEEE&#13;
-It's released :)&#13;
-&#13;
-**Full Changelog**: https://github.com/Newtboy/Newtboy-LSW3-Archipelago/compare/Beta-1.4-5...Release-1.4</content>
-    <link href="https://github.com/Newtboy/Newtboy-LSW3-Archipelago/releases/tag/Release-1.4"/>
-  </entry>
   <entry>
     <id>https://github.com/CaptainBoscar/Archipelago-DOTA2/releases/tag/v.0.2.0</id>
     <title>DOTA 2 v0.2.0</title>
@@ -1451,5 +1427,55 @@ Should be backwards compatible with 0.3.0 multiworlds, but if anything breaks, u
     </author>
     <content/>
     <link href="https://github.com/Arrcival/ArchipelagoDK/releases/tag/v2.1.3"/>
+  </entry>
+  <entry>
+    <id>https://github.com/captpurpleheart/opuc1-archipelago/releases/tag/v1.1.0</id>
+    <title>One Piece Unlimited Cruise 1 v1.1.0</title>
+    <updated>2026-11-25T18:28:03+00:00</updated>
+    <author>
+      <name>CaptPurpleHeart</name>
+    </author>
+    <content>A new PopTracker pack, plus logic fixes from test runs. No new YAML options: 1.0.x YAMLs work as they are, but&#13;
+generate again to get the logic fixes.&#13;
+&#13;
+### **PopTracker Map Tracker**&#13;
+Download `OPUC1-AP-Tracker.zip` alongside the apworld and put it in PopTracker's `packs` folder.&#13;
+- An item bar with every key item, the crafting rooms and their Art levels, the Fishing Rod's rod and line levels,&#13;
+  the Gabri Energy caps, every Shrine / Build Site access, and the bosses you've defeated.&#13;
+- Maps of the Thousand Sunny and every island (plus the Wooded Isle and Central Isle caves), with pins for chests,&#13;
+  bosses, ambushes, shrines, build sites, Stone Monuments, events, crafting recipes by Art level, fishing spots&#13;
+  (with each fish's distance), creature net and trap spots, and Materialsanity.&#13;
+- Logic comes straight from the apworld: the OPUC1 Client works out which locations are in logic and sends it to&#13;
+  the tracker, so the map always matches the apworld.&#13;
+- The map follows you around, switching islands and even the cave maps on its own.&#13;
+- Settings to show / hide Prologue, island, fishing, net and trap pins, and to turn the auto map off.&#13;
+&#13;
+### **Logic Fixes**&#13;
+- **FIX** - Zoro's Single Sword Flying Dragon Blaze never counted as a fire attack, so it didn't open Ashes, the&#13;
+  Iceberg Isle Ice Rock paths or anything else that needs fire.&#13;
+- **FIX** - Rod / line levels are now counted the way the game shows them (they start at Level 1). Elephant Tuna&#13;
+  needs rod Lv 5 and line Lv 11, Balloon Catfish rod Lv 5, and the Whopper / Sea King rods count from the upgrade&#13;
+  that actually gives them (10 / 20 upgrades) for the Sharks and Sea Kings.&#13;
+- **LOGIC UPDATE** - "Creatures - Mole" is catch only: a Mole traded at Franky's Supplies doesn't count as caught&#13;
+  (it still counts for the Obstructed Path Build Sites).&#13;
+- **LOGIC UPDATE** - Flame Powder only counts as a crafting ingredient when it can be compounded (Chopper's&#13;
+  Pharmacy), not from Fire Hercules drops. Dropped Flame Powder still counts as a fire attack.&#13;
+- **LOGIC UPDATE** - Mystery Mushroom can now come from the Tempest Mice by Rampaging Chopper (Iceberg Isle&#13;
+  Obstructed Path 2), caught with the Bug-Catcher Net.</content>
+    <link href="https://github.com/captpurpleheart/opuc1-archipelago/releases/tag/v1.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BuffYoda21/ap-glyphs/releases/tag/v1.3.1</id>
+    <title>GLYPHS v1.3.1</title>
+    <updated>2026-11-25T22:04:33+00:00</updated>
+    <author>
+      <name>BuffYoda21</name>
+    </author>
+    <content># Hotfix&#13;
+## Mod Changes&#13;
+- Fixed an issue where buttons did not get patched correctly when button colors weren't randomized&#13;
+&#13;
+**Full Changelog**: https://github.com/BuffYoda21/ap-glyphs/compare/v1.3.0...v1.3.1</content>
+    <link href="https://github.com/BuffYoda21/ap-glyphs/releases/tag/v1.3.1"/>
   </entry>
 </feed>
