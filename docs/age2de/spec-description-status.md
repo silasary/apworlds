@@ -1,6 +1,6 @@
 # Spec: in-game description status lines
 
-Feature slug: `description-status`. Vocabulary is `CONTEXT.md` (**checked**, **unlocked**,
+Feature slug: `description-status`. Vocabulary is `GLOSSARY.md` (**checked**, **unlocked**,
 **researched**, **active**). Colouring an unchecked location by its item's classification is
 ADR-0006; read it before changing that behaviour.
 

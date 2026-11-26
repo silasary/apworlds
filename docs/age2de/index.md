@@ -5,7 +5,7 @@ ages and the various battles, conquests, and wars of history.
 
 
 ## Downloads
-- <a href="https://github.com/dmwever/Ageipelago/releases/download/v0.3.0-beta1/age2de.apworld">Latest Version (0.3.0b1)</a>
+- <a href="https://github.com/dmwever/Ageipelago/releases/download/v0.3.0-beta2/age2de.apworld">Latest Version (0.3.0b2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
@@ -19,5 +19,6 @@ ages and the various battles, conquests, and wars of history.
 - <a href="0004-handlers-take-positions-not-the-record">0004-handlers-take-positions-not-the-record</a>
 - <a href="0005-the-scenario-file-is-not-the-oracle-for-granted-units">0005-the-scenario-file-is-not-the-oracle-for-granted-units</a>
 - <a href="0006-an-unchecked-location-is-coloured-by-its-item-classification">0006-an-unchecked-location-is-coloured-by-its-item-classification</a>
+- <a href="0007-with-techsanity-off-unit-techs-stay-vanilla">0007-with-techsanity-off-unit-techs-stay-vanilla</a>
 - <a href="spec-description-status">spec-description-status</a>
 - <a href="spec-item-delivery-cursor">spec-item-delivery-cursor</a>

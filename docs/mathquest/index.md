@@ -4,7 +4,7 @@ TODO -
 
 
 ## Downloads
-- <a href="https://github.com/rsa17826/mqap/releases/download/21/mathquest.apworld">Latest Version (21.0.0)</a>
+- <a href="https://github.com/rsa17826/mqap/releases/download/22/mathquest.apworld">Latest Version (22.0.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

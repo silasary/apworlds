@@ -1,7 +1,7 @@
 # Spec: the game owns the item delivery cursor
 
 Status: ready-for-agent. Branch: `v0.3.0` (apworld) and `0.3.0` (Ageipelago). Nothing is
-committed as part of this work. Vocabulary follows `worlds/age2de/CONTEXT.md`.
+committed as part of this work. Vocabulary follows `worlds/age2de/GLOSSARY.md`.
 
 Implementation tickets: `.scratch/item-delivery-cursor/issues/`.
 

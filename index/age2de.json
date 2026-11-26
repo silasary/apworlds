@@ -161,7 +161,7 @@
       "tag": "v0.2.3",
       "title": "Release 0.2.3 - The Stabilitier Update",
       "version_simple": "0.0.1",
-      "world_version": "0.0.1r2"
+      "world_version": "0.0.1r3"
     },
     "v0.3.0-beta": {
       "created_at": "2026-09-27T01:26:40Z",
@@ -194,6 +194,22 @@
       "title": "0.3.0 beta 1",
       "version_simple": "0.3.0",
       "world_version": "0.3.0b1"
+    },
+    "v0.3.0-beta2": {
+      "created_at": "2026-11-26T16:02:32Z",
+      "description": "# 0.3.0 Beta 2\r\n\r\nSecond pre-release of 0.3.0 - The Tech Tree Update.\r\n\r\n## New in Beta 2\r\n\r\n- Locked scenarios refuse to start: starting a scenario that isn't unlocked in your Archipelago world now shows \"Scenario not unlocked\" in game and defeats the player. The client refuses to connect to it.\r\n- Colored /scenarios and /mercenaries: the client colors each entry by its status.\r\n- Universal Tracker: \"Unlock Next Scenario\" now follows the scenarios actually completed, not logic.\r\n\r\nBugfixes\r\n\r\n- An age only becomes researchable while two buildings of the previous age are standing.\r\n- The Joan 4 base and Joan 6 army checks now need military units to enter the area.\r\n- Attila 1 Mangudai waves get their own caveman-mode wave, so they no longer become idle cavemen that spawn forever.\r\n- The upgrade tech effect no longer upgrades units in place before the target tier's unit item arrives.\r\n- Converting a unit, such as a Man-at-Arms in Attila 3, now checks the right unit.\r\n- A victory location already collected on the server now shows as checked in game, in every scenario.\r\n- Messages are no longer lost when the client changes scenarios.\r\n- Attila 2: fixed a typo in the scenario.\r\n\r\n## Upgrading from 0.3.0-beta1\r\nUpdate **both** halves: `age.2.files.zip` and `age2de.apworld`. Run `/install full` and enable the **Ageipelago** mod under Local in the Mod Center.\r\n\r\nFull notes: [RELEASE-0.3.0.md](https://github.com/dmwever/Ageipelago/blob/0.3.0/RELEASE-0.3.0.md)",
+      "download_url": "https://github.com/dmwever/Ageipelago/releases/download/v0.3.0-beta2/age2de.apworld",
+      "has_manifest": true,
+      "hash_sha256": "40383badddf2acb49cfa486a61eed1378deeefc97270ae7c9cb88afdcba633c6",
+      "html_url": "https://github.com/dmwever/Ageipelago/releases/tag/v0.3.0-beta2",
+      "minimum_ap_version": "0.6.7",
+      "prerelease": true,
+      "size": 1068636,
+      "source_url": "https://api.github.com/repos/dmwever/Ageipelago",
+      "tag": "v0.3.0-beta2",
+      "title": "0.3.0 beta 2",
+      "version_simple": "0.3.0",
+      "world_version": "0.3.0b2"
     }
   }
 }
