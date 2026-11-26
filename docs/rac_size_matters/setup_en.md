@@ -72,16 +72,19 @@ The weapon/gadget array's memory location is resolved directly from the loaded p
 | `/force_sync` | Force the player's in-game state to match what was received from Archipelago. |
 | `/states` | Print every active internal state — useful when reporting a bug. |
 | `/rac5_info` | Print the current slot options plus every active state's repr. |
+| `/goal` | Show each selected goal as completed or incomplete. Pick and Mix also shows the completed/total goal count. |
 | `/vendor_refresh` | Force-rewrite the vendor's item list immediately, instead of waiting for the next menu open/close. |
 | `/skin <name>` | Set Ratchet's skin directly, e.g. `/skin trash`, `/skin tuxedo`, or an id 0-19. Multiplayer skins need Experimental Skins enabled in your YAML. |
 | `/apicon [style]` | Choose the Archipelago icon shown on vendor items: `original`, `purple`, `grey`, or `blue`. No argument prints the current style. |
 | `/debug` | Toggle verbose per-tick state-change logging in the client console. |
 | `/spawn_ghost` | Spawn a static ghost clone of yourself at your current position - debug tool. |
-| `/toggle_deathlink` | Toggle DeathLink on or off for this session. |
-| `/toggle_ammolink` | Toggle Ammo Link on or off for this session. |
-| `/toggle_boltlink` | Toggle Bolt Link on or off for this session. |
+| `/deathlink [on\|off\|toggle]` | Set Death Link, toggle it, or show its status with no argument. |
+| `/ammolink [on\|off\|toggle]` | Set Ammo Link, toggle it, or show its status with no argument. |
+| `/ringlink [on\|off\|toggle]` | Set Ring Link, toggle it, or show its status with no argument. |
+| `/traplink [on\|off\|toggle]` | Set Trap Link, toggle it, or show its status with no argument. |
+| `/ghostlink [on\|off\|toggle]` | Set Ghost Link, toggle it, or show its status with no argument. |
 
-Toggling a Link on/off client-side is only half the picture — the matching YAML option (Ammo Link, Bolt Link, Ghost Link) must also be enabled at generation time. See the game info page's "What options are available?" section for details.
+YAML link options set the initial state on connection. The commands above can toggle those links for the current session.
 
 ## Poptracker
 SomeLazyGamer did a fantastic job on the poptracker and if you use poptracker make sure to check it out [link](https://github.com/SomeLazyGamer/RaC-5-SM-AP-Poptracker)

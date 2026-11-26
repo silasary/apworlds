@@ -2,108 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-26T00:19:03.628506+00:00</updated>
+  <updated>2026-11-26T06:16:21.360538+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/CaptainBoscar/Archipelago-DOTA2/releases/tag/v.0.2.0</id>
-    <title>DOTA 2 v0.2.0</title>
-    <updated>2026-11-22T20:33:40+00:00</updated>
-    <author>
-      <name>CaptainBoscar</name>
-    </author>
-    <content># **Dota 2 Archipelago World — v0.2.0**&#13;
- ## 7.42 Item Updates and New Objectives&#13;
-&#13;
-* Latest 7.42 items added.&#13;
-* Blood Grenade is now a locked item&#13;
-* Can change the number of starting heroes and hero groups. (Still recommend 30 for the smallest starting size)&#13;
-* New goals for single-match stats and Match objectives (net worth, aegis, etc)&#13;
-* New feature: Quests. Set Goals that track over the course of the entire seed. (cumulative net worth, wards placed, magic damage,&#13;
-[dota2.yaml](https://github.com/user-attachments/files/35244475/dota2.yaml)&#13;
- etc)&#13;
-* New methods for parsing and for tracking Quest Progress (check the setup file)&#13;
-&#13;
-**New Tracker Page and YAML generator site:** https://jchaudanson.github.io/Archipelago-DOTA2/options.html</content>
-    <link href="https://github.com/CaptainBoscar/Archipelago-DOTA2/releases/tag/v.0.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MuratDev41/gravity-circuit-ap/releases/tag/v0.12.0</id>
-    <title>Gravity Circuit (MuratDev's Implementation) v0.12.0</title>
-    <updated>2026-11-22T21:10:22+00:00</updated>
-    <author>
-      <name>Murat Kaan Tekeli</name>
-    </author>
-    <content>### New
-- **Item sprites in the shops.** With shopsanity, a slot holding another game's item shows that item's sprite
-  instead of the chip or burst icon, from KaitoKid's
-  [ArchipelagoUtilities](https://github.com/agilbert1412/ArchipelagoUtilities) asset database. Items without a
-  sprite show their game's icon; games not in the database keep the normal icon. Sprites are downloaded once per
-  game and cached in `archipelago\sprites\`.
-- **`wss://` on Linux / Steam Deck.** The socket connection now does TLS through Schannel (Wine has it too), so
-  secure servers work under Proton. It is now the default on Windows as well, with WinHTTP as the fallback.
-- **WebSocket compression.** The client supports `permessage-deflate`, so the server no longer warns about it.
-
-### Changes
-- Data chip pickups, received filler items and traps no longer print a message.
-</content>
-    <link href="https://github.com/MuratDev41/gravity-circuit-ap/releases/tag/v0.12.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.4.6</id>
-    <title>Pokemon Black and White v0.4.6</title>
-    <updated>2026-11-22T22:27:17+00:00</updated>
-    <author>
-      <name>BlastSlimey</name>
-    </author>
-    <content>## Changelog&#13;
-&#13;
-- Fixed unnecessarily repeated calculation of sphere distances&#13;
-- Fixed sphere-based scaling potentially bleeding into other multiworlds on webhosts&#13;
-- Fixed big jumps in sphere-based level scaling&#13;
-- Fixed logic of Motorcyclist Charles, Ace Trainer Lou, and Ace Trainer Elmer (@Radis7Noir)&#13;
-&#13;
-### Is this version compatible with older multiworld slots and save files?&#13;
-Yes, back to 0.4.0&#13;
-However, UT might be inaccurate when tracking worlds generated before 0.4.6&#13;
-</content>
-    <link href="https://github.com/BlastSlimey/PokemonBWAP/releases/tag/0.4.6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.10</id>
-    <title>Donkey Kong 64 v2.0.10</title>
-    <updated>2026-11-22T22:28:20+00:00</updated>
-    <author>
-      <name>2dos</name>
-    </author>
-    <author>
-      <name>AlmostSeagull</name>
-    </author>
-    <author>
-      <name>Ballaam</name>
-    </author>
-    <author>
-      <name>Green Bean</name>
-    </author>
-    <author>
-      <name>Killklli</name>
-    </author>
-    <author>
-      <name>Lrauq</name>
-    </author>
-    <author>
-      <name>PoryGone</name>
-    </author>
-    <author>
-      <name>Umed</name>
-    </author>
-    <content>DK64 Randomizer APWorld file for Archipelago version 2.0.10
-
-This release contains the dk64.apworld file that can be used with the Archipelago multiworld randomizer.</content>
-    <link href="https://github.com/2dos/DK64-Randomizer-Dev/releases/tag/v2.0.10"/>
-  </entry>
   <entry>
     <id>https://github.com/ShackledMars261/mio-archipelago/releases/tag/v0.0.3</id>
     <title>Memories in Orbit v0.0.1r2</title>
@@ -277,9 +180,10 @@ _(optional)_ [Hue shifter script (version agnostic)](https://github.com/chikakoo
 See the [documentation](https://github.com/chikakoo/Turok-2-AP-World/tree/main/worlds/turok2/docs) for more details _(including the setup guide and changelog)_!&#13;
 Link to the [randomizer repo](https://github.com/chikakoo/Turok-2-Randomizer) for reference.&#13;
 &#13;
-**Expected mod version is (still) 0.6.0.**&#13;
+**Expected mod version is 0.6.1.**&#13;
 &#13;
 - Fixed the 4-V2 vent mission objective not logically requiring the Satchel Charge&#13;
+- Fixed some incorrect pickups being affected/not affected by the "Prevent Collection" setting for lava items in 5-E3&#13;
 &#13;
 **tl;dr setup (see the guide for details):**&#13;
 1. Install the AP world.&#13;
@@ -1477,5 +1381,135 @@ Download `OPUC1-AP-Tracker.zip` alongside the apworld and put it in PopTracker's
 &#13;
 **Full Changelog**: https://github.com/BuffYoda21/ap-glyphs/compare/v1.3.0...v1.3.1</content>
     <link href="https://github.com/BuffYoda21/ap-glyphs/releases/tag/v1.3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_4_1</id>
+    <title>Civilization IV v0.0.1r2</title>
+    <updated>2026-11-26T00:14:21+00:00</updated>
+    <author>
+      <name>VincentSIFTD</name>
+    </author>
+    <content>This is the release that 0.4 should have been, with lots of Resourcesanity fixes, as well as Wondersanity fixes.&#13;
+&#13;
+### Changelog:&#13;
+New in 0.4.1:&#13;
+- Fur, Ivory, and Whale resources don't go obsolete anymore, regardless of the Resourcesanity settings.&#13;
+- Non-water resources now require The Wheel to be in logic (as it's impractical to connect them to the capital otherwise)&#13;
+- Receiving a city from another player (either through trade or capture) with a World Wonder sends the respective location check just as if you've built it.&#13;
+- Fixed Shrines attempting to send a location check&#13;
+- Prevented barbarians from spawning "AP" units&#13;
+&#13;
+New in 0.4.0:&#13;
+- Resourcesanity is available in an initial form. A check is sent when you have at least one instance of a resource available in your capital, either by connecting it naturally or getting it via trade. The logic makes sure you have the techs needed to reveal and connect the given resource (or make a corporation for it in the case of Aluminum and Oil), and additionally requires Iron Working to connect Calendar resources (as the majority of them are placed in jungle on "normal" maps). You also aren't guaranteed to have every resource on every map and may need to generate another game to get all checks.&#13;
+- If Peekable Locations is set to either "Great People" or "All" in the YAML, the option to "bulb" a location will show the name of the item you're sending. In this initial implementation GPs are the only location that's peekable, it doesn't say who the item is for, or what type the item is (Progression/Useful/Filler/Trap), all of which are planned for later updates.&#13;
+- Fixed Archipelago Communism being named Archipelago Utopia, causing the location not to send.&#13;
+- Did lots of refactoring and code cleanup that's not interesting to users&#13;
+&#13;
+### Installation Instructions:&#13;
+1. Unzip Civ4-Archipelago-Mod into your Beyond the Sword mod folder (I've been testing it in the My Games one, but theoretically it should also work in the installation folder one; let me know if one or both work or don't work!), make sure the structure is Beyond the Sword/Mods/Civ4-Archipelago-Mod and that there isn't an extra folder in that structure.&#13;
+2. Install the APWorld as normal.&#13;
+&#13;
+### Play Instructions:&#13;
+1. Run the Civilization IV client from Archipelago, but **do not connect from the client**; you'll do so in-game (and eventually I want to remove the ability to connect from the client)&#13;
+2. Start a new Civ4 Beyond the Sword game as normal--**I highly recommend playing in windowed mode**, since this is an alpha and if the game freezes it can be difficult/impossible to close out of it if it's in full screen mode.&#13;
+3. When you load in you'll get a popup saying to connect to the Archipelago Server: you do this by opening up the BUG options (the little dragon in the upper-right corner), entering in your information, then clicking "Save and Connect." If the connection is successful you'll get a popup that says "Successfully Connected," and you can play as normal. If you get an error, try connecting again, it most often means you don't have the client open or you're already connected in the client. Occasionally however the connection will be slow and you connect in the client but get an error in-game; in that case disconnect in the client and try again. **If this happens a lot to you let me know!**&#13;
+&#13;
+### Gameplay Issues:&#13;
+1. The settings aren't balanced at all, and it may make you do things like get 9 Great Scientists when all you have is the library or research Satellites before you have any economic techs. The Techsanity Era Gates setting should help the latter, and I'd highly recommend against large GPsanity numbers unless you have a lot of time to kill (though the added Great People in the pool will help).&#13;
+2. There are a lot of debugging messages left in the mod. I removed some of them, but don't expect a clean feed.&#13;
+3. When you're trying to select an "obsolete" wonder to build in the city screen, the building options will jump to the top of the building list due to the hacky way I've implemented that ability. I want to fix it eventually, but for now the easiest way to mitigate it is to use the wonder filter on the right side of the city list (the star), which will have it jump back to the start of the wonders, which hopefully won't make it jump. You can also use the "choose what to build next" dialog, or just select it without moving your mouse (use the scroll wheel).&#13;
+4. The "AP" Unique Units can't be upgraded into, though they can be upgraded themselves. This is planned to be fixed in an upcoming update.&#13;
+5. AP Unique Buildings are programmed assuming you don't have a "natural" Unique Building for your Civilization for purposes like avoiding duplicates of the same class of building, so if you use a Civilization other than AP World things could break.&#13;
+6. If a building has a requirement to be built (such as the University), and you build an AP Unique Building version of it (such as the Seowon), you aren't able to build the original version anymore. There's no reason why you'd need to do this (the only vanilla building that's not strictly worse than the UB alternatives is the Theatre/Hippodrome, and that doesn't suffer the bug), but it's weird behavior.&#13;
+&#13;
+### Technical Issues:&#13;
+1. I had generation errors when creating solo/near-solo multiworlds with high Techsanity Era Gates values--I never tested with higher values with locations other than Techsanity enabled but keep that in mind if you're having trouble generating.&#13;
+2. Whenever you close and reopen the game/a save file, you need to disconnect the client, and you should close and reopen the client to avoid missing checks. I plan to try and automate this in future updates.&#13;
+3. There have been bug reports of items received/obtained while offline not properly appearing in-game and/or being sent to the multiworld when reconnecting. I think this is related to mismatching either mod or APworld versions, but I haven't fully found the root cause yet.&#13;
+4. If you add Unique Buildings to the itempool, it causes a noticeable amount of lag when entering the city screen in some cases (due to the coding I need to make them work how I want them to). I think it scales with the amount of cities you have, but it also might be just a memory leak. If you experience this lag (or don't and think you would), let me know!&#13;
+&#13;
+If you have any questions, bug reports, or things I forgot to mention, let me know in [the Civilization IV thread in the Archipelago Discord server](https://discord.com/channels/731205301247803413/1326231506682904576).&#13;
+&#13;
+Github for the APWorld: https://github.com/VincentBorchardt/Archipelago/blob/main/worlds/civ_4/</content>
+    <link href="https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_4_1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.6.0</id>
+    <title>Ratchet &amp; Clank: Size Matters v0.6.0</title>
+    <updated>2026-11-26T02:33:29+00:00</updated>
+    <author>
+      <name>Pangu</name>
+    </author>
+    <author>
+      <name>Amondo</name>
+    </author>
+    <author>
+      <name>ImJustATester</name>
+    </author>
+    <content>## Installation &amp; Setup
+
+- Requires [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest). Make sure you are up-to-date.
+- Download the `.apworld` file below and double-click it to install. Restart Archipelago after installation.
+- Use **Options Creator** or **Generate Template Options** in the Archipelago Launcher to create player option YAML files.
+- Place your edited player option YAML files in the `Players` folder. Use **Browse Files...** in the Launcher to open the Archipelago directory.
+- Make sure you have all required `.apworld` files, your player YAMLs, and any desired `host.yaml` settings ready before generating. (`server_password` is recommended for admin login.)
+- Click **Generate** to create a multiworld `.zip` in the `output` folder.
+- Upload the generated `.zip` to https://archipelago.gg/uploads or self-host it. Self-hosting requires port forwarding.
+- For detailed setup instructions and game-specific documentation, see [game-specific documentation](https://github.com/Panguu/Archipelago-RaCSM/tree/SM-Main/worlds/rac_size_matters/docs).
+- If you encounter errors, run `ArchipelagoLauncherDebug.exe` or launch Archipelago from a terminal and check the `logs` folder.
+- Need help? Join the Archipelago Discord: https://discord.gg/8Z65BR2
+
+
+
+## Changelog
+
+- fix(SM): yamless failures and added defaults for incorrectly configured yamls (304d768c)
+- fix(SM): experimental skins disabled fallback to random starting skin (0e3f4c45)
+- feat(SM): ringlink, traplink, commands change, fix for slotlock, reconnection duplicate socket connections and more (3b2370c6)
+
+Full comparison:
+https://github.com/Panguu/Archipelago-RaCSM/compare/rac_size_matters-v0.5.8...rac_size_matters-v0.6.0</content>
+    <link href="https://github.com/Panguu/Archipelago-RaCSM/releases/tag/rac_size_matters-v0.6.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3.2</id>
+    <title>Undertale Beta v2.0.0r2</title>
+    <updated>2026-11-26T03:19:12+00:00</updated>
+    <author>
+      <name>Mewlif</name>
+    </author>
+    <content>WARNING: MAJOR FIX TO THIS VERSION HERE&#13;
+https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3.2-fix&#13;
+&#13;
+&#13;
+ADDED:&#13;
+- Can now lock shooting while Yellow behind an item&#13;
+- Can now lock the shield while Green behind an item&#13;
+- Can now lock the ability to swap between strings while Purple behind an item&#13;
+&#13;
+CHANGED:&#13;
+- There can no longer be multiple of the same procedural spell given to a player (In example of what is now prevented: Procedural Spell 1 randomized to the exact same result at Procedural Spell 3, making those two spells identical in every way.)&#13;
+- Procedural Spell TP balancing has been expanded to account for more variables in usefulness&#13;
+&#13;
+FIXED:&#13;
+- Receiving a Procedural Spell now says its name in the in-game message&#13;
+- Procedural Spells that hit all, then hit one, should no longer crash&#13;
+- Logic no longer thinks you fight Undyne The Undying in the Neutral/Pacifist Undyne fight location&#13;
+- Armored Undyne no longer gets stuck facing up or left in certain situations</content>
+    <link href="https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3.2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3.2-fix</id>
+    <title>Undertale Beta v2.0.0r3</title>
+    <updated>2026-11-26T04:11:39+00:00</updated>
+    <author>
+      <name>Mewlif</name>
+    </author>
+    <content>ADDED:&#13;
+- Muffet on Neutral or Pacifist can now expect you to use a Spider item from the hub shop to skip needing the ability to swap strings if you enable Advanced Logic&#13;
+&#13;
+FIXED:&#13;
+- Green Soul shield option now actually exists</content>
+    <link href="https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3.2-fix"/>
   </entry>
 </feed>

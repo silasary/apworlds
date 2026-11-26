@@ -55,6 +55,7 @@ of everything specific to this game:
 
 | Option | Default | What it does |
 |---|---|---|
+| Logic | Easy | Easy preserves the original equipment requirements. Normal allows the approved Kalidon and Quodrona routes with Shrink Ray + Hypershot without Clank Pack. Glitched also allows Pokitaru routes with Clank Pack instead of a projectile weapon, the Kalidon factory-side T-Bolt without gadgets, and Wildfire Boots with Shrink Ray only. Other requirements, including planet access, Challenge Mode and Mootator, still apply. |
 | Goal | Defeat Otto | Defeat Otto, All Skill Points, All Clank Challenges, or Pick and Mix. See [What is the goal?](#what-is-the-goal). |
 | Pick and Mix Goals | none | With Goal set to Pick and Mix, every selected goal must be completed. |
 | Starting Weapons | 2 | Number of random weapons precollected at the start. |
@@ -66,7 +67,9 @@ of everything specific to this game:
 | Progressive Weapons | Off | Off: weapons are individual items, leveling works as in vanilla. Manual: a single Progressive Weapon item per weapon caps how far you can level by playing. Automatic: level is set directly from Progressive Weapon items received, no need to play to level up. With Challenge Mode 1+, a weapon at level 4 moves up to level 5 automatically: with Off as soon as the Challenge Mode tier is 1+, with Manual or Automatic once its 5th Progressive Weapon copy is received. Buying the Titan vendor location never changes a weapon's level itself. |
 | Progressive Mods | Off | On: one Progressive Mod item per weapon grants mod slots in sequence, instead of each slot being its own item. |
 | Progressive Armour | Off | Off: each armour piece is its own item. Per Set: each armour set has its own progressive item (Progressive Wildfire, Progressive Sludge Mk9, etc.) — 4 copies unlock that set's 4 pieces in order. Unified: a single Progressive Armour item grants pieces one set at a time in a fixed order: Wildfire, Sludge Mk9, Crystallix, Electroshock, Mega Bomb, Hyperborean, Chameleon. |
-| Enabled Weapons | every weapon on | Selects which weapons are included in generation. Setting a weapon to 0 removes its item(s) (including Progressive Weapon/Mod items), its vendor location, its mod-vendor locations, and its Weapon Level checks. At least one long-range projectile weapon must remain available after NG+ Items is applied. |
+| Single Weapon Mode | off | Restricts generation to Lacerator, Shock Rocket, Sniper Mine, Laser Tracer, or RYNO. Off includes all weapons. Other weapons and their mods, vendor locations, and Weapon Level checks are excluded. RYNO requires NG+ Items. |
+| Filler Weight | equal | Relative weights for Bolts, Nanotech XP, Weapon XP, and Refill Ammo. Zero disables a type; all zero falls back to Bolts. Nanotech XP grants 10% and Weapon XP grants 25% of the next level requirement without applying XP multipliers again. Weapon XP and ammo affect the equipped weapon; the wrench/gadgets receive no reward. |
+| Gadgetron Debt Percent | 20% | Percentage removed by Gadgetron Debt, from 10% to 99%. Deducts the selected percentage directly, rounded down to whole bolts, with no minimum or maximum deduction. Also applies to incoming TrapLink debt. |
 | Trap Chance | 0% | Percent chance for each filler item to be replaced with a trap. |
 | Trap Weight | equal | Relative weights of each trap type when a filler item rolls as a trap. |
 | Trap Duration | 20s per trap (Reset Level is instant) | How many seconds each trap type stays active once triggered. |
@@ -92,8 +95,8 @@ of everything specific to this game:
 | Max Challenge Mode | 0 | Enables the game's Challenge Mode (New Game Plus) tier and controls how far generation reaches into it. 0: vanilla, no Challenge Mode content. 1: adds the RYNO vendor purchase, 10 Challenge-Mode-only weapon mod purchases, and the 4 Hyperborean armour pickup locations. 2: everything from tier 1, plus the 4 Chameleon armour pickup locations (the armour items themselves are controlled by NG+ Items alone). Without Progressive Challenge Mode, this is the tier the game starts in (written to memory on connect); with it, this is the highest tier the progressive items can raise you to. Everything this unlocks is still gated by NG+ Items — with that off, this option alone has no effect. |
 | Progressive Challenge Mode | Off | On: adds one Progressive Challenge Mode item per tier (Max Challenge Mode 2 adds 2 copies). Tier 1 content requires 1 copy received, tier 2 content requires 2, and the in-game Challenge Mode tier rises as copies arrive instead of being fixed at connect. Off: Challenge Mode content is reachable as soon as its planet is. |
 | Death Amnesty | 0 | Number of deaths allowed before items are removed from your inventory on death. Higher is more forgiving. |
-| Experimental Skins | Off | Patches the thirteen red multiplayer skins into the single-player skin menu. Experimental. When off, the multiplayer skins aren't patched in and Starting Skin can't be set to one of them. |
-| Starting Skin | Default | Cosmetic skin for Ratchet, applied automatically on each planet load. Includes the seven single-player skins and thirteen red multiplayer skins (the multiplayer skins need Experimental Skins on), with no blue variants. All skins are unlocked in-game regardless of this choice. Can also be changed while playing with `/skin`. |
+| Experimental Skins | Off | Patches the thirteen multiplayer skins with secondary textures for Kangaroo and Tuxedo Ratchet into the single-player skin menu. Experimental. When off, the multiplayer skins aren't patched in and Starting Skin can't be set to one of them. |
+| Starting Skin | Default | Cosmetic skin for Ratchet, applied automatically on each planet load. Includes the seven single-player skins and thirteen multiplayer skins with secondary textures for Kangaroo and Tuxedo Ratchet (the multiplayer skins need Experimental Skins on). All skins are unlocked in-game regardless of this choice. Can also be changed while playing with `/skin`. |
 | AP Icon | Original | Archipelago icon shown on vendor items: Original, Purple, Grey, or Blue. Can also be changed while playing with `/apicon`. |
 
 ### Clank Pack and No Clank trap
@@ -113,16 +116,34 @@ changes. The client must be connected to enforce these effects.
 
 ### Game Links
 
-Cross-player options, each with a matching client-side toggle you also need to turn on (`/toggle_ammolink`, `/toggle_boltlink` — see the [setup guide](setup_en.md#client-commands)) before they actually do anything — enabling the YAML option alone auto-enables the toggle on connect, but you can flip any of them on/off per-session from the client too, same as Death Link.
+YAML link options enable their links on connection. Use `/deathlink`, `/ammolink`, `/ringlink`, `/traplink`, or `/ghostlink` with `on`, `off`, or `toggle` to change their state for the current session. With no argument, each command reports its current status.
 
-**These only ever link you with other Ratchet & Clank: Size Matters players** — never with players of other games, even ones on your same team. Ghost Link picks its candidate peers by explicitly matching game, and Ammo/Bolt Link's underlying sync data is keyed under this game's own namespace, so another game's client never sees or touches it.
+Ring Link and Trap Link work across games. Ammo Link and Ghost Link remain specific to Size Matters.
 
 | Option | Default | What it does |
 |---|---|---|
 | Ammo Link | Off | Mirrors weapon ammo counts with every other connected, linked player: whenever your ammo for a weapon changes, everyone else linked for that weapon is updated to match, and vice versa. Players don't need matching weapon inventories. |
-| Bolt Link | Off | Mirrors your bolt count with every other connected, linked player — spend or collect bolts on any linked player and everyone else's balance matches. |
+| Ring Link | Off | Exchanges ordinary bolt gains and spending with Ring Link players across games. Purchases automatically send negative RingLink amounts. Modes: Off, Share Bolts, Share Bolts and Traps. Share Bolts keeps Gadgetron Debt enabled but does not send its bolt loss. Share Bolts and Traps allows it and shares its bolt deduction through RingLink, independently of Trap Link. Starting bolts and AP bolt items are not broadcast. Incoming losses are also applied. |
+| Trap Link | Off | Shares equivalent traps across games. Zero-weight traps and packets received outside gameplay are ignored. Linked traps are never rebroadcast. |
 | Ghost Link | Off | Renders another linked, connected player as a static ghost clone whenever you're both on the same planet. Only one ghost can ever be shown at once — if multiple linked players share your planet, the lowest slot number wins. Has an additional host.yaml-level kill switch (applied at generation time, not by the running server — see [dynamicpine's docs](../../dynamicpine/docs/adding_to_apworld.md) for the distinction if you host on a different machine than you generate on). |
 | Ghost Link Update Interval | 5s | How often (in seconds) your position is broadcast to other Ghost Link players. 0 broadcasts as fast as possible (every poll tick, no throttling). |
+
+
+Ring Link uses a fixed conversion of 100 bolts per ring times Bolt Multiplier (0/1 counts as 1), giving 400 bolts per ring at the default 4x multiplier. For context, vendor prices are: normal purchases are 5,000–85,000 bolts, Titan weapons reach 2,500,000, and the RYNO is 9,990,000. The conversion applies equally to incoming gains and losses; incoming bolts are not boosted a second time. Loading, reconnecting, or receiving AP bolt grants does not broadcast a wallet change. Older slot data with `bolt_link` uses Ring Link; new YAMLs use `ring_link`.
+
+Trap Link uses these wire names in both directions, while also accepting native AP trap names:
+
+| Native trap | Wire name | Additional accepted alias |
+|---|---|---|
+| Reverse Controls (Bolt Confusion) | Confusion Trap | Reverse Controls Trap; Bolt Confusion Trap |
+| Mirror Level | Mirror Trap | Flip Horizontal Trap |
+| Feverdream | Fuzzy Trap | |
+| Weapon Switching | Tool Swap Trap | Gadget Shuffle Trap |
+| Whats Gamma? | Invert Colors Trap | |
+| Reset Level | Teleport Trap | |
+| No Clank | No Clank Trap | |
+
+These mappings preserve the Size Matters effects: the gamma effect remains its native brightness distortion, and Teleport Trap reloads the current level. No Clank has no unrelated cross-game alias.
 
 Plus the standard Archipelago options (Death Link, Progression Balancing, Accessibility, Start Inventory From Pool,
 etc.) shared across every game.
@@ -163,3 +184,7 @@ With Challenge Mode 1+, a Titan-eligible weapon's kiosk also lists its Titan var
 ## Setup guide
 
 See [the Setup Guide](setup_en.md) for full instructions on connecting PCSX2 to Archipelago.
+
+Gadgetron Debt removes a configurable 10%�99% of current bolts (the Gadgetron Debt Percent slider defaults to 20%), rounded down to whole bolts, with no minimum or maximum deduction. This is an instant trap. TrapLink recognizes `Gadgetron Debt Trap` and `Trap: Gadgetron Debt`; no other-game currency trap aliases are currently mapped.
+
+Dropped Ammo instantly empties every owned weapon�s ammo. Its Trap Weight controls generation and TrapLink receipt; Trap Duration does not apply. TrapLink recognizes `Dropped Ammo Trap` and `Trap: Dropped Ammo`.
