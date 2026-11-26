@@ -1,7 +1,7 @@
 -- ============================================================================
 -- Toy Story 2 (PS1) Archipelago - ALL-IN-ONE BizHawk script
 -- ----------------------------------------------------------------------------
--- CONNECTOR VERSION: 3.3.2   <-- must match the .apworld release.
+-- CONNECTOR VERSION: 3.4.0   <-- must match the .apworld release.
 --   If a player reports odd behaviour (e.g. checks sending early), have them
 --   confirm this line. It is also printed in the BizHawk Lua console on load and
 --   again when settings are received, so they can read it back without opening
@@ -28,7 +28,7 @@
 -- Single source of truth for the connector release version (see header). Bump this
 -- in lockstep with the .apworld release. Global so it stays in scope across the
 -- Part 1 / Part 2 do...end blocks without consuming a local slot.
-TS2_VERSION = "3.3.2"
+TS2_VERSION = "3.4.0"
 -- Free-text build tag, printed beside the version on load. NOT parsed anywhere:
 -- the client and the title screen only ever read TS2_VERSION, so a hotfix can
 -- be told apart in a player's console without tripping the version check.
@@ -315,6 +315,7 @@ TS2_DEBUG_FREEZE_MAX = 3
 --   music        the music randomizer's code patches (music stays vanilla)
 --   shortcuts    Remembered Shortcuts
 --   sounds       the sound traps, Buzz Quip and Eject Buzz
+--   souls        Souls (3.4.0): nothing hidden, no fight held back
 --   freezecheck  the debug log's freeze check
 --   profiler     the debug log's slow-frame timing
 --   all          every one of the above: ts2.lua then does per frame only
@@ -333,7 +334,7 @@ do
         f:close()
         for w in txt:gmatch("%a+") do TS2_OFF[w] = true end
         if TS2_OFF.all then
-            for _, w in ipairs({ "rex", "zone", "music", "shortcuts", "sounds", "freezecheck", "profiler" }) do
+            for _, w in ipairs({ "rex", "zone", "music", "shortcuts", "sounds", "freezecheck", "profiler", "souls" }) do
                 TS2_OFF[w] = true
             end
         end
@@ -2243,6 +2244,12 @@ function write_level_name(hover_id,use_locked)
         local g=goal_label_text()
         if g then write_label(hover_id, g); return end
     end
+    -- 3.4.0 Souls: an open Final Showdown whose fight still waits for souls
+    -- says how many are missing (the level can be entered; nothing starts).
+    if hover_id==21 and not use_locked and not lock_flash and TS2S then
+        local n=TS2S.tfs_missing()
+        if n>0 then write_label(hover_id, "missing "..n..(n==1 and " soul" or " souls")); return end
+    end
     if use_locked then
         -- Linear boss gates show "have/need tokens".
         if get_game_mode()==1 and LINEAR_GATE_NUM[hover_id] then
@@ -2591,8 +2598,18 @@ function goal_label_text()
     return "req level"
 end
 
--- Ordered list of popup messages for a locked gate.
+-- Ordered list of popup messages for a locked gate. 3.4.0: the Final Showdown
+-- adds how many souls its fight still waits for (a separate message, so the
+-- popup cycles through them like the goal conditions).
 function build_lock_msgs(hover_id, kind)
+    local m = build_lock_msgs_base(hover_id, kind)
+    if hover_id == 21 and TS2S then
+        local n = TS2S.tfs_missing()
+        if n > 0 then m[#m+1] = "missing " .. n .. (n == 1 and " soul" or " souls") end
+    end
+    return m
+end
+function build_lock_msgs_base(hover_id, kind)
     if kind == "tokens" then
         local gn = LINEAR_GATE_NUM[hover_id] or 5
         local miss = get_gate(gn) - get_ap_tokens(); if miss < 0 then miss = 0 end
@@ -2622,8 +2639,10 @@ function build_lock_msgs(hover_id, kind)
     return { "missing level unlock" }
 end
 
--- Flash state machine. Single-message kinds (unlock/tokens) show 100 frames then
--- blank+stop; the goal kind cycles 75-show / 10-blank through every message once.
+-- Flash state machine. A single message (unlock/tokens) shows 100 frames then
+-- blank+stop; the goal kind, and any gate with more than one message (a linear
+-- Final Showdown short on tokens AND souls), cycles 75-show / 10-blank through
+-- every message once.
 SHOW_SINGLE, SHOW_CYCLE, BLANK_CYCLE = 100, 75, 10
 lock_flash = nil   -- {kind, msgs, idx, phase, timer}
 function start_lock_flash(hover_id, kind)
@@ -2635,9 +2654,10 @@ function tick_lock_flash()
         write_lock_string(lf.msgs[lf.idx] or "")
         mainmemory.write_u8(A.LOCKED_MSG, LOCK_MSG_SHOW)
         lf.timer = lf.timer + 1
-        local dur = (lf.kind == "goal") and SHOW_CYCLE or SHOW_SINGLE
+        local cycle = (lf.kind == "goal") or #lf.msgs > 1
+        local dur = cycle and SHOW_CYCLE or SHOW_SINGLE
         if lf.timer >= dur then
-            if lf.kind == "goal" and lf.idx < #lf.msgs then
+            if cycle and lf.idx < #lf.msgs then
                 lf.phase = "blank"; lf.timer = 0
             else
                 mainmemory.write_u8(A.LOCKED_MSG, 0); lock_flash = nil
@@ -6128,6 +6148,10 @@ function update_map(input, hovered)
             local ms_now=mainmemory.read_u8(MISSIONS_ADDR)*256+mainmemory.read_u8(MISSIONS_NEED_ADDR)
             if ms_now~=last_missions_state then last_missions_state=ms_now; write_all_level_names() end
         end
+        -- 3.4.0: the Final Showdown's "missing N souls" label. (Global: the
+        -- main chunk is at the 200-local ceiling.)
+        souls_label_now = TS2S and TS2S.tfs_missing() or 0
+        if souls_label_now~=last_souls_missing then last_souls_missing=souls_label_now; write_all_level_names() end
 
         -- Block X if: (a) the hovered level is locked, OR (b) we just arrived on
         -- the map / just changed which level is hovered and haven't settled yet.
@@ -6811,22 +6835,27 @@ TS2X = (function()
     -- 160; /jumpscare off: dropped).
     -- ======================================================================
     -- The face is the 64x64 picture model 45 (the visor) uses, in the level's
-    -- Buzz texture page. A small stub at 0x1FE000 adds one full-screen textured
-    -- quad (copied from the template at 0x1FE7C0) to the HUD's ordering-table
+    -- Buzz texture page. A small stub at 0x8000F200 adds one full-screen textured
+    -- quad (copied from the template at 0x8000F300) to the HUD's ordering-table
     -- entry, then carries on into the HUD routine (0x80074F80), so the face is
     -- drawn after the level and on top of the HUD. The game's two calls of the
     -- HUD routine are pointed at the stub only while a scare is on screen, and
     -- put back right after. The picture is looked up in video memory (row 31 is
     -- unique there; a hash checks all 64 rows) once per level load.
-    local JS_STUB, JS_SHOW, JS_TEMPLATE = 0x1FE000, 0x1FE7BC, 0x1FE7C0
+    -- 3.4.0: moved from 0x1FE000 / 0x1FE7BC / 0x1FE7C0. The Final Showdown (and
+    -- its Level Select preview) keeps graphics in 0x1FE000-0x1FE70F, so a scare
+    -- there could have drawn garbage or crashed. 0x8000F200+ is unused kernel
+    -- memory (zero in every dump), next to the Souls stub.
+    local JS_STUB, JS_SHOW, JS_TEMPLATE = 0x00F200, 0x00F2FC, 0x00F300
     local JS_CODE = {
-        0x3C088020, 0x8D09E7BC, 0x3C0A800A, 0x1120001D, 0x8D4B1608, 0x8D4C1438, 0x256D0028,
-        0x01AC702B, 0x11C00018, 0x250EE7C0, 0x256F0004, 0x25D80024, 0x8DD90000, 0x25CE0004,
+        0x3C088001, 0x8D09F2FC, 0x3C0A800A, 0x1120001D, 0x8D4B1608, 0x8D4C1438, 0x256D0028,
+        0x01AC702B, 0x11C00018, 0x250EF300, 0x256F0004, 0x25D80024, 0x8DD90000, 0x25CE0004,
         0xADF90000, 0x15D8FFFC, 0x25EF0004, 0x8D4E1468, 0x00000000, 0x25CE02BC, 0x8DCF0000,
         0x3C1800FF, 0x3718FFFF, 0x01F8C824, 0x3C090900, 0x0329C825, 0xAD790000, 0x0178C824,
         0x3C09FF00, 0x01E97824, 0x01F97825, 0xADCF0000, 0xAD4D1608, 0x0801D3E0, 0x00000000,
     }
-    local JS_CALLS, JS_JAL_HUD, JS_JAL_STUB = { 0x07B820, 0x07BC3C }, 0x0C01D3E0, 0x0C07F800
+    local JS_CALLS, JS_JAL_HUD, JS_JAL_STUB = { 0x07B820, 0x07BC3C }, 0x0C01D3E0, 0x0C003C80
+    local JS_JAL_OLD = 0x0C07F800                -- 3.3.x's stub at 0x1FE000 (a savestate may hold it)
     local JS_FRAMES, JS_W, JS_H = 45, 512, 240
     local function js_hexs(h) return (h:gsub("..", function(c) return string.char(tonumber(c, 16)) end)) end
     local JS_ROW31 = js_hexs("88c8abcbccddddddddcd2c00c2ccbcbb7a5544444475a9bacbccccccbb9ab988")
@@ -6872,12 +6901,14 @@ TS2X = (function()
                 if mm.read_u32_le(a) ~= w then mm.write_u32_le(a, w) end
             end
             for _, a in ipairs(JS_CALLS) do
-                if mm.read_u32_le(a) == JS_JAL_HUD then mm.write_u32_le(a, JS_JAL_STUB) end
+                local w = mm.read_u32_le(a)
+                if w == JS_JAL_HUD or w == JS_JAL_OLD then mm.write_u32_le(a, JS_JAL_STUB) end
             end
         else
             mm.write_u32_le(JS_SHOW, 0)
             for _, a in ipairs(JS_CALLS) do
-                if mm.read_u32_le(a) == JS_JAL_STUB then mm.write_u32_le(a, JS_JAL_HUD) end
+                local w = mm.read_u32_le(a)
+                if w == JS_JAL_STUB or w == JS_JAL_OLD then mm.write_u32_le(a, JS_JAL_HUD) end
             end
         end
         js.hooked = on
@@ -6910,6 +6941,11 @@ TS2X = (function()
             end
         end
         if js.hooked then js_hook(false) end
+        -- 3.4.0: a savestate from 3.3.x can hold the old stub's call: put the
+        -- HUD routine back (the old stub's memory is the Final Showdown's).
+        for _, a in ipairs(JS_CALLS) do
+            if mm.read_u32_le(a) == JS_JAL_OLD then mm.write_u32_le(a, JS_JAL_HUD) end
+        end
         if mm.read_u8(Q_JUMP) == 0 then return end
         if not in_level(level) then mm.write_u8(Q_JUMP, 0); return end      -- dropped, like the other traps
         if feature2(4) then                                                  -- /jumpscare off
@@ -7146,12 +7182,11 @@ TS2X = (function()
     local KEEP_PTR = 0x1FECF8
     local STUB = { 0x3C018020, 0x8C21ECF8, 0x00000000, 0x10810003, 0x00000000,
                    0x08015AD9, 0x00000000, 0x03E00008, 0x8C820004 }
-    local ZHOOK_ADDR, ZHOOK_ORIG, ZHOOK_NEXT, ZHOOK_NEW, ZSTUB_ADDR = 0x044230, 0x00000000, 0x8045006A, 0x0C07FB40, 0x1FED00
-    local ZSTUB = { 0x3C018020, 0x8C21ECF8, 0x00000000, 0x16010002, 0x00000000,
-                    0x00002821, 0x03E00008, 0x00000000 }
+    -- 3.4.0: the zone hook (0x80044230) is shared with Souls now, so its stub
+    -- is TS2S's at 0x8000F000; Rex's part of it is the "zone keep" word that
+    -- stub reads (TS2S.zone_keep). The 3.2.0 stub at 0x1FED00 is no longer used.
     local PATCHES = {
         { name = "Rex height hook", addr = HOOK_ADDR, orig = HOOK_ORIG, new = HOOK_NEW, stub_addr = STUB_ADDR, stub = STUB },
-        { name = "Rex zone hook", addr = ZHOOK_ADDR, orig = ZHOOK_ORIG, new = ZHOOK_NEW, next = ZHOOK_NEXT, stub_addr = ZSTUB_ADDR, stub = ZSTUB },
     }
     local MESH_TABLE, MESH_STRIDE = 0x0C9510, 0x34
     local OBJ_TABLE, OBJ_STRIDE, OBJ_MAX = 0x0C56A0, 0x34, 57
@@ -7355,16 +7390,7 @@ TS2X = (function()
     local ZONE_NEAR, ZONE_FAR, ZONE_HIGH = 160000, 176000, 260000
     local zone_in = false
     local function zone_hook(on, full)
-        if on then
-            if full or mm.read_u32_le(ZHOOK_ADDR) ~= ZHOOK_NEW then
-                if not ensure_patch(PATCHES[2]) and not M.zone_warned then
-                    M.zone_warned = true
-                    dbg("Rex zone hook NOT installed")
-                end
-            end
-        elseif mm.read_u32_le(ZHOOK_ADDR) == ZHOOK_NEW then
-            mm.write_u32_le(ZHOOK_ADDR, ZHOOK_ORIG)
-        end
+        if TS2S then TS2S.zone_keep(on and mm.read_u32_le(KEEP_PTR) or 0) end
         zone_in = on
     end
     local function zone_tick(s, base, full)
@@ -7574,6 +7600,300 @@ TS2X = (function()
     return M
 end)()
 
+-- ============================================================================
+-- 3.4.0 SOULS (TS2S): ts2_souls_test v2. Every character, missing toy, enemy,
+-- lock, miniboss and boss has a soul; the client writes which are missing and
+-- this hides them and keeps their fights from starting.
+-- ============================================================================
+-- HIDING. Each frame the game hides any actor whose room is switched off: it
+-- isn't updated, drawn or talked to. 0x80044230 (a nop before "lb a1, 0x6A(v0)",
+-- the actor's room) becomes "jal 0x8000F000"; the stub there makes a1 -1 (room
+-- off) for an actor in the list at 0x8000F100 or whose type's bit is set at
+-- 0x8000F080. It also does Rex Hide 'n Seek's zone keep (3.2.0): the actor in
+-- the word at 0x8000F0F8 gets a1 = 0, an always-on room. Nothing is moved, so a
+-- soul arriving mid-visit shows its kind straight away.
+-- The stub and its lists live in 0x8000F000-0x8000F3FF: unused kernel memory,
+-- zero in every dump we have (Final Showdown included). NOT 0x1FE000-0x1FE7FF,
+-- which the Final Showdown and its Level Select preview use for graphics.
+--
+-- FIGHTS. A miniboss's or boss's level script starts its fight when Buzz walks
+-- into a spot (state 0 -> 1). With its soul missing, the branch that does that
+-- is made to always skip; putting it back starts the fight the next time the
+-- test passes. Each site is checked against the two words before it, and only
+-- the current level's is touched (overlays leave other levels' code in RAM).
+-- Tin Robot (Andy's House) needs nothing: hiding him stops his fight.
+--
+-- EXTRAS. Slime Time's trash can lid is model record 0, hidden by clearing its
+-- bit in the camera area's visibility row (0x800B14A8 + area * 256). The Zurg
+-- Kite's tail is a rope the Andy's Neighborhood script draws itself: the call
+-- that shows it (0x800D5394) is pointed at the one that hides it.
+--
+-- FINAL SHOWDOWN. Its fight waits for the souls the client says it needs
+-- (0x1FEC6F bit0); Stinky Pete / Gunslinger / Blacksmith are hidden THERE by
+-- that byte, not by their miniboss souls (with Require Final Showdown Soul(s)
+-- off they're always there).
+TS2S = (function()
+    local mm = mainmemory
+    local M = {}
+    local function dbg(s) if ts2_debug then pcall(ts2_debug, s) end end
+    local TAG_ADDR, MASK_ADDR, TFS_ADDR, TAG = 0x1FEC66, 0x1FEC67, 0x1FEC6F, 0x5A
+    local ACTORS, STRIDE, SLOTS = 0x0C2EA0, 0x98, 48
+
+    -- the hook and the stub (souls/stub5.py)
+    local HOOK, HOOK_NOP, HOOK_NEXT = 0x044230, 0x00000000, 0x8045006A
+    local STUB, TYPES, ZKEEP, LIST, LIST_MAX = 0x00F000, 0x00F080, 0x00F0F8, 0x00F100, 32
+    local JAL_STUB = 0x0C003C00
+    -- 3.2.0-3.3.2 Rex zone stub (0x1FED00) and the souls test scripts' old stub
+    local OLD_JALS = { [0x0C07FB40] = true, [0x0C07F840] = true }
+    local STUB_CODE = {
+        0x3C088001, 0x2508F100, 0x8D090000, 0x00000000, 0x11200005, 0x25080004, 0x1530FFFB, 0x00000000,
+        0x10000013, 0x00000000, 0x96090014, 0x3C088001, 0x312900FF, 0x000950C2, 0x010A4021, 0x9108F080,
+        0x31290007, 0x01284006, 0x31080001, 0x15000008, 0x00000000, 0x3C088001, 0x8D08F0F8, 0x00000000,
+        0x15100005, 0x00000000, 0x03E00008, 0x24050000, 0x03E00008, 0x2405FFFF, 0x03E00008, 0x00000000,
+    }
+
+    -- Same order as souls.py SOULS (bit i of the mask). t = types hidden
+    -- everywhere; lv/ty + slots / others = only those slots (or every other
+    -- slot) of a type several kinds share, in that one level.
+    -- fight = { level, address, word -8, word -4, original, blocked }
+    local SOULS = {
+        { t = { 0x01 } },                                   -- Woody
+        { t = { 0x07 } },                                   -- Bo Peep
+        { t = { 0x08 } },                                   -- RC Car
+        { t = { 0x09 } },                                   -- Mr. Potato Head
+        { t = { 0x0A } },                                   -- Hamm
+        { lv = 2, ty = 0x0D, slots = { 6 } },               -- Sarge
+        { t = { 0x12 } },                                   -- Foreman Tike
+        { t = { 0x2C } },                                   -- Slinky
+        { lv = 5, ty = 0x2B, slots = { 19 } },              -- Mother Duck
+        { t = { 0x22 } },                                   -- Mama Chicken
+        { t = { 0x23 } },                                   -- Papa Chicken
+        { t = { 0x24 } },                                   -- Mothership
+        { t = { 0x25 } },                                   -- Flying Saucer
+        { lv = 10, ty = 0x17, slots = { 0 } },              -- Mama Mouse
+        { lv = 10, ty = 0x17, slots = { 22 } },             -- Papa Mouse
+        { t = { 0x27 } },                                   -- Jessie
+        { t = { 0x2A } },                                   -- Bullseye
+        { t = { 0x31 } },                                   -- Rocky Gibraltar
+        { t = { 0x35 } },                                   -- Pilot Tike
+        { t = { 0x3C } },                                   -- Luggage Handler Tike
+        { t = { 0x3E } },                                   -- Rex
+        { t = { 0x06 } },                                   -- Sheep
+        { lv = 2, ty = 0x0D, others = { 6 } },              -- Soldier
+        { t = { 0x13 } },                                   -- Worker Tike
+        { lv = 5, ty = 0x2B, others = { 19 } },             -- Duck
+        { t = { 0x1C } },                                   -- Chick
+        { t = { 0x26 } },                                   -- Alien
+        { lv = 10, ty = 0x17, others = { 0, 22 } },         -- Mouse
+        { t = { 0x28 } },                                   -- Critter
+        { t = { 0x32, 0x33, 0x34 } },                       -- Passenger Tike
+        { t = { 0x3B } },                                   -- Luggage
+        { t = { 0x03 } },                                   -- Bouncer Zurg Robot
+        { t = { 0x04 } },                                   -- Propeller Zurg Robot
+        { t = { 0x0C } },                                   -- Lawnmower
+        { t = { 0x0E } },                                   -- Zurg Car
+        { t = { 0x14 } },                                   -- Floating Zurg Robot
+        { t = { 0x15 } },                                   -- Zurg Soldier
+        { t = { 0x18, 0x19 } },                             -- Plane (+ Plane Box)
+        { t = { 0x1B } },                                   -- Zurg Boat
+        { t = { 0x21 } },                                   -- Snake
+        { t = { 0x29 } },                                   -- Vulture
+        { t = { 0x2E } },                                   -- Gunman
+        { t = { 0x1D } },                                   -- Hula Hoop
+        { t = { 0x1E } },                                   -- Lock
+        { t = { 0x05 } },                                   -- Tin Robot
+        { t = { 0x0F },                                     -- Zurg Kite (+ its tail)
+          fight = { 2, 0x0D504C, 0x00441021, 0x0062182B, 0x1460000C, 0x1000000C },
+          patch = { 2, 0x0D5394, 0x0C03471A, 0x00002821, 0x0C034907, 0x0C034911 } },
+        { t = { 0x16 }, fight = { 4, 0x0D42EC, 0x0C01D07A, 0x2406012C, 0x1040000D, 0x1000000D } },  -- Jackhammer
+        { t = { 0x20 }, fight = { 5, 0x0D36C8, 0x8C631270, 0x00000000, 0x1462000C, 0x1000000C } },  -- Clown Top
+        { t = { 0x1A }, fight = { 7, 0x0D3A28, 0x8C631270, 0x00000000, 0x1462000C, 0x1000000C } },  -- Dinosaur
+        { t = { 0x2F }, fight = { 8, 0x0D3DA4, 0x34428580, 0x0043102A, 0x1040000C, 0x1000000C } },  -- Buzz Lightyear Buggy
+        { t = { 0x1F }, fight = { 10, 0x0D4910, 0x00441021, 0x0062182B, 0x1460000C, 0x1000000C } }, -- Spider Gunro
+        { t = { 0x2D }, tfs = 2, fight = { 11, 0x0D4C64, 0x3442F447, 0x0043102A, 0x1440000C, 0x1000000C } }, -- Gunslinger
+        { t = { 0x3D }, tfs = 1, fight = { 13, 0x0D30A0, 0x84422216, 0x00000000, 0x1040000C, 0x1000000C } }, -- Stinky Pete
+        { t = { 0x3A }, tfs = 3, fight = { 14, 0x0D33DC, 0x0C01D07A, 0x2406012C, 0x1040000C, 0x1000000C } }, -- Blacksmith
+        { t = { 0x10 }, extra = { 3, { 0 } },               -- Slime Time (+ its trash can lid)
+          fight = { 3, 0x0D15AC, 0x0C01D066, 0x2406017C, 0x10400010, 0x10000010 } },
+        { t = { 0x30 }, fight = { 6, 0x0D16C0, 0x34421F9D, 0x0043102A, 0x1440001F, 0x1000001F } },  -- Bombs Away
+        { t = { 0x36, 0x37 }, fight = { 9, 0x0D1D4C, 0x344244A8, 0x0043102A, 0x10400027, 0x10000027 } }, -- Toy Barn Encounter
+        { t = { 0x39 }, fight = { 12, 0x0D1AC8, 0x344274D5, 0x0043102A, 0x1040001E, 0x1000001E } }, -- Zurg
+    }
+    M.COUNT = #SOULS
+    local TFS_FIGHT = { 15, 0x0D26BC, 0x34639427, 0x0043102A, 0x1040001A, 0x1000001A }
+
+    local function in_level(l) return l >= 1 and l <= 15 end
+
+    -- ── hook ──────────────────────────────────────────────────────────────
+    local hook_ok, hook_warned, frame = false, false, 0
+    local function install(full)
+        if full or not hook_ok then
+            for i, w in ipairs(STUB_CODE) do
+                local a = STUB + (i - 1) * 4
+                if mm.read_u32_le(a) ~= w then mm.write_u32_le(a, w) end
+            end
+        end
+        local w = mm.read_u32_le(HOOK)
+        if w == JAL_STUB then hook_ok = true; return true end
+        if mm.read_u32_le(HOOK + 4) ~= HOOK_NEXT or not (w == HOOK_NOP or OLD_JALS[w]) then
+            hook_ok = false
+            if not hook_warned then
+                hook_warned = true
+                dbg(string.format("souls: hook NOT installed (word %08X)", w))
+            end
+            return false
+        end
+        mm.write_u32_le(HOOK, JAL_STUB)
+        hook_ok = true
+        return true
+    end
+    function M.uninstall()
+        mm.write_u32_le(LIST, 0)
+        for k = 0, 31 do mm.write_u8(TYPES + k, 0) end
+        mm.write_u32_le(ZKEEP, 0)
+        if mm.read_u32_le(HOOK) == JAL_STUB then mm.write_u32_le(HOOK, HOOK_NOP) end
+    end
+    -- Rex Hide 'n Seek's zone keep (TS2X): the actor shown from every room, or 0.
+    function M.zone_keep(ptr) if mm.read_u32_le(ZKEEP) ~= ptr then mm.write_u32_le(ZKEEP, ptr) end end
+
+    -- ── the client's bytes ────────────────────────────────────────────────
+    local function state()
+        if mm.read_u8(TAG_ADDR) ~= TAG then return nil, 0 end
+        local lo, hi = mm.read_u32_le(MASK_ADDR), mm.read_u32_le(MASK_ADDR + 4)
+        return { lo = lo, hi = hi }, mm.read_u8(TFS_ADDR)
+    end
+    local function missing(mask, i)          -- i is 0-based
+        if not mask then return false end
+        if i < 32 then return (mask.lo >> i) & 1 == 1 end
+        return (mask.hi >> (i - 32)) & 1 == 1
+    end
+    -- How many Final Showdown souls are still missing (Level Select label).
+    function M.tfs_missing()
+        local mask, tfs = state()
+        if not mask then return 0 end
+        return (tfs >> 4) & 0x0F
+    end
+
+    -- ── code patches (fights, the Kite's tail) ────────────────────────────
+    local function patch(level, f, on)
+        if not f or f[1] ~= level then return nil end
+        if mm.read_u32_le(f[2] - 8) ~= f[3] or mm.read_u32_le(f[2] - 4) ~= f[4] then return nil end
+        local w = mm.read_u32_le(f[2])
+        if w ~= f[5] and w ~= f[6] then return nil end
+        local want = on and f[6] or f[5]
+        if w ~= want then mm.write_u32_le(f[2], want) end
+        return on
+    end
+    local function restore_patches(level)
+        for _, s in ipairs(SOULS) do patch(level, s.fight, false); patch(level, s.patch, false) end
+        patch(level, TFS_FIGHT, false)
+    end
+
+    -- ── extra models (visibility bit per camera area) ─────────────────────
+    local VIS, AREA_ADDR = 0x0B14A8, 0x0A11E0
+    local cleared = {}                       -- address -> bits we cleared
+    local function vis_restore()
+        for ba, bb in pairs(cleared) do mm.write_u8(ba, mm.read_u8(ba) | bb) end
+        cleared = {}
+    end
+    local function vis_clear(r)
+        local area = mm.read_s8(AREA_ADDR)
+        if area < 0 then return end
+        local ba, bb = VIS + area * 256 + (r >> 3), 0x80 >> (r & 7)
+        local v = mm.read_u8(ba)
+        if v & bb ~= 0 then
+            mm.write_u8(ba, v & (~bb & 0xFF))
+            cleared[ba] = (cleared[ba] or 0) | bb
+        end
+    end
+
+    -- ── per frame ─────────────────────────────────────────────────────────
+    local last_level, last_key, last_log = -1, nil, nil
+    function M.tick(level)
+        frame = frame + 1
+        if TS2_OFF and TS2_OFF.souls then
+            if not M.off_done then M.off_done = true; pcall(M.uninstall); pcall(restore_patches, level); vis_restore() end
+            return
+        end
+        install(frame % 30 == 0)
+        if level ~= last_level then
+            last_level, last_key = level, nil
+            cleared = {}                     -- a new level rebuilds its visibility table
+        end
+        local mask, tfs = state()
+        local bits = {}
+        for k = 0, 31 do bits[k] = 0 end
+        local n, hidden_extra = 0, {}
+        local live = in_level(level)
+        for i, s in ipairs(SOULS) do
+            local gone
+            if level == 15 and s.tfs then
+                gone = mask ~= nil and (tfs >> s.tfs) & 1 == 1      -- the Final Showdown decides
+            else
+                gone = missing(mask, i - 1)
+            end
+            if gone and live then
+                if s.t then
+                    for _, t in ipairs(s.t) do bits[t >> 3] = bits[t >> 3] | (1 << (t & 7)) end
+                elseif s.lv == level then
+                    if s.slots then
+                        for _, sl in ipairs(s.slots) do
+                            local b = ACTORS + sl * STRIDE
+                            if n < LIST_MAX and mm.read_u16_le(b + 0x14) == s.ty then
+                                mm.write_u32_le(LIST + n * 4, 0x80000000 + b); n = n + 1
+                            end
+                        end
+                    else
+                        local skip = {}
+                        for _, sl in ipairs(s.others) do skip[sl] = true end
+                        for sl = 0, SLOTS - 1 do
+                            local b = ACTORS + sl * STRIDE
+                            if not skip[sl] and n < LIST_MAX and mm.read_u16_le(b + 0x14) == s.ty then
+                                mm.write_u32_le(LIST + n * 4, 0x80000000 + b); n = n + 1
+                            end
+                        end
+                    end
+                end
+                if s.extra and s.extra[1] == level then
+                    for _, r in ipairs(s.extra[2]) do hidden_extra[#hidden_extra + 1] = r end
+                end
+            end
+            if s.fight then patch(level, s.fight, gone) end
+            if s.patch then patch(level, s.patch, gone) end
+        end
+        mm.write_u32_le(LIST + n * 4, 0)
+        if level == 15 then patch(level, TFS_FIGHT, mask ~= nil and tfs & 1 == 1) end
+        -- type bits: written when they change, and checked in full every 30
+        -- frames (a savestate can put old ones back)
+        local key = table.concat(bits, ",")
+        if key ~= last_key or frame % 30 == 0 then
+            for k = 0, 31 do if mm.read_u8(TYPES + k) ~= bits[k] then mm.write_u8(TYPES + k, bits[k]) end end
+            if key ~= last_key and live then
+                local ts = {}
+                for t = 0, 255 do
+                    if (bits[t >> 3] >> (t & 7)) & 1 == 1 then ts[#ts + 1] = string.format("%02X", t) end
+                end
+                local l = string.format("souls: level %d, %d actor(s) listed, types hidden: %s", level, n,
+                    #ts > 0 and table.concat(ts, " ") or "none")
+                if l ~= last_log then last_log = l; dbg(l) end
+            end
+            last_key = key
+        end
+        if #hidden_extra > 0 then
+            for _, r in ipairs(hidden_extra) do vis_clear(r) end
+        elseif next(cleared) then
+            vis_restore()
+        end
+    end
+    function M.on_exit()
+        pcall(M.uninstall); pcall(restore_patches, mm.read_u8(0x0A16A8)); pcall(vis_restore)
+    end
+    if event and event.onexit then
+        event.onexit(function() M.on_exit() end, "ts2_souls")
+    end
+    return M
+end)()
+
 function ts2_main()
     -- No ROM loaded yet (script started before a game booted): do nothing. The
     -- bundled connector below waits for a ROM; touching mainmemory here would error.
@@ -7684,6 +8004,18 @@ function ts2_main()
             TS2X_ERR = true
             print("[TS2] 3.2.0 feature error: " .. tostring(err_x))
             ts2_debug("3.2.0 feature error: " .. tostring(err_x))
+        end
+    end
+
+    -- 3.4.0 Souls: hide what's missing, keep its fights from starting. Every
+    -- frame, everywhere (a savestate can undo it), under pcall like TS2X.
+    if TS2S then
+        local ok_s, err_s = pcall(TS2S.tick, level)
+        ts2_ps("souls")
+        if not ok_s and not TS2S_ERR then
+            TS2S_ERR = true
+            print("[TS2] souls error: " .. tostring(err_s))
+            ts2_debug("souls error: " .. tostring(err_s))
         end
     end
 

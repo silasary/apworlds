@@ -1,9 +1,12 @@
 # Marble It Up! Ultra
 
 ## Latest
-- <a href="https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/download/v0.3.0-hotfix/miuultra.apworld">Latest Version (0.3.0r2)</a>
+- <a href="https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/download/v0.4.0-prerelease/miuultra.apworld">Latest Version (0.4.0rc0.post0)</a>
 
 ## All Versions
+
+#### v0.4.0rc0.post0
+- <a href="https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/download/v0.4.0-prerelease/miuultra.apworld">https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/download/v0.4.0-prerelease/miuultra.apworld</a>
 
 #### v0.3.0r2
 - <a href="https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/download/v0.3.0-hotfix/miuultra.apworld">https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/download/v0.3.0-hotfix/miuultra.apworld</a>
