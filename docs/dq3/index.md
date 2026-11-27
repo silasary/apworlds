@@ -5,10 +5,10 @@ and the starting point of the Elric trilogy.
 
 
 ## Downloads
-- <a href="https://github.com/ZigzagAwaka/DQ3AP/releases/download/v0.5.1/dq3.apworld">Latest Version (0.5.1)</a>
+- <a href="https://github.com/ZigzagAwaka/DQ3AP/releases/download/v0.6.0/dq3.apworld">Latest Version (0.6.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
 
-## Setup Guide
+
 

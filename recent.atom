@@ -2,102 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-27T13:58:52.144632+00:00</updated>
+  <updated>2026-11-27T18:19:29.127234+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha6</id>
-    <title>Crash Team Racing v0.3.0a6</title>
-    <updated>2026-11-23T11:23:00+00:00</updated>
-    <author>
-      <name>Dowlle</name>
-    </author>
-    <content>## Discord
-
-Come hang out on [Appie's Games Discord](https://discord.com/invite/HxXy4mKQ5E). Test builds, bug reports and YAML sharing all happen there.
-
-Alpha6 is out! Thanks for all the alpha5 reports. This one fixes the Oxide Station softlock, a pile of custom track problems (unreachable crates, missing music, Relic-only tracks that wouldn't start) and quick savestates that mixed up races. It also adds Kart Setup in the pause menu during a race, race and cup rewards in the tracker, CNK letters on Inferno Island and author credits on custom tracks. The hub pause menu is reordered, pads and the tracker count shared checks, and Citadel City travel and cup win text are fixed. It's still an alpha, so 0.2.4 stays the stable release.
-
-[Full notes on AP-Pie](https://beta.ap-pie.com/ctr/releases) · [Setup guide](https://ap-pie.com/guides/ctr)
-
-## Before you try it
-- Use the alpha6 client and APWorld together. Your alpha5 YAML usually still works. Rooms made with alpha5 usually connect, but that is best effort: if one is refused, keep using the alpha5 client for it. Rooms made with alpha6 need the alpha6 client. Rooms from 0.2.x still need 0.2.4.
-- Quick saves (F5) made with alpha5 won't load. Make a new one.
-
-## Fixed
-- Oxide Station pickups don't depend on a one-time race anymore. In new rooms each pickup either has a repeatable route or is left out, so a missed crate can't block you. Thanks Dex!
-- Custom track crates that can't be reached (Matsuri's first item box, one crate in Lockbox Adventure track 4) are out of the pool in new rooms, and crate logic is corrected on Sewer Speedway, Cortex Vortex, Country Speedway, Toasty Terrace, Royal Raceway and Green Hill Raceway.
-- Relic-only custom tracks start from their pad now. Before, a track with relics and a lap but no AI lines refused to start.
-- Seed downloads fetch a custom track's current music, Custom Tracks downloads music an installed track is missing, and a failed song start is tried again. A track that has no music of its own plays a random retail song instead of always Roo's Tubes.
-- Quick savestates stay with the race they were made in. Loading one from a different track, mode or room is refused instead of mixing things up.
-- When you walk up to a pad, the hint now covers weapon crates, Wumpa crates and Wumpa, also on cup tracks and boss garages. The "crates checked" count popups are gone. Thanks Dex and Em!
-- In new rooms, a track that is only used for the final Oxide race doesn't get lap, crate or Wumpa checks anymore, and `oxide_goal: none` works with boss garages off. Thanks MarioSpore and Bethany!
-- Boss beakers, TNT and Nitro break after the boss drives half a lap past them on shuffled venues, which should stop N. Tropy driving through his own beakers. Thanks Em!
-- Pad unlock notices wait until you have the Keys to reach them, and the "all letters" message works again.
-- Shared checks, like Itemsanity weapon uses that more than one race of a pad can earn, show on pads and in the tracker. Before, a pad could stay green and its CTR Challenge stay on Start while the tracker showed nothing left. Now the tracker counts them, and the pad turns grey with Replay once they are all done.
-- The tracker card only shows the 10W mark when that track (or the room) has a Reach 10 Wumpa check.
-- Travel to Citadel City drops you on the upper landing beside the save screen. Before, you landed on the ramp in front of it and rolled back.
-- Winning a Gem Cup in an AP seed shows CUP WON and, when the cup has one, the item for its win check, not the Trophy text and voice.
-- Older rooms keep working after the track list gets an update. In Universal Tracker, alpha6 rooms restore fully and older rooms restore when their track picks and logic still match.
-- Imported patched tracks get the right names, and five left-over tracks from Lockbox Adventure and 30th Anniversary Adventure are hidden.
-- In new rooms, hints work with both "Custom Track N" and the track's own name for custom tracks that aren't registered, so a hint for one of those letters no longer ends in "Too many close matches".
-
-## New
-- Custom tracks credit their authors on the pad, the race intro and the results, also in cup races. The track author and the music author show separately when they differ. If no author is known, it shows where the track came from, such as the patch file name. Retail tracks show nothing.
-- Kart Setup in the pause menu during Adventure races and cups, with the same stats as the hub picker.
-- The hub pause menu is Resume, Tracker, Travel, Select Character, Options, Quit. AI Difficulty and the Aku Aku or Uka Uka hints moved into Options, which now opens the same pages as the main menu. The goal shows one part per line on the pause Relics page and in the tracker.
-- The in-game tracker shows race and cup rewards by name: Trophy, CTR and relic rewards, podium places, perfect runs and laps, plus cup wins and sweeps.
-- CNK letters on the full-mode Inferno Island. Track Origin Letters is a new YAML option, on by default.
-- Item Feed has three settings now: All, Important and Off. Important skips filler and Wumpa Shop stock lines.
-- Random pad requirements can ask for up to the whole pool now, growing from the first hub to the last. Still up to 99, and Keys stop at 4.
-- Missing custom tracks: the hub banner counts them, the pad tells you where to install them, and Custom Tracks opens on Install missing.
-- Export YAML for any installed custom track that has a public source, and Save YAML for a room in Play Solo. YAMLs use `track_key` now, `content_id` still works.
-- AP boxes on Arabian Heights Day and Sunset Vista.
-- With Save AI Lap Recordings on, your clean laps are saved from Time Trial on custom tracks and from seed races. Turn on Only My Recordings (with Use Recorded AI Laps) in OPTIONS &gt; Authoring to race just your own laps.
-
-## Known issues
-- Custom tracks that aren't registered yet, like Nina's Nightmare and Acropolis, get no crate or Wumpa fruit checks. That comes after alpha6.
-- Tizi Madness: with shortcut knowledge on hard the track can end up in a seed, but its road is closed off, so the checks on it can't be reached. Leave it out of your YAML for now.
-- Lots of Saphi tracks are Time Trial only, so they can't be used in a seed yet.
-- Time Trial only tracks can't be raced in Arcade with recorded AI laps yet.
-- The tracker's CHECKS page doesn't give AP boxes, letters, crystals or shop slots their own rows yet.
-- Sunset Vista can run slowly on Steam Deck.
-- Baby T Park's CTR Challenge may still play Roo's Tubes instead of its own music. That report is still open.
-- Some unusual YAMLs still fail to generate. Send me the YAML if it keeps happening.
-
-## Found a problem?
-[Open an issue](https://github.com/dowlle/ctr-native-ap/issues/new/choose) or post it on the Discord. Add your YAML and the support bundle (`support-bundle.bat` or `support-bundle.sh`) if you can.
-
-## Thanks
-Thanks to Dex, MarioSpore, Em and Bethany for the reports and ideas behind this one.
-
-## Downloads
-Windows: `ctr-archipelago-v0.3.0-alpha6-windows-x86.zip`. Linux or Steam Deck: `ctr-archipelago-v0.3.0-alpha6-linux-x86.tar.gz`. Both include the client, the matching `ctr.apworld` and Play Solo. You need your own NTSC-U copy of the game. The client is GPL-3.0; the source is the `v0.3.0-alpha6` tag.
-
-| File | SHA-256 |
-|---|---|
-| `ctr-archipelago-v0.3.0-alpha6-windows-x86.zip` | `ed256302ac50a2c0c0f7cd3ee8edcc99bc2e51a5b08bc229c39de4840e8c1549` |
-| `ctr-archipelago-v0.3.0-alpha6-linux-x86.tar.gz` | `6f7b68278be45c428f440ee2a0bc1ef03a31390d313d5c57e0a263665b9446a5` |
-| `ctr.apworld` | `4ca048c4a64f7540c1106d70865d19386c7390b3528d6f3b2bfd661427499fc5` |
-</content>
-    <link href="https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha6"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.3.3</id>
-    <title>Xenoblade X v0.3.3</title>
-    <updated>2026-11-23T17:26:17+00:00</updated>
-    <author>
-      <name>Maragon</name>
-    </author>
-    <author>
-      <name>Nina</name>
-    </author>
-    <content>- Added a new option `Local Fill Percent`&#13;
-- Added a new option `Battle Item Ratio`</content>
-    <link href="https://github.com/MaragonMH/Archipelago/releases/tag/XenoX0.3.3"/>
-  </entry>
   <entry>
     <id>https://github.com/TheLX5/Archipelago/releases/tag/wariotwisted-v1.1.1</id>
     <title>WarioWare: Twisted! v1.1.1</title>
@@ -1624,6 +1533,113 @@ Free code signing for open source projects, provided by
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.10"/>
   </entry>
   <entry>
+    <id>https://github.com/wrjones104/ffresonance-archipelago/releases/tag/0.32.0</id>
+    <title>Final Fantasy Resonance v0.32.0</title>
+    <updated>2026-11-27T11:52:56+00:00</updated>
+    <author>
+      <name>wrjones104</name>
+    </author>
+    <content># v0.32.0 (apworld 0.32.0, mod 0.63.0): public playtest, fifth build&#13;
+&#13;
+The big change this time is the start. New Game (Archipelago) no longer plays the prologue and reloads. You start on foot next to your starting continent's main town, right away, and it works with autosave off too. There's also a bigger item pool, Aileen's forge as an optional set of locations, a pile of logic and key item fixes, and fast travel now only goes to places you've actually walked into. I also spent a couple of rounds on a stutter some of you reported. Please send feedback with the template in the [Playtester guide](https://github.com/wrjones104/ffresonance-archipelago/blob/main/docs/playtester_guide.md).&#13;
+&#13;
+### Downloads&#13;
+&#13;
+| File | Description |&#13;
+|---|---|&#13;
+| `FFRArchipelago.zip` | UE4SS Lua game mod (v0.63.0, build `2a1d876c`) |&#13;
+| `ff_resonance.apworld` | Archipelago world and Final Fantasy Resonance Client (v0.32.0, build `e0989726`) |&#13;
+| `Final Fantasy Resonance.yaml` | Template player YAML with default options |&#13;
+&#13;
+### Install and upgrade&#13;
+&#13;
+- Use the mod and the apworld from the same release. The mod logs `version 0.63.0 (build 2a1d876c)` to `UE4SS.log` when it loads, and the client prints `world version 0.32.0 (build e0989726)` when it starts.&#13;
+- Replace the whole `FFRArchipelago` folder in `ue4ss\Mods`, and put the new apworld in `custom_worlds`. Close the Launcher and every client window first.&#13;
+- Generate a new seed. The pool, the logic and the locations changed, and the template yaml now asks for world 0.32.0.&#13;
+- Start the client and connect it before you pick **New Game (Archipelago)** on the title screen. Without it the entry says "connect the client" and opens Load Game instead.&#13;
+- Install steps are in the [README](https://github.com/wrjones104/ffresonance-archipelago#installation).&#13;
+&#13;
+### What's changed since v0.31.0&#13;
+&#13;
+**A new start.** **New Game (Archipelago)** now builds the seed's game directly. There's no opening, no Archwitch Fina section, and no reload into the open world. You land on foot next to your starting continent's main town with your starting party at level 1. If the seed starts with the airship, it's parked right there next to you. This used to depend on the game's first autosave, so with autosave off the seed played the prologue and chapter 1 with Rain at level 55. That's gone.&#13;
+&#13;
+- You can't walk until the mod has put you at the town (a second or two), so you can't wander off mid-move and freeze.&#13;
+- The client now writes a heartbeat file while it's connected. With no live client, the title entry reads **New Game (Archipelago: connect the client)** and opens Load Game with a notice, so you can't start a seed by accident on an old seed's settings.&#13;
+- Active Time Chats from the skipped story don't pop up at the start.&#13;
+&#13;
+**Item pool.**&#13;
+&#13;
+- 2 Ribbons and 13 accessories that used to be enemy-only are in the pool now.&#13;
+- New `extra_magicite` option (0 to 30, default 9): Magicite added on top of what the chests, shinies and bosses hold, split between Shards, Magicite and Crysts.&#13;
+- New `early_healing_vision` option (on by default, needs `shuffle_visions`): one vision that can cast Cure or Esuna goes early in your own world.&#13;
+- The Proofs of Victory are out of the pool. The Colosseum gives each one at its rank clear anyway.&#13;
+&#13;
+**Aileen's forge.** New `include_aileens_forge` option (off by default). The forge on the airship deck becomes eight locations: your first forged weapon, your second, and so on. It opens after Forger of Wills, each weapon costs one Adamantite, and eight Adamantite go in the pool. You still get the weapon you pick.&#13;
+&#13;
+**Key items.**&#13;
+&#13;
+- With `shuffle_key_items` on, the squad leader in Zoldaad Castle no longer hands you the Throne Room Key, and the man by Sian's inn no longer gives the Cabin Key.&#13;
+- With it off, the Dungeon Key is given when you walk into Zoldaad Dungeon (its soldier never shows up in an open world seed), and the locations behind each key are in logic behind the game's own giver.&#13;
+&#13;
+**Logic fixes.**&#13;
+&#13;
+- The Abandoned Cabin's chest needs the Cabin Key, and two Zoldaad Castle chests need the Throne Room Key.&#13;
+- Token Legacy and Errand's End need the Throne Room Key. Beyond the Blue needs a party of 4.&#13;
+- Two shinies on Zoldaad's south-west tip and the Dirnado Far-SW Headland shiny need the airship.&#13;
+&#13;
+**Fast travel.**&#13;
+&#13;
+- Fast travel only goes to places you've walked into. A quest scene that carries you somewhere (The Tide from the Sky drops you in Grandport, the Ayaka quest runs through Zoldaad) doesn't count until you walk in yourself. Existing saves keep the places they already had.&#13;
+- Places on locked continents aren't fast travel targets.&#13;
+- The airship counts as visited when the seed starts with it, so it isn't grey on the Map screen.&#13;
+&#13;
+**Things that stayed stuck after a fast travel out are fixed.** Fast travelling out of a dungeon used to leave things the way you left them, because in the base game you always walk out the way that resets them.&#13;
+&#13;
+- Tower of Mysidia: taking the lift up and fast travelling out left the lift at the top for good, so you could never get back up.&#13;
+- The lifts in the Wind Shrine, Water Shrine, Gronoa Shrine and Sanctissimus Shrine go back to where they were on your first visit.&#13;
+- The rafts in Cave of Waters and the Water Shrine too.&#13;
+- Kolobos Ruins: the floor that falls under you is put back, as Rain's "elbow grease" scene does, so the way in isn't blocked.&#13;
+&#13;
+**The airship.** On a seed where the airship is an item, it now shows up where you started the seed, not wherever the game felt like putting it (one came up near Zoldaad on a Dirnado start).&#13;
+&#13;
+**Other fixes.**&#13;
+&#13;
+- The first vision Moogle you talk to no longer plays Grandport's Moogle scene and leaves you out of bounds. Grandport Harbor has its vision Moogle now, so a Lanzelt start can upgrade visions.&#13;
+- Reloading the Archipelago game's save no longer gives you every early item a second time.&#13;
+- The two names in a two-reward pop-up don't touch anymore.&#13;
+- The radar goes quiet once everything it can find is dug, like in the base game, until your next Progressive Radar.&#13;
+- Lid's "we already found Mysidia" line on the airship is gone.&#13;
+- The Seed tab on the Archipelago page says `Start: on foot on &lt;continent&gt;, next to your airship`.&#13;
+&#13;
+**The stutter.** A few of you felt a steady stutter, like a heartbeat. The mod's loop runs twice a second, and some of its steps did a lot of work at once. I split the slow steps across ticks and took out the worst ones: a full search of the talk event table every second for two rows, and a hook that retried every second until you opened the Quests screen. On my desktop the slow ticks went from 13 to 60 every 2 minutes down to about 5. The log now gets `perf:` lines every 2 minutes, and `ffrap_perf` in the console writes them right away.&#13;
+&#13;
+### Please test&#13;
+&#13;
+- **The stutter, especially on slower PCs and laptops.** Play for 10 minutes or so, towns included, and send the `perf:` lines from `UE4SS.log`. If you feel a stutter, run `ffrap_perf` right then and tell me.&#13;
+- **The new start.** Start a fresh seed with autosave on and off. You should land next to your continent's town with no opening, and with the airship next to you if the seed starts with it. Also try the title with the client closed.&#13;
+- **Fast travel.** A place a scene took you to shouldn't be a fast travel target until you walk in. Tell me if the Map screen still shows or travels to such a place.&#13;
+- **Lifts and rafts.** In the shrines above, ride a lift or raft, fast travel out, and come back in by the door. Everything should be where it was on your first visit.&#13;
+- **Story boss pop-ups.** When you beat a story boss, what did the item pop-up say? On my last run the mod didn't write into it, though the item still came in the feed.&#13;
+- **`include_aileens_forge`**, if you turn it on: each forged weapon should send one check, in order.&#13;
+- **`shuffle_key_items: false`**: walk into Zoldaad Dungeon, and the Dungeon Key should be in your bag with the cells open.&#13;
+&#13;
+### Known issues&#13;
+&#13;
+- A story boss's item pop-up can show the game's stand-in item instead of the Archipelago item. The check still goes out and the item comes in the feed.&#13;
+- The radar: Lid can say it stopped finding treasure while some are still left. A Progressive Radar received while flying turns the radar on, but its treasures only dig after a map change.&#13;
+- The "connect the client" label on the title only updates when the title screen is made again (quit to the title once).&#13;
+- Mobliz Shipyard's last lift still doesn't come up, so two chests and two shards there stay out of reach.&#13;
+- When two checks come at once (a chest right after a boss win), the second pop-up can show the game's own item. The check is still sent.&#13;
+- Character quests' stat bonuses (like "Attribute Bonus: Fina") aren't items. The quest gives them as in the base game.&#13;
+- The `ModSettings` Lua mod (from FFR Modding Tools) can crash the game a second or two after a map change, with or without this mod. To avoid it, turn off **Hint on map load** in its panel (F10), or set `ModSettings : 0` in `Mods\mods.txt`.&#13;
+- Mt. Thunderclap's shortcut ladder is invisible. You can still let it down from the top and climb it.&#13;
+- Not done yet: espers other than Siren come the vanilla way, and the Chamber of Arms and the Arena are untouched.&#13;
+- If you crash, send `Mods/FFRArchipelago/ap_trace.txt`, the crash folder in `%LOCALAPPDATA%\FFRS\Saved\Crashes`, and `UE4SS.log` before you start the game again.&#13;
+&#13;
+Most of this project's code and docs were written with Claude and tested by hand; see [DISCLOSURE.md](https://github.com/wrjones104/ffresonance-archipelago/blob/main/DISCLOSURE.md) for details.</content>
+    <link href="https://github.com/wrjones104/ffresonance-archipelago/releases/tag/0.32.0"/>
+  </entry>
+  <entry>
     <id>https://github.com/bbernardoni/Archipelago.TOEM/releases/tag/2.2.0</id>
     <title>TOEM: A Photo Adventure v2.2.0</title>
     <updated>2026-11-27T13:42:05+00:00</updated>
@@ -1659,5 +1675,36 @@ Free code signing for open source projects, provided by
 Randomizer details: https://github.com/bbernardoni/Archipelago/blob/toem/worlds/toem/docs/en_TOEM_A_Photo_Adventure.md&#13;
 Setup guide: https://github.com/bbernardoni/Archipelago/blob/toem/worlds/toem/docs/setup_en.md</content>
     <link href="https://github.com/bbernardoni/Archipelago.TOEM/releases/tag/2.2.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Wouter17/Spirit-Archipelago/releases/tag/0.1.6</id>
+    <title>Spirit Island v0.1.6</title>
+    <updated>2026-11-27T17:12:59+00:00</updated>
+    <author>
+      <name>Wouter17</name>
+    </author>
+    <content>## V0.1.6&#13;
+_This release and all future releases require Python version 3.12 minimum._&#13;
+&#13;
+### Client &amp; APworld&#13;
+- Added version control for communication protocol&#13;
+&#13;
+### Client&#13;
+- Added return cards from discard if they have item and `prioritisedShuffle` is enabled&#13;
+- Fix: incorrect version mismatch trigger&#13;
+- Fix: duplicated adjustment values&#13;
+- Fix(?): goal completion on connect&#13;
+&#13;
+### APworld&#13;
+- Added support for any order (adversary/spirit/level) in goals&#13;
+- Added Universal Tracker support&#13;
+- Fix: Stranded aspect associated with wrong spirit&#13;
+- Fix: aspects in logic when spirit is locked&#13;
+- Fix: nondeterminism in item and location submission order&#13;
+&#13;
+---&#13;
+&#13;
+**Full Changelog**: https://github.com/Wouter17/Spirit-Archipelago/compare/0.1.5...0.1.6</content>
+    <link href="https://github.com/Wouter17/Spirit-Archipelago/releases/tag/0.1.6"/>
   </entry>
 </feed>

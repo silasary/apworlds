@@ -70,7 +70,7 @@ For example like this:
         - "Finder of Paths Unseen"
         - "A Spread of Rampant Green (Regrowth)"
 1:
-    "The Kingdom of France (Plantation Colony)": 
+    "The Kingdom of France (Plantation Colony)":
         - "Finder of Paths Unseen"
 ```
 
@@ -88,3 +88,34 @@ Or for weighted goals like this:
 ```
 
 The `min` and `max` fields are optional and will otherwise default to `1`/`the number of goals` by default respectively.
+
+You can also change the order in which you define things:
+```yaml
+"min": 2
+"max": 4
+"Finder of Paths Unseen":
+    2:
+        - "The Kingdom of Sweden"
+    1:
+        - "The Kingdom of France (Plantation Colony)"
+"A Spread of Rampant Green (Regrowth)":
+    2:
+        - "The Kingdom of Sweden"
+```
+
+And can even define multiple `min` and `max`:
+```yaml
+"min": 2
+"max": 4
+"Finder of Paths Unseen":
+    "min": 1
+    "max": 2
+    2:
+        - "The Kingdom of Sweden"
+        - "The Tsardom of Russia"
+    1:
+        - "The Kingdom of France (Plantation Colony)"
+"A Spread of Rampant Green (Regrowth)":
+    2:
+        - "The Kingdom of Sweden"
+```

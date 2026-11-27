@@ -206,6 +206,21 @@
       "title": "v0.5.1 : Some fixes and improvements",
       "version_simple": "0.5.1",
       "world_version": "0.5.1"
+    },
+    "v0.6.0": {
+      "created_at": "2026-11-27T15:50:20Z",
+      "description": "Time for another update!\r\nThis one adds even more sanity options (the last ones for now) as well as small fixes.\r\nThe Beta phase is almost finished, I still want to improve a few things but even after that support will still be provided.\r\n\r\n- Added a `death_link` option and DeathLink support in the client: still a bit experimental and probably not recommended for everyone (not enabled by default)\r\n- Added a `medal_rewards_sanity` option: this can be used to randomized and add checks for items obtained as rewards for trading Mini Medals in Aliahan's well (implemented the same way as `shop_sanity`)\r\n- Added a `arena_rewards_sanity` option: this can be used to randomized and add checks for items obtained as rewards for completing ranks in the Monster Arena, with it's own logic on recruitable monsters. A separate `enabled_full` option value is available to also add checks for rewards obtained when having recruited a specific amount of monsters\r\n- Added `medals_short` as a possible victory goal option: it can be selected as an alternative to the classic `medals` option but with excluded Alefgard locations\r\n- Reworked the Peep spell so that it can now be used to receive items on demand anytime instead of the vanilla effect (which was not compatible with Archipelago in general)\r\n- Fixed the guard in the basement of Romarian Outpost blocking the path to the teleportal until the Ship is obtained, he will now leave when speaking to him when the Magic Key is in your inventory [more info on this fix [here](https://github.com/ZigzagAwaka/DQ3AP/blob/main/GameModifications.md)]\r\n- Fixed the final Magic Key door in Kidnapper's Cave being able to be opened without the Magic Key\r\n- Fixed some Shiny Spots and Secret Spots locations near Theddon having a wrong access logic when using the teleportal in Wayfarer's Inn\r\n- Other minor changes and fixes\r\n\r\nIf updating from v0.5.1 : replace `DQ3AP.asi`, `Game-WindowsNoEditor_P_DQ3AP.pak` and `dq3.apworld` by the new versions.\r\nOr else, follow the setup [here](https://github.com/ZigzagAwaka/DQ3AP#setup-guide).",
+      "download_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/download/v0.6.0/dq3.apworld",
+      "has_manifest": true,
+      "hash_sha256": "f2ee8ec5ecdb540b1bccf9f95a8c60b8c48504440f3cb90e71d99a3206b8b35e",
+      "html_url": "https://github.com/ZigzagAwaka/DQ3AP/releases/tag/v0.6.0",
+      "minimum_ap_version": "0.6.7",
+      "size": 70162,
+      "source_url": "https://api.github.com/repos/ZigzagAwaka/DQ3AP",
+      "tag": "v0.6.0",
+      "title": "v0.6.0 : New options and some fixes",
+      "version_simple": "0.6.0",
+      "world_version": "0.6.0"
     }
   }
 }

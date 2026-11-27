@@ -4,12 +4,17 @@ Spirit island is a boardgame where players play spirits to prevent the invaders 
 
 
 ## Downloads
-- <a href="https://github.com/Wouter17/Spirit-Archipelago/releases/download/0.1.5/spirit_island.apworld">Latest Version (0.1.5)</a>
+- <a href="https://github.com/Wouter17/Spirit-Archipelago/releases/download/0.1.6/spirit_island.apworld">Latest Version (0.1.6)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_Spirit Island">English</a>
 
-## Setup Guide
-- <a href="setup_en">English</a>
 
+### Multiworld Setup Guide
+
+A guide to setting up the Spirit Island randomizer on your computer.
+
+- <a href="setup_en">English by wouter17</a>
+
+## Other Documentation files
+- <a href="en_Spirit_Island">en_Spirit_Island</a>
