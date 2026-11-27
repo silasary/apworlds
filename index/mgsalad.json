@@ -1,10 +1,18 @@
 {
+  "authors": [
+    "SDMichaud",
+    "TheRealSolidusSnake"
+  ],
   "description": "MGS: Masala Garden Salad",
   "flags": [],
   "game": "MGS: Masala Garden Salad",
   "github": "https://github.com/TheRealSolidusSnake/Archipelago",
   "license": null,
-  "manifest_fields": [],
+  "manifest_fields": [
+    "authors",
+    "minimum_ap_version",
+    "world_version"
+  ],
   "versions": {
     "1.0.0": {
       "created_at": "2026-08-10T04:28:45Z",
@@ -19,6 +27,21 @@
       "title": "Masala Garden Salad 1.0",
       "version_simple": "1.0.0",
       "world_version": "1.0.0"
+    },
+    "1.1.0": {
+      "created_at": "2026-11-27T04:05:06Z",
+      "description": "Kept you waiting, huh?\r\n\r\nNo but seriously, sorry for the delay on this release, irl be like that sometimes.\r\n\r\n**New Features**\r\n- In-game notifications for sent and received items.\r\n- DeathLink support.\r\n- Time Bomb Traps with randomized 5\u201315 second timers.\r\n- Client side `/pal` commands to skip PAL Key backtracking.\r\n- Individual Archipelago save files per seed and slot stored in the Archipelago install\r\n\r\n**Location & Logic Changes**\r\n- Added, removed, and corrected various pickup locations throughout the game.\r\n- Added sequential boss requirements to better reflect vanilla progression (for the Universal Tracker users).\r\n- Added Key Card requirements to prevent collecting locked-room checks out of logic i.e. collecting items after reloading an area to get items out of logic without the necessary key card.\r\n\r\n**Bug Fixes**\r\n- Fixed `!collect` potentially preventing remaining checks from being collected.\r\n- Fixed various inventory restoration and ammunition issues.\r\n- Fixed inventory handling during capture, the Medi Room, and final boss sequences.\r\n- Improved scripted Key Card and cutscene reward detection.\r\n- Improved duplicate check prevention and reconnection handling.\r\n\r\n## AI Disclosure\r\n\r\nWhile adding and removing locations that were missing or did not exist\u2014I used Claude to handle the large amount of renumbering and repetitive APWorld changes. Doing all of that manually would have taken me a long time to do, and I don't have the brain power for such things anymore. \r\n\r\nHope everyone enjoys the rewrite/fixes \ud83d\ude05 \r\n\r\nHappy gaming!",
+      "download_url": "https://github.com/TheRealSolidusSnake/Archipelago/releases/download/1.1.0/mgsalad.apworld",
+      "has_manifest": true,
+      "hash_sha256": "8209f16ea4b71a81443b9c765e4b854b818607386ce5fd37054ee0cf268b6325",
+      "html_url": "https://github.com/TheRealSolidusSnake/Archipelago/releases/tag/1.1.0",
+      "minimum_ap_version": "0.6.5",
+      "size": 53547,
+      "source_url": "https://api.github.com/repos/TheRealSolidusSnake/Archipelago",
+      "tag": "1.1.0",
+      "title": "The Twin Salads",
+      "version_simple": "1.0.1",
+      "world_version": "1.0.1"
     }
   }
 }

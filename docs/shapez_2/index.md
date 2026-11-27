@@ -10,15 +10,6 @@ building your factories.
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_shapez 2">English</a>
 
 ## Setup Guide
-- <a href="setup_en">English</a>
 
-## Other Documentation files
-- <a href="TODO">TODO</a>
-- <a href="changelog">changelog</a>
-- <a href="manual_client">manual_client</a>
-- <a href="new_to_ap">new_to_ap</a>
-- <a href="option_guides">option_guides</a>
-- <a href="remote_items">remote_items</a>

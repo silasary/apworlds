@@ -34,7 +34,7 @@ The game should continue as normal.
 
 ## Generating a Game
 
-1. Create your options YAML file. One can be created on the [MGS: Masala Garden Salad options page](../../../games/MGS%3A%20Masala%20Garden%20Salad/player-options).
+1. Create your options YAML file. One can be created on the [Metal Gear Solid options page](../../../games/Metal%20Gear%20Solid/player-options).
 2. Follow the general Archipelago guide to [generating a game](/tutorial/Archipelago/setup_en#generating-a-game). This will create an output file.
 3. Follow the general Archipelago guide to [hosting a game](/tutorial/Archipelago/setup_en#hosting-an-archipelago-server)
 
@@ -42,6 +42,8 @@ The game should continue as normal.
 
 1. Navigate to your BizHawk install directory and launch `EmuHawk.exe` (or `EmuHawkMono.sh` on Linux).
 2. Launch the Lua Console (Tools > Lua Console)
+
+MGS: Masala Garden Salad uses BizHawk's on-screen message system for Archipelago item notifications. If you want the messages to stay visible longer or shorter, adjust **Config > Messages > Messages fade after X seconds** in BizHawk.
 3. In the Lua Console, open the 'connector_bizhawk_generic.lua' script, located in the 'Lua' folder in your BizHawk install directory. (Script > Open Script...)
 5. In the BizHawk window, open the Metal Gear Solid mutli-disc bundle you created. (File > Open ROM...)
 
@@ -59,10 +61,10 @@ It is normal for the BizHawk Client to state 'No handler was found for this game
 
 ## Saved Games and New Games
 
-When first connecting to an Archipelago server, the Metal Gear Solid Archipelago mod will look for a file named `mgsalad_archipelago_save.json` in the 'mgsalad' folder located in the 'worlds' folder of the Archipelago install directory. If no save file is found, a new one will be created. The player can save their Metal Gear Solid progress by calling Mei Ling and selecting the 'SAVE' option as normal. The player's current progress in Archipelago is saved in real-time as the player checks locations and receives items. The player can disconnect from the Archipelago server and close all open programs after saving.
+When first connecting to an Archipelago server, the MGS: Masala Garden Salad Archipelago mod will look for a per-seed/per-slot save named `mgsalad_<seed>_slot<slot>.json` in the `mgsalad` world folder located in the 'worlds' folder of the Archipelago install directory. If no save file is found, a new one will be created. The player can save their Metal Gear Solid progress by calling Mei Ling and selecting the 'SAVE' option as normal. The player's current progress in Archipelago is saved in real-time as the player checks locations and receives items. The player can disconnect from the Archipelago server and close all open programs after saving.
 
 When loading a saved game, launch all programs and connect to the Archipelago server as described above. The BizHawk Client should note that a Metal Gear Solid save file has been loaded and not that a new one has been created. The player can now load their saved game in Metal Gear Solid as normal and find all their items and progress as they left it.
 
-When starting a new run, the old `mgsalad_archipelago_save.json` file should be deleted, moved, or renamed to prevent the Metal Gear Solid Archipelago mod from loading previous save data.
+Each seed and slot uses its own save file, so starting a new run does not require deleting an older shared save. Legacy `mgs_archipelago_save.json` or `mgsalad_archipelago_save.json` files are left untouched and are not loaded into a new per-seed/per-slot run.
 
 Using and loading save states can cause items to be lost forever and/or locations to be checked erroneously and is not recommended. The mod tracks the player's inventory counts and adjusts the save file in real-time. Loading a save state where the player's in-game inventory is different than what is in the Archipelago mod save file will cause undefined behaviour.

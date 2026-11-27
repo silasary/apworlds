@@ -4,7 +4,7 @@ MGS: Masala Garden Salad
 
 
 ## Downloads
-- <a href="https://github.com/TheRealSolidusSnake/Archipelago/releases/download/1.0.0/mgsalad.apworld">Latest Version (1.0.0)</a>
+- <a href="https://github.com/TheRealSolidusSnake/Archipelago/releases/download/1.1.0/mgsalad.apworld">Latest Version (1.0.1)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

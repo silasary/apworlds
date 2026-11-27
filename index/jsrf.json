@@ -70,10 +70,26 @@
       "hash_sha256": "ddaed6144cb53ba78abbc770242092d39a1ba774fd718bdd7e912fb44f7a29b0",
       "html_url": "https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/tag/v1.3a",
       "minimum_ap_version": "0.6.8",
+      "prerelease": true,
       "size": 121692,
       "source_url": "https://api.github.com/repos/rvanmatre50/JSRF-Archipelago-Randomizer",
       "tag": "v1.3a",
       "title": "v1.3a",
+      "version_simple": "1.0.0",
+      "world_version": "1.0.0r2"
+    },
+    "v1.4a": {
+      "created_at": "2026-11-27T03:19:47Z",
+      "description": "## Bug fixes\r\n\r\n- **No more false \"Stage ... is not mapped to an area yet\" messages.** While a level was loading, for example on the way into 99th Street, the client could read leftover data from the game's memory as a stage. It then asked you to report an area that doesn't exist.\r\n- **Readings that aren't a real stage are now ignored.** Every stage the game uses has the same simple format, and anything else counts as \"still loading\", so it can't trigger the message or anything else.\r\n- **The message only appears if the same unknown stage shows up twice in a row.** A brief wrong reading while loading never shows up, but a genuinely unknown area would still be reported.\r\n- **Nothing else was affected.** The wrong reading never held, sent or blocked any checks, and it never sent you back to the Garage.\r\n\r\nTo update, replace `jsrf.apworld` in your `custom_worlds` folder and restart the client. Existing seeds keep working.",
+      "download_url": "https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/download/v1.4a/jsrf.apworld",
+      "has_manifest": true,
+      "hash_sha256": "ddaed6144cb53ba78abbc770242092d39a1ba774fd718bdd7e912fb44f7a29b0",
+      "html_url": "https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/tag/v1.4a",
+      "minimum_ap_version": "0.6.8",
+      "size": 121692,
+      "source_url": "https://api.github.com/repos/rvanmatre50/JSRF-Archipelago-Randomizer",
+      "tag": "v1.4a",
+      "title": "v1.4a",
       "version_simple": "1.0.0",
       "world_version": "1.0.0r2"
     }

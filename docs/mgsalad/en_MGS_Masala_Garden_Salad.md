@@ -12,7 +12,7 @@ The [player options page for this game](../player-options) contains all the opti
 
 Most item pickups in the game will result in a radomized item being awarded instead. The player will still progress through the story and game areas as in the vanilla version.
 
-## What is the goal of MGS: Masala Garden Salad?
+## What is the goal of MGS: Masala Garden Salad in Archipelago?
 
 Players can choose one of three goals for their world.
 1. Game Completion: Beat the game as normal.
@@ -25,7 +25,7 @@ Most items that the player can pickup and use in-game can be randomized to anoth
 
 ## What is considered a location check?
 
-Picking up or recieving items in-game will trigger location checks, like picking up a Ration or SOCOM ammo, or receiving a Progressive Key Card during a cutscene. Defeating a boss will also trigger a location check.
+Picking up or recieving items in-game will trigger location checks, like picking up a Ration or SOCOM ammo, or receiving a Key Card during a cutscene. Defeating a boss will also trigger a location check.
 
 ## When the player receives an item, what happens?
 
@@ -53,3 +53,4 @@ The following commands are only available when using the BizHawk Client to play 
 - `/check_goal` Prints the progress towards the world's selected goal.
 - `/check_collection <region>` Prints which items have been collected in the provided region. By default, the region the player is currently in will be used. 'all' can also be used to print every region.
 - `/kill_mantis` A cheat that reduces Psycho Mantis' HP to 0 in case the player has difficulty switching controller ports in the BizHawk emulator.
+- `/pal <normal|hot|cold>` Instantly changes the PAL Key temperature without doing the temperature-room backtracking. `/pal_key` is also accepted.
