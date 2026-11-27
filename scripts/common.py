@@ -208,14 +208,16 @@ def cleanup_manifest(manifest):
     versions = manifest.get("versions", {}).values()
     versions = sorted(versions, key=lambda v: v.get("created_at", datetime.datetime.min.replace(tzinfo=datetime.UTC).isoformat()))
     for info in versions:
-        seen_versions[info["world_version"]] += 1
-        if seen_versions[info["world_version"]] > 1:
+        world_version = parse_version(info["world_version"])
+        base_version = world_version.__replace__(post=None)
+        seen_versions[base_version] += 1
+        if seen_versions[base_version] > 1:
             raw_version = info["world_version"]
-            revision = seen_versions[info["world_version"]]
-            parsed_version = parse_version(raw_version)
-            new_version = parsed_version.base_version + f"r{revision}"
-            info["world_version"] = new_version
-            print(f"Duplicate world version {raw_version} in manifest, renamed to {info['world_version']}")
+            revision = seen_versions[base_version]
+            new_version = base_version.__replace__(post=revision)
+            if raw_version != str(new_version):
+                print(f"Duplicate world version {base_version} in manifest, renamed to {new_version}")
+                info["world_version"] = str(new_version)
 
 
 def save_manifests(github_url: str | list[str] | None, manifests: dict[str, dict]) -> None:
