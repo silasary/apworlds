@@ -2,66 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-27T12:18:26.154965+00:00</updated>
+  <updated>2026-11-27T13:58:52.144632+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/tag/V3.0.2</id>
-    <title>Hunie Pop v3.0.2</title>
-    <updated>2026-11-23T09:23:46+00:00</updated>
-    <author>
-      <name>Dotsofdarkness</name>
-    </author>
-    <content>- (Client) Fixed locations checked in main menu not correctly showing&#13;
-- (Client) Fixed shop items reappearing after save/quit&#13;
-- (Client) Fixes issue with save game not saving at correct time resulting in missing locations/items in game&#13;
-&#13;
-V3.0.1 Changelog&#13;
-- (APWorld) Fixed Issue with connecting with Universal Tracker&#13;
-- (APWorld) fixed typos in hunie_to_muney YMAL option&#13;
-- (Client) Fixed Errors if save file was not present after connecting to a slot&#13;
-- (Client) Added Connecting screen while trying to connect to a server&#13;
-- (Client) fixed sending locations causing game freezing&#13;
-- (Client) properly send goal location in case server has auto release disabled&#13;
-&#13;
-V3.0.0 Changelog&#13;
-- (Client) Swapped networking from DotsWebsocket/CursedArchipelagoClient to Archipelago.MultiClient.Net/c-wspp-websocket-sharp&#13;
-- - playing on Linux should now work through wine/proton (will work on trying to get native Linux to work later)&#13;
-- (Apworld/Client) added option/logic for disabling girl questions&#13;
-- (Apworld/Client) added option/logic for disabling girl gifts&#13;
-- (Apworld/Client) added option/logic for locking shop slots behind getting "Shop Pass" items&#13;
-- (APWorld) moved logic over to Rule Builder&#13;
-- (Client) Save file is now stored server side through datastorage&#13;
-- (Client) added the ability to convert hunie to money through the shop the ratio can be changed through YMAL option&#13;
-- (Client) when talking to a girl you have a &gt;50% change to be asked a question if you haven't learned all their details&#13;
-- (Client) Added code "$toggledeathlink" to toggle deathlink off/on&#13;
-HOTFIX&#13;
-- disable cheats used in dev&#13;
-&#13;
-&lt;br&gt;&lt;/br&gt;&#13;
-CLIENT INSTALLATION INSTRUCTIONS:&#13;
-- Have Hunie Pop Installed&#13;
-- Download Hunie Pop Archipelago plugin (See Releases for latest version)&#13;
-- Extract and copy the contents of "Hunie Pop Archipelago plugin.zip" to the directory where "HuniePop.exe" is if it asks you to overwrite files click yes&#13;
-- NOTE if you get a game crash when starting the game make sure that in "{huniepop game directory}/BepInEx/config/BepInEx.cfg" the 2nd last option is "type = MonoBehaviour" not "type = Application"&#13;
-&#13;
-&#13;
-&#13;
-APWORLD INSTALLATION INSTRUCTIONS:&#13;
-- Have Archipelago Launcher Installed (latest release found here: https://github.com/ArchipelagoMW/Archipelago/releases/latest )&#13;
-- Download Huniepop APWorld (See Releases for latest version)&#13;
-- Select "Install APWorld" in launcher and select Huniepop APWorld you downloaded&#13;
-- Restart launcher for APWorld to properly install&#13;
-- (Optional but Recomended)Select "Generate Template Options" to generate default Huniepop YMAL&#13;
-&#13;
-&#13;
-&#13;
-POPTRACKER INSTALLATION INSTRUCTIONS:&#13;
-- copy "Hunie Pop Archipelago poptracker.zip" to your poptracker "packs" folder</content>
-    <link href="https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/tag/V3.0.2"/>
-  </entry>
   <entry>
     <id>https://github.com/dowlle/ctr-native-ap/releases/tag/v0.3.0-alpha6</id>
     <title>Crash Team Racing v0.3.0a6</title>
@@ -1677,5 +1622,42 @@ Free code signing for open source projects, provided by
 - [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/NTliMmFmOGY0ZTFkMGMyYzczYTMyODEzYWUwODdkNWQ6MTc5NTc4MDQ5MQ==/detection)
 </content>
     <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.10"/>
+  </entry>
+  <entry>
+    <id>https://github.com/bbernardoni/Archipelago.TOEM/releases/tag/2.2.0</id>
+    <title>TOEM: A Photo Adventure v2.2.0</title>
+    <updated>2026-11-27T13:42:05+00:00</updated>
+    <author>
+      <name>DrTChops</name>
+    </author>
+    <author>
+      <name>0xDEAFC0DE</name>
+    </author>
+    <author>
+      <name>Shellshe</name>
+    </author>
+    <content>Changes:&#13;
+&#13;
+- NOTE: New mod install instructions. The mod is now fully contained in one dll file now. The other dlls can now be removed.&#13;
+- NOTE: Only tested on the Steam release. I think it should work for the Epic and GoG versions but there might be some weirdness with the new save system. If you test one of these versions, let me know if it works or not.&#13;
+- Overhauled save system&#13;
+    - Vanilla save is now left untouched&#13;
+    - A new save is made for each seed allowing for playing multiple concurrent worlds&#13;
+    - New options menu to view / delete AP saves&#13;
+- Implemented new native looking UI for connecting, AP Options, and AP console&#13;
+    - AP console now displays colored text&#13;
+- Restored vanilla game cursor behavior with an option to force unlock it again if preferred&#13;
+- Reworked item get screen to show the actual item or ap logo as well as colored text based on classification&#13;
+- Added new "Force basto gate open" option which removes the requirement of the water popper attachment for exploring Basto&#13;
+- Reworked ER behavior to avoid early BKs in a new region due to missing item&#13;
+- Revamped docs&#13;
+- Bugfix: Sandwich location missing honk requirement&#13;
+- Bugfix: Broken dreams bad OOL rule&#13;
+- Bugfix: Prevent pausing while on the ski lift or raft&#13;
+- Bugfix: Fix when an entrance is randomized to the ski lift or raft in the same scene&#13;
+&#13;
+Randomizer details: https://github.com/bbernardoni/Archipelago/blob/toem/worlds/toem/docs/en_TOEM_A_Photo_Adventure.md&#13;
+Setup guide: https://github.com/bbernardoni/Archipelago/blob/toem/worlds/toem/docs/setup_en.md</content>
+    <link href="https://github.com/bbernardoni/Archipelago.TOEM/releases/tag/2.2.0"/>
   </entry>
 </feed>
