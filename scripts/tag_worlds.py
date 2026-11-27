@@ -95,7 +95,7 @@ def tag_worlds():
                 manifest.setdefault("flags", []).append("after_dark")
                 save_manifest(world, manifest)
 
-            do_analyze = not manifest.get("game") or not manifest.get("description")
+            do_analyze = not manifest.get("game") or not manifest.get("description") or not manifest.get("tutorials")
 
             if manifest.get("description") in BAD_DESCRIPTIONS or manifest.get("description", "") == manifest.get("game", ""):
                 do_analyze = True
@@ -152,6 +152,12 @@ def import_and_introspect_world(world: pathlib.Path, manifest: dict, versions: d
         description = world_class.__doc__ or ""
         if description:
             manifest["description"] = inspect.cleandoc(description).strip()
+
+        webworld = getattr(world_class, "web", None)
+        if webworld:
+            tutorials = getattr(webworld, "tutorials", [])
+            if tutorials:
+                manifest["tutorials"] = tutorials
 
         save_manifest(world, manifest)
 
