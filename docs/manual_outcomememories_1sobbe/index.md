@@ -7,7 +7,7 @@ the player must manually refrain from using these gathered items until the track
 
 
 ## Downloads
-- <a href="https://github.com/Fabriel1323/OutcomeMemoriesAP/releases/download/idkman/manual_outcomememories_1sobbe.apworld">Latest Version (0.2.post1)</a>
+- <a href="https://github.com/Fabriel1323/OutcomeMemoriesAP/releases/download/playmyrandomizer/manual_outcomememories_1sobbe.apworld">Latest Version (0.2.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

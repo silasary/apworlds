@@ -33,5 +33,4 @@ an item to another player's world.
 
 ## When the player receives a item, what happens?
 
-You get the item. 
-
+You get the item.

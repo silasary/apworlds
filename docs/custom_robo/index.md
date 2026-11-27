@@ -4,7 +4,7 @@ Custom Robo is an action RPG where you become a Commander, taking control of you
 
 
 ## Downloads
-- <a href="https://github.com/Metaruler/ArchipelagoCR/releases/download/V1.0/custom_robo.apworld">Latest Version (1.0)</a>
+- <a href="https://github.com/Metaruler/ArchipelagoCR/releases/download/V1.0/custom_robo.apworld">Latest Version (1.0.0.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

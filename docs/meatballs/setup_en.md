@@ -12,7 +12,7 @@ See [`docs/first-time-setup.md`](https://github.com/mdietz94/smo_archipelago/blo
 
 1. Download `meatballs.apworld` from the project's Releases page.
 2. Drop it into your Archipelago install's `custom_worlds/` directory.
-3. Open the Archipelago Launcher and click **SMO Client** in the Clients list.
+3. Open the Archipelago Launcher and click **Meatballs Client** in the Clients list.
 4. Run `/setup` in the SMO Client command bar. The setup wizard walks you through prerequisite checks, SMO dump pick (NSP or XCI), moon/capture extraction, the Switch-mod compile, and the deploy to SD card (or emulator). You only need to do this once per machine (or again after upgrading to a new release). Your PC's LAN IP is auto-detected and baked in as a fallback; runtime UDP discovery handles routine IP changes automatically.
 
 ## Joining a multiworld game

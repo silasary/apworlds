@@ -8,7 +8,7 @@
 #### v0.2.2
 - <a href="https://github.com/AAces17/EquilinoxAPClient/releases/download/0.2.2/equilinox.apworld">https://github.com/AAces17/EquilinoxAPClient/releases/download/0.2.2/equilinox.apworld</a>
 
-#### v0.2.0r2
+#### v0.2.0.post2
 - <a href="https://github.com/AAces17/EquilinoxAPClient/releases/download/0.2.1/equilinox.apworld">https://github.com/AAces17/EquilinoxAPClient/releases/download/0.2.1/equilinox.apworld</a>
 
 #### v0.2.0

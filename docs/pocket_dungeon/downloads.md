@@ -1,11 +1,11 @@
 # Shovel Knight Pocket Dungeon
 
 ## Latest
-- <a href="https://github.com/Mitchell1711/Archipelago/releases/download/v1.0.1/pocket_dungeon.apworld">Latest Version (1.0.0r2)</a>
+- <a href="https://github.com/Mitchell1711/Archipelago/releases/download/v1.0.1/pocket_dungeon.apworld">Latest Version (1.0.0.post2)</a>
 
 ## All Versions
 
-#### v1.0.0r2
+#### v1.0.0.post2
 - <a href="https://github.com/Mitchell1711/Archipelago/releases/download/v1.0.1/pocket_dungeon.apworld">https://github.com/Mitchell1711/Archipelago/releases/download/v1.0.1/pocket_dungeon.apworld</a>
 
 #### v1.0.0
@@ -14,7 +14,7 @@
 #### v0.3.2
 - <a href="https://github.com/Mitchell1711/Archipelago/releases/download/v0.3.2/pocket_dungeon.apworld">https://github.com/Mitchell1711/Archipelago/releases/download/v0.3.2/pocket_dungeon.apworld</a>
 
-#### v0.3.0r2
+#### v0.3.0.post2
 - <a href="https://github.com/Mitchell1711/Archipelago/releases/download/v0.3.1/pocket_dungeon.apworld">https://github.com/Mitchell1711/Archipelago/releases/download/v0.3.1/pocket_dungeon.apworld</a>
 
 #### v0.3.0

@@ -1,15 +1,15 @@
 # Tomba!
 
 ## Latest
-- <a href="https://github.com/T4g1/ArchipelagoTomba/releases/download/v1.6.0/tomba.apworld">Latest Version (1.6.0.post2)</a>
+- <a href="https://github.com/T4g1/ArchipelagoTomba/releases/download/v1.6.1/tomba.apworld">Latest Version (1.6.0.post3)</a>
 
 ## All Versions
 
+#### v1.6.0.post3
+- <a href="https://github.com/T4g1/ArchipelagoTomba/releases/download/v1.6.1/tomba.apworld">https://github.com/T4g1/ArchipelagoTomba/releases/download/v1.6.1/tomba.apworld</a>
+
 #### v1.6.0.post2
 - <a href="https://github.com/T4g1/ArchipelagoTomba/releases/download/v1.6.0/tomba.apworld">https://github.com/T4g1/ArchipelagoTomba/releases/download/v1.6.0/tomba.apworld</a>
-
-#### v1.6.0r2
-- <a href="https://github.com/T4g1/ArchipelagoTomba/releases/download/v1.6.1/tomba.apworld">https://github.com/T4g1/ArchipelagoTomba/releases/download/v1.6.1/tomba.apworld</a>
 
 #### v1.6.0
 - <a href="https://github.com/T4g1/ArchipelagoTomba/releases/download/v1.6.0/tomba.apworld">https://github.com/T4g1/ArchipelagoTomba/releases/download/v1.6.0/tomba.apworld</a>

@@ -41,7 +41,7 @@
 #### v1.1.3
 - <a href="https://github.com/fogmike/Archipelago_ManicMiners/releases/download/v1.1.3/manicminers.apworld">https://github.com/fogmike/Archipelago_ManicMiners/releases/download/v1.1.3/manicminers.apworld</a>
 
-#### v1.1.0r2
+#### v1.1.0.post2
 - <a href="https://github.com/fogmike/Archipelago_ManicMiners/releases/download/v1.1.1/manicminers.apworld">https://github.com/fogmike/Archipelago_ManicMiners/releases/download/v1.1.1/manicminers.apworld</a>
 
 #### v1.1.0

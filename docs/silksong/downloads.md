@@ -26,19 +26,19 @@
 #### v0.4.7
 - <a href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.7/silksong.apworld">https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.7/silksong.apworld</a>
 
-#### v0.4.6r2
+#### v0.4.6.post2
 - <a href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.6-Hotfix/silksong.apworld">https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.6-Hotfix/silksong.apworld</a>
 
 #### v0.4.6
 - <a href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.6/silksong.apworld">https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.6/silksong.apworld</a>
 
+#### v0.4.5.post3
+- <a href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.5-Hotfix2/silksong.apworld">https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.5-Hotfix2/silksong.apworld</a>
+
 #### v0.4.5r2
 - <a href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.5/silksong.apworld">https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.5/silksong.apworld</a>
 
-#### v0.4.5r2
-- <a href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.5-Hotfix2/silksong.apworld">https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.5-Hotfix2/silksong.apworld</a>
-
-#### v0.4.5
+#### v0.4.5.post2
 - <a href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.5-Hotfix/silksong.apworld">https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.5-Hotfix/silksong.apworld</a>
 
 #### v0.4.4
@@ -47,7 +47,7 @@
 #### v0.4.3
 - <a href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.3/silksong.apworld">https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.3/silksong.apworld</a>
 
-#### v0.4.2r2
+#### v0.4.2.post2
 - <a href="https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.2-hotfix/silksong.apworld">https://github.com/Batatvideogames/silksong-archipelago-randomizer/releases/download/v0.4.2-hotfix/silksong.apworld</a>
 
 #### v0.4.2

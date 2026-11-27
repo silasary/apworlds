@@ -92,10 +92,10 @@
 #### v0.41
 - <a href="https://github.com/fdelduque/Archipelago/releases/download/b041/sotn.apworld">https://github.com/fdelduque/Archipelago/releases/download/b041/sotn.apworld</a>
 
-#### v0.8.16r3
+#### v0.8.16.post3
 - <a href="https://github.com/fdelduque/Archipelago/releases/download/b08161/sotn.apworld">https://github.com/fdelduque/Archipelago/releases/download/b08161/sotn.apworld</a>
 
-#### v0.8.16r2
+#### v0.8.16.post2
 - <a href="https://github.com/fdelduque/Archipelago/releases/download/b0816/sotn.apworld">https://github.com/fdelduque/Archipelago/releases/download/b0816/sotn.apworld</a>
 
 #### v0.8.16

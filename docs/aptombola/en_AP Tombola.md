@@ -50,4 +50,3 @@ The Client, currently available as a Windows Executable, Linux Executable and as
 - Navigate to https://arenes214.itch.io/ap-tombola or download the Windows/Linux client from the releases tab
 - Launch the game
 - Connect to the room via the room URL.
-

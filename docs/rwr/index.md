@@ -10,7 +10,7 @@ and map access keys are shuffled into the multiworld item pool!
 
 
 ## Downloads
-- <a href="https://github.com/mjousse72/archipelago_rwr/releases/download/v0.5.0/rwr.apworld">Latest Version (0.1.0r5)</a>
+- <a href="https://github.com/mjousse72/archipelago_rwr/releases/download/v0.5.0/rwr.apworld">Latest Version (0.1.0.post5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

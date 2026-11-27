@@ -1,11 +1,11 @@
 # Super Mario 64 OMM
 
 ## Latest
-- <a href="https://github.com/CosmoGray/sm64ap-omm/releases/download/v0.1.1/sm64omm.apworld">Latest Version (0.1.0r2)</a>
+- <a href="https://github.com/CosmoGray/sm64ap-omm/releases/download/v0.1.1/sm64omm.apworld">Latest Version (0.1.0.post2)</a>
 
 ## All Versions
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/CosmoGray/sm64ap-omm/releases/download/v0.1.1/sm64omm.apworld">https://github.com/CosmoGray/sm64ap-omm/releases/download/v0.1.1/sm64omm.apworld</a>
 
 #### v0.1.0

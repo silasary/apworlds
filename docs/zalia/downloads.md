@@ -29,7 +29,7 @@
 #### v1.0.3
 - <a href="https://github.com/randomcodegen/ZALiA_ap/releases/download/1.0.3/zalia.apworld">https://github.com/randomcodegen/ZALiA_ap/releases/download/1.0.3/zalia.apworld</a>
 
-#### v1.0.2r2
+#### v1.0.2.post2
 - <a href="https://github.com/randomcodegen/ZALiA_ap/releases/download/1.0.2/zalia.apworld">https://github.com/randomcodegen/ZALiA_ap/releases/download/1.0.2/zalia.apworld</a>
 
 #### v1.0.2
@@ -38,7 +38,7 @@
 #### v1.0.1.post3
 - <a href="https://github.com/randomcodegen/ZALiA_ap/releases/download/1.0.1/zalia.apworld">https://github.com/randomcodegen/ZALiA_ap/releases/download/1.0.1/zalia.apworld</a>
 
-#### v0.2.0r2
+#### v0.2.0.post2
 - <a href="https://github.com/randomcodegen/ZALiA_ap/releases/download/1.0.1/zalia.apworld">https://github.com/randomcodegen/ZALiA_ap/releases/download/1.0.1/zalia.apworld</a>
 
 #### v0.2.0

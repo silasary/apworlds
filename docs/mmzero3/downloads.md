@@ -8,7 +8,7 @@
 #### v0.4.1
 - <a href="https://github.com/brodieberger/MMZero3Archipelago/releases/download/v0.4.1/mmzero3.apworld">https://github.com/brodieberger/MMZero3Archipelago/releases/download/v0.4.1/mmzero3.apworld</a>
 
-#### v0.3.6r2
+#### v0.3.6.post2
 - <a href="https://github.com/brodieberger/MMZero3Archipelago/releases/download/v0.4.0/mmzero3.apworld">https://github.com/brodieberger/MMZero3Archipelago/releases/download/v0.4.0/mmzero3.apworld</a>
 
 #### v0.3.6

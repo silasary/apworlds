@@ -11,10 +11,10 @@
 #### v0.8.0
 - <a href="https://github.com/zorasknight/YakLaDGaiRando/releases/download/Beta-3/yakuza_gaiden.apworld">https://github.com/zorasknight/YakLaDGaiRando/releases/download/Beta-3/yakuza_gaiden.apworld</a>
 
-#### v0.6.0r2
+#### v0.6.0.post3
 - <a href="https://github.com/zorasknight/YakLaDGaiRando/releases/download/Beta2/yakuza_gaiden.apworld">https://github.com/zorasknight/YakLaDGaiRando/releases/download/Beta2/yakuza_gaiden.apworld</a>
 
-#### v0.6.0r2
+#### v0.6.0.post2
 - <a href="https://github.com/zorasknight/YakLaDGaiRando/releases/download/Beta2/yakuza_gaiden.apworld">https://github.com/zorasknight/YakLaDGaiRando/releases/download/Beta2/yakuza_gaiden.apworld</a>
 
 #### v0.6.0

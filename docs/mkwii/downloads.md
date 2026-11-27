@@ -1,11 +1,11 @@
 # Mario Kart Wii
 
 ## Latest
-- <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.4.0/mkwii.apworld">Latest Version (0.4.0r2)</a>
+- <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.4.0/mkwii.apworld">Latest Version (0.4.0.post2)</a>
 
 ## All Versions
 
-#### v0.4.0r2
+#### v0.4.0.post2
 - <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.4.0/mkwii.apworld">https://github.com/toent/Archipelago-MKWii/releases/download/v0.4.0/mkwii.apworld</a>
 
 #### v0.4.0
@@ -35,28 +35,28 @@
 #### v0.2.0
 - <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.2.0/mkwii.apworld">https://github.com/toent/Archipelago-MKWii/releases/download/v0.2.0/mkwii.apworld</a>
 
-#### v0.1.1r4
+#### v0.1.1.post5
 - <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.1-h3/mkwii.apworld">https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.1-h3/mkwii.apworld</a>
 
-#### v0.1.1r3
+#### v0.1.1.post4
 - <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.1-h2/mkwii.apworld">https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.1-h2/mkwii.apworld</a>
 
-#### v0.1.1r2
-- <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.1-h1/mkwii.apworld">https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.1-h1/mkwii.apworld</a>
+#### v0.1.1.post3
+- <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.1-h2/mkwii.apworld">https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.1-h2/mkwii.apworld</a>
 
 #### v0.1.1.post2
-- <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.1-h2/mkwii.apworld">https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.1-h2/mkwii.apworld</a>
+- <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.1-h1/mkwii.apworld">https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.1-h1/mkwii.apworld</a>
 
 #### v0.1.1
 - <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.1/mkwii.apworld">https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.1/mkwii.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.0-h1/mkwii.apworld">https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.0-h1/mkwii.apworld</a>
 
 #### v0.1.0
 - <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.0/mkwii.apworld">https://github.com/toent/Archipelago-MKWii/releases/download/v0.1.0/mkwii.apworld</a>
 
-#### v0.0.2r2
+#### v0.0.2.post2
 - <a href="https://github.com/toent/Archipelago-MKWii/releases/download/v0.0.2-h1/mkwii.apworld">https://github.com/toent/Archipelago-MKWii/releases/download/v0.0.2-h1/mkwii.apworld</a>
 
 #### v0.0.2

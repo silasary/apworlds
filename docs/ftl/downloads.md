@@ -8,31 +8,31 @@
 #### v0.6.0
 - <a href="https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.6.0/ftl.apworld">https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.6.0/ftl.apworld</a>
 
-#### v0.5.0r2
+#### v0.5.0.post2
 - <a href="https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.5.0-mv.1/ftl.apworld">https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.5.0-mv.1/ftl.apworld</a>
 
 #### v0.5.0
 - <a href="https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.5.0/ftl.apworld">https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.5.0/ftl.apworld</a>
 
-#### v0.4.4r2
+#### v0.4.4.post2
 - <a href="https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.4.4-mv.1/ftl.apworld">https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.4.4-mv.1/ftl.apworld</a>
 
 #### v0.4.4
 - <a href="https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.4.4/ftl.apworld">https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.4.4/ftl.apworld</a>
 
-#### v0.4.3r2
+#### v0.4.3.post2
 - <a href="https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.4.3-mv.1/ftl.apworld">https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.4.3-mv.1/ftl.apworld</a>
 
 #### v0.4.3
 - <a href="https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.4.3/ftl.apworld">https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.4.3/ftl.apworld</a>
 
-#### v0.4.2r2
+#### v0.4.2.post2
 - <a href="https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.4.2-mv.1/ftl.apworld">https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.4.2-mv.1/ftl.apworld</a>
 
 #### v0.4.2
 - <a href="https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.4.2/ftl.apworld">https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.4.2/ftl.apworld</a>
 
-#### v0.4.1r2
+#### v0.4.1.post2
 - <a href="https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.4.1-mv.1/ftl.apworld">https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.4.1-mv.1/ftl.apworld</a>
 
 #### v0.4.1
@@ -41,7 +41,7 @@
 #### v0.4.0
 - <a href="https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.4.0/ftl.apworld">https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.4.0/ftl.apworld</a>
 
-#### v0.3.1r2
+#### v0.3.1.post2
 - <a href="https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.3.2/ftl.apworld">https://github.com/TheLiloji/FTLArchipelago/releases/download/v0.3.2/ftl.apworld</a>
 
 #### v0.3.1

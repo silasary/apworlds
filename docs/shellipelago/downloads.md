@@ -8,7 +8,7 @@
 #### v1.15.0
 - <a href="https://github.com/ethentianknight/shellipelago/releases/download/1.15/shellipelago.apworld">https://github.com/ethentianknight/shellipelago/releases/download/1.15/shellipelago.apworld</a>
 
-#### v1.14.0r2
+#### v1.14.0.post2
 - <a href="https://github.com/ethentianknight/shellipelago/releases/download/1.14b/shellipelago.apworld">https://github.com/ethentianknight/shellipelago/releases/download/1.14b/shellipelago.apworld</a>
 
 #### v1.14.0
@@ -23,11 +23,11 @@
 #### v1.11
 - <a href="https://github.com/ethentianknight/shellipelago/releases/download/1.11/shellipelago.apworld">https://github.com/ethentianknight/shellipelago/releases/download/1.11/shellipelago.apworld</a>
 
-#### v1.10r3
-- <a href="https://github.com/ethentianknight/shellipelago/releases/download/1.10n/shellipelago.apworld">https://github.com/ethentianknight/shellipelago/releases/download/1.10n/shellipelago.apworld</a>
-
-#### v1.10r2
+#### v1.10.post3
 - <a href="https://github.com/ethentianknight/shellipelago/releases/download/1.10n%2B1.1h/shellipelago.apworld">https://github.com/ethentianknight/shellipelago/releases/download/1.10n%2B1.1h/shellipelago.apworld</a>
+
+#### v1.10.post2
+- <a href="https://github.com/ethentianknight/shellipelago/releases/download/1.10n/shellipelago.apworld">https://github.com/ethentianknight/shellipelago/releases/download/1.10n/shellipelago.apworld</a>
 
 #### v1.10
 - <a href="https://github.com/ethentianknight/shellipelago/releases/download/1.10/shellipelago.apworld">https://github.com/ethentianknight/shellipelago/releases/download/1.10/shellipelago.apworld</a>

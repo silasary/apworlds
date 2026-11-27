@@ -8,7 +8,7 @@
 #### v0.3.2
 - <a href="https://github.com/lilDavid/AP-SamusReturns/releases/download/0.3.2/msr.apworld">https://github.com/lilDavid/AP-SamusReturns/releases/download/0.3.2/msr.apworld</a>
 
-#### v0.3.0r2
+#### v0.3.0.post2
 - <a href="https://github.com/lilDavid/AP-SamusReturns/releases/download/0.3.1/msr.apworld">https://github.com/lilDavid/AP-SamusReturns/releases/download/0.3.1/msr.apworld</a>
 
 #### v0.3.0

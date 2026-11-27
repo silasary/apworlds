@@ -20,7 +20,7 @@
 #### v0.2.1
 - <a href="https://github.com/DotsofdarknessArchipelago/Hunie-Cam-Studio-Archipelago/releases/download/V0.2.1/huniecamstudio.apworld">https://github.com/DotsofdarknessArchipelago/Hunie-Cam-Studio-Archipelago/releases/download/V0.2.1/huniecamstudio.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/DotsofdarknessArchipelago/Hunie-Cam-Studio-Archipelago/releases/download/V0.2.0/huniecamstudio.apworld">https://github.com/DotsofdarknessArchipelago/Hunie-Cam-Studio-Archipelago/releases/download/V0.2.0/huniecamstudio.apworld</a>
 
 #### v0.1.0

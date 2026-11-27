@@ -5,6 +5,12 @@
 - Undertale from the [Steam page](https://store.steampowered.com/app/391540)
 - Archipelago from the [Archipelago Releases Page](https://github.com/ArchipelagoMW/Archipelago/releases)
 
+### PLEASE READ!
+
+Please read the Game Info page in its entirety before asking questions! Most importantly, there is a list of 
+gameplay differences you are likely to need to know.
+[Undertale Game Info Page](/games/Undertale/info/en)
+
 ### First time setup
 
 Start the Undertale client from your Archipelago folder and input `/auto_patch <Your Undertale Install Directory>` at the bottom. 
@@ -37,14 +43,18 @@ bottom of the client.
 
 Windows users are now ready to play!
 
-**Linux Users**: When you start the client, it is likely that the save data path is incorrect, and how the game
+Linux users will need the additional section down below.
+
+### Linux Users
+
+When you start the client, it is likely that the save data path is incorrect, and how the game
 is played depends on where the save data folder is located.
 
-*On Steam (via Proton)*: This assumes the game is in a Steam Library folder.  Right-click Undertale, go to `Manage -> 
+*Linux through Steam (via Proton)*: This assumes the game is in a Steam Library folder.  Right-click Undertale, go to `Manage -> 
 Browse Local Files`. Go up the directories to the `steamapps` folder, open `compatdata/391540` (391540 is the "magic number" for
 Undertale in Steam).  Save data from here is at `/pfx/drive_c/users/steamuser/AppData/Local/UNDERTALEAP`.
 
-*Through WINE directly*: This depends on the prefix used.  If it is default, then the save data is located at
+*Linux through WINE directly*: This depends on the prefix used.  If it is default, then the save data is located at
 `/home/USERNAME/.wine/drive_c/users/USERNAME/AppData/Local/UNDERTALEAP`.
 
 Once the save data folder is located, run the `/savepath` command to redirect the client to the correct save data folder
@@ -54,12 +64,6 @@ before connecting.
 
 When the console tells you that you have joined the room, you're all set. Congratulations on successfully joining a
 multi-world game!
-
-### PLEASE READ!
-
-Please read this page in its entirety before asking questions! Most importantly, there is a list of 
-gameplay differences at the bottom.
-[Undertale Game Info Page](/games/Undertale/info/en)
 
 ### The game opens in widescreen and doesn't go past the title?
 

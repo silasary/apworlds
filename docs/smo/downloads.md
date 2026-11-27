@@ -1,38 +1,38 @@
 # Super Mario Odyssey
 
 ## Latest
-- <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-4/smo.apworld">Latest Version (1.7.7.post4)</a>
+- <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7/smo.apworld">Latest Version (1.7.7.post7)</a>
 
 ## All Versions
 
-#### v1.7.7.post4
-- <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-4/smo.apworld">https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-4/smo.apworld</a>
-
-#### v1.7.7.post3
-- <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-3/smo.apworld">https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-3/smo.apworld</a>
-
-#### v1.7.7.post2
-- <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-2/smo.apworld">https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-2/smo.apworld</a>
-
-#### v1.7.7r2
-- <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-4/smo.apworld">https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-4/smo.apworld</a>
-
-#### v1.7.7r2
+#### v1.7.7.post7
 - <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7/smo.apworld">https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7/smo.apworld</a>
 
-#### v1.7.7.post1
+#### v1.7.7.post6
+- <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-4/smo.apworld">https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-4/smo.apworld</a>
+
+#### v1.7.7.post5
+- <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-4/smo.apworld">https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-4/smo.apworld</a>
+
+#### v1.7.7.post4
+- <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-3/smo.apworld">https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-3/smo.apworld</a>
+
+#### v1.7.7.post3
+- <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-2/smo.apworld">https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-2/smo.apworld</a>
+
+#### v1.7.7.post2
 - <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-1/smo.apworld">https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7-1/smo.apworld</a>
 
 #### v1.7.7
 - <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7/smo.apworld">https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.7/smo.apworld</a>
 
+#### v1.7.6.post4
+- <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.6-1/smo.apworld">https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.6-1/smo.apworld</a>
+
 #### v1.7.6.post3
 - <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.6-1/smo.apworld">https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.6-1/smo.apworld</a>
 
 #### v1.7.6.post2
-- <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.6-1/smo.apworld">https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.6-1/smo.apworld</a>
-
-#### v1.7.6.post1
 - <a href="https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.6-1/smo.apworld">https://github.com/AdalynBlack/SuperMarioOdysseyArchipelago/releases/download/v1.7.6-1/smo.apworld</a>
 
 #### v1.7.6

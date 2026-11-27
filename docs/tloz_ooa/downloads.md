@@ -17,7 +17,7 @@
 #### v1.1.2
 - <a href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.1.2/tloz_ooa.apworld">https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.1.2/tloz_ooa.apworld</a>
 
-#### v1.1.0r2
+#### v1.1.0.post2
 - <a href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.1.1/tloz_ooa.apworld">https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.1.1/tloz_ooa.apworld</a>
 
 #### v1.1.0
@@ -26,7 +26,7 @@
 #### v1.0.2
 - <a href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.0.2/tloz_ooa.apworld">https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.0.2/tloz_ooa.apworld</a>
 
-#### v1.0.0r2
+#### v1.0.0.post2
 - <a href="https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.0.1/tloz_ooa.apworld">https://github.com/josephanimate2021/ArchipelagoOoA/releases/download/v1.0.1/tloz_ooa.apworld</a>
 
 #### v1.0.0

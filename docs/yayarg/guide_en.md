@@ -125,5 +125,3 @@ While I do not currently have a non-`.exe` version of the YARG AP YAML Creator, 
 When run on Linux, the YAML Creator will automatically detect your **native Linux YARG AP configuration directory** (`~/.config/yarchipelago`) instead of defaulting to the Windows-style configuration path used under Wine (`%APPDATA%/YARChipelago`).
 
 YARG itself is of course fully compatible with Linux, being a Unity application, and the Archipelago plugin runs without issue on the Linux version of BepinEX.
-
-

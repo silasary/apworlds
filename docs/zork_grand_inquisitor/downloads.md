@@ -32,19 +32,19 @@
 #### v2.0.7
 - <a href="https://github.com/SerpentAI/Archipelago/releases/download/zgi-v2.0.7/zork_grand_inquisitor.apworld">https://github.com/SerpentAI/Archipelago/releases/download/zgi-v2.0.7/zork_grand_inquisitor.apworld</a>
 
-#### v2.0.6r6
+#### v2.0.6.post6
 - <a href="https://github.com/SerpentAI/Archipelago/releases/download/zgi-v2.0.6/zork_grand_inquisitor.apworld">https://github.com/SerpentAI/Archipelago/releases/download/zgi-v2.0.6/zork_grand_inquisitor.apworld</a>
 
-#### v2.0.6r5
+#### v2.0.6.post5
 - <a href="https://github.com/SerpentAI/Archipelago/releases/download/zgi-v2.0.6/zork_grand_inquisitor.apworld">https://github.com/SerpentAI/Archipelago/releases/download/zgi-v2.0.6/zork_grand_inquisitor.apworld</a>
 
-#### v2.0.6r4
+#### v2.0.6.post4
 - <a href="https://github.com/SerpentAI/Archipelago/releases/download/zgi-v2.0.6/zork_grand_inquisitor.apworld">https://github.com/SerpentAI/Archipelago/releases/download/zgi-v2.0.6/zork_grand_inquisitor.apworld</a>
 
-#### v2.0.6r3
+#### v2.0.6.post3
 - <a href="https://github.com/SerpentAI/Archipelago/releases/download/zgi-v2.0.6/zork_grand_inquisitor.apworld">https://github.com/SerpentAI/Archipelago/releases/download/zgi-v2.0.6/zork_grand_inquisitor.apworld</a>
 
-#### v2.0.6r2
+#### v2.0.6.post2
 - <a href="https://github.com/SerpentAI/Archipelago/releases/download/zgi-v2.0.6/zork_grand_inquisitor.apworld">https://github.com/SerpentAI/Archipelago/releases/download/zgi-v2.0.6/zork_grand_inquisitor.apworld</a>
 
 #### v2.0.6

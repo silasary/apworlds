@@ -2,164 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-27T06:17:26.799824+00:00</updated>
+  <updated>2026-11-27T12:18:26.154965+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/zaphim12/RL2Archipelago/releases/tag/v1.2.0</id>
-    <title>Rogue Legacy 2 v1.2.0</title>
-    <updated>2026-11-23T02:35:09+00:00</updated>
-    <author>
-      <name>zaphim12</name>
-    </author>
-    <content>Note: Please replace both the .apworld and the game mod files when updating to this version&#13;
-&#13;
-### New Features&#13;
-- Added a new manor type using the YAML setting `manor_type` called "shop" which allows items to be purchased from the manor more like a re-stocking shop (very similar to Unfair Flips). There are 4 slots to buy from, and buying any item replaces it with a new item until that slot is exhausted. Items get more expensive the further into the shop you go. &#13;
-  - The idea is essentially to allow a larger number of purchases from the manor than the vanilla branching manor layout provides. With the shop layout you can have many more (or less) items available for purchase in the manor.&#13;
-- Fabled weapons are now available in an AP run. They can be set to always be use-able, or can be unlocked as a progressive item for each class.&#13;
-- Burdens are select-able for AP runs as well now. The first time you connect to an AP world, the burden selection screen will appear. This will set the burdens for the entire run. The only way to change them after this point is to enable the Debug Keys in the Archipelago Settings and press "6" to re-open that screen (which will take effect the next time an heir is selected). &#13;
-- Earning XP can now give you AP items. The in-game mastery rank can be set to earn items either per-class or as an overall mastery level. Mastery level is only increased when an heir dies (or retires) and at that point you will get earn the locations for these checks. &#13;
-&#13;
-### Improvements&#13;
-- Allow controller input in the connection dialog box&#13;
-- Changed YAML option `manor_depths_per_boss` to `manor_depth_percent_per_boss` to be more easily understandable, especially with the new manor type.&#13;
-- Added an in-game tracker for biome specific checks (blueprint chests, rune chests, journals, and memories)&#13;
-  - It will show you the number of checks you've collected, the number of in-logic checks, and the total number of checks available for each type. If all checks for a given type in a biome are out-of-logic, the whole row will be dimmed.&#13;
-  - This can be toggled on or off in the Archipelago Settings screen&#13;
-- Raised the limit on the maximum number of locations you can have for chests in the YAML options&#13;
-- Checks which were already released from outside the game (via admin console or a player completing their game) will now be skipped for pooled checks (chests and individual-type journal/memories). This essentially means you don't waste locations on chests that would grant an item which is already given.&#13;
-&#13;
-### New Config Options&#13;
-&#13;
-1. `manor_layout` - (tree/shop, default: tree), Tree layout is the existing layout. It uses the same branching tree as the vanilla manor does. The new options is "shop" which gives the repeated slot purchase layout described above.&#13;
-  a. `manor_shop_depth` - (1-100, default: 25), How many purchases each slot holds in the shop manor layout.&#13;
-  b. `manor_depth_percent_per_boss` (0-100, default 25), what percentage of manor purchases are added to logic for each boss kill. This replaces the existing `manor_depth_per_boss` with a more easily usable setting.&#13;
-2. `fabled_weapons` - (randomized/soul_shop/unlocked, default: randomized), Randomized turns the fabled weapons into AP items which can be received. They are progressive on the class unlock, so the first one received unlocks the class and the second instance will unlock the fabled weapon. When set to soul_shop, the fabled weapons are still purchase-able in the soul shop (and always available), although they use their normal price and are realistically probably difficult to afford. This is mostly the same as just turning them off. When set to unlocked, they will always be available so long as their class is unlocked.&#13;
-3. `mastery_checks` - (disabled/total/per_class, default: total), Allows XP earnings to unlock Archipelago items. Each level of mastery rank counts as a single check. These can be totaled over all classes or give specific checks for each class's own mastery levels.&#13;
-  a. `total_mastery_levels` - (1-750, default 50), How many checks are associated with mastery levels when in total mode&#13;
-  b. `mastery_levels_per_class` - (1-50, default 10), How many checks for each class are associated with mastery levels when in per_class mode. This will result in 15 * mastery_levels_per_class number of locations being added&#13;
-  c. `mastery_progression_percent` - (0-100, default 50), What percentage of the mastery level locations may actually have useful items behind them. This essentially allows you to tweak what percentage of the mastery levels you may be required to achieve, even though you can still have more checks afterwards that may give non-essential benefits.&#13;
-  d. `mastery_xp_multiplier` - (10-10000, default 300), How much the XP you earn is multiplied before being converted into mastery ranks. 100 means you get the same amount of XP as the vanilla game awards, but that can be very slow. Turning this higher allows you to get more mastery ranks in less time. This becomes essentially required if you dial up the number of mastery-rank locations since later levels require a lot of XP. &#13;
-&#13;
-### Bugfixes&#13;
-&#13;
-- More resilient save-handling. The sync between the AP server's state and the game's state should be stronger now. In addition, save recovery should be better. Archipelago runs now save backups similar the vanilla game runs and can restore them using vanilla's backup recovery screen. &#13;
-- Fixed a bug where stat upgrades weren't applied in specific scenarios mid-run (they instead waited until the next heir or certain triggers to apply).</content>
-    <link href="https://github.com/zaphim12/RL2Archipelago/releases/tag/v1.2.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/MuratDev41/gravity-circuit-ap/releases/tag/v1.0.0</id>
-    <title>Gravity Circuit (MuratDev's Implementation) v1.0.0</title>
-    <updated>2026-11-23T03:21:47+00:00</updated>
-    <author>
-      <name>Murat Kaan Tekeli</name>
-    </author>
-    <content>### New
-- **Knockback Link.** Set `knockback_link: true` in the YAML (or turn it on in F9). Getting knocked back by a hit
-  knocks back everyone with Knockback Link, in the same direction. A received knockback staggers Kai like a hit but
-  takes no health. One per second each way.
-- **Burst Link.** `burst_link` in the YAML shares the base burst bar, the first 2 bursts, with your team.
-  `gravity_circuit` shares it with other Gravity Circuit players, `silk_link` with Silksong's Silk Link
-  (1 burst = 4 Silk). Bursts from Burst Boosters stay your own.
-- **Redone F9 panel.** Connection and Settings sections, a Connect/Disconnect button and mouse support. DeathLink,
-  Knockback and Burst Link can follow the YAML or be set on or off, and apply right away.
-
-### Changes
-- Shopsanity slots are coloured by item class, frame and background.
-- Gravity Circuit's own items in the shops use the sprite database too. Items without a sprite show an
-  Archipelago icon.
-- Fixed chip-shop sprites showing dimmed before the chip was bought.
-</content>
-    <link href="https://github.com/MuratDev41/gravity-circuit-ap/releases/tag/v1.0.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/2.2.3</id>
-    <title>Slay the Spire II v1.4.2</title>
-    <updated>2026-11-23T06:27:53+00:00</updated>
-    <author>
-      <name>Kirbyfanner</name>
-    </author>
-    <author>
-      <name>Platano Bailando</name>
-    </author>
-    <author>
-      <name>Lyxn</name>
-    </author>
-    <author>
-      <name>MartyredG</name>
-    </author>
-    <author>
-      <name>Terairk</name>
-    </author>
-    <content>&gt; [!WARNING]
-&gt; Both Slay the Spire II and this Archipelago Mod are in active development. As such, while this _is_ playable, expect there to be bugs and limited features. We appreciate your playtesting!
-
-&gt; [!IMPORTANT]
-&gt; **Play on the game's beta branch.** Main-branch support is on thin ice but supported none the less: the mod still runs there, but it's largely untested and new game features might not be supported on it.
-
-## Setup
-
-For installation, YAML configuration, generation and connection instructions, see
-[the Slay the Spire II setup guide](https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/blob/setup-docs-do-not-delete/world/spire2/docs/setup_en.md).
-
-Archipelago **Launcher v0.6.7+** is required for generation. Install **STS2-RitsuLib 0.6.11+** separately.
-
-The newest YAML Builder is at [sts2ap.terairk.dev](https://sts2ap.terairk.dev/#/builder), and the mod's **Mod Website &amp; YAML Builder** button opens it. [sts2ap.net](https://sts2ap.net/#/builder) gets the new options later.
-
-# Version Information
-
-- **Archipelago Mod:** 2.2.3
-- **APWorld:** 1.4.2
-- **Slay the Spire II main branch:** v0.111.1
-- **Slay the Spire II beta branch:** v0.113.1
-
-# Changelist
-
-A small release on top of 2.2.2.
-
-1) New sight challenge: **Hidden Relics**. Your relics are unknown (locked icon, "?" counters) until a Relic Sight arrives, but they still flash, so you can work them out. A second Relic Sight makes relic rewards offer 2 to choose from. Doesn't work on ancients cus its annoying and i said so.
-2) Eight new Boons: Ink Bottle, Medical Kit, Blue Candle, Preserved Insect, Torii and Turnip from the first game, plus Amphorae and Cursed Kettle which are my own fancy relics that i made up cus why not.
-    - Could debate on these being 'Bonus items' but for now they're in the boons section. 
-3) Some Boon nerfs: Wayfinder is 3 free moves per run and shares them with Winged Boots, Second Wind works once per run and heals 35%, and Spring Cleaning gives one of its rewards at random.
-4) Sight bonuses buffs: a second Map Sight also gives a free move once per act, and a second Pile Sight also draws 1 more card next turn the first time your draw pile is shuffled each turn. Rationale: buff the less cool ones
-5) YAML Builder: a new Items &amp; Hints section (starting items, starting hints, local and non-local items), and importing a YAML keeps the settings the builder doesn't ask about.
-6) The mod's local files now live in one folder per AP slot under `mod_data/Archipelago`. Old files move there by themselves, and Local Save Management can forget old seeds. Hopefully this doesn't break stuff but the files/logs/saves were in like 4 different folders all nested weirdly so this will be easier to give advice to people in the future.
-7) Fixes: Inky and Exposing only go on cards that target enemies (Inky used to crash on the others), Exposing shows its Vulnerable line on the card.
-
-### Version compatibility
-
-Use the updated APWorld and mod together. An older APWorld ignores Hidden Relics and the new Boons.
-
-Everyone in a multiplayer lobby should use the same mod version and game branch.
-
-Tested in singleplayer on the beta branch.
-
-## Known Issues/Limitations
-
-- **Main branch:** largely untested and gets no new features. Main-branch multiplayer might not be supported in a future release.
-- In multiplayer, AP menu rewards can only be claimed outside combat; Death Fragments are disabled. **Anytime** Ancient rewards are recommended.
-</content>
-    <link href="https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/2.2.3"/>
-  </entry>
-  <entry>
-    <id>https://github.com/TheLX5/Archipelago/releases/tag/wariotwisted-v1.1.0</id>
-    <title>WarioWare: Twisted! v1.1.0</title>
-    <updated>2026-11-23T07:07:59+00:00</updated>
-    <author>
-      <name>lx5</name>
-    </author>
-    <content>pointers&#13;
-# Info&#13;
-* [Info](&lt;https://thelx5.github.io/wario_twisted/index.html&gt;)&#13;
-* [Setup](&lt;https://thelx5.github.io/wario_twisted/setup.html&gt;)&#13;
-# Changes&#13;
-* Regular stages now tell in their description which locations are available and what they hold&#13;
-* Cutscenes are automatically skipped</content>
-    <link href="https://github.com/TheLX5/Archipelago/releases/tag/wariotwisted-v1.1.0"/>
-  </entry>
   <entry>
     <id>https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/tag/V3.0.2</id>
     <title>Hunie Pop v3.0.2</title>
@@ -331,44 +178,6 @@ Windows: `ctr-archipelago-v0.3.0-alpha6-windows-x86.zip`. Linux or Steam Deck: `
       <name>Galdiuz</name>
     </author>
     <link href="https://github.com/galdiuz/archipeladoku/releases/tag/v2026.11.23"/>
-  </entry>
-  <entry>
-    <id>https://github.com/BlastSlimey/2hapezipelago/releases/tag/1.1.0</id>
-    <title>shapez 2 v1.1.0</title>
-    <updated>2026-11-23T18:36:37+00:00</updated>
-    <author>
-      <name>BlastSlimey</name>
-    </author>
-    <content>## Changelog&#13;
-&#13;
-- A lot of internal reworking&#13;
-- Updated names of buildings, space platforms, displayed research credits amount, and other features to official 1.0.0+ names&#13;
-- Overhauled many options for better design&#13;
-  - Old yamls will be fixed by the apworld and do thereby **not** break&#13;
-- Added `Unlock pipes with pumps` to `Item Pool Modifiers`&#13;
-- Added `Jobs` to `Operator Lines Shapes` (formerly `Shape Generation Modifiers`)&#13;
-- Fixed the two final shapes of a milestone potentially being randomized to the same shape&#13;
-- Fixed milestones sometimes containing the same shape twice&#13;
-- Tweaked RNG handling to reduce the risk of updates breaking UT accuracy&#13;
-- Fixed platform capacity items giving only half of the amount mentioned in their name&#13;
-- Lessened restrictions for minimum amount of locations&#13;
-- Added nested randomness to list-based options&#13;
-- Merged multiple trains-related space platform items into `Shape Trains` and `Fluid Trains`&#13;
-  - This also fixes the former `Rails` item not actually unlocking the rails&#13;
-- Fixed job lines and operator lines being considered accessible in sphere 1 even if locked&#13;
-- Added some missing building variants&#13;
-- Fixed shapes sometimes generating with floating parts that might even be impossible to produce&#13;
-- Fixed generation failures when generating with a game that has "Proguseful" items while the classification is enabled to be written into the scenario file&#13;
-- Fixed the "Surprise out-of-logic item" in the shop sometimes containing items that are useless to your slot&#13;
-- Turned output zip into a patch file, that automatically installs the scenario and preset files&#13;
-- Added a `save_data_folder` setting for patch files to know where to put the output files&#13;
-- Added a `overwrite_scenario` setting that determines, whether an already installed scenario+preset should be overwritten&#13;
-- Fixed the crystal generator's logic missing `2nd Machine Level`&#13;
-&#13;
-### Is this version compatible with older multiworld slots and save files?&#13;
-No&#13;
-</content>
-    <link href="https://github.com/BlastSlimey/2hapezipelago/releases/tag/1.1.0"/>
   </entry>
   <entry>
     <id>https://github.com/DeltaSilver/Armored-Core-6-Archipelago/releases/tag/v0.2.3-Beta</id>
@@ -1006,7 +815,7 @@ Compatible with v0.1.0-alpha</content>
   </entry>
   <entry>
     <id>https://github.com/dlueben1/Slay-the-Spire-2-Archipelago/releases/tag/2.2.4</id>
-    <title>Slay the Spire II v1.4.2r2</title>
+    <title>Slay the Spire II v1.4.2.post2</title>
     <updated>2026-11-25T04:10:58+00:00</updated>
     <author>
       <name>Kirbyfanner</name>
@@ -1178,7 +987,7 @@ Download `OPUC1-AP-Tracker.zip` alongside the apworld and put it in PopTracker's
   </entry>
   <entry>
     <id>https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_4_1</id>
-    <title>Civilization IV v0.0.1r2</title>
+    <title>Civilization IV v0.0.1.post7</title>
     <updated>2026-11-26T00:14:21+00:00</updated>
     <author>
       <name>VincentSIFTD</name>
@@ -1267,7 +1076,7 @@ https://github.com/Panguu/Archipelago-RaCSM/compare/rac_size_matters-v0.5.8...ra
   </entry>
   <entry>
     <id>https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3.2</id>
-    <title>Undertale Beta v2.0.0r2</title>
+    <title>Undertale Beta v2.0.0.post11</title>
     <updated>2026-11-26T03:19:12+00:00</updated>
     <author>
       <name>Mewlif</name>
@@ -1294,7 +1103,7 @@ FIXED:&#13;
   </entry>
   <entry>
     <id>https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3.2-fix</id>
-    <title>Undertale Beta v2.0.0r3</title>
+    <title>Undertale Beta v2.0.0.post12</title>
     <updated>2026-11-26T04:11:39+00:00</updated>
     <author>
       <name>Mewlif</name>
@@ -1450,7 +1259,7 @@ No&#13;
   </entry>
   <entry>
     <id>https://github.com/rvanmatre50/JSRF-Archipelago-Randomizer/releases/tag/v1.4a</id>
-    <title>Jet Set Radio Future v1.0.0r2</title>
+    <title>Jet Set Radio Future v1.0.0.post5</title>
     <updated>2026-11-27T03:19:47+00:00</updated>
     <author>
       <name>rvanmatre50</name>
@@ -1506,5 +1315,367 @@ Hope everyone enjoys the rewrite/fixes 😅 &#13;
 &#13;
 Happy gaming!</content>
     <link href="https://github.com/TheRealSolidusSnake/Archipelago/releases/tag/1.1.0"/>
+  </entry>
+  <entry>
+    <id>https://github.com/ClTYOFEVlL/SWD2-Archipelago/releases/tag/v0.3.1</id>
+    <title>SteamWorld Dig 2 v0.3.1</title>
+    <updated>2026-11-27T09:13:55+00:00</updated>
+    <author>
+      <name>Tails</name>
+    </author>
+    <content>## Fixed&#13;
+- Temple of Guidance's timed gate before Fen now stays open so the checks behind it cannot be locked out&#13;
+- The apworld and its `version.dll` should no longer get flagged by antivirus programs&#13;
+&#13;
+## Logic&#13;
+- Jet alone is now enough to get through the Temple of Guidance</content>
+    <link href="https://github.com/ClTYOFEVlL/SWD2-Archipelago/releases/tag/v0.3.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.5.39</id>
+    <title>Muse Dash v1.5.39</title>
+    <updated>2026-11-27T10:54:09+00:00</updated>
+    <author>
+      <name>DeamonHunter</name>
+    </author>
+    <content># Changes&#13;
+- Updated to SO FUNKIN' MUSE&#13;
+&#13;
+# Installation&#13;
+## Melonloader&#13;
+*Melonloader is required to play with this mod.  However reinstalling it is not required on update.*&#13;
+&#13;
+&gt; You can find Muse Dash's folder by finding the game in your steam library, right clicking it and choosing *Manage→Browse Local Files*.&#13;
+&#13;
+### Windows&#13;
+1. Download `MelonLoader.Installer.exe` from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
+2. Select Muse Dash in the list of games.&#13;
+   - If Muse Dash does not appear, click add game manually then browse to `MuseDash.exe`.&#13;
+3. Click install. &#13;
+    - If the latest version is not working: **Untick Latest and select 0.7.2**&#13;
+&#13;
+### Linux&#13;
+1. Navigate to Muse Dash on steam, open properties and add the following to Launch Options: `WINEDLLOVERRIDES="version=n,b" %command%`&#13;
+2. Download `MelonLoader.Installer.Linux` from https://github.com/LavaGang/MelonLoader/releases/latest and run it.&#13;
+   - You may need to give it permissions to execute.&#13;
+3. Select Muse Dash in the list of games.&#13;
+    - If Muse Dash does not appear, click add game manually then browse to `MuseDash.exe`.&#13;
+4. Click install. On first run, melonloader may install dotnet 6 in order to run.&#13;
+    - If the latest version is not working: **Untick Latest and select 0.7.2**&#13;
+    &#13;
+### Mod Install&#13;
+1.Download `ArchipelagoMuseDash.zip`.&#13;
+2. Head to the Muse Dash folder and open up `/mods/`. If this folder does not exist, run the game and it should appear.&#13;
+3. Extract the contents of the .zip file into mods. Ensure the files are not in a subfolder, this mod is not setup for that yet.&#13;
+4. Run the game. If a new button appears on the start screen the mod was installed correctly.&#13;
+</content>
+    <link href="https://github.com/DeamonHunter/ArchipelagoMuseDash/releases/tag/v1.5.39"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.9</id>
+    <title>Team Fortress 2 Mann vs Machine v1.18.9</title>
+    <updated>2026-11-27T11:13:48+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>&lt;p align="center"&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
+    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
+    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+
+## Changes
+
+### Fixed
+
+- **Servers work on the TF2 update of 26 November 2026.** Windows, Linux and
+  Docker servers start and play again, and the community missions that need
+  SigMod load at their first wave instead of staying on wave 0.
+- **Servers no longer hang with defender bots.** A server could stop answering
+  in the middle of a wave once a defender bot joined.
+- **A crash is fixed** that could stop a server while a bot was searching for
+  its way across a map.
+
+
+## Windows
+
+Download **`tf2ap.exe`** above. Run it. It installs everything else.
+
+Windows will warn you, and it is a false positive. The exe unpacks archives and
+starts a game server without a code signature, which looks like a virus to a
+scanner. Click **More info**, then **Run anyway**, or check it below first.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
+
+## Linux
+
+Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
+
+```sh
+chmod +x tf2ap-linux-amd64
+./tf2ap-linux-amd64
+```
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
+
+## Docker
+
+Download **`compose.yaml`** and **`env.example`**:
+
+```sh
+mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
+base=https://github.com/m-this/tf2-archipelago/releases/latest/download
+curl -fsSLO "$base/compose.yaml"
+curl -fsSL -o .env "$base/env.example"
+```
+
+Set `SRCDS_RCONPW` in `.env`, then:
+
+```sh
+docker compose --profile seed run --rm seed   # writes ./seed
+docker compose up -d
+```
+
+Upload the file from `seed/` at
+[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
+port into `AP_PORT`.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
+
+## Other assets
+
+| File | For |
+| --- | --- |
+| `tf2_mvm.apworld` | The official Archipelago app. |
+| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
+| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
+| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
+
+## Checking what you downloaded
+
+**`SHA256SUMS`** is attached to this release. It holds the hash of every file
+here, computed by the workflow that built them.
+
+```powershell
+Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
+```
+
+```sh
+sha256sum -c SHA256SUMS --ignore-missing    # Linux
+```
+
+Each binary carries a signed record of the commit and the workflow that built
+it:
+
+```sh
+gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
+```
+
+The binaries are scanned on VirusTotal, and the reports are linked at the end of
+these notes. Expect a few heuristic detections and no named malware family. The
+source is all in the repository, and `make launcher` rebuilds the exe on your
+own machine.
+
+## Code signing policy
+
+Free code signing for open source projects, provided by
+[SignPath.org](https://signpath.org), with a certificate from the
+[SignPath Foundation](https://signpath.org).
+
+&gt; [!WARNING]
+&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
+&gt; unsigned, and Windows warns about it until that changes.
+
+
+## What's Changed
+* chore(deps): pins for TF2 11278981 by @m-this in https://github.com/m-this/tf2-archipelago/pull/268
+
+
+**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.18.8...v1.18.9
+
+## VirusTotal
+
+- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/MTc4ZGM4Mzk4Njg4NTcwZjVlM2QzYmE1OTRiZmNkMzA6MTc5NTc3ODc4Mg==/detection)
+- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/M2JiMWM2ZDAzZWI0NWUxODZlNWJmODU2NjQwOGY4NjE6MTc5NTc3ODc4NA==/detection)
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.9"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/nightly</id>
+    <title>Team Fortress 2 Mann vs Machine v1.18.10</title>
+    <updated>2026-11-27T11:48:59+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>**This is not a release.** It is the head of `main`, rebuilt on every push,
+and it is replaced without warning. For something that stays put, use the
+[latest release](https://github.com/m-this/tf2-archipelago/releases/latest).
+
+Built from `6d187c36a819880e4f614331f5e16888ee35d546`.
+
+## Downloads
+
+- [tf2ap.exe](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap.exe) for Windows
+- [tf2ap-linux-amd64](https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2ap-linux-amd64) for Linux
+
+## Since v1.18.10
+
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/nightly"/>
+  </entry>
+  <entry>
+    <id>https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.10</id>
+    <title>Team Fortress 2 Mann vs Machine v1.18.10.post2</title>
+    <updated>2026-11-27T11:49:02+00:00</updated>
+    <author>
+      <name>mathis</name>
+    </author>
+    <content>&lt;p align="center"&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap.exe"&gt;
+    &lt;img alt="Download tf2ap.exe for Windows" src="https://img.shields.io/badge/Download-tf2ap.exe%20for%20Windows-2ea44f?style=for-the-badge&amp;logo=windows&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+  &lt;a href="https://github.com/m-this/tf2-archipelago/releases/latest/download/tf2ap-linux-amd64"&gt;
+    &lt;img alt="Download tf2ap-linux-amd64 for Linux" src="https://img.shields.io/badge/Download-tf2ap--linux--amd64-1b1f27?style=for-the-badge&amp;logo=linux&amp;logoColor=white"&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+
+## Changes
+
+### Fixed
+
+- **Seeds generate again with weapon slots per class.** With "weapon slots
+  per class" on and class unlocks or weapon slots set to useful instead of
+  progression, generation failed with "No more spots to place" items.
+- **A Docker server now tells you which address to join.** `make up` and the
+  admin container's log print the `connect` line players type, and warn when
+  `TF2AP_JOIN_HOST` is still the loopback default that only works on the host
+  itself. The released `compose.yaml` says where the control panel is and what
+  to give players.
+- **A Docker server on a LAN no longer loses its RCON port when the container
+  is on a second network.** The game server binds to the address of its own
+  Compose network instead of whichever one its hostname resolved to that boot.
+- **The debug bundle says whether Steam gave the server an address.** For a
+  server played over Steam, the summary now names the relay address srcds got,
+  or says it got none, which is why nobody could join.
+- **The server restart after a long time in a settings page now says why.**
+  When SourceMod updates its gamedata while a settings page is open, the
+  launcher waits and restarts the server once you apply or cancel. It now
+  shows a notice with the reason instead of restarting for no visible cause.
+- **The launcher says why the server is not on your multiworld.** A wrong
+  room address, a wrong slot name or a refused connection used to leave the
+  Missions page empty with no reason. The Missions page now shows the reason,
+  and a refusal that stops the server is shown as a notice.
+
+
+## Windows
+
+Download **`tf2ap.exe`** above. Run it. It installs everything else.
+
+Windows will warn you, and it is a false positive. The exe unpacks archives and
+starts a game server without a code signature, which looks like a virus to a
+scanner. Click **More info**, then **Run anyway**, or check it below first.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-windows.html)
+
+## Linux
+
+Download **`tf2ap-linux-amd64`**. Run it. It installs everything else.
+
+```sh
+chmod +x tf2ap-linux-amd64
+./tf2ap-linux-amd64
+```
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install-linux.html)
+
+## Docker
+
+Download **`compose.yaml`** and **`env.example`**:
+
+```sh
+mkdir mann-vs-archipelago &amp;&amp; cd mann-vs-archipelago
+base=https://github.com/m-this/tf2-archipelago/releases/latest/download
+curl -fsSLO "$base/compose.yaml"
+curl -fsSL -o .env "$base/env.example"
+```
+
+Set `SRCDS_RCONPW` in `.env`, then:
+
+```sh
+docker compose --profile seed run --rm seed   # writes ./seed
+docker compose up -d
+```
+
+Upload the file from `seed/` at
+[archipelago.gg/uploads](https://archipelago.gg/uploads) and put the room's
+port into `AP_PORT`.
+
+[Full guide](https://m-this.github.io/tf2-archipelago/en/setup/install.html)
+
+## Other assets
+
+| File | For |
+| --- | --- |
+| `tf2_mvm.apworld` | The official Archipelago app. |
+| `tf2_archipelago.smx` | A SourceMod server the launcher and compose file don't manage. |
+| `tf2-defender-bots.zip` | The bots for that same server. Unzip into `tf/`. |
+| `meta.json`, `items.json`, `missions.json` | The item and check tables, for reference. |
+
+## Checking what you downloaded
+
+**`SHA256SUMS`** is attached to this release. It holds the hash of every file
+here, computed by the workflow that built them.
+
+```powershell
+Get-FileHash tf2ap.exe -Algorithm SHA256    # Windows
+```
+
+```sh
+sha256sum -c SHA256SUMS --ignore-missing    # Linux
+```
+
+Each binary carries a signed record of the commit and the workflow that built
+it:
+
+```sh
+gh attestation verify tf2ap.exe --repo m-this/tf2-archipelago
+```
+
+The binaries are scanned on VirusTotal, and the reports are linked at the end of
+these notes. Expect a few heuristic detections and no named malware family. The
+source is all in the repository, and `make launcher` rebuilds the exe on your
+own machine.
+
+## Code signing policy
+
+Free code signing for open source projects, provided by
+[SignPath.org](https://signpath.org), with a certificate from the
+[SignPath Foundation](https://signpath.org).
+
+&gt; [!WARNING]
+&gt; The application is open, not granted. Nothing is signed yet: `tf2ap.exe` ships
+&gt; unsigned, and Windows warns about it until that changes.
+
+
+## What's Changed
+* fix(apworld): per-class slots generate with useful slots or classes by @m-this in https://github.com/m-this/tf2-archipelago/pull/270
+* fix(docker): say which address to join, bind srcds to its Compose network by @m-this in https://github.com/m-this/tf2-archipelago/pull/271
+* fix(bridge): say why the bridge is not on the room by @m-this in https://github.com/m-this/tf2-archipelago/pull/272
+* fix(launcher): say why the server restarts after a long settings window by @m-this in https://github.com/m-this/tf2-archipelago/pull/273
+* fix(debugbundle): say whether Steam gave the server a relay address by @m-this in https://github.com/m-this/tf2-archipelago/pull/274
+* fix(web): say why the Missions page is empty by @m-this in https://github.com/m-this/tf2-archipelago/pull/275
+
+
+**Full Changelog**: https://github.com/m-this/tf2-archipelago/compare/v1.18.9...v1.18.10
+
+## VirusTotal
+
+- [`tf2ap.exe`](https://www.virustotal.com/gui/file-analysis/ZWYzMTA3YWM4MjdiOTFjOWVkZGNmN2MzMDU4NDBmNDk6MTc5NTc4MDQ4OQ==/detection)
+- [`tf2ap-linux-amd64`](https://www.virustotal.com/gui/file-analysis/NTliMmFmOGY0ZTFkMGMyYzczYTMyODEzYWUwODdkNWQ6MTc5NTc4MDQ5MQ==/detection)
+</content>
+    <link href="https://github.com/m-this/tf2-archipelago/releases/tag/v1.18.10"/>
   </entry>
 </feed>

@@ -17,10 +17,10 @@
 #### v0.1.5rc0
 - <a href="https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.5-CharacterUpdate/commandmission.apworld">https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.5-CharacterUpdate/commandmission.apworld</a>
 
-#### v0.1.2r3
+#### v0.1.2.post3
 - <a href="https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.4/commandmission.apworld">https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.4/commandmission.apworld</a>
 
-#### v0.1.2r2
+#### v0.1.2.post2
 - <a href="https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.3/commandmission.apworld">https://github.com/themogulAP/ArchipelagoCM/releases/download/V0.1.3/commandmission.apworld</a>
 
 #### v0.1.2

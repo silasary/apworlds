@@ -1,11 +1,11 @@
 # Demon Tides
 
 ## Latest
-- <a href="https://github.com/RobertSPratley/DemonTidesAPWorld/releases/download/v0.1.0/demontides.apworld">Latest Version (0.0.0r2)</a>
+- <a href="https://github.com/RobertSPratley/DemonTidesAPWorld/releases/download/v0.1.0/demontides.apworld">Latest Version (0.0.0.post2)</a>
 
 ## All Versions
 
-#### v0.0.0r2
+#### v0.0.0.post2
 - <a href="https://github.com/RobertSPratley/DemonTidesAPWorld/releases/download/v0.1.0/demontides.apworld">https://github.com/RobertSPratley/DemonTidesAPWorld/releases/download/v0.1.0/demontides.apworld</a>
 
 #### v0.0.0

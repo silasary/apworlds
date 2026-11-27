@@ -13,9 +13,9 @@ cheats didn't cover) plus a couple of story flags. ~15-20 minutes.
 - Python 3
 - A save file with at least one file slot started (get past the title screen)
 
-You do NOT need the AP patch for this — plain vanilla Robobot is best.
+You do NOT need the AP patch for this: plain vanilla Robobot is best.
 
-## Step 1 — Install the memory-pipe plugin (no compiling)
+## Step 1: Install the memory-pipe plugin (no compiling)
 
 The plugin is game-agnostic, so we reuse LittleCube's prebuilt one.
 
@@ -28,36 +28,36 @@ The plugin is game-agnostic, so we reuse LittleCube's prebuilt one.
 5. Azahar -> **Emulation -> Configure -> Debug** -> enable **RPC Server**.
    (Newer Azahar ships with RPC OFF by default, so this step matters.)
 
-## Step 2 — Boot and confirm
+## Step 2: Boot and confirm
 
 1. Launch Robobot (`.cci`). Load a save file (past the title screen).
 2. You should see a brief flash / plugin message at boot = the memory pipe is
    live on UDP 45987.
 
 WARNING: some Azahar builds crash on boot when the 3GX loader is enabled
-(azahar issue #1381). If Robobot won't start with it on, tell me — there's a
+(azahar issue #1381). If Robobot won't start with it on, tell me: there's a
 fallback.
 
-## Step 3 — Run the scanner
+## Step 3: Run the scanner
 
 With the game running and a save loaded:
 
     python kpr_find_addresses.py
 
-(For a real 3DS on your LAN: `python kpr_find_addresses.py 192.168.x.x`)
+(For a real 3DS on your LAN: `python kpr_find_addresses.py 111.222.3.44`)
 
 It will:
 
-1. **Find the save automatically** — it checks the known European addresses, and
+1. **Find the save automatically**: it checks the known European addresses, and
    if your NA copy differs, it scans for the sticker-array signature and locates
    it. You do nothing here; just watch it print the confirmed address.
-2. **Code Cubes** — it asks you to stand next to an uncollected Code Cube, press
+2. **Code Cubes**: it asks you to stand next to an uncollected Code Cube, press
    Enter (before), collect EXACTLY ONE cube, press Enter (after). It prints the
    cube bit + counter.
-3. **Clear a stage** — before/after around beating one stage.
-4. **Unlock next level** — before/after around clearing a boss.
+3. **Clear a stage**: before/after around beating one stage.
+4. **Unlock next level**: before/after around clearing a boss.
 
-## Step 4 — Send the output
+## Step 4: Send the output
 
 Copy the ENTIRE terminal output (especially the "SUMMARY TO SEND BACK" section)
 and send it here. From that I finalize MemoryMap.py and the client goes live.

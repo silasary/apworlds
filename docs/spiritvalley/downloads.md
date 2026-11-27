@@ -35,10 +35,10 @@
 #### v0.5.0
 - <a href="https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/download/V0.5.0/spiritvalley.apworld">https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/download/V0.5.0/spiritvalley.apworld</a>
 
-#### v0.4.0r3
+#### v0.4.0.post3
 - <a href="https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/download/V0.4.2/spiritvalley.apworld">https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/download/V0.4.2/spiritvalley.apworld</a>
 
-#### v0.4.0r2
+#### v0.4.0.post2
 - <a href="https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/download/V0.4.1/spiritvalley.apworld">https://github.com/DotsofdarknessArchipelago/Spirit-Valley-Archipelago/releases/download/V0.4.1/spiritvalley.apworld</a>
 
 #### v0.4.0

@@ -9,6 +9,7 @@
 ## Optional Software
 
 * The use of [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/releases) is highly recommended.
+* Alternatively, use Joxtacy's [Poptracker Pack](https://github.com/Joxtacy/commander-keen-goodbye-galaxy-ap-tracker/releases).
 
 ## Installation Procedures
 

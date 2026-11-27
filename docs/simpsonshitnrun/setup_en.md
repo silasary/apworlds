@@ -67,5 +67,4 @@ I'll assume you're familiar with randomizers in general. AP randos are separated
 
 The checks are: Missions, wasps, cards, gags, talking to the character that would sell you a mission needed car (Barney, Homer, Otto, Willie, etc), and Gil's shops.
 
-Your goal is configurable in the yaml, generally its some combination of mission, wasp, and card completions. The "goal" is for every slot in the multiworld to reach its goal. By default, reaching your goal will send all of your undone checks and make all unsent items for your game be sent to you. This can be configured. 
-
+Your goal is configurable in the yaml, generally its some combination of mission, wasp, and card completions. The "goal" is for every slot in the multiworld to reach its goal. By default, reaching your goal will send all of your undone checks and make all unsent items for your game be sent to you. This can be configured.

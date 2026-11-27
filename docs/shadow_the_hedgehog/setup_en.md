@@ -63,4 +63,3 @@ Available
 - AH: Available hero items in the pool
 
 e.g. CH.Westopolis: 10 -- set the Hero Clear requirement to 10%.
-

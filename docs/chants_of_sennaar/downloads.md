@@ -11,7 +11,7 @@
 #### v0.3.0
 - <a href="https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/download/0.3.0/chants_of_sennaar.apworld">https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/download/0.3.0/chants_of_sennaar.apworld</a>
 
-#### v0.2.0r2
+#### v0.2.0.post2
 - <a href="https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/download/0.2.1/chants_of_sennaar.apworld">https://github.com/syn-aesthesis/ChantsOfSennaarAP/releases/download/0.2.1/chants_of_sennaar.apworld</a>
 
 #### v0.2.0

@@ -20,7 +20,7 @@
 #### v2.1.0
 - <a href="https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.0/keymasters_keep.apworld">https://github.com/silasary/Archipelago/releases/download/keymasters_keep-2.1.0/keymasters_keep.apworld</a>
 
-#### v2.0.1r2
+#### v2.0.1.post2
 - <a href="https://github.com/jack5github/Archipelago/releases/download/keymasters_keep-2.0.1/keymasters_keep.apworld">https://github.com/jack5github/Archipelago/releases/download/keymasters_keep-2.0.1/keymasters_keep.apworld</a>
 
 #### v2.0.1

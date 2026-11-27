@@ -55,4 +55,4 @@ Sports Mix mode.)
 
 N'hésitez pas à la proposer dans le [fil de discussion Mario Sports Mix](https://discord.com/channels/731205301247803413/1485699253450833942)
 sur le [serveur Archipelago](https://discord.gg/archipelago) (vous pouvez contacter le créateur de l'Apworld en
-mentionnant @electrostarz :] 
+mentionnant @electrostarz :]

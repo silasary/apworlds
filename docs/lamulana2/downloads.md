@@ -56,34 +56,34 @@
 #### v0.8.1
 - <a href="https://github.com/Crownmuri/Archipelago/releases/download/v0.8.1/lamulana2.apworld">https://github.com/Crownmuri/Archipelago/releases/download/v0.8.1/lamulana2.apworld</a>
 
-#### v0.7.3r5
+#### v0.7.3.post5
 - <a href="https://github.com/Crownmuri/Archipelago/releases/download/v0.8.0/lamulana2.apworld">https://github.com/Crownmuri/Archipelago/releases/download/v0.8.0/lamulana2.apworld</a>
 
-#### v0.7.3r4
+#### v0.7.3.post4
 - <a href="https://github.com/Crownmuri/Archipelago/releases/download/v0.7.5/lamulana2.apworld">https://github.com/Crownmuri/Archipelago/releases/download/v0.7.5/lamulana2.apworld</a>
 
-#### v0.7.3r3
+#### v0.7.3.post3
 - <a href="https://github.com/Crownmuri/Archipelago/releases/download/v0.7.5/lamulana2.apworld">https://github.com/Crownmuri/Archipelago/releases/download/v0.7.5/lamulana2.apworld</a>
 
-#### v0.7.3r2
+#### v0.7.3.post2
 - <a href="https://github.com/Crownmuri/Archipelago/releases/download/v0.7.4/lamulana2.apworld">https://github.com/Crownmuri/Archipelago/releases/download/v0.7.4/lamulana2.apworld</a>
 
 #### v0.7.3
 - <a href="https://github.com/Crownmuri/Archipelago/releases/download/v0.7.3/lamulana2.apworld">https://github.com/Crownmuri/Archipelago/releases/download/v0.7.3/lamulana2.apworld</a>
 
-#### v0.7.0r4
+#### v0.7.0.post4
 - <a href="https://github.com/Crownmuri/Archipelago/releases/download/v0.7.2a/lamulana2.apworld">https://github.com/Crownmuri/Archipelago/releases/download/v0.7.2a/lamulana2.apworld</a>
 
-#### v0.7.0r3
+#### v0.7.0.post3
 - <a href="https://github.com/Crownmuri/Archipelago/releases/download/v0.7.2/lamulana2.apworld">https://github.com/Crownmuri/Archipelago/releases/download/v0.7.2/lamulana2.apworld</a>
 
-#### v0.7.0r2
+#### v0.7.0.post2
 - <a href="https://github.com/Crownmuri/Archipelago/releases/download/v0.7.1/lamulana2.apworld">https://github.com/Crownmuri/Archipelago/releases/download/v0.7.1/lamulana2.apworld</a>
 
 #### v0.7.0
 - <a href="https://github.com/Crownmuri/Archipelago/releases/download/v0.7.0/lamulana2.apworld">https://github.com/Crownmuri/Archipelago/releases/download/v0.7.0/lamulana2.apworld</a>
 
-#### v0.5.0r2
+#### v0.5.0.post2
 - <a href="https://github.com/Crownmuri/Archipelago/releases/download/v0.5.5/lamulana2.apworld">https://github.com/Crownmuri/Archipelago/releases/download/v0.5.5/lamulana2.apworld</a>
 
 #### v0.5.0

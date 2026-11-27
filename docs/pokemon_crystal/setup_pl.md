@@ -94,6 +94,3 @@ Pokémon Crystal posiada w pełni funkcjonalny moduł śledzenia mapy, który ob
 3. Otwórz PopTracker i załaduj pakiet Pokémon Crystal.
 4. Aby włączyć automatyczne śledzenie, kliknij symbol `AP` u góry.
 5. Wprowadź adres serwera Archipelago (ten, z którym połączyłeś swojego klienta), nazwę slotu i hasło. Jeśli nie ustawiłeś hasła dla swojego pokoju, pozostaw to pole puste.
-
-
-

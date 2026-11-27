@@ -1,26 +1,26 @@
 # A Link to the Past Beta
 
 ## Latest
-- <a href="https://github.com/Alchav/Archipelago/releases/download/alttp2026-v6/alttp_beta.apworld">Latest Version (6.0.2r3)</a>
+- <a href="https://github.com/Alchav/Archipelago/releases/download/alttp2026-v6/alttp_beta.apworld">Latest Version (6.0.2.post5)</a>
 
 ## All Versions
 
-#### v6.0.2r3
+#### v6.0.2.post5
 - <a href="https://github.com/Alchav/Archipelago/releases/download/alttp2026-v6/alttp_beta.apworld">https://github.com/Alchav/Archipelago/releases/download/alttp2026-v6/alttp_beta.apworld</a>
 
-#### v6.0.2r3
+#### v6.0.2.post4
+- <a href="https://github.com/Alchav/Archipelago/releases/download/alttp2026-v5/alttp_beta.apworld">https://github.com/Alchav/Archipelago/releases/download/alttp2026-v5/alttp_beta.apworld</a>
+
+#### v6.0.2.post3
 - <a href="https://github.com/Alchav/Archipelago/releases/download/alttp2026v4/alttp_beta.apworld">https://github.com/Alchav/Archipelago/releases/download/alttp2026v4/alttp_beta.apworld</a>
 
-#### v6.0.2r2
+#### v6.0.2.post2
 - <a href="https://github.com/Alchav/Archipelago/releases/download/alttp2026-v3hotfix2/alttp_beta.apworld">https://github.com/Alchav/Archipelago/releases/download/alttp2026-v3hotfix2/alttp_beta.apworld</a>
-
-#### v6.0.2r2
-- <a href="https://github.com/Alchav/Archipelago/releases/download/alttp2026-v5/alttp_beta.apworld">https://github.com/Alchav/Archipelago/releases/download/alttp2026-v5/alttp_beta.apworld</a>
 
 #### v6.0.2
 - <a href="https://github.com/Alchav/Archipelago/releases/download/alttp2026-v2/alttp_beta.apworld">https://github.com/Alchav/Archipelago/releases/download/alttp2026-v2/alttp_beta.apworld</a>
 
-#### v6.0.0r2
+#### v6.0.0.post2
 - <a href="https://github.com/Alchav/Archipelago/releases/download/alttp2026-v1/alttp_beta.apworld">https://github.com/Alchav/Archipelago/releases/download/alttp2026-v1/alttp_beta.apworld</a>
 
 #### v6.0.0

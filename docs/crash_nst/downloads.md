@@ -26,7 +26,7 @@
 #### v1.0.2
 - <a href="https://github.com/randomcodegen/CrashNST-AP/releases/download/1.0.2/crash_nst.apworld">https://github.com/randomcodegen/CrashNST-AP/releases/download/1.0.2/crash_nst.apworld</a>
 
-#### v1.0.0r2
+#### v1.0.0.post2
 - <a href="https://github.com/randomcodegen/CrashNST-AP/releases/download/1.0.1/crash_nst.apworld">https://github.com/randomcodegen/CrashNST-AP/releases/download/1.0.1/crash_nst.apworld</a>
 
 #### v1.0.0

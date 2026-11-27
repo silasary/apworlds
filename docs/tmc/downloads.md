@@ -29,7 +29,7 @@
 #### v0.0.10
 - <a href="https://github.com/eternalcode0/Archipelago/releases/download/v0.0.10/tmc.apworld">https://github.com/eternalcode0/Archipelago/releases/download/v0.0.10/tmc.apworld</a>
 
-#### v0.0.9r2
+#### v0.0.9.post2
 - <a href="https://github.com/eternalcode0/Archipelago/releases/download/v0.0.9-hotfix-1/tmc.apworld">https://github.com/eternalcode0/Archipelago/releases/download/v0.0.9-hotfix-1/tmc.apworld</a>
 
 #### v0.0.9

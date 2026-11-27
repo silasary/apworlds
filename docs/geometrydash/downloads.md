@@ -17,7 +17,7 @@
 #### v1.0.0a9
 - <a href="https://github.com/matorblal-byte/ArchipelagoGD2/releases/download/v1.0.0-alpha.9/geometrydash.apworld">https://github.com/matorblal-byte/ArchipelagoGD2/releases/download/v1.0.0-alpha.9/geometrydash.apworld</a>
 
-#### v1.0.0a8r2
+#### v1.0.0a8.post2
 - <a href="https://github.com/matorblal-byte/ArchipelagoGD2/releases/download/v1.0.0-alpha.8.5/geometrydash.apworld">https://github.com/matorblal-byte/ArchipelagoGD2/releases/download/v1.0.0-alpha.8.5/geometrydash.apworld</a>
 
 #### v1.0.0a8

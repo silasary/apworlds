@@ -78,4 +78,3 @@ This is likely a bug, but I believe it pertains to how the randomizer is using i
 move preexisting objects around. (It works this way to preserve IDs for archipelago locations).
 
 One workaround is to place multiple copies of the object in the same space.
-

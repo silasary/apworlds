@@ -1,6 +1,6 @@
 # Metroid Dread
 
-
+Metroid Dread is a 2D action-adventure game and the fifth main installment in the Metroid series.
 
 
 ## Downloads

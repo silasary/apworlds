@@ -1,11 +1,11 @@
 # Neon White
 
 ## Latest
-- <a href="https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/download/v0.2.1/neonwhite.apworld">Latest Version (0.2.0r2)</a>
+- <a href="https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/download/v0.2.1/neonwhite.apworld">Latest Version (0.2.0.post2)</a>
 
 ## All Versions
 
-#### v0.2.0r2
+#### v0.2.0.post2
 - <a href="https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/download/v0.2.1/neonwhite.apworld">https://github.com/Badhamknibbs/ArchipelagoNeonWhite/releases/download/v0.2.1/neonwhite.apworld</a>
 
 #### v0.2.0

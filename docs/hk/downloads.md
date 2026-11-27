@@ -8,7 +8,7 @@
 #### v1.1.4
 - <a href="https://github.com/qwint/Archipelago/releases/download/1.1.4/hk.apworld">https://github.com/qwint/Archipelago/releases/download/1.1.4/hk.apworld</a>
 
-#### v1.1.2r2
+#### v1.1.2.post2
 - <a href="https://github.com/qwint/Archipelago/releases/download/1.1.3/hk.apworld">https://github.com/qwint/Archipelago/releases/download/1.1.3/hk.apworld</a>
 
 #### v1.1.2

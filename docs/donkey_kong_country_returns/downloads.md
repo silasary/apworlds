@@ -18,18 +18,18 @@
 - <a href="https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.2.2-beta/donkey_kong_country_returns.apworld">https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.2.2-beta/donkey_kong_country_returns.apworld</a>
 
 #### v0.2.0.post3
+- <a href="https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.2.1-beta/donkey_kong_country_returns.apworld">https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.2.1-beta/donkey_kong_country_returns.apworld</a>
+
+#### v0.2.0.post2
 - <a href="https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.2.0-beta/donkey_kong_country_returns.apworld">https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.2.0-beta/donkey_kong_country_returns.apworld</a>
 
 #### v0.2.0.post2
 - <a href="https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.2.0-beta/donkey_kong_country_returns.apworld">https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.2.0-beta/donkey_kong_country_returns.apworld</a>
 
-#### v0.2.0
-- <a href="https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.2.1-beta/donkey_kong_country_returns.apworld">https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.2.1-beta/donkey_kong_country_returns.apworld</a>
-
 #### v0.2.0b0
 - <a href="https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.2.0-beta/donkey_kong_country_returns.apworld">https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.2.0-beta/donkey_kong_country_returns.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.1.2-beta/donkey_kong_country_returns.apworld">https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.1.2-beta/donkey_kong_country_returns.apworld</a>
 
 #### v0.1.0
@@ -38,10 +38,10 @@
 #### v0.1.0b0
 - <a href="https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.1.0-beta/donkey_kong_country_returns.apworld">https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.1.0-beta/donkey_kong_country_returns.apworld</a>
 
-#### v0.0.2r3
+#### v0.0.2.post3
 - <a href="https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.0.4/donkey_kong_country_returns.apworld">https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.0.4/donkey_kong_country_returns.apworld</a>
 
-#### v0.0.2r2
+#### v0.0.2.post2
 - <a href="https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.0.3/donkey_kong_country_returns.apworld">https://github.com/CallmeZewo/DKCR_APWorld/releases/download/v0.0.3/donkey_kong_country_returns.apworld</a>
 
 #### v0.0.2

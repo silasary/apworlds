@@ -8,22 +8,22 @@
 #### v1.4.0
 - <a href="https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.40/normalgolfgame.apworld">https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.40/normalgolfgame.apworld</a>
 
-#### v0.0.2r2
+#### v0.0.2.post2
 - <a href="https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.32hotfix/normalgolfgame.apworld">https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.32hotfix/normalgolfgame.apworld</a>
 
 #### v0.0.2
 - <a href="https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.32/normalgolfgame.apworld">https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.32/normalgolfgame.apworld</a>
 
-#### v0.0.1r5
+#### v0.0.1.post5
 - <a href="https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.31/normalgolfgame.apworld">https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.31/normalgolfgame.apworld</a>
 
-#### v0.0.1r4
+#### v0.0.1.post4
 - <a href="https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.3/normalgolfgame.apworld">https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.3/normalgolfgame.apworld</a>
 
-#### v0.0.1r3
+#### v0.0.1.post3
 - <a href="https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.2/normalgolfgame.apworld">https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.2/normalgolfgame.apworld</a>
 
-#### v0.0.1r2
+#### v0.0.1.post2
 - <a href="https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.1/normalgolfgame.apworld">https://github.com/owlyoop/Normal-Golf-Game-Archipelago/releases/download/v0.1.1/normalgolfgame.apworld</a>
 
 #### v0.0.1

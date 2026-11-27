@@ -20,14 +20,14 @@
 #### v0.17.0
 - <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.17.0/brotato.apworld">https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.17.0/brotato.apworld</a>
 
-#### v0.15.0r3
+#### v0.15.0.post4
 - <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.16.0/brotato.apworld">https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.16.0/brotato.apworld</a>
 
-#### v0.15.0r2
-- <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.15.1/brotato.apworld">https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.15.1/brotato.apworld</a>
-
-#### v0.15.0r2
+#### v0.15.0.post3
 - <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.15.2/brotato.apworld">https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.15.2/brotato.apworld</a>
+
+#### v0.15.0.post2
+- <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.15.1/brotato.apworld">https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.15.1/brotato.apworld</a>
 
 #### v0.15.0
 - <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.15.0/brotato.apworld">https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.15.0/brotato.apworld</a>
@@ -41,7 +41,7 @@
 #### v0.13.0
 - <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.13.0/brotato.apworld">https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.13.0/brotato.apworld</a>
 
-#### v0.12.1r2
+#### v0.12.1.post2
 - <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.12.1/brotato.apworld">https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.12.1/brotato.apworld</a>
 
 #### v0.12.1
@@ -50,11 +50,11 @@
 #### v0.12.0
 - <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.12.0/brotato.apworld">https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.12.0/brotato.apworld</a>
 
+#### v0.11.1.post2
+- <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/new-cd-test/brotato.apworld">https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/new-cd-test/brotato.apworld</a>
+
 #### v0.11.1r2
 - <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.11.1/brotato.apworld">https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.11.1/brotato.apworld</a>
-
-#### v0.11.1
-- <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/new-cd-test/brotato.apworld">https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/new-cd-test/brotato.apworld</a>
 
 #### v0.11.0
 - <a href="https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.11.0/brotato.apworld">https://github.com/SpenserHaddad/Brotato-ArchipelagoClient/releases/download/v0.11.0/brotato.apworld</a>

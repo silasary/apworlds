@@ -1,10 +1,10 @@
 # Quest 64 Recompiled
 
-
+Quest 64, as the recompiled port plays it.
 
 
 ## Downloads
-- <a href="https://github.com/FuzzynessUK/Quest64-Recomp/releases/download/v1.9.2/quest64.apworld">Latest Version (1.10.0r3)</a>
+- <a href="https://github.com/FuzzynessUK/Quest64-Recomp/releases/download/v1.9.2/quest64.apworld">Latest Version (1.10.0.post3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

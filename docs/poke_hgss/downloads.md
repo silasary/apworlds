@@ -11,19 +11,19 @@
 #### v0.11.0
 - <a href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.6/poke_hgss.apworld">https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.6/poke_hgss.apworld</a>
 
-#### v0.10.0r4
+#### v0.10.0.post6
 - <a href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.5/poke_hgss.apworld">https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.5/poke_hgss.apworld</a>
 
-#### v0.10.0r3
+#### v0.10.0.post5
 - <a href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.5/poke_hgss.apworld">https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.5/poke_hgss.apworld</a>
 
-#### v0.10.0r3
+#### v0.10.0.post4
 - <a href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.5/poke_hgss.apworld">https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.5/poke_hgss.apworld</a>
 
-#### v0.10.0r2
+#### v0.10.0.post3
 - <a href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.5/poke_hgss.apworld">https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.5/poke_hgss.apworld</a>
 
-#### v0.10.0r2
+#### v0.10.0.post2
 - <a href="https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.5/poke_hgss.apworld">https://github.com/SingeKiller/Pok-HeartGold_Apworld/releases/download/v0.2.5/poke_hgss.apworld</a>
 
 #### v0.10.0

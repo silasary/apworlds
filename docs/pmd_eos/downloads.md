@@ -65,11 +65,11 @@
 #### v0.2.1rc1
 - <a href="https://github.com/CrypticMonkey33/ArchipelagoExplorersOfSky/releases/download/v0.2.1rc1/pmd_eos.apworld">https://github.com/CrypticMonkey33/ArchipelagoExplorersOfSky/releases/download/v0.2.1rc1/pmd_eos.apworld</a>
 
+#### v0.2.0.post3
+- <a href="https://github.com/CrypticMonkey33/ArchipelagoExplorersOfSky/releases/download/v0.2.0Post3/pmd_eos.apworld">https://github.com/CrypticMonkey33/ArchipelagoExplorersOfSky/releases/download/v0.2.0Post3/pmd_eos.apworld</a>
+
 #### v0.2.0.post2
 - <a href="https://github.com/CrypticMonkey33/ArchipelagoExplorersOfSky/releases/download/v0.2.0Post2/pmd_eos.apworld">https://github.com/CrypticMonkey33/ArchipelagoExplorersOfSky/releases/download/v0.2.0Post2/pmd_eos.apworld</a>
-
-#### v0.2.0r2
-- <a href="https://github.com/CrypticMonkey33/ArchipelagoExplorersOfSky/releases/download/v0.2.0Post3/pmd_eos.apworld">https://github.com/CrypticMonkey33/ArchipelagoExplorersOfSky/releases/download/v0.2.0Post3/pmd_eos.apworld</a>
 
 #### v0.2.0
 - <a href="https://github.com/CrypticMonkey33/ArchipelagoExplorersOfSky/releases/download/v0.2.0/pmd_eos.apworld">https://github.com/CrypticMonkey33/ArchipelagoExplorersOfSky/releases/download/v0.2.0/pmd_eos.apworld</a>

@@ -11,7 +11,7 @@
 #### v1.2.1a0
 - <a href="https://github.com/mwoiii/webfishing-ap/releases/download/v1.2.1-alpha/webfishing.apworld">https://github.com/mwoiii/webfishing-ap/releases/download/v1.2.1-alpha/webfishing.apworld</a>
 
-#### v1.2.0.post3
+#### v1.2.0.post2
 - <a href="https://github.com/mwoiii/webfishing-ap/releases/download/v1.2.0-alpha/webfishing.apworld">https://github.com/mwoiii/webfishing-ap/releases/download/v1.2.0-alpha/webfishing.apworld</a>
 
 #### v1.2.0.post2

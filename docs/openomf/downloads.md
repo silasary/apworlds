@@ -11,7 +11,7 @@
 #### v0.0.4
 - <a href="https://github.com/stubobis1/archipelago-openomf-apworld/releases/download/omf-0.0.4/openomf.apworld">https://github.com/stubobis1/archipelago-openomf-apworld/releases/download/omf-0.0.4/openomf.apworld</a>
 
-#### v0.0.2r2
+#### v0.0.2.post2
 - <a href="https://github.com/stubobis1/archipelago-openomf-apworld/releases/download/omf-0.0.3/openomf.apworld">https://github.com/stubobis1/archipelago-openomf-apworld/releases/download/omf-0.0.3/openomf.apworld</a>
 
 #### v0.0.2

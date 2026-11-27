@@ -29,4 +29,3 @@ Les objets appartenant à d'autres mondes sont représentés par une Étoile de 
 
 Quand le joueur reçoit un objet, Link montrera l'objet au monde en le mettant au-dessus de sa tête. C'est bon pour
 les affaires !
-

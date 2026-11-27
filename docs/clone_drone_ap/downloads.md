@@ -8,16 +8,16 @@
 #### v2.0
 - <a href="https://github.com/adeko69/Clone_Drone_AP/releases/download/v2.0/clone_drone_ap.apworld">https://github.com/adeko69/Clone_Drone_AP/releases/download/v2.0/clone_drone_ap.apworld</a>
 
-#### v1.3.2r2
+#### v1.3.2.post3
 - <a href="https://github.com/adeko69/Clone_Drone_AP/releases/download/v1.3.2/clone_drone_ap.apworld">https://github.com/adeko69/Clone_Drone_AP/releases/download/v1.3.2/clone_drone_ap.apworld</a>
 
 #### v1.3.2r2
 - <a href="https://github.com/adeko69/Clone_Drone_AP/releases/download/v1.3.2-early/clone_drone_ap.apworld">https://github.com/adeko69/Clone_Drone_AP/releases/download/v1.3.2-early/clone_drone_ap.apworld</a>
 
-#### v1.3.2
+#### v1.3.2.post2
 - <a href="https://github.com/adeko69/Clone_Drone_AP/releases/download/v1.3.2-early-1/clone_drone_ap.apworld">https://github.com/adeko69/Clone_Drone_AP/releases/download/v1.3.2-early-1/clone_drone_ap.apworld</a>
 
-#### v1.3.1r2
+#### v1.3.1.post2
 - <a href="https://github.com/adeko69/Clone_Drone_AP/releases/download/v1.3.1/clone_drone_ap.apworld">https://github.com/adeko69/Clone_Drone_AP/releases/download/v1.3.1/clone_drone_ap.apworld</a>
 
 #### v1.3.1

@@ -44,16 +44,14 @@ longer a requirement.
 Additionally, custom items are required to hang out with Papyrus, Undyne, and to enter the True Lab. 
 The respective items for each interaction are `Complete Skeleton`, `Fish`, and `DT Extractor`.
 Alongside the `Undyne Letter EX` to date Alphys like vanilla.
-The True Lab also needs you to have the items necessary to unlock the New Home keychain to enter the elevator.
 
 There are also a few **universal** changes, which are always true.
 
 The Riverperson will only take you to locations you have seen them at. For example, they will only take you to
 Waterfall if you have seen them at Waterfall at least once.
 
-If you press `W` while in the savepoint menu, you will teleport back to the flower room, 
-for quick access to the other areas. (Some rooms will not allow you to warp out for the possibility of softlocking your 
-save)
+If you press `W` while in the savepoint menu, you will be able to access a warp menu which can take you to any 
+savepoint you have been to before on this save.
 
 ## Unique Local Commands
 

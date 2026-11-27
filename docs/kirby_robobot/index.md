@@ -7,7 +7,7 @@ Cubes, wield 27 copy abilities and the Robobot Armor, and unlock every mode.
 
 
 ## Downloads
-- <a href="https://github.com/WindChill404/Kirby-Planet-Robobot-Archipelago/releases/download/v0.0.2/kirby_robobot.apworld">Latest Version (0.1.0r2)</a>
+- <a href="https://github.com/WindChill404/Kirby-Planet-Robobot-Archipelago/releases/download/v0.0.3/kirby_robobot.apworld">Latest Version (0.1.0.post3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -1,15 +1,15 @@
 # Isles of Trials
 
 ## Latest
-- <a href="https://github.com/NyanMC/ap-islesoftrials/releases/download/0.2.0d/isles_of_trials.apworld">Latest Version (0.2.0r2)</a>
+- <a href="https://github.com/NyanMC/ap-islesoftrials/releases/download/0.2.0e/isles_of_trials.apworld">Latest Version (0.2.0.post3)</a>
 
 ## All Versions
 
-#### v0.2.0r2
-- <a href="https://github.com/NyanMC/ap-islesoftrials/releases/download/0.2.0d/isles_of_trials.apworld">https://github.com/NyanMC/ap-islesoftrials/releases/download/0.2.0d/isles_of_trials.apworld</a>
-
-#### v0.2.0r2
+#### v0.2.0.post3
 - <a href="https://github.com/NyanMC/ap-islesoftrials/releases/download/0.2.0e/isles_of_trials.apworld">https://github.com/NyanMC/ap-islesoftrials/releases/download/0.2.0e/isles_of_trials.apworld</a>
+
+#### v0.2.0.post2
+- <a href="https://github.com/NyanMC/ap-islesoftrials/releases/download/0.2.0d/isles_of_trials.apworld">https://github.com/NyanMC/ap-islesoftrials/releases/download/0.2.0d/isles_of_trials.apworld</a>
 
 #### v0.2.0
 - <a href="https://github.com/NyanMC/ap-islesoftrials/releases/download/0.2.0/isles_of_trials.apworld">https://github.com/NyanMC/ap-islesoftrials/releases/download/0.2.0/isles_of_trials.apworld</a>

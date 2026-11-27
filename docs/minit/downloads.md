@@ -8,7 +8,7 @@
 #### v0.7.0
 - <a href="https://github.com/qwint/APMinit/releases/download/v0.7.0/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.7.0/minit.apworld</a>
 
-#### v0.6.11r2
+#### v0.6.11.post2
 - <a href="https://github.com/qwint/APMinit/releases/download/v0.6.12/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.12/minit.apworld</a>
 
 #### v0.6.11
@@ -17,13 +17,13 @@
 #### v0.6.10
 - <a href="https://github.com/qwint/APMinit/releases/download/v0.6.10/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.10/minit.apworld</a>
 
-#### v0.6.6r4
+#### v0.6.6.post4
 - <a href="https://github.com/qwint/APMinit/releases/download/v0.6.9/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.9/minit.apworld</a>
 
-#### v0.6.6r3
+#### v0.6.6.post3
 - <a href="https://github.com/qwint/APMinit/releases/download/v0.6.8/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.8/minit.apworld</a>
 
-#### v0.6.6r2
+#### v0.6.6.post2
 - <a href="https://github.com/qwint/APMinit/releases/download/v0.6.7/minit.apworld">https://github.com/qwint/APMinit/releases/download/v0.6.7/minit.apworld</a>
 
 #### v0.6.6

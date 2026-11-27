@@ -58,4 +58,3 @@ If the user has minigames on, dying while the timer is ready will send a death l
 - Navigate to your archipelago base folder (default C:\ProgramData\Archipelago).
 - Open your Web Client of choice
 - Connect to the room via the AP panel at the top left
-

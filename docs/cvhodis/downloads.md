@@ -1,11 +1,11 @@
 # Castlevania - Harmony of Dissonance
 
 ## Latest
-- <a href="https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v2.0hotfix/cvhodis.apworld">Latest Version (2.0r2)</a>
+- <a href="https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v2.0hotfix/cvhodis.apworld">Latest Version (2.0.post2)</a>
 
 ## All Versions
 
-#### v2.0r2
+#### v2.0.post2
 - <a href="https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v2.0hotfix/cvhodis.apworld">https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvhodis_v2.0hotfix/cvhodis.apworld</a>
 
 #### v2.0

@@ -14,7 +14,7 @@
 #### v0.2.0
 - <a href="https://github.com/SanchoBob8/Archipelago-MM7/releases/download/0.2.0/mm7.apworld">https://github.com/SanchoBob8/Archipelago-MM7/releases/download/0.2.0/mm7.apworld</a>
 
-#### v0.0.1r2
+#### v0.0.1.post2
 - <a href="https://github.com/SanchoBob8/Archipelago-MM7/releases/download/0.1.0/mm7.apworld">https://github.com/SanchoBob8/Archipelago-MM7/releases/download/0.1.0/mm7.apworld</a>
 
 #### v0.0.1

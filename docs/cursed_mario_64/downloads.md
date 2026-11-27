@@ -32,7 +32,7 @@
 #### v0.1.6
 - <a href="https://github.com/IncidiousJacob/Cursed-Mario-64/releases/download/Colorful-Update/Cursed_Mario_64.apworld">https://github.com/IncidiousJacob/Cursed-Mario-64/releases/download/Colorful-Update/Cursed_Mario_64.apworld</a>
 
-#### v0.1.5r2
+#### v0.1.5.post2
 - <a href="https://github.com/IncidiousJacob/Cursed-Mario-64/releases/download/Filler/Cursed_Mario_64.apworld">https://github.com/IncidiousJacob/Cursed-Mario-64/releases/download/Filler/Cursed_Mario_64.apworld</a>
 
 #### v0.1.5
@@ -41,7 +41,7 @@
 #### v0.1.4
 - <a href="https://github.com/IncidiousJacob/Cursed-Mario-64/releases/download/Bowser-Soul-Update/Cursed_Mario_64.apworld">https://github.com/IncidiousJacob/Cursed-Mario-64/releases/download/Bowser-Soul-Update/Cursed_Mario_64.apworld</a>
 
-#### v0.1.3r2
+#### v0.1.3.post2
 - <a href="https://github.com/IncidiousJacob/Cursed-Mario-64/releases/download/nextone/Cursed_Mario_64.apworld">https://github.com/IncidiousJacob/Cursed-Mario-64/releases/download/nextone/Cursed_Mario_64.apworld</a>
 
 #### v0.1.3

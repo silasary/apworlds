@@ -11,13 +11,13 @@
 #### v1.0.0b0
 - <a href="https://github.com/studkid/RiftArchipelago/releases/download/v1.0.0-beta/rotn.apworld">https://github.com/studkid/RiftArchipelago/releases/download/v1.0.0-beta/rotn.apworld</a>
 
-#### v0.17.0r2
+#### v0.17.0.post2
 - <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.18.0/rotn.apworld">https://github.com/studkid/RiftArchipelago/releases/download/v0.18.0/rotn.apworld</a>
 
 #### v0.17.0
 - <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.17.0/rotn.apworld">https://github.com/studkid/RiftArchipelago/releases/download/v0.17.0/rotn.apworld</a>
 
-#### v0.15.0r2
+#### v0.15.0.post2
 - <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.16.0/rotn.apworld">https://github.com/studkid/RiftArchipelago/releases/download/v0.16.0/rotn.apworld</a>
 
 #### v0.15.0
@@ -53,10 +53,10 @@
 #### v0.7.1
 - <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.7.1/rotn.apworld">https://github.com/studkid/RiftArchipelago/releases/download/v0.7.1/rotn.apworld</a>
 
-#### v0.6.0r3
+#### v0.6.0.post3
 - <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.7/rotn.apworld">https://github.com/studkid/RiftArchipelago/releases/download/v0.7/rotn.apworld</a>
 
-#### v0.6.0r2
+#### v0.6.0.post2
 - <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.6.1/rotn.apworld">https://github.com/studkid/RiftArchipelago/releases/download/v0.6.1/rotn.apworld</a>
 
 #### v0.6.0
@@ -74,14 +74,14 @@
 #### v0.3.1
 - <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.3.1/rotn.apworld">https://github.com/studkid/RiftArchipelago/releases/download/v0.3.1/rotn.apworld</a>
 
-#### v0.3r3
-- <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.3-pre2/rotn.apworld">https://github.com/studkid/RiftArchipelago/releases/download/v0.3-pre2/rotn.apworld</a>
+#### v0.3.post3
+- <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.3/rotn.apworld">https://github.com/studkid/RiftArchipelago/releases/download/v0.3/rotn.apworld</a>
 
 #### v0.3r2
 - <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.3-pre/rotn.apworld">https://github.com/studkid/RiftArchipelago/releases/download/v0.3-pre/rotn.apworld</a>
 
-#### v0.3
-- <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.3/rotn.apworld">https://github.com/studkid/RiftArchipelago/releases/download/v0.3/rotn.apworld</a>
+#### v0.3.post2
+- <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.3-pre2/rotn.apworld">https://github.com/studkid/RiftArchipelago/releases/download/v0.3-pre2/rotn.apworld</a>
 
 #### v0.3rc3
 - <a href="https://github.com/studkid/RiftArchipelago/releases/download/v0.3-pre3/rotn.apworld">https://github.com/studkid/RiftArchipelago/releases/download/v0.3-pre3/rotn.apworld</a>

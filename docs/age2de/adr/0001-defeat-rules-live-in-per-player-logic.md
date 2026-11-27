@@ -1,7 +1,3 @@
----
-status: accepted
----
-
 # Defeat rules live in the logic layer, keyed by Age2PlayerData
 
 Partner trade needs to know when P1 can defeat one specific opponent, but "can P1 defeat this player"

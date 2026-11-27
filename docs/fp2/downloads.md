@@ -1,15 +1,15 @@
 # Freedom Planet 2
 
 ## Latest
-- <a href="https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/download/1.0.0.p1/fp2.apworld">Latest Version (1.0.0r3)</a>
+- <a href="https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/download/1.0.0.p2/fp2.apworld">Latest Version (1.0.0.post3)</a>
 
 ## All Versions
 
-#### v1.0.0r3
-- <a href="https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/download/1.0.0.p1/fp2.apworld">https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/download/1.0.0.p1/fp2.apworld</a>
-
-#### v1.0.0r2
+#### v1.0.0.post3
 - <a href="https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/download/1.0.0.p2/fp2.apworld">https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/download/1.0.0.p2/fp2.apworld</a>
+
+#### v1.0.0.post2
+- <a href="https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/download/1.0.0.p1/fp2.apworld">https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/download/1.0.0.p1/fp2.apworld</a>
 
 #### v1.0.0
 - <a href="https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/download/1.0.0/fp2.apworld">https://github.com/Knuxfan24/Freedom-Planet-2-Archipelago/releases/download/1.0.0/fp2.apworld</a>

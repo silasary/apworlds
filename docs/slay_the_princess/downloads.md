@@ -8,17 +8,17 @@
 #### v1.3.0
 - <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-1.3.0/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-1.3.0/slay_the_princess.apworld</a>
 
-#### v1.0.0r3
-- <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-1.2.0/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-1.2.0/slay_the_princess.apworld</a>
-
-#### v1.0.0r3
+#### v1.0.0.post5
 - <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-1.2.2/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-1.2.2/slay_the_princess.apworld</a>
 
-#### v1.0.0r2
-- <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-1.0.0/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-1.0.0/slay_the_princess.apworld</a>
+#### v1.0.0.post4
+- <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-1.2.0/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-1.2.0/slay_the_princess.apworld</a>
 
-#### v1.0.0r2
+#### v1.0.0.post3
 - <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-1.1.0/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-1.1.0/slay_the_princess.apworld</a>
+
+#### v1.0.0.post2
+- <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-1.0.0/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-1.0.0/slay_the_princess.apworld</a>
 
 #### v1.0.0
 - <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-1.2.1/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-1.2.1/slay_the_princess.apworld</a>
@@ -26,22 +26,22 @@
 #### v0.9.0b0
 - <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.9.0b/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.9.0b/slay_the_princess.apworld</a>
 
-#### v0.8.0r3
+#### v0.8.0.post5
 - <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.4/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.4/slay_the_princess.apworld</a>
+
+#### v0.8.0.post4
+- <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.3/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.3/slay_the_princess.apworld</a>
+
+#### v0.8.0.post3
+- <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.1/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.1/slay_the_princess.apworld</a>
 
 #### v0.8.0.post2
 - <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.0/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.0/slay_the_princess.apworld</a>
 
-#### v0.8.0r2
-- <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.1/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.1/slay_the_princess.apworld</a>
-
-#### v0.8.0r2
-- <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.3/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.3/slay_the_princess.apworld</a>
-
 #### v0.8.0
 - <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.0/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.8.0/slay_the_princess.apworld</a>
 
-#### v0.6.0r2
+#### v0.6.0.post2
 - <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.6.1/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.6.1/slay_the_princess.apworld</a>
 
 #### v0.6.0
@@ -53,13 +53,13 @@
 #### v0.3.0
 - <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.5.0/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.5.0/slay_the_princess.apworld</a>
 
+#### v0.1.1.post3
+- <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.2.0/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.2.0/slay_the_princess.apworld</a>
+
 #### v0.1.1r3
 - <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.2.1/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.2.1/slay_the_princess.apworld</a>
 
-#### v0.1.1r2
-- <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.2.0/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.2.0/slay_the_princess.apworld</a>
-
-#### v0.1.1
+#### v0.1.1.post2
 - <a href="https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.1.1/slay_the_princess.apworld">https://github.com/Overlord-Draconic-Fire/Archipelago/releases/download/STP-0.1.1/slay_the_princess.apworld</a>
 
 #### v0.1.0

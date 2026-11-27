@@ -93,4 +93,3 @@ The following is a solution provided by a kind soul, use at your own risk.
 
 A tracker is available via [Poptracker](https://github.com/black-sliver/PopTracker/releases). 
 The data required for Ender lilies are available [here](https://github.com/lurch9229/ender-lilies-poptracker/releases).
-

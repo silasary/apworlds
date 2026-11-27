@@ -69,12 +69,3 @@ There exist location groups for all item categories as well. This means that if 
 * **Bosses**
 * **Shops**
 * **Everywhere**
-
-
-
-
-
-
-
-
-

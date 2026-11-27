@@ -19,7 +19,7 @@ If you skate into an area you don't have yet, Corn stops you and the client send
 | Recruiting Rhyth, Boogie, Cube, Jazz and Soda | 5 | Character Unlock Checks: Recruits |
 | The characters Roboy's Test Runs hand out | 12 more | Character Unlock Checks: All |
 | A Jet rank on each of Roboy's Test Runs | 39 | Include Jet Ranks |
-| Graffiti tag spots, save point tags included | 572 | Include Graffiti Tags (off by default) |
+| Graffiti tag spots, save point tags included | 573 | Include Graffiti Tags (off by default) |
 
 ## Which items are in the pool?
 

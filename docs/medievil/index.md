@@ -4,7 +4,7 @@ Medievil is a game about an idiot who died and was accidentally resurrected as a
 
 
 ## Downloads
-- <a href="https://github.com/riezahughes/MedievilAPWorld/releases/download/v0.5.2/medievil.apworld">Latest Version (0.3.0r4)</a>
+- <a href="https://github.com/riezahughes/MedievilAPWorld/releases/download/v0.5.3/medievil.apworld">Latest Version (0.3.0.post8)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

@@ -11,7 +11,7 @@
 #### v0.2.2
 - <a href="https://github.com/GhostCappy/Archipelago/releases/download/kssu-v0.2.2/kssu.apworld">https://github.com/GhostCappy/Archipelago/releases/download/kssu-v0.2.2/kssu.apworld</a>
 
-#### v0.2.1r2
+#### v0.2.1.post2
 - <a href="https://github.com/GhostCappy/Archipelago/releases/download/kssu-v0.2.1/kssu.apworld">https://github.com/GhostCappy/Archipelago/releases/download/kssu-v0.2.1/kssu.apworld</a>
 
 #### v0.2.1

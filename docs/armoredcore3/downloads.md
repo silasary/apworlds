@@ -14,7 +14,7 @@
 #### v0.1.2
 - <a href="https://github.com/Aleksandylmao/Armored-Core-3-PCSX2-Archipelago/releases/download/v0.1.2/armoredcore3.apworld">https://github.com/Aleksandylmao/Armored-Core-3-PCSX2-Archipelago/releases/download/v0.1.2/armoredcore3.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/Aleksandylmao/Armored-Core-3-PCSX2-Archipelago/releases/download/v0.1.1/armoredcore3.apworld">https://github.com/Aleksandylmao/Armored-Core-3-PCSX2-Archipelago/releases/download/v0.1.1/armoredcore3.apworld</a>
 
 #### v0.1.0

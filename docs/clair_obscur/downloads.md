@@ -11,11 +11,11 @@
 #### v0.4.3
 - <a href="https://github.com/Demorck/ClairObscur_APWorld/releases/download/v0.4.3/clair_obscur.apworld">https://github.com/Demorck/ClairObscur_APWorld/releases/download/v0.4.3/clair_obscur.apworld</a>
 
-#### v0.4.0r2
-- <a href="https://github.com/Demorck/ClairObscur_APWorld/releases/download/v0.4.1/clair_obscur.apworld">https://github.com/Demorck/ClairObscur_APWorld/releases/download/v0.4.1/clair_obscur.apworld</a>
-
-#### v0.4.0r2
+#### v0.4.0.post3
 - <a href="https://github.com/Demorck/ClairObscur_APWorld/releases/download/v0.4.2/clair_obscur.apworld">https://github.com/Demorck/ClairObscur_APWorld/releases/download/v0.4.2/clair_obscur.apworld</a>
+
+#### v0.4.0.post2
+- <a href="https://github.com/Demorck/ClairObscur_APWorld/releases/download/v0.4.1/clair_obscur.apworld">https://github.com/Demorck/ClairObscur_APWorld/releases/download/v0.4.1/clair_obscur.apworld</a>
 
 #### v0.4.0
 - <a href="https://github.com/Demorck/ClairObscur_APWorld/releases/download/v0.4.0/clair_obscur.apworld">https://github.com/Demorck/ClairObscur_APWorld/releases/download/v0.4.0/clair_obscur.apworld</a>

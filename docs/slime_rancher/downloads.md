@@ -17,7 +17,7 @@
 #### v0.3.0
 - <a href="https://github.com/SWCreeperKing/Slimipelago/releases/download/v0.3.0/slime_rancher.apworld">https://github.com/SWCreeperKing/Slimipelago/releases/download/v0.3.0/slime_rancher.apworld</a>
 
-#### v0.2.3r2
+#### v0.2.3.post2
 - <a href="https://github.com/SWCreeperKing/Slimipelago/releases/download/v0.2.4/slime_rancher.apworld">https://github.com/SWCreeperKing/Slimipelago/releases/download/v0.2.4/slime_rancher.apworld</a>
 
 #### v0.2.3

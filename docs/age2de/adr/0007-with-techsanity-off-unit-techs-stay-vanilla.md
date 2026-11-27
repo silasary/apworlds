@@ -1,7 +1,3 @@
----
-status: accepted
----
-
 # With Techsanity off, unit techs stay vanilla
 
 **This applies only under `unitsanity_items: upgrades`**, the one Unitsanity Items mode where a

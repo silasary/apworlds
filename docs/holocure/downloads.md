@@ -8,7 +8,7 @@
 #### v0.2.5
 - <a href="https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.2.5/holocure.apworld">https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.2.5/holocure.apworld</a>
 
-#### v0.2.3r2
+#### v0.2.3.post2
 - <a href="https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.2.4/holocure.apworld">https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.2.4/holocure.apworld</a>
 
 #### v0.2.3
@@ -23,7 +23,7 @@
 #### v0.2.0
 - <a href="https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.2.0/holocure.apworld">https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.2.0/holocure.apworld</a>
 
-#### v0.1.1r2
+#### v0.1.1.post2
 - <a href="https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.1.2/holocure.apworld">https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.1.2/holocure.apworld</a>
 
 #### v0.1.1
@@ -32,7 +32,7 @@
 #### v0.1.0
 - <a href="https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.1.0/holocure.apworld">https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.1.0/holocure.apworld</a>
 
-#### v0.0.1r2
+#### v0.0.1.post2
 - <a href="https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.0.2/holocure.apworld">https://github.com/PippleCultist/HoloCureArchipelagoMod/releases/download/v0.0.2/holocure.apworld</a>
 
 #### v0.0.1

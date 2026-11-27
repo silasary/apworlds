@@ -9,4 +9,3 @@ trying the manual, as this **will** require some knowledge from at least one com
 ## What are the checks?
 
 Item pickups and certain actions and things are the checks in this manual, and the items you pickup are items you can received from the multiworld.
-

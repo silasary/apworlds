@@ -1,11 +1,11 @@
 # Refunct
 
 ## Latest
-- <a href="https://github.com/spinerak/refunct-tas-archipelago/releases/download/v1.8.0d/refunct.apworld">Latest Version (1.8.0r2)</a>
+- <a href="https://github.com/spinerak/refunct-tas-archipelago/releases/download/v1.8.0d/refunct.apworld">Latest Version (1.8.0.post2)</a>
 
 ## All Versions
 
-#### v1.8.0r2
+#### v1.8.0.post2
 - <a href="https://github.com/spinerak/refunct-tas-archipelago/releases/download/v1.8.0d/refunct.apworld">https://github.com/spinerak/refunct-tas-archipelago/releases/download/v1.8.0d/refunct.apworld</a>
 
 #### v1.8.0
@@ -20,7 +20,7 @@
 #### v1.8.0a0
 - <a href="https://github.com/spinerak/refunct-tas-archipelago/releases/download/v1.8.0a/refunct.apworld">https://github.com/spinerak/refunct-tas-archipelago/releases/download/v1.8.0a/refunct.apworld</a>
 
-#### v1.7.0r2
+#### v1.7.0.post2
 - <a href="https://github.com/spinerak/refunct-tas-archipelago/releases/download/v1.7.0/refunct.apworld">https://github.com/spinerak/refunct-tas-archipelago/releases/download/v1.7.0/refunct.apworld</a>
 
 #### v1.7.0
@@ -104,11 +104,11 @@
 #### v0.8.1
 - <a href="https://github.com/spinerak/refunct-tas-archipelago/releases/download/v0.8.1/refunct.apworld">https://github.com/spinerak/refunct-tas-archipelago/releases/download/v0.8.1/refunct.apworld</a>
 
+#### v0.8.0.post2
+- <a href="https://github.com/spinerak/refunct-tas-archipelago/releases/download/v0.8.0/refunct.apworld">https://github.com/spinerak/refunct-tas-archipelago/releases/download/v0.8.0/refunct.apworld</a>
+
 #### v0.8.0r2
 - <a href="https://github.com/spinerak/refunct-tas-archipelago/releases/download/v0.8.0-TEST/refunct.apworld">https://github.com/spinerak/refunct-tas-archipelago/releases/download/v0.8.0-TEST/refunct.apworld</a>
-
-#### v0.8.0
-- <a href="https://github.com/spinerak/refunct-tas-archipelago/releases/download/v0.8.0/refunct.apworld">https://github.com/spinerak/refunct-tas-archipelago/releases/download/v0.8.0/refunct.apworld</a>
 
 #### v0.7.0
 - <a href="https://github.com/spinerak/refunct-tas-archipelago/releases/download/v0.7.0/refunct.apworld">https://github.com/spinerak/refunct-tas-archipelago/releases/download/v0.7.0/refunct.apworld</a>
@@ -146,7 +146,7 @@
 #### v0.4.0
 - <a href="https://github.com/spinerak/refunct-tas-archipelago/releases/download/v0.4.0/refunct.apworld">https://github.com/spinerak/refunct-tas-archipelago/releases/download/v0.4.0/refunct.apworld</a>
 
-#### v0.3.2r2
+#### v0.3.2.post2
 - <a href="https://github.com/spinerak/refunct-tas-archipelago/releases/download/v0.3.2/refunct.apworld">https://github.com/spinerak/refunct-tas-archipelago/releases/download/v0.3.2/refunct.apworld</a>
 
 #### v0.3.2

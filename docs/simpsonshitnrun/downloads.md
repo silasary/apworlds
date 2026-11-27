@@ -14,7 +14,7 @@
 #### v0.5.3b0
 - <a href="https://github.com/nmize1/Archipelago/releases/download/v0.5.3-b/simpsonshitnrun.apworld">https://github.com/nmize1/Archipelago/releases/download/v0.5.3-b/simpsonshitnrun.apworld</a>
 
-#### v0.5.0r2
+#### v0.5.0.post2
 - <a href="https://github.com/nmize1/Archipelago/releases/download/v0.5.2-b/simpsonshitnrun.apworld">https://github.com/nmize1/Archipelago/releases/download/v0.5.2-b/simpsonshitnrun.apworld</a>
 
 #### v0.5.0
@@ -80,15 +80,15 @@
 #### v0.2.4
 - <a href="https://github.com/nmize1/Archipelago/releases/download/v0.2.4b/simpsonshitnrun.apworld">https://github.com/nmize1/Archipelago/releases/download/v0.2.4b/simpsonshitnrun.apworld</a>
 
-#### v0.1.3r2
+#### v0.1.3.post2
 - <a href="https://github.com/nmize1/Archipelago/releases/download/v0.1.3b/simpsonshitnrun.apworld">https://github.com/nmize1/Archipelago/releases/download/v0.1.3b/simpsonshitnrun.apworld</a>
 
-#### v0.1.2r2
+#### v0.1.2.post2
 - <a href="https://github.com/nmize1/Archipelago/releases/download/v0.1.2b/simpsonshitnrun.apworld">https://github.com/nmize1/Archipelago/releases/download/v0.1.2b/simpsonshitnrun.apworld</a>
 
-#### v0.1.1r2
+#### v0.1.1.post2
 - <a href="https://github.com/nmize1/Archipelago/releases/download/v0.1.1b/simpsonshitnrun.apworld">https://github.com/nmize1/Archipelago/releases/download/v0.1.1b/simpsonshitnrun.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/nmize1/Archipelago/releases/download/v0.1.0b/simpsonshitnrun.apworld">https://github.com/nmize1/Archipelago/releases/download/v0.1.0b/simpsonshitnrun.apworld</a>
 

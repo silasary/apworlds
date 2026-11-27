@@ -8,7 +8,7 @@
 #### v0.5.5
 - <a href="https://github.com/ScipioWright/Archipelago-SW/releases/download/0.5.5/animal_well.apworld">https://github.com/ScipioWright/Archipelago-SW/releases/download/0.5.5/animal_well.apworld</a>
 
-#### v0.5.4r2
+#### v0.5.4.post3
 - <a href="https://github.com/ScipioWright/Archipelago-SW/releases/download/0.5.4/animal_well.apworld">https://github.com/ScipioWright/Archipelago-SW/releases/download/0.5.4/animal_well.apworld</a>
 
 #### v0.5.4.post2

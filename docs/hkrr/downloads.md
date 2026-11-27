@@ -1,11 +1,11 @@
 # Hello Kitty: Roller Rescue
 
 ## Latest
-- <a href="https://github.com/richarm4/Archipelago/releases/download/hkrr-0.2.1/hkrr.apworld">Latest Version (0.2.0r2)</a>
+- <a href="https://github.com/richarm4/Archipelago/releases/download/hkrr-0.2.1/hkrr.apworld">Latest Version (0.2.0.post2)</a>
 
 ## All Versions
 
-#### v0.2.0r2
+#### v0.2.0.post2
 - <a href="https://github.com/richarm4/Archipelago/releases/download/hkrr-0.2.1/hkrr.apworld">https://github.com/richarm4/Archipelago/releases/download/hkrr-0.2.1/hkrr.apworld</a>
 
 #### v0.2.0

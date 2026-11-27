@@ -42,6 +42,3 @@
 
 ## Further Reading
 - [wiki](https://github.com/Demorck/ClairObscur_APWorld/wiki/)
-
-
-

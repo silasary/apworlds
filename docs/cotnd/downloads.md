@@ -11,7 +11,7 @@
 #### v0.8.4
 - <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.4/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.4/cotnd.apworld</a>
 
-#### v0.8.2r2
+#### v0.8.2.post2
 - <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.3/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.3/cotnd.apworld</a>
 
 #### v0.8.2
@@ -20,11 +20,11 @@
 #### v0.8.1.post2
 - <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.1/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.1/cotnd.apworld</a>
 
+#### v0.8.0.post3
+- <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.1/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.1/cotnd.apworld</a>
+
 #### v0.8.0.post2
 - <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.0/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.0/cotnd.apworld</a>
-
-#### v0.8.0r2
-- <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.1/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.1/cotnd.apworld</a>
 
 #### v0.8.0
 - <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.0/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.8.0/cotnd.apworld</a>
@@ -41,7 +41,7 @@
 #### v0.6.0
 - <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.6.0/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.6.0/cotnd.apworld</a>
 
-#### v0.5.3r2
+#### v0.5.3.post2
 - <a href="https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.5.4/cotnd.apworld">https://github.com/lastingParadox/Archipelago-CotND/releases/download/v0.5.4/cotnd.apworld</a>
 
 #### v0.5.3

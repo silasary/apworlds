@@ -1,15 +1,15 @@
 # Mega Man Legends
 
 ## Latest
-- <a href="https://github.com/functorial/MMLAP/releases/download/v0.3.1/mml.apworld">Latest Version (0.3.0r2)</a>
+- <a href="https://github.com/functorial/MMLAP/releases/download/v0.3.2/mml.apworld">Latest Version (0.3.0.post3)</a>
 
 ## All Versions
 
-#### v0.3.0r2
-- <a href="https://github.com/functorial/MMLAP/releases/download/v0.3.1/mml.apworld">https://github.com/functorial/MMLAP/releases/download/v0.3.1/mml.apworld</a>
-
-#### v0.3.0r2
+#### v0.3.0.post3
 - <a href="https://github.com/functorial/MMLAP/releases/download/v0.3.2/mml.apworld">https://github.com/functorial/MMLAP/releases/download/v0.3.2/mml.apworld</a>
+
+#### v0.3.0.post2
+- <a href="https://github.com/functorial/MMLAP/releases/download/v0.3.1/mml.apworld">https://github.com/functorial/MMLAP/releases/download/v0.3.1/mml.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/functorial/MMLAP/releases/download/v0.3.0/mml.apworld">https://github.com/functorial/MMLAP/releases/download/v0.3.0/mml.apworld</a>
@@ -29,13 +29,13 @@
 #### v0.2.2
 - <a href="https://github.com/functorial/MMLAP/releases/download/v0.2.2/mml.apworld">https://github.com/functorial/MMLAP/releases/download/v0.2.2/mml.apworld</a>
 
-#### v0.1.0r4
+#### v0.1.0.post4
 - <a href="https://github.com/functorial/MMLAP/releases/download/v0.2.1/mml.apworld">https://github.com/functorial/MMLAP/releases/download/v0.2.1/mml.apworld</a>
 
-#### v0.1.0r3
+#### v0.1.0.post3
 - <a href="https://github.com/functorial/MMLAP/releases/download/v0.2.0/mml.apworld">https://github.com/functorial/MMLAP/releases/download/v0.2.0/mml.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/functorial/MMLAP/releases/download/v0.1.1/mml.apworld">https://github.com/functorial/MMLAP/releases/download/v0.1.1/mml.apworld</a>
 
 #### v0.1.0

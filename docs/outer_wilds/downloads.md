@@ -95,56 +95,56 @@
 #### v0.3.4
 - <a href="https://github.com/IxrecsRandomizers/OuterWildsArchipelagoRandomizer/releases/download/v0.3.4/outer_wilds.apworld">https://github.com/IxrecsRandomizers/OuterWildsArchipelagoRandomizer/releases/download/v0.3.4/outer_wilds.apworld</a>
 
+#### v0.3.3.post2
+- <a href="https://github.com/IxrecsRandomizers/OuterWildsArchipelagoRandomizer/releases/download/v0.3.3/outer_wilds.apworld">https://github.com/IxrecsRandomizers/OuterWildsArchipelagoRandomizer/releases/download/v0.3.3/outer_wilds.apworld</a>
+
 #### v0.3.3r2
 - <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.3-rc/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.3-rc/outer_wilds.apworld</a>
 
-#### v0.3.3
-- <a href="https://github.com/IxrecsRandomizers/OuterWildsArchipelagoRandomizer/releases/download/v0.3.3/outer_wilds.apworld">https://github.com/IxrecsRandomizers/OuterWildsArchipelagoRandomizer/releases/download/v0.3.3/outer_wilds.apworld</a>
+#### v0.3.2.post2
+- <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.2/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.2/outer_wilds.apworld</a>
 
 #### v0.3.2r2
 - <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.2-rc/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.2-rc/outer_wilds.apworld</a>
 
-#### v0.3.2
-- <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.2/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.2/outer_wilds.apworld</a>
-
-#### v0.3.1r2
+#### v0.3.1.post2
 - <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.1-rc/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.1-rc/outer_wilds.apworld</a>
 
 #### v0.3.1
 - <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.1/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.1/outer_wilds.apworld</a>
 
-#### v0.3.0r4
-- <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.0-rc3/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.0-rc3/outer_wilds.apworld</a>
+#### v0.3.0.post4
+- <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.0/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.0/outer_wilds.apworld</a>
 
-#### v0.3.0r3
-- <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.0-rc2/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.0-rc2/outer_wilds.apworld</a>
+#### v0.3.0.post3
+- <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.0-rc3/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.0-rc3/outer_wilds.apworld</a>
 
 #### v0.3.0r2
 - <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.0-rc/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.0-rc/outer_wilds.apworld</a>
 
-#### v0.3.0
-- <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.0/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.0/outer_wilds.apworld</a>
+#### v0.3.0.post2
+- <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.0-rc2/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.3.0-rc2/outer_wilds.apworld</a>
+
+#### v0.2.7.post2
+- <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.7/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.7/outer_wilds.apworld</a>
 
 #### v0.2.7r2
 - <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.7-rc/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.7-rc/outer_wilds.apworld</a>
 
-#### v0.2.7
-- <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.7/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.7/outer_wilds.apworld</a>
-
 #### v0.2.6
 - <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.6/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.6/outer_wilds.apworld</a>
 
-#### v0.2.5r2
+#### v0.2.5.post2
 - <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.5-rc/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.5-rc/outer_wilds.apworld</a>
 
 #### v0.2.5
 - <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.5/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.5/outer_wilds.apworld</a>
 
+#### v0.2.4.post2
+- <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.4/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.4/outer_wilds.apworld</a>
+
 #### v0.2.4r2
 - <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.4-rc/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.4-rc/outer_wilds.apworld</a>
-
-#### v0.2.4
-- <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.4/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.4/outer_wilds.apworld</a>
 
 #### v0.2.3
 - <a href="https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.3/outer_wilds.apworld">https://github.com/Ixrec/OuterWildsArchipelagoRandomizer/releases/download/v0.2.3/outer_wilds.apworld</a>

@@ -8,7 +8,7 @@
 #### v1.3.1
 - <a href="https://github.com/Studmuffin2227/VHAPMod/releases/download/v1.3.1/VHAP.apworld">https://github.com/Studmuffin2227/VHAPMod/releases/download/v1.3.1/VHAP.apworld</a>
 
-#### v1.3.0r2
+#### v1.3.0.post3
 - <a href="https://github.com/Studmuffin2227/VHAPMod/releases/download/v1.3.0/VHAP.apworld">https://github.com/Studmuffin2227/VHAPMod/releases/download/v1.3.0/VHAP.apworld</a>
 
 #### v1.3.0.post2

@@ -14,10 +14,10 @@
 #### v2.0.0
 - <a href="https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvlod_v2.0.0/cvlod.apworld">https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvlod_v2.0.0/cvlod.apworld</a>
 
-#### v0.1.0r3
+#### v0.1.0.post3
 - <a href="https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvlod_v1.1/cvlod.apworld">https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvlod_v1.1/cvlod.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvlod_v1.0hotfix/cvlod.apworld">https://github.com/LiquidCat64/LiquidCatipelago/releases/download/cvlod_v1.0hotfix/cvlod.apworld</a>
 
 #### v0.1.0

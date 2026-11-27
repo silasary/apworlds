@@ -6,4 +6,3 @@ The [player options page for this game](../player-options) contains all the opti
 config file.
 
 ## What is YARG?
-

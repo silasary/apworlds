@@ -38,7 +38,7 @@
 #### v0.0.4.post2
 - <a href="https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.0.4/mario_super_sluggers.apworld">https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.0.4/mario_super_sluggers.apworld</a>
 
-#### v0.0.3r2
+#### v0.0.3.post2
 - <a href="https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.0.4/mario_super_sluggers.apworld">https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.0.4/mario_super_sluggers.apworld</a>
 
 #### v0.0.3
@@ -47,7 +47,7 @@
 #### v0.0.2
 - <a href="https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.0.2/mario_super_sluggers.apworld">https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.0.2/mario_super_sluggers.apworld</a>
 
-#### v0.0.0r2
+#### v0.0.0.post2
 - <a href="https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.0.1/mario_super_sluggers.apworld">https://github.com/MarioManTAW/Archipelago/releases/download/sluggers-v0.0.1/mario_super_sluggers.apworld</a>
 
 #### v0.0.0

@@ -8,7 +8,7 @@
 #### v1.3.7
 - <a href="https://github.com/1-800-thewolf/AoM-Archipelago/releases/download/v1.3.7/aom.apworld">https://github.com/1-800-thewolf/AoM-Archipelago/releases/download/v1.3.7/aom.apworld</a>
 
-#### v1.3.5r2
+#### v1.3.5.post2
 - <a href="https://github.com/1-800-thewolf/AoM-Archipelago/releases/download/v1.3.6/aom.apworld">https://github.com/1-800-thewolf/AoM-Archipelago/releases/download/v1.3.6/aom.apworld</a>
 
 #### v1.3.5

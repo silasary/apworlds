@@ -39,4 +39,3 @@ The game will process the received treasure and add its value to the Poko count.
 ## Commands
 - /status - Check the current goal and the progress towards that goal.  
 - /cave <cave> - Check what a cave has been randomized to.
-

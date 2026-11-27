@@ -14,7 +14,7 @@
 #### v0.4.3.post2
 - <a href="https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/download/v0.4.3/deaths_door.apworld">https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/download/v0.4.3/deaths_door.apworld</a>
 
-#### v0.4.2r2
+#### v0.4.2.post2
 - <a href="https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/download/v0.4.3/deaths_door.apworld">https://github.com/Chris-Is-Awesome/DDArchipelagoRandomizer/releases/download/v0.4.3/deaths_door.apworld</a>
 
 #### v0.4.2

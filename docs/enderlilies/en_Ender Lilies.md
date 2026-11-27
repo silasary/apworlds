@@ -111,7 +111,3 @@ The fall animation can be canceled with a double jump, a dodge or the parry ring
 
 Switching loadouts (i.e., weapon sets) cancels the fall timer from certain weapons like Silva and Eleine, which makes 
 it possible to reach certain places that wouldn't normally be possible to get.
-
-
-
-

@@ -31,5 +31,3 @@ There is no particular appearance, except for notes which may have a notably dif
 
 ## When the player receives an item, what happens?
 If you recieve an item, a notification will appear. For songs, Freeplay will refresh with the new song, while other items may be put into a queue for the next song.
-
-

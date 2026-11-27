@@ -1,17 +1,26 @@
 # Team Fortress 2 Mann vs Machine
 
 ## Latest
-- <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.18.8/tf2_mvm.apworld">Latest Version (1.18.8r2)</a>
+- <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.18.10/tf2_mvm.apworld">Latest Version (1.18.10.post2)</a>
 
 ## All Versions
 
-#### v1.18.8r2
+#### v1.18.10.post2
+- <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.18.10/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.18.10/tf2_mvm.apworld</a>
+
+#### v1.18.10
+- <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
+
+#### v1.18.9
+- <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.18.9/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.18.9/tf2_mvm.apworld</a>
+
+#### v1.18.8.post2
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.18.8/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.18.8/tf2_mvm.apworld</a>
 
 #### v1.18.8
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.18.7r2
+#### v1.18.7.post2
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.18.7/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.18.7/tf2_mvm.apworld</a>
 
 #### v1.18.7
@@ -23,13 +32,13 @@
 #### v1.18.5
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.18.5/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.18.5/tf2_mvm.apworld</a>
 
-#### v1.18.4r2
+#### v1.18.4.post2
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
 #### v1.18.4
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.18.4/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.18.4/tf2_mvm.apworld</a>
 
-#### v1.18.3r2
+#### v1.18.3.post2
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
 #### v1.18.3
@@ -38,7 +47,7 @@
 #### v1.18.1
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.18.1/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.18.1/tf2_mvm.apworld</a>
 
-#### v1.18.0r2
+#### v1.18.0.post2
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
 #### v1.18.0
@@ -62,25 +71,25 @@
 #### v1.17.4
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.17.4/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.17.4/tf2_mvm.apworld</a>
 
-#### v1.17.3r2
+#### v1.17.3.post2
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
 #### v1.17.3
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.17.3/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.17.3/tf2_mvm.apworld</a>
 
-#### v1.17.2r3
+#### v1.17.2.post4
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.17.2r2
+#### v1.17.2.post3
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.17.2r2
+#### v1.17.2.post2
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.17.2/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.17.2/tf2_mvm.apworld</a>
 
 #### v1.17.2
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.17.1r2
+#### v1.17.1.post2
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.17.1/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.17.1/tf2_mvm.apworld</a>
 
 #### v1.17.1
@@ -92,7 +101,7 @@
 #### v1.16.2r2
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.16.2
+#### v1.16.2.post2
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.16.2/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.16.2/tf2_mvm.apworld</a>
 
 #### v1.16.1
@@ -101,10 +110,10 @@
 #### v1.16.0r2
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.16.0
+#### v1.16.0.post2
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.16.0/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.16.0/tf2_mvm.apworld</a>
 
-#### v1.15.0r2
+#### v1.15.0.post2
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
 #### v1.15.0
@@ -113,64 +122,64 @@
 #### v1.14.0
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.14.0/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.14.0/tf2_mvm.apworld</a>
 
-#### v1.13.0r3
+#### v1.13.0.post4
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.13.0r2
+#### v1.13.0.post3
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.13.0r2
+#### v1.13.0.post2
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
 #### v1.13.0
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.13.0/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.13.0/tf2_mvm.apworld</a>
 
-#### v1.12.0r3
+#### v1.12.0.post4
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.12.0r2
-- <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
-
-#### v1.12.0r2
+#### v1.12.0.post3
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.12.0/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.12.0/tf2_mvm.apworld</a>
+
+#### v1.12.0.post2
+- <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
 #### v1.12.0
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.11.0r5
+#### v1.11.0.post9
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.11.0r4
+#### v1.11.0.post8
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.11.0r4
+#### v1.11.0.post7
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.11.0r3
+#### v1.11.0.post6
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.11.0r3
+#### v1.11.0.post5
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.11.0r2
+#### v1.11.0.post4
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.11.0r2
-- <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
-
-#### v1.11.0r2
+#### v1.11.0.post3
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.11.0/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.11.0/tf2_mvm.apworld</a>
+
+#### v1.11.0.post2
+- <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
 #### v1.11.0
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
-#### v1.10.0r2
+#### v1.10.0.post2
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
 #### v1.10.0
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.10.0/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/v1.10.0/tf2_mvm.apworld</a>
 
-#### v1.9.0r2
+#### v1.9.0.post2
 - <a href="https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld">https://github.com/m-this/tf2-archipelago/releases/download/nightly/tf2_mvm.apworld</a>
 
 #### v1.9.0

@@ -35,7 +35,7 @@
 #### v0.2.1
 - <a href="https://github.com/blitzashspear/ap-yhtwtg/releases/download/release-0.2.1/yhtwtg.apworld">https://github.com/blitzashspear/ap-yhtwtg/releases/download/release-0.2.1/yhtwtg.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/blitzashspear/ap-yhtwtg/releases/download/release-0.2.0/yhtwtg.apworld">https://github.com/blitzashspear/ap-yhtwtg/releases/download/release-0.2.0/yhtwtg.apworld</a>
 
 #### v0.1.0

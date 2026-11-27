@@ -11,7 +11,7 @@
 #### v1.6.0
 - <a href="https://github.com/Nepley/eosd-apworld/releases/download/v1.6.0/th06.apworld">https://github.com/Nepley/eosd-apworld/releases/download/v1.6.0/th06.apworld</a>
 
-#### v1.5.0r2
+#### v1.5.0.post2
 - <a href="https://github.com/Nepley/eosd-apworld/releases/download/v1.5.1/th06.apworld">https://github.com/Nepley/eosd-apworld/releases/download/v1.5.1/th06.apworld</a>
 
 #### v1.5.0

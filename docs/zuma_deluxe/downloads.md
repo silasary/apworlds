@@ -20,7 +20,7 @@
 #### v0.1.5
 - <a href="https://github.com/Movido51/Archipelago/releases/download/zuma-deluxe-v0.1.6-b/zuma_deluxe.apworld">https://github.com/Movido51/Archipelago/releases/download/zuma-deluxe-v0.1.6-b/zuma_deluxe.apworld</a>
 
-#### v0.1.3r2
+#### v0.1.3.post2
 - <a href="https://github.com/Movido51/Archipelago/releases/download/v0.1.5-beta/zuma_deluxe.apworld">https://github.com/Movido51/Archipelago/releases/download/v0.1.5-beta/zuma_deluxe.apworld</a>
 
 #### v0.1.3

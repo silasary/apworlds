@@ -100,4 +100,3 @@ at the top of the LMClient. If the port number is correct, you are now connected
    - New Game Plus is ***not*** supported. You must use a brand new save after beating King Boo to continue sending checks, supposing you cannot release your game for some reason.
 
 ### Play the game
-

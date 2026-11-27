@@ -17,11 +17,11 @@
 #### v0.13.0a0
 - <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.13.0a/ttyd.apworld">https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.13.0a/ttyd.apworld</a>
 
-#### v0.12.0r2
-- <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.12.1/ttyd.apworld">https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.12.1/ttyd.apworld</a>
-
-#### v0.12.0r2
+#### v0.12.0.post3
 - <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.12.1a/ttyd.apworld">https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.12.1a/ttyd.apworld</a>
+
+#### v0.12.0.post2
+- <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.12.1/ttyd.apworld">https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.12.1/ttyd.apworld</a>
 
 #### v0.12.0
 - <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.12.0/ttyd.apworld">https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.12.0/ttyd.apworld</a>
@@ -41,10 +41,10 @@
 #### v0.10.2
 - <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.10.2/ttyd.apworld">https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.10.2/ttyd.apworld</a>
 
-#### v0.10.0r3
+#### v0.10.0.post3
 - <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.10.1a/ttyd.apworld">https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.10.1a/ttyd.apworld</a>
 
-#### v0.10.0r2
+#### v0.10.0.post2
 - <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.10.1/ttyd.apworld">https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.10.1/ttyd.apworld</a>
 
 #### v0.10.0
@@ -71,7 +71,7 @@
 #### v0.6.0
 - <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.6.0/ttyd.apworld">https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.6.0/ttyd.apworld</a>
 
-#### v0.5.3r2
+#### v0.5.3.post2
 - <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.5.3-HOTFIX/ttyd.apworld">https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.5.3-HOTFIX/ttyd.apworld</a>
 
 #### v0.5.3
@@ -86,7 +86,7 @@
 #### v0.5.0
 - <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.5.0/ttyd.apworld">https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.5.0/ttyd.apworld</a>
 
-#### v0.4.0r2
+#### v0.4.0.post2
 - <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.4.0-HOTFIX/ttyd.apworld">https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.4.0-HOTFIX/ttyd.apworld</a>
 
 #### v0.4.0
@@ -104,7 +104,7 @@
 #### v0.3.0
 - <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.3.0/ttyd.apworld">https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.3.0/ttyd.apworld</a>
 
-#### v0.2.0r2
+#### v0.2.0.post2
 - <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.2.0-HOTFIX/ttyd.apworld">https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.2.0-HOTFIX/ttyd.apworld</a>
 
 #### v0.2.0
@@ -113,7 +113,7 @@
 #### v0.1.1
 - <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.1.1/ttyd.apworld">https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.1.1/ttyd.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.1.0-HOTFIX/ttyd.apworld">https://github.com/jamesbrq/ArchipelagoTTYD/releases/download/v0.1.0-HOTFIX/ttyd.apworld</a>
 
 #### v0.1.0

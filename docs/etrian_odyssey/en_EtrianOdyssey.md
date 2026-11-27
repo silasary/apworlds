@@ -100,4 +100,3 @@ This is fine! Here are some recommended settings and guidelines:
 ## I found a bug!
 
 Nice! First, make sure its a bug specific to the randomizer, then go to the dedicated etrian odyssey discord channel in the Archipelago discord and let us know about it. Alternatively, you can open an issue on this github repository, but please let me (TheMasterZelda) know in the discord channel as I am not monitoring the issues actively.
-

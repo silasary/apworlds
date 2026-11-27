@@ -26,20 +26,20 @@
 #### v1.4.0
 - <a href="https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.4.0-M2/am2r.apworld">https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.4.0-M2/am2r.apworld</a>
 
-#### v1.3.0r5
+#### v1.3.0.post5
 - <a href="https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.3.2-M2/am2r.apworld">https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.3.2-M2/am2r.apworld</a>
 
-#### v1.3.0r4
+#### v1.3.0.post4
 - <a href="https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.3.1-M2/am2r.apworld">https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.3.1-M2/am2r.apworld</a>
+
+#### v1.3.0.post3
+- <a href="https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.3.0-M2/am2r.apworld">https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.3.0-M2/am2r.apworld</a>
 
 #### v1.3.0r3
 - <a href="https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.3.0-M2-beta/am2r.apworld">https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.3.0-M2-beta/am2r.apworld</a>
 
-#### v1.3.0r2
+#### v1.3.0.post2
 - <a href="https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.3.0-M2-RC2/am2r.apworld">https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.3.0-M2-RC2/am2r.apworld</a>
-
-#### v1.3.0
-- <a href="https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.3.0-M2/am2r.apworld">https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.3.0-M2/am2r.apworld</a>
 
 #### v1.2.0
 - <a href="https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.2.0-M2/am2r.apworld">https://github.com/Ehseezed/Archipelago-Integration/releases/download/1.2.0-M2/am2r.apworld</a>

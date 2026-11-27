@@ -1,4 +1,3 @@
-
 # Setup Guide for Banjo-Tooie Archipelago
 
 ## Important

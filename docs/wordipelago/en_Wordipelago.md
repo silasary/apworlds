@@ -1,4 +1,3 @@
-
 # Wordipelago
 ## Overview
 **Wordipelago** is a unique twist on the classic word-guessing game created by Josh Wardle and purchased by the New York Times. **Wordipelago** is a strategic reimagining of this word guessing game format, designed to work with the **Archipelago** multi-game system, it introduces restrictive starts, progressive mechanics, and configurable difficulty.

@@ -11,7 +11,7 @@
 #### v0.6.0
 - <a href="https://github.com/POD-io/HotS-ArchipelagoWorld/releases/download/v0.5.0/hots.apworld">https://github.com/POD-io/HotS-ArchipelagoWorld/releases/download/v0.5.0/hots.apworld</a>
 
-#### v0.5.0r2
+#### v0.5.0.post2
 - <a href="https://github.com/POD-io/HotS-ArchipelagoWorld/releases/download/v0.6.0/hots.apworld">https://github.com/POD-io/HotS-ArchipelagoWorld/releases/download/v0.6.0/hots.apworld</a>
 
 #### v0.5.0

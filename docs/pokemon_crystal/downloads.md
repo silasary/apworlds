@@ -368,11 +368,11 @@
 #### v3.0.0b1
 - <a href="https://github.com/gerbiljames/Archipelago-Crystal/releases/download/3.0.0-beta.1/pokemon_crystal.apworld">https://github.com/gerbiljames/Archipelago-Crystal/releases/download/3.0.0-beta.1/pokemon_crystal.apworld</a>
 
+#### v2.1.2.post3
+- <a href="https://github.com/zuils/Archipelago/releases/download/v2.1.2/pokemon_crystal.apworld">https://github.com/zuils/Archipelago/releases/download/v2.1.2/pokemon_crystal.apworld</a>
+
 #### v2.1.2.post2
 - <a href="https://github.com/gerbiljames/Archipelago-Crystal/releases/download/2.1.2/pokemon_crystal.apworld">https://github.com/gerbiljames/Archipelago-Crystal/releases/download/2.1.2/pokemon_crystal.apworld</a>
-
-#### v2.1.2r2
-- <a href="https://github.com/zuils/Archipelago/releases/download/v2.1.2/pokemon_crystal.apworld">https://github.com/zuils/Archipelago/releases/download/v2.1.2/pokemon_crystal.apworld</a>
 
 #### v2.1.2
 - <a href="https://github.com/AliceMousie/Archipelago/releases/download/2.1.2/pokemon_crystal.apworld">https://github.com/AliceMousie/Archipelago/releases/download/2.1.2/pokemon_crystal.apworld</a>

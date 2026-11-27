@@ -1,7 +1,3 @@
----
-status: accepted
----
-
 # The economy is a set of routes, resolved together
 
 Playtest #19 asked what the base pays for. The answer was nearly everything: every easy source

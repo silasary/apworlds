@@ -77,7 +77,7 @@
 #### v0.0.20
 - <a href="https://github.com/ArsonAssassin/DSAP/releases/download/0.0.20.0/dsr.apworld">https://github.com/ArsonAssassin/DSAP/releases/download/0.0.20.0/dsr.apworld</a>
 
-#### v0.0.19r2
+#### v0.0.19.post2
 - <a href="https://github.com/ArsonAssassin/DSAP/releases/download/0.0.19.1/dsr.apworld">https://github.com/ArsonAssassin/DSAP/releases/download/0.0.19.1/dsr.apworld</a>
 
 #### v0.0.19

@@ -17,7 +17,7 @@
 #### v1.3.1
 - <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvpor1.3.1/cv_por.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/cvpor1.3.1/cv_por.apworld</a>
 
-#### v1.3.0r2
+#### v1.3.0.post2
 - <a href="https://github.com/PinkSwitch/Archipelago/releases/download/cvpor1.3/cv_por.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/cvpor1.3/cv_por.apworld</a>
 
 #### v1.3.0

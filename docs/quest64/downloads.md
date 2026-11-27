@@ -1,26 +1,26 @@
 # Quest 64 Recompiled
 
 ## Latest
-- <a href="https://github.com/FuzzynessUK/Quest64-Recomp/releases/download/v1.9.2/quest64.apworld">Latest Version (1.10.0r3)</a>
+- <a href="https://github.com/FuzzynessUK/Quest64-Recomp/releases/download/v1.9.2/quest64.apworld">Latest Version (1.10.0.post3)</a>
 
 ## All Versions
 
-#### v1.10.0r3
+#### v1.10.0.post3
 - <a href="https://github.com/FuzzynessUK/Quest64-Recomp/releases/download/v1.9.2/quest64.apworld">https://github.com/FuzzynessUK/Quest64-Recomp/releases/download/v1.9.2/quest64.apworld</a>
 
-#### v1.10.0r2
+#### v1.10.0.post2
 - <a href="https://github.com/FuzzynessUK/Quest64-Recomp/releases/download/v1.9.1/quest64.apworld">https://github.com/FuzzynessUK/Quest64-Recomp/releases/download/v1.9.1/quest64.apworld</a>
 
 #### v1.10.0
 - <a href="https://github.com/FuzzynessUK/Quest64-Recomp/releases/download/v1.9.0/quest64.apworld">https://github.com/FuzzynessUK/Quest64-Recomp/releases/download/v1.9.0/quest64.apworld</a>
 
-#### v1.9.0r2
+#### v1.9.0.post2
 - <a href="https://github.com/FuzzynessUK/Quest64-Recomp/releases/download/v1.8.1/quest64.apworld">https://github.com/FuzzynessUK/Quest64-Recomp/releases/download/v1.8.1/quest64.apworld</a>
 
 #### v1.9.0
 - <a href="https://github.com/FuzzynessUK/Quest64-Recomp/releases/download/v1.8.0/quest64.apworld">https://github.com/FuzzynessUK/Quest64-Recomp/releases/download/v1.8.0/quest64.apworld</a>
 
-#### v1.8.0r2
+#### v1.8.0.post2
 - <a href="https://github.com/FuzzynessUK/Quest64-Recomp/releases/download/v1.7.1/quest64.apworld">https://github.com/FuzzynessUK/Quest64-Recomp/releases/download/v1.7.1/quest64.apworld</a>
 
 #### v1.8.0

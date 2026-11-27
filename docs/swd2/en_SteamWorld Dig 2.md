@@ -84,6 +84,7 @@ These are optional:
   - A bomb through the teleporter room's ceiling opens the way to the Jet Engine podium
 - Quests can no longer lock you out
   - Fen's quests are side quests
+- The Temple of Guidance's timed gate on the way to Fen stays open, so you can go back for anything you missed
 - El Machino's welcome speech always plays when walking into the trigger on the left
 - Rosie's Storage opens once its quest is done (in case you skipped Rosie's first interaction)
 - Ignition Axe damage against the Priest Boss (guarding the Ignition Axe podium) is normalized

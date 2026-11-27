@@ -1,48 +1,48 @@
 # Ocarina of Time
 
 ## Latest
-- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release13/oot.apworld">Latest Version (9.1.0r6)</a>
+- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release13/oot.apworld">Latest Version (9.1.0.post13)</a>
 
 ## All Versions
 
-#### v9.1.0r6
+#### v9.1.0.post13
 - <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release13/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release13/oot.apworld</a>
 
-#### v9.1.0r5
-- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release10/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release10/oot.apworld</a>
-
-#### v9.1.0r4
-- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release7/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release7/oot.apworld</a>
-
-#### v9.1.0r4
-- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release9/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release9/oot.apworld</a>
-
-#### v9.1.0r3
-- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release4/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release4/oot.apworld</a>
-
-#### v9.1.0r3
-- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release6/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release6/oot.apworld</a>
-
-#### v9.1.0r2
-- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release11/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release11/oot.apworld</a>
-
-#### v9.1.0r2
+#### v9.1.0.post12
 - <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release12/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release12/oot.apworld</a>
 
-#### v9.1.0r2
-- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release2/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release2/oot.apworld</a>
+#### v9.1.0.post11
+- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release11/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release11/oot.apworld</a>
 
-#### v9.1.0r2
+#### v9.1.0.post10
+- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release10/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release10/oot.apworld</a>
+
+#### v9.1.0.post9
+- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release9/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release9/oot.apworld</a>
+
+#### v9.1.0.post8
+- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release8/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release8/oot.apworld</a>
+
+#### v9.1.0.post7
+- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release7/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release7/oot.apworld</a>
+
+#### v9.1.0.post6
+- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release6/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release6/oot.apworld</a>
+
+#### v9.1.0.post5
+- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.10-release5/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.10-release5/oot.apworld</a>
+
+#### v9.1.0.post4
+- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release4/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release4/oot.apworld</a>
+
+#### v9.1.0.post3
 - <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release3/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release3/oot.apworld</a>
 
-#### v9.1.0r2
-- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release8/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release8/oot.apworld</a>
+#### v9.1.0.post2
+- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release2/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release2/oot.apworld</a>
 
 #### v9.1.0.post0
 - <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-release/oot.apworld</a>
-
-#### v9.1.0
-- <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.10-release5/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.10-release5/oot.apworld</a>
 
 #### v9.1.0b12
 - <a href="https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-beta12/oot.apworld">https://github.com/TreZc0/OoTR-APWorld/releases/download/v9.1.0-beta12/oot.apworld</a>

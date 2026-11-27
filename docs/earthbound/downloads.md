@@ -1,11 +1,11 @@
 # EarthBound
 
 ## Latest
-- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/earthboundap4.4rev070326/earthbound.apworld">Latest Version (4.4.0r2)</a>
+- <a href="https://github.com/PinkSwitch/Archipelago/releases/download/earthboundap4.4rev070326/earthbound.apworld">Latest Version (4.4.0.post2)</a>
 
 ## All Versions
 
-#### v4.4.0r2
+#### v4.4.0.post2
 - <a href="https://github.com/PinkSwitch/Archipelago/releases/download/earthboundap4.4rev070326/earthbound.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/earthboundap4.4rev070326/earthbound.apworld</a>
 
 #### v4.4.0
@@ -17,7 +17,7 @@
 #### v4.3.0
 - <a href="https://github.com/PinkSwitch/Archipelago/releases/download/earthboundap4.3/earthbound.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/earthboundap4.3/earthbound.apworld</a>
 
-#### v4.2.7r2
+#### v4.2.7.post2
 - <a href="https://github.com/PinkSwitch/Archipelago/releases/download/earthboundap4.2.7/earthbound.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/earthboundap4.2.7/earthbound.apworld</a>
 
 #### v4.2.7

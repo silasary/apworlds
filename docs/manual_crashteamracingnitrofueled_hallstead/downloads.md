@@ -11,7 +11,7 @@
 #### v6.3.2
 - <a href="https://github.com/Hallstead/manual_crashteamracingnitrofueled_hallstead/releases/download/v6.3.2/manual_crashteamracingnitrofueled_hallstead.apworld">https://github.com/Hallstead/manual_crashteamracingnitrofueled_hallstead/releases/download/v6.3.2/manual_crashteamracingnitrofueled_hallstead.apworld</a>
 
-#### v6.3.1r2
+#### v6.3.1.post2
 - <a href="https://github.com/Hallstead/manual_crashteamracingnitrofueled_hallstead/releases/download/v6.3.1.1/manual_crashteamracingnitrofueled_hallstead.apworld">https://github.com/Hallstead/manual_crashteamracingnitrofueled_hallstead/releases/download/v6.3.1.1/manual_crashteamracingnitrofueled_hallstead.apworld</a>
 
 #### v6.3.1
@@ -44,7 +44,7 @@
 #### v4.5
 - <a href="https://github.com/Hallstead/manual_crashteamracingnitrofueled_hallstead/releases/download/v4.5/manual_crashteamracingnitrofueled_hallstead.apworld">https://github.com/Hallstead/manual_crashteamracingnitrofueled_hallstead/releases/download/v4.5/manual_crashteamracingnitrofueled_hallstead.apworld</a>
 
-#### v4.4r2
+#### v4.4.post2
 - <a href="https://github.com/Hallstead/manual_crashteamracingnitrofueled_hallstead/releases/download/v4.4.1/manual_crashteamracingnitrofueled_hallstead.apworld">https://github.com/Hallstead/manual_crashteamracingnitrofueled_hallstead/releases/download/v4.4.1/manual_crashteamracingnitrofueled_hallstead.apworld</a>
 
 #### v4.4

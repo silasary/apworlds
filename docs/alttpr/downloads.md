@@ -44,7 +44,7 @@
 #### v1.3.0
 - <a href="https://github.com/aurabot24/Archipelago-ALttPR/releases/download/v1.3.0/alttpr.apworld">https://github.com/aurabot24/Archipelago-ALttPR/releases/download/v1.3.0/alttpr.apworld</a>
 
-#### v1.2.2r2
+#### v1.2.2.post2
 - <a href="https://github.com/aurabot24/Archipelago-ALttPR/releases/download/v1.2.3/alttpr.apworld">https://github.com/aurabot24/Archipelago-ALttPR/releases/download/v1.2.3/alttpr.apworld</a>
 
 #### v1.2.2

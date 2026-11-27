@@ -68,10 +68,10 @@
 #### v1.2.2
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.2.2/waffles.apworld">https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.2.2/waffles.apworld</a>
 
-#### v1.2.1r3
+#### v1.2.1.post3
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.2.1/waffles.apworld">https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.2.1/waffles.apworld</a>
 
-#### v1.2.1r2
+#### v1.2.1.post2
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.2.1/waffles.apworld">https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.2.1/waffles.apworld</a>
 
 #### v1.2.1
@@ -86,13 +86,13 @@
 #### v1.1.1
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.1.1/waffles.apworld">https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.1.1/waffles.apworld</a>
 
-#### v1.1.0r2
+#### v1.1.0.post2
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.1.0/waffles.apworld">https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.1.0/waffles.apworld</a>
 
 #### v1.1.0
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.1.0/waffles.apworld">https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.1.0/waffles.apworld</a>
 
-#### v1.0.0r2
+#### v1.0.0.post2
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.0.0/waffles.apworld">https://github.com/TheLX5/Archipelago/releases/download/waffles-v1.0.0/waffles.apworld</a>
 
 #### v1.0.0

@@ -1,11 +1,11 @@
 # Mina The Hollower
 
 ## Latest
-- <a href="https://github.com/Minapelago/world/releases/download/v1.1.2/mina_the_hollower.apworld">Latest Version (1.1.1r2)</a>
+- <a href="https://github.com/Minapelago/world/releases/download/v1.1.2/mina_the_hollower.apworld">Latest Version (1.1.1.post2)</a>
 
 ## All Versions
 
-#### v1.1.1r2
+#### v1.1.1.post2
 - <a href="https://github.com/Minapelago/world/releases/download/v1.1.2/mina_the_hollower.apworld">https://github.com/Minapelago/world/releases/download/v1.1.2/mina_the_hollower.apworld</a>
 
 #### v1.1.1
@@ -14,25 +14,25 @@
 #### v1.1.0.post2
 - <a href="https://github.com/Minapelago/world/releases/download/pre-v1.1.0-beta.2/mina_the_hollower.apworld">https://github.com/Minapelago/world/releases/download/pre-v1.1.0-beta.2/mina_the_hollower.apworld</a>
 
-#### v1.1.0
+#### v1.1.0.post2
 - <a href="https://github.com/Minapelago/world/releases/download/v1.1.0/mina_the_hollower.apworld">https://github.com/Minapelago/world/releases/download/v1.1.0/mina_the_hollower.apworld</a>
 
 #### v1.1.0b2
 - <a href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/pre-v1.1.0-beta.2/mina_the_hollower.apworld">https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/pre-v1.1.0-beta.2/mina_the_hollower.apworld</a>
 
-#### v1.0.0r3
+#### v1.0.0.post4
 - <a href="https://github.com/Minapelago/world/releases/download/pre-v1.1.0-beta.1/mina_the_hollower.apworld">https://github.com/Minapelago/world/releases/download/pre-v1.1.0-beta.1/mina_the_hollower.apworld</a>
 
-#### v1.0.0r2
-- <a href="https://github.com/Minapelago/world/releases/download/pre-v1.0.1/mina_the_hollower.apworld">https://github.com/Minapelago/world/releases/download/pre-v1.0.1/mina_the_hollower.apworld</a>
-
-#### v1.0.0r2
+#### v1.0.0.post3
 - <a href="https://github.com/Minapelago/world/releases/download/v1.0.1/mina_the_hollower.apworld">https://github.com/Minapelago/world/releases/download/v1.0.1/mina_the_hollower.apworld</a>
+
+#### v1.0.0.post2
+- <a href="https://github.com/Minapelago/world/releases/download/pre-v1.0.1/mina_the_hollower.apworld">https://github.com/Minapelago/world/releases/download/pre-v1.0.1/mina_the_hollower.apworld</a>
 
 #### v1.0.0
 - <a href="https://github.com/Minapelago/world/releases/download/v1.0.0/mina_the_hollower.apworld">https://github.com/Minapelago/world/releases/download/v1.0.0/mina_the_hollower.apworld</a>
 
-#### v0.11.5r2
+#### v0.11.5.post2
 - <a href="https://github.com/Minapelago/world/releases/download/v1.0.0-beta.6/mina_the_hollower.apworld">https://github.com/Minapelago/world/releases/download/v1.0.0-beta.6/mina_the_hollower.apworld</a>
 
 #### v0.11.5
@@ -77,7 +77,7 @@
 #### v0.10.8
 - <a href="https://github.com/Minapelago/world/releases/download/v1.0.0-alpha.8/mina_the_hollower.apworld">https://github.com/Minapelago/world/releases/download/v1.0.0-alpha.8/mina_the_hollower.apworld</a>
 
-#### v0.10.6r2
+#### v0.10.6.post2
 - <a href="https://github.com/Minapelago/world/releases/download/v1.0.0-alpha.7/mina_the_hollower.apworld">https://github.com/Minapelago/world/releases/download/v1.0.0-alpha.7/mina_the_hollower.apworld</a>
 
 #### v0.10.6
@@ -92,7 +92,7 @@
 #### v0.10.3
 - <a href="https://github.com/Minapelago/world/releases/download/v1.0.0-alpha.3/mina_the_hollower.apworld">https://github.com/Minapelago/world/releases/download/v1.0.0-alpha.3/mina_the_hollower.apworld</a>
 
-#### v0.10.0r2
+#### v0.10.0.post2
 - <a href="https://github.com/Minapelago/world/releases/download/v1.0.0-alpha.2/mina_the_hollower.apworld">https://github.com/Minapelago/world/releases/download/v1.0.0-alpha.2/mina_the_hollower.apworld</a>
 
 #### v0.10.0
@@ -119,22 +119,22 @@
 #### v0.3.3r2
 - <a href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v0.4.0/mina_the_hollower.apworld">https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v0.4.0/mina_the_hollower.apworld</a>
 
-#### v0.3.3
+#### v0.3.3.post2
 - <a href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v0.4.1/mina_the_hollower.apworld">https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v0.4.1/mina_the_hollower.apworld</a>
 
 #### v0.3.2
 - <a href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v0.3.2/mina_the_hollower.apworld">https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v0.3.2/mina_the_hollower.apworld</a>
 
-#### v0.3.0r2
+#### v0.3.0.post2
 - <a href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v0.3.1/mina_the_hollower.apworld">https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v0.3.1/mina_the_hollower.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v0.3.0/mina_the_hollower.apworld">https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v0.3.0/mina_the_hollower.apworld</a>
 
-#### v0.1.0r3
+#### v0.1.0.post3
 - <a href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v0.2.0/mina_the_hollower.apworld">https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v0.2.0/mina_the_hollower.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v0.1.1/mina_the_hollower.apworld">https://github.com/FyreDay/Archipelago-MinaTheHollower/releases/download/v0.1.1/mina_the_hollower.apworld</a>
 
 #### v0.1.0

@@ -14,7 +14,7 @@
 #### v0.2.0r2
 - <a href="https://github.com/EverydaySimpleDev/Archipelago/releases/download/ffcc-beta-0.2.1/ffcc.apworld">https://github.com/EverydaySimpleDev/Archipelago/releases/download/ffcc-beta-0.2.1/ffcc.apworld</a>
 
-#### v0.2.0
+#### v0.2.0.post2
 - <a href="https://github.com/EverydaySimpleDev/Archipelago/releases/download/ffcc-beta.0.2.0/ffcc.apworld">https://github.com/EverydaySimpleDev/Archipelago/releases/download/ffcc-beta.0.2.0/ffcc.apworld</a>
 
 #### v0.1.7

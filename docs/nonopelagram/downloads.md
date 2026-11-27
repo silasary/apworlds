@@ -1,24 +1,24 @@
 # Nonopelagram
 
 ## Latest
-- <a href="https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.9/nonopelagram.apworld">Latest Version (1.0.2r3)</a>
+- <a href="https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.12/nonopelagram.apworld">Latest Version (1.0.2.post5)</a>
 
 ## All Versions
 
-#### v1.0.2r3
-- <a href="https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.9/nonopelagram.apworld">https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.9/nonopelagram.apworld</a>
+#### v1.0.2.post5
+- <a href="https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.12/nonopelagram.apworld">https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.12/nonopelagram.apworld</a>
 
-#### v1.0.2r2
+#### v1.0.2.post4
 - <a href="https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.11/nonopelagram.apworld">https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.11/nonopelagram.apworld</a>
 
-#### v1.0.2r2r2r2
-- <a href="https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.12/nonopelagram.apworld">https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.12/nonopelagram.apworld</a>
+#### v1.0.2.post3
+- <a href="https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.10/nonopelagram.apworld">https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.10/nonopelagram.apworld</a>
 
 #### v1.0.2r2r2
 - <a href="https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.8/nonopelagram.apworld">https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.8/nonopelagram.apworld</a>
 
-#### v1.0.2
-- <a href="https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.10/nonopelagram.apworld">https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.10/nonopelagram.apworld</a>
+#### v1.0.2.post2
+- <a href="https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.9/nonopelagram.apworld">https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.9/nonopelagram.apworld</a>
 
 #### v0.6.7
 - <a href="https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.7/nonopelagram.apworld">https://github.com/StefanDucharme/nonogram-archipelago/releases/download/v0.6.7/nonopelagram.apworld</a>

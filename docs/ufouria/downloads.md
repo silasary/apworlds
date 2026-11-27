@@ -1,17 +1,17 @@
 # Ufouria
 
 ## Latest
-- <a href="https://github.com/vinheim3/Archipelago/releases/download/0.1.1/ufouria.apworld">Latest Version (0.0.1r4)</a>
+- <a href="https://github.com/vinheim3/Archipelago/releases/download/0.1.1/ufouria.apworld">Latest Version (0.0.1.post4)</a>
 
 ## All Versions
 
-#### v0.0.1r4
+#### v0.0.1.post4
 - <a href="https://github.com/vinheim3/Archipelago/releases/download/0.1.1/ufouria.apworld">https://github.com/vinheim3/Archipelago/releases/download/0.1.1/ufouria.apworld</a>
 
-#### v0.0.1r3
+#### v0.0.1.post3
 - <a href="https://github.com/vinheim3/Archipelago/releases/download/0.1.0/ufouria.apworld">https://github.com/vinheim3/Archipelago/releases/download/0.1.0/ufouria.apworld</a>
 
-#### v0.0.1r2
+#### v0.0.1.post2
 - <a href="https://github.com/vinheim3/Archipelago/releases/download/0.0.3/ufouria.apworld">https://github.com/vinheim3/Archipelago/releases/download/0.0.3/ufouria.apworld</a>
 
 #### v0.0.1

@@ -8,13 +8,13 @@
 #### v0.4.0rc0.post0
 - <a href="https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/download/v0.4.0-prerelease/miuultra.apworld">https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/download/v0.4.0-prerelease/miuultra.apworld</a>
 
-#### v0.3.0r2
+#### v0.3.0.post2
 - <a href="https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/download/v0.3.0-hotfix/miuultra.apworld">https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/download/v0.3.0-hotfix/miuultra.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/download/v0.3.0/miuultra.apworld">https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/download/v0.3.0/miuultra.apworld</a>
 
-#### v0.2.0r2
+#### v0.2.0.post2
 - <a href="https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/download/v0.2.1-alpha-hotfix/miuultra.apworld">https://github.com/KitLemonfoot/ArchipelagoMIUU/releases/download/v0.2.1-alpha-hotfix/miuultra.apworld</a>
 
 #### v0.2.0

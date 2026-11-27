@@ -56,6 +56,10 @@ slots.
 The client connects to a running Dolphin instance through Dolphin Memory Engine. It checks for the PAL game ID `RK6P18`
 before reading locations or writing received unlocks.
 
-The client should not write received Green Gem, Kororin Capsule, Trophy, Anthony, or goal checks into the game's save
-flags. Those are location checks. AP-side Green Gem and Stump Temple Piece items are counter items for logic, they will send
-a specific item as found by yourself when you collected enough Stump Temple Pieces or Green Gems for their respective unlock.
+When you collect a Kororin Capsule, Green Gem, or Anthony in a level, the client immediately writes that collectible's save
+flag for the current level. This lets the level select screen show that the collectible was picked up even if you leave the
+level before reaching the goal.
+
+AP-side Stump Temple Piece and Green Gem items are separate counter items for logic. While you are on the World Map on Normal Difficulty,
+the client temporarily mirrors your received AP-side counter items into the game's save flags so the in-game counters show
+your AP progress. When you enter a level select screen, the client restores the real in-game collectible visibility.

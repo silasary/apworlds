@@ -1,11 +1,11 @@
 # Deep Rock Galactic
 
 ## Latest
-- <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.20/deep_rock_galactic.apworld">Latest Version (0.20.1r2)</a>
+- <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.20/deep_rock_galactic.apworld">Latest Version (0.20.1.post2)</a>
 
 ## All Versions
 
-#### v0.20.1r2
+#### v0.20.1.post2
 - <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.20/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.20/deep_rock_galactic.apworld</a>
 
 #### v0.20.1
@@ -14,7 +14,7 @@
 #### v0.19.1
 - <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.20/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.20/deep_rock_galactic.apworld</a>
 
-#### v0.19.0r2
+#### v0.19.0.post2
 - <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.19/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.19/deep_rock_galactic.apworld</a>
 
 #### v0.19.0
@@ -32,7 +32,7 @@
 #### v0.18.2
 - <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.18.2/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.18.2/deep_rock_galactic.apworld</a>
 
-#### v0.18.0r2
+#### v0.18.0.post2
 - <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/V0.18.1/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/V0.18.1/deep_rock_galactic.apworld</a>
 
 #### v0.18.0
@@ -47,7 +47,7 @@
 #### v0.16.4
 - <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.16.4/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.16.4/deep_rock_galactic.apworld</a>
 
-#### v0.16.3r2
+#### v0.16.3.post2
 - <a href="https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.17/deep_rock_galactic.apworld">https://github.com/Cousinit117/Deep-Rock-Galactic-AP/releases/download/0.17/deep_rock_galactic.apworld</a>
 
 #### v0.16.3

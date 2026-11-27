@@ -8,7 +8,7 @@
 #### v2.0.0
 - <a href="https://github.com/pkolb-dev/Archipelago/releases/download/2.0.0/legend_of_dragoon.apworld">https://github.com/pkolb-dev/Archipelago/releases/download/2.0.0/legend_of_dragoon.apworld</a>
 
-#### v1.3.0r2
+#### v1.3.0.post2
 - <a href="https://github.com/pkolb-dev/Archipelago/releases/download/1.3.1/legend_of_dragoon.apworld">https://github.com/pkolb-dev/Archipelago/releases/download/1.3.1/legend_of_dragoon.apworld</a>
 
 #### v1.3.0

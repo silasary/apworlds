@@ -1,11 +1,11 @@
 # Stacklands
 
 ## Latest
-- <a href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.2.7/stacklands.apworld">Latest Version (0.2.6r2)</a>
+- <a href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.2.7/stacklands.apworld">Latest Version (0.2.6.post2)</a>
 
 ## All Versions
 
-#### v0.2.6r2
+#### v0.2.6.post2
 - <a href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.2.7/stacklands.apworld">https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.2.7/stacklands.apworld</a>
 
 #### v0.2.6
@@ -26,7 +26,7 @@
 #### v0.2.2a0
 - <a href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.2.2-alpha/stacklands.apworld">https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.2.2-alpha/stacklands.apworld</a>
 
-#### v0.2.1a0r2
+#### v0.2.1a0.post2
 - <a href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.2.1-alpha-hotfix/stacklands.apworld">https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.2.1-alpha-hotfix/stacklands.apworld</a>
 
 #### v0.2.1a0
@@ -44,7 +44,7 @@
 #### v0.1.5rc0.post0
 - <a href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.1.5-pre-release/stacklands.apworld">https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.1.5-pre-release/stacklands.apworld</a>
 
-#### v0.1.4a0r2
+#### v0.1.4a0.post2
 - <a href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.1.4-alpha-fix/stacklands.apworld">https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.1.4-alpha-fix/stacklands.apworld</a>
 
 #### v0.1.4a0
@@ -62,7 +62,7 @@
 #### v0.1.0a0
 - <a href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.1.0-alpha/stacklands.apworld">https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.1.0-alpha/stacklands.apworld</a>
 
-#### v0.0.12r2
+#### v0.0.12.post2
 - <a href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.0.12-hotfix/stacklands.apworld">https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.0.12-hotfix/stacklands.apworld</a>
 
 #### v0.0.12
@@ -71,7 +71,7 @@
 #### v0.0.11
 - <a href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.0.11/stacklands.apworld">https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.0.11/stacklands.apworld</a>
 
-#### v0.0.10rc0r2
+#### v0.0.10rc0.post2
 - <a href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.0.10-preview-hotfix/stacklands.apworld">https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.0.10-preview-hotfix/stacklands.apworld</a>
 
 #### v0.0.10rc0
@@ -89,7 +89,7 @@
 #### v0.0.6
 - <a href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.0.6/stacklands.apworld">https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.0.6/stacklands.apworld</a>
 
-#### v0.0.5r2
+#### v0.0.5.post2
 - <a href="https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.0.5-hotfix/stacklands.apworld">https://github.com/JammyGeeza/Stacklands-Randomizer/releases/download/v0.0.5-hotfix/stacklands.apworld</a>
 
 #### v0.0.5

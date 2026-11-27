@@ -1,23 +1,23 @@
 # YAYARG
 
 ## Latest
-- <a href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.5.5/yayarg.apworld">Latest Version (2.5.0r6)</a>
+- <a href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.5.5/yayarg.apworld">Latest Version (2.5.0.post6)</a>
 
 ## All Versions
 
-#### v2.5.0r6
+#### v2.5.0.post6
 - <a href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.5.5/yayarg.apworld">https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.5.5/yayarg.apworld</a>
 
-#### v2.5.0r5
+#### v2.5.0.post5
 - <a href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.5.4/yayarg.apworld">https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.5.4/yayarg.apworld</a>
 
-#### v2.5.0r4
+#### v2.5.0.post4
 - <a href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.5.3/yayarg.apworld">https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.5.3/yayarg.apworld</a>
 
-#### v2.5.0r3
+#### v2.5.0.post3
 - <a href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.5.2/yayarg.apworld">https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.5.2/yayarg.apworld</a>
 
-#### v2.5.0r2
+#### v2.5.0.post2
 - <a href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.5.1/yayarg.apworld">https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.5.1/yayarg.apworld</a>
 
 #### v2.5.0
@@ -26,10 +26,10 @@
 #### v2.4.0
 - <a href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.4.0/yayarg.apworld">https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.4.0/yayarg.apworld</a>
 
-#### v2.2.0r3
+#### v2.2.0.post3
 - <a href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.3.1/yayarg.apworld">https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.3.1/yayarg.apworld</a>
 
-#### v2.2.0r2
+#### v2.2.0.post2
 - <a href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.3.0/yayarg.apworld">https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.3.0/yayarg.apworld</a>
 
 #### v2.2.0
@@ -38,7 +38,7 @@
 #### v2.1.0
 - <a href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.1.0/yayarg.apworld">https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.1.0/yayarg.apworld</a>
 
-#### v1.1.0r2
+#### v1.1.0.post2
 - <a href="https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.0.0/yayarg.apworld">https://github.com/Thedrummonger/YargArchipelagoPluginV2/releases/download/V2.0.0/yayarg.apworld</a>
 
 #### v1.1.0

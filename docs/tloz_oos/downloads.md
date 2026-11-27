@@ -68,7 +68,7 @@
 #### v24.0.0
 - <a href="https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/download/oos-24.0.0/tloz_oos.apworld">https://github.com/Ishigh1/Oracle-of-Seasons-apworld/releases/download/oos-24.0.0/tloz_oos.apworld</a>
 
-#### v23.0.4r2
+#### v23.0.4.post2
 - <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-23.0.4/tloz_oos.apworld">https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-23.0.4/tloz_oos.apworld</a>
 
 #### v23.0.4
@@ -104,7 +104,7 @@
 #### v20.1.8
 - <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-20.1.8/tloz_oos.apworld">https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-20.1.8/tloz_oos.apworld</a>
 
-#### v20.1.6r2
+#### v20.1.6.post2
 - <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-20.1.7/tloz_oos.apworld">https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-20.1.7/tloz_oos.apworld</a>
 
 #### v20.1.6
@@ -134,7 +134,7 @@
 #### v20.0.0
 - <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-20.0.0/tloz_oos.apworld">https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-20.0.0/tloz_oos.apworld</a>
 
-#### v19.0.1r2
+#### v19.0.1.post2
 - <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-19.0.2/tloz_oos.apworld">https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-19.0.2/tloz_oos.apworld</a>
 
 #### v19.0.1
@@ -230,7 +230,7 @@
 #### v7.1
 - <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-7.1/tloz_oos.apworld">https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-7.1/tloz_oos.apworld</a>
 
-#### v7.0r2
+#### v7.0.post2
 - <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-7.0d/tloz_oos.apworld">https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-7.0d/tloz_oos.apworld</a>
 
 #### v7.0
@@ -248,10 +248,10 @@
 #### v6.0
 - <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-6.0/tloz_oos.apworld">https://github.com/Dinopony/ArchipelagoOoS/releases/download/oos-6.0/tloz_oos.apworld</a>
 
-#### v0.9r3
+#### v0.9.post3
 - <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/0.9f/tloz_oos.apworld">https://github.com/Dinopony/ArchipelagoOoS/releases/download/0.9f/tloz_oos.apworld</a>
 
-#### v0.9r2
+#### v0.9.post2
 - <a href="https://github.com/Dinopony/ArchipelagoOoS/releases/download/0.9e/tloz_oos.apworld">https://github.com/Dinopony/ArchipelagoOoS/releases/download/0.9e/tloz_oos.apworld</a>
 
 #### v0.9

@@ -1,11 +1,11 @@
 # Against the Storm
 
 ## Latest
-- <a href="https://github.com/Ryguy-9999/ArchipelagoATS/releases/download/v1.2.2/against_the_storm.apworld">Latest Version (1.2.1r2)</a>
+- <a href="https://github.com/Ryguy-9999/ArchipelagoATS/releases/download/v1.2.2/against_the_storm.apworld">Latest Version (1.2.1.post2)</a>
 
 ## All Versions
 
-#### v1.2.1r2
+#### v1.2.1.post2
 - <a href="https://github.com/Ryguy-9999/ArchipelagoATS/releases/download/v1.2.2/against_the_storm.apworld">https://github.com/Ryguy-9999/ArchipelagoATS/releases/download/v1.2.2/against_the_storm.apworld</a>
 
 #### v1.2.1
@@ -14,7 +14,7 @@
 #### v1.2.0
 - <a href="https://github.com/Ryguy-9999/ArchipelagoATS/releases/download/v1.2.0/against_the_storm.apworld">https://github.com/Ryguy-9999/ArchipelagoATS/releases/download/v1.2.0/against_the_storm.apworld</a>
 
-#### v1.0.0r2
+#### v1.0.0.post2
 - <a href="https://github.com/Ryguy-9999/ArchipelagoATS/releases/download/v1.1.0/against_the_storm.apworld">https://github.com/Ryguy-9999/ArchipelagoATS/releases/download/v1.1.0/against_the_storm.apworld</a>
 
 #### v1.0.0

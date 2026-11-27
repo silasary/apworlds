@@ -46,4 +46,4 @@ modifiez vos options via votre application de bloc-note. N’oubliez pas de sauv
 ## Toujours des problèmes ?
 Lisez [le document d’information.](https://github.com/ElectroStarz/ArchipelagoMSM/blob/main/worlds/mario_sports_mix/docs/en_Mario%20Sports%20Mix.md)
 Lisez [les bugs connus/Avertissement.]
-N’hésitez pas à poser vos questions dans [le Thread Mario Sports Mix!](https://discord.com/channels/731205301247803413/1485699253450833942) 
+N’hésitez pas à poser vos questions dans [le Thread Mario Sports Mix!](https://discord.com/channels/731205301247803413/1485699253450833942)

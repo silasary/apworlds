@@ -11,7 +11,7 @@
 #### v0.3.5
 - <a href="https://github.com/randomsalience/albw-archipelago/releases/download/v0.3.5/albw.apworld">https://github.com/randomsalience/albw-archipelago/releases/download/v0.3.5/albw.apworld</a>
 
-#### v0.3.4r2
+#### v0.3.4.post2
 - <a href="https://github.com/randomsalience/albw-archipelago/releases/download/v0.3.4-hotfix/albw.apworld">https://github.com/randomsalience/albw-archipelago/releases/download/v0.3.4-hotfix/albw.apworld</a>
 
 #### v0.3.4
@@ -32,7 +32,7 @@
 #### v0.2.3
 - <a href="https://github.com/randomsalience/albw-archipelago/releases/download/v0.2.3/albw.apworld">https://github.com/randomsalience/albw-archipelago/releases/download/v0.2.3/albw.apworld</a>
 
-#### v0.2.1r2
+#### v0.2.1.post2
 - <a href="https://github.com/randomsalience/albw-archipelago/releases/download/v0.2.2/albw.apworld">https://github.com/randomsalience/albw-archipelago/releases/download/v0.2.2/albw.apworld</a>
 
 #### v0.2.1

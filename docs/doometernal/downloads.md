@@ -8,7 +8,7 @@
 #### v0.7.3
 - <a href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.7.3/doometernal.apworld">https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.7.3/doometernal.apworld</a>
 
-#### v0.7.1r2
+#### v0.7.1.post2
 - <a href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.7.2/doometernal.apworld">https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.7.2/doometernal.apworld</a>
 
 #### v0.7.1
@@ -20,13 +20,13 @@
 #### v0.6.7
 - <a href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.6.7/doometernal.apworld">https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.6.7/doometernal.apworld</a>
 
-#### v0.6.5r2
+#### v0.6.5.post2
 - <a href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.6.6/doometernal.apworld">https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.6.6/doometernal.apworld</a>
 
 #### v0.6.5
 - <a href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.6.5/doometernal.apworld">https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.6.5/doometernal.apworld</a>
 
-#### v0.6.3r2
+#### v0.6.3.post2
 - <a href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.6.4/doometernal.apworld">https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.6.4/doometernal.apworld</a>
 
 #### v0.6.3
@@ -35,7 +35,7 @@
 #### v0.6.2
 - <a href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.6.2/doometernal.apworld">https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.6.2/doometernal.apworld</a>
 
-#### v0.6.0r2
+#### v0.6.0.post2
 - <a href="https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.6.1/doometernal.apworld">https://github.com/snowzzrra/DoomEternal-AP-Mod/releases/download/0.6.1/doometernal.apworld</a>
 
 #### v0.6.0

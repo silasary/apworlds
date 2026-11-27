@@ -6,7 +6,7 @@ All vehicles are randomized — unlock them through Archipelago checks!
 
 
 ## Downloads
-- <a href="https://github.com/solida1987/openttd-archipelago/releases/download/v2.2.2/openttd.apworld">Latest Version (2.6.0r2)</a>
+- <a href="https://github.com/solida1987/openttd-archipelago/releases/download/v2.2.3/openttd.apworld">Latest Version (2.6.0.post3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

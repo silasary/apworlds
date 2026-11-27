@@ -17,23 +17,23 @@
 #### v0.4.1
 - <a href="https://github.com/CT075/Archipelago/releases/download/fe8-0.4.1/fe8.apworld">https://github.com/CT075/Archipelago/releases/download/fe8-0.4.1/fe8.apworld</a>
 
-#### v0.4.0r5
-- <a href="https://github.com/CT075/Archipelago/releases/download/fe8-alpha-0.4.0-rc2/fe8.apworld">https://github.com/CT075/Archipelago/releases/download/fe8-alpha-0.4.0-rc2/fe8.apworld</a>
+#### v0.4.0.post6
+- <a href="https://github.com/CT075/Archipelago/releases/download/fe8-0.4.0/fe8.apworld">https://github.com/CT075/Archipelago/releases/download/fe8-0.4.0/fe8.apworld</a>
+
+#### v0.4.0.post5
+- <a href="https://github.com/CT075/Archipelago/releases/download/fe8-0.4.0-rc4/fe8.apworld">https://github.com/CT075/Archipelago/releases/download/fe8-0.4.0-rc4/fe8.apworld</a>
+
+#### v0.4.0.post4
+- <a href="https://github.com/CT075/Archipelago/releases/download/fe8-0.4.0-rc3/fe8.apworld">https://github.com/CT075/Archipelago/releases/download/fe8-0.4.0-rc3/fe8.apworld</a>
 
 #### v0.4.0r4
 - <a href="https://github.com/CT075/Archipelago/releases/download/fe8-alpha-0.4.0-rc1/fe8.apworld">https://github.com/CT075/Archipelago/releases/download/fe8-alpha-0.4.0-rc1/fe8.apworld</a>
 
-#### v0.4.0r3
-- <a href="https://github.com/CT075/Archipelago/releases/download/fe8-0.4.0-rc4/fe8.apworld">https://github.com/CT075/Archipelago/releases/download/fe8-0.4.0-rc4/fe8.apworld</a>
-
-#### v0.4.0r2
+#### v0.4.0.post3
 - <a href="https://github.com/CT075/Archipelago/releases/download/fe8-0.4.0-rc3/fe8.apworld">https://github.com/CT075/Archipelago/releases/download/fe8-0.4.0-rc3/fe8.apworld</a>
 
 #### v0.4.0.post2
-- <a href="https://github.com/CT075/Archipelago/releases/download/fe8-0.4.0-rc3/fe8.apworld">https://github.com/CT075/Archipelago/releases/download/fe8-0.4.0-rc3/fe8.apworld</a>
-
-#### v0.4.0
-- <a href="https://github.com/CT075/Archipelago/releases/download/fe8-0.4.0/fe8.apworld">https://github.com/CT075/Archipelago/releases/download/fe8-0.4.0/fe8.apworld</a>
+- <a href="https://github.com/CT075/Archipelago/releases/download/fe8-alpha-0.4.0-rc2/fe8.apworld">https://github.com/CT075/Archipelago/releases/download/fe8-alpha-0.4.0-rc2/fe8.apworld</a>
 
 #### v0.3.3
 - <a href="https://github.com/CT075/Archipelago/releases/download/fe8-alpha-0.3.3-rc1/fe8.apworld">https://github.com/CT075/Archipelago/releases/download/fe8-alpha-0.3.3-rc1/fe8.apworld</a>

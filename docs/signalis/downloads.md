@@ -20,7 +20,7 @@
 #### v0.1.1
 - <a href="https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.1.1/signalis.apworld">https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.1.1/signalis.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.1.0/signalis.apworld">https://github.com/devoidlazarus/SIGNALISArchipelagoRandomizer/releases/download/v0.1.0/signalis.apworld</a>
 
 #### v0.1.0

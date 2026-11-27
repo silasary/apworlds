@@ -29,7 +29,7 @@
 #### v1.1.3
 - <a href="https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.1.3/bg3tot.apworld">https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.1.3/bg3tot.apworld</a>
 
-#### v1.1.2r2
+#### v1.1.2.post2
 - <a href="https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.1.2/bg3tot.apworld">https://github.com/Zoltun456/Archipelago-BG3-ToT/releases/download/v1.1.2/bg3tot.apworld</a>
 
 #### v1.1.2

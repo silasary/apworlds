@@ -8,7 +8,7 @@
 #### v0.1.5
 - <a href="https://github.com/Awesome7285/manual_thmusic_awesome7285/releases/download/v0.1.5/manual_thmusic_awesome7285.apworld">https://github.com/Awesome7285/manual_thmusic_awesome7285/releases/download/v0.1.5/manual_thmusic_awesome7285.apworld</a>
 
-#### v0.1.4r2
+#### v0.1.4.post2
 - <a href="https://github.com/Awesome7285/manual_thmusic_awesome7285/releases/download/v0.1.5/manual_thmusic_awesome7285.apworld">https://github.com/Awesome7285/manual_thmusic_awesome7285/releases/download/v0.1.5/manual_thmusic_awesome7285.apworld</a>
 
 #### v0.1.4

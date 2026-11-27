@@ -4,7 +4,7 @@ Easy Delivery Co. is a game about delivering packages.
 
 
 ## Downloads
-- <a href="https://github.com/Aeromaze/Archipelago/releases/download/v0.3.1/easy_delivery_co.apworld">Latest Version (0.3.0r2)</a>
+- <a href="https://github.com/Aeromaze/Archipelago/releases/download/v0.3.1/easy_delivery_co.apworld">Latest Version (0.3.0.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

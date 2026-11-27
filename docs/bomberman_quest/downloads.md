@@ -14,7 +14,7 @@
 #### v0.1.1
 - <a href="https://github.com/Happyhappyism/Archipelago/releases/download/bombquest_v0.1.1/bomberman_quest.apworld">https://github.com/Happyhappyism/Archipelago/releases/download/bombquest_v0.1.1/bomberman_quest.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/Happyhappyism/Archipelago/releases/download/bombquest_v0.1.1/bomberman_quest.apworld">https://github.com/Happyhappyism/Archipelago/releases/download/bombquest_v0.1.1/bomberman_quest.apworld</a>
 
 #### v0.1.0

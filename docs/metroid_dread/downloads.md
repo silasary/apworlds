@@ -8,25 +8,25 @@
 #### v1.6.6
 - <a href="https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.6.6/metroid_dread.apworld">https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.6.6/metroid_dread.apworld</a>
 
-#### v1.1.7r2
+#### v1.1.7.post2
 - <a href="https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.3.4/metroid_dread.apworld">https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.3.4/metroid_dread.apworld</a>
 
 #### v1.1.7
 - <a href="https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.3.3/metroid_dread.apworld">https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.3.3/metroid_dread.apworld</a>
 
-#### v1.1.4r2
+#### v1.1.4.post2
 - <a href="https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.3.2/metroid_dread.apworld">https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.3.2/metroid_dread.apworld</a>
 
 #### v1.1.4
 - <a href="https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.3.1/metroid_dread.apworld">https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.3.1/metroid_dread.apworld</a>
 
-#### v1.1.3r2
+#### v1.1.3.post2
 - <a href="https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.3/metroid_dread.apworld">https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.3/metroid_dread.apworld</a>
 
 #### v1.1.3
 - <a href="https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.2/metroid_dread.apworld">https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.2/metroid_dread.apworld</a>
 
-#### v1.0.0r2
+#### v1.0.0.post2
 - <a href="https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.1/metroid_dread.apworld">https://github.com/Dummydud3/metroid-dread-apworld/releases/download/1.1/metroid_dread.apworld</a>
 
 #### v1.0.0

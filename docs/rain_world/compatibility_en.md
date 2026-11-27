@@ -29,4 +29,3 @@ Mods not listed here are probably compatible.
 | Room Randomizer                    | Weak          | Certain intra-region logic is broken, regardless of settings.  It may or may not cause a softlock.                         |
 | Slugcat Randomizer                 | Weak          | Some checks can only be done by certain slugcats.                                                                          |
 |                                    |               |                                                                                                                            |
-

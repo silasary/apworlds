@@ -1,15 +1,15 @@
 # Nuclear Throne
 
 ## Latest
-- <a href="https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/download/nt_v1.5/nuclear_throne.apworld">Latest Version (1.4.3r2)</a>
+- <a href="https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/download/nt_v1.5.1/nuclear_throne.apworld">Latest Version (1.4.3.post3)</a>
 
 ## All Versions
 
-#### v1.4.3r2
-- <a href="https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/download/nt_v1.5/nuclear_throne.apworld">https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/download/nt_v1.5/nuclear_throne.apworld</a>
-
-#### v1.4.3r2
+#### v1.4.3.post3
 - <a href="https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/download/nt_v1.5.1/nuclear_throne.apworld">https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/download/nt_v1.5.1/nuclear_throne.apworld</a>
+
+#### v1.4.3.post2
+- <a href="https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/download/nt_v1.5/nuclear_throne.apworld">https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/download/nt_v1.5/nuclear_throne.apworld</a>
 
 #### v1.4.3
 - <a href="https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/download/nt_v1.4.3/nuclear_throne.apworld">https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/download/nt_v1.4.3/nuclear_throne.apworld</a>
@@ -17,7 +17,7 @@
 #### v1.4.2
 - <a href="https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/download/nt_v1.4/nuclear_throne.apworld">https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/download/nt_v1.4/nuclear_throne.apworld</a>
 
-#### v1.3.1r2
+#### v1.3.1.post2
 - <a href="https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/download/nt_v1.3.2/nuclear_throne.apworld">https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/download/nt_v1.3.2/nuclear_throne.apworld</a>
 
 #### v1.3.1
@@ -29,7 +29,7 @@
 #### v1.2.3
 - <a href="https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/download/nt_v1.2.3/nuclear_throne.apworld">https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/download/nt_v1.2.3/nuclear_throne.apworld</a>
 
-#### v1.1.0r2
+#### v1.1.0.post2
 - <a href="https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/download/nt_v1.1.3/nuclear_throne.apworld">https://github.com/GraphiteGraphic/NuclearThroneArchipelago/releases/download/nt_v1.1.3/nuclear_throne.apworld</a>
 
 #### v1.1.0

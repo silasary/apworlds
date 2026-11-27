@@ -32,7 +32,7 @@
 #### v0.8.3
 - <a href="https://github.com/NikolajDanger/APSly2/releases/download/v0.8.3/sly2.apworld">https://github.com/NikolajDanger/APSly2/releases/download/v0.8.3/sly2.apworld</a>
 
-#### v0.8.1r2
+#### v0.8.1.post2
 - <a href="https://github.com/NikolajDanger/APSly2/releases/download/v0.8.2/sly2.apworld">https://github.com/NikolajDanger/APSly2/releases/download/v0.8.2/sly2.apworld</a>
 
 #### v0.8.1

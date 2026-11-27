@@ -8,7 +8,7 @@
 #### v0.2.0
 - <a href="https://github.com/Awesome7285/TomTom4AP/releases/download/v0.2.0/tomtom4.apworld">https://github.com/Awesome7285/TomTom4AP/releases/download/v0.2.0/tomtom4.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/Awesome7285/TomTom4AP/releases/download/v0.1.1/tomtom4.apworld">https://github.com/Awesome7285/TomTom4AP/releases/download/v0.1.1/tomtom4.apworld</a>
 
 #### v0.1.0

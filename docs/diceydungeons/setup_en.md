@@ -31,4 +31,3 @@ path in a file browser. Please select the root folder of the install ("Dicey Dun
 ## Helpful commands
 
 - `!missing Completed` will show you which episodes still need to be beaten.
-

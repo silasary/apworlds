@@ -32,7 +32,7 @@
 #### v0.2.2
 - <a href="https://github.com/Alchav/Archipelago/releases/download/spicy-0.2.2/sm64ex_spicy.apworld">https://github.com/Alchav/Archipelago/releases/download/spicy-0.2.2/sm64ex_spicy.apworld</a>
 
-#### v0.2.0r2
+#### v0.2.0.post2
 - <a href="https://github.com/Alchav/Archipelago/releases/download/spicy-0.2.1/sm64ex_spicy.apworld">https://github.com/Alchav/Archipelago/releases/download/spicy-0.2.1/sm64ex_spicy.apworld</a>
 
 #### v0.2.0
@@ -68,7 +68,7 @@
 #### v0.0.3
 - <a href="https://github.com/Alchav/Archipelago/releases/download/spicy-0.0.3/sm64ex_spicy.apworld">https://github.com/Alchav/Archipelago/releases/download/spicy-0.0.3/sm64ex_spicy.apworld</a>
 
-#### v0.0.1r2
+#### v0.0.1.post2
 - <a href="https://github.com/Alchav/Archipelago/releases/download/spicy-0.0.2/sm64ex_spicy.apworld">https://github.com/Alchav/Archipelago/releases/download/spicy-0.0.2/sm64ex_spicy.apworld</a>
 
 #### v0.0.1

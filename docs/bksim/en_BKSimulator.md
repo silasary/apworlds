@@ -26,4 +26,3 @@ Logic:
 - Snowy weather requires snow boots to walk in
 - Higher-numbered checks will expect gradually more items to become in-logic.
 - "Sphere 1" includes the first 2 Sunny checks only.
-

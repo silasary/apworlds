@@ -8,11 +8,11 @@
 #### v0.19.0
 - <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.19.0/crystal_project.apworld">https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.19.0/crystal_project.apworld</a>
 
-#### v0.18.0r2
-- <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.18.1/crystal_project.apworld">https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.18.1/crystal_project.apworld</a>
-
-#### v0.18.0r2
+#### v0.18.0.post3
 - <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.18.2/crystal_project.apworld">https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.18.2/crystal_project.apworld</a>
+
+#### v0.18.0.post2
+- <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.18.1/crystal_project.apworld">https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.18.1/crystal_project.apworld</a>
 
 #### v0.18.0
 - <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.18.0/crystal_project.apworld">https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.18.0/crystal_project.apworld</a>
@@ -23,7 +23,7 @@
 #### v0.16.0
 - <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.16.0/crystal_project.apworld">https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.16.0/crystal_project.apworld</a>
 
-#### v0.15.0r2
+#### v0.15.0.post2
 - <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.15.1/crystal_project.apworld">https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.15.1/crystal_project.apworld</a>
 
 #### v0.15.0
@@ -47,19 +47,19 @@
 #### v0.11.4
 - <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.11.4/crystal_project.apworld">https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.11.4/crystal_project.apworld</a>
 
-#### v0.11.0r4
+#### v0.11.0.post4
 - <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.11.3/crystal_project.apworld">https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.11.3/crystal_project.apworld</a>
 
-#### v0.11.0r3
+#### v0.11.0.post3
 - <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.11.2/crystal_project.apworld">https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.11.2/crystal_project.apworld</a>
 
-#### v0.11.0r2
+#### v0.11.0.post2
 - <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.11.1/crystal_project.apworld">https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.11.1/crystal_project.apworld</a>
 
 #### v0.11.0
 - <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.11.0/crystal_project.apworld">https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.11.0/crystal_project.apworld</a>
 
-#### v0.10.0r2
+#### v0.10.0.post2
 - <a href="https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.10.0/crystal_project.apworld">https://github.com/Emerassi/CrystalProjectAPWorld/releases/download/CrystalProject-v0.10.0/crystal_project.apworld</a>
 
 #### v0.10.0

@@ -1,15 +1,15 @@
 # Ys 8
 
 ## Latest
-- <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.2.2/ys_8.apworld">Latest Version (1.2.0r2)</a>
+- <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.2.3b/ys_8.apworld">Latest Version (1.2.0.post3)</a>
 
 ## All Versions
 
-#### v1.2.0r2
-- <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.2.2/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.2.2/ys_8.apworld</a>
-
-#### v1.2.0r2
+#### v1.2.0.post3
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.2.3b/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.2.3b/ys_8.apworld</a>
+
+#### v1.2.0.post2
+- <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.2.2/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.2.2/ys_8.apworld</a>
 
 #### v1.2.0
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.2.1b/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.2.1b/ys_8.apworld</a>
@@ -23,31 +23,31 @@
 #### v1.1.0b0
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.1.0b/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.1.0b/ys_8.apworld</a>
 
-#### v1.0.0r4
+#### v1.0.0.post4
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.0.3/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.0.3/ys_8.apworld</a>
 
-#### v1.0.0r3
+#### v1.0.0.post3
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.0.2/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.0.2/ys_8.apworld</a>
 
-#### v1.0.0r2
+#### v1.0.0.post2
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.0.1/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.0.1/ys_8.apworld</a>
 
 #### v1.0.0
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.0.0/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.0.0/ys_8.apworld</a>
 
-#### v0.9.5r6
+#### v0.9.5.post6
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.9.9/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.9.9/ys_8.apworld</a>
 
-#### v0.9.5r5
+#### v0.9.5.post5
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.9.8/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.9.8/ys_8.apworld</a>
 
-#### v0.9.5r4
+#### v0.9.5.post4
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.9.7/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.9.7/ys_8.apworld</a>
 
-#### v0.9.5r3
+#### v0.9.5.post3
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.9.6/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.9.6/ys_8.apworld</a>
 
-#### v0.9.5r2
+#### v0.9.5.post2
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.9.5/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.9.5/ys_8.apworld</a>
 
 #### v0.9.5
@@ -62,40 +62,40 @@
 #### v0.9.2
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.9.2/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.9.2/ys_8.apworld</a>
 
-#### v0.8.5r7
+#### v0.8.5.post7
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.9.1/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.9.1/ys_8.apworld</a>
 
-#### v0.8.5r6
+#### v0.8.5.post6
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.9.0/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.9.0/ys_8.apworld</a>
 
-#### v0.8.5r5
+#### v0.8.5.post5
+- <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.11/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.11/ys_8.apworld</a>
+
+#### v0.8.5.post4
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.9/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.9/ys_8.apworld</a>
 
-#### v0.8.5r4
+#### v0.8.5.post3
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.8/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.8/ys_8.apworld</a>
-
-#### v0.8.5r3
-- <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.7/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.7/ys_8.apworld</a>
 
 #### v0.8.5r2
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.6/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.6/ys_8.apworld</a>
 
-#### v0.8.5
-- <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.11/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.11/ys_8.apworld</a>
+#### v0.8.5.post2
+- <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.7/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.7/ys_8.apworld</a>
 
-#### v0.1.0r6
+#### v0.1.0.post6
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.5/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.5/ys_8.apworld</a>
 
-#### v0.1.0r5
+#### v0.1.0.post5
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.4/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.4/ys_8.apworld</a>
 
-#### v0.1.0r4
+#### v0.1.0.post4
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.3/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.3/ys_8.apworld</a>
 
-#### v0.1.0r3
+#### v0.1.0.post3
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.2/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.2/ys_8.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.1/ys_8.apworld">https://github.com/junglechief87/Ys-8-AP-World/releases/download/v0.8.1/ys_8.apworld</a>
 
 #### v0.1.0

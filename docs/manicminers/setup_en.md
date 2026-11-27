@@ -73,4 +73,4 @@ See https://discord.com/channels/580269696369164299/602107487063113729/114229970
 
 Install Archipelago natively, i.e. not under Wine. 
 
-Otherwise, follow the above instructions. There is only one extra step, which is that the Save File location is user-defined instead of assumed by the mod. Similar to the Level and Install directories, the first time you run a command that references the save file location (e.g. connecting), you will be prompted to select the folder containining your Manic Miners save profiles. Like the other two settings, this too can be changed after the fact in Archipalego's host.yaml. 
+Otherwise, follow the above instructions. There is only one extra step, which is that the Save File location is user-defined instead of assumed by the mod. Similar to the Level and Install directories, the first time you run a command that references the save file location (e.g. connecting), you will be prompted to select the folder containining your Manic Miners save profiles. Like the other two settings, this too can be changed after the fact in Archipalego's host.yaml.

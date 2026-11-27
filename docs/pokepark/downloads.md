@@ -47,7 +47,7 @@
 #### v1.1.0
 - <a href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/download/1.1.0/pokepark.apworld">https://github.com/Mekurushi/Archipelago_Pokepark/releases/download/1.1.0/pokepark.apworld</a>
 
-#### v1.0.4r2
+#### v1.0.4.post2
 - <a href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/download/1.0.5/pokepark.apworld">https://github.com/Mekurushi/Archipelago_Pokepark/releases/download/1.0.5/pokepark.apworld</a>
 
 #### v1.0.4
@@ -65,7 +65,7 @@
 #### v1.0.0
 - <a href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/download/1.0.0/pokepark.apworld">https://github.com/Mekurushi/Archipelago_Pokepark/releases/download/1.0.0/pokepark.apworld</a>
 
-#### v0.2.3r2
+#### v0.2.3.post2
 - <a href="https://github.com/Mekurushi/Archipelago_Pokepark/releases/download/0.2.3-hotfix/pokepark.apworld">https://github.com/Mekurushi/Archipelago_Pokepark/releases/download/0.2.3-hotfix/pokepark.apworld</a>
 
 #### v0.2.3

@@ -4,7 +4,7 @@ PAYDAY 2: Criminal Dawn is a roguelite conversion for PAYDAY 2 that was built to
 
 
 ## Downloads
-- <a href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v1.0.12/pd2_crimdawn.apworld">Latest Version (1.0.4r4)</a>
+- <a href="https://github.com/CATEM1NAL/PD2-Criminal-Dawn/releases/download/v1.0.13/pd2_crimdawn.apworld">Latest Version (1.0.4.post10)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

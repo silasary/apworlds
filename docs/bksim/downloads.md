@@ -8,10 +8,10 @@
 #### v1.0.2
 - <a href="https://github.com/BK-Simulator/BK-Simulator/releases/download/1.0.2/bksim.apworld">https://github.com/BK-Simulator/BK-Simulator/releases/download/1.0.2/bksim.apworld</a>
 
-#### v0.1.2r3
+#### v0.1.2.post3
 - <a href="https://github.com/BK-Simulator/BK-Simulator/releases/download/1.0.1/bksim.apworld">https://github.com/BK-Simulator/BK-Simulator/releases/download/1.0.1/bksim.apworld</a>
 
-#### v0.1.2r2
+#### v0.1.2.post2
 - <a href="https://github.com/BK-Simulator/BK-Simulator/releases/download/1.0.0/bksim.apworld">https://github.com/BK-Simulator/BK-Simulator/releases/download/1.0.0/bksim.apworld</a>
 
 #### v0.1.2

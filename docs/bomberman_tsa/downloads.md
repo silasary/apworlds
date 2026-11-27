@@ -17,7 +17,7 @@
 #### v1.0.0
 - <a href="https://github.com/Happyhappyism/Bomberman-The-Second-Attack-Archipelago/releases/download/bomberman_tsa_v1.0.0/bomberman_tsa.apworld">https://github.com/Happyhappyism/Bomberman-The-Second-Attack-Archipelago/releases/download/bomberman_tsa_v1.0.0/bomberman_tsa.apworld</a>
 
-#### v0.1.2r2
+#### v0.1.2.post2
 - <a href="https://github.com/Happyhappyism/Archipelago/releases/download/bombtsa_v0.1.3/bomberman_tsa.apworld">https://github.com/Happyhappyism/Archipelago/releases/download/bombtsa_v0.1.3/bomberman_tsa.apworld</a>
 
 #### v0.1.2

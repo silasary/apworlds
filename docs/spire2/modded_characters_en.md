@@ -65,4 +65,3 @@ The dev console command `ap_release_missing` sends all of a missing character's 
 2. Press the backtick key (`` ` ``, usually under Esc) to open the dev console.
 3. Run `ap_release_missing` on its own to list the missing characters and how many checks each has left.
 4. Run `ap_release_missing <character>` to see how many checks would be sent, then `ap_release_missing <character> confirm` to send them.
-

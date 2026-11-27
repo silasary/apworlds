@@ -40,4 +40,3 @@ Sigil and colossi numbers are as follows:
     "Sigil of Ruined Pride": 14 
     "Sigil of the Bound Colossus": 15
 ```
-

@@ -5,7 +5,7 @@ simulator on the GBA. Featuring over 2000 cards and over 90 Challenges.
 
 
 ## Downloads
-- <a href="https://github.com/Rensen3/ArchipelagoYGO06/releases/download/YuGiOh2006v2.4/yugioh06.apworld">Latest Version (2006r7)</a>
+- <a href="https://github.com/Rensen3/ArchipelagoYGO06/releases/download/YuGiOh2006v2.4/yugioh06.apworld">Latest Version (2006.post7)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

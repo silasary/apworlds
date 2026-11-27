@@ -17,14 +17,14 @@
 #### v0.6.3
 - <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.6.3/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.6.3/rac3.apworld</a>
 
+#### v0.6.1.post4
+- <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.6.2/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.6.2/rac3.apworld</a>
+
 #### v0.6.1.post3
 - <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.6.1/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.6.1/rac3.apworld</a>
 
 #### v0.6.1.post2
 - <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.6.1/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.6.1/rac3.apworld</a>
-
-#### v0.6.1r2
-- <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.6.2/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.6.2/rac3.apworld</a>
 
 #### v0.6.1
 - <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.6.1/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.6.1/rac3.apworld</a>
@@ -47,17 +47,17 @@
 #### v0.4.1
 - <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.1/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.1/rac3.apworld</a>
 
+#### v0.4.0.post4
+- <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0/rac3.apworld</a>
+
+#### v0.4.0.post3
+- <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0/rac3.apworld</a>
+
 #### v0.4.0.post2
 - <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0-rc1/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0-rc1/rac3.apworld</a>
 
 #### v0.4.0.post2r2
 - <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0-rc2/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0-rc2/rac3.apworld</a>
-
-#### v0.4.0.post2r3
-- <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0/rac3.apworld</a>
-
-#### v0.4.0
-- <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0/rac3.apworld</a>
 
 #### v0.4.0rc3
 - <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0-rc3/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.4.0-rc3/rac3.apworld</a>
@@ -123,8 +123,8 @@
 - <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.1.1-pre/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.1.1-pre/rac3.apworld</a>
 
 #### v0.1.0.post2
-- <a href="https://github.com/Taoshix/RaC3AP/releases/download/v0.1.0/rac3.apworld">https://github.com/Taoshix/RaC3AP/releases/download/v0.1.0/rac3.apworld</a>
-
-#### v0.1.0
 - <a href="https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.1.0/rac3.apworld">https://github.com/Taoshix/Archipelago-RaC3/releases/download/v0.1.0/rac3.apworld</a>
+
+#### v0.1.0.post2
+- <a href="https://github.com/Taoshix/RaC3AP/releases/download/v0.1.0/rac3.apworld">https://github.com/Taoshix/RaC3AP/releases/download/v0.1.0/rac3.apworld</a>
 

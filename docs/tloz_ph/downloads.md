@@ -59,7 +59,7 @@
 #### v0.8.2a0
 - <a href="https://github.com/carrotinator/Archipelago/releases/download/tloz_ph-v0.8.2-alpha/tloz_ph.apworld">https://github.com/carrotinator/Archipelago/releases/download/tloz_ph-v0.8.2-alpha/tloz_ph.apworld</a>
 
-#### v0.8.0r2
+#### v0.8.0.post2
 - <a href="https://github.com/carrotinator/Archipelago/releases/download/v0.8.1-alpha/tloz_ph.apworld">https://github.com/carrotinator/Archipelago/releases/download/v0.8.1-alpha/tloz_ph.apworld</a>
 
 #### v0.8.0
@@ -71,7 +71,7 @@
 #### v0.7.6
 - <a href="https://github.com/carrotinator/Archipelago/releases/download/v0.7.6-alpha/tloz_ph.apworld">https://github.com/carrotinator/Archipelago/releases/download/v0.7.6-alpha/tloz_ph.apworld</a>
 
-#### v0.7.5r2
+#### v0.7.5.post2
 - <a href="https://github.com/carrotinator/Archipelago/releases/download/v0.7.5-alpha/tloz_ph.apworld">https://github.com/carrotinator/Archipelago/releases/download/v0.7.5-alpha/tloz_ph.apworld</a>
 
 #### v0.7.5

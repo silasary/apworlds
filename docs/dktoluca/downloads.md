@@ -17,7 +17,7 @@
 #### v1.0.1
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/toluca-v1.0.1/dktoluca.apworld">https://github.com/TheLX5/Archipelago/releases/download/toluca-v1.0.1/dktoluca.apworld</a>
 
-#### v1.0.0r2
+#### v1.0.0.post2
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/toluca-v1.0.0/dktoluca.apworld">https://github.com/TheLX5/Archipelago/releases/download/toluca-v1.0.0/dktoluca.apworld</a>
 
 #### v1.0.0

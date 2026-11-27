@@ -1,6 +1,7 @@
 # Kirby Super Star Ultra
 
-
+Kirby Super Star Ultra is a remake of the Super Nintendo Entertainment System game Kirby Super Star.
+The remake retains all game modes found in the original and adds four major new ones.
 
 
 ## Downloads

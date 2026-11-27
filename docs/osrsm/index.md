@@ -1,6 +1,6 @@
 # Old School Runescape Members
 
-
+A World subclass that provides helpers for interacting with the rule builder
 
 
 ## Downloads

@@ -19,5 +19,3 @@
 ## Archipelago Text Client
 
 Having the text client open is recommend to see a log of what has been sent.
-
-

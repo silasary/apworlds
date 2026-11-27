@@ -110,4 +110,3 @@ try instead turning it on.
 
 Another way to ensure that Bizhawk saves properly is by saving the game and then going to File->Save Ram->Flush Save Ram,
 or pressing Control+S
-

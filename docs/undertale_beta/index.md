@@ -6,7 +6,7 @@ from their underground prison.
 
 
 ## Downloads
-- <a href="https://github.com/jonloveslegos/Archipelago/releases/download/undertale-beta-2.0.0-2.3/undertale_beta.apworld">Latest Version (2.0.0r4)</a>
+- <a href="https://github.com/jonloveslegos/Archipelago/releases/download/undertale-beta-2.0.0-3.2-fix/undertale_beta.apworld">Latest Version (2.0.0.post12)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

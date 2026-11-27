@@ -1,4 +1,3 @@
-
 A special thanks to all of the following:
 
 Testers, for helping break the game so that we can fix it and build up the Custom Robo AP to be as great as possible

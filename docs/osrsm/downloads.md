@@ -8,7 +8,7 @@
 #### v0.1.10
 - <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/OSRSM-v0.1.10/osrsm.apworld">https://github.com/FarisTheAncient/Archipelago/releases/download/OSRSM-v0.1.10/osrsm.apworld</a>
 
-#### v0.1.8r2
+#### v0.1.8.post2
 - <a href="https://github.com/FarisTheAncient/Archipelago/releases/download/OSRSM-v0.1.9/osrsm.apworld">https://github.com/FarisTheAncient/Archipelago/releases/download/OSRSM-v0.1.9/osrsm.apworld</a>
 
 #### v0.1.8

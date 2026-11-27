@@ -71,4 +71,3 @@ Galactic Nova, and defeat Marx. This is the default option.
 - Planets in Milky Way Wishes (7 total)
 - Extra stages in Dyna Blade (2 total)
 - 1-Ups, Foods, and Invincibility Candy (Filler)
-

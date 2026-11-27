@@ -26,7 +26,7 @@
 #### v0.6.2
 - <a href="https://github.com/BenDipp/Archipelago/releases/download/0.6.2/hitman_woa.apworld">https://github.com/BenDipp/Archipelago/releases/download/0.6.2/hitman_woa.apworld</a>
 
-#### v0.6.0r2
+#### v0.6.0.post2
 - <a href="https://github.com/BenDipp/Archipelago/releases/download/0.6.1/hitman_woa.apworld">https://github.com/BenDipp/Archipelago/releases/download/0.6.1/hitman_woa.apworld</a>
 
 #### v0.6.0

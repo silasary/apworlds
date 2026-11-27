@@ -1,20 +1,20 @@
 # Running with Rifles
 
 ## Latest
-- <a href="https://github.com/mjousse72/archipelago_rwr/releases/download/v0.5.0/rwr.apworld">Latest Version (0.1.0r5)</a>
+- <a href="https://github.com/mjousse72/archipelago_rwr/releases/download/v0.5.0/rwr.apworld">Latest Version (0.1.0.post5)</a>
 
 ## All Versions
 
-#### v0.1.0r5
+#### v0.1.0.post5
 - <a href="https://github.com/mjousse72/archipelago_rwr/releases/download/v0.5.0/rwr.apworld">https://github.com/mjousse72/archipelago_rwr/releases/download/v0.5.0/rwr.apworld</a>
 
-#### v0.1.0r4
+#### v0.1.0.post4
 - <a href="https://github.com/mjousse72/archipelago_rwr/releases/download/v0.4.0/rwr.apworld">https://github.com/mjousse72/archipelago_rwr/releases/download/v0.4.0/rwr.apworld</a>
 
-#### v0.1.0r3
+#### v0.1.0.post3
 - <a href="https://github.com/mjousse72/archipelago_rwr/releases/download/v0.3.0/rwr.apworld">https://github.com/mjousse72/archipelago_rwr/releases/download/v0.3.0/rwr.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/mjousse72/archipelago_rwr/releases/download/v0.2.0/rwr.apworld">https://github.com/mjousse72/archipelago_rwr/releases/download/v0.2.0/rwr.apworld</a>
 
 #### v0.1.0

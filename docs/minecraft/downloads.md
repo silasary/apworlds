@@ -1,11 +1,11 @@
 # Minecraft
 
 ## Latest
-- <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.2.1/minecraft.apworld">Latest Version (2.2.0r2)</a>
+- <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.2.1/minecraft.apworld">Latest Version (2.2.0.post2)</a>
 
 ## All Versions
 
-#### v2.2.0r2
+#### v2.2.0.post2
 - <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.2.1/minecraft.apworld">https://github.com/qixils/NeoForgeAP/releases/download/v2.2.1/minecraft.apworld</a>
 
 #### v2.2.0
@@ -14,19 +14,19 @@
 #### v2.1.3
 - <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.1.3/minecraft.apworld">https://github.com/qixils/NeoForgeAP/releases/download/v2.1.3/minecraft.apworld</a>
 
-#### v2.0.0r6
+#### v2.0.0.post6
 - <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.1.2/minecraft.apworld">https://github.com/qixils/NeoForgeAP/releases/download/v2.1.2/minecraft.apworld</a>
 
-#### v2.0.0r5
+#### v2.0.0.post5
 - <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.1.1/minecraft.apworld">https://github.com/qixils/NeoForgeAP/releases/download/v2.1.1/minecraft.apworld</a>
 
-#### v2.0.0r4
+#### v2.0.0.post4
 - <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.1.1/minecraft.apworld">https://github.com/qixils/NeoForgeAP/releases/download/v2.1.1/minecraft.apworld</a>
 
-#### v2.0.0r3
+#### v2.0.0.post3
 - <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.1.0/minecraft.apworld">https://github.com/qixils/NeoForgeAP/releases/download/v2.1.0/minecraft.apworld</a>
 
-#### v2.0.0r2
+#### v2.0.0.post2
 - <a href="https://github.com/qixils/NeoForgeAP/releases/download/v2.0.1/minecraft.apworld">https://github.com/qixils/NeoForgeAP/releases/download/v2.0.1/minecraft.apworld</a>
 
 #### v2.0.0

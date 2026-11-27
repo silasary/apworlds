@@ -1,15 +1,15 @@
 # Widget Inc
 
 ## Latest
-- <a href="https://github.com/SWCreeperKing/Widgitpelago/releases/download/v0.2.1/widget_inc.apworld">Latest Version (0.2.0r2)</a>
+- <a href="https://github.com/SWCreeperKing/Widgitpelago/releases/download/v0.3.0/widget_inc.apworld">Latest Version (0.2.0.post3)</a>
 
 ## All Versions
 
-#### v0.2.0r2
-- <a href="https://github.com/SWCreeperKing/Widgitpelago/releases/download/v0.2.1/widget_inc.apworld">https://github.com/SWCreeperKing/Widgitpelago/releases/download/v0.2.1/widget_inc.apworld</a>
-
-#### v0.2.0r2
+#### v0.2.0.post3
 - <a href="https://github.com/SWCreeperKing/Widgitpelago/releases/download/v0.3.0/widget_inc.apworld">https://github.com/SWCreeperKing/Widgitpelago/releases/download/v0.3.0/widget_inc.apworld</a>
+
+#### v0.2.0.post2
+- <a href="https://github.com/SWCreeperKing/Widgitpelago/releases/download/v0.2.1/widget_inc.apworld">https://github.com/SWCreeperKing/Widgitpelago/releases/download/v0.2.1/widget_inc.apworld</a>
 
 #### v0.2.0
 - <a href="https://github.com/SWCreeperKing/Widgitpelago/releases/download/v0.2.0/widget_inc.apworld">https://github.com/SWCreeperKing/Widgitpelago/releases/download/v0.2.0/widget_inc.apworld</a>
@@ -17,7 +17,7 @@
 #### v0.1.2
 - <a href="https://github.com/SWCreeperKing/Widgitpelago/releases/download/v0.1.2/widget_inc.apworld">https://github.com/SWCreeperKing/Widgitpelago/releases/download/v0.1.2/widget_inc.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/SWCreeperKing/Widgitpelago/releases/download/v0.1.1/widget_inc.apworld">https://github.com/SWCreeperKing/Widgitpelago/releases/download/v0.1.1/widget_inc.apworld</a>
 
 #### v0.1.0

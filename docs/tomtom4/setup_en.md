@@ -64,4 +64,3 @@ Please remember the 2 following things:
 3. Connect to the Archipelago server and enter your slot name.
 4. After connecting, start playing!
 Note: After selecting the directory for your game executable, the client stores this directory in a file in your Archipelago's install titled ".tomtom4_client_config.json". The client will only prompt you once for the game directory. If you reinstall the game or happen to move it elsewhere, you should delete the config file so the client re-prompts you for the game directory.
-

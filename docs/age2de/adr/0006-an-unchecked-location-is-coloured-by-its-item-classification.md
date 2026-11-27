@@ -1,7 +1,3 @@
----
-status: accepted
----
-
 # An unchecked location is coloured by its item's classification
 
 In-game descriptions carry a status line, and an unchecked location takes its colour from the

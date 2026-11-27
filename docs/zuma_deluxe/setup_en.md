@@ -28,4 +28,4 @@ and the [The Zuma Deluxe apworld](https://github.com/Movido51/Archipelago/releas
 
 From here, to connect you need to open the **Zuma Deluxe Client** either from the Archipelago Launcher or if the room comes from a Webhost you can enter by clicking your name.
 
-Once the **Zuma Deluxe Client** is open and connected it will search for the **Zuma Deluxe** game, once its open you can go to the Zuma Deluxe Tab and play. 
+Once the **Zuma Deluxe Client** is open and connected it will search for the **Zuma Deluxe** game, once its open you can go to the Zuma Deluxe Tab and play.

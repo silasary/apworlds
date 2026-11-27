@@ -65,25 +65,25 @@
 #### v3.0.0
 - <a href="https://github.com/rsa17826/mqap/releases/download/3/mathquest.apworld">https://github.com/rsa17826/mqap/releases/download/3/mathquest.apworld</a>
 
-#### v2.0.0r8
+#### v2.0.0.post8
 - <a href="https://github.com/rsa17826/mqap/releases/download/2/mathquest.apworld">https://github.com/rsa17826/mqap/releases/download/2/mathquest.apworld</a>
 
-#### v2.0.0r7
+#### v2.0.0.post7
 - <a href="https://github.com/rsa17826/mqap/releases/download/1/mathquest.apworld">https://github.com/rsa17826/mqap/releases/download/1/mathquest.apworld</a>
 
-#### v2.0.0r6
+#### v2.0.0.post6
 - <a href="https://github.com/rsa17826/mqap/releases/download/b4/mathquest.apworld">https://github.com/rsa17826/mqap/releases/download/b4/mathquest.apworld</a>
 
-#### v2.0.0r5
+#### v2.0.0.post5
 - <a href="https://github.com/rsa17826/mqap/releases/download/b3/mathquest.apworld">https://github.com/rsa17826/mqap/releases/download/b3/mathquest.apworld</a>
 
-#### v2.0.0r4
+#### v2.0.0.post4
 - <a href="https://github.com/rsa17826/mqap/releases/download/b2/mathquest.apworld">https://github.com/rsa17826/mqap/releases/download/b2/mathquest.apworld</a>
 
-#### v2.0.0r3
+#### v2.0.0.post3
 - <a href="https://github.com/rsa17826/mqap/releases/download/b1/mathquest.apworld">https://github.com/rsa17826/mqap/releases/download/b1/mathquest.apworld</a>
 
-#### v2.0.0r2
+#### v2.0.0.post2
 - <a href="https://github.com/rsa17826/mqap/releases/download/a2/mathquest.apworld">https://github.com/rsa17826/mqap/releases/download/a2/mathquest.apworld</a>
 
 #### v2.0.0

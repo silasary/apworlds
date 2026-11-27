@@ -20,4 +20,3 @@ Extract the game to your computer. (include specific instructions)
 ## Commands
 
 While playing the multiworld, you can interact with the server using various commands listed in the [commands guide](/tutorial/Archipelago/commands/en). As this game does not have an in-game text client at the moment, you can optionally connect to the multiworld using the text client, which can be found in the [main Archipelago installation](https://github.com/ArchipelagoMW/Archipelago/releases) as Archipelago Text Client to enter these commands.
-

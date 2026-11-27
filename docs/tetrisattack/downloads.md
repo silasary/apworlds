@@ -8,7 +8,7 @@
 #### v0.4.3
 - <a href="https://github.com/AgStarRay/TetrisAttackAP/releases/download/0.4.3/tetrisattack.apworld">https://github.com/AgStarRay/TetrisAttackAP/releases/download/0.4.3/tetrisattack.apworld</a>
 
-#### v0.4.2r2
+#### v0.4.2.post2
 - <a href="https://github.com/AgStarRay/TetrisAttackAP/releases/download/0.4.2_01/tetrisattack.apworld">https://github.com/AgStarRay/TetrisAttackAP/releases/download/0.4.2_01/tetrisattack.apworld</a>
 
 #### v0.4.2
@@ -23,7 +23,7 @@
 #### v0.3.0
 - <a href="https://github.com/AgStarRay/TetrisAttackAP/releases/download/0.3.0/tetrisattack.apworld">https://github.com/AgStarRay/TetrisAttackAP/releases/download/0.3.0/tetrisattack.apworld</a>
 
-#### v0.2.0r2
+#### v0.2.0.post2
 - <a href="https://github.com/AgStarRay/TetrisAttackAP/releases/download/0.2.0_01/tetrisattack.apworld">https://github.com/AgStarRay/TetrisAttackAP/releases/download/0.2.0_01/tetrisattack.apworld</a>
 
 #### v0.2.0

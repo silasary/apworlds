@@ -8,20 +8,20 @@
 #### v0.7.6
 - <a href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.6.5/tevi.apworld">https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.6.5/tevi.apworld</a>
 
-#### v0.7.5r2
+#### v0.7.5.post2
 - <a href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.6.4/tevi.apworld">https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.6.4/tevi.apworld</a>
 
 #### v0.7.5
 - <a href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.6.3/tevi.apworld">https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.6.3/tevi.apworld</a>
 
-#### v0.7.3r2
+#### v0.7.3.post3
 - <a href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/V1.6.1/tevi.apworld">https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/V1.6.1/tevi.apworld</a>
+
+#### v0.7.3.post2
+- <a href="https://github.com/BlackSoulKnight/Tevi_Archipelago/releases/download/v0.7.3/tevi.apworld">https://github.com/BlackSoulKnight/Tevi_Archipelago/releases/download/v0.7.3/tevi.apworld</a>
 
 #### v0.7.3r2
 - <a href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.6.0/tevi.apworld">https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.6.0/tevi.apworld</a>
-
-#### v0.7.3
-- <a href="https://github.com/BlackSoulKnight/Tevi_Archipelago/releases/download/v0.7.3/tevi.apworld">https://github.com/BlackSoulKnight/Tevi_Archipelago/releases/download/v0.7.3/tevi.apworld</a>
 
 #### v0.7.2
 - <a href="https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.5.3/tevi.apworld">https://github.com/BlackSoulKnight/Tevi_Randomizer/releases/download/v1.5.3/tevi.apworld</a>

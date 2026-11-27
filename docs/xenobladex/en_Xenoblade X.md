@@ -221,4 +221,3 @@ Some of these are enabled through graphic packs. Some of them can be configured.
 - The main inventory can display items of the weapon and armor categories for skells and characters incorrectly. They correctly appear in the corresponding equip menus though.
 - If you enable all the Items and disable all the Locations you will be unable to fit all the progression items into the Multiworld. The generation will fail.
 - You might be unable to enter your skell for unkown reasons.
-  

@@ -26,7 +26,7 @@
 #### v1.0.2
 - <a href="https://github.com/DeDeDeK/KARchipelago/releases/download/v1.0.2-TEST/kirby_air_ride.apworld">https://github.com/DeDeDeK/KARchipelago/releases/download/v1.0.2-TEST/kirby_air_ride.apworld</a>
 
-#### v1.0.0r2
+#### v1.0.0.post2
 - <a href="https://github.com/DeDeDeK/KARchipelago/releases/download/v1.0.1-TEST/kirby_air_ride.apworld">https://github.com/DeDeDeK/KARchipelago/releases/download/v1.0.1-TEST/kirby_air_ride.apworld</a>
 
 #### v1.0.0

@@ -8,7 +8,7 @@
 #### v2.0.1
 - <a href="https://github.com/PinkSwitch/Archipelago/releases/download/meleeap2.0.1/melee.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/meleeap2.0.1/melee.apworld</a>
 
-#### v2.0.0r2
+#### v2.0.0.post2
 - <a href="https://github.com/PinkSwitch/Archipelago/releases/download/meleeap2.0/melee.apworld">https://github.com/PinkSwitch/Archipelago/releases/download/meleeap2.0/melee.apworld</a>
 
 #### v2.0.0

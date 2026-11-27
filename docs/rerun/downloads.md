@@ -1,11 +1,11 @@
 # RE:RUN
 
 ## Latest
-- <a href="https://github.com/MuratDev41/rerun-ap/releases/download/v0.0.2hotfix/rerun.apworld">Latest Version (0.0.2r2)</a>
+- <a href="https://github.com/MuratDev41/rerun-ap/releases/download/v0.0.2hotfix/rerun.apworld">Latest Version (0.0.2.post2)</a>
 
 ## All Versions
 
-#### v0.0.2r2
+#### v0.0.2.post2
 - <a href="https://github.com/MuratDev41/rerun-ap/releases/download/v0.0.2hotfix/rerun.apworld">https://github.com/MuratDev41/rerun-ap/releases/download/v0.0.2hotfix/rerun.apworld</a>
 
 #### v0.0.2

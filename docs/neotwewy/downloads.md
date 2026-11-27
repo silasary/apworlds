@@ -8,7 +8,7 @@
 #### v0.1.0
 - <a href="https://github.com/Sjerver/NEO-Twewy-Archipelago-Mod/releases/download/v.0.1.0/neotwewy.apworld">https://github.com/Sjerver/NEO-Twewy-Archipelago-Mod/releases/download/v.0.1.0/neotwewy.apworld</a>
 
-#### v0.0.4r2
+#### v0.0.4.post2
 - <a href="https://github.com/Sjerver/NEO-Twewy-Archipelago-Mod/releases/download/v.0.0.5/neotwewy.apworld">https://github.com/Sjerver/NEO-Twewy-Archipelago-Mod/releases/download/v.0.0.5/neotwewy.apworld</a>
 
 #### v0.0.4

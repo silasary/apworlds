@@ -26,25 +26,25 @@
 #### v10.0.0
 - <a href="https://github.com/rsa17826/vex2-ap/releases/download/10/vex2.apworld">https://github.com/rsa17826/vex2-ap/releases/download/10/vex2.apworld</a>
 
-#### v2.0.0r8
+#### v2.0.0.post8
 - <a href="https://github.com/rsa17826/vex2-ap/releases/download/9/vex2.apworld">https://github.com/rsa17826/vex2-ap/releases/download/9/vex2.apworld</a>
 
-#### v2.0.0r7
+#### v2.0.0.post7
 - <a href="https://github.com/rsa17826/vex2-ap/releases/download/8/vex2.apworld">https://github.com/rsa17826/vex2-ap/releases/download/8/vex2.apworld</a>
 
-#### v2.0.0r6
+#### v2.0.0.post6
 - <a href="https://github.com/rsa17826/vex2-ap/releases/download/7/vex2.apworld">https://github.com/rsa17826/vex2-ap/releases/download/7/vex2.apworld</a>
 
-#### v2.0.0r5
+#### v2.0.0.post5
 - <a href="https://github.com/rsa17826/vex2-ap/releases/download/6/vex2.apworld">https://github.com/rsa17826/vex2-ap/releases/download/6/vex2.apworld</a>
 
-#### v2.0.0r4
+#### v2.0.0.post4
 - <a href="https://github.com/rsa17826/vex2-ap/releases/download/5/vex2.apworld">https://github.com/rsa17826/vex2-ap/releases/download/5/vex2.apworld</a>
 
-#### v2.0.0r3
+#### v2.0.0.post3
 - <a href="https://github.com/rsa17826/vex2-ap/releases/download/4/vex2.apworld">https://github.com/rsa17826/vex2-ap/releases/download/4/vex2.apworld</a>
 
-#### v2.0.0r2
+#### v2.0.0.post2
 - <a href="https://github.com/rsa17826/vex2-ap/releases/download/3/vex2.apworld">https://github.com/rsa17826/vex2-ap/releases/download/3/vex2.apworld</a>
 
 #### v2.0.0

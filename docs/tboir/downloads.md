@@ -17,16 +17,16 @@
 #### v0.4.3
 - <a href="https://github.com/NaveTK/Archipelago/releases/download/v0.4.3/tboir.apworld">https://github.com/NaveTK/Archipelago/releases/download/v0.4.3/tboir.apworld</a>
 
-#### v0.4.1r2
+#### v0.4.1.post2
 - <a href="https://github.com/NaveTK/Archipelago/releases/download/v0.4.2/tboir.apworld">https://github.com/NaveTK/Archipelago/releases/download/v0.4.2/tboir.apworld</a>
 
 #### v0.4.1
 - <a href="https://github.com/NaveTK/Archipelago/releases/download/v0.4.1/tboir.apworld">https://github.com/NaveTK/Archipelago/releases/download/v0.4.1/tboir.apworld</a>
 
-#### v0.3.0r2
+#### v0.3.0.post3
 - <a href="https://github.com/NaveTK/Archipelago/releases/download/v0.4.0/tboir.apworld">https://github.com/NaveTK/Archipelago/releases/download/v0.4.0/tboir.apworld</a>
 
-#### v0.3.0r2r2
+#### v0.3.0.post2
 - <a href="https://github.com/NaveTK/Archipelago/releases/download/v0.4.0/tboir.apworld">https://github.com/NaveTK/Archipelago/releases/download/v0.4.0/tboir.apworld</a>
 
 #### v0.3.0
@@ -41,7 +41,7 @@
 #### v0.2.3
 - <a href="https://github.com/NaveTK/Archipelago/releases/download/v0.2.3/tboir.apworld">https://github.com/NaveTK/Archipelago/releases/download/v0.2.3/tboir.apworld</a>
 
-#### v0.2.1r2
+#### v0.2.1.post2
 - <a href="https://github.com/NaveTK/Archipelago/releases/download/v0.2.2/tboir.apworld">https://github.com/NaveTK/Archipelago/releases/download/v0.2.2/tboir.apworld</a>
 
 #### v0.2.1

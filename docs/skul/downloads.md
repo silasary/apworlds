@@ -11,7 +11,7 @@
 #### v1.0.1
 - <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Skul/releases/download/1.0.1/skul.apworld">https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Skul/releases/download/1.0.1/skul.apworld</a>
 
-#### v1.0.0r2
+#### v1.0.0.post2
 - <a href="https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Skul/releases/download/1.0.0/skul.apworld">https://github.com/Jeffdev-Archipelago-Implementations/Archipelago-Skul/releases/download/1.0.0/skul.apworld</a>
 
 #### v1.0.0

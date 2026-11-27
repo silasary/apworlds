@@ -1,26 +1,26 @@
 # Five Nights at Fuckboy&#x27;s 2
 
 ## Latest
-- <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.4.7/fnafb2.apworld">Latest Version (0.4.3r3)</a>
+- <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.4.7/fnafb2.apworld">Latest Version (0.4.3.post5)</a>
 
 ## All Versions
 
-#### v0.4.3r3
+#### v0.4.3.post5
 - <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.4.7/fnafb2.apworld">https://github.com/zuils/FNaFBAP/releases/download/v0.4.7/fnafb2.apworld</a>
 
-#### v0.4.3r2
-- <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.4.4/fnafb2.apworld">https://github.com/zuils/FNaFBAP/releases/download/v0.4.4/fnafb2.apworld</a>
+#### v0.4.3.post4
+- <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.4.6/fnafb2.apworld">https://github.com/zuils/FNaFBAP/releases/download/v0.4.6/fnafb2.apworld</a>
 
-#### v0.4.3r2r2
+#### v0.4.3.post3
 - <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.4.5/fnafb2.apworld">https://github.com/zuils/FNaFBAP/releases/download/v0.4.5/fnafb2.apworld</a>
 
-#### v0.4.3r2
-- <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.4.6/fnafb2.apworld">https://github.com/zuils/FNaFBAP/releases/download/v0.4.6/fnafb2.apworld</a>
+#### v0.4.3.post2
+- <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.4.4/fnafb2.apworld">https://github.com/zuils/FNaFBAP/releases/download/v0.4.4/fnafb2.apworld</a>
 
 #### v0.4.3
 - <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.4.3/fnafb2.apworld">https://github.com/zuils/FNaFBAP/releases/download/v0.4.3/fnafb2.apworld</a>
 
-#### v0.4.1r2
+#### v0.4.1.post2
 - <a href="https://github.com/zuils/FNaFBAP/releases/download/v0.4.2/fnafb2.apworld">https://github.com/zuils/FNaFBAP/releases/download/v0.4.2/fnafb2.apworld</a>
 
 #### v0.4.1

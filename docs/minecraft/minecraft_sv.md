@@ -129,4 +129,3 @@ lösenord.
 När konsolen har informerat att du har gått med i rummet så är du redo att börja spela. Grattis att du har lykats med
 att gått med i ett Multivärld-spel! Vid detta tillfälle, alla ytterligare Minecraft-spelare må koppla in till din
 forge-server.
-

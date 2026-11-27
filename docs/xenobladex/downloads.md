@@ -29,7 +29,7 @@
 #### v0.2.7
 - <a href="https://github.com/MaragonMH/Archipelago/releases/download/XenoX0.2.7/xenobladex.apworld">https://github.com/MaragonMH/Archipelago/releases/download/XenoX0.2.7/xenobladex.apworld</a>
 
-#### v0.2.5r2
+#### v0.2.5.post2
 - <a href="https://github.com/MaragonMH/Archipelago/releases/download/XenoX0.2.6/xenobladex.apworld">https://github.com/MaragonMH/Archipelago/releases/download/XenoX0.2.6/xenobladex.apworld</a>
 
 #### v0.2.5

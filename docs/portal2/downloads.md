@@ -8,7 +8,7 @@
 #### v0.8.2
 - <a href="https://github.com/GlassToadstool/Portal2ArchipelagoMod/releases/download/0.8.2/portal2.apworld">https://github.com/GlassToadstool/Portal2ArchipelagoMod/releases/download/0.8.2/portal2.apworld</a>
 
-#### v0.8.0r2
+#### v0.8.0.post2
 - <a href="https://github.com/GlassToadstool/Portal2ArchipelagoMod/releases/download/0.8.1/portal2.apworld">https://github.com/GlassToadstool/Portal2ArchipelagoMod/releases/download/0.8.1/portal2.apworld</a>
 
 #### v0.8.0
@@ -29,13 +29,13 @@
 #### v0.5.6
 - <a href="https://github.com/GlassToadstool/Archipelago/releases/download/0.5.6/portal2.apworld">https://github.com/GlassToadstool/Archipelago/releases/download/0.5.6/portal2.apworld</a>
 
-#### v0.5.2r4
+#### v0.5.2.post4
 - <a href="https://github.com/GlassToadstool/Archipelago/releases/download/0.5.5/portal2.apworld">https://github.com/GlassToadstool/Archipelago/releases/download/0.5.5/portal2.apworld</a>
 
-#### v0.5.2r3
+#### v0.5.2.post3
 - <a href="https://github.com/GlassToadstool/Archipelago/releases/download/0.5.4/portal2.apworld">https://github.com/GlassToadstool/Archipelago/releases/download/0.5.4/portal2.apworld</a>
 
-#### v0.5.2r2
+#### v0.5.2.post2
 - <a href="https://github.com/GlassToadstool/Archipelago/releases/download/0.5.3/portal2.apworld">https://github.com/GlassToadstool/Archipelago/releases/download/0.5.3/portal2.apworld</a>
 
 #### v0.5.2
@@ -44,7 +44,7 @@
 #### v0.5.1
 - <a href="https://github.com/GlassToadstool/Archipelago/releases/download/0.5.1/portal2.apworld">https://github.com/GlassToadstool/Archipelago/releases/download/0.5.1/portal2.apworld</a>
 
-#### v0.5.0r2
+#### v0.5.0.post2
 - <a href="https://github.com/GlassToadstool/Archipelago/releases/download/0.5/portal2.apworld">https://github.com/GlassToadstool/Archipelago/releases/download/0.5/portal2.apworld</a>
 
 #### v0.5.0

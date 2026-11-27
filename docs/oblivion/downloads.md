@@ -23,7 +23,7 @@
 #### v0.5.0
 - <a href="https://github.com/POD-io/Oblivion-ArchipelagoWorld/releases/download/v0.5.0/oblivion.apworld">https://github.com/POD-io/Oblivion-ArchipelagoWorld/releases/download/v0.5.0/oblivion.apworld</a>
 
-#### v0.4.5r2
+#### v0.4.5.post2
 - <a href="https://github.com/POD-io/Oblivion-ArchipelagoWorld/releases/download/v0.4.6/oblivion.apworld">https://github.com/POD-io/Oblivion-ArchipelagoWorld/releases/download/v0.4.6/oblivion.apworld</a>
 
 #### v0.4.5

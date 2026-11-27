@@ -50,7 +50,7 @@
 #### v0.4
 - <a href="https://github.com/silasary/Archipelago/releases/download/factorio_saws-0.4/factorio_saws.apworld">https://github.com/silasary/Archipelago/releases/download/factorio_saws-0.4/factorio_saws.apworld</a>
 
-#### v0.0.7r2
+#### v0.0.7.post2
 - <a href="https://github.com/silasary/Archipelago/releases/download/factorio_saws-0.0.7/factorio_saws.apworld">https://github.com/silasary/Archipelago/releases/download/factorio_saws-0.0.7/factorio_saws.apworld</a>
 
 #### v0.0.7

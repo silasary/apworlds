@@ -20,7 +20,7 @@
 #### v0.10.0
 - <a href="https://github.com/Wakamu/Grandiarchipelago/releases/download/0.11.0/grandia.apworld">https://github.com/Wakamu/Grandiarchipelago/releases/download/0.11.0/grandia.apworld</a>
 
-#### v0.9.9r2
+#### v0.9.9.post2
 - <a href="https://github.com/Wakamu/Grandiarchipelago/releases/download/0.10.0/grandia.apworld">https://github.com/Wakamu/Grandiarchipelago/releases/download/0.10.0/grandia.apworld</a>
 
 #### v0.9.9

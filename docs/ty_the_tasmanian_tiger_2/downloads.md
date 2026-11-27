@@ -11,16 +11,16 @@
 #### v0.2.0
 - <a href="https://github.com/FyreDay/Archipelago-TyTheTasmanianTiger2/releases/download/v0.2.0/ty_the_tasmanian_tiger_2.apworld">https://github.com/FyreDay/Archipelago-TyTheTasmanianTiger2/releases/download/v0.2.0/ty_the_tasmanian_tiger_2.apworld</a>
 
-#### v0.1.4r3
+#### v0.1.4.post3
 - <a href="https://github.com/FyreDay/Archipelago-TyTheTasmanianTiger2/releases/download/v0.1.6/ty_the_tasmanian_tiger_2.apworld">https://github.com/FyreDay/Archipelago-TyTheTasmanianTiger2/releases/download/v0.1.6/ty_the_tasmanian_tiger_2.apworld</a>
 
-#### v0.1.4r2
+#### v0.1.4.post2
 - <a href="https://github.com/FyreDay/Archipelago-TyTheTasmanianTiger2/releases/download/v0.1.5/ty_the_tasmanian_tiger_2.apworld">https://github.com/FyreDay/Archipelago-TyTheTasmanianTiger2/releases/download/v0.1.5/ty_the_tasmanian_tiger_2.apworld</a>
 
 #### v0.1.4
 - <a href="https://github.com/FyreDay/Archipelago-TyTheTasmanianTiger2/releases/download/v0.1.4/ty_the_tasmanian_tiger_2.apworld">https://github.com/FyreDay/Archipelago-TyTheTasmanianTiger2/releases/download/v0.1.4/ty_the_tasmanian_tiger_2.apworld</a>
 
-#### v0.1.2r2
+#### v0.1.2.post2
 - <a href="https://github.com/FyreDay/Archipelago-TyTheTasmanianTiger2/releases/download/v0.1.3/ty_the_tasmanian_tiger_2.apworld">https://github.com/FyreDay/Archipelago-TyTheTasmanianTiger2/releases/download/v0.1.3/ty_the_tasmanian_tiger_2.apworld</a>
 
 #### v0.1.2

@@ -14,11 +14,11 @@
 #### v0.9.0
 - <a href="https://github.com/awakenbad/SanAndreasAP/releases/download/v0.9.0/gta_sa.apworld">https://github.com/awakenbad/SanAndreasAP/releases/download/v0.9.0/gta_sa.apworld</a>
 
-#### v0.8.1r2
-- <a href="https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.2/gta_sa.apworld">https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.2/gta_sa.apworld</a>
-
-#### v0.8.1r2
+#### v0.8.1.post3
 - <a href="https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.3/gta_sa.apworld">https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.3/gta_sa.apworld</a>
+
+#### v0.8.1.post2
+- <a href="https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.2/gta_sa.apworld">https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.2/gta_sa.apworld</a>
 
 #### v0.8.1
 - <a href="https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.1/gta_sa.apworld">https://github.com/awakenbad/SanAndreasAP/releases/download/v0.8.1/gta_sa.apworld</a>
@@ -38,7 +38,7 @@
 #### v0.5.0
 - <a href="https://github.com/awakenbad/SanAndreasAP/releases/download/v0.5.0/gta_sa.apworld">https://github.com/awakenbad/SanAndreasAP/releases/download/v0.5.0/gta_sa.apworld</a>
 
-#### v0.4.0r2
+#### v0.4.0.post2
 - <a href="https://github.com/awakenbad/SanAndreasAP/releases/download/v0.4.1/gta_sa.apworld">https://github.com/awakenbad/SanAndreasAP/releases/download/v0.4.1/gta_sa.apworld</a>
 
 #### v0.4.0

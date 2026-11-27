@@ -1,15 +1,15 @@
 # YARGGuitarHero3
 
 ## Latest
-- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.10.03/YARGGuitarHero3.apworld">Latest Version (26.9.17r2)</a>
+- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.10.08/YARGGuitarHero3.apworld">Latest Version (26.9.17.post3)</a>
 
 ## All Versions
 
-#### v26.9.17r2
-- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.10.03/YARGGuitarHero3.apworld">https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.10.03/YARGGuitarHero3.apworld</a>
-
-#### v26.9.17r2
+#### v26.9.17.post3
 - <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.10.08/YARGGuitarHero3.apworld">https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.10.08/YARGGuitarHero3.apworld</a>
+
+#### v26.9.17.post2
+- <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.10.03/YARGGuitarHero3.apworld">https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.10.03/YARGGuitarHero3.apworld</a>
 
 #### v26.9.17
 - <a href="https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.09.17/YARGGuitarHero3.apworld">https://github.com/GirlWithoutAFairy/YARGArchipelago-GH-and-RB-forks/releases/download/26.09.17/YARGGuitarHero3.apworld</a>

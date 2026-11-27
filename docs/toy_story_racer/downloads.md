@@ -8,6 +8,6 @@
 #### v0.1.0r2
 - <a href="https://github.com/Vzencio/Toy-Story-Racer-Archipelago/releases/download/v0.1/toy_story_racer.apworld">https://github.com/Vzencio/Toy-Story-Racer-Archipelago/releases/download/v0.1/toy_story_racer.apworld</a>
 
-#### v0.1.0
+#### v0.1.0.post2
 - <a href="https://github.com/Vzencio/Toy-Story-Racer-Archipelago/releases/download/v1.0.0/toy_story_racer.apworld">https://github.com/Vzencio/Toy-Story-Racer-Archipelago/releases/download/v1.0.0/toy_story_racer.apworld</a>
 

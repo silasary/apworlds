@@ -87,4 +87,4 @@ You can then update the connection info and click "Connect". Eventually, I plan 
 
 To update the mod, you can replace the entire `EquilinoxAP` folder with the new one from the new .zip file. This will reset your config file, so copying that (the `Equilinox_0_UserConfigs.dat` file in the EquilinoxAP folder) first may be desirable. 
 Replacing the EquilinoxAP folder will *not* touch your existing save files, since they are saved in the `Equilinox_AP_Saves` folder in the game directory. 
-However, you should still pay attention to compatibility warnings in the release notes for a new version. 
+However, you should still pay attention to compatibility warnings in the release notes for a new version.

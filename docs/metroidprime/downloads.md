@@ -1,17 +1,17 @@
 # Metroid Prime
 
 ## Latest
-- <a href="https://github.com/UltiNaruto/MetroidAPrime/releases/download/v0.5.4-h1/metroidprime.apworld">Latest Version (0.5.4r2)</a>
+- <a href="https://github.com/UltiNaruto/MetroidAPrime/releases/download/v0.5.4-h1/metroidprime.apworld">Latest Version (0.5.4.post2)</a>
 
 ## All Versions
 
-#### v0.5.4r2
+#### v0.5.4.post2
 - <a href="https://github.com/UltiNaruto/MetroidAPrime/releases/download/v0.5.4-h1/metroidprime.apworld">https://github.com/UltiNaruto/MetroidAPrime/releases/download/v0.5.4-h1/metroidprime.apworld</a>
 
 #### v0.5.4
 - <a href="https://github.com/UltiNaruto/MetroidAPrime/releases/download/v0.5.4/metroidprime.apworld">https://github.com/UltiNaruto/MetroidAPrime/releases/download/v0.5.4/metroidprime.apworld</a>
 
-#### v0.5.3r2
+#### v0.5.3.post2
 - <a href="https://github.com/UltiNaruto/MetroidAPrime/releases/download/v0.5.3-h1/metroidprime.apworld">https://github.com/UltiNaruto/MetroidAPrime/releases/download/v0.5.3-h1/metroidprime.apworld</a>
 
 #### v0.5.3

@@ -35,7 +35,7 @@
 #### v1.1.0
 - <a href="https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v1.1.0/peggle_deluxe.apworld">https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v1.1.0/peggle_deluxe.apworld</a>
 
-#### v1.0.0r2
+#### v1.0.0.post2
 - <a href="https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v1.0.1/peggle_deluxe.apworld">https://github.com/SerpentAI/Archipelago/releases/download/peggle-deluxe-v1.0.1/peggle_deluxe.apworld</a>
 
 #### v1.0.0

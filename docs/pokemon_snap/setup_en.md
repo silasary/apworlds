@@ -88,4 +88,3 @@ When the ISO patched, the Pokemon Snap Client should have also automatically lau
 ## Hitting issues?
 
 See [FAQ](faq_en.md) for troubleshooting tips
-

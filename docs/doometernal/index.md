@@ -1,6 +1,7 @@
 # DOOM Eternal
 
-
+Rip and tear, until it is done.
+Doom Eternal Randomizer for Archipelago.
 
 
 ## Downloads

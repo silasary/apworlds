@@ -31,4 +31,3 @@ you of the item's name and its target world.
 - The Giant is moved by a few tiles so that his Chests cannot be accessed without the Star Ruby.
 - The Caravan check is always at the Caravan.
 - When shuffling Entrances, the Caravan is an entrance that can be shuffled, don't forget about it.
-

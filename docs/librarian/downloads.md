@@ -56,10 +56,10 @@
 #### v1.1.0rc1
 - <a href="https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0-rc1/librarian.apworld">https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0-rc1/librarian.apworld</a>
 
-#### v1.1.0b6r3
+#### v1.1.0b6.post3
 - <a href="https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0-beta6.2/librarian.apworld">https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0-beta6.2/librarian.apworld</a>
 
-#### v1.1.0b6r2
+#### v1.1.0b6.post2
 - <a href="https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0-beta6.1/librarian.apworld">https://github.com/Str8UpWHITE64/Librarian-AP/releases/download/1.1.0-beta6.1/librarian.apworld</a>
 
 #### v1.1.0b6

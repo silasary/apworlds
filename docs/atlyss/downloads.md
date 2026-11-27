@@ -8,15 +8,15 @@
 #### v0.2.0
 - <a href="https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.2/atlyss.apworld">https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.2/atlyss.apworld</a>
 
-#### v0.1.0r4
+#### v0.1.0.post4
 - <a href="https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.1/atlyss.apworld">https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.1/atlyss.apworld</a>
 
-#### v0.1.0r3
+#### v0.1.0.post3
 - <a href="https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.0/atlyss.apworld">https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.2.0/atlyss.apworld</a>
 
 #### v0.1.0r2
 - <a href="https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.1.0/atlyss.apworld">https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.1.0/atlyss.apworld</a>
 
-#### v0.1.0
+#### v0.1.0.post2
 - <a href="https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.1.1/atlyss.apworld">https://github.com/Blitz0070/ATLYSS-Archipelago/releases/download/v0.1.1/atlyss.apworld</a>
 

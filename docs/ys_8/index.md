@@ -5,7 +5,7 @@ The game features real-time combat, exploration, and a variety of characters to 
 
 
 ## Downloads
-- <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.2.2/ys_8.apworld">Latest Version (1.2.0r2)</a>
+- <a href="https://github.com/junglechief87/Ys-8-AP-World/releases/download/v1.2.3b/ys_8.apworld">Latest Version (1.2.0.post3)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

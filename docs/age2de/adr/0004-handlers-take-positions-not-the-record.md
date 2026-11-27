@@ -1,7 +1,3 @@
----
-status: accepted
----
-
 # Client handlers take stream positions, never the spent record
 
 Ticket 08 (`.scratch/item-delivery-cursor/issues/08`) made `StorageHandler` the one owner of the

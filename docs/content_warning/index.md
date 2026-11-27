@@ -6,7 +6,7 @@ views, and try to go viral before your quota runs out.
 
 
 ## Downloads
-- <a href="https://github.com/Jakeodude/cw-apworld/releases/download/1.0.1/content_warning.apworld">Latest Version (0.1.0r2)</a>
+- <a href="https://github.com/Jakeodude/cw-apworld/releases/download/1.0.1/content_warning.apworld">Latest Version (0.1.0.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

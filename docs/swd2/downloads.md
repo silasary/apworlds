@@ -1,9 +1,12 @@
 # SteamWorld Dig 2
 
 ## Latest
-- <a href="https://github.com/ClTYOFEVlL/SWD2-Archipelago/releases/download/v0.3.0/swd2.apworld">Latest Version (0.3.0)</a>
+- <a href="https://github.com/ClTYOFEVlL/SWD2-Archipelago/releases/download/v0.3.1/swd2.apworld">Latest Version (0.3.1)</a>
 
 ## All Versions
+
+#### v0.3.1
+- <a href="https://github.com/ClTYOFEVlL/SWD2-Archipelago/releases/download/v0.3.1/swd2.apworld">https://github.com/ClTYOFEVlL/SWD2-Archipelago/releases/download/v0.3.1/swd2.apworld</a>
 
 #### v0.3.0
 - <a href="https://github.com/ClTYOFEVlL/SWD2-Archipelago/releases/download/v0.3.0/swd2.apworld">https://github.com/ClTYOFEVlL/SWD2-Archipelago/releases/download/v0.3.0/swd2.apworld</a>

@@ -1,7 +1,3 @@
----
-status: accepted
----
-
 # The scenario file is not the oracle for what a trigger grants
 
 Playtest #53 audited every `AP Give` trigger against `AUTHORED_TRIGGER_UNITS` and found a real gap,

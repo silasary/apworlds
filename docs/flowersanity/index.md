@@ -1,13 +1,13 @@
 # Flowersanity
 
-shapez 2 is an automation game about cutting, rotating, stacking, and painting shapes, that you extract from
-randomly generated islands in an infinite space, without having to pay for building your factories.
-It is the successor to shapez and contains a variety of more features like crystals, space platforms and belts,
-trains, and an astounding new 3-dimensional gameplay environment in space.
+Flowersanity is a game about merging flowers and mixing their colors.
+It was made for the Archipelago Game Jam 2026.
+By spawning in the flower colors you received and merging them using different
+calculation modes, you create and thereby check new colors.
 
 
 ## Downloads
-- <a href="https://github.com/BlastSlimey/Archipelago/releases/download/flowersanity_1.1.0_fix/flowersanity.apworld">Latest Version (1.1.0r2)</a>
+- <a href="https://github.com/BlastSlimey/Archipelago/releases/download/flowersanity_1.1.0_fix/flowersanity.apworld">Latest Version (1.1.0.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

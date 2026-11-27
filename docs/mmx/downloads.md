@@ -15,13 +15,13 @@
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.1/mmx.apworld">https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.1/mmx.apworld</a>
 
 #### v1.6.0.post3
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0-beta/mmx.apworld">https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0-beta/mmx.apworld</a>
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0/mmx.apworld">https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0/mmx.apworld</a>
 
 #### v1.6.0.post2
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0-beta/mmx.apworld">https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0-beta/mmx.apworld</a>
 
-#### v1.6.0
-- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0/mmx.apworld">https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0/mmx.apworld</a>
+#### v1.6.0.post2
+- <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0-beta/mmx.apworld">https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0-beta/mmx.apworld</a>
 
 #### v1.6.0b0
 - <a href="https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0-beta/mmx.apworld">https://github.com/TheLX5/Archipelago/releases/download/mmx-v1.6.0-beta/mmx.apworld</a>

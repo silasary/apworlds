@@ -14,7 +14,7 @@
 #### v0.1.2
 - <a href="https://github.com/mariokirby1703/Lumas-Archipelago/releases/download/create_v0.1.2/create.apworld">https://github.com/mariokirby1703/Lumas-Archipelago/releases/download/create_v0.1.2/create.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/mariokirby1703/Lumas-Archipelago/releases/download/create_v0.1.1/create.apworld">https://github.com/mariokirby1703/Lumas-Archipelago/releases/download/create_v0.1.1/create.apworld</a>
 
 #### v0.1.0

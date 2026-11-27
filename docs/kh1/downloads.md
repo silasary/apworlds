@@ -120,31 +120,31 @@
 - <a href="https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.8.5/kh1.apworld">https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.8.5/kh1.apworld</a>
 
 #### v0.8.4.post2
+- <a href="https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.8.4/kh1.apworld">https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.8.4/kh1.apworld</a>
+
+#### v0.8.4.post2
 - <a href="https://github.com/gaithernOrg/KH1FM-AP/releases/download/0.8.4/kh1.apworld">https://github.com/gaithernOrg/KH1FM-AP/releases/download/0.8.4/kh1.apworld</a>
 
-#### v0.8.4
-- <a href="https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.8.4/kh1.apworld">https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.8.4/kh1.apworld</a>
+#### v0.8.3.post2
+- <a href="https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.8.3/kh1.apworld">https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.8.3/kh1.apworld</a>
 
 #### v0.8.3.post2
 - <a href="https://github.com/gaithernOrg/KH1FM-AP/releases/download/0.8.3/kh1.apworld">https://github.com/gaithernOrg/KH1FM-AP/releases/download/0.8.3/kh1.apworld</a>
 
-#### v0.8.3
-- <a href="https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.8.3/kh1.apworld">https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.8.3/kh1.apworld</a>
+#### v0.8.2.post2
+- <a href="https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.8.2/kh1.apworld">https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.8.2/kh1.apworld</a>
 
 #### v0.8.2.post2
 - <a href="https://github.com/gaithernOrg/KH1FM-AP/releases/download/0.8.2/kh1.apworld">https://github.com/gaithernOrg/KH1FM-AP/releases/download/0.8.2/kh1.apworld</a>
-
-#### v0.8.2
-- <a href="https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.8.2/kh1.apworld">https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.8.2/kh1.apworld</a>
 
 #### v0.8.1
 - <a href="https://github.com/gaithernOrg/KH1FM-AP/releases/download/0.8.1/kh1.apworld">https://github.com/gaithernOrg/KH1FM-AP/releases/download/0.8.1/kh1.apworld</a>
 
 #### v0.8.0.post2
-- <a href="https://github.com/gaithernOrg/KH1FM-AP/releases/download/0.8.0/kh1.apworld">https://github.com/gaithernOrg/KH1FM-AP/releases/download/0.8.0/kh1.apworld</a>
-
-#### v0.8.0
 - <a href="https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.8.0/kh1.apworld">https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.8.0/kh1.apworld</a>
+
+#### v0.8.0.post2
+- <a href="https://github.com/gaithernOrg/KH1FM-AP/releases/download/0.8.0/kh1.apworld">https://github.com/gaithernOrg/KH1FM-AP/releases/download/0.8.0/kh1.apworld</a>
 
 #### v0.2
 - <a href="https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.2/kh1.apworld">https://github.com/gaithernOrg/ArchipelagoKH1FM/releases/download/0.2/kh1.apworld</a>

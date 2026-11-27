@@ -6,7 +6,7 @@ of the way!
 
 
 ## Downloads
-- <a href="https://github.com/RobertSPratley/DemonTidesAPWorld/releases/download/v0.1.0/demontides.apworld">Latest Version (0.0.0r2)</a>
+- <a href="https://github.com/RobertSPratley/DemonTidesAPWorld/releases/download/v0.1.0/demontides.apworld">Latest Version (0.0.0.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

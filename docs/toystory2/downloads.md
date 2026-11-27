@@ -50,14 +50,14 @@
 #### v2.3.2
 - <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.3.2/toystory2.apworld">https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.3.2/toystory2.apworld</a>
 
-#### v2.2.0r3
+#### v2.2.0.post4
 - <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.3.1/toystory2.apworld">https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.3.1/toystory2.apworld</a>
 
-#### v2.2.0r2
+#### v2.2.0.post3
+- <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.3.1/toystory2.apworld">https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.3.1/toystory2.apworld</a>
+
+#### v2.2.0.post2
 - <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.3.0/toystory2.apworld">https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.3.0/toystory2.apworld</a>
-
-#### v2.2.0r2
-- <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.3.1/toystory2.apworld">https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.3.1/toystory2.apworld</a>
 
 #### v2.2.0
 - <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.2.0/toystory2.apworld">https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.2.0/toystory2.apworld</a>
@@ -77,7 +77,7 @@
 #### v2.0.0
 - <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.0.0/toystory2.apworld">https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/2.0.0/toystory2.apworld</a>
 
-#### v1.1.2r2
+#### v1.1.2.post2
 - <a href="https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/1.1.3/toystory2.apworld">https://github.com/imklubb/Archipelago-Toy-Story-2/releases/download/1.1.3/toystory2.apworld</a>
 
 #### v1.1.2

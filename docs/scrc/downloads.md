@@ -11,17 +11,17 @@
 #### v0.30.1
 - <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.30.2/scrc.apworld">https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.30.2/scrc.apworld</a>
 
-#### v0.30.0r2
+#### v0.30.0.post2
 - <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.30.1/scrc.apworld">https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.30.1/scrc.apworld</a>
 
 #### v0.30.0
 - <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.30.0/scrc.apworld">https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.30.0/scrc.apworld</a>
 
-#### v0.29.0r2
-- <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.29.1/scrc.apworld">https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.29.1/scrc.apworld</a>
-
-#### v0.29.0r2
+#### v0.29.0.post3
 - <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.29.2/scrc.apworld">https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.29.2/scrc.apworld</a>
+
+#### v0.29.0.post2
+- <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.29.1/scrc.apworld">https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.29.1/scrc.apworld</a>
 
 #### v0.29.0
 - <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.29.0/scrc.apworld">https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.29.0/scrc.apworld</a>
@@ -68,7 +68,7 @@
 #### v0.22.0.dev0
 - <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.22.0-dev/scrc.apworld">https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.22.0-dev/scrc.apworld</a>
 
-#### v0.20.0r2
+#### v0.20.0.post2
 - <a href="https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.21.0-dev/scrc.apworld">https://github.com/Akamarus/Super-Crazy-Rhythm-Castle-Archipelago/releases/download/v0.21.0-dev/scrc.apworld</a>
 
 #### v0.20.0

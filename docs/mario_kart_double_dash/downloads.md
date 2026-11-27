@@ -9,10 +9,10 @@
 - <a href="https://github.com/aXu-AP/archipelago-double-dash/releases/download/v1.0.1/mario_kart_double_dash.apworld">https://github.com/aXu-AP/archipelago-double-dash/releases/download/v1.0.1/mario_kart_double_dash.apworld</a>
 
 #### v1.0.0.post2
-- <a href="https://github.com/aXu-AP/archipelago-double-dash/releases/download/v1.0.0rc3/mario_kart_double_dash.apworld">https://github.com/aXu-AP/archipelago-double-dash/releases/download/v1.0.0rc3/mario_kart_double_dash.apworld</a>
-
-#### v1.0.0
 - <a href="https://github.com/aXu-AP/archipelago-double-dash/releases/download/v1.0.0/mario_kart_double_dash.apworld">https://github.com/aXu-AP/archipelago-double-dash/releases/download/v1.0.0/mario_kart_double_dash.apworld</a>
+
+#### v1.0.0.post2
+- <a href="https://github.com/aXu-AP/archipelago-double-dash/releases/download/v1.0.0rc3/mario_kart_double_dash.apworld">https://github.com/aXu-AP/archipelago-double-dash/releases/download/v1.0.0rc3/mario_kart_double_dash.apworld</a>
 
 #### v1.0.0rc4
 - <a href="https://github.com/aXu-AP/archipelago-double-dash/releases/download/v1.0.0rc4/mario_kart_double_dash.apworld">https://github.com/aXu-AP/archipelago-double-dash/releases/download/v1.0.0rc4/mario_kart_double_dash.apworld</a>
@@ -53,7 +53,7 @@
 #### v0.1.1
 - <a href="https://github.com/aXu-AP/archipelago-double-dash/releases/download/v0.1.1/mario_kart_double_dash.apworld">https://github.com/aXu-AP/archipelago-double-dash/releases/download/v0.1.1/mario_kart_double_dash.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/aXu-AP/archipelago-double-dash/releases/download/v0.1.0/mario_kart_double_dash.apworld">https://github.com/aXu-AP/archipelago-double-dash/releases/download/v0.1.0/mario_kart_double_dash.apworld</a>
 
 #### v0.1.0

@@ -26,7 +26,7 @@
 #### v0.6.1
 - <a href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/download/v0.6.1/pokemon_snap.apworld">https://github.com/nielrenned/PokemonSnap_Archipelago/releases/download/v0.6.1/pokemon_snap.apworld</a>
 
-#### v0.6.0r2
+#### v0.6.0.post2
 - <a href="https://github.com/nielrenned/PokemonSnap_Archipelago/releases/download/v0.6.2/pokemon_snap.apworld">https://github.com/nielrenned/PokemonSnap_Archipelago/releases/download/v0.6.2/pokemon_snap.apworld</a>
 
 #### v0.6.0

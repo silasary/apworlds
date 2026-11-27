@@ -26,14 +26,14 @@
 #### v2.5.0
 - <a href="https://github.com/Boi-027/BayonettaArchipelago/releases/download/v2.7.0/bayonetta.apworld">https://github.com/Boi-027/BayonettaArchipelago/releases/download/v2.7.0/bayonetta.apworld</a>
 
-#### v2.4.0r3
+#### v2.4.0.post4
+- <a href="https://github.com/Boi-027/BayonettaArchipelago/releases/download/v2.6.2/bayonetta.apworld">https://github.com/Boi-027/BayonettaArchipelago/releases/download/v2.6.2/bayonetta.apworld</a>
+
+#### v2.4.0.post3
 - <a href="https://github.com/Boi-027/BayonettaArchipelago/releases/download/v2.6.1/bayonetta.apworld">https://github.com/Boi-027/BayonettaArchipelago/releases/download/v2.6.1/bayonetta.apworld</a>
 
-#### v2.4.0r2
+#### v2.4.0.post2
 - <a href="https://github.com/Boi-027/BayonettaArchipelago/releases/download/v2.6.0/bayonetta.apworld">https://github.com/Boi-027/BayonettaArchipelago/releases/download/v2.6.0/bayonetta.apworld</a>
-
-#### v2.4.0r2
-- <a href="https://github.com/Boi-027/BayonettaArchipelago/releases/download/v2.6.2/bayonetta.apworld">https://github.com/Boi-027/BayonettaArchipelago/releases/download/v2.6.2/bayonetta.apworld</a>
 
 #### v2.4.0
 - <a href="https://github.com/Boi-027/BayonettaArchipelago/releases/download/v2.4.0/bayonetta.apworld">https://github.com/Boi-027/BayonettaArchipelago/releases/download/v2.4.0/bayonetta.apworld</a>
@@ -74,7 +74,7 @@
 #### v1.2.0
 - <a href="https://github.com/Boi-027/BayonettaArchipelago/releases/download/v1.2/bayonetta.apworld">https://github.com/Boi-027/BayonettaArchipelago/releases/download/v1.2/bayonetta.apworld</a>
 
-#### v1.0.0r2
+#### v1.0.0.post2
 - <a href="https://github.com/Boi-027/BayonettaArchipelago/releases/download/v1.1/bayonetta.apworld">https://github.com/Boi-027/BayonettaArchipelago/releases/download/v1.1/bayonetta.apworld</a>
 
 #### v1.0.0

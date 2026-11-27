@@ -1,15 +1,15 @@
 # West of Loathing
 
 ## Latest
-- <a href="https://github.com/TylerJG92/WOLAP/releases/download/v0.3.5-alpha/westofloathing.apworld">Latest Version (0.3.2r2)</a>
+- <a href="https://github.com/TylerJG92/WOLAP/releases/download/v0.3.6-alpha/westofloathing.apworld">Latest Version (0.3.2.post3)</a>
 
 ## All Versions
 
-#### v0.3.2r2
-- <a href="https://github.com/TylerJG92/WOLAP/releases/download/v0.3.5-alpha/westofloathing.apworld">https://github.com/TylerJG92/WOLAP/releases/download/v0.3.5-alpha/westofloathing.apworld</a>
-
-#### v0.3.2r2
+#### v0.3.2.post3
 - <a href="https://github.com/TylerJG92/WOLAP/releases/download/v0.3.6-alpha/westofloathing.apworld">https://github.com/TylerJG92/WOLAP/releases/download/v0.3.6-alpha/westofloathing.apworld</a>
+
+#### v0.3.2.post2
+- <a href="https://github.com/TylerJG92/WOLAP/releases/download/v0.3.5-alpha/westofloathing.apworld">https://github.com/TylerJG92/WOLAP/releases/download/v0.3.5-alpha/westofloathing.apworld</a>
 
 #### v0.3.2
 - <a href="https://github.com/TylerJG92/WOLAP/releases/download/v0.3.4-alpha/westofloathing.apworld">https://github.com/TylerJG92/WOLAP/releases/download/v0.3.4-alpha/westofloathing.apworld</a>
@@ -20,16 +20,16 @@
 #### v0.3.1a0
 - <a href="https://github.com/TylerJG92/Archipelago-WOL-SOL/releases/download/v0.3.1a/westofloathing.apworld">https://github.com/TylerJG92/Archipelago-WOL-SOL/releases/download/v0.3.1a/westofloathing.apworld</a>
 
-#### v0.3.0r3
+#### v0.3.0.post4
 - <a href="https://github.com/TylerJG92/WOLAP/releases/download/v0.3.3-alpha/westofloathing.apworld">https://github.com/TylerJG92/WOLAP/releases/download/v0.3.3-alpha/westofloathing.apworld</a>
+
+#### v0.3.0.post3
+- <a href="https://github.com/TylerJG92/WOLAP/releases/download/v0.3.2-alpha/westofloathing.apworld">https://github.com/TylerJG92/WOLAP/releases/download/v0.3.2-alpha/westofloathing.apworld</a>
 
 #### v0.3.0r2
 - <a href="https://github.com/TylerJG92/WOLAP/releases/download/v0.3.0-alpha/westofloathing.apworld">https://github.com/TylerJG92/WOLAP/releases/download/v0.3.0-alpha/westofloathing.apworld</a>
 
-#### v0.3.0r2
-- <a href="https://github.com/TylerJG92/WOLAP/releases/download/v0.3.2-alpha/westofloathing.apworld">https://github.com/TylerJG92/WOLAP/releases/download/v0.3.2-alpha/westofloathing.apworld</a>
-
-#### v0.3.0
+#### v0.3.0.post2
 - <a href="https://github.com/TylerJG92/WOLAP/releases/download/v0.3.1-alpha/westofloathing.apworld">https://github.com/TylerJG92/WOLAP/releases/download/v0.3.1-alpha/westofloathing.apworld</a>
 
 #### v0.3.0a0

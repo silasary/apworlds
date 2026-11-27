@@ -17,13 +17,13 @@
 #### v1.0.5
 - <a href="https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.5/thps3.apworld">https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.5/thps3.apworld</a>
 
-#### v1.0.1r4
-- <a href="https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.3/thps3.apworld">https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.3/thps3.apworld</a>
-
-#### v1.0.1r3
+#### v1.0.1.post4
 - <a href="https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.4/thps3.apworld">https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.4/thps3.apworld</a>
 
-#### v1.0.1r2
+#### v1.0.1.post3
+- <a href="https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.3/thps3.apworld">https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.3/thps3.apworld</a>
+
+#### v1.0.1.post2
 - <a href="https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.2/thps3.apworld">https://github.com/randomcodegen/partymod-thps3_ap/releases/download/1.0.2/thps3.apworld</a>
 
 #### v1.0.1

@@ -1,11 +1,11 @@
 # Twilight Princess
 
 ## Latest
-- <a href="https://github.com/WritingHusky/Twilight_Princess_apworld/releases/download/v0.4.1/twilight_princess.apworld">Latest Version (0.4.0r2)</a>
+- <a href="https://github.com/WritingHusky/Twilight_Princess_apworld/releases/download/v0.4.1/twilight_princess.apworld">Latest Version (0.4.0.post2)</a>
 
 ## All Versions
 
-#### v0.4.0r2
+#### v0.4.0.post2
 - <a href="https://github.com/WritingHusky/Twilight_Princess_apworld/releases/download/v0.4.1/twilight_princess.apworld">https://github.com/WritingHusky/Twilight_Princess_apworld/releases/download/v0.4.1/twilight_princess.apworld</a>
 
 #### v0.4.0

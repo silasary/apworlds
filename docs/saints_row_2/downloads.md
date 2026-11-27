@@ -26,7 +26,7 @@
 #### v0.2.0
 - <a href="https://github.com/hoXyy/SaintsRow2Archipelago/releases/download/0.2.0/saints_row_2.apworld">https://github.com/hoXyy/SaintsRow2Archipelago/releases/download/0.2.0/saints_row_2.apworld</a>
 
-#### v0.1.0r2
+#### v0.1.0.post2
 - <a href="https://github.com/hoXyy/SaintsRow2Archipelago/releases/download/v0.1.1/saints_row_2.apworld">https://github.com/hoXyy/SaintsRow2Archipelago/releases/download/v0.1.1/saints_row_2.apworld</a>
 
 #### v0.1.0

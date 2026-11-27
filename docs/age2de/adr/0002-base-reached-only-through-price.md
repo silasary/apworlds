@@ -1,7 +1,3 @@
----
-status: accepted
----
-
 # A location reaches the base only through its price
 
 Playtest #05 found ages in logic with an unpaid Town Center. The obvious fix was to make the age

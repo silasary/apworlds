@@ -11,7 +11,7 @@
 #### v0.10.2
 - <a href="https://github.com/pseudoregalia-modding/pseudoregalia-archipelago/releases/download/0.10.2/pseudoregalia.apworld">https://github.com/pseudoregalia-modding/pseudoregalia-archipelago/releases/download/0.10.2/pseudoregalia.apworld</a>
 
-#### v0.10.0r2
+#### v0.10.0.post2
 - <a href="https://github.com/qwint/pseudoregalia-archipelago/releases/download/0.10.1/pseudoregalia.apworld">https://github.com/qwint/pseudoregalia-archipelago/releases/download/0.10.1/pseudoregalia.apworld</a>
 
 #### v0.10.0

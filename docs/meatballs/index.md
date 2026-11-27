@@ -6,7 +6,7 @@ and enforces capture locks until the AP item is received. Progress is surfaced t
 
 
 ## Downloads
-- <a href="https://github.com/mdietz94/smo_archipelago/releases/download/v1.3.0/meatballs.apworld">Latest Version (0.1.0r21)</a>
+- <a href="https://github.com/mdietz94/smo_archipelago/releases/download/v1.5.3/meatballs.apworld">Latest Version (0.1.0.post28)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

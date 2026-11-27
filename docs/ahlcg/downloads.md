@@ -1,15 +1,15 @@
 # Arkham Horror The Card Game
 
 ## Latest
-- <a href="https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.5/ahlcg.apworld">Latest Version (0.1.4r2)</a>
+- <a href="https://github.com/Totox00/ap-ahlcg/releases/download/v0.2.0/ahlcg.apworld">Latest Version (0.1.4.post3)</a>
 
 ## All Versions
 
-#### v0.1.4r2
-- <a href="https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.5/ahlcg.apworld">https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.5/ahlcg.apworld</a>
-
-#### v0.1.4r2
+#### v0.1.4.post3
 - <a href="https://github.com/Totox00/ap-ahlcg/releases/download/v0.2.0/ahlcg.apworld">https://github.com/Totox00/ap-ahlcg/releases/download/v0.2.0/ahlcg.apworld</a>
+
+#### v0.1.4.post2
+- <a href="https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.5/ahlcg.apworld">https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.5/ahlcg.apworld</a>
 
 #### v0.1.4
 - <a href="https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.4/ahlcg.apworld">https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.4/ahlcg.apworld</a>
@@ -17,19 +17,19 @@
 #### v0.1.3
 - <a href="https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.3/ahlcg.apworld">https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.3/ahlcg.apworld</a>
 
-#### v0.0.4r3
+#### v0.0.4.post4
 - <a href="https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.2/ahlcg.apworld">https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.2/ahlcg.apworld</a>
 
-#### v0.0.4r2
-- <a href="https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.0/ahlcg.apworld">https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.0/ahlcg.apworld</a>
-
-#### v0.0.4r2
+#### v0.0.4.post3
 - <a href="https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.1/ahlcg.apworld">https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.1/ahlcg.apworld</a>
+
+#### v0.0.4.post2
+- <a href="https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.0/ahlcg.apworld">https://github.com/Totox00/ap-ahlcg/releases/download/v0.1.0/ahlcg.apworld</a>
 
 #### v0.0.4
 - <a href="https://github.com/Totox00/ap-ahlcg/releases/download/v0.0.4/ahlcg.apworld">https://github.com/Totox00/ap-ahlcg/releases/download/v0.0.4/ahlcg.apworld</a>
 
-#### v0.0.2r2
+#### v0.0.2.post2
 - <a href="https://github.com/Totox00/ap-ahlcg/releases/download/v0.0.3/ahlcg.apworld">https://github.com/Totox00/ap-ahlcg/releases/download/v0.0.3/ahlcg.apworld</a>
 
 #### v0.0.2

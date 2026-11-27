@@ -64,6 +64,3 @@ Just like with the items the locations are made for each section of the game:
  - Getting a big enough combo also called max combo.
  - Getting a certain amount of gaps and chain shots.
  - if the option is selected beating each level with AceTime will also be a location.
-
-
-
