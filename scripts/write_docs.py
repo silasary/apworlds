@@ -8,6 +8,7 @@ from collections.abc import Iterable
 from pathlib import Path
 from typing import Any
 
+import frontmatter
 import langcodes
 import pystache
 import requests
@@ -100,7 +101,7 @@ def copy_documentation(world_stem: str, versions: list[dict[str, Any]], manifest
     return filenames
 
 
-def copy_doc_files(lower_stem: str, files: Iterable[pathlib.Path]) -> list[str]:
+def copy_doc_files(lower_stem: str, files: Iterable[pathlib.Path | zipfile.Path]) -> list[str]:
     filenames = []
     for doc in files:
         doc_path = f"docs/{lower_stem}/{doc.name}"
@@ -115,13 +116,35 @@ def copy_doc_files(lower_stem: str, files: Iterable[pathlib.Path]) -> list[str]:
                 existing = bf.read()
         else:
             existing = None
-        with doc.open("rb") as bf:
-            new_content = bf.read()
-        if existing == new_content:
-            continue
-        with open(doc_path, "wb") as bf:
-            bf.write(new_content)
+        if doc.suffix == ".md":
+            copy_file_md(doc_path, existing, doc)
+        else:
+            copy_file_bin(doc_path, existing, doc)
     return filenames
+
+
+def copy_file_md(doc_path: str, existing: bytes | None, doc: pathlib.Path | zipfile.Path):
+    """
+    Copy a markdown file, stripping frontmatter
+    """
+    with doc.open("r", encoding="utf-8") as f:
+        new_content = frontmatter.load(f).content.encode("utf-8")
+    if existing == new_content:
+        return
+    with open(doc_path, "wb") as f:
+        f.write(new_content)
+
+
+def copy_file_bin(doc_path: str, existing: bytes | None, doc: pathlib.Path | zipfile.Path):
+    """
+    Copy a binary file
+    """
+    with doc.open("rb") as bf:
+        new_content = bf.read()
+    if existing == new_content:
+        return
+    with open(doc_path, "wb") as bf:
+        bf.write(new_content)
 
 
 def write_downloads(world_stem: str, versions: list[dict[str, Any]], manifest: dict[str, Any], lower_stem: str) -> bool:
