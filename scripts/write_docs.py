@@ -8,12 +8,15 @@ from collections.abc import Iterable
 from pathlib import Path
 from typing import Any
 
+import common
 import frontmatter
 import langcodes
 import pystache
 import requests
-from common import construct_metadata_release, parse_version, repositories
+from BaseClasses import Tutorial
+from common import construct_metadata_release, parse_version
 from manifest_manager import load_manifest, save_manifest
+from werkzeug.utils import secure_filename
 
 with open("templates/downloads_template.mustache") as f:
     downloads_template = f.read()
@@ -54,10 +57,25 @@ def write_docs(world_stem: str, versions: list[dict[str, Any]], manifest: dict[s
         lang = langcodes.Language.get(file_stem.split("_")[0 if front else 1]).display_name()
         return {"file": file_stem, "lang": lang}
 
-    setup_guides = [langfile(f, False) for f in pages if f.startswith("setup_")]
+    def stem(file: str) -> str:
+        return Path(file).stem
+
+    tutorials = [Tutorial(*t) for t in manifest.get("tutorials", [])]
+    tutorial_files = {stem(t.file_name) for t in tutorials}
+    setup_guides = [langfile(f, False) for f in pages if f.startswith("setup_") if f not in tutorial_files]
     game_infos = [langfile(f, True) for f in pages if f.endswith(f"_{manifest.get('game','')}")]
 
-    other_files = sorted(set(pages) - {i["file"] for i in setup_guides} - {i["file"] for i in game_infos} - {"en_Manual_UltimateMarvelVsCapcom3_ManualTeam"})
+    other_files = sorted(set(pages) - {i["file"] for i in setup_guides} - {i["file"] for i in game_infos} - tutorial_files - {"en_Manual_UltimateMarvelVsCapcom3_ManualTeam"})
+
+    collated_tutorials = {}
+    for tutorial in tutorials:
+        current_tutorial = collated_tutorials.setdefault(tutorial.tutorial_name, {"tutorial_name": tutorial.tutorial_name, "description": tutorial.description, "files": {}})
+        current_tutorial["files"][secure_filename(tutorial.file_name).rsplit(".", 1)[0]] = {
+            "filename": secure_filename(tutorial.file_name).rsplit(".", 1)[0],
+            "authors": ", ".join(tutorial.authors),
+            "language": tutorial.language,
+        }
+        current_tutorial["filelist"] = list(current_tutorial["files"].values())
 
     index_output = pystache.render(
         index_template,
@@ -66,7 +84,10 @@ def write_docs(world_stem: str, versions: list[dict[str, Any]], manifest: dict[s
             "latest_version": versions[0],
             "game": manifest.get("game", world_stem),
             "manifest": manifest,
+            "tutorials": list(collated_tutorials.values()),
+            "has_tutorials": len(collated_tutorials) > 0,
             "setup_guides": setup_guides,
+            "has_setup_guides": len(setup_guides) > 0,
             "game_info": game_infos,
             "other_files": other_files,
             "has_other_files": len(other_files) > 0,
@@ -80,7 +101,7 @@ def write_docs(world_stem: str, versions: list[dict[str, Any]], manifest: dict[s
 def copy_documentation(world_stem: str, versions: list[dict[str, Any]], manifest: dict[str, Any], lower_stem: str) -> list[str]:
     release = construct_metadata_release(world_stem, manifest, versions[0])
     try:
-        path = repositories.download_remote_world(release, False)
+        path = common.repositories.download_remote_world(release, False)
     except requests.exceptions.HTTPError as e:
         if e.response.status_code == 404:
             del manifest["versions"][versions[0]["tag"]]
@@ -104,13 +125,14 @@ def copy_documentation(world_stem: str, versions: list[dict[str, Any]], manifest
 def copy_doc_files(lower_stem: str, files: Iterable[pathlib.Path | zipfile.Path]) -> list[str]:
     filenames = []
     for doc in files:
-        doc_path = f"docs/{lower_stem}/{doc.name}"
+        doc_name = secure_filename(doc.name)
+        doc_path = f"docs/{lower_stem}/{doc_name}"
         if doc.is_dir():
             os.makedirs(doc_path, exist_ok=True)
             subdir_filenames = copy_doc_files(f"{lower_stem}/{doc.stem}", doc.iterdir())
             filenames.extend([f"{doc.stem}/{subfile}" for subfile in subdir_filenames])
             continue
-        filenames.append(doc.name)
+        filenames.append(doc_name)
         if os.path.exists(doc_path):
             with open(doc_path, "rb") as bf:
                 existing = bf.read()

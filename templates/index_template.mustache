@@ -12,10 +12,24 @@
 - <a href="{{file}}">{{lang}}</a>
 {{/game_info}}
 
+{{#has_setup_guides}}
 ## Setup Guide
 {{#setup_guides}}
 - <a href="{{file}}">{{lang}}</a>
 {{/setup_guides}}
+{{/has_setup_guides}}
+
+{{#has_tutorials}}
+{{#tutorials}}
+### {{tutorial_name}}
+
+{{description}}
+
+{{#filelist}}
+- <a href="{{filename}}">{{language}} by {{authors}}</a>
+{{/filelist}}
+{{/tutorials}}
+{{/has_tutorials}}
 
 {{#has_other_files}}
 ## Other Documentation files
