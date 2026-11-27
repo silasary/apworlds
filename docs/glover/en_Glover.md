@@ -61,6 +61,8 @@ The [player options page (todo)](../player-options) for Glover contains all the 
 |<center>`In Order`|<center>Garibs are put into a total pool, and assigned to levels based on your game's level order, starting with the level at Atlantis Hub's 1 Portal.|<center>Total Garibs: 52/1496<br>Atl1: 50/50<br>Atl2: 2/60|
 |<center>`Random Order`|<center>Garibs are put into a total pool, and assigned to levels randomly.|<center>Total Garibs: 52/1496<br>Crn?: 20/20<br>OtW3: 32/80|
 
+If Garibsanity would put too many items in the multiworld, there's a setting to make a certain percentage of Garibs local fill.
+
 ## Local Commands
 
 The following commands are available when using the Glover Client to play Archipelago.

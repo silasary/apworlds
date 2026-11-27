@@ -2,119 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-26T18:17:23.606074+00:00</updated>
+  <updated>2026-11-27T00:20:12.084484+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://files.fourisland.com/releases/lingo2-archipelago/apworld/v9.5.0/lingo2.apworld</id>
-    <title>Lingo 2 v9.5.0</title>
-    <updated>2026-11-23T00:15:35.841238+00:00</updated>
-    <author>
-      <name>hatkirby</name>
-    </author>
-    <content/>
-    <link href="https://files.fourisland.com/releases/lingo2-archipelago/apworld/v9.5.0/lingo2.apworld"/>
-  </entry>
-  <entry>
-    <id>https://github.com/routhken/Archipelago/releases/tag/grim_dawn_v0.5.0</id>
-    <title>Grim Dawn v0.5.0</title>
-    <updated>2026-11-23T00:40:01+00:00</updated>
-    <author>
-      <name>DaKennyMan22</name>
-    </author>
-    <content>- Fangs of Asterkarn now fully supported. Including the dlc enemies added to the enemy rando, berserker class for the skill rando, and the dlc region having ap locations.&#13;
-- Added Beronath goal option. Beronath also required for all bosses.&#13;
-- Loghorrean is now the default goal when generating a yaml.&#13;
-- New setting which adds custom made gear to the item pool.&#13;
-- Client no longer automatically patches on connect. Instead you use the "/patch" command to patch the game.&#13;
-- When the client detects if you do not have the correct setup, will prompt you to allow the client to download and install the files for you. You can use this to do most of the installation setup for you. Untested for Linux.&#13;
-- Client patcher now logs to a file in your grim dawn mods directory. Enemy and skill list commands also log here.&#13;
-- Patcher will now intentionally fail if the region is unsupported and prompt you with instructions on how to workaround.&#13;
-- Fixed a bug where a few skill modifiers did not get randomized by balance rando.&#13;
-- Mod is now hosted on the same github releases page instead of nexus mods.</content>
-    <link href="https://github.com/routhken/Archipelago/releases/tag/grim_dawn_v0.5.0"/>
-  </entry>
-  <entry>
-    <id>https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/tag/V3.0.1</id>
-    <title>Hunie Pop v3.0.1</title>
-    <updated>2026-11-23T00:40:40+00:00</updated>
-    <author>
-      <name>Dotsofdarkness</name>
-    </author>
-    <content>- (APWorld) Fixed Issue with connecting with Universal Tracker&#13;
-- (APWorld) fixed typos in hunie_to_muney YMAL option&#13;
-- (Client) Fixed Errors if save file was not present after connecting to a slot&#13;
-- (Client) Added Connecting screen while trying to connect to a server&#13;
-- (Client) fixed sending locations causing game freezing&#13;
-- (Client) properly send goal location in case server has auto release disabled&#13;
-&#13;
-V3.0.0 Changelog&#13;
-- (Client) Swapped networking from DotsWebsocket/CursedArchipelagoClient to Archipelago.MultiClient.Net/c-wspp-websocket-sharp&#13;
-- - playing on Linux should now work through wine/proton (will work on trying to get native Linux to work later)&#13;
-- (Apworld/Client) added option/logic for disabling girl questions&#13;
-- (Apworld/Client) added option/logic for disabling girl gifts&#13;
-- (Apworld/Client) added option/logic for locking shop slots behind getting "Shop Pass" items&#13;
-- (APWorld) moved logic over to Rule Builder&#13;
-- (Client) Save file is now stored server side through datastorage&#13;
-- (Client) added the ability to convert hunie to money through the shop the ratio can be changed through YMAL option&#13;
-- (Client) when talking to a girl you have a &gt;50% change to be asked a question if you haven't learned all their details&#13;
-- (Client) Added code "$toggledeathlink" to toggle deathlink off/on&#13;
-HOTFIX&#13;
-- disable cheats used in dev&#13;
-&#13;
-&lt;br&gt;&lt;/br&gt;&#13;
-CLIENT INSTALLATION INSTRUCTIONS:&#13;
-- Have Hunie Pop Installed&#13;
-- Download Hunie Pop Archipelago plugin (See Releases for latest version)&#13;
-- Extract and copy the contents of "Hunie Pop Archipelago plugin.zip" to the directory where "HuniePop.exe" is if it asks you to overwrite files click yes&#13;
-- NOTE if you get a game crash when starting the game make sure that in "{huniepop game directory}/BepInEx/config/BepInEx.cfg" the 2nd last option is "type = MonoBehaviour" not "type = Application"&#13;
-&#13;
-&#13;
-&#13;
-APWORLD INSTALLATION INSTRUCTIONS:&#13;
-- Have Archipelago Launcher Installed (latest release found here: https://github.com/ArchipelagoMW/Archipelago/releases/latest )&#13;
-- Download Huniepop APWorld (See Releases for latest version)&#13;
-- Select "Install APWorld" in launcher and select Huniepop APWorld you downloaded&#13;
-- Restart launcher for APWorld to properly install&#13;
-- (Optional but Recomended)Select "Generate Template Options" to generate default Huniepop YMAL&#13;
-&#13;
-&#13;
-&#13;
-POPTRACKER INSTALLATION INSTRUCTIONS:&#13;
-- copy "Hunie Pop Archipelago poptracker.zip" to your poptracker "packs" folder</content>
-    <link href="https://github.com/DotsofdarknessArchipelago/HuniePopArchipelago/releases/tag/V3.0.1"/>
-  </entry>
-  <entry>
-    <id>https://github.com/chikakoo/Turok-2-AP-World/releases/tag/v0.6.1</id>
-    <title>Turok 2 v0.6.1</title>
-    <updated>2026-11-23T01:06:08+00:00</updated>
-    <author>
-      <name>Chikakoo</name>
-    </author>
-    <content>Alpha of the Turok 2 Randomizer with [Archipelago](https://archipelago.gg/) support. Expect general instability. &#13;
-&#13;
-**[Non-Windows needs additional setup](https://discord.com/channels/731205301247803413/1238135254947074129/1544566143203676180)**.  _There's no doc page for it at the moment._&#13;
-&#13;
-_(optional)_ [Poptracker pack.](https://github.com/chikakoo/Turok-2-Poptracker/releases)&#13;
-_(optional)_ [Hue shifter script (version agnostic)](https://github.com/chikakoo/Turok-2-Randomizer/blob/main/hue_shifter.py). [_Read about it here!_](https://github.com/chikakoo/Turok-2-AP-World/blob/main/worlds/turok2/docs/hue_shifter.md)&#13;
-See the [documentation](https://github.com/chikakoo/Turok-2-AP-World/tree/main/worlds/turok2/docs) for more details _(including the setup guide and changelog)_!&#13;
-Link to the [randomizer repo](https://github.com/chikakoo/Turok-2-Randomizer) for reference.&#13;
-&#13;
-**Expected mod version is 0.6.1.**&#13;
-&#13;
-- Fixed the 4-V2 vent mission objective not logically requiring the Satchel Charge&#13;
-- Fixed some incorrect pickups being affected/not affected by the "Prevent Collection" setting for lava items in 5-E3&#13;
-&#13;
-**tl;dr setup (see the guide for details):**&#13;
-1. Install the AP world.&#13;
-2. Download the mod, unzip into the "mods" folder **(case-sensitive)** of your Turok 2 install (create it if it doesn't exist; overwrite all existing files).&#13;
-3. Generate the seed.&#13;
-4. Get your patch file, **unzip it**, and place **rando.kpf** into the mods folder as well.&#13;
-5. You're good to go! If solo, no need to run AP. Otherwise, you can connect the client and open the game in any order.</content>
-    <link href="https://github.com/chikakoo/Turok-2-AP-World/releases/tag/v0.6.1"/>
-  </entry>
   <entry>
     <id>https://github.com/ElectroStarz/ArchipelagoMSM/releases/tag/v3.1.6</id>
     <title>Mario Sports Mix v3.1.6.post2</title>
@@ -1078,6 +970,46 @@ Before this the only option available was blackout.&#13;
     <link href="https://github.com/Mysteryem/Archipelago-TCS/releases/tag/v2.0.1"/>
   </entry>
   <entry>
+    <id>https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.5</id>
+    <title>The Grinch v1.6.5</title>
+    <updated>2026-11-24T23:24:12+00:00</updated>
+    <author>
+      <name>MarioSpore</name>
+    </author>
+    <author>
+      <name>SomeJakeGuy</name>
+    </author>
+    <content>## Changes&#13;
+- A new `language` option, for those who will play&#13;
+_The Grinch_ in a language that's not English today!&#13;
+  - Switching this will rename each telescope location&#13;
+so it has, in that language, a more proper quotation.&#13;
+- `Dump it to Crumpit` and `Who sent me back?`&#13;
+have both been removed, but they'll some day come back.&#13;
+&#13;
+## Fixes&#13;
+- `deathlink` players rejoice! You're surely find it quite nice&#13;
+that receives do not break after dying only twice.&#13;
+- The rockets are set, and it's time for ignition:&#13;
+Advanced logic's fixed for the Fireworks mission.</content>
+    <link href="https://github.com/MarioSpore/Grinch-AP/releases/tag/v1.6.5"/>
+  </entry>
+  <entry>
+    <id>https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.11.7</id>
+    <title>Total War Warhammer 3 v0.11.7</title>
+    <updated>2026-11-24T23:27:42+00:00</updated>
+    <author>
+      <name>jordansds</name>
+    </author>
+    <content>Added custom length option for game length.&#13;
+&#13;
+Hard logic not implemented on V0.11.X, use V0.10 and rollback TWW3 if you desperately want/need it.&#13;
+&#13;
+Installation instructions can be found [here](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/README.md).&#13;
+[FAQ](https://github.com/jordansds/Archipelago_TWW3_Alt/blob/main/FAQ.md).</content>
+    <link href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/tag/v0.11.7"/>
+  </entry>
+  <entry>
     <id>https://github.com/SWCreeperKing/HydraTextClient_Rewrite/releases/tag/v0.7.0-beta.11</id>
     <title>HydraUTBridge v0.7.0b11</title>
     <updated>2026-11-25T01:16:16+00:00</updated>
@@ -1306,7 +1238,7 @@ Download `OPUC1-AP-Tracker.zip` alongside the apworld and put it in PopTracker's
   </entry>
   <entry>
     <id>https://github.com/VincentBorchardt/Civ4-Archipelago-Mod/releases/tag/Alpha_0_4_1</id>
-    <title>Civilization IV v0.0.1r2</title>
+    <title>Civilization IV v0.0.1r4</title>
     <updated>2026-11-26T00:14:21+00:00</updated>
     <author>
       <name>VincentSIFTD</name>
@@ -1395,7 +1327,7 @@ https://github.com/Panguu/Archipelago-RaCSM/compare/rac_size_matters-v0.5.8...ra
   </entry>
   <entry>
     <id>https://github.com/jonloveslegos/Archipelago/releases/tag/undertale-beta-2.0.0-3.2</id>
-    <title>Undertale Beta v2.0.0r2</title>
+    <title>Undertale Beta v2.0.0r4</title>
     <updated>2026-11-26T03:19:12+00:00</updated>
     <author>
       <name>Mewlif</name>
@@ -1486,5 +1418,56 @@ Update **both** halves: `age.2.files.zip` and `age2de.apworld`. Run `/install fu
 &#13;
 Full notes: [RELEASE-0.3.0.md](https://github.com/dmwever/Ageipelago/blob/0.3.0/RELEASE-0.3.0.md)</content>
     <link href="https://github.com/dmwever/Ageipelago/releases/tag/v0.3.0-beta2"/>
+  </entry>
+  <entry>
+    <id>https://github.com/Smg065/GloverArchipelago/releases/tag/v1.1.1</id>
+    <title>Glover v1.1.1</title>
+    <updated>2026-11-26T22:16:41+00:00</updated>
+    <author>
+      <name>Smg065</name>
+    </author>
+    <content>Changelog:&#13;
+&#13;
+- Steam Version ROM support!&#13;
+- Proper Universal Tracker &amp; Glitched Logic support, courtesy of @Ars-Ignis (CodeGorrila)&#13;
+- Universal Tracker Built-in Tab&#13;
+- Garibsanity has host disabling settings, &amp; localfill percent slider due to feedback from large syncs&#13;
+- Open World Bosslock setting includes optional Bonuses&#13;
+- Option to make hints localized to your game, enabled by default&#13;
+- Many changes and improvements to logic, much of which was contributed by @Ars-Ignis (CodeGorrila)&#13;
+- Fear 2 now only requires 1 item to open the gate and door&#13;
+&#13;
+Bugfixes:&#13;
+&#13;
+- Carnival 3 Checkpoints &amp; Softlocks in Fortress of Fear 3 prevented&#13;
+- 2nd Save File no longer checks the 1st save files Crystal&#13;
+- Well Ball Duping is no longer possible&#13;
+- No longer crashes on Mr. Tip due to text overflow on certain hint texts&#13;
+- Logic Parser no longer discards rules after the first one when iterating (thank you CodeGorrila)&#13;
+- Fear 3's Lightning Blocks no longer get disabled by being fist-slammed due to assuming they are switches&#13;
+- Many minor logic errors&#13;
+&#13;
+Thanks, as always, to @jjjj12212 for making this all possible!&#13;
+The Glover AP Logic Builder has been updated to reflect the changes.&#13;
+&#13;
+**Full Changelog**: https://github.com/Smg065/GloverArchipelago/compare/v1.1.0...v1.1.1</content>
+    <link href="https://github.com/Smg065/GloverArchipelago/releases/tag/v1.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/WolfBoi008/One-More-Night/releases/tag/3.2.2</id>
+    <title>Manual_OneMoreNight_WolfBoi008 v3.2.2</title>
+    <updated>2026-11-26T23:53:38+00:00</updated>
+    <author>
+      <name>WolfBoi008</name>
+    </author>
+    <content># Known Issues&#13;
+- #43 Memory Achievements Do Not Consider Unique Cases - A new update was thought of for this with the help of the Manual Discord Server. Expect a 3.2.3 soon that will finally fix this; it just takes a bit of time to make slight rewrites to all of the Memory Entries' logic.&#13;
+# Changelog&#13;
+- Added 2 new Custom Presets:&#13;
+  - Walking Simulator by iskranadziei (Intermediate)&#13;
+  - Twisted Garden by xbox 360 console (Hard)&#13;
+- The Option for Custom Presets now mentions the zipped folder and where to find it.&#13;
+- Fixed a logic error where beating a night with the Music Tape active was not in logic if you had the Puppeteered State of Mind.</content>
+    <link href="https://github.com/WolfBoi008/One-More-Night/releases/tag/3.2.2"/>
   </entry>
 </feed>

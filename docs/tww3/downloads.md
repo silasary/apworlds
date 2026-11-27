@@ -1,9 +1,12 @@
 # Total War Warhammer 3
 
 ## Latest
-- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.11.6/tww3.apworld">Latest Version (0.11.6)</a>
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.11.7/tww3.apworld">Latest Version (0.11.7)</a>
 
 ## All Versions
+
+#### v0.11.7
+- <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.11.7/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.11.7/tww3.apworld</a>
 
 #### v0.11.6
 - <a href="https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.11.6/tww3.apworld">https://github.com/jordansds/Archipelago_TWW3_Alt/releases/download/v0.11.6/tww3.apworld</a>

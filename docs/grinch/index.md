@@ -4,7 +4,7 @@
 
 
 ## Downloads
-- <a href="https://github.com/MarioSpore/Grinch-AP/releases/download/v1.6.4/grinch.apworld">Latest Version (1.6.4)</a>
+- <a href="https://github.com/MarioSpore/Grinch-AP/releases/download/v1.6.5/grinch.apworld">Latest Version (1.6.5)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information

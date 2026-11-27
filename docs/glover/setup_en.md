@@ -13,7 +13,12 @@ Our implementation also supports the Everdrive 3.0 and X7. (USB Support)
         -   Version <b>2.10</b> and later are supported.
         -   Detailed installation instructions for BizHawk can be found at the above link.
         -   Windows users must run the prereq installer first, which can also be found at the above link.
--   A Glover ROM (USA ONLY).
+-   A Glover ROM (USA ONLY), or a copy of Glover on Steam.
+
+## Aquiring the Steam ROM of Glover
+-   Right click Glover in your Steam Library and go to Manage > Browse Local Files
+-   Extract the file Final Final.7z
+-   In the subfolder named Glover 1 NTSC, find the rom named "Piko 25-09-1998 (actually NTSC).z64"
 
 ## Playing on BizHawk
 ### Configuring BizHawk

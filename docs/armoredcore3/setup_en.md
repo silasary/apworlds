@@ -33,7 +33,7 @@ By default, PINE features are disabled in PCSX2. Please follow these steps to en
 4. Open PCSX2 and launch Armored Core 3.
 5. After the client has connected to both PCSX2 and the Archipelago server, you can start playing!
 
-You should now be able to receive and send items. It is possible to make progress offline if you're already loaded into a mission when you drop your connection, but the mission menu restructuring code requires a connection to the Armored Core 3 Client.
+You should now be able to receive and send items. It is possible to make progress offline if you're already loaded into a mission when you drop your connection, but the mission menu restructuring code requires a connection to the Armored Core 3 Client. If the connection drops while you are in the Shop and buy an Item it will not send and you will need to buy it again. 
 
 Ensure that you create a brand new save file each time you start a fresh Archipelago world. 
 If you take a break and come back to the game, ensure you resume from the same save file you have been using.
