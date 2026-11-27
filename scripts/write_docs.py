@@ -127,7 +127,7 @@ def copy_file_md(doc_path: str, existing: bytes | None, doc: pathlib.Path | zipf
     """
     Copy a markdown file, stripping frontmatter
     """
-    with doc.open("r", encoding="utf-8") as f:
+    with doc.open("r", encoding="utf-8", errors="ignore") as f:
         new_content = frontmatter.load(f).content.encode("utf-8")
     if existing == new_content:
         return
