@@ -619,6 +619,21 @@
       "title": "0.7.1",
       "version_simple": "0.7.1",
       "world_version": "0.7.1"
+    },
+    "0.7.2": {
+      "created_at": "2026-11-27T21:32:24Z",
+      "description": "For installation instructions [see the README](https://github.com/Ixrec/NineSolsArchipelagoRandomizer?tab=readme-ov-file#installation).\r\n\r\n- Entrances in Universal Tracker. Most map pages, including the world map, now have little diamonds for every entrance in addition to the usual squares for locations.\r\n- Deferred Entrances. If you aren't familiar with this feature, it means that now whenever UT connects to an ER slot of 9S, entrances that you logically can reach will treat everything on the other side as \"out of logic\" until you actually pass through that entrance in-game. This avoids \"spoiling\" where each entrance goes, and is often a more natural way to explore an ER slot with a tracker.\r\n\t- As a quick reminder: Universal Tracker keeps many of its settings in AP's host.yaml file. If you'd rather see all the locations in logic rather than which entrances you haven't tried yet, simply change `enforce_deferred_entrances` to `\"off\"`.\r\n- Fixed an ER softlock in Greenhouse where the 2nd waterfall hack was unavailable despite the waterfall still blocking your path. This happened because ER can automatically force open Yinglong Canal's right door, which was tied to the same save data flag as that waterfall hack. Now when ER forces that door open it will also forcibly remove the waterfall.\r\n- Added several missing logical connections & requirements that only matter in ER:\r\n\t- ED (Passages) when arriving from the top elevator\r\n\t- Abandoned Mines when arriving from the right door\r\n\t- Peach Blossom Village when arriving from the right portal\r\n\t- Falling off the top right of ED (Living Area) to reach the elevator descending inside the eastern building\r\n\t- The BR vault now logically requires going through the BR \"gauntlet\", even if ER allows you to defeat Yanlao and reach the vault door first\r\n- `medium` logic:\r\n\t- The climb from \"Sky Tower - Upper Checkpoint Platform\" to \"Stowaway\" can now use bow hover underneath the long red rope\r\n",
+      "download_url": "https://github.com/IxrecsRandomizers/NineSolsArchipelagoRandomizer/releases/download/0.7.2/nine_sols.apworld",
+      "has_manifest": true,
+      "hash_sha256": "4474d5ecfdf9c90d0f4844392d57f5410a567b02dbf842a4b0cbb5ce0811e884",
+      "html_url": "https://github.com/IxrecsRandomizers/NineSolsArchipelagoRandomizer/releases/tag/0.7.2",
+      "minimum_ap_version": "0.6.7",
+      "size": 3669199,
+      "source_url": "https://api.github.com/repos/IxrecsRandomizers/NineSolsArchipelagoRandomizer",
+      "tag": "0.7.2",
+      "title": "0.7.2",
+      "version_simple": "0.7.2",
+      "world_version": "0.7.2"
     }
   }
 }

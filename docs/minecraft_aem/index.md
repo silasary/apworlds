@@ -9,5 +9,10 @@ Minecraft Randomizer by KuroLynx (Mod by EDGN)
 
 ## Game Information
 
-## Setup Guide
+
+### Setup Guide
+
+Guide to set up the AEMinecraft randomizer.
+
+- <a href="setup_en">English by KuroLynx</a>
 

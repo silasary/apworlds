@@ -8,14 +8,19 @@ nobody installs a modification.
 
 
 ## Downloads
-- <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.18.10/tf2_mvm.apworld">Latest Version (1.18.10.post2)</a>
+- <a href="https://github.com/m-this/tf2-archipelago/releases/download/v1.18.11/tf2_mvm.apworld">Latest Version (1.18.11.post2)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_Team Fortress 2 Mann vs Machine">English</a>
-- <a href="fr_Team Fortress 2 Mann vs Machine">French</a>
 
-## Setup Guide
-- <a href="setup_en">English</a>
-- <a href="setup_fr">French</a>
 
+### Multiworld Setup Guide
+
+A guide to running a Team Fortress 2 Mann vs Machine server for Archipelago.
+
+- <a href="setup_en">English by mathis</a>
+- <a href="setup_fr">Français by mathis</a>
+
+## Other Documentation files
+- <a href="en_Team_Fortress_2_Mann_vs_Machine">en_Team_Fortress_2_Mann_vs_Machine</a>
+- <a href="fr_Team_Fortress_2_Mann_vs_Machine">fr_Team_Fortress_2_Mann_vs_Machine</a>
