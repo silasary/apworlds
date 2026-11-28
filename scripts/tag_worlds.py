@@ -155,6 +155,7 @@ def import_and_introspect_world(world: pathlib.Path, manifest: dict, versions: d
 
         webworld = getattr(world_class, "web", None)
         if webworld:
+            manifest["webworld_theme"] = getattr(webworld, "theme", None)
             tutorials = getattr(webworld, "tutorials", [])
             if tutorials:
                 manifest["tutorials"] = tutorials
