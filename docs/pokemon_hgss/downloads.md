@@ -23,7 +23,7 @@
 #### v0.0.3
 - <a href="https://github.com/ljtpetersen/hgss_archipelago/releases/download/v0.0.3/pokemon_hgss.apworld">https://github.com/ljtpetersen/hgss_archipelago/releases/download/v0.0.3/pokemon_hgss.apworld</a>
 
-#### v0.0.1r2
+#### v0.0.1.post2
 - <a href="https://github.com/ljtpetersen/hgss_archipelago/releases/download/v0.0.2/pokemon_hgss.apworld">https://github.com/ljtpetersen/hgss_archipelago/releases/download/v0.0.2/pokemon_hgss.apworld</a>
 
 #### v0.0.1

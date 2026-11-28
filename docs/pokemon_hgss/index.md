@@ -15,5 +15,6 @@ versions are equally first-class; see docs/architecture.md&#x27;s
 ## Setup Guide
 - <a href="setup_en">English</a>
 
+
 ## Other Documentation files
-- <a href="en_Pokemon HeartGold and SoulSilver">en_Pokemon HeartGold and SoulSilver</a>
+- <a href="en_Pokemon_HeartGold_and_SoulSilver">en_Pokemon_HeartGold_and_SoulSilver</a>

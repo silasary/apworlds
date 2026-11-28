@@ -64,4 +64,3 @@ perfectly safe to make progress offline; everything will re-sync when you reconn
 ## Common Issues
 
 1. **Problem**: "No handler was found for this game." in the client. **Solution**: Update to at least BizHawk version 2.10.
-
