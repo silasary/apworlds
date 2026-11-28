@@ -6,13 +6,17 @@ story level completions are the checks.
 
 
 ## Downloads
-- <a href="https://github.com/captpurpleheart/ts2-archipelago/releases/download/v1.2.1/timesplitters_2.apworld">Latest Version (1.2.1)</a>
+- <a href="https://github.com/captpurpleheart/ts2-archipelago/releases/download/v1.3.0/timesplitters_2.apworld">Latest Version (1.3.0)</a>
 - <a href="downloads.html">View all versions</a>
 
 ## Game Information
-- <a href="en_TimeSplitters 2">English</a>
 
-## Setup Guide
+
+### Setup Guide
+
+A guide to setting up TimeSplitters 2 for Archipelago.
+
+- <a href="en_Setup">English by CaptPurpleHeart</a>
 
 ## Other Documentation files
-- <a href="en_Setup">en_Setup</a>
+- <a href="en_TimeSplitters_2">en_TimeSplitters_2</a>

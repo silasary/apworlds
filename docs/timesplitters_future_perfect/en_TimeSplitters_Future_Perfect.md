@@ -63,7 +63,7 @@ Chosen in your options:
 * "Progressive Starting Armour" (up to four, if switched on): each one raises the armour you get
   when you start a mission, restart from a checkpoint or respawn: 25%, 50%, 75%, then a full bar.
   It applies in Story, Arcade League, Behead The Undead and TimeSplitters 'Story' Classic.
-* Weapon buffs, named like "Weapon Buff - Pistol 9mm - +25% Clip Size". Each copy adds that much
+* Weapon buffs, named like "Pistol 9mm +25% Clip Size". Each copy adds that much
   of the normal value, up to three copies (two for Dispersion Gun Bullets Per Shot). The stats
   are Clip Size, Reserve Ammo, Reserve Grenades and, for the Dispersion Gun, Bullets Per Shot. They fill
   the locations left over after everything else, so a seed holds a random selection; the
@@ -93,6 +93,9 @@ Chosen in your options:
   mission, a random Challenge, a random story level, any of them, or Time To Split.
 * How Many Starting Arcade/Challenge Missions (1 to 5) for the random Arcade/Challenge choices.
 * Story Mode Status (individual levels or Progressive Story Level), Goal, Death Link, Streamer Mode.
+* Weapons Start with Full Reserve Ammo (on by default): at the start of a round, and whenever you
+  pick up a weapon, its reserve ammo is filled to the most you can carry (including Reserve Ammo
+  buffs).
 
 **Goal Options - 1924 Future Perfect** (only with that goal)
 * Story Levels Required To Access Goal, How Many Trophies Required To Access Goal, Minimum Grade
@@ -105,11 +108,14 @@ Chosen in your options:
 **Difficulty Settings**
 * Exclude Hard Difficulty On Story Levels (on by default), Exclude All Platinum Trophies,
   Exclude Specific Platinum Trophies. Excluded locations only ever hold filler items.
-* Easier Astro Jocks (Platinum 2:15, Gold 2:30, Silver 3:00), Easier Rumble In The Jungle
+* Easier Astro Jocks (Platinum 2:30, Gold 2:45, Silver 3:00), Easier Rumble In The Jungle
   (Platinum 3:15), Easier Cut-Out Shoot-Out Platinum Scores (Hart Attack 1775, Come Hell Or High
   Water 1700, Balls Of Steel 1200) and Quicker Electro Chimp Discomatic (Platinum 4:00, Gold 3:00,
   Silver 2:00, Bronze 1:00). These change what the game asks for, while the client is connected
   and from the next time the mission is loaded.
+* Bag Carrier Can Shoot (on by default): in Capture The Bag and BagTag missions, whoever carries
+  the bag can still shoot, as in TimeSplitters 2 (bots too). Without it, a mission like Old Blaggers
+  can end in a stalemate with both bags being carried.
 
 **Bonus Items**
 * Progressive Starting Armour, Progressive Behead The Undead Score Multipliers and Progressive
@@ -122,8 +128,16 @@ Chosen in your options:
   Shop Hints (none, all, or progression only (default): which items are hinted when you open the
   shop).
 
-**Milestone Locations**
+**Extra Locations**
+* Charactersanity (off by default): a "Kill X" location for each of the 91 characters that are
+  enemies in Arcade League missions (for example "Kill Monkey"). See Charactersanity below.
 * Four switches for the group, league and all-Challenges milestones.
+
+**Preferences**
+* Crosshair, Inverse Look, Auto Aim, Auto Lookahead, Aim Mode, Crouch, Weapon Change, Rumble and
+  Turn Speed, each defaulting to what a new profile has. The client sets them in your loaded
+  profile once, the first time it connects to this slot with a profile loaded. After that it
+  leaves them alone, so you can change them in the game's Control Preferences whenever you like.
 
 ## Streamer Mode
 With Streamer Mode on, the licensed song in the Disco map and the credits is replaced with "Like
@@ -155,11 +169,21 @@ The mission or story level you have just played is not listed, even if its item 
 were in the menus. The screen holds 10 entries. This needs Dolphin's cheat codes to be off, and the client connected to Dolphin before you
 finish your first mission after starting the game.
 
+## Charactersanity
+With Charactersanity on, killing a character in an Arcade League mission checks its "Kill X"
+location, once per character. Only Arcade League missions count (not Story, Challenges or custom
+Arcade games), and only enemies: a teammate, such as INSETICK SK/10 in Dam Cold Out Here!, doesn't
+count. Every Arcade League mission always has the same characters, so each kill is in logic once
+you have received a mission where that character is an enemy. Four characters are only ever your
+teammates (Angel Forge, Ghengis Kant, John Smith and Mr. Socky), and the other characters never
+appear in Arcade League missions, so they have no location.
+
 ## Archipelago Shop
 With Include Archipelago Shop on, the main menu's "Extras" becomes "Extras & Shop", and its "View
-Movies" becomes "Archipelago Shop" (movies can't be watched from there). The shop lists 15 items,
-each with who it is for and its price, under your points. Press A on one to buy it: its location
-is checked and the row reads "Purchased". Prices depend on the item: 1-5 points for filler and
+Movies" becomes "Archipelago Shop" (movies can't be watched from there). The shop lists 15 items
+under a header showing your Progressive Shop Restocks and your points. Each item is shown with who
+it is for, in the colour of its kind (progression, useful, filler or trap), with its price on the
+right. Press A on one to buy it: its location is checked and the row reads "Purchased". Prices depend on the item: 1-5 points for filler and
 traps, 5-75 for useful items, 15-200 for progression; a story level (of this game or
 TimeSplitters 2) always costs at least 85.
 

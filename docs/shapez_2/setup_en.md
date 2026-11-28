@@ -3,24 +3,24 @@
 ## Required Software
 
 - The shapez 2 game ([Steam](https://store.steampowered.com/app/2162800/shapez_2/))
-- ~~The 2hapezipelago mod (installable from within the game)~~ Currently incompatible with latest apworld version
+- Archipelago from the [Archipelago Releases Page](https://github.com/ArchipelagoMW/Archipelago/releases)
 
 ## Optional Software
 
 - Optional:
-  - Archipelago from the [Archipelago Releases Page](https://github.com/ArchipelagoMW/Archipelago/releases)
+  - ~~The 2hapezipelago mod (installable from within the game)~~ Currently incompatible with latest apworld version
   - Universal Tracker (check UT's channel in the discord server for more information and instructions)
   - LiAuO2's [Better Scenario Screen](https://steamcommunity.com/sharedfiles/filedetails/?id=3741448134) mod from the Steam workshop
 
 ## If you're new to AP
 
-For detailed directions, see the [New to AP page](./new_to_ap.md)
+For detailed instructions, see the [New to AP page](./new_to_ap.md)
 
 ## Obtaining your scenario file
 
 Once you have generated the multiworld, a `.spz2scenario` file will be generated for your world. If you generated 
-locally, then it will be inside the multiworld's output `.zip` file. If hosted on the website (no matter if generated 
-locally or on the website), there will be download link next to the name of your slot on the room page. 
+locally, then it will be inside the multiworld's output `.zip` file. If hosted on a website (no matter if generated 
+locally or on that website), there will be download link next to the name of your slot on the room page. 
 Either double-click that file or use the "Open Patch" function in the AP Launcher to run it. It automatically installs 
 the scenario. If another scenario has been installed that way before, it will be overwritten with the new scenario, 
 unless that is disabled in the `shapez_2_settings` section in the host.yaml. Disabling that is only recommended with 

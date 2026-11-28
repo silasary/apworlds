@@ -2,97 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://raw.githubusercontent.com/silasary/apworlds/refs/heads/main/recent.atom</id>
   <title>Recent APWorlds</title>
-  <updated>2026-11-28T00:17:48.900350+00:00</updated>
+  <updated>2026-11-28T06:21:44.885880+00:00</updated>
   <author>
     <name>Silasary</name>
   </author>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
-  <entry>
-    <id>https://github.com/Nichologeam/CUAP/releases/tag/v0.13.2</id>
-    <title>Casualties: Unknown v0.13.2</title>
-    <updated>2026-11-23T22:52:26+00:00</updated>
-    <author>
-      <name>Nichologeam</name>
-    </author>
-    <content>### Casualties: Unknown Archipelago v0.13.2&#13;
-This update is compatible with worlds generated on versions 0.13.0-pre3 and above!&#13;
-&#13;
-For instructions on how to set up and play this mod, check the [README](https://github.com/Nichologeam/CUAP/blob/master/README.md).&#13;
-Development on the Itch.io version of Casualties: Unknown has stopped. To play this mod on the Itch.io version, use CUAP v0.8.0.&#13;
-Development on the Steam Demo version of Casualties: Unknown has stopped. To play this mod on the Steam Demo version, use CUAP v0.12.3.&#13;
-&#13;
-# Additions&#13;
-- Faulty Chip Trap [APWorld Change]&#13;
-- Moodlesanity locations that can only exist in one layer now have entrance information inside hints [APWorld Change]&#13;
-- New locations for completing the four training courses, enabled by the new Trainingsanity YAML option [APWorld Change]&#13;
-# Changes&#13;
-- Hint popups now contain entrance information&#13;
-# Fixes&#13;
-- Fixed Hearing loss related Moodlesanity locations not being put in logic when receiving WHERE WE MUST REACH access when Randomize Crafting was disabled [APWorld Change]&#13;
-- Fixed Limb Unlocks not properly upgrading limbs past the first upgrade when the YAML option was set to By Stats&#13;
-# Known Issues&#13;
-- A NullReferenceException is sometimes thrown when the Layer Selector opens. This seems to be an issue with how Harmony interacts with Prefix patches on IEnumerators&#13;
-- If more than one Archipelago Item exists, they will all share the same sprite and description. This is a limitation of the original game&#13;
-- Craftsanity checks will still be sent if crafting fails due to low INT. This is a bug in the original game&#13;
-&#13;
-**Full Changelog**: https://github.com/Nichologeam/CUAP/compare/v0.13.1...v0.13.2</content>
-    <link href="https://github.com/Nichologeam/CUAP/releases/tag/v0.13.2"/>
-  </entry>
-  <entry>
-    <id>https://github.com/OSoffocles/Well-Dweller-APWorld/releases/tag/v0.2.3-alpha</id>
-    <title>Well Dweller v0.2.3a0</title>
-    <updated>2026-11-23T23:06:28+00:00</updated>
-    <author>
-      <name>OSoffocles</name>
-    </author>
-    <content># Release notes&#13;
-&#13;
-## v0.2.3-alpha&#13;
-APWorld 0.2.3 + game mod 0.1.13. **Update both** (`well_dweller.apworld` and `WellDwellerAP.dll`) and start a new save&#13;
-for a new seed. **New YAML template:** `currency_item_amount` is replaced by `currency_item_total`. Older YAMLs still&#13;
-generate, but their `currency_item_amount` is ignored (with a warning).&#13;
-&#13;
-### Currency and shop&#13;
-- New option `currency_item_total` (0-500, default 150): all Currency items from the multiworld together give this&#13;
-  percentage of what the whole Looter's shop costs at your seed's prices (the six trinkets, the Oil Vial, both Flaming&#13;
-  Vessel upgrades and all 100 Trinket Points). The amount stays the same whichever checks you turn on.&#13;
-- `currency_multiplier` now only multiplies the currency you pick up in the game (enemies and vessels).&#13;
-- Shop checks come into logic much earlier: each purchase only needs its own price (the second Flaming Vessel upgrade&#13;
-  and later Trinket Points also count the earlier ones), all currency in the areas you can reach counts, and the shop&#13;
-  opens up after 5% of the map (plus 2 movement abilities). Currency items are never counted by the logic.&#13;
-&#13;
-### In the game&#13;
-- The HUD counter also shows how many checks are in logic right now ("Checks: found / total   In logic: n").&#13;
-  Needs both the new mod and the new apworld.&#13;
-&#13;
-### Locations&#13;
-- New: Desiccated Castle Combat Room (AC_14). Up to 621 locations.&#13;
-&#13;
-### Logic&#13;
-More fixes from player reports:&#13;
-- Time trials need the right abilities on top of reaching them: Night Garden Climb + Slingshot/Wall Sling or&#13;
-  Soar + Hover; Gravenvalley Climb + Slingshot/Wall Sling; Hunter's Cabin Climb + Slingshot/Wall Sling/Hover;&#13;
-  Autumn Forest Hover.&#13;
-- Hunter's Cabin: the upper part needs Soar or Climb + Hover; AH_05 trinket from the lower part.&#13;
-- The Docks to the Depths: Water Vessel + Climb + Hover (the barge leaves from the right side).&#13;
-- Lookout Tower AG_13, AG_15, AG_17 and AG_28 checks, and the Autumn Forest area around the Forest King, need Hover.&#13;
-- Drains AP_28 checks: Wind Ride + Hover + (Climb + Slingshot, or Soar).&#13;
-- Smaller fixes: AN_11 page (Climb is enough), castle AC_03/AC_05 levers (Drains elevator side), AF_34 page (behind&#13;
-  the Forest King), Burial Vault AT_InsideTomb_after slot (Climb + Wall Sling or Soar).&#13;
-&#13;
-### Setup guide&#13;
-- The Aurie Installer links point straight to the Aurie v2.0.0b release.&#13;
-&#13;
-### Game mod (0.1.13)&#13;
-- HUD shows the in-logic count from the client.&#13;
-&#13;
-### Known issues&#13;
-- The game's own Spirit Nest counts the Spirit Fragments you picked up in the world, not the ones you received, so&#13;
-  you may need to collect all 5 in the world yourself before the nest turn-in works. The `final_flock` goal only&#13;
-  completes once you have received them too.&#13;
-</content>
-    <link href="https://github.com/OSoffocles/Well-Dweller-APWorld/releases/tag/v0.2.3-alpha"/>
-  </entry>
   <entry>
     <id>https://github.com/gjgfuj/SlotLock/releases/tag/slotlockv0.11.6</id>
     <title>SlotLock v0.11.6</title>
@@ -1892,5 +1806,56 @@ This RC brings the quality-of-life features promised in rc.5, plus fixes from th
 - **Expect different seeds** from the same YAML. Parent chaining, the removed BACAP checks and the logic fixes all move items.
 </content>
     <link href="https://github.com/KuroLynx/AEMinecraft/releases/tag/v0.7.0-rc.6"/>
+  </entry>
+  <entry>
+    <id>https://github.com/BlastSlimey/2hapezipelago/releases/tag/1.1.1</id>
+    <title>shapez 2 v1.1.1</title>
+    <updated>2026-11-28T00:20:38+00:00</updated>
+    <author>
+      <name>BlastSlimey</name>
+    </author>
+    <content># Changelog&#13;
+&#13;
+## apworld&#13;
+&#13;
+- Removed all buildings, space platforms, and mechanics from being put onto operator level locations&#13;
+- Removed operator levels from satisfying the minimum location count requirement&#13;
+- Added `Surprise Out-Of-Logic Item` option with the parameters `Amount` and `Cost per item`&#13;
+- Added `Include platform capacity` to `Item Pool Modifiers`&#13;
+&#13;
+### Is this version compatible with tracking older multiworld slots?&#13;
+Yes, back to 1.1.0&#13;
+&#13;
+## Client mod&#13;
+&#13;
+- Updated item and location names to match the official 1.2.0 names&#13;
+- Fixed `Fluid Miner + Extension` not being unlocked upon receiving&#13;
+- Fixed UI-related crashes during item receiving&#13;
+- Fixed crashes after reconnecting if new items were received while offline&#13;
+- Split the `connect` command into a variant with a password (`connectpassword`) and without a password (`connect`)&#13;
+- Tweaked `connect` command processing to allow more special characters&#13;
+&#13;
+### Is this version compatible with older multiworld slots and save files?&#13;
+No&#13;
+</content>
+    <link href="https://github.com/BlastSlimey/2hapezipelago/releases/tag/1.1.1"/>
+  </entry>
+  <entry>
+    <id>https://github.com/captpurpleheart/ts2-archipelago/releases/tag/v1.3.0</id>
+    <title>TimeSplitters 2 v1.3.0</title>
+    <updated>2026-11-28T02:47:27+00:00</updated>
+    <author>
+      <name>CaptPurpleHeart</name>
+    </author>
+    <content>This update adds a new sanity mode and some QoL features!&#13;
+## New Options&#13;
+- **Charactersanity** - This adds 70 "Kill X" Locations, where killing any unique character in Arcade League becomes it's own check, it's location in "Extra Locations", which is renamed from "Milestone Locations".&#13;
+- **Weapons Start with Full Reserve Ammo** - Weapons you start with, and pick up mid-match will start with their full reserve ammo.&#13;
+- **Preferences Category** - You can set the in-game control preferences in the YAML, such as auto aim, auto lookahead and inverse look.&#13;
+&#13;
+## Other Changes/Fixes&#13;
+- **Archipelago Shop Layout** - The shop has went under a big visual overhaul. Items are now displayed in their AP item type colour, and prices are off to the side, and your total points is much clearer to see in it's new header. Purchased items go grey.&#13;
+- **Weapon Buff names** - Item buffs have been shortened to be simply "Shotgun +25% Reserve Ammo" instead of "Weapon Buff - Shotgun - +25% Reserve Ammo".</content>
+    <link href="https://github.com/captpurpleheart/ts2-archipelago/releases/tag/v1.3.0"/>
   </entry>
 </feed>

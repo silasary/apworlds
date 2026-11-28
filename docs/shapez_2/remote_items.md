@@ -76,7 +76,6 @@
 | Train Vortex Delivery                  | RemoteTrainVortexDelivery              |
 | Space Platforms                        | RemoteSpacePlatforms                   |
 | 2nd Space Level                        | Remote2ndSpaceLevel                    |
-| Wires (Category)                       | RemoteWiresCategory                    |
 | Fluids                                 | RemoteFluids                           |
 | Shop                                   | RemoteShop                             |
 | Operator Levels                        | RemoteOperatorLevels                   |

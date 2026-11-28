@@ -1,6 +1,16 @@
 # Changelog
 Versions are sorted in ascending order, i.e. the most recent changes are at the top.
 
+## 1.1.1
+
+- Removed all buildings, space platforms, and mechanics from being put onto operator level locations
+- Removed operator levels from satisfying the minimum location count requirement
+- Added `Surprise Out-Of-Logic Item` option with the parameters `Amount` and `Cost per item`
+- Added `Include platform capacity` to `Item Pool Modifiers`
+
+### Is this version compatible with tracking older multiworld slots?
+Yes, back to 1.1.0
+
 ## 1.1.0
 
 - A lot of internal reworking

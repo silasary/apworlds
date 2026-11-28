@@ -19,6 +19,18 @@ in the game: it is not an item and cannot be earned. Weapons are the ones offere
 a custom weapon set in Arcade Custom; owning a weapon also unlocks its (x2) version. Unarmed is
 always available.
 
+Weapons Start with Full Reserve Ammo (Game Options, on by default): every weapon you get, and
+every weapon you start a level with, comes with full reserve ammo, as much as your weapon buffs
+let you carry. Its clip is left as the game gives it.
+
+Preferences (the Preferences options): Weapon Change, Auto Aim, Inverse Look, Auto Lookahead,
+Aim Mode, Crouch Mode, Rumble and Rumble Mode, each defaulting to the game's own default for a new
+profile (Weapon Change: If New and Best; Auto Aim, Inverse Look, Auto Lookahead and Rumble: On;
+Aim Mode: Hold; Crouch Mode: Toggle; Rumble Mode: Fire & Hit). The client sets them in your loaded
+profile once, the first time it is connected to the slot with a profile loaded; the server
+remembers that, so anything you change in the game's Preferences menu afterwards stays as you set
+it. They are kept when the game next saves your profile.
+
 Bonus items (each Off, Start With One or Shuffle All):
 
 * Progressive Behead The Undead Score Multiplier (three): every kill in Fight Off The Living
@@ -30,8 +42,8 @@ Bonus items (each Off, Start With One or Shuffle All):
   and when you respawn. It applies in Story, every Arcade League mission, Behead The Undead,
   Banana Chomp and TimeSplitters 'Story' Classic, and never lowers armour you already have.
 
-* Weapon buffs ("Include Weapon Buffs", on by default): "Weapon Buff - <weapon> - +25% Clip
-  Size" and "... +25% Reserve Ammo" items fill the locations left over after every other item.
+* Weapon buffs ("Include Weapon Buffs", on by default): "<weapon> +25% Clip Size" and
+  "<weapon> +25% Reserve Ammo" items (e.g. "Tommy Gun +25% Clip Size") fill the locations left over after every other item.
   Each copy (up to three) adds 25% of the normal value. A bigger clip shows on the next reload.
   The client window has an "Inventory" tab: the shop's points and what its rows show now (buy
   in the game's own shop menu), then the damage resistances, weapon buffs, score multipliers and
@@ -102,7 +114,12 @@ Only the North American GameCube version (game ID `GTSE4F`) is supported.
     "How many AstroLander Checks?" says (0-11).
   Each game needs its cartridge item and at least one story level, as they can only be played
   from the Temporal Uplink during Story.
-* Milestones (each kind can be switched off in the options): "AL - Beginners Series - Group
+* Charactersanity (off by default, under "Extra Locations"): "Kill Monkey", "Kill Jimmy Needles"
+  and so on, one for each of the 70 characters that are enemies in Arcade League missions. Only
+  kills in Arcade League missions count (not Story, Challenges or Arcade Custom), and only of
+  enemies: a teammate doesn't count. Each is in logic once a mission where that character is an
+  enemy has been received; every Arcade League mission always has the same characters.
+* Milestones (each kind can be switched off in the options, under "Extra Locations"): "AL - Beginners Series - Group
   Completed" and the like for a Bronze or better on every mission of a group, "Amateur /
   Honorary / Elite League Completed" for every mission of a league, and "All Challenges
   Completed".
@@ -125,10 +142,12 @@ Chosen with the Goal option:
 
 ## Archipelago Shop
 With "Include Archipelago Shop" on, Options > View Cutscenes becomes the shop: the main menu's
-Options reads "Options & Shop" and View Cutscenes reads "Archipelago Shop". Its title shows your
-points, and its 13 rows each show a shop location's item, whose it is and its price, e.g.
-"Hookshot (Link) - 60 Points". A buys it (sending that location's check) if you have the
-points; the row then reads "Purchased". Cutscenes can't be watched from that menu.
+Options reads "Options & Shop" and View Cutscenes reads "Archipelago Shop". A header at the top
+shows how many Progressive Shop Restocks you have and your points, and each of the 13 rows shows
+a shop location's item and whose it is on the left, e.g. "Hookshot (Link)", and its price on the
+right. Items are coloured by kind, as in Archipelago's text client: progression lavender, useful
+blue, filler cyan, traps salmon. A buys it (sending that location's check) if you have the
+points; the row then reads "Purchased", greyed out. Cutscenes can't be watched from that menu.
 * Points: every trophy (Bronze 10, Silver 20, Gold 30, Platinum 40; a better trophy counts the
   ones below it, so a first-try Platinum is 100), every story level finished (Easy 15, Normal 35,
   Hard 50; finishing on Hard counts all three), every kill (1, in any mode) and the Bronze,
@@ -137,9 +156,7 @@ points; the row then reads "Purchased". Cutscenes can't be watched from that men
 * Prices: 1-15 points for filler and traps, 5-75 for useful items, 15-200 for progression, and
   85-200 for a story level (this game's or TimeSplitters: Future Perfect's).
 * Restocks: with more than 13 shop locations, each further 13 needs a Progressive Shop Restock
-  item (one for 26, up to four for 65). A restock gives every row its next item: a row already
-  "Purchased" shows it the next time you open the shop, and a row not yet bought shows it as
-  soon as you buy it.
+  item (one for 26, up to four for 65). A restock gives every row its next item, straight away.
 * TimeSplitters 2 and TimeSplitters: Future Perfect items are named as on the award screen: a
   mission or story level by its own name (e.g. "Fight Off The Living Dead", "Commuting Will Kill
   You"), a weapon buff as "Pistols +25% Reserve Ammo". The award screen names other players'

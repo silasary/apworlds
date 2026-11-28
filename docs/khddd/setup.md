@@ -16,6 +16,9 @@ BEFORE MODDING, PLEASE INSTALL AND RUN KHDDD AT LEAST ONCE.
 3. Click the drop down menu at the top-right and choose "Dream Drop Distance"
 4. Click Mods>Install a New Mod
 5. In "Add a new mod from GitHub", paste "LuxMake/KHDDD-AP"
+- OPTIONAL: If you wish to play with no AI-generated code, you can expand "More Options". Then, in the "Branch" box, type in "no-ai".
+- Playing this version of the mod will prevent certain icons from displaying, as code needed to display them will be removed in this version.
+- When deciding which version to play, please note that AI-generated functions are restricted to code that is not essential for the mod to work.
 6. Click Install
 7. Navigate to Mod Loader and click "Build Only"
 8. Double-click the "khddd.apworld" file to install it to your custom_worlds folder
@@ -24,6 +27,8 @@ BEFORE MODDING, PLEASE INSTALL AND RUN KHDDD AT LEAST ONCE.
 11. Find "Kingdom Hearts Dream Drop Distance.yaml" and copy it to /Players/
 12. Open the YAML file and change the line that says "name: Player{number}" to your desired player name
 13. Adjust the settings in the YAML to your liking
+- Instead of editing the yaml yourself, you can also use the "Options Creator" tool in the Archipelago Launcher.
+- This lets you create your own configs without having to worry about syntax.
 14. Run ArchipelagoGenerate.exe or click "Open" under the Generate option in the Archipelago Launcher
 15. Take the newly created AP_XXX.zip file in /output/ in upload it here: https://archipelago.gg/uploads
 16. Open ArchipelagoLauncher.exe

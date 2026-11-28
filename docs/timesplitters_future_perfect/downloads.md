@@ -1,9 +1,12 @@
 # TimeSplitters Future Perfect
 
 ## Latest
-- <a href="https://github.com/captpurpleheart/tsfp-archipelago/releases/download/v1.5.0/timesplitters_future_perfect.apworld">Latest Version (1.5.0)</a>
+- <a href="https://github.com/captpurpleheart/tsfp-archipelago/releases/download/v1.6.0/timesplitters_future_perfect.apworld">Latest Version (1.6.0)</a>
 
 ## All Versions
+
+#### v1.6.0
+- <a href="https://github.com/captpurpleheart/tsfp-archipelago/releases/download/v1.6.0/timesplitters_future_perfect.apworld">https://github.com/captpurpleheart/tsfp-archipelago/releases/download/v1.6.0/timesplitters_future_perfect.apworld</a>
 
 #### v1.5.0
 - <a href="https://github.com/captpurpleheart/tsfp-archipelago/releases/download/v1.5.0/timesplitters_future_perfect.apworld">https://github.com/captpurpleheart/tsfp-archipelago/releases/download/v1.5.0/timesplitters_future_perfect.apworld</a>

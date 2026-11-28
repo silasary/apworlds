@@ -33,7 +33,7 @@ Though, the setup is a bit complicated, so let me explain it quickly:
 1. Download the Archipelago software and install it: https://github.com/ArchipelagoMW/Archipelago/releases
 2. Download the latest shapez 2 apworld: https://github.com/BlastSlimey/2hapezipelago/releases 
    (this is the "plugin" for the AP software to know how to handle this game)
-3. Install the 2hapezipelago mod from the Steam Workshop, allowing Steam to download all of its dependency mods
+3. ~~Install the 2hapezipelago mod from the Steam Workshop, allowing Steam to download all of its dependency mods~~
    - As of writing this, the mod is incompatible with the latest apworld and should thereby be skipped for now
 4. Put the apworld into `<AP install folder>/custom_worlds`, or on Windows, double-click it and AP will install it 
    to the custom worlds folder automatically
@@ -44,13 +44,14 @@ Though, the setup is a bit complicated, so let me explain it quickly:
 9. In the Launcher, click "Generate"
 10. If everything went right (i.e. no error message), a zip file has been created in `<AP install folder>/Output`
 11. Open that zip file and extract the `.spz2scenario` file with your player name
+    - That zip file also contains a spoiler for the placement of all items
 12. Either double-click the `.spz2scenario` file or click "Open Patch" in the Launcher
     - A folder selection window might pop up if the save data folder could not be detected automatically
     - If everything went right, a success message will pop up at the end
     - Doing so again with a different generated seed will overwrite the already installed scenario
 13. Restart the game
 14. Create a new save file and select Classic -> "Archipelago (Player name)" as the scenario. However, a bug in the 
-    main game causes the button is partially cut off in the UI. If it isn't clickable, change your UI scale in the 
+    game causes the button to be partially cut off in the UI. If it isn't clickable, change your UI scale in the 
     game's settings. This can also be fixed using LiAuO2's Better Scenario Screen mod from the workshop.
 
 If you play a singleplayer randomizer, you can jump straight ahead into the gameplay. Otherwise, I'd recommend reading
